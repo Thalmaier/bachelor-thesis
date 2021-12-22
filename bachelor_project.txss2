@@ -1,0 +1,71 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "main.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "main.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "main.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/00_abstract.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/10_einleitung.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/20_grundlagen.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/30_planung.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/40_poc.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 10,
+                "EditorGroup": 0,
+                "FileName": "kapitel/50_fazit.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 1
+            }
+        ],
+        "MasterFile": ""
+    }
+}
