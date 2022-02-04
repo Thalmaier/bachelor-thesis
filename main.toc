@@ -4,6 +4,7 @@
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{}%
 \defcounter {refsection}{0}\relax 
@@ -11,54 +12,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Projektumfeld}{1}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Das Unternehmen MediaMarktSaturn}{1}{}%
+\contentsline {subsection}{\numberline {1.2.1}Das Unternehmen MediaMarktSaturn}{2}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Benachbarte Systeme der Checkout-Software}{2}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Motivation}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Ziele}{2}{}%
+\contentsline {section}{\numberline {1.4}Ziele}{3}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Grundlagen}{3}{}%
+\contentsline {chapter}{\numberline {2}Grundlagen}{4}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Architekturmuster}{3}{}%
+\contentsline {section}{\numberline {2.1}SOLID-Prinzipien}{4}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Schichtenarchitektur}{3}{}%
+\contentsline {section}{\numberline {2.2}Architekturmuster}{5}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Hexagonale Architektur}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Schichtenarchitektur}{5}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Domain-Driven Design}{7}{}%
+\contentsline {subsection}{\numberline {2.2.2}Hexagonale Architektur}{6}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Planung und Analyse}{10}{}%
+\contentsline {section}{\numberline {2.3}Domain-Driven Design}{8}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Umfeldanalyse}{10}{}%
+\contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Anwendungsfälle}{10}{}%
+\contentsline {section}{\numberline {3.1}Umfeldanalyse}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{10}{}%
+\contentsline {section}{\numberline {3.2}Anwendungsfälle}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{11}{}%
+\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Analysieren der Domäne}{11}{}%
+\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{14}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{11}{}%
+\contentsline {section}{\numberline {4.1}Analysieren der Domäne}{14}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Abgrenzung des Bounded Contexts}{11}{}%
+\contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{14}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Design der Wertobjekte}{12}{}%
+\contentsline {section}{\numberline {4.3}Abgrenzung des Bounded Contexts}{14}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Entitäten}{12}{}%
+\contentsline {section}{\numberline {4.4}Design der Wertobjekte}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Aggregatbestimmung anhand der Anwendungsfälle}{12}{}%
+\contentsline {section}{\numberline {4.5}Definition der Entitäten}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{12}{}%
+\contentsline {section}{\numberline {4.6}Aggregatbestimmung anhand der Anwendungsfälle}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Domänenservice}{13}{}%
+\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Applikationsservice}{13}{}%
+\contentsline {section}{\numberline {4.8}Domänenservice}{16}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}Primäre und Sekundäre Adapter}{13}{}%
+\contentsline {section}{\numberline {4.9}Applikationsservice}{16}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{14}{}%
+\contentsline {section}{\numberline {4.10}Primäre und Sekundäre Adapter}{16}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossar}{i}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatur}{i}{}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

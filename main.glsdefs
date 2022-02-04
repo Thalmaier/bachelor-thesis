@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{Example}%
+{%
+name={Example},%
+sort={Example},%
+type={main},%
+first={Example},%
+firstplural={Examples},%
+text={Example},%
+plural={Examples},%
+description={Ein Beispiel},%
+descriptionplural={Ein Beispiel},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

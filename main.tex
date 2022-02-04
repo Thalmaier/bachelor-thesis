@@ -59,6 +59,10 @@ automark,		% Lebende Kolumnentitel
 \usepackage{adjustbox}
 
 
+\usepackage{glossaries}
+
+\makeglossaries
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,9 +115,16 @@ automark,		% Lebende Kolumnentitel
 	% \@mainmattertrue
 	\pagenumbering{arabic}}
 
+\newcommand\backmatter{%
+	\cleardoublepage
+	%\@mainmatterfalse
+	\pagenumbering{roman}}
+
 \newcommand{\comment}[1]{} %TODO: Delete later
 
 \begin{document}
+  
+  \include{glossary}
   
   \maketitle
   
@@ -127,6 +138,8 @@ automark,		% Lebende Kolumnentitel
   
   \mainmatter
   
+  %TODO: Rename Fachbegriffe
+  
   \include{kapitel/10_einleitung}
   
   \include{kapitel/20_grundlagen}
@@ -136,6 +149,14 @@ automark,		% Lebende Kolumnentitel
   \include{kapitel/40_poc}
   
   \include{kapitel/50_fazit}
+  
+  \backmatter
+  
+  \addcontentsline{toc}{chapter}{Glossar}
+  
+  \printglossary
+  
+  \addcontentsline{toc}{chapter}{Literatur}
   
   \printbibliography %Citavi 5
   
