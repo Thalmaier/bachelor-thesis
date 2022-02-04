@@ -3,23 +3,21 @@
 
 \chapter{Einleitung}
 
-Anfangs wird die vorliegende Problemstellung erläutert, sowie das Projektumfeld und die dahinterliegende Motivation und ihre Ziele. Hierdurch soll ein grundlegendes Verständnis der Hintergründe dieser Arbeit geschaffen werden.
+Der Schwerpunkt dieses Projekts und somit zugleich dieser Bachelorarbeit ist die Entwicklung eines Proof-of-Concepts einer Checkout-Software mithilfe von Domain-Driven Design und Hexagonaler Architektur. In den folgenden Kapiteln wird diese Problemstellung detaillierter beschrieben, das vorliegende Projektumfeld aufgezeigt, sowie die dahinterliegende Motivation und Ziele erläutert. Hierdurch soll ein grundlegendes Verständnis der Hintergründe dieser Arbeit geschaffen werden.
 
 \section{Problemstellung}
-\begin{itemize}[noitemsep,nolistsep]
-	\item Alot of Business Rules -> future proof architecture
-	\item Modelling the Domain defines how the software and the external systems interact with the software
-\end{itemize}
 
-% - Erklärung eines Checkouts / Warenkorbs
-% - Use-Case erläutern
-% - Projektumfeld hinleitung
+In einem Onlineshop ist ein elementarer Bestandteil der sogenannte Warenkorb. In diesem können unter anderem Waren abgelegt werden, um sie eventuell zu einem späteren Zeitpunkt zu erwerben. Die Kernfunktionen eines Warenkorbs umfasst demnach das Hinzufügen bzw. Löschen von Artikeln und das Abändern ihrer Stückzahl. Im verlaufe des Kaufprozess sollte es weiterhin möglich sein eine Versandart einzustellen, Kundendaten zu hinterlegen und eine Zahlungsart auszuwählen. Nach erfolgreicher Überprüfung von Sicherheitsrichtlinien findet die Kaufabwicklung statt, der sogenannte 'Checkout'. Um die hier beschriebenen Anwendungsfälle zu verwirklichen, wird eine dafür designierte Software benötigt. In diesem Projekt wird diese realisiert und als eine 'Checkout-Software' bezeichnet.
 
-Ein elementarer Bestandteil eines Onlineshops ist der sogenannte Warenkorb. In diesem können unter anderem Waren, welche eventuell zu einem späteren Zeitpunkt gekauft werden wollen, abgelegt werden. Die Kernfunktionen eines Warenkorbs umfasst das Hinzufügen bzw. Löschen von Waren und das Abändern ihrer Stückzahl. Weiterhin soll es möglich sein eine Versandart einzustellen, Kundendaten zu hinterlegen und eine Zahlungsart auszuwählen. Nach erfolgreicher Überprüfung von Sicherheitskriterien soll abschließend die Kaufabwicklung, der sogenannte 'Checkout', möglich sein. Um die hier beschriebenen Anwendungsfälle zu verwirklichen wird eine dafür designierte Software benötigt. In diesem Projekt wird diese als 'Checkout-Software' bezeichnet.
- 
-Zusätzliche Anforderungen an der Software können die Modellierung der Daten beeinflussen, daher muss vor der eigentlichen Implementierung eine sorgfältige Use-Case-Analyse durchgeführt werden. Diese wird in einem späteren Kapitel erläutert.
+Eine solche Anwendung stellt das Rückgrat des Onlineshops dar. Sie erfährt stetige Änderungen, besitzt eine Vielzahl von Businessanforderungen und ihre Einbindung in das Frontend beeinflusst weitergehend auch das Kundenerlebnis. Dadurch liegt ein hoher Fokus auf Qualitätsmerkmale, wie Stabilität, Wartbarkeit und Testbarkeit. Die verwendete Architektur und das Softwaredesign muss den Entwicklern dabei unterstützen diese Kriterien zu erfüllen. Weiterhin können hinzukommende Businessprozesse eine Anpassung des Modells erfordern, dadurch wird ein flexibles Datenkonstrukt benötigt, welches zugleich performant und wartbar bleibt. Das Datenmodell bestimmt weitestgehend wie die internen Softwarekomponenten und die externen Systeme mit der Anwendung interagieren. Daher hat eine Umfeldanalyse und klare Definition von Anwendungsfällen hohen Einfluss auf die resultierende Qualität des Entwicklungsprozesses.
 
-Ein weiterer Teil der Problemdomäne sind die bereits existierenden Systeme, welche vor- bzw. nach dem Checkout-Prozess liegen. Um eine nahtlose Einbindung der Software zu gewährleisten muss eine Kommunikation mit den zuständigen Entwicklerteams, sowie eine Umfeldanalyse stattfinden. Die erarbeiteten Ergebnisse werden im folgenden Kapitel dargestellt.
+Durch welche Entwurfsmuster und Vorgehensweise eine solche Software realisiert werden kann stellt die initiale Problemstellung des Projektes dar. Hierbei wurde aufgrund der im nachfolgenden Kapitel stattfindenden Analyse eine Hexagonale Architektur und ein Domain-Driven Ansatz ausgewählt. Weitergehend liegt der Hauptfokus hierbei darauf, wie ein konkreten Aggregationsschnitt des Datenmodells, basierend auf die vorliegende Systemumgebung und erforderlichen Anwendungsfällen des Proof-of-Concepts, die vorher genannten Bedingungen erfüllt.
+
+%TODO: Ist die Problemstellung wirklich klar dargestellt. Bzw, sollte eine Problemstellung anders ausgeführt werden?
+
+%TODO: Hinleitung zum Projektumfeld?
+
+\comment{Weiterhin können hinzukommende Businessanforderungen ein Anpassung des Datenmodells erfordern, dadurch muss vor der eigentlichen Implementierung einer Checkout-Software eine sorgfältige Use-Case-Analyse durchgeführt werden. Diese wird in einem späteren Kapitel erläutert. Ein weiterer Teil der Problemdomäne sind die bereits existierenden Systeme, welche vor- bzw. nach dem Checkout-Prozess liegen. Um eine nahtlose Einbindung der Software zu gewährleisten muss eine Kommunikation mit den zuständigen Entwicklerteams, sowie eine Umfeldanalyse stattfinden. Die erarbeiteten Ergebnisse werden im folgenden Kapitel dargestellt.}
 
 
 
@@ -35,33 +33,29 @@ Ein weiterer Teil der Problemdomäne sind die bereits existierenden Systeme, wel
 % Komplett überarbeiten
 % Eigenmarken?
 
-Diese Bachelorarbeit wird in Zusammenarbeit mit dem Unternehmen der \emph{MediaMarktSaturn Retail Group}, kurz \emph{MediaMarktSaturn}, erarbeitet. %Wurde?
+Dieses Projekt wurde in dankbarer Zusammenarbeit mit dem Unternehmen \emph{MediaMarktSaturn Retail Group}, kurz \emph{MediaMarktSaturn}, erarbeitet. %Wurde?
+
 Als größte Elektronik-Fachmarktkette Europas bietet MediaMarktSaturn Kunden in über 1023 Märkten eine Einkaufmöglichkeit einer Vielzahl von Waren. Die Marktzugehörigkeit ist hierbei unterteilt in den Marken \emph{Media Markt} und \emph{Saturn}. % Ist die Software nur für MM?
-Über die Jahre gewann der Onlineshop für Media Markt und Saturn an zunehmender Bedeutung, da die prozentuale Verteilung des jährlichen Gewinns in den Märkten zurückgegangen und in den Onlineshops gestiegen ist. Dadurch wurden die Unternehmensziele dementsprechend auf die Entwicklung von Software zur Unterstützung des Onlineshops neu ausgelegt. Die, der MediaMarktSaturn Retail Group unterteilte, Firma \emph{MediaMarktSaturn Technology} ist hierbei verantwortlich für alle Entwicklungstätigkeiten. Dieses Projekt wurde im Team \emph{Chechkout \& Payment} erarbeitet, welches zuständig ist für die Checkout-Software.
+%TODO: Mehr zu MMS (Länderanzahl)
+
+Über die Jahre gewann der Onlineshop für Media Markt und Saturn an zunehmender Bedeutung, da die prozentuale Verteilung des jährlichen Gewinns in den Märkten zurückgegangen und im Onlineshop gestiegen ist. Dadurch wurden die Unternehmensziele dementsprechend auf die Entwicklung von komplexer Software zur Unterstützung des Onlineshops neu ausgelegt. Der MediaMarktSaturn Retail Group unterteilte Firma \emph{MediaMarktSaturn Technology} ist hierbei verantwortlich für alle Entwicklungstätigkeiten und die {\color{red}X} Mitarbeiter bündelt die technischen Kompetenzen des Unternehmens am Standort Ingolstadt. %TODO: Replace X
+
+Die Durchführung des Proof-of-Concepts hat im Team \emph{Chechkout \& Payment} stattgefunden. Die sieben zugehörigen Teammitglieder sind zuständig einen unternehmensweiten universellen Checkout bereitzustellen, sowohl für den Onlineshops als auch im Markt oder per Handyapp. %TODO: Wie viele Teammitglieder  
 
 \subsection{Benachbarte Systeme der Checkout-Software}
 
-\section{Motivation} 
-\begin{itemize}[noitemsep,nolistsep]
-	\item MediaMarktSaturn. Warum braucht MMS eine Checkout-Solution bzw dieses Projekt?
-	\item Performance
-	\item Interaction with the system (?????????)
-	\item Reverenz für zukünftige Projekte
-\end{itemize}
+\section{Motivation}
 
 % Aktuell existiert die Software schon. Ist die Frage welcher Architekturstil verwendet werden soll, relevant für die Arbeit oder bereits vorgegeben??
 
-Durch den stetigen Anstieg an Komplexität von Softwareprojekten haben sich gängige Software Designprinzipien und Architekturstile etabliert, um die erhöhte Anzahl an Businessanforderungen in einem zukunftssicheren Ansatz zu realisieren. Eine Checkout-Software beinhaltet multiple Prozessregeln, welche jederzeit angepasst und erweitert werden können. Dadurch ist eine flexible Grundstruktur entscheidend im die Langlebigkeit der Software zu gewährleisten. Eine Checkout-Software ist ein wichtiger Bestandteil eines Onlineshops und dadurch für MediaMarktSaturn von zentraler Bedeutung. Folglich ist eine sorgfältige Projektplanung und stetige Revision der bestehenden Software relevant, um auch weiterhin einen reibungslosen Ablauf der Geschäftsprozesse zu ermöglichen. Die zum aktuellen Zeitpunkt bestehende Anwendung verwendet eine Hexagonale Architektur und Domain-Driven Design, um dieses Ziel zu erreichen. Der erste Abschnitt dieser Arbeit beschäftigt sich mit der Entscheidung, ob auch weiterhin ein solcher Aufbau verfolgt werden sollte, um die aktuelle Lösung nach Verbesserungsmöglichkeiten zu überprüfen. 
+Durch den stetigen Anstieg an Komplexität von Softwareprojekten haben sich gängige Designprinzipien und Architekturstile für den Entwicklungsprozess von Software etabliert, um auch weiterhin die vielen Businessanforderungen in einem zukunftssicheren Ansatz zu realisieren. Eine Checkout-Software beinhaltet multiple Prozessabläufe, welche jederzeit angepasst und erweitert werden können. Dadurch ist eine flexible Grundstruktur entscheidend, um die Langlebigkeit der Software zu gewährleisten. Da der Checkout ein wichtiger Bestandteil eines jeden Onlineshops ist, besitzt die Software für MediaMarktSaturn eine zentraler Bedeutung. Folglich ist eine sorgfältige Projektplanung und stetige Revision der bestehenden Software relevant, um auch weiterhin einen reibungslosen Ablauf der Geschäftsprozesse zu ermöglichen. Zur Erreichung dieses Ziels verwendet die zum aktuellen Zeitpunkt bestehende Anwendung Domain-Driven Design und eine Hexagonale Architektur. Der erste Abschnitt dieser Arbeit beschäftigt sich mit der Entscheidung, ob auch weiterhin bzw. warum ein solcher Aufbau verfolgt werden sollte, um die aktuelle Lösung nach Verbesserungsmöglichkeiten zu überprüfen. 
 
-Zudem existieren aufgrund der zugrundeliegenden Architektur Performance-Einbusen. In diesem Projekt wird analysiert, ob die Performance durch einen anderen Aggregationsschnitt und einem vertretbaren Aufwand gesteigert werden kann. Dies dient ebenfalls als nützliche Untersuchung der bestehenden Anwendung und kann als Reverenz für zukünftige Softwareprojekte verwendet werden, da viele weitere Projekte mit ähnlichen Problemstellungen konfrontiert sind.
+Zudem existieren aufgrund des zugrundeliegenden Aggregationsschnitts Performance-Einbusen. In diesem Projekt wird analysiert, ob die Performance durch einen anderen Aufteilung des Datenmodells und einem vertretbaren Aufwand gesteigert werden kann. Dies dient ebenfalls als nützliche Untersuchung der bestehenden Anwendung und kann als Reverenz für zukünftige Softwareprojekte verwendet werden, da viele Projekte mit ähnlichen Problemstellungen konfrontiert sind.
 
 
 
 \section{Ziele}
-\begin{itemize}[noitemsep,nolistsep]
-	\item Eventueller Umbau
-	\item Überprüfen der aktuellen Architektur
-	\item Bewertung für zukünftigere Softwareprojekte
-\end{itemize}
 
 % Gleiche wie Motivation
+
+Aus den vorhergehenden Motivationen lassen sich folgenden Projektziele ableiten. Grundlegend stellt diese Arbeit eine Referenz für neue Softwareprojekte und Mitarbeiter dar. Dies kann zu einem erhöhten Grad an Softwarequalität im Unternehmen beitragen. Zugleich wird, durch die Analyse und Durchführung des Proof-of-Concepts, das bestehende Softwaredesign überprüft und herausgefordert. Dadurch kann ein mögliches Fazit der Arbeit sein, dass die aktuelle Architektur die erwünschten Merkmale nicht erfüllen oder womöglich sich keine Verbesserungsvorschläge ergeben. Letzteres stellt dennoch eine wichtige Erkenntnis für das Team und Unternehmen dar, da zukünftige Projekte mithilfe der verwendeten Vorgehensmodelle ähnliche Ergebnisse erzielen können. Sollten sich durch einen anderen Aggregationsschnitt Vorteile bilden, kann eine Folge dem Umbau der Software entsprechen.
