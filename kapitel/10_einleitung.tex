@@ -3,16 +3,65 @@
 
 \chapter{Einleitung}
 
-Einleitend werden Struktur, Motivation und die abgeleiteten Forschungsfragen diskutiert.
+Anfangs wird die vorliegende Problemstellung erläutert, sowie das Projektumfeld und die dahinterliegende Motivation und ihre Ziele. Hierdurch soll ein grundlegendes Verständnis der Hintergründe dieser Arbeit geschaffen werden.
 
 \section{Problemstellung}
-\blindtext
+\begin{itemize}[noitemsep,nolistsep]
+	\item Alot of Business Rules -> future proof architecture
+	\item Modelling the Domain defines how the software and the external systems interact with the software
+\end{itemize}
 
-\section{Umfeld}
-\blindtext
+% - Erklärung eines Checkouts / Warenkorbs
+% - Use-Case erläutern
+% - Projektumfeld hinleitung
 
-\section{Motivation}
-\blindtext
+Ein elementarer Bestandteil eines Onlineshops ist der sogenannte Warenkorb. In diesem können unter anderem Waren, welche eventuell zu einem späteren Zeitpunkt gekauft werden wollen, abgelegt werden. Die Kernfunktionen eines Warenkorbs umfasst das Hinzufügen bzw. Löschen von Waren und das Abändern ihrer Stückzahl. Weiterhin soll es möglich sein eine Versandart einzustellen, Kundendaten zu hinterlegen und eine Zahlungsart auszuwählen. Nach erfolgreicher Überprüfung von Sicherheitskriterien soll abschließend die Kaufabwicklung, der sogenannte 'Checkout', möglich sein. Um die hier beschriebenen Anwendungsfälle zu verwirklichen wird eine dafür designierte Software benötigt. In diesem Projekt wird diese als 'Checkout-Software' bezeichnet.
+ 
+Zusätzliche Anforderungen an der Software können die Modellierung der Daten beeinflussen, daher muss vor der eigentlichen Implementierung eine sorgfältige Use-Case-Analyse durchgeführt werden. Diese wird in einem späteren Kapitel erläutert.
+
+Ein weiterer Teil der Problemdomäne sind die bereits existierenden Systeme, welche vor- bzw. nach dem Checkout-Prozess liegen. Um eine nahtlose Einbindung der Software zu gewährleisten muss eine Kommunikation mit den zuständigen Entwicklerteams, sowie eine Umfeldanalyse stattfinden. Die erarbeiteten Ergebnisse werden im folgenden Kapitel dargestellt.
+
+
+
+\section{Projektumfeld}
+\begin{itemize}[noitemsep,nolistsep]
+	\item MediaMarktSaturn
+	\item Currently Checkout-Software exist
+	\item Vor bzw Nachgelagerte Systeme
+\end{itemize}
+
+\subsection{Das Unternehmen MediaMarktSaturn}
+
+% Komplett überarbeiten
+% Eigenmarken?
+
+Diese Bachelorarbeit wird in Zusammenarbeit mit dem Unternehmen der \emph{MediaMarktSaturn Retail Group}, kurz \emph{MediaMarktSaturn}, erarbeitet. %Wurde?
+Als größte Elektronik-Fachmarktkette Europas bietet MediaMarktSaturn Kunden in über 1023 Märkten eine Einkaufmöglichkeit einer Vielzahl von Waren. Die Marktzugehörigkeit ist hierbei unterteilt in den Marken \emph{Media Markt} und \emph{Saturn}. % Ist die Software nur für MM?
+Über die Jahre gewann der Onlineshop für Media Markt und Saturn an zunehmender Bedeutung, da die prozentuale Verteilung des jährlichen Gewinns in den Märkten zurückgegangen und in den Onlineshops gestiegen ist. Dadurch wurden die Unternehmensziele dementsprechend auf die Entwicklung von Software zur Unterstützung des Onlineshops neu ausgelegt. Die, der MediaMarktSaturn Retail Group unterteilte, Firma \emph{MediaMarktSaturn Technology} ist hierbei verantwortlich für alle Entwicklungstätigkeiten. Dieses Projekt wurde im Team \emph{Chechkout \& Payment} erarbeitet, welches zuständig ist für die Checkout-Software.
+
+\subsection{Benachbarte Systeme der Checkout-Software}
+
+\section{Motivation} 
+\begin{itemize}[noitemsep,nolistsep]
+	\item MediaMarktSaturn. Warum braucht MMS eine Checkout-Solution bzw dieses Projekt?
+	\item Performance
+	\item Interaction with the system (?????????)
+	\item Reverenz für zukünftige Projekte
+\end{itemize}
+
+% Aktuell existiert die Software schon. Ist die Frage welcher Architekturstil verwendet werden soll, relevant für die Arbeit oder bereits vorgegeben??
+
+Durch den stetigen Anstieg an Komplexität von Softwareprojekten haben sich gängige Software Designprinzipien und Architekturstile etabliert, um die erhöhte Anzahl an Businessanforderungen in einem zukunftssicheren Ansatz zu realisieren. Eine Checkout-Software beinhaltet multiple Prozessregeln, welche jederzeit angepasst und erweitert werden können. Dadurch ist eine flexible Grundstruktur entscheidend im die Langlebigkeit der Software zu gewährleisten. Eine Checkout-Software ist ein wichtiger Bestandteil eines Onlineshops und dadurch für MediaMarktSaturn von zentraler Bedeutung. Folglich ist eine sorgfältige Projektplanung und stetige Revision der bestehenden Software relevant, um auch weiterhin einen reibungslosen Ablauf der Geschäftsprozesse zu ermöglichen. Die zum aktuellen Zeitpunkt bestehende Anwendung verwendet eine Hexagonale Architektur und Domain-Driven Design, um dieses Ziel zu erreichen. Der erste Abschnitt dieser Arbeit beschäftigt sich mit der Entscheidung, ob auch weiterhin ein solcher Aufbau verfolgt werden sollte, um die aktuelle Lösung nach Verbesserungsmöglichkeiten zu überprüfen. 
+
+Zudem existieren aufgrund der zugrundeliegenden Architektur Performance-Einbusen. In diesem Projekt wird analysiert, ob die Performance durch einen anderen Aggregationsschnitt und einem vertretbaren Aufwand gesteigert werden kann. Dies dient ebenfalls als nützliche Untersuchung der bestehenden Anwendung und kann als Reverenz für zukünftige Softwareprojekte verwendet werden, da viele weitere Projekte mit ähnlichen Problemstellungen konfrontiert sind.
+
+
 
 \section{Ziele}
-\blindtext
+\begin{itemize}[noitemsep,nolistsep]
+	\item Eventueller Umbau
+	\item Überprüfen der aktuellen Architektur
+	\item Bewertung für zukünftigere Softwareprojekte
+\end{itemize}
+
+% Gleiche wie Motivation

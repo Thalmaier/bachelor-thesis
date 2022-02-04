@@ -9,9 +9,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Problemstellung}{1}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Umfeld}{1}{}%
+\contentsline {section}{\numberline {1.2}Projektumfeld}{1}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Motivation}{1}{}%
+\contentsline {subsection}{\numberline {1.2.1}Das Unternehmen MediaMarktSaturn}{1}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Benachbarte Systeme der Checkout-Software}{2}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Motivation}{2}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Ziele}{2}{}%
 \defcounter {refsection}{0}\relax 
@@ -21,38 +25,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Schichtenarchitektur}{3}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Hexagonale Architektur}{3}{}%
+\contentsline {subsection}{\numberline {2.1.2}Hexagonale Architektur}{5}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Domain-Driven Design}{4}{}%
+\contentsline {section}{\numberline {2.2}Domain-Driven Design}{7}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Planung und Analyse}{5}{}%
+\contentsline {chapter}{\numberline {3}Planung und Analyse}{10}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Umfeldanalyse}{5}{}%
+\contentsline {section}{\numberline {3.1}Umfeldanalyse}{10}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Anwendungsfälle}{5}{}%
+\contentsline {section}{\numberline {3.2}Anwendungsfälle}{10}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{5}{}%
+\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{10}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{6}{}%
+\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Analysieren der Domäne}{6}{}%
+\contentsline {section}{\numberline {4.1}Analysieren der Domäne}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{6}{}%
+\contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Abgrenzung des Bounded Contexts}{6}{}%
+\contentsline {section}{\numberline {4.3}Abgrenzung des Bounded Contexts}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Value Object Design}{7}{}%
+\contentsline {section}{\numberline {4.4}Design der Wertobjekte}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Entitäten}{7}{}%
+\contentsline {section}{\numberline {4.5}Entitäten}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Aggregatbestimmung anhand der Anwendungsfälle}{7}{}%
+\contentsline {section}{\numberline {4.6}Aggregatbestimmung anhand der Anwendungsfälle}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{7}{}%
+\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Domänenservice}{8}{}%
+\contentsline {section}{\numberline {4.8}Domänenservice}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Applikationsservice}{8}{}%
+\contentsline {section}{\numberline {4.9}Applikationsservice}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{9}{}%
+\contentsline {section}{\numberline {4.10}Primäre und Sekundäre Adapter}{13}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{14}{}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
