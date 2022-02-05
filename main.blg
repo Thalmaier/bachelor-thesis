@@ -5,6 +5,8 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: glossary.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: kapitel/00_abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 26 items.
@@ -39,7 +41,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 2 entries,
             6393 wiz_defined-function locations,
-            1215 strings with 9230 characters,
+            1216 strings with 9242 characters,
 and the built_in function-call counts, 6307 in all, are:
 = -- 392
 > -- 185

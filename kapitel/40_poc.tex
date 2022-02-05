@@ -3,16 +3,63 @@
 
 \chapter{Erstellung eines Proof of Concepts}
 
-Einleitend werden Struktur, Motivation und die abgeleiteten Forschungsfragen diskutiert.
+Durch die Schaffung eines grundlegenden Verständnis für Designprinzipien, Hexagonaler Architektur und Domain-Driven Design kann auf Basis der vorgehenden Analysen ein Proof of Concept entwickelt werden. Hierzu wird weiterhin das typisches Vorgehen von DDD verfolgt und zunächst die Domain und Ubiquitous Language definiert, gefolgt vom Erstellen des zentralen Domain-Modell. 
 
-\section{Analysieren der Domäne}
-\blindtext
+Die Wahl der Programmiersprache ist aufgrund der Teamexpertisen und dem vorliegenden Anwendungsfall auf Java oder Kotlin beschränkt. Kotlin ist eine, auf Java basierende, Programmiersprache, welche in ihrem Design einen hohen Fokus auf Lesbarkeit und Flexibilität legt. Aufgrund einer Vielzahl von Vorteile, welche durch den Einsatz von Kotlin erzielt werden können, wurde diese als die zu verwendende Sprache festgelegt. Zugleich wird nach Projektabschluss jegliche Codeanpassung an der produktiven Checkout-Software in Kotlin vorgenommen und somit ein langsame Migration des Sourcecodes erreicht.
 
-\section{Festlegen einer Ubiquitous Language}
+%TODO: Wie Einbindung des Source Codes
+%TODO: Bild der Architektur
+%TODO: Domain oder Domäne
+%TODO: Programmiersprache, REST, MongoDB in Umfeldanalyse oder hier ein extra Unterkapitel?
+
+\section{Festlegung und Analyse der Domain}
 \blindtext
 
 \section{Abgrenzung des Bounded Contexts}
 \blindtext
+
+\section{Festlegen einer Ubiquitous Language}
+
+In der Kommunikation zwischen den Business und Entwicklern kann es oft zu Missverständnisse kommen. Womöglich werden Informationen, Einschränkungen oder Prozesse ausgelassen oder für selbstverständlich erachtet. Durch die klare Definition von gemeinsam verwendeten Begriffen und ihren Bedeutungen wird implizit notwendiges Wissen über die Domain und ihre Prozesse geschaffen. Viele dieser Fachbegriffe können für notwendige Anwendungsfälle wiederverwendet werden und machen die Personen, welche die Businessanforderungen umsetzten sollen, mit der Domain vertraut. Da mit geringem Domainwissen die Korrektheit der Software gefährdet wird, stellt die Ubiquitous Language in Domain-Driven Design ein wichtiger Teilaspekt dar.
+
+In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird im folgenden Abschnitt die Ubiquitous Language definiert, um ein solches Verständnis über den Checkout Bounded-Context zu gewährleisten. Hierbei wurde sich auf die, für dieses Projekt, relevanten Terme beschränkt. Eingeklammerte Wörter beschreiben Synonyme zu dem vorangestellten Ausdruck.
+
+{\large \textbf{Domain-Modell:}}
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{Basket (Warenkorb): } {Die zentrale Datenklasse, welche den Warenkorb darstellt.}
+	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma.}
+	\item \textbf{Product (Artikel, Ware): } {Ein Artikel aus dem Warenbestand, welcher zu Verkauf steht. Kann ebenfalls für eine Gruppierung von mehreren Artikeln stehen.}
+	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um beispielsweise die Quantität eines Artikels anzupassen oder ihn zu entfernen.}
+	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung, hier Euro.} %TODO
+	\item \textbf{VAT (Steuersatz): } {Der Steuersatz zu einem bestimmten Nettobetrag.}
+	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und einem Nettobetrag. Die Währung gleicht die des Nettobetrags.}
+	\item \textbf{Fulfillment: } {Zustellungsart der Waren seitens der Firma.}
+	\begin{itemize}[noitemsep,nolistsep]
+		\item \textit{Pickup: } {Warenabholung in einem ausgewählten Markt durch den Kunden. Nur möglich sofern Artikel im Markt auf Lager ist.}
+		\item \textit{Delivery: } {Zustellung der Ware an den Kunden durch einen Vertragspartner.}
+		\item \textit{Packstation: } {Lieferung der Ware an eine ausgewählte Packstation durch einen Vertragspartner.}
+	\end{itemize}
+\end{itemize}
+\vspace{0.4em}
+
+{\large \textbf{Prozesse:}}
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlenden, notwendigen Werten.}
+	\item \textbf{Basket Finalization: } {Überprüfung der Korrektheit des Baskets durch die Basket Validation, Sperrung des Baskets vor weiteren Abänderungen, Einleitung des Zahlungsprozesses und Reservierung der Produkte im Basket. }
+	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets. Kann nur auf einen nicht geschlossenen oder stornierten Basket ausgeführt werden. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. }
+	\item \textbf{Basket Creation: } {Explizite oder Implizite Erstellung eines neuen Baskets. Findet automatisch statt sofern noch kein Basket für den Customer existiert. Dies ist ebenfalls der Fall nach einer Basket Finalization.}
+	\item \textbf{Basket Calculation: } {Das Berechnen der Geldbeträge des Baskets. Beinhaltet die Auswertung aller Products mitsamt ihren Net Amounts und VATs. Der resultierende Betrag aus unterschiedlichen VATs muss weiterhin aus rechtlichen Gründen einzeln verwiesen werden können.}
+	\item \textbf{High Volume Ordering: } {Die Bestellung von Artikeln in hoher Stückzahl. Aufgrund von Businessanforderungen soll es nur begrenzt möglich sein, dass ein Kunde in einem Basket oder wiederholt das gleiche Produkt mehrfach kauft.}
+\end{itemize}
+\vspace{0.4em}
+
+%TODO: Basket Finalization oder finalize Basket?
+%TODO: Lieber Wortwiederholungen oder Abwechslung
+%TODO: Stil der Sätze... Punkt nach unvollständigen Satz?
+%TODO: Technische Begriffe in Language? "BasketItemId" etc.
+%TODO: Doppelt gemoppelt der obere Absatz mit den unteren?
+
+Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend das Datenmodell designt. 
 
 \section{Design der Wertobjekte}
 \blindtext

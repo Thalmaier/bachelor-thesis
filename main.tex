@@ -59,7 +59,7 @@ automark,		% Lebende Kolumnentitel
 \usepackage{adjustbox}
 
 
-\usepackage{glossaries}
+\usepackage[acronym]{glossaries}
 
 \makeglossaries
 
@@ -152,12 +152,17 @@ automark,		% Lebende Kolumnentitel
   
   \backmatter
   
-  \addcontentsline{toc}{chapter}{Glossar}
+  %Acronyms
+  \addcontentsline{toc}{chapter}{Akronyme}
+  \printglossary[type=\acronymtype]
   
+  %Glossary
+  \addcontentsline{toc}{chapter}{Glossar}
   \printglossary
   
+  %Refs
+  %TODO: Add alot of references
   \addcontentsline{toc}{chapter}{Literatur}
-  
   \printbibliography %Citavi 5
   
 \end{document}

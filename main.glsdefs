@@ -1,14 +1,238 @@
-\glsdefs@newdocentry{Example}%
+\glsdefs@newdocentry{POC}%
 {%
-name={Example},%
-sort={Example},%
+name={POC},%
+sort={POC},%
+type={acronym},%
+first={Proof-of-Concept\glsspace (POC)},%
+firstplural={Proof-of-Concept\acrpluralsuffix \glsspace (POC\acrpluralsuffix )},%
+text={POC},%
+plural={POC\acrpluralsuffix },%
+description={Proof-of-Concept},%
+descriptionplural={Proof-of-Concept\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Proof-of-Concept},%
+longplural={Proof-of-Concepts},%
+short={POC},%
+shortplural={POCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DDD}%
+{%
+name={DDD},%
+sort={DDD},%
+type={acronym},%
+first={Domain-Driven Design\glsspace (DDD)},%
+firstplural={Domain-Driven Design\acrpluralsuffix \glsspace (DDD\acrpluralsuffix )},%
+text={DDD},%
+plural={DDD\acrpluralsuffix },%
+description={Domain-Driven Design},%
+descriptionplural={Domain-Driven Design\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Domain-Driven Design},%
+longplural={Domain-Driven Designs},%
+short={DDD},%
+shortplural={DDDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SRP}%
+{%
+name={SRP},%
+sort={SRP},%
+type={acronym},%
+first={Single-Responsibility-Prinzip\glsspace (SRP)},%
+firstplural={Single-Responsibility-Prinzip\acrpluralsuffix \glsspace (SRP\acrpluralsuffix )},%
+text={SRP},%
+plural={SRP\acrpluralsuffix },%
+description={Single-Responsibility-Prinzip},%
+descriptionplural={Single-Responsibility-Prinzip\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Single-Responsibility-Prinzip},%
+longplural={Single-Responsibility-Prinzips},%
+short={SRP},%
+shortplural={SRPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{OCP}%
+{%
+name={OCP},%
+sort={OCP},%
+type={acronym},%
+first={Open-Closed-Prinzip\glsspace (OCP)},%
+firstplural={Open-Closed-Prinzip\acrpluralsuffix \glsspace (OCP\acrpluralsuffix )},%
+text={OCP},%
+plural={OCP\acrpluralsuffix },%
+description={Open-Closed-Prinzip},%
+descriptionplural={Open-Closed-Prinzip\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Open-Closed-Prinzip},%
+longplural={Open-Closed-Prinzips},%
+short={OCP},%
+shortplural={OCPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{LSP}%
+{%
+name={LSP},%
+sort={LSP},%
+type={acronym},%
+first={Liskovsches Substitutionsprinzip\glsspace (LSP)},%
+firstplural={Liskovsches Substitutionsprinzip\acrpluralsuffix \glsspace (LSP\acrpluralsuffix )},%
+text={LSP},%
+plural={LSP\acrpluralsuffix },%
+description={Liskovsches Substitutionsprinzip},%
+descriptionplural={Liskovsches Substitutionsprinzip\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Liskovsches Substitutionsprinzip},%
+longplural={Liskovsches Substitutionsprinzips},%
+short={LSP},%
+shortplural={LSPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ISP}%
+{%
+name={ISP},%
+sort={ISP},%
+type={acronym},%
+first={Interface-Segregation-Prinzip\glsspace (ISP)},%
+firstplural={Interface-Segregation-Prinzip\acrpluralsuffix \glsspace (ISP\acrpluralsuffix )},%
+text={ISP},%
+plural={ISP\acrpluralsuffix },%
+description={Interface-Segregation-Prinzip},%
+descriptionplural={Interface-Segregation-Prinzip\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Interface-Segregation-Prinzip},%
+longplural={Interface-Segregation-Prinzips},%
+short={ISP},%
+shortplural={ISPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DIP}%
+{%
+name={DIP},%
+sort={DIP},%
+type={acronym},%
+first={Dependency-Inversion-Prinzip\glsspace (DIP)},%
+firstplural={Dependency-Inversion-Prinzip\acrpluralsuffix \glsspace (DIP\acrpluralsuffix )},%
+text={DIP},%
+plural={DIP\acrpluralsuffix },%
+description={Dependency-Inversion-Prinzip},%
+descriptionplural={Dependency-Inversion-Prinzip\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dependency-Inversion-Prinzip},%
+longplural={Dependency-Inversion-Prinzips},%
+short={DIP},%
+shortplural={DIPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Scrum}%
+{%
+name={Scrum},%
+sort={Scrum},%
 type={main},%
-first={Example},%
-firstplural={Examples},%
-text={Example},%
-plural={Examples},%
-description={Ein Beispiel},%
-descriptionplural={Ein Beispiel},%
+first={Scrum},%
+firstplural={Scrums},%
+text={Scrum},%
+plural={Scrums},%
+description={Eine agile Entwicklungsmethode, welches hohen Fokus auf kontinuierliche Verbesserung in einem geregelten Zyklus legt},%
+descriptionplural={Eine agile Entwicklungsmethode, welches hohen Fokus auf kontinuierliche Verbesserung in einem geregelten Zyklus legt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Product Owner}%
+{%
+name={Product Owner},%
+sort={Product Owner},%
+type={main},%
+first={Product Owner},%
+firstplural={Product Owners},%
+text={Product Owner},%
+plural={Product Owners},%
+description={Eine Scrum-Rolle, welche die wirtschaftliche Ziele und Prioritäten der Aufgabenpakete bestimmt},%
+descriptionplural={Eine Scrum-Rolle, welche die wirtschaftliche Ziele und Prioritäten der Aufgabenpakete bestimmt},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

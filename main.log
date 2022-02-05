@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  4 FEB 2022 17:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  5 FEB 2022 23:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1091,6 +1091,10 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \openout6 = `main.glo'.
 
 Package glossaries Info: Writing glossary file main.glo on input line 64.
+\glo@acronym@file=\write7
+\openout7 = `main.acn'.
+
+Package glossaries Info: Writing glossary file main.acn on input line 64.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1234,8 +1238,8 @@ Package biblatex Info: Reference segment=0 on input line 125.
 \openout2 = `glossary.aux'.
 
  (glossary.tex
-\@gls@deffile=\write7
-\openout7 = `main.glsdefs'.
+\@gls@deffile=\write8
+\openout8 = `main.glsdefs'.
 
 )
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
@@ -1284,8 +1288,8 @@ i_logo_cropped.pdf>] [2
 Package tocbasic Info: character protrusion at toc deactivated on input line 13
 7.
  (main.toc)
-\tf@toc=\write8
-\openout8 = `main.toc'.
+\tf@toc=\write9
+\openout9 = `main.toc'.
 
 
 [4
@@ -1332,8 +1336,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 36.
-)
-[2] [3]
+
+[2]) [3]
 \openout2 = `kapitel/20_grundlagen.aux'.
 
  (kapitel/20_grundlagen.tex
@@ -1539,18 +1543,13 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [8]
-Package svg Info: Last page of `./svg-inkscape/CHANGE-Context-Map-Example_svg-t
-ex.pdf' is 1 on input line 91.
- (svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf_tex
-<./svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf, id=83, page=1, 733.9866
-2pt x 533.50728pt>
-File: ./svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf Graphic file (type 
-pdf)
-<use ./svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf 
-, page1 used on input line 56.
-(pdftex.def)             Requested size: 298.75116pt x 217.15196pt.
-) [9 <./svg-inkscape/CHANGE-Context-Map-Example_svg-tex.pdf>] [10]) [11]
+<./svg-inkscape/ExampleDomain_svg-raw.pdf, id=82, 471.21547pt x 475.4011pt>
+File: ./svg-inkscape/ExampleDomain_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ExampleDomain_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/ExampleDomain_svg-raw.pdf  used on inpu
+t line 92.
+(pdftex.def)             Requested size: 471.21431pt x 475.39992pt.
+ [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>]) [11]
 \openout2 = `kapitel/30_planung.aux'.
 
 
@@ -1571,37 +1570,40 @@ chapter 4.
 
 
 
-] [15]) [16]
+] [15] [16]) [17]
 \openout2 = `kapitel/50_fazit.aux'.
 
  (kapitel/50_fazit.tex
 chapter 5.
-) [17
+) [18
 
 
 
 
-] [18
+] (main.acr) (main.gls [1
 
 
 
 
-] (main.gls) [1]
+
+]) [2
+
+]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-61.
+66.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 161.
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 166.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-[2
+[3
 
 ] (main.aux (glossary.aux) (kapitel/00_abstract.aux)
 (kapitel/10_einleitung.aux) (kapitel/20_grundlagen.aux) (kapitel/30_planung.aux
@@ -1611,11 +1613,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29293 strings out of 478659
- 612622 string characters out of 2845920
- 1533654 words of memory out of 3000000
- 46644 multiletter control sequences out of 15000+600000
- 498614 words of font info for 186 fonts, out of 8000000 for 9000
+ 29561 strings out of 478659
+ 616366 string characters out of 2845920
+ 1533891 words of memory out of 3000000
+ 46894 multiletter control sequences out of 15000+600000
+ 499534 words of font info for 194 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
@@ -1626,9 +1628,9 @@ ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/
 Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb>
-Output written on main.pdf (26 pages, 259350 bytes).
+Output written on main.pdf (27 pages, 255709 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 45179 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 45174 words of extra memory for PDF output out of 51595 (max. 10000000)
 

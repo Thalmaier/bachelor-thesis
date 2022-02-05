@@ -1,0 +1,97 @@
+%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ExampleDomain_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{469.45500183bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.00888264)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.50733297,0.54797584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Personal-}\end{tabular}}}}%
+    \put(0.50733297,0.51921909){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{beschaffung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.50733297,0.75726108){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Stellenbesetzung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.20688884,0.77084065){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Training \&}\end{tabular}}}}%
+    \put(0.20955202,0.74847429){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Weiterbildung }\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.51043231,0.32431223){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Diversität \&}\end{tabular}}}}%
+    \put(0.51043231,0.29555548){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Inklusion}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.82036617,0.54797584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Firmenkultur \&}\end{tabular}}}}%
+    \put(0.82036617,0.51921909){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Revision}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.20688884,0.54797584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sicherheit \&}\end{tabular}}}}%
+    \put(0.20688884,0.51921909){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Gesundheit}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.82036617,0.77084065){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Finanzen \&}\end{tabular}}}}%
+    \put(0.82036617,0.74847429){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{ Vergütung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.82036617,0.32431223){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Unternehmens-}\end{tabular}}}}%
+    \put(0.82036617,0.29555548){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{kommunikation}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.12700898,0.01118318){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Domain\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.34418635,0.01118318){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Subdomain\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.5998019,0.01118318){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Bounded-Context\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.87139342,0.01118318){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Kommunikation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.82036617,0.77163945){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Finanzen \&}\end{tabular}}}}%
+    \put(0.82036617,0.7428827){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{ Vergütung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.20688884,0.77163945){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Training \&}\end{tabular}}}}%
+    \put(0.21021782,0.7428827){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Weiterbildung }\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{ExampleDomain_svg-tex.pdf}}%
+    \put(0.5168227,0.94897274){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Domain}\end{tabular}}}}%
+    \put(0.5168227,0.90104483){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Personalwesen}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
