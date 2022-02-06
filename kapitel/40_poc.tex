@@ -27,10 +27,11 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 {\large \textbf{Domain-Modell:}}
 \begin{itemize}[noitemsep,nolistsep]
 	\item \textbf{Basket (Warenkorb): } {Die zentrale Datenklasse, welche den Warenkorb darstellt.}
-	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma.}
+	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma.} %TODO: Kann er beides sein, wie funktioniert das aus business sicht?
 	\item \textbf{Product (Artikel, Ware): } {Ein Artikel aus dem Warenbestand, welcher zu Verkauf steht. Kann ebenfalls für eine Gruppierung von mehreren Artikeln stehen.}
+	\item \textbf{Outlet: } {Repräsentiert einen Markt oder den länderbezogenen Onlineshop, welche durch eine einzigartige Outlet Nummer referenziert werden können.}
 	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um beispielsweise die Quantität eines Artikels anzupassen oder ihn zu entfernen.}
-	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung, hier Euro.} %TODO
+	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung.} %TODO
 	\item \textbf{VAT (Steuersatz): } {Der Steuersatz zu einem bestimmten Nettobetrag.}
 	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und einem Nettobetrag. Die Währung gleicht die des Nettobetrags.}
 	\item \textbf{Fulfillment: } {Zustellungsart der Waren seitens der Firma.}
@@ -41,6 +42,7 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 	\end{itemize}
 \end{itemize}
 \vspace{0.4em}
+%TODO: Maybe add PriceAdjustment
 
 {\large \textbf{Prozesse:}}
 \begin{itemize}[noitemsep,nolistsep]
@@ -61,23 +63,143 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 
 Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend das Datenmodell designt. 
 
-\section{Design der Wertobjekte}
-\blindtext
+\section{Definition der Value Objects}
+Aufgrund der Simplizität und klaren Zuteilung vom Modell zu Value Objects lassen sich diese als leichtes bestimmen. Value Objects kapseln sowohl Daten als auch das dazugehörige Verhalten. Wobei ihre Funktionalitäten keine Änderungen an den beinhalteten Attributen durchführen dürfen, da sie als immutable gelten. Daher wird, anstatt einer direkten Wertanpassung, in der Regel eine Kopie des aktuellen Objektes mitsamt der aktualisierten Werte erstellt und zurückgegeben. Zudem gilt diese Kopie als ein neues Value Object, dank der Eigenschaft, dass die Identität eines Value Objects alleinig von ihren Attributen und den zugeteilten Werten abhängt. Anfangs sollte jede Datenstruktur des Domain-Modells als ein Value Object definiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden.
 
-\section{Definition der Entitäten}
-\blindtext
+Anfangs wird das Daten-Modell mithilfe dem erlangten Domainwissen grundlegend aufgebaut. Die Ubiquitous Language unterstützt bei der richtigen Benamung der Klassen. Der Basket stellt den Ausgangspunkt der Modellierung dar. Folgende Attribute werden benötigt:
 
-\section{Aggregatbestimmung anhand der Anwendungsfälle}
+\domainModell{Basket}{
+	\item \textbf{OutletId: } {Zur Referenz in welchem Markt oder Onlineshop der Warenkorb angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten. Wir benötigen nur die Id des Outlets und nicht alle Daten, da sie für unsere Kommunikationspartner nicht relevant sind.}
+	\item \textbf{Customer: } {Speichert Kundendaten.} %TODO: Warum benötigt? Wird weitergegeben an COS?
+	\item \textbf{BasketItems: } {Liste an allen Artikeln aktuell im Warenkorb.} %TODO: Warum nicht Product hier erklären
+	\item \textbf{CalculationResult: } {Beinhaltet die berechneten Werte des Warenkorbs, wie Nettobetrag, Bruttobetrag und VAT. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
+	\item \textbf{Status: } {Repräsentiert, ob der Warenkorb als offen, canceled oder finalized gilt. Wichtig für Businessprozesse und Validierung von Änderungen am Basket.} %TODO: Umbenennung im Source code von COMPLETED zu FINALIZED
+}
+
+Anschließend werden die, im Basket enthaltenen, Klassen ebenfalls mit der gleichen Vorgehensweise definiert, sofern sie mehr als nur einfache Strings oder \Glspl{Enumeration} darstellen:
+
+\domainModell{Customer}{
+	\item \textbf{Name: } {Enthält den Vor- und Nachnamen als eigenes Datenkonstrukt.}
+	\subDomainModell{ %TODO: Untergliedern?
+		\item \textit{FirstName: } {Vorname des Kunden.} %TODO: Punktsetzung?
+		\item \textit{LastName: } {Nachname des Kunden.}
+	}
+	\item \textbf{Email: } {Email des Kunden.} %TODO: Warum benötigt?
+	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung, da diese ausgewiesen werden muss} %TODO: ///    Muss TaxId ausgewiesen werden?
+	\item \textbf{Type: } {Bestimmt ob Kunde als B2C oder B2B gilt.} %TODO: gls? /// Wie wird bestimmt?
+	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend bei einem B2B-Kunden} %TODO: Korrekt?
+	\item \textbf{CompanyTaxId: } {Steuernummer zugehörig zur Firma des Kunden, falls eine Firma angegeben wurde.} %TODO: Korrekt? Wofür? Warum CustomerTaxId und CompanyTaxId? TaxId in Language?
+}
+
+\domainModell{BasketItem}{
+	\item \textbf{Id: } {Eindeutige Nummer des Items in diesem Basket.}
+	\item \textbf{Product: } {Beinhaltet alle Produktinformationen, welche durch die Software benötigt werden.}
+	\item \textbf{Price: } {Aktueller Preis des zugehörigen Products. Kann sich zeitlich ändern, muss daher durch eine Businessfunktion aktualisiert werden, jedoch beeinflusst dies nicht die Modellierung des Datenobjekts. } %TODO: Letzten Satz so lassen oder weglassen? Anderes Wort für Relevanz?
+}
+
+\domainModell{Product}{
+	\item \textbf{Id: } {Eindeutige Referenz für dieses Product im externen System.}
+	\item \textbf{Name: } {Textuelle Produktbezeichnung des Products.}
+	\item \textbf{Vat: } {Mehrwertsteuerinformationen des Products.}
+}
+
+\domainModell{Vat}{
+	\item \textbf{Sign: } {}
+	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer.} %TODO: Bedeutung?
+}
+
+\domainModell{Price}{
+	\item \textbf{GrossAmount: } {Bruttobetrag mit Währung.} %TODO: In POC nur Gross als Price?
+	\item \textbf{NetAmount: } {Nettobetrag mit Währung.} %TODO: Beschreibung weglassen wenn gleich mit Language?
+	\item \textbf{VatAmount: } {Mehrwertsteuerklasse des Preises. Benötigt für die Berechnung des Preises.}
+}
+
+\domainModell{VatAmount}{
+	\item \textbf{Sign: } {}
+	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer.}
+	item \textbf{Amount: } {Berechneter Betrag der Mehrwertsteuer zugehörig zu einem Bruttobetrag.}
+}
+
+\domainModell{CalculationResult}{
+	\item \textbf{GrossAmount: } {Bruttobetrag mit Währung.}
+	\item \textbf{NetAmount: } {Nettobetrag mit Währung.}
+	\item \textbf{VatAmounts: } {Eine zusammengebautes Set aus VatAmounts der Preise der BasketItems. Benötigt, da Vats mit unterschiedlichen Prozentbeträgen rechtlich nicht kombiniert werden dürfen.}
+}
+
+%TODO: Neuanordnung der Attribute von Customer im Source Code
+
+%TODO: Datentyp hinter name?
+%TODO: Definition doppelt?
+%TODO: Zu oft Value Objects
+%TODO: Klassendiagram
+%TODO: Wie darstellen?
+
+\section{Bestimmung der Entities anhand ihrer Identität}
+
+Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien:
+
+\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.47\textwidth} | } 
+	\hline
+	& {\textbf{\centering Value Object} } & \textbf{\centering Entity} \\ 
+	\hline
+	Identität & 
+	Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität & 
+	Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch. \\ 
+	\hline
+	Lebenszyklus & 
+	Stellt nur eine Momentaufnahme des Applikationszustands dar. &
+	Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.  \\ 
+	\hline
+	Veränderbarkeit & 
+	Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable. &
+	Aufgrund ihrer Eigenschaften sind Entities mutable.  \\ 
+	\hline
+	Abhängigkeit & 
+	Können nur als Unterobjekt einer oder mehrerer Entities existieren. &
+	Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.  \\ 
+	\hline
+	Zugriffsmethode & 
+	Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen. &
+	Können als Aggregate Root direkt Zugriff erfahren. \\ 
+	\hline
+\end{tabular}
+
+Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin alle Entities bestimmt werden:
+
+%TODO: Subsection oder itemize, oder einfach fette überschiften und dann text?
+\domainModellWithoutTitle{
+	\item \textbf{Basket: } {Als zentrales Datenobjekt besitzt ein Basket zur eindeutigen Identifikation eine Id, dies spricht stark für eine Entity. Zusätzlich bestimmen nicht die enthaltenen Attribute wie Products oder der zugehörige Kunde die Identität des Baskets. Aufgrund der geforderten Anwendungsfälle entsteht zugleich ein Lebenszyklus für die Instanzen eines Baskets.}
+	\item \textbf{Customer: } {In Bounded-Contexts, welche mit den Kundendaten operieren, kann diese Klasse durchaus eine Entity darstellen. In unserer Domain finden keine Operationen auf diesen Informationen statt und die vorangestellten Systeme senden bei Änderungen der Kundendaten diese zu. Folglich besitzen sie keinen eigenen Lebenszyklus, werden ebenfalls nicht separat gespeichert und kann weiterhin als Value Object designt werden.}
+	\item \textbf{BasketItem: } {}
+	\item \textbf{Product: } {}
+	\item \textbf{Price: } {}
+	\item \textbf{CalculationResult: } {Als Datenstruktur, welche bei jeder Neuberechnung aktualisiert wird, könnte die Eigenschaft eines Lebenszyklus erfüllt sein. Jedoch stellt die Klasse einzig ein Zwischenspeicher der Ergebnisse dar und ohne den Kontext eines darüberlegenden, zugehörigen Objekt besitzen diese Daten keine Aussagekraft. Weiterhin sind die gleichen Ergebnisse im Sinne der Identität äquivalent. }
+}
+
+%TODO: Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
+%TODO: Ref to table
+
+
+
+\section{Design der Aggregates anhand der Anwendungsfälle}
+\begin{itemize}[noitemsep,nolistsep]
+	\item Eine Einheit
+	\item Behält Integrität
+	\item Um abzuspeichern in Datenbank
+	\item Eine Transaktion darf nur ein Aggregat bearbeiten
+	\item Changes within can be inconsistent for a while until operation is done.
+\end{itemize}
+
 \blindtext
 
 \section{Wahl der Aggregate Roots}
 \blindtext
 
-\section{Domänenservice}
+\section{Domainservice} %TODO: Titelanpassen
 \blindtext
 
-\section{Applikationsservice}
+\section{Auslagerung von Funktionen in Applicationservices}
 \blindtext
 
-\section{Primäre und Sekundäre Adapter}
+\section{Erstellen der Primären und Sekundären Adapter}
 \blindtext

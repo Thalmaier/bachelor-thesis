@@ -18,10 +18,12 @@
 \usepackage{svg}
 \usepackage{float} % Force placement of figures with [H]
 
-\usepackage{enumitem} %TODO: Remove later
+\usepackage{enumitem}
 
 % Blindtext
-\usepackage{blindtext}
+\usepackage{blindtext} %TODO: Remove later
+\let\oldblindtext\blindtext
+\renewcommand{\blindtext}{{\color{red}\oldblindtext}}
  
 % Schrifteinstellungen
 \usepackage{lmodern} 		% Vektorschrift
@@ -121,6 +123,19 @@ automark,		% Lebende Kolumnentitel
 	\pagenumbering{roman}}
 
 \newcommand{\comment}[1]{} %TODO: Delete later
+\newcommand{\domainModell}[2]{
+	{\large \textbf{#1:}}
+	\begin{itemize}[noitemsep,nolistsep,topsep=-5pt]#2\end{itemize}
+	\vspace{12pt}
+}
+\newcommand{\domainModellWithoutTitle}[1]{
+	\begin{itemize}[noitemsep,nolistsep,topsep=-5pt]#1\end{itemize}
+	\vspace{12pt}
+}
+\newcommand{\subDomainModell}[1]{
+	\begin{itemize}[noitemsep,topsep=-5pt]#1\end{itemize}
+	\vspace{8pt}
+}
 
 \begin{document}
   
@@ -137,8 +152,6 @@ automark,		% Lebende Kolumnentitel
   \tableofcontents
   
   \mainmatter
-  
-  %TODO: Rename Fachbegriffe
   
   \include{kapitel/10_einleitung}
   
@@ -162,6 +175,7 @@ automark,		% Lebende Kolumnentitel
   
   %Refs
   %TODO: Add alot of references
+  %TODO: Add Effective Aggregate Design
   \addcontentsline{toc}{chapter}{Literatur}
   \printbibliography %Citavi 5
   

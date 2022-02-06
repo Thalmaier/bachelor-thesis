@@ -48,21 +48,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Festlegen einer Ubiquitous Language}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Design der Wertobjekte}{16}{}%
+\contentsline {section}{\numberline {4.4}Definition der Value Objects}{16}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Definition der Entitäten}{16}{}%
+\contentsline {section}{\numberline {4.5}Bestimmung der Entities anhand ihrer Identität}{18}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Aggregatbestimmung anhand der Anwendungsfälle}{16}{}%
+\contentsline {section}{\numberline {4.6}Design der Aggregates anhand der Anwendungsfälle}{19}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{17}{}%
+\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{19}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Domänenservice}{17}{}%
+\contentsline {section}{\numberline {4.8}Domainservice}{19}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Applikationsservice}{17}{}%
+\contentsline {section}{\numberline {4.9}Auslagerung von Funktionen in Applicationservices}{19}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}Primäre und Sekundäre Adapter}{17}{}%
+\contentsline {section}{\numberline {4.10}Erstellen der Primären und Sekundären Adapter}{20}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{18}{}%
+\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{21}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Akronyme}{i}{}%
 \defcounter {refsection}{0}\relax 

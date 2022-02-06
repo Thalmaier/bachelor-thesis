@@ -13,6 +13,8 @@ Eine solche Anwendung stellt das Rückgrat des Onlineshops dar. Sie erfährt ste
 
 Durch welche Entwurfsmuster und Vorgehensweise eine solche Software realisiert werden kann stellt die initiale Problemstellung des Projektes dar. Hierbei wurde aufgrund der im nachfolgenden Kapitel stattfindenden Analyse eine Hexagonale Architektur und ein Domain-Driven Ansatz ausgewählt. Weitergehend liegt der Hauptfokus hierbei darauf, wie ein konkreten Aggregationsschnitt des Datenmodells, basierend auf die vorliegende Systemumgebung und erforderlichen Anwendungsfällen des Proof-of-Concepts, die vorher genannten Bedingungen erfüllt.
 
+%TODO: Wie Proof of Concept schreiben?
+
 %TODO: Ist die Problemstellung wirklich klar dargestellt. Bzw, sollte eine Problemstellung anders ausgeführt werden?
 
 %TODO: Hinleitung zum Projektumfeld?
@@ -28,6 +30,7 @@ Durch welche Entwurfsmuster und Vorgehensweise eine solche Software realisiert w
 	\item Vor bzw Nachgelagerte Systeme (CAR (Product Data?), Pricing API, Webshop BOS, XPay, Campaign Promotion CRM, Mirakl,  Customer Order Service (COS)) [(aroma (FOM?), WCS, DMC, SAP)] %TODO: was ist MMSE Marketplace Integration
 \end{itemize}
 %TODO: Unterschied zu Umfeldanalyse
+%TODO: Viele der Systeme sind nicht für den POC relevant... Overkill bzw. Sinn hinter Umfeldanalyse?
 
 \subsection{Das Unternehmen MediaMarktSaturn}
 
@@ -51,7 +54,7 @@ Die Entwicklung des \acrshort{POC}s wurde im \Gls{Scrum}-Team \emph{Chechkout \&
 
 \section{Motivation}
 
-% Aktuell existiert die Software schon. Ist die Frage welcher Architekturstil verwendet werden soll, relevant für die Arbeit oder bereits vorgegeben??
+%TODO: Aktuell existiert die Software schon. Ist die Frage welcher Architekturstil verwendet werden soll, relevant für die Arbeit oder bereits vorgegeben??
 
 Durch den stetigen Anstieg an Komplexität von Softwareprojekten haben sich gängige Designprinzipien und Architekturstile für den Entwicklungsprozess von Software etabliert, um auch weiterhin die vielen Businessanforderungen in einem zukunftssicheren Ansatz zu realisieren. Eine Checkout-Software beinhaltet multiple Prozessabläufe, welche jederzeit angepasst und erweitert werden können. Dadurch ist eine flexible Grundstruktur entscheidend, um die Langlebigkeit der Software zu gewährleisten. Da der Checkout ein wichtiger Bestandteil eines jeden Onlineshops ist, besitzt die Software für MediaMarktSaturn eine zentraler Bedeutung. Folglich ist eine sorgfältige Projektplanung und stetige Revision der bestehenden Software relevant, um auch weiterhin einen reibungslosen Ablauf der Geschäftsprozesse zu ermöglichen. Zur Erreichung dieses Ziels verwendet die zum aktuellen Zeitpunkt bestehende Anwendung Domain-Driven Design und eine Hexagonale Architektur. Der erste Abschnitt dieser Arbeit beschäftigt sich mit der Entscheidung, ob auch weiterhin bzw. warum ein solcher Aufbau verfolgt werden sollte, um die aktuelle Lösung nach Verbesserungsmöglichkeiten zu überprüfen. 
 
