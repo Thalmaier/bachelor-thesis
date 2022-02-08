@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  7 FEB 2022 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  8 FEB 2022 12:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1100,7 +1100,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-140.
+141.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1120,20 +1120,20 @@ LaTeX Warning: Unused global option(s):
 (kapitel/50_fazit.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1160,18 +1160,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 140.
-Package microtype Info: Applying patch `item' on input line 140.
-Package microtype Info: Applying patch `toc' on input line 140.
-Package microtype Info: Applying patch `eqnum' on input line 140.
-Package microtype Info: Applying patch `footnote' on input line 140.
+LaTeX Info: Redefining \microtypecontext on input line 141.
+Package microtype Info: Applying patch `item' on input line 141.
+Package microtype Info: Applying patch `toc' on input line 141.
+Package microtype Info: Applying patch `eqnum' on input line 141.
+Package microtype Info: Applying patch `footnote' on input line 141.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 140.
+LaTeX Info: Redefining \showhyphens on input line 141.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1232,8 +1232,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 140.
-Package biblatex Info: Reference segment=0 on input line 140.
+Package biblatex Info: Reference section=0 on input line 141.
+Package biblatex Info: Reference segment=0 on input line 141.
  (main.glsdefs)
 \openout2 = `glossary.aux'.
 
@@ -1245,9 +1245,9 @@ Package biblatex Info: Reference segment=0 on input line 140.
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
 File: bilder//thi_logo_cropped.pdf Graphic file (type pdf)
 <use bilder//thi_logo_cropped.pdf>
-Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 145.
+Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 146.
 (pdftex.def)             Requested size: 229.81075pt x 101.48807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 145
+LaTeX Font Info:    Trying to load font information for U+msa on input line 146
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1256,7 +1256,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 145
+LaTeX Font Info:    Trying to load font information for U+msb on input line 146
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1286,17 +1286,20 @@ i_logo_cropped.pdf>] [2
 
 ] [2] [3])
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
-2.
- (main.toc)
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
-
+3.
+ (main.toc
 [4
 \babel@aux{ngerman}{}
 \babel@aux{english}{}
 \babel@aux{english}{}
 
+
+
+])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+ [5] [6
 
 
 ]
@@ -1320,7 +1323,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-26.
+28.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1331,11 +1334,9 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 
-
-
 ]
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 38.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 40.
 
 [2]) [3]
 \openout2 = `kapitel/20_grundlagen.aux'.
@@ -1349,44 +1350,44 @@ chapter 2.
 
 ]
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
-' is 6 on input line 39.
+' is 6 on input line 40.
  (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=47, page=1, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=53, page=1, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=48, page=2, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=54, page=2, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 2 used on input line 58.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=49, page=3, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=55, page=3, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 3 used on input line 60.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=50, page=4, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=56, page=4, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 4 used on input line 62.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=51, page=5, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=57, page=5, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 5 used on input line 64.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=52, page=6, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=58, page=6, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 6>
@@ -1394,7 +1395,7 @@ Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
 )
-Overfull \hbox (0.20927pt too wide) in paragraph at lines 44--45
+Overfull \hbox (0.20927pt too wide) in paragraph at lines 45--46
 \OT1/lmss/m/n/10.95 (-20) rei-chen von ge-rin-gen Abh[]angigkeiten zwi-schen de
 n Kom-po-nen-ten. Da-durch sol-len Qua-lit[]atseigenschaften
  []
@@ -1422,85 +1423,85 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitektur_svg-tex.pd
-f' is 11 on input line 63.
+f' is 11 on input line 64.
  (svg-inkscape/HexagonaleArchitektur_svg-tex.pdf_tex
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=62, page=1, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=69, page=1, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e1 used on input line 56.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=63, page=2, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=70, page=2, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e2 used on input line 58.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=64, page=3, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=71, page=3, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e3 used on input line 60.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=65, page=4, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=72, page=4, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e4 used on input line 62.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=66, page=5, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=73, page=5, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e5 used on input line 64.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=67, page=6, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=74, page=6, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e6 used on input line 66.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=68, page=7, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=75, page=7, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e7 used on input line 68.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=69, page=8, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=76, page=8, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e8 used on input line 71.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=70, page=9, 663.5791pt x 
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=77, page=9, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e9 used on input line 74.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=71, page=10, 663.5791pt x
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=78, page=10, 663.5791pt x
  675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e10 used on input line 76.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=72, page=11, 663.5791pt x
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=79, page=11, 663.5791pt x
  675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e11 used on input line 78.
-(pdftex.def)             Requested size: 298.75116pt x 304.0142pt.
+(pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
 ) [7 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf> <./svg-inkscape/Hexagon
 aleArchitektur_svg-tex.pdf
 
@@ -1543,64 +1544,58 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [8]
-<./svg-inkscape/ExampleDomain_svg-raw.pdf, id=82, 471.21547pt x 475.4011pt>
+<./svg-inkscape/ExampleDomain_svg-raw.pdf, id=88, 471.21547pt x 475.4011pt>
 File: ./svg-inkscape/ExampleDomain_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomain_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomain_svg-raw.pdf  used on inpu
-t line 92.
+t line 93.
 (pdftex.def)             Requested size: 471.21431pt x 475.39992pt.
- [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>]
-Overfull \hbox (28.42517pt too wide) in paragraph at lines 103--104
-\OT1/lmss/m/n/10.95 (-20) menh[]angende Auf-ga-ben in ei-nem Do-ma-in-ser-vice 
-geb[]undelt. Um Sei-ten-ef-fek-te durch Zu-stands[]anderungen
- []
-
-) [11]
+ [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>] [11]) [12]
 \openout2 = `kapitel/30_planung.aux'.
 
- (kapitel/30_planung.tex
+
+(kapitel/30_planung.tex
 chapter 3.
-) [12
+) [13
 
 
 
 
-] [13]
+] [14]
 \openout2 = `kapitel/40_poc.aux'.
 
  (kapitel/40_poc.tex
 chapter 4.
-[14
+[15
 
 
 
 
-] [15] [16] [17]
-Underfull \hbox (badness 2237) in paragraph at lines 148--148
+] [16] [17] [18]
+Underfull \hbox (badness 2237) in paragraph at lines 146--146
 \OT1/lmss/m/n/10.95 (+20) Wer-ten be-sitz-ten glei-che
  []
 
 
-Overfull \hbox (0.99203pt too wide) in paragraph at lines 143--168
+Overfull \hbox (0.99203pt too wide) in paragraph at lines 141--166
 [][] 
  []
 
-[18] [19]) [20]
+[19]) [20] [21]
 \openout2 = `kapitel/50_fazit.aux'.
 
  (kapitel/50_fazit.tex
 chapter 5.
-) [21
-
-
-
-
-] [22
+) [22
 
 
 
 
 ] (main.acr) (main.gls [1
+
+
+
+
 
 ]) [2
 
@@ -1629,13 +1624,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29638 strings out of 478659
- 617890 string characters out of 2845920
- 1534102 words of memory out of 3000000
+ 29636 strings out of 478659
+ 617860 string characters out of 2845920
+ 1535101 words of memory out of 3000000
  46959 multiletter control sequences out of 15000+600000
- 500102 words of font info for 200 fonts, out of 8000000 for 9000
+ 500049 words of font info for 199 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 108i,21n,106p,10601b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,20n,106p,10601b,2522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
 /Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Use
@@ -1644,9 +1639,9 @@ ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/
 Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb>
-Output written on main.pdf (31 pages, 266869 bytes).
+Output written on main.pdf (33 pages, 271081 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  45174 words of extra memory for PDF output out of 51595 (max. 10000000)
 

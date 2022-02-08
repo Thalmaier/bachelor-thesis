@@ -32,37 +32,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Domain-Driven Design}{8}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{12}{}%
+\contentsline {subsection}{\numberline {2.3.1}Value Object}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Umfeldanalyse}{12}{}%
+\contentsline {subsection}{\numberline {2.3.2}Entity}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Anwendungsfälle}{12}{}%
+\contentsline {subsection}{\numberline {2.3.3}Aggregate}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{12}{}%
+\contentsline {subsection}{\numberline {2.3.4}Applicationservice}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{14}{}%
+\contentsline {subsection}{\numberline {2.3.5}Domainservice}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Festlegung und Analyse der Domain}{14}{}%
+\contentsline {subsection}{\numberline {2.3.6}Factory}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Abgrenzung des Bounded Contexts}{14}{}%
+\contentsline {subsection}{\numberline {2.3.7}Repository}{12}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Festlegen einer Ubiquitous Language}{15}{}%
+\contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Definition der Value Objects}{16}{}%
+\contentsline {section}{\numberline {3.1}Umfeldanalyse}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Bestimmung der Entities anhand ihrer Identität}{18}{}%
+\contentsline {section}{\numberline {3.2}Anwendungsfälle}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Design der Aggregates anhand der Anwendungsfälle}{19}{}%
+\contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Wahl der Aggregate Roots}{19}{}%
+\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Domainservice}{19}{}%
+\contentsline {section}{\numberline {4.1}Festlegung und Analyse der Domain}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Auslagerung von Funktionen in Applicationservices}{19}{}%
+\contentsline {section}{\numberline {4.2}Abgrenzung des Bounded Contexts}{15}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}Erstellen der Primären und Sekundären Adapter}{20}{}%
+\contentsline {section}{\numberline {4.3}Festlegen einer Ubiquitous Language}{16}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{21}{}%
+\contentsline {section}{\numberline {4.4}Definition der Value Objects}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Bestimmung der Entities anhand ihrer Identität}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Design der Aggregates anhand der Anwendungsfälle}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Domainservice}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Auslagerung von Funktionen in Applicationservices}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.9}Erstellen der Primären und Sekundären Adapter}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{22}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Akronyme}{i}{}%
 \defcounter {refsection}{0}\relax 

@@ -44,6 +44,19 @@ Meeting:
 - REAL Problem behind too big / too small aggregates? 
 - Entity != New Table in DB. But why here it says otherwise: https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf Seite 5 Middle Left
 
+- WIE VIEL PROZENT DIE FRAGESTELLUNG?
+TODO: Connection from BasketFactory to Basket Interface in Diagramm
+
+6 TEAMMITGLIEDER
+FÜR AGGREGATSSCHNITT: Richtlinie beim hinzufügen von Produkts: Max 100.000€, somit CalculationResult up-to-date benötigt, wird schwerer zu überprüfen
+
+- Muss Basket immer sich selber konstant halten?
+    Beispiel: Überprüfen auf MaxAmount per same Product: Macht DomainService und bei erfolg basket.addItem()
+    Aber dann kann Basket.addItem aufgerufen werden ohne diese überprüfung -> BUGANFÄLLIG..
+    Pass DomainService to Basket?
+
+- Entities behalten immer ihre Identität, während Value Objects sie durch erstellen neuer Objecte ändern können
+
 TODO: 
 https://microservices.io/patterns/data/saga.html
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf
