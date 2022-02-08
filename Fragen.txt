@@ -44,6 +44,10 @@ Meeting:
 - REAL Problem behind too big / too small aggregates? 
 - Entity != New Table in DB. But why here it says otherwise: https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf Seite 5 Middle Left
 
+6 TEAMMITGLIEDER
+
+- Entities behalten immer ihre Identität, während Value Objects sie durch erstellen neuer Objecte ändern können
+
 TODO: 
 https://microservices.io/patterns/data/saga.html
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf
