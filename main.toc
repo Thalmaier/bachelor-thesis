@@ -66,15 +66,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Bestimmung der Entities anhand ihrer Identität}{19}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Design der Aggregates anhand der Anwendungsfälle}{20}{}%
+\contentsline {chapter}{\numberline {5}Design der Aggregates anhand der Anwendungsfälle}{20}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Domainservice}{20}{}%
+\contentsline {section}{\numberline {5.1}Initiales Design als ein großes Basket-Aggregate}{20}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Auslagerung von Funktionen in Applicationservices}{20}{}%
+\contentsline {section}{\numberline {5.2}Trennung der Zahlungsinformationen von dem Basket}{20}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}Erstellen der Primären und Sekundären Adapter}{20}{}%
+\contentsline {section}{\numberline {5.3}Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen}{20}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit und Empfehlungen}{22}{}%
+\contentsline {section}{\numberline {5.4}Maximale Unterteilung des Models mithilfe asynchroner Verarbeitung}{21}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Implementierung der Hexagonalen Architektur im Bounded-Context}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Domainservice}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Auslagerung von Funktionen in Applicationservices}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Erstellen der Primären und Sekundären Adapter}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{23}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Akronyme}{i}{}%
 \defcounter {refsection}{0}\relax 

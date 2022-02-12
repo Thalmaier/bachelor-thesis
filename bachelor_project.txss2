@@ -1,7 +1,7 @@
 {
     "InternalPDFViewer": {
-        "Embedded": true,
-        "File": "main.pdf"
+        "Embedded": false,
+        "File": ""
     },
     "Session": {
         "Bookmarks": [
@@ -10,12 +10,12 @@
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 0,
+                "Col": 36,
                 "EditorGroup": 0,
                 "FileName": "main.tex",
-                "FirstLine": 0,
+                "FirstLine": 127,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 164
             },
             {
                 "Col": 0,
@@ -52,18 +52,34 @@
             {
                 "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "kapitel/40_poc.tex",
+                "FileName": "kapitel/40_model.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 0
             },
             {
-                "Col": 10,
+                "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "kapitel/50_fazit.tex",
+                "FileName": "kapitel/50_aggregatdesign.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 1
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/60_poc.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "kapitel/70_fazit.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
             }
         ],
         "MasterFile": ""

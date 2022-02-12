@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  8 FEB 2022 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  14 FEB 2022 02:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1116,8 +1116,8 @@ LaTeX Warning: Unused global option(s):
     [headings].
 
 (main.aux (glossary.aux) (kapitel/00_abstract.aux) (kapitel/10_einleitung.aux)
-(kapitel/20_grundlagen.aux) (kapitel/30_planung.aux) (kapitel/40_poc.aux)
-(kapitel/50_fazit.aux))
+(kapitel/20_grundlagen.aux) (kapitel/30_planung.aux) (kapitel/40_model.aux)
+(kapitel/50_aggregatdesign.aux) (kapitel/60_poc.aux) (kapitel/70_fazit.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
@@ -1548,7 +1548,7 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 File: ./svg-inkscape/ExampleDomain_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomain_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomain_svg-raw.pdf  used on inpu
-t line 93.
+t line 94.
 (pdftex.def)             Requested size: 471.21431pt x 475.39992pt.
  [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>] [11]) [12]
 \openout2 = `kapitel/30_planung.aux'.
@@ -1562,9 +1562,9 @@ chapter 3.
 
 
 ] [14]
-\openout2 = `kapitel/40_poc.aux'.
+\openout2 = `kapitel/40_model.aux'.
 
- (kapitel/40_poc.tex
+ (kapitel/40_model.tex
 chapter 4.
 [15
 
@@ -1581,34 +1581,55 @@ Overfull \hbox (0.99203pt too wide) in paragraph at lines 141--166
 [][] 
  []
 
-[19]) [20] [21]
-\openout2 = `kapitel/50_fazit.aux'.
+) [19]
+\openout2 = `kapitel/50_aggregatdesign.aux'.
 
- (kapitel/50_fazit.tex
+ (kapitel/50_aggregatdesign.tex
 chapter 5.
+[20
+
+
+
+
+]) [21]
+\openout2 = `kapitel/60_poc.aux'.
+
+ (kapitel/60_poc.tex
+chapter 6.
 ) [22
+
+
+
+
+]
+\openout2 = `kapitel/70_fazit.aux'.
+
+ (kapitel/70_fazit.tex
+chapter 7.
+) [23
+
+
+
+
+] [24
 
 
 
 
 ] (main.acr) (main.gls [1
 
-
-
-
-
 ]) [2
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-81.
+85.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 181.
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 185.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1618,17 +1639,18 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 ] (main.aux (glossary.aux) (kapitel/00_abstract.aux)
 (kapitel/10_einleitung.aux) (kapitel/20_grundlagen.aux) (kapitel/30_planung.aux
-) (kapitel/40_poc.aux) (kapitel/50_fazit.aux))
+) (kapitel/40_model.aux) (kapitel/50_aggregatdesign.aux) (kapitel/60_poc.aux)
+(kapitel/70_fazit.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29636 strings out of 478659
- 617860 string characters out of 2845920
- 1535101 words of memory out of 3000000
- 46959 multiletter control sequences out of 15000+600000
- 500049 words of font info for 199 fonts, out of 8000000 for 9000
+ 29694 strings out of 478659
+ 620300 string characters out of 2845920
+ 1539675 words of memory out of 3000000
+ 47001 multiletter control sequences out of 15000+600000
+ 500143 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
@@ -1639,9 +1661,9 @@ ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/
 Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb>
-Output written on main.pdf (33 pages, 271081 bytes).
+Output written on main.pdf (35 pages, 274701 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  45174 words of extra memory for PDF output out of 51595 (max. 10000000)
 
