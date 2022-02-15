@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  15 FEB 2022 08:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  15 FEB 2022 10:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1671,15 +1671,15 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf):
 File: ./svg-inkscape/SL ExecPayment_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL ExecPayment_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL ExecPayment_svg-raw.pdf  used on inp
-ut line 107.
+ut line 109.
 (pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
 
-Overfull \hbox (22.93011pt too wide) in paragraph at lines 107--108
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 109--110
  [][] 
  []
 
 
-Overfull \hbox (10.68585pt too wide) in paragraph at lines 117--118
+Overfull \hbox (10.68585pt too wide) in paragraph at lines 119--120
 \OT1/lmss/m/n/10.95 (-20) Proof-Of-Concept orientiert sich an diese Contracts, 
 erleichtert allerdings die Kommunikationsbedingungen,
  []
@@ -1688,10 +1688,10 @@ erleichtert allerdings die Kommunikationsbedingungen,
 File: ./svg-inkscape/ContextDiagramm_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ContextDiagramm_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ContextDiagramm_svg-raw.pdf  used on in
-put line 123.
+put line 125.
 (pdftex.def)             Requested size: 482.17522pt x 271.38823pt.
 
-Overfull \hbox (22.55371pt too wide) in paragraph at lines 123--124
+Overfull \hbox (22.55371pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
@@ -1865,17 +1865,29 @@ rhin sind die gleichen Ergebnisse unterschiedlicher
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
+
+Overfull \hbox (24.72311pt too wide) in paragraph at lines 16--18
+\OT1/lmss/m/n/10.95 (-20) Das Design eines groen Aggregats f[]allt Entwicklern
+ meist nat[]urlich leichter. Eine einzelne zusammenh[]angende
+ []
+
 [29
 
 
 
 
-]) [30]
+] [30]
+Overfull \hbox (6.51775pt too wide) in paragraph at lines 52--53
+\OT1/lmss/m/n/10.95 (-20) Aufgrund dessen, dass ein Aggregat eine transaktional
+e Grenze abbildet, wirkt sich der Aggregationsschnitt
+ []
+
+[31]) [32] [33]
 \openout2 = `kapitel/60_poc.aux'.
 
  (kapitel/60_poc.tex
 chapter 6.
-) [31
+) [34
 
 
 
@@ -1885,16 +1897,17 @@ chapter 6.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [32
+) [35
+
+
+
+
+] [36
 
 
 
 
 ] (main.acr) (main.gls [1
-
-
-
-
 
 ]) [2
 
@@ -1924,11 +1937,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29948 strings out of 480528
- 624595 string characters out of 2896682
- 1537964 words of memory out of 3000000
- 47054 multiletter control sequences out of 15000+600000
- 566511 words of font info for 208 fonts, out of 8000000 for 9000
+ 29972 strings out of 480528
+ 625203 string characters out of 2896682
+ 1538964 words of memory out of 3000000
+ 47064 multiletter control sequences out of 15000+600000
+ 567415 words of font info for 215 fonts, out of 8000000 for 9000
  3 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2604s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/thalmaier/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmsc.enc}{/home
@@ -1939,9 +1952,9 @@ s/install/fonts/type1/public/lm/lmss10.pfb></home/thalmaier/.miktex/texmfs/inst
 all/fonts/type1/public/lm/lmss12.pfb></home/thalmaier/.miktex/texmfs/install/fo
 nts/type1/public/lm/lmssbx10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/
 type1/public/lm/lmsso10.pfb>
-Output written on main.pdf (43 pages, 602843 bytes).
+Output written on main.pdf (47 pages, 617533 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
+ 368 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  45219 words of extra memory for PDF output out of 51595 (max. 10000000)
 

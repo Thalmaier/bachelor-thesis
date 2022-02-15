@@ -9,10 +9,64 @@
 
 %TODO: Zeigen des Bestellprozesses anhand von MediamarktSaturn
 
-\section{Initiales Design als ein großes Basket-Aggregate}
-\blindtext
+Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies den Schnitt der Aggregates. Verschiedene Schnitte genießen verschiedene Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aufteilungen untersucht und durch verschiedene Kriterien bewertet. Diese Kriterien umfassen unter anderem Performance, Komplexität, Konsistenz, Parallelität, Relevanz und Anwendbarkeit im Bezug auf den Bounded Contexts des Checkouts.
 
-\section{Trennung der Zahlungsinformationen von dem Basket}
+\section{Initiales Design als ein großes Basket-Aggregate}
+
+Das Design eines großen Aggregats fällt Entwicklern meist natürlich leichter. Eine einzelne zusammenhängende Struktur, durch welche Daten einfach bearbeitet und Invarianten überprüft werden können. Daher hält sich die Komplexität bei diesem Aggregationsschnitt weitestgehend in Grenzen. Vor allem müssen kaum Überlegungen über transaktionale Konsistenz getroffen werden, da die Grenzen der Transaktion all umspannend ist. Die erste Variante des Proof-Of-Concepts wurde mit diesem Design im Gedanken entwickelt und stellt das Grundgerüst für alle folgenden Konzepte dar. Zur vereinfachten Referenz auf die einzelnen Umsetzungsvarianten wird das Design, welches einen großen Basket zugrundeliegend hat, als '\emph{Variante A}' betitelt.
+%TODO: Variante A ist ok???
+
+
+\subsection{Performance von großen Aggregates im Vergleich}
+
+%TODO: Lazy loading
+Als Konsequenz eines großen Aggregates ergibt sich, dass immer das ganze Aggregate geladen werden muss, da auf darunterliegende Datenstrukturen nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung einer Entity tief im Aggregat müssen alle anderen Daten ebenfalls geladen werden. Die Auswirkungen dieser Aussage kann auf Datenbankebene anhand von Lazy-Loading oder durch Einsatz einer dokumentbasierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird die diese Richtlinie anhand unseres Bounded Contexts analysiert.
+
+Wie oben erwähnt, ermöglicht ein kleinerer Aggregationsschnitt das unabhängige laden und bearbeiten der Aggregates. In Betrachtung der Anwendungsfälle können die Operationen in drei große Gruppen umfasst werden. Anfragen, welche Value Objects im Basket bearbeiten stellt die erste Ansammlung dar. Diese würden unnötige Daten laden, da nur der Basket mit möglichst wenig Value Objects relevant ist. Ebenfalls gilt dies für die Anfragen, welche BasketItems oder den PaymentProcess anpassen, weil sie den ganzen Basket laden anstatt nur die wirklich benötigten Daten.
+
+Wird die \emph{Variante A} aufgeteilt in Basket-, Payment und BasketItem-Aggregate (\emph{Variante B}) können diese unabhängig voneinander geladen und bearbeitet werden. Ohne Beachtung, welche Auswirkungen dieses neu überlegte Design auf andere Faktoren hat, ist eine Performanceverbesserung anhand ersten Überlegungen zu erwarten. Die gewonnene Performance wird allerdings aufgrund mehrerer Umständen verringert.
+
+\subsubsection{Invarianten über Aggregatsgrenzen hinweg}
+
+Wird dem Warenkorb ein neuer Artikel hinzugefügt hat dies zu Folge, dass nicht nur ein neues Item angelegt, sondern auch der Baskets neu berechnet werden muss. Sofern eine Aggregatstrennung zwischen Basket und BasketItem vorliegt, muss dennoch der ganze Basket geladen werden, andernfalls ist es nicht möglich den Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Contexts existieren viele dieser Businessanforderungen, welche mehrere Objekte benötigen, um angewandt zu werden. Zudem ist es gegen die grundlegenden Bestimmungen eines Aggregates, dass eine Anfrage bzw. Transaktion zwei oder mehrere Aggregate bearbeiten. Dieser Anwendungsfall hätte eine Speicherung eines neuen BasketItems und die Aktualisierung des CalculationResults des Baskets zufolge. Schlussfolgernd wäre eine solche Operation nicht erlaubt ohne Verwendung von eventueller Konsistenz. Um genauer zu bestimmen, welche tatsächliche Performance erzielt werden kann durch kleinere Aggregates am konkreten Design der \emph{Variante B} müssen die Anzahl der tatsächlich unabhängig abschließbaren Operationen untersucht werden. Die vorher festgelegten Swimlane Diagramme helfen bei dieser Aufgabe.
+
+Ein Abruf eines Baskets kommt einher mit dem Laden aller anderen Aggregates, da die Touchpoints den gesamten Basket benötigen. Dies gilt ebenfalls für alle anderen Anwendungsfälle, welche als Antwort auf ihre Anfrage einen kompletten Basket erwarten. Das Stornieren des Baskets und Setzten der Checkout-Daten ist positiv von dieser Anpassung betroffen. Jedoch ist die Initiierung und Durchführung des Bezahlvorgangs nicht komplett unabhängig abschließbar, da im Nachhinein der Status des Baskets angepasst werden muss. Dadurch entsteht eine Abhängigkeit, welche im Nachhinein erfüllt werden muss und somit zur eventuellen Konsistenz führt. Die größte Anzahl an Api Anfragen beziehen sich auf das Hinzufügen und Bearbeiten von BasketItems und die Verwaltung des Bezahlvorgangs. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle durch einen Umbau der Architektur von Variante A auf Variante B wirklich positiv betroffen.
+
+\subsubsection{Einfluss des Datenbankmodells auf den Aggregationsschnitt}
+
+Das Design einer Software soll stets so weit wie möglich unabhängig von verwendeten Technologien sein. Technologien entwickeln sich weiter, werden durch neuer ersetzt und bringen unnötige Abhängigkeiten in den Quelltext. Theoretisch hat somit eine Beeinflussung der Architektur durch eine externe Komponente einen negativen Effekt auf die Qualität der Software und ihre Wartbarkeit. Dennoch kann in der Praxis dieser Gedanke durchaus Vorteile bergen, welche dieses Vorgehen gerechtfertigt. Folglich wird der Aggregatsschnitt aus Sicht der Datenbank bewertet.
+
+Laut Definition erhält jedes Aggregate seine eigene Tabelle in der darunterliegenden Datenbank. Daher existieren in \emph{Variante B} mindestens die Tabelle für den Basket, BasketItems und PaymentProcess. In \emph{Variante A} kann der PaymentProcess in die gleiche Tabelle wie der Basket geschrieben werden, da eine Eins-zu-Eins Relation vorliegt. Obwohl es nur ein Aggregate gibt, sind dennoch zwei Tabellen für Basket und BasketItem notwendig, da in einer Relationalen Datenbank eine Eins-zu-N Beziehung nicht anders dargestellt werden kann. Demnach muss beim Abruf eines kompletten Baskets in \emph{Variante A} N Joins durchgeführt werden, wobei \emph{Variante B} N+1 Joins benötigt, wobei N die Anzahl der BasketItems entspricht. Dies resultiert in eine schlechtere Performance der \emph{Variante B} zumindest in Bezug der Datenbankabfrage. Wie bereits erwähnt, erwarten eine Vielzahl von Anfragen alle Daten des Baskets zurück und dadurch erhalten wir eine erhöhte Bearbeitungszeit der Anfragen.
+
+%TODO: Performaceanalyse im POC
+%TODO: Collection
+Sollte die verwendete Datenbank jedoch einen dokumentbasierten Ansatz verfolgen, gilt vorheriger Absatz nur noch bedingt. Hierbei benötigt \emph{Variante B} weiterhin drei eigene Collections, jedoch kann \emph{Variante A} in einem einzigen Eintrag gespeichert und geladen werden. An sich besitzt der einzelne Datensatz zwar mehr Daten, allerdings hat dies keine Auswirkung auf die Gesamtperformance. Daher würde bei einem Umbau der Aggregate für die meisten Anwendungsfälle eine einzelne Suchanfrage in N+1 Suchanfragen abgewandelt werden. Dies kann bemerkbare Auswirkungen auf die Antwortzeit unserer Applikation haben.
+
+Im ersten Absatz wurde beschrieben, dass eine Technologie keine Auswirkung auf die Architektur haben sollte, konträr dazu ist bei der Betrachtung der Applikationsperformance dies eventuell sinnvoll. Sollte eine relationale Datenbank verwendet werden, hält sich die Performance Einbußen in Grenzen. Hingegen bei einer dokumentbasierten Datenbank ist dieser Effekt vervielfacht. Daher kann die Entscheidung über den verwendeten Aggregationsschnitt durchaus von einer konkreten Technologie beeinflusst werden. 
+
+%TODO: ,da erstezten durch andere Wörte in der ganzen Bachelorarbeit
+
+\subsection{Parallele Bearbeitung eines großen Aggregates}
+% TODO: Datenbankanomalien erklären etc.
+%TODO: Lockin method
+Aufgrund dessen, dass ein Aggregat eine transaktionale Grenze abbildet, wirkt sich der Aggregationsschnitt auf die mögliche Parallelität der Anfragen aus. Ausgehend von \emph{Variante A} resultiert eine Bearbeitung der Daten des Baskets in der Speicherung des kompletten Warenkorbs in der Datenbank. Bei Schreibprozessen können Anomalien auftreten wodurch die Transaktion bzw. der Schreibvorgang abgebrochen werden muss. Eine mögliche Anomalie ist das sogenannte 'Lost Update'-Problem. Es kann auftreten wenn zwei Transaktionen den gleichen Datensatz zeitgleich bearbeiten. Sie beginnen ihre Operationen auf den selben Startzustand und schreien ihre Ergebnisse zurück in die Datenbank. Dabei kann die Änderungen einer Transaktion sofort durch eine andere überschrieben werden und dessen Datenänderungen gehen verloren.
+
+Konkretisiert kann dieses Problem anhand des Baskets. Zwei Personen fügen beispielsweise einen neuen Artikel zu ein und demselben Warenkorb hinzu. Dies kann zum Beispiel bei einer Wishlist auftreten, welche von einer Personengruppe bearbeitet werden kann. Der erste Kunde legt hierbei ein neues Handy in den Warenkorb, wohingegen zeitgleich ein anderer Nutzer einen Fernseher hinzufügt. Beide Transaktionen starten mit einem leeren Warenkorb und schreiben in die Datenbank einen aktualisierten Datensatz mit nur einem Artikel. Daher geht die Änderung eines der zwei Personen verloren. 
+
+Eine Lösung dieses Problems kann durch optimistischen oder pessimistischen Verfahren erzielt werden. Entweder wird im optimistischen Ansatz anhand eines Versionsfeldes überprüft, ob der Datensatz in der Zwischenzeit geändert worden ist und im Falle dessen zurückgewiesen, oder der Datensatz wird durch die pessimistischen Methode gesperrt und die zweite Transaktion muss warten bis die erste den Schreibprozess abschließt. Dementsprechend ist die zeitgleiche Bearbeitung eines Aggregats eingeschränkt. Existieren Anwendungsfälle in denen eine hohe Parallelität notwendig ist, sollten die Aggregates sofern realisierbar voneinander getrennt werden. 
+
+\subsection{Bewertung des großen Aggregationsschnitts}
+
+Abschließend kann anhand der vorhergehenden Überlegungen der Aggregationsschnitt von \emph{Variante A} bewertet werden.
+
+\begin{itemize}[noitemsep,nolistsep,topsep=-2pt]
+	\item \textbf{Komplexität: } {Die Handhabung und Anwendung der Businessanforderungen können maximal mühelos umgesetzt werden. Der Source Code muss durch keine komplizierteren Vorgänge ergänzt werden. }
+	\item \textbf{Performance: } {Jede Anfrage benötigt das Auslesen des ganzen Baskets. Jedoch ist dies in den meisten Anwendungsfällen ohnehin von Nöten. Ein kleinere Aggregationsschnitts kann die Performance sogar verschlechtern. }
+	\item \textbf{Parallelität: } {Eine zeitgleiche Bearbeitung des Baskets oder eines Objektes innerhalb ist nicht möglich.}
+	\item \textbf{Anwendbarkeit: } {In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.}
+\end{itemize}
+
+\section{Trennung der Zahlungsinformationen von dem Basket-Aggregate}
 \blindtext
 
 \section{Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen }
