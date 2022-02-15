@@ -9,7 +9,7 @@ Einleitend werden Struktur, Motivation und die abgeleiteten Forschungsfragen dis
 
 %TODO: Caching Use Case
 
-Um den Kunden im Onlineshop oder den Mitarbeitern in den Märkten eine einwandfreie Benutzererfahrung zu gewährleisten, soll die Checkout-Software alle Prozesse vom Erstellen eines Warenkorbs bis hin zum Abschließen des Kaufprozesses verwalten können. Dadurch entstehen eine Vielzahl von möglichen Anwendungsfällen, welche alle korrekt und möglichst performant abgearbeitet werden müssen. Zur Dokumentation dieser Prozesse empfiehlt es sich in der Entwicklungsphase die Prozessabläufe in einem Diagramm abzubilden. Zusätzlich zu den Dokumentationszwecken der Diagramme kommt noch hinzu, dass eventuelle Unklarheiten geklärt, Bedingungen an den Daten oder Prozessen aufgedeckt und sich natürlich die Benutzung der Ubiquitous Language etabliert. Auf Basis dieser Anwendungsfälle ist es uns später möglich Artefakte des Domain-Driven Designs leichter zu definieren. Vor allem die entscheiden Invarianten bilden sich heraus und das Datenmodell kann einfacher in Aggregate unterteilt werden. Für den Proof-Of-Concept sind die wichtigsten Anwendungsfälle in diesem Kapitel reduziert definiert. Zu beachten war bei der Prozessvereinfachung, dass Bedingungen zwischen Datenstrukturen weiterhin unverändert sind, damit die Aggregataufteilung im Hauptkaptiel dieser Arbeit nicht von den möglichen Designs der Produktivanwendung abweicht. Die folgenden Prozesse wurden in Zusammenarbeit zwischen den Teams des Onlineshops, Checkouts und zuständigen Stakeholdern erarbeitet. Als Darstellungsmethode wurde sich auf Swimlane-Diagramme festgelegt, somit kann die Interaktion zwischen den Systemen ebenfalls abgebildet werden.
+Um den Kunden im Onlineshop oder den Mitarbeitern in den Märkten eine einwandfreie Benutzererfahrung zu gewährleisten, soll die Checkout-Software alle Prozesse vom Erstellen eines Warenkorbs bis hin zum Abschließen des Kaufprozesses verwalten können. Dadurch entstehen eine Vielzahl von möglichen Anwendungsfällen, welche alle korrekt und möglichst performant abgearbeitet werden müssen. Zur Dokumentation dieser Prozesse empfiehlt es sich in der Entwicklungsphase die Prozessabläufe in einem Diagramm abzubilden. Zusätzlich zu den Dokumentationszwecken der Diagramme kommt noch hinzu, dass eventuelle Unklarheiten geklärt, Bedingungen an den Daten oder Prozessen aufgedeckt und sich natürlich die Benutzung der Ubiquitous Language etabliert. Auf Basis dieser Anwendungsfälle ist es uns später möglich Artefakte des Domain-Driven Designs leichter zu definieren. Vor allem die entscheiden Invarianten bilden sich heraus und das Datenmodell kann einfacher in Aggregate unterteilt werden. Für den Proof-Of-Concept sind die wichtigsten Anwendungsfälle in diesem Kapitel reduziert definiert. Zu beachten war bei der Prozessvereinfachung, dass Bedingungen zwischen Datenstrukturen weiterhin unverändert sind, damit die Aggregataufteilung im Hauptkaptiel dieser Arbeit nicht von den möglichen Designs der Produktivanwendung abweicht. Dieses Kapitel dient somit als Grundlage für das Design der Software und wird in späteren Kapiteln referenziert. Die folgenden Prozesse wurden in Zusammenarbeit zwischen den Teams des Onlineshops, Checkouts und zuständigen Stakeholdern erarbeitet. Als Darstellungsmethode wurde sich auf Swimlane-Diagramme festgelegt, somit kann die Interaktion zwischen den Systemen ebenfalls abgebildet werden.
 %TODO: Stakeholder und Swimlane im Glossary
 
 % TODO: Subsection oder Fett gedruckte kleine "Überschrift"
@@ -29,7 +29,8 @@ Ein Basket, also ein Warenkorb, stellt das grundlegendste Konstrukt des Checkout
 \subsection{Abruf eines Warenkorbs anhand dessen ID}
 
 %TODO: Ist "invarianten" irgendwo mal gut erklärt?
-Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für dieses Projekt besitzt. Dadurch existieren keine weiteren Businessanforderungen und vor allem keine Invarianten, welche erfüllt sein müssen. Es verbleiben technische Bedienungen, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Daten und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das Swimlane Diagramm für diesen Anwendungsfall dar.
+%TODO: Aktualiserung mit Aufruf der APIs darstellen?
+Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Die wichtigste Bedingung für diesen Anwendungsfall besagt, dass der Warenkorb stets mit aktuellen Daten befüllt sein muss. Dies stellt eine Herausforderung dar, da sich Preise und Artikeldetails mit dem Verlauf der Zeit ändern. Dies wird möglichst performant durch das Zwischenspeichern dieser Informationen auf begrenzte Dauer gelöst. Dadurch wird nicht bei jedem Aufruf alle Informationen neu geladen, sind aber dennoch zu einer hohen Wahrscheinlichkeit aktuell. Genaue Zeitspannen wurden durch die verantwortlichen Teams festgelegt. Dies bedeutet jedoch, dass die Software das Alter der im Warenkorb enthaltenen Daten durchführen und gegebenenfalls aktualisieren muss. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für dieses Projekt besitzt. Es verbleiben Aufgaben, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Daten und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das Swimlane Diagramm für diesen Anwendungsfall dar.
 
 \begin{figure}[htbp]
 	\centering
@@ -61,7 +62,9 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 	\label{fig:SL-Checkoutdata}
 \end{figure}
 
-\subsection{Hinzufügen eines Produkets anhand einer Produkt-ID}
+\subsection{Hinzufügen eines Produktes anhand einer Produkt-ID}
+
+Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln und deren Quantität, Produktbeschreibung und ausgewählte Service bzw. Garantien. Der aufwändigste und deswegen in Grafik \ref{fig:SL-AddProduct} abgebildete Prozess ist hierbei das Hinzufügen eines neuen Produktes zum Basket. Dabei sendet der Client lediglich die zugehörige Produkt-ID, deswegen müssen externe System von der Checkout-Software aufgerufen werden. Dazu gehört die Product-Api, welche alle notwendigen Produktdetails sendet. Der Artikelpreis selbst ist hierbei nicht in den Produktinformationen zu finden, da dieser vom jeweiligen Markt unterschiedlich sein kann. Daher ist ein weiterer Aufruf einer API benötigt, welche zu den IDs des Produktes und Outlets den jetzigen Preis zurückschickt. Diese zwei APIs müssen ebenfalls bei der Aktualisierung des Warenkorbs in anderen Anwendungsfällen aufgerufen werden. Zusätzlich folgt eine Validierung des Warenkorbs auf verschiedene Parameter. Unter anderem darf die Gesamtanzahl der Artikel im Warenkorb keinen festen Wert überschreiten. Der aktualisierte Basket wird beim erfolgreichen Abschluss der Operation an den Touchpoint zurückgegeben.
 
 \begin{figure}[htbp]
 	\centering
@@ -70,8 +73,11 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 	\label{fig:SL-AddProduct}
 \end{figure}
 
-\subsection{Hinzufügen einer Bezahlmethode}
+\subsection{Hinzufügen einer Bezahlungsmethode}
 
+Eine weiter essentielle Funktion ist das Hinzufügen von Bezahlarten, damit der Kauf erfolgreich initiiert werden kann.  Da es sich nur um das ungeprüfte Anhängen der Beizahlinformationen handelt, müssen keine strengen Validierungen vorgenommen werden, da diese Aufgabe durch ein externes System in einem späteren Schritt des Checkouts erledigt wird. Dennoch werden logische Überprüfungen durchgeführt, wie zum Beispiel, dass der Warenkorb nicht leer oder bereits bezahlt sein darf, da dies keinen Anwendungsfall in diesem Prozess darstellt. Ebenfalls ist eine Neuberechnung aller Bezahlinformationen notwendig. Analog zu den vorgehenden Fällen wurde das Diagramm \ref{fig:SL-PutBezahlmethode} designt.
+
+%TODO: "nein" fehlt auf einen Pfeil des Graphes
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false]{svg/SL PutBezahlmethode.svg}
@@ -80,6 +86,8 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 \end{figure}
 
 \subsection{Initiierung des Bezahlprozesses und einfrieren des Baskets}
+
+Nachdem die Bearbeitung des Baskets abgeschlossen ist, kann der Bezahlprozess gestartet werden. Hierbei muss der Warenkorb einen konsistenten und validen Stand besitzen. Sollte dies der Fall sein, wird der Basket in den Status 'Freeze' gestellt und jegliche weitere Datenänderungen verhindert. Der Bazahlprozess wird von einer externen Software abgewickelt. Alleinig eine Referenz auf diesem Prozess in dem System wird im Warenkorb gespeichert. Eine vereinfachte Darstellung des Prozesses bietet Abbildung \ref{fig:SL-InitPayment}
 
 \begin{figure}[htbp]
 	\centering
@@ -90,6 +98,10 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 
 \subsection{Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}
 
+Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des Bezahlungsvorgangs, abgebildet in Figur \ref{fig:SL-ExecPayment}. Die Checkout-Software dient hierbei als Proxy zwischen Touchpoint und Payment-Api. Sofern die Bezahlung erfolgreich war, wird der Status des Baskets auf 'finalized' gestellt. Zugleich wird eine Bestellung durch die Order-Api erstellt und im Basket durch eine Referenz verlinkt.
+
+%TODO: Aufruf durch Payment API nicht Touchpoint, i guess
+% TODO: Ein Pfeil zeigt nicht auf die Mitte des Kastens
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false]{svg/SL ExecPayment.svg}
@@ -97,11 +109,12 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 	\label{fig:SL-ExecPayment}
 \end{figure}
 
-
+Es existieren noch weiter simplere Anwendungsfälle, jedoch auf genaue Ausführung wurde verzichtet, um den Fokus der Arbeit beizubehalten. Durch die Anforderungen an unsere Software kann auch bestimmt werden, welche Systeme als Kommunikationspartner benötigt werden. Dies ergib das Umfeld des Projekts. 
 
 \section{Projektumfeld und technologische Vorschläge}
 
-Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur 
+%TODO: Contract, Boilerplate in Glossary
+Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur mit zahlreichen Abhängigkeiten zwischen Teams und ihren betreuten Systemen. Es ist unmöglich ein solches Konstrukt aufzubauen ohne die Kommunikation der Systeme zu definieren. Als Leitfaden für unser Projektumfeld dienen die Anwendungsfälle des vorgehenden Unterkapitels. In dem vereinfachten Checkout-Prozess werden sechs verschiedene Schnittstellen aufgerufen. Dass plötzliche Änderungen von Systemen keine Auswirkung auf die Funktionsweise der abhängigen Clients hat, wird ein Api-Contract beschlossen, welcher die benötigten Informationen, mögliche Fehlerfälle und die zurückgelieferten Daten festlegt. Der Proof-Of-Concept orientiert sich an diese Contracts, erleichtert allerdings die Kommunikationsbedingungen, um unnötigen Boilerplate zu unterdrücken. Als Ergebnis stellt die Grafik \ref{fig:ContextDiagramm} ein Context-Diagramm unserer Umgebung dar.
 
 %TODO: Kotlin, MongoDB, REST, evtl asynchron mit CQRS, DDD und Hexagonal
 
@@ -112,8 +125,12 @@ Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur
 	\label{fig:ContextDiagramm}
 \end{figure}
 
-\blindtext
+%TODO: API oder Api?
+Zusätzlich bestehen noch firmen- bzw. teaminterne Vorbedingungen. Wo sinnvoll anwendbar, wird in der Firma Java als Entwicklungssprache angewandt. Über die letzten Jahre gewann Kotlin an Beliebtheit und wird seitdem ebenfalls in MediaMarktSaturn eingesetzt. Die aktuelle Live-Umgebung nutzt zu dem jetzigen Stand noch Java, jedoch werden Codeanpassungen zukünftig in Kotlin vorgenommen, um eine langsame Migration zu gewährleisten. Aus diesen Grund wird ebenfalls der Proof-Of-Concept in Kotlin umgesetzt. Zudem ist die Technologie der systemübergreifenden Kommunikation auf Rest Apis festgelegt. Dies kommt mit einigen Einschränkungen und muss in der Entwicklung der primären und sekundären Adapter beachtet werden. Die Auswahl der Datenbank ist grundsätzlich nicht vorgegeben. Da die Applikation eine Vielzahl an Leseoperationen durchführt und somit einen hohen Nutzen aus der erhöhten Performance von No-SQL Datenbanken zieht, wurde die Benutzung einer MongoDB beschlossen.
+
+Zum aktuellen Standpunkt sind alle notwendigen Vorbereitungen zum erfolgreiche Anwenden des Domain-Driven Designs getroffen.  
 
 
+%TODO: Weglassen?
 \section{Aktuelles Design der Produktivanwendung}
 \blindtext

@@ -1,111 +1,57 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Problemstellung}{1}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Projektumfeld}{2}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}Das Unternehmen MediaMarktSaturn}{2}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Benachbarte Systeme der Checkout-Software}{2}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Motivation}{2}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Ziele}{3}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen}{4}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}SOLID-Prinzipien}{4}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Architekturmuster}{5}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Schichtenarchitektur}{5}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Hexagonale Architektur}{6}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Domain-Driven Design}{8}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Value Object}{11}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Entity}{11}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Aggregate}{11}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Applicationservice}{12}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.5}Domainservice}{12}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.6}Factory}{12}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.7}Repository}{12}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{13}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Ausschlaggebende Anwendungsfallbeschreibungen}{13}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Erstellung eines neuen leeren Baskets}{13}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Abruf eines Warenkorbs anhand dessen ID}{14}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Stornierung eines offenen Baskets}{14}{}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Stornierung eines offenen Baskets}{15}{}%
 \contentsline {subsection}{\numberline {3.1.4}Aktualisieren der Checkout Daten des Baskets}{15}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Hinzufügen eines Produkets anhand einer Produkt-ID}{19}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.6}Hinzufügen einer Bezahlmethode}{19}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.7}Initiierung des Bezahlprozesses und einfrieren des Baskets}{19}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.8}Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}{19}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Projektumfeld und technologische Vorschläge}{19}{}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Hinzufügen eines Produktes anhand einer Produkt-ID}{15}{}%
+\contentsline {subsection}{\numberline {3.1.6}Hinzufügen einer Bezahlungsmethode}{16}{}%
+\contentsline {subsection}{\numberline {3.1.7}Initiierung des Bezahlprozesses und einfrieren des Baskets}{16}{}%
+\contentsline {subsection}{\numberline {3.1.8}Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}{18}{}%
+\contentsline {section}{\numberline {3.2}Projektumfeld und technologische Vorschläge}{18}{}%
 \contentsline {section}{\numberline {3.3}Aktuelles Design der Produktivanwendung}{20}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Erstellung eines Proof of Concepts}{21}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Festlegung und Analyse der Domain}{21}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Abgrenzung des Bounded Contexts}{21}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Festlegen einer Ubiquitous Language}{22}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Definition der Value Objects}{23}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Bestimmung der Entities anhand ihrer Identität}{25}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Design der Aggregates anhand der Anwendungsfälle}{26}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Initiales Design als ein großes Basket-Aggregate}{26}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Trennung der Zahlungsinformationen von dem Basket}{26}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen}{26}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Maximale Unterteilung des Models mithilfe asynchroner Verarbeitung}{27}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Implementierung der Hexagonalen Architektur im Bounded-Context}{28}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Domainservice}{28}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Auslagerung von Funktionen in Applicationservices}{28}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Erstellen der Primären und Sekundären Adapter}{28}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{29}{}%
-\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Festlegung des Datenmodells durch Domain-Driven Design}{21}{}%
+\contentsline {section}{\numberline {4.1}Abgrenzung der Domain und Bounded Contexts mithilfe der Planungsphase}{21}{}%
+\contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{22}{}%
+\contentsline {section}{\numberline {4.3}Definition der Value Objects}{23}{}%
+\contentsline {section}{\numberline {4.4}Bestimmung der Entities anhand ihrer Identität und Lebenszyklus}{26}{}%
+\contentsline {chapter}{\numberline {5}Design der Aggregates anhand der Anwendungsfälle}{29}{}%
+\contentsline {section}{\numberline {5.1}Initiales Design als ein großes Basket-Aggregate}{29}{}%
+\contentsline {section}{\numberline {5.2}Trennung der Zahlungsinformationen von dem Basket}{29}{}%
+\contentsline {section}{\numberline {5.3}Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen}{29}{}%
+\contentsline {section}{\numberline {5.4}Maximale Unterteilung des Models mithilfe asynchroner Verarbeitung}{30}{}%
+\contentsline {chapter}{\numberline {6}Implementierung der Hexagonalen Architektur im Bounded-Context}{31}{}%
+\contentsline {section}{\numberline {6.1}Domainservice}{31}{}%
+\contentsline {section}{\numberline {6.2}Auslagerung von Funktionen in Applicationservices}{31}{}%
+\contentsline {section}{\numberline {6.3}Erstellen der Primären und Sekundären Adapter}{31}{}%
+\contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{32}{}%
 \contentsline {chapter}{Akronyme}{i}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Glossar}{i}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Literatur}{ii}{}%
-\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
