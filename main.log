@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  14 FEB 2022 02:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  15 FEB 2022 03:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1556,22 +1556,146 @@ t line 94.
 
 (kapitel/30_planung.tex
 chapter 3.
-) [13
+<./svg-inkscape/SL Basketcreation_svg-raw.pdf, id=116, 482.55281pt x 128.73094p
+t>
+File: ./svg-inkscape/SL Basketcreation_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL Basketcreation_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL Basketcreation_svg-raw.pdf  used on 
+input line 23.
+(pdftex.def)             Requested size: 482.55162pt x 128.7306pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+[13
 
 
 
 
-] [14]
+]
+<./svg-inkscape/SL Basketabruf_svg-raw.pdf, id=120, 482.55281pt x 181.42781pt>
+File: ./svg-inkscape/SL Basketabruf_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL Basketabruf_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL Basketabruf_svg-raw.pdf  used on inp
+ut line 35.
+(pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 35--36
+ [][] 
+ []
+
+[14 <./svg-inkscape/SL Basketcreation_svg-raw.pdf> <./svg-inkscape/SL Basketabr
+uf_svg-raw.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL Basketabruf_svg-raw.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./svg-inkscape/SL Basketstornierung_svg-raw.pdf, id=151, 482.55281pt x 181.427
+81pt>
+File: ./svg-inkscape/SL Basketstornierung_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL Basketstornierung_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL Basketstornierung_svg-raw.pdf  used 
+on input line 46.
+(pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+<./svg-inkscape/SL Checkoutdata_svg-raw.pdf, id=152, 482.55281pt x 181.42781pt>
+
+File: ./svg-inkscape/SL Checkoutdata_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL Checkoutdata_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL Checkoutdata_svg-raw.pdf  used on in
+put line 58.
+(pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 58--59
+ [][] 
+ []
+
+<./svg-inkscape/SL AddProduct_svg-raw.pdf, id=153, 482.55281pt x 301.8778pt>
+File: ./svg-inkscape/SL AddProduct_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL AddProduct_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL AddProduct_svg-raw.pdf  used on inpu
+t line 67.
+(pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 67--68
+ [][] 
+ []
+
+<./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf, id=154, 482.55281pt x 181.4278
+1pt>
+File: ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf  used o
+n input line 76.
+(pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 76--77
+ [][] 
+ []
+
+<./svg-inkscape/SL InitPayment_svg-raw.pdf, id=155, 482.55281pt x 241.65282pt>
+File: ./svg-inkscape/SL InitPayment_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL InitPayment_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL InitPayment_svg-raw.pdf  used on inp
+ut line 85.
+(pdftex.def)             Requested size: 482.55162pt x 241.65222pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 85--86
+ [][] 
+ []
+
+<./svg-inkscape/SL ExecPayment_svg-raw.pdf, id=156, 482.55281pt x 301.8778pt>
+File: ./svg-inkscape/SL ExecPayment_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SL ExecPayment_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/SL ExecPayment_svg-raw.pdf  used on inp
+ut line 94.
+(pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
+
+Overfull \hbox (22.93011pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+<./svg-inkscape/ContextDiagramm_svg-raw.pdf, id=157, 482.1764pt x 271.3889pt>
+File: ./svg-inkscape/ContextDiagramm_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ContextDiagramm_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/ContextDiagramm_svg-raw.pdf  used on in
+put line 109.
+(pdftex.def)             Requested size: 482.17522pt x 271.38823pt.
+
+Overfull \hbox (22.55371pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./svg-inkscape/SL Basketstornierung_svg-raw.pdf>] [16 <./svg-inkscape/SL 
+Checkoutdata_svg-raw.pdf> <./svg-inkscape/SL AddProduct_svg-raw.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL AddProduct_svg-raw.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>] [17 <./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf> <./svg-inkscape/SL Init
+Payment_svg-raw.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL InitPayment_svg-raw.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] [18 <./svg-inkscape/SL ExecPayment_svg-raw.pdf>]) [19 <./svg-inkscape/Contex
+tDiagramm_svg-raw.pdf>] [20]
 \openout2 = `kapitel/40_model.aux'.
 
  (kapitel/40_model.tex
 chapter 4.
-[15
+[21
 
 
 
 
-] [16] [17] [18]
+] [22] [23] [24]
 Underfull \hbox (badness 2237) in paragraph at lines 146--146
 \OT1/lmss/m/n/10.95 (+20) Wer-ten be-sitz-ten glei-che
  []
@@ -1581,22 +1705,22 @@ Overfull \hbox (0.99203pt too wide) in paragraph at lines 141--166
 [][] 
  []
 
-) [19]
+) [25]
 \openout2 = `kapitel/50_aggregatdesign.aux'.
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
-[20
+[26
 
 
 
 
-]) [21]
+]) [27]
 \openout2 = `kapitel/60_poc.aux'.
 
  (kapitel/60_poc.tex
 chapter 6.
-) [22
+) [28
 
 
 
@@ -1606,12 +1730,12 @@ chapter 6.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [23
+) [29
 
 
 
 
-] [24
+] [30
 
 
 
@@ -1646,11 +1770,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29694 strings out of 478659
- 620300 string characters out of 2845920
- 1539675 words of memory out of 3000000
- 47001 multiletter control sequences out of 15000+600000
- 500143 words of font info for 200 fonts, out of 8000000 for 9000
+ 29793 strings out of 478659
+ 624248 string characters out of 2845920
+ 1540774 words of memory out of 3000000
+ 47082 multiletter control sequences out of 15000+600000
+ 500106 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
@@ -1661,9 +1785,9 @@ ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Us
 ers/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/
 Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso10.pfb>
-Output written on main.pdf (35 pages, 274701 bytes).
+Output written on main.pdf (41 pages, 594663 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
+ 342 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 45174 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 45219 words of extra memory for PDF output out of 51595 (max. 10000000)
 

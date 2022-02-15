@@ -1,6 +1,4 @@
 Prio:
-- Seminar Bachelorarbeit wie oft bzw regelmäßig? Benotet?
-- WIE VIEL PROZENT DIE FRAGESTELLUNG?
 
 Stefano:
 - ValueObject vs Entity
@@ -31,6 +29,7 @@ Allgemein:
 Todo:
 - Überlegung was ist Entity und was ist ValueObject
 - Hexagonale Architektur von POC korrigieren
+- Diagrammtext in English oder Deutsch
 - Calculation Result update only when needed or while update items as use case and aggregate design
 - Context Map kommunikation zwischen Bounded Contexts
 - Umfeldanalyse mit Systemen, Datenbank, Kotlin
@@ -48,3 +47,11 @@ https://microservices.io/patterns/data/saga.html
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf
+
+
+
+- Bewertungsarten wie Aggregate bewerten werden
+- Interpretationskapitel zwischen 6. und 7.
+- Vorgehen für die Bewertung der Architekturen
+- Transferierbarkeit der Ergebnisse im Fazit
+- Parameter

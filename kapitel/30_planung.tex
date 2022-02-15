@@ -3,25 +3,114 @@
 
 \chapter{Planungs- und Analysephase}
 
-Einleitend werden Struktur, Motivation und die abgeleiteten Forschungsfragen diskutiert.
+Einleitend werden Struktur, Motivation und die abgeleiteten Forschungsfragen diskutiert. % TODO
 
-\section{Umfeldanalyse}
-\blindtext
+\section{Ausschlaggebende Anwendungsfallbeschreibungen}
 
-\section{Anwendungsfälle}
+%TODO: Caching Use Case
 
-\begin{itemize}[noitemsep,nolistsep]
-	\item Basket erstellen und abrufen
-	\item Basket finializing/cancel
-	\item Produkte hinzufügen, löschen und Quantity ändern
-	\item Lieferdaten abändern bzw hinzufügen ?
-	\item Set checkout data
-	\item Basket calculation
-\end{itemize}
+Um den Kunden im Onlineshop oder den Mitarbeitern in den Märkten eine einwandfreie Benutzererfahrung zu gewährleisten, soll die Checkout-Software alle Prozesse vom Erstellen eines Warenkorbs bis hin zum Abschließen des Kaufprozesses verwalten können. Dadurch entstehen eine Vielzahl von möglichen Anwendungsfällen, welche alle korrekt und möglichst performant abgearbeitet werden müssen. Zur Dokumentation dieser Prozesse empfiehlt es sich in der Entwicklungsphase die Prozessabläufe in einem Diagramm abzubilden. Zusätzlich zu den Dokumentationszwecken der Diagramme kommt noch hinzu, dass eventuelle Unklarheiten geklärt, Bedingungen an den Daten oder Prozessen aufgedeckt und sich natürlich die Benutzung der Ubiquitous Language etabliert. Auf Basis dieser Anwendungsfälle ist es uns später möglich Artefakte des Domain-Driven Designs leichter zu definieren. Vor allem die entscheiden Invarianten bilden sich heraus und das Datenmodell kann einfacher in Aggregate unterteilt werden. Für den Proof-Of-Concept sind die wichtigsten Anwendungsfälle in diesem Kapitel reduziert definiert. Zu beachten war bei der Prozessvereinfachung, dass Bedingungen zwischen Datenstrukturen weiterhin unverändert sind, damit die Aggregataufteilung im Hauptkaptiel dieser Arbeit nicht von den möglichen Designs der Produktivanwendung abweicht. Die folgenden Prozesse wurden in Zusammenarbeit zwischen den Teams des Onlineshops, Checkouts und zuständigen Stakeholdern erarbeitet. Als Darstellungsmethode wurde sich auf Swimlane-Diagramme festgelegt, somit kann die Interaktion zwischen den Systemen ebenfalls abgebildet werden.
+%TODO: Stakeholder und Swimlane im Glossary
 
-\begin{itemize}[noitemsep,nolistsep]
-	\item Caching Funktion für Product und Price
-\end{itemize}
+% TODO: Subsection oder Fett gedruckte kleine "Überschrift"
+% TODO: Erst Diagramm oder erst erklärender Text?
+\subsection{Erstellung eines neuen leeren Baskets}
+
+Ein Basket, also ein Warenkorb, stellt das grundlegendste Konstrukt des Checkouts dar. Die Anfrage auf eine Erzeugung eines Warenkorbs kann aus verschiedenen Gründen geschehen. Sollte ein nicht eingeloggter Kunde zum ersten mal den Onlineshop aufrufen, wird ein Warenkorb mit der Session-ID als Kundendaten erstellt. Sobald dieser Kunde sich einloggt wird eine Anfrage gesendet die Session-ID durch die Kundendaten zu ersetzten. Ein Warenkorb kann auch erzeugt werden durch einen Mitarbeiter, durch beispielsweise eine physikalische Kasse im Markt. Die verschiedensten Zugriffsmethoden, wie Onlineshop oder Handyapp, sind unter den Begriff 'Touchpoint' zusammengefasst. Durch diese Beschreibung ergeben sich mindestens zwei Anwendungsfälle: Die Erstellung eines Baskets und das Setzten von Kundendaten. Eine Anlegung besteht hauptsächlich nur aus dem Empfangen der Kundendaten und Identifikation des Marktes, hier als Outlet-ID bezeichnet, und dem permanente Speicherns des neuen Warenkorbs. Dem Touchpoint wird das komplette Basket-Objekt zurückgegeben inklusive einer Basket-ID zum eindeutigen identifizieren diesen Warenkorbs. Dieser Prozess ist in Abbildung \ref{fig:SL-Basketcreation} verdeutlicht. Es sind keine Invarianten zu prüfen, außer dem korrekten Format der Empfangsdaten. Dies gilt ebenfalls für das Aktualisieren der Kundendaten.
+
+%TODO: Legende für die Zeichen im Diagramm?
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL Basketcreation.svg}
+	\caption{Swimlane Diagramm für die Erstellung eines Baskets}
+	\label{fig:SL-Basketcreation}
+\end{figure}
+
+\subsection{Abruf eines Warenkorbs anhand dessen ID}
+
+%TODO: Ist "invarianten" irgendwo mal gut erklärt?
+Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für dieses Projekt besitzt. Dadurch existieren keine weiteren Businessanforderungen und vor allem keine Invarianten, welche erfüllt sein müssen. Es verbleiben technische Bedienungen, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Daten und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das Swimlane Diagramm für diesen Anwendungsfall dar.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL Basketabruf.svg}
+	\caption{Swimlane Diagramm für den Abruf eines Baskets}
+	\label{fig:SL-Basketabruf}
+\end{figure}
+
+\subsection{Stornierung eines offenen Baskets}
+
+Der Warenkorb kann sich in verschiedenen Zuständen befinden. Hauptsächlich wird unterschieden zwischen 'Open', 'Freeze', 'Finalized' und 'Canceled'. Sollte beispielsweise ein Kunde beim Bezahlen an der Kasse im Markt nicht ausreichend Geld bei sich haben, muss der Warenkorb geschlossen werden. Die tatsächliche Löschung eines Baskets ist aus rechtlichen Gründen strengstens untersagt. Für diesen Prozess ist es notwendig vorher zu prüfen, ob der Warenkorb sich im Zustand 'Open' befindet, da ein eingefrorener, abgeschlossener oder bereits stornierter Warenkorb nicht storniert werden kann, um den Zustandsverlauf zu wahren. Dies stellt eine Invariante dar, welche in der Software sichergestellt werden muss. Im Diagramm \ref{fig:SL-Basketstornierung} ist dieser Vorgang zusammengefasst abgebildet.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL Basketstornierung.svg}
+	\caption{Swimlane Diagramm für die Stornierung eines Baskets}
+	\label{fig:SL-Basketstornierung}
+\end{figure}
+
+\subsection{Aktualisieren der Checkout Daten des Baskets}
+
+Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden implizit durch einen Prozess innerhalb der Software gesetzt, andere durch Empfangen der Daten von einem externen System aktualisiert. Beim sogenannten 'Checkout-Prozess' werden einige dieser Daten vom Touchpoint an den Warenkorb gesendet. Darunter zählen Kundendaten, Bezahlmethoden und Zustellungsart. Da diese Daten im gleichen Schritt durch das vorgelagerte System gesetzt werden, bietet es sich an, diese Schnittstelle zu designen, dass all diese Informationen gleichzeitig angepasst werden können. Eine Überprüfung der Daten erfolgt in diesem Schritt dabei nicht, mit der Ausnahme, dass die gewählte Zustellungsart, in diesem Bounded-Context 'Fulfillment' genannt, für den ausgewählten Warenkorb und dessen Produkte überhaupt verfügbar sein muss. Zudem ist es notwendig eine Neuberechnung der Geldbeträge, wie Gesamtpreis, Mehrwertsteuer usw., durchzuführen, falls eine neue Bezahlmethode hinzugefügt worden ist. Diese Bedingungen und der dazugehörige Workflow sind im Swimlane Diagramm \ref{fig:SL-Checkoutdata} veranschaulicht worden.
+%TODO: Glossary Workflow
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL Checkoutdata.svg}
+	\caption{Swimlane Diagramm für das Setzen der Checkout Daten}
+	\label{fig:SL-Checkoutdata}
+\end{figure}
+
+\subsection{Hinzufügen eines Produkets anhand einer Produkt-ID}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL AddProduct.svg}
+	\caption{Swimlane Diagramm für das Hinzufügen eines Produktes }
+	\label{fig:SL-AddProduct}
+\end{figure}
+
+\subsection{Hinzufügen einer Bezahlmethode}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL PutBezahlmethode.svg}
+	\caption{Swimlane Diagramm für das Hinzufügen einer Bezahlmethode}
+	\label{fig:SL-PutBezahlmethode}
+\end{figure}
+
+\subsection{Initiierung des Bezahlprozesses und einfrieren des Baskets}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL InitPayment.svg}
+	\caption{Swimlane Diagramm für das Initiieren des Bezahlvorgangs }
+	\label{fig:SL-InitPayment}
+\end{figure}
+
+\subsection{Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/SL ExecPayment.svg}
+	\caption{Swimlane Diagramm für das Ausführen des Bezahlvorgangs }
+	\label{fig:SL-ExecPayment}
+\end{figure}
+
+
+
+\section{Projektumfeld und technologische Vorschläge}
+
+Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur 
+
+%TODO: Kotlin, MongoDB, REST, evtl asynchron mit CQRS, DDD und Hexagonal
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false]{svg/ContextDiagramm.svg}
+	\caption{Context Diagramm der produktiven Checkout-Umgebung}
+	\label{fig:ContextDiagramm}
+\end{figure}
 
 \blindtext
 
