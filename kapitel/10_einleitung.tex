@@ -11,7 +11,7 @@ In einem Onlineshop ist ein elementarer Bestandteil der sogenannte Warenkorb. In
 
 Eine solche Anwendung stellt das Rückgrat des Onlineshops dar. Sie erfährt stetige Änderungen, besitzt eine Vielzahl von Businessanforderungen und ihre Einbindung in das Frontend beeinflusst weitergehend auch das Kundenerlebnis. Dadurch liegt ein hoher Fokus auf Qualitätsmerkmale, wie Stabilität, Wartbarkeit und Testbarkeit. Der Checkout-Prozess, welcher durch die Software abgewickelt wird, muss für alle relevanten Länder und ihre individuellen gesetzlichen Voraussetzungen fiskalisch korrekt ausgeführt werden. Jederzeit können Länder und dadurch eventuell neue Richtlinien hinzugefügt werden, wodurch umso mehr ein Fokus auf Flexibilität des Systems gelegt wird. Weiterhin können hinzukommende Businessprozesse eine Anpassung des Modells erfordern, dadurch wird ein anpassbares Datenkonstrukt benötigt, welches zugleich performant und wartbar bleibt. Das Datenmodell bestimmt weitestgehend wie die internen Softwarekomponenten und die externen Systeme mit der Anwendung interagieren. Daher hat eine Umfeldanalyse und klare Definition von Anwendungsfällen hohen Einfluss auf die resultierende Qualität des Entwicklungsprozesses. Die verwendete Architektur und das Softwaredesign muss somit Entwicklern dabei unterstützen diese Kriterien zu erfüllen. 
 
-Durch welche Entwurfsmuster und Vorgehensweise eine solche Software realisiert werden kann stellt die initiale Problemstellung des Projektes dar. Hierbei wurde aufgrund der im nachfolgenden Kapitel stattfindenden Analyse eine Hexagonale Architektur und ein Domain-Driven Ansatz ausgewählt. Weitergehend liegt der Hauptfokus hierbei darauf, wie ein konkreten Aggregationsschnitt des Datenmodells, basierend auf die vorliegende Systemumgebung und erforderlichen Anwendungsfällen des Proof-of-Concepts, die vorher genannten Bedingungen erfüllt.
+Durch welche Vorgehensweisen und Architekturen eine solche Software realisiert werden kann, stellt die initiale Problemstellung des Projektes dar. Hierbei wird, aufgrund der im nachfolgenden Kapitel stattfindenden Analyse, eine Hexagonale Architektur und ein Domain-Driven Ansatz ausgewählt. Weitergehend wird der Hauptfokus darauf, wie ein konkreten Aggregationsschnitt des Datenmodells die vorher genannten Bedingungen maximal erfüllt unter Beachtung der Anwendungsfälle und Systemumgebung. Zur Veranschaulichung und praktischen Umsetzung findet zeitgleich eine konkrete Implementierung der Software als Proof-of-Concept statt.
 
 %TODO: Wie Proof of Concept schreiben?
 
@@ -23,34 +23,17 @@ Durch welche Entwurfsmuster und Vorgehensweise eine solche Software realisiert w
 
 
 
-\section{Projektumfeld}
-\begin{itemize}[noitemsep,nolistsep]
-	\item MediaMarktSaturn
-	\item Currently Checkout-Software exist
-	\item Vor bzw Nachgelagerte Systeme (CAR (Product Data?), Pricing API, Webshop BOS, XPay, Campaign Promotion CRM, Mirakl,  Customer Order Service (COS)) [(aroma (FOM?), WCS, DMC, SAP)] %TODO: was ist MMSE Marketplace Integration
-\end{itemize}
-%TODO: Unterschied zu Umfeldanalyse
-%TODO: Viele der Systeme sind nicht für den POC relevant... Overkill bzw. Sinn hinter Umfeldanalyse?
+\section{Das Unternehmen MediaMarktSaturn}
 
-\subsection{Das Unternehmen MediaMarktSaturn}
+Dieses Projekt wurde in dankbarer Zusammenarbeit mit dem Unternehmen \emph{MediaMarktSaturn Retail Group}, kurz \emph{MediaMarktSaturn}, erarbeitet. %TODO: `Wurde?
 
-% Komplett überarbeiten
-% Eigenmarken?
+Als größte Elektronik-Fachmarktkette Europas bietet MediaMarktSaturn in über 1023 Märkten und 13 Ländern den Kunden die Möglichkeit einer Vielzahl unterschiedlicher von Waren zu erwerben. Die Zugehörigkeiten der Märkte ist hierbei unterteilt in den Marken \emph{Media Markt} und \emph{Saturn}. % Ist die Software nur für MM?
 
-Dieses Projekt wurde in dankbarer Zusammenarbeit mit dem Unternehmen \emph{MediaMarktSaturn Retail Group}, kurz \emph{MediaMarktSaturn}, erarbeitet. %Wurde?
+Über die Jahre gewann der Onlineshop für Media Markt und Saturn zunehmend an Bedeutung, da die prozentuale Verteilung des jährlichen Gewinns in den Märkten zurückgegangen und im Onlineshop gestiegen ist. Als Folge wurden die Unternehmensziele dementsprechend auf die Entwicklung von komplexer Software zur Unterstützung des Onlineshops neu ausgelegt. \emph{MediaMarktSaturn Technology} ist eine Tochtergesellschaft der MediaMarktSaturn Retail Group und zuständig für alle Entwicklungstätigen. Dank den 705 internen Mitarbeiter am Standort Ingolstadt kann eine einwandfreie Nutzererfahrung ihrer Kunden erzielt werden. 
 
-Als größte Elektronik-Fachmarktkette Europas bietet MediaMarktSaturn Kunden in über 1023 Märkten eine Einkaufmöglichkeit einer Vielzahl von Waren. Die Marktzugehörigkeit ist hierbei unterteilt in den Marken \emph{Media Markt} und \emph{Saturn}. % Ist die Software nur für MM?
-%TODO: Mehr zu MMS (Länderanzahl)
+Die Durchführung und Implementierung des Projektes bzw. \acrshort{POC}s wurde im Team \emph{Chechkout \& Payment} durchgeführt. Die sechs zugehörigen Teammitglieder sind zuständig einen unternehmensweiten universellen Checkout für alle Länder bereitzustellen, sowohl für den Onlineshops als auch im Markt oder per Handyapp. Durch den Einsatz von \Gls{Scrum} wird eine konstante Verbesserung der Software und des Arbeitsprozesses erzielt. In kontinuierlichen Sprints wird die Checkout-Software erweitert und für weitere Anwendungsfälle expandiert. Dieses Projekt soll als Revision dienen und Aufschlüsse über mögliche architektonische Designansätze bieten.
+%TODO: Sprint in gls
 
-Über die Jahre gewann der Onlineshop für Media Markt und Saturn an zunehmender Bedeutung, da die prozentuale Verteilung des jährlichen Gewinns in den Märkten zurückgegangen und im Onlineshop gestiegen ist. Dadurch wurden die Unternehmensziele dementsprechend auf die Entwicklung von komplexer Software zur Unterstützung des Onlineshops neu ausgelegt. Der MediaMarktSaturn Retail Group unterteilte Firma \emph{MediaMarktSaturn Technology} ist hierbei verantwortlich für alle Entwicklungstätigkeiten und die {\color{red}X} Mitarbeiter bündelt die technischen Kompetenzen des Unternehmens am Standort Ingolstadt. %TODO: Replace X
-
-Die Entwicklung des \acrshort{POC}s wurde im \Gls{Scrum}-Team \emph{Chechkout \& Payment} durchgeführt. Die sechs zugehörigen Teammitglieder sind zuständig einen unternehmensweiten universellen Checkout für alle Länder bereitzustellen, sowohl für den Onlineshops als auch im Markt oder per Handyapp. 
-%TODO: Rewrite, klingt scheiße
-%TODO: Wie viele Teammitglieder
-%TODO: In eigene Subsection?
-%TODO: Organisationsstruktur und wo ist das Team aufgehängt
-
-\subsection{Benachbarte Systeme der Checkout-Software}
 
 \section{Motivation}
 

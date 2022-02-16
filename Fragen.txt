@@ -4,7 +4,7 @@ Stefano:
 - https://docs.mongodb.com/manual/core/write-operations-atomicity/  MEANING?
 - Ein Request => Mehrere Transaktions?
 - Eventual consistency. Wie schütze ich die erste Entität vor Änderungen bevor die zweite Änderung stattfindet.
-- ValueObject vs Entity
+- Macht Sinn dass BasketItem Immutable ist?
 - PriceAdjustment als Use-Case?
 - POC Source Code besprechen
 - Mehr Infos zum Checkout-Team?
@@ -33,19 +33,13 @@ Todo:
 - Überlegung was ist Entity und was ist ValueObject
 - Hexagonale Architektur von POC korrigieren
 - Diagrammtext in English oder Deutsch
+- Zeigen des Bestellprozesses anhand von MediamarktSaturn
 - Calculation Result update only when needed or while update items as use case and aggregate design
 - Context Map kommunikation zwischen Bounded Contexts
 - Umfeldanalyse mit Systemen, Datenbank, Kotlin
 - Anwendungsfälle
-- Was sind die Vor bzw. Nachgelagerten Systeme vom Checkout
-    - CAR (Product Data?)
-    - Pricing API
-    - Webshop BOS
-    - XPay
-    - CRM (Campaign Promotion)
-    - Mirakl
-    - COS (Customer Order Service)
-    - [Aroma (FOM), WCS, DMC, SAP]
+- README in Github Repo (Describe Calculation)
+- Source Code Documentation
 https://microservices.io/patterns/data/saga.html
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf

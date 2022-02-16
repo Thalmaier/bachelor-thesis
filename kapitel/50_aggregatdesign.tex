@@ -1,12 +1,4 @@
 \chapter{Design der Aggregates anhand der Anwendungsfälle}
-\begin{itemize}[noitemsep,nolistsep]
-	\item Eine Einheit
-	\item Behält Integrität
-	\item Um abzuspeichern in Datenbank
-	\item Eine Transaktion darf nur ein Aggregat bearbeiten
-	\item Changes within can be inconsistent for a while until operation is done.
-\end{itemize}
-
 %TODO: Zeigen des Bestellprozesses anhand von MediamarktSaturn
 
 Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies den Schnitt der Aggregates. Verschiedene Schnitte genießen verschiedene Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aufteilungen untersucht und durch verschiedene Kriterien bewertet. Diese Kriterien umfassen unter anderem Performance, Komplexität, Konsistenz, Parallelität, Relevanz und Anwendbarkeit im Bezug auf den Bounded Contexts des Checkouts.
@@ -24,7 +16,14 @@ Als Konsequenz eines großen Aggregates ergibt sich, dass immer das ganze Aggreg
 
 Wie oben erwähnt, ermöglicht ein kleinerer Aggregationsschnitt das unabhängige laden und bearbeiten der Aggregates. In Betrachtung der Anwendungsfälle können die Operationen in drei große Gruppen umfasst werden. Anfragen, welche Value Objects im Basket bearbeiten stellt die erste Ansammlung dar. Diese würden unnötige Daten laden, da nur der Basket mit möglichst wenig Value Objects relevant ist. Ebenfalls gilt dies für die Anfragen, welche BasketItems oder den PaymentProcess anpassen, weil sie den ganzen Basket laden anstatt nur die wirklich benötigten Daten.
 
-Wird die \emph{Variante A} aufgeteilt in Basket-, Payment und BasketItem-Aggregate (\emph{Variante B}) können diese unabhängig voneinander geladen und bearbeitet werden. Ohne Beachtung, welche Auswirkungen dieses neu überlegte Design auf andere Faktoren hat, ist eine Performanceverbesserung anhand ersten Überlegungen zu erwarten. Die gewonnene Performance wird allerdings aufgrund mehrerer Umständen verringert.
+Wird die \emph{Variante A} unterteilt in Basket-, Payment und BasketItem-Aggregate (\emph{Variante B}) können diese somit unabhängig voneinander geladen und bearbeitet werden. Ohne Beachtung, welche Auswirkungen dieses neu überlegte Design auf andere Faktoren hat, ist eine Performanceverbesserung anhand ersten Überlegungen zu erwarten. Die vermeintlich gewonnene Performance wird allerdings aufgrund mehrerer Umständen verringert. Eine kurze Übersicht über diesen neuen Aggregationsschnitt bietet Abbildung \ref{fig:VarB}.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarB.svg}
+	\caption{Aggregationsschnitt der Variante B}
+	\label{fig:VarB}
+\end{figure}
 
 \subsubsection{Invarianten über Aggregatsgrenzen hinweg}
 
@@ -68,41 +67,74 @@ Abschließend kann anhand der vorhergehenden Überlegungen der Aggregationsschni
 
 \section{Trennung der Zahlungsinformationen von dem Basket-Aggregate}
 
-Damit ein neues Aggregat aus der großen Basket-Klasse herausgeschnitten werden kann, wird ein Root Aggregate benötigt. Aus diesem Grund ist der erste Ansatz eine Entity von dem Basket abzutrennen. Hierbei ist der PaymentProcess nur schwach an den eigentlichen Basket gebunden. Mögliche Anwendungsfälle beziehen sich alleinig auf entweder den Warenkorb und seine Items oder den Bezahlprozess. Daher wird in der \emph{Variante C} die Aggregate in Basket und PaymentProcess aufgeteilt. Zudem folgt eine Beschreibung der notwendigen Änderungen und die Auswirkungen einer solchen Umstrukturierung.
+Damit ein neues Aggregat aus der großen Basket-Klasse herausgeschnitten werden kann, wird ein Root Aggregate benötigt. Aus diesem Grund ist der erste Ansatz eine Entity vom Basket abzutrennen. Hierbei ist der PaymentProcess nur schwach an den eigentlichen Basket gebunden und mögliche Anwendungsfälle beziehen sich meist alleinig auf entweder den Warenkorb und seine Items oder den Bezahlprozess. Daher wird in der \emph{Variante C} die Aggregate in Basket und PaymentProcess, wie in Grafik \ref{fig:VarC}, aufgeteilt. 
 
-%TODO: Bild zu Variante C
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarC.svg}
+	\caption{Aggregationsschnitt der Variante C}
+	\label{fig:VarC}
+\end{figure}
 
-Die erste direkte Auswirkung durch den Umbau entspricht der neue Unterteilung des Datenmodells auf Datenbankebene. Da die Aggregates unabhängig voneinander agieren, müssen sie auch getrennt geladen und speicherbar sein. Folglich wird ein neuer Adapter definiert, um diese Datenoperationen zu behandeln. Die Referenz auf den PaymentProcess wird durch den neuen Aggregationsschnitt aus dem Basket entfernt und alle Funktionen, welche Aufrufe auf das Objekt benötigt, müssen entweder in die PaymentProcess-Klasse verlegt oder durch einen Domainservice durchgeführt werden. Es entstehen Auswirkungen auf die bisherige Funktionsweise und den Datenfluss der Applikation, welche in den kommenden Unterkapiteln anhand der Initiierung des Bezahlvorgangs genauer untersucht werden.
+Da die Aggregates unabhängig voneinander agieren, müssen sie auch getrennt geladen und abgespeichert werden können. Folglich wird ein neues Repository benötigt, welches diese Operationen für das neue Aggregate absolviert. Die Referenz auf den PaymentProcess wird aus dem Basket entfernt und alle Funktionen, welche Aufrufe auf dieses Objekt benötigt haben, müssen entweder in die PaymentProcess-Klasse verlagert oder durch einen Domainservice durchgeführt werden. Es entstehen Auswirkungen auf die bisherige Funktionsweise und den Datenfluss der Applikation, welche in den kommenden Unterkapiteln anhand der Initiierung des Bezahlvorgangs genauer untersucht werden.
+
+Kurze Zusammenfassung des Anwendungsfalles: 
+Bevor ein Bezahlprozess gestartet werden darf, muss eine Evaluierung des Warenkorbzustands stattfinden, wie die Überprüfung der hinzugefügten Zahlungsarten, Kundendaten und errechneten Geldbeträge. Nach erfolgreicher Validierung wird der Warenkorbzustand auf 'freeze' abgeändert und der PaymentProcess kann eingeleitet werden.
 
 \subsection{Eventuelle Konsistenz zwischen Aggregates}
 %TODO: Message Broker und Listener in gls
 
-Bevor der Bezahlprozess gestartet werden darf, findet eine Überprüfung des Warenkorbzustands statt und zusätzlich wird durch einen Änderung des Status der Basket eingefroren. Dies erfordert entweder das Laden des Warenkorbs oder der Status muss ebenfalls im PaymentProcess zwischengespeichert werden. Diese zwei Varianten erfordern eine Anpassung beider Aggregates innerhalb einer Transaktion. In vorangehenden Absätzen wurde diese Problemstellung durch eventuelle Konsistenz gelöst. 
+Bei der Implementierung von Variante A ist es möglich as Einfrieren des Warenkorbs und die Initiierung innerhalb einer Transaktion erfolgt. Aufgrund der Richtlinie, dass jede Transaktion nur ein Aggregate bearbeiten darf, müssen somit diese Funktionalitäten aufgespalten werden. Das konkrete Problem, welches sich dabei ergibt, ist im Codebeispiel \ref{lst:eventualConsistency} veranschaulicht.
 
-Eine mögliche Implementierung ist die Verwendung eines Message Brokers. Nachdem alle Vorbedingungen überprüft worden sind, kann ein Event abgefeuert werden. Dieses wird durch einen Listener abgerufen und beginnt den zweiten Teil des Prozesses, in welchem die eigentliche Initiierung ausgeführt wird. Ein möglicher Programmablauf wird in Abbildung \ref{fig:VarC-Sequence} aufgezeigt.
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Getrennte Transaktionen für die Initiierung des Bezahlvorgangs}, label={lst:eventualConsistency}, language=Kotlin]
+		fun initializePaymentProcess(basket: Basket, paymentProcess: PaymentProcess) {
+			basket.validate()
+			basket.freeze()
+			basketRepository.save(basket)
+			// Mögliches Interleaving anderer Operation, welche zur Abänderung des
+			// Baskets und des Validierungsergebnisses führt.
+			paymentProcess.initialize()
+			paymentProcessRepository.save(paymentProcess)
+		}
+	\end{lstlisting}
+\end{minipage}
+
+%TODO: Transactional Annotation in POC Code
+%TODO: Thread
+Zwischen dem Persistieren des eingefrorenen Warenkorb und der Initiierung des PaymentProcesses können aufgrund von Parallelität der Warenkorb durch separate Anfragen weiterhin bearbeitet werden. Konkret könnte eine Bedingung für die Validierung sein, dass die Kundendaten nicht leer sein dürfen. Jedoch wird zwischen Zeile 4 und Zeile 7 in einem parallel laufenden Thread durch einen externen API-Aufruf die Kundendaten entfernt. Dadurch wäre die eigentliche Validierung in Zeile 2 fehlgeschlagen und die Initiierung darf nicht durchgeführt werden, jedoch wird diese dennoch in unseren Beispiel angestoßen, da davon ausgegangen wird, dass sich der Basket in der Zwischenzeit nicht verändert hat. Die diese beiden Operationen nicht als eine atomare Einheit umgesetzt ist, entsteht immer eine Möglichkeit des Interleavings zwischen den einzelnen Codezeilen.
+
+Verdeutlicht wird dieser Effekt bei der Benutzung eines Message Brokers, falls exemplarisch die einzelnen Prozesse in verschiedenen Microservices ablaufen. Hierbei wird die konkrete Initiierung in einem anderen Service durchgeführt, welcher bei Empfang eines bestimmten Events ausgeführt wird. Folglich feuert die Funktion nach Einfrieren des Warenkorbs ein solches Event ab. Ein möglicher Programmablauf ist in Diagramm \ref{fig:VarC-Sequence} zu sehen. 
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false, width=\textwidth]{svg/VarC Sequenz.svg}
+	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarC Sequenz.svg}
 	\caption{Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}
 	\label{fig:VarC-Sequence}
 \end{figure}
 
-Nachteilig ergibt sich durch die eventuelle Konsistenz ein Zeitraum, in dem zwar der Warenkorb eingefroren ist, allerdings kein zugehöriger Zahlungsprozess existiert. Dieser ist in dem Sequenzdiagramm \ref{fig:VarC-Sequence} rot markiert. Die Operationen sind demnach nicht mehr atomar. Als Folge dessen entstehen weitere Herausforderungen für das Domainmodell. 
-
-Einerseits kann es vorkommen, dass vor der eigentlichen Initiierung bereits weitere Änderungen an den Warenkorb getätigt worden sind. Dies hat zu Folge, dass vorher geprüfte Invarianten eventuell bereits wieder ungültig sind, die Durchführung des Bezahlvorgangs jedoch weiterhin stattfindet. In dem konkreten Beispiel kann eine solche Änderung nicht geschehen, da ein eingefrorener Warenkorb nicht mehr angepasst werden darf bis zum Abschluss oder Abbruch des Bezahlungsprozesses. Asynchrone Datenverarbeitung birgt viele Vor- und Nachteile, dadurch müssen stets solche Möglichkeiten beim Softwaredesign beachtet werden.
-
-Schlussfolgernd erhalten Clients, welche den aktuellen Bestellprozess abfragen, bis zur Speicherung des Payment Aggregates einen veralteten Stand. Dies stellt in einigen Anwendungsfällen eine Herausforderung dar, da die Kommunikationspartner mit vermeintlich inkonsistenten Daten arbeiten müssen.
+Der rot markierte Bereich stellt die Zeitspanne dar, in welcher andere Prozesse den Warenkorb weiterhin bearbeiten können und dadurch die eigentliche Initiierung invalide, jedoch weiterhin durchgeführt wird. Als Folge dessen entstehen weitere Herausforderungen für das Domainmodell und die Interleavingsmöglichkeiten müssen stets in Betracht gezogen werden. Diese Art von Konsistenz wird als 'Eventuelle Konsistenz' betitelt, da es einen Zeitpunkt gibt in dem die Businessanforderungen temporär nur \emph{eventuell} erfüllt sind. Generell kann in vielen Anwendungsfällen eine kurzzeitige Abweichung der Voraussetzungen akzeptiert werden, zum Beispiel in einem Gruppenchat hat ein kurzer verzögerter Empfang der Nachrichten unter den Teilnehmern keinen großen Einfluss auf die Nutzererfahrung oder korrekte Funktionsweise der Applikation. Hingegen gilt bei der Initiierung des Zahlungsprozesses ein hoher Fokus auf fiskalisch korrekte Abarbeitung des Prozesses. Clients, welche den aktuellen Stand des Bestellprozess abfragen, erhalten bis zur Speicherung des Payment Aggregates einen veralteten Stand. Dies stellt einen bedeutenden Bruch der Invarianten dar. Folglich kann das Zusammenspiel zwischen Basket und PaymentProcess nicht durch eventuelle Konsistenz gelöst werden ohne ein hohes Risiko einzugehen.
 
 \subsection{Atomare Transaktionen über mehrere Aggregates}
 
 %TODO: Race Conditions in glossary
 %TODO: Sehr oft "Aggregate innerhalbt einer Transaktion"
 %https://softwareengineering.stackexchange.com/questions/356106/ddd-why-is-it-a-bad-practice-to-update-multiple-aggregate-roots-per-transaction   QUELLE FÜR HOST AUSSAGE
-Ein weiterer Lösungsansatz zum Bewältigen des Problems ist der Einsatz einer Transaktion über mehrere Aggregates hinweg, obwohl dies die vorher definierte Richtlinie bricht. Argumentativ muss hierzu zuerst die Frage beantwortet werden, aus welchem Grund eine Transaktion nicht mehrere Aggregates bearbeiten darf. Durch Anpassen der Fragestellung wird dieser Aspekt klarer. Die Aggregationsgrenzen sind äquivalent mit der transaktionalen Konsistenz, dadurch entspricht die Speicherung zweier Aggregates innerhalb einer einzelnen Transaktion eine Überschreitung dieser Grenzen. Dies lässt vermuten, dass die Aggregationsgrenzen allgemein nicht korrekt gesetzt sind und ein anderes Design eventuell effektiver ist. Sollte diese Vorgabe beispielsweise in einem von mehreren dutzend Anwendungsfällen gebrochen werden, stellt dies kein klares Indiz für einen falschen Aggregationsschnitt dar. Problematisch ist alleinig, wenn die zugehörigen Aggregates auf unterschiedlichen Datenbankhosts liegen. Eine atomare Transaktion ist dadurch unmöglich, wodurch eine solche Architektur unzuverlässig entwickelt und Race Conditions auftreten können. Bei einer Microservice Architektur tritt dieser Fall oft ein, da jede einzelne Applikation meist eine eigene Datenbank auf unterschiedlichen Hosts besitzen. 
+Ein weiterer Ansatz zum Bewältigen des Problems ist der Einsatz einer Transaktion über mehrere Aggregates hinweg, obwohl dies die vorher definierte Richtlinie bricht. Argumentativ muss hierzu zuerst die Frage beantwortet werden, aus welchem Grund überhaupt eine Transaktion nicht mehrere Aggregates bearbeiten darf. Durch Anpassen der Fragestellung wird dieser Aspekt klarer. 
+
+Der Hintergedanke des Einsatzes von Aggregates ist eine Gruppierung von Klassen, welche vor und nach einer Transaktion stets konsistent sein müssen. Dies schützt die Applikation vor invaliden Zuständen und erlaubt die Annahme, dass alle Businessvoraussetzungen erfüllt sind. Kann diese Eigenschaft nicht garantiert werden, muss die Software und ihre Clients eventueller Konsistenz handhaben können. Die Aggregationsgrenzen sind somit mit der transaktionalen Konsistenz äquivalent. Dadurch entspricht die Speicherung zweier Aggregates innerhalb einer einzelnen Transaktion eine Überschreitung dieser Grenzen und lässt vermuten, dass der Aggregationsschnitt neu eingeteilt werden muss. Die Richtlinie stellt folglich lediglich ein Indiz für korrektes bzw. inkorrektes Design der Aggregates dar. Bedenklich ist alleinig, wenn die zugehörigen Aggregates auf unterschiedlichen Datenbankhosts liegen. Eine atomare Transaktion ist dadurch unmöglich, wodurch eine solche Architektur die Probleme einer eventuell konsistenten Applikation entwickelt und Interleavings auftreten können. Bei einer Microservice Architektur tritt dieser Fall oft ein, da jede einzelne Applikation meist eine eigene Datenbank auf unterschiedlichen Hosts besitzen.
 
 %TODO: https://docs.mongodb.com/manual/core/write-operations-atomicity/
-Letztendlich soll die Architektur und das Datenmodell die Businessprozesse optimal unterstützen, während die Software weiterhin flexibel und performant bleibt. Die Richtlinie stellt lediglich einen Leitfaden dar, um ein korrekte Aufteilung zu ermöglichen. Für die Checkout-Software existiert aktuell keinen Grund zum Anlass anzunehmen, dass zukünftig mehrere Datenbankhosts benötigt werden. Dadurch kann die Überlegung entstehen, ob es sinnvoll ist, das Einfrieren des Warenkorbs und die Initiierung des Bezahlprozesses innerhalb einer Transaktion auszuführen. 
+Eventuelle Konsistenz ist aus den Gründen des vorgehenden Unterkapitels nicht anwendbar und für die Checkout-Software existiert aktuell kein Anlass zur Annahme, dass zukünftig mehrere Datenbankhosts benötigt werden. Dadurch kann die Überlegung entstehen, das Einfrieren des Warenkorbs und die Initiierung des Bezahlprozesses innerhalb einer Transaktion auszuführen. Dazu ist erforderlich, dass die darunterliegende Datenbank eine Transaktion über mehrere Tabellen beziehungsweise Einträge erlaubt. In diesem Projekt wird eine MongoDB zur Datenspeicherung verwendet, welche seit Version 4 atomare Operationen auf mehrere Dokumente und Collections unterstützt. Collections sind hierbei grundlegend gleichbedeutend mit Tabellen aus relationalen Datenbanken. Unsere Applikation erfüllt dementsprechend diese Voraussetzung und eine Implementierung dieses Lösungsansatzes ist technisch möglich. Die Funktion aus dem Beispiel \ref{fig:VarC-Sequence} wird ergänzt, indem ein optimistisches Sperrverfahren auf die betroffenen Einträge in der Datenbank angewandt wird. Dadurch werden andere Zugriffe auf diesen Basket bzw. PaymentProcess erst ausgeführt, wenn die Initiierung vollständig abgeschlossen ist. Eine Möglichkeit zum Interleaving wird dadurch verhindert. Diese Vorgehensweise kann analog in ähnlichen Szenarien verwendet werden.
+
+Weiterhin besteht die Frage, ob \emph{Variante C} ein valides Aggregationsdesign darstellt, da in vielen Funktionen eine Überschreitung der transaktionalen Grenzen stattfindet. Begründet kann diese Entscheidung dadurch, dass der Bezahlvorgang eine kritische Operation aus rechtlicher Sicht darstellt. Sobald dieser gestartet wird, muss das ganze Datenmodell stets konsistent sein. Wenn es uns nicht erlaubt sein sollte, eine Transaktion über mehrere Aggregates durchzuführen, sind somit alle Aggregationsschnitte, abgesehen von \emph{Variante A}, nicht zulässig. Eventuell kann diese Erkenntnis bereits eine vorläufige Antwort für die initiale Forschungsfrage dieser Arbeit darstellen.
+
+Letztendlich soll die Architektur und das Datenmodell die Businessprozesse optimal unterstützen, während die Software weiterhin flexibel und performant bleibt. Die Richtlinie stellt einzig einen Leitfaden dar, um ein korrektes Design zu erleichtern, jedoch keine absolute Regel. Der Anreiz für eine genauer Unterteilung der Aggregates ist das separate Laden und zeitgleiche Bearbeiten unterschiedlicher Aggregates, welches weiterhin in \emph{Variante C} entlang der Richtlinie möglich ist. Anhand dieser Begründung wird für den Proof-of-Concept angenommen, dass ein solcher Aggregationsschnitt als Designentscheidung vertretbar ist.
+
+%TODO: Implementierung der Variante
+\subsection{Implementierung von Aggregates mit geteilten Invarianten}
+
+
 
 \section{Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen }
 \blindtext

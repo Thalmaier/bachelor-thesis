@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  16 FEB 2022 03:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  17 FEB 2022 03:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1118,17 +1118,17 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 97.
+Package glossaries Info: Writing glossary file main.glo on input line 104.
 \glo@acronym@file=\write7
 \openout7 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 97.
+Package glossaries Info: Writing glossary file main.acn on input line 104.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-172.
+179.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1148,20 +1148,20 @@ LaTeX Warning: Unused global option(s):
 (kapitel/50_aggregatdesign.aux) (kapitel/60_poc.aux) (kapitel/70_fazit.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1189,18 +1189,18 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count486
-LaTeX Info: Redefining \microtypecontext on input line 172.
-Package microtype Info: Applying patch `item' on input line 172.
-Package microtype Info: Applying patch `toc' on input line 172.
-Package microtype Info: Applying patch `eqnum' on input line 172.
-Package microtype Info: Applying patch `footnote' on input line 172.
+LaTeX Info: Redefining \microtypecontext on input line 179.
+Package microtype Info: Applying patch `item' on input line 179.
+Package microtype Info: Applying patch `toc' on input line 179.
+Package microtype Info: Applying patch `eqnum' on input line 179.
+Package microtype Info: Applying patch `footnote' on input line 179.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 172.
+LaTeX Info: Redefining \showhyphens on input line 179.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1261,8 +1261,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 172.
-Package biblatex Info: Reference segment=0 on input line 172.
+Package biblatex Info: Reference section=0 on input line 179.
+Package biblatex Info: Reference segment=0 on input line 179.
  (main.glsdefs)
 \openout2 = `glossary.aux'.
 
@@ -1274,9 +1274,9 @@ Package biblatex Info: Reference segment=0 on input line 172.
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
 File: bilder//thi_logo_cropped.pdf Graphic file (type pdf)
 <use bilder//thi_logo_cropped.pdf>
-Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 177.
+Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 184.
 (pdftex.def)             Requested size: 229.81075pt x 101.48807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 177
+LaTeX Font Info:    Trying to load font information for U+msa on input line 184
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1285,7 +1285,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 177
+LaTeX Font Info:    Trying to load font information for U+msb on input line 184
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1314,8 +1314,8 @@ i_logo_cropped.pdf>] [2
 
 
 ] [2] [3])
-Package tocbasic Info: character protrusion at toc deactivated on input line 18
-4.
+Package tocbasic Info: character protrusion at toc deactivated on input line 19
+1.
  (main.toc
 [4
 \babel@aux{ngerman}{}
@@ -1351,8 +1351,18 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 28.
+[1
+
+
+]) [2] [3]
+\openout2 = `kapitel/20_grundlagen.aux'.
+
+ (kapitel/20_grundlagen.tex
+chapter 2.
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-28.
+13.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1360,19 +1370,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1
-
-
-]
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 40.
-
-[2]) [3]
-\openout2 = `kapitel/20_grundlagen.aux'.
-
- (kapitel/20_grundlagen.tex
-chapter 2.
-[4
+ [4
 
 
 
@@ -1380,7 +1378,8 @@ chapter 2.
 ]
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 ' is 6 on input line 40.
- (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
+
+(svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=53, page=1, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
@@ -1579,106 +1578,114 @@ File: ./svg-inkscape/ExampleDomain_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/ExampleDomain_svg-raw.pdf  used on inpu
 t line 94.
 (pdftex.def)             Requested size: 471.21431pt x 475.39992pt.
- [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>] [11]) [12]
+ [9] [10 <./svg-inkscape/ExampleDomain_svg-raw.pdf>] [11] [12]) [13]
 \openout2 = `kapitel/30_planung.aux'.
 
 
 (kapitel/30_planung.tex
 chapter 3.
-<./svg-inkscape/SL Basketcreation_svg-raw.pdf, id=116, 482.55281pt x 128.73094p
+<./svg-inkscape/SL Basketcreation_svg-raw.pdf, id=119, 369.63094pt x 128.73094p
 t>
 File: ./svg-inkscape/SL Basketcreation_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL Basketcreation_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL Basketcreation_svg-raw.pdf  used on 
 input line 24.
-(pdftex.def)             Requested size: 482.55162pt x 128.7306pt.
-[13
+(pdftex.def)             Requested size: 369.63002pt x 128.7306pt.
+[14
 
 
 
 
 ]
-<./svg-inkscape/SL Basketabruf_svg-raw.pdf, id=120, 482.55281pt x 181.42781pt>
+<./svg-inkscape/SL Basketabruf_svg-raw.pdf, id=123, 482.55281pt x 181.42781pt>
 File: ./svg-inkscape/SL Basketabruf_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL Basketabruf_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL Basketabruf_svg-raw.pdf  used on inp
 ut line 37.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
- [14 <./svg-inkscape/SL Basketcreation_svg-raw.pdf> <./svg-inkscape/SL Basketab
-ruf_svg-raw.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL Basketabruf_svg-raw.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./svg-inkscape/SL Basketstornierung_svg-raw.pdf, id=158, 482.55281pt x 181.427
+<./svg-inkscape/SL Basketstornierung_svg-raw.pdf, id=124, 482.55281pt x 181.427
 81pt>
 File: ./svg-inkscape/SL Basketstornierung_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL Basketstornierung_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL Basketstornierung_svg-raw.pdf  used 
 on input line 48.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
-<./svg-inkscape/SL Checkoutdata_svg-raw.pdf, id=159, 482.55281pt x 181.42781pt>
+ [15 <./svg-inkscape/SL Basketcreation_svg-raw.pdf>] [16 <./svg-inkscape/SL Bas
+ketabruf_svg-raw.pdf> <./svg-inkscape/SL Basketstornierung_svg-raw.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL Basketstornierung_svg-raw.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./svg-inkscape/SL Checkoutdata_svg-raw.pdf, id=179, 482.55281pt x 181.42781pt>
 
 File: ./svg-inkscape/SL Checkoutdata_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL Checkoutdata_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL Checkoutdata_svg-raw.pdf  used on in
 put line 60.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
- [15 <./svg-inkscape/SL Basketstornierung_svg-raw.pdf>]
-<./svg-inkscape/SL AddProduct_svg-raw.pdf, id=177, 482.55281pt x 301.8778pt>
+<./svg-inkscape/SL AddProduct_svg-raw.pdf, id=180, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/SL AddProduct_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL AddProduct_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL AddProduct_svg-raw.pdf  used on inpu
 t line 71.
 (pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
-<./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf, id=178, 482.55281pt x 181.4278
+ [17 <./svg-inkscape/SL Checkoutdata_svg-raw.pdf>]
+<./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf, id=199, 482.55281pt x 181.4278
 1pt>
 File: ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf  used o
-n input line 83.
+n input line 82.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
-<./svg-inkscape/SL InitPayment_svg-raw.pdf, id=179, 482.55281pt x 241.65282pt>
+<./svg-inkscape/SL InitPayment_svg-raw.pdf, id=200, 482.55281pt x 241.65282pt>
 File: ./svg-inkscape/SL InitPayment_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL InitPayment_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL InitPayment_svg-raw.pdf  used on inp
-ut line 94.
+ut line 93.
 (pdftex.def)             Requested size: 482.55162pt x 241.65222pt.
- [16 <./svg-inkscape/SL Checkoutdata_svg-raw.pdf>] [17 <./svg-inkscape/SL AddPr
-oduct_svg-raw.pdf> <./svg-inkscape/SL PutBezahlmethode_svg-raw.pdf
+ [18 <./svg-inkscape/SL AddProduct_svg-raw.pdf>] [19 <./svg-inkscape/SL PutBeza
+hlmethode_svg-raw.pdf> <./svg-inkscape/SL InitPayment_svg-raw.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL PutBezahlmethode_svg-raw.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SL InitPayment_svg-raw.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./svg-inkscape/SL ExecPayment_svg-raw.pdf, id=228, 482.55281pt x 301.8778pt>
+<./svg-inkscape/SL ExecPayment_svg-raw.pdf, id=248, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/SL ExecPayment_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SL ExecPayment_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/SL ExecPayment_svg-raw.pdf  used on inp
-ut line 109.
+ut line 104.
 (pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
-<./svg-inkscape/ContextDiagramm_svg-raw.pdf, id=229, 482.1764pt x 271.3889pt>
+<./svg-inkscape/REST API_svg-raw.pdf, id=249, 542.77782pt x 949.29657pt>
+File: ./svg-inkscape/REST API_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/REST API_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/REST API_svg-raw.pdf  used on input lin
+e 118.
+(pdftex.def)             Requested size: 542.77649pt x 949.29425pt.
+
+
+LaTeX Warning: Float too large for page by 27.70053pt on input line 121.
+
+[20 <./svg-inkscape/SL ExecPayment_svg-raw.pdf>] [21 <./svg-inkscape/REST API_s
+vg-raw.pdf>]
+<./svg-inkscape/ContextDiagramm_svg-raw.pdf, id=284, 482.1764pt x 271.3889pt>
 File: ./svg-inkscape/ContextDiagramm_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ContextDiagramm_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ContextDiagramm_svg-raw.pdf  used on in
-put line 125.
+put line 132.
 (pdftex.def)             Requested size: 482.17522pt x 271.38823pt.
- [18 <./svg-inkscape/SL InitPayment_svg-raw.pdf>] [19 <./svg-inkscape/SL ExecPa
-yment_svg-raw.pdf> <./svg-inkscape/ContextDiagramm_svg-raw.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ContextDiagramm_svg-raw.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]) [20]
+) [22 <./svg-inkscape/ContextDiagramm_svg-raw.pdf>] [23]
 \openout2 = `kapitel/40_model.aux'.
 
- (kapitel/40_model.tex
+
+(kapitel/40_model.tex
 chapter 4.
-[21
+[24
 
 
 
 
-] [22] [23] [24] [25]
-<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=294, 505.13719pt x 509
+] [25] [26] [27] [28]
+<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=319, 505.13719pt x 509
 .65407pt>
 File: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf Graphic file (type pd
 f)
@@ -1686,7 +1693,7 @@ f)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf  u
 sed on input line 198.
 (pdftex.def)             Requested size: 505.13596pt x 509.65282pt.
-<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=295, 429.85594pt x 2
+<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=320, 429.85594pt x 2
 22.07968pt>
 File: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf Graphic file (type 
 pdf)
@@ -1694,7 +1701,7 @@ pdf)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf 
  used on input line 205.
 (pdftex.def)             Requested size: 429.85489pt x 222.07913pt.
-<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=296, 497.60907pt x 24
+<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=321, 497.60907pt x 24
 3.15843pt>
 File: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf Graphic file (type p
 df)
@@ -1702,7 +1709,7 @@ df)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf  
 used on input line 212.
 (pdftex.def)             Requested size: 497.60785pt x 243.15784pt.
- [26] [27 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [28 <./svg-ink
+ [29] [30 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [31 <./svg-ink
 scape/ValueObjectCustomerDiagram_svg-raw.pdf> <./svg-inkscape/ValueObjectPaymen
 tDiagram_svg-raw.pdf
 
@@ -1714,31 +1721,45 @@ Underfull \hbox (badness 2237) in paragraph at lines 232--232
 \OT1/lmss/m/n/10.95 (+20) Wer-ten be-sitz-ten glei-che
  []
 
-[29]) [30]
+[32]) [33]
 \openout2 = `kapitel/50_aggregatdesign.aux'.
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
-[31
+[34
 
 
 
 
-] [32] [33]
-<./svg-inkscape/VarC Sequenz_svg-raw.pdf, id=537, 526.96875pt x 406.89516pt>
-File: ./svg-inkscape/VarC Sequenz_svg-raw.pdf Graphic file (type pdf)
-<use ./svg-inkscape/VarC Sequenz_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarC Sequenz_svg-raw.pdf  used on input
- line 86.
-(pdftex.def)             Requested size: 526.96745pt x 406.89415pt.
- [34] [35 <./svg-inkscape/VarC Sequenz_svg-raw.pdf>] [36])
-[37]
-\openout2 = `kapitel/60_poc.aux'.
+]
+<./svg-inkscape/VarB_svg-raw.pdf, id=556, 325.215pt x 115.18031pt>
+File: ./svg-inkscape/VarB_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/VarB_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 23
+.
+(pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
 
- (kapitel/60_poc.tex
-chapter 6.
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [35 <./svg-inkscape/VarB_svg-raw.pdf>] [36]
+<./svg-inkscape/VarC_svg-raw.pdf, id=572, 325.215pt x 115.18031pt>
+File: ./svg-inkscape/VarC_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/VarC_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 74
+.
+(pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
+ [37]
+LaTeX Font Info:    Trying to load font information for OMS+lmss on input line 
+91.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 91.
+
+
+LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 91.
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-29.
+95.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1746,44 +1767,90 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OMS+lmss on input line 
-29.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 29.
 
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 29.
-
-LaTeX Font Info:    Trying to load font information for OML+lmss on input line 
-31.
-LaTeX Font Info:    No file OMLlmss.fd. on input line 31.
-
-LaTeX Font Warning: Font shape `OML/lmss/m/n' undefined
-(Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 31.
-
-
-Overfull \hbox (10.95pt too wide) in paragraph at lines 27--37
+Overfull \hbox (10.95pt too wide) in paragraph at lines 89--102
 []$[]$ 
  []
 
-[38
+<./svg-inkscape/VarC Sequenz_svg-raw.pdf, id=576, 526.96875pt x 406.89516pt>
+File: ./svg-inkscape/VarC Sequenz_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/VarC Sequenz_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/VarC Sequenz_svg-raw.pdf  used on input
+ line 111.
+(pdftex.def)             Requested size: 526.96745pt x 406.89415pt.
+[38 <./svg-inkscape/VarC_svg-raw.pdf>] [39 <./svg-inkscape/VarC Sequenz_svg-raw
+.pdf>] [40]) [41]
+\openout2 = `kapitel/60_poc.aux'.
+
+ (kapitel/60_poc.tex
+chapter 6.
+LaTeX Font Info:    Trying to load font information for OML+lmss on input line 
+23.
+LaTeX Font Info:    No file OMLlmss.fd. on input line 23.
+
+LaTeX Font Warning: Font shape `OML/lmss/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 23.
+
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
+[]$[]$ 
+ []
+
+[42
 
 
 
 
-] [39]) [40]
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+68.
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `texttrademark ' is missing
+(microtype)             in font `TS1/lmtt/m/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 64--76
+[]$[]$ 
+ []
+
+[43]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 92--104
+[]$[]$ 
+ []
+
+[44]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 114--131
+[]$[]$ 
+ []
+
+[45]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 145--159
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 168--179
+[]$[]$ 
+ []
+
+) [46]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [41
+) [47
 
 
 
 
-] [42
+] [48
 
 
 
@@ -1794,14 +1861,14 @@ chapter 7.
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-16.
+23.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 216.
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 223.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1821,17 +1888,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31883 strings out of 478659
- 654141 string characters out of 2845920
- 1572770 words of memory out of 3000000
- 49102 multiletter control sequences out of 15000+600000
- 505207 words of font info for 221 fonts, out of 8000000 for 9000
+ 32116 strings out of 478659
+ 658499 string characters out of 2845920
+ 1588906 words of memory out of 3000000
+ 49316 multiletter control sequences out of 15000+600000
+ 506312 words of font info for 227 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 108i,20n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,21n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
-{C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C
-:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Us
-ers/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
+{C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
+/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/U
+sers/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users
 /simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
 C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcs
@@ -1842,9 +1909,9 @@ s8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
 bx10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 sso10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mtt8.pfb>
-Output written on main.pdf (53 pages, 819403 bytes).
+Output written on main.pdf (59 pages, 933353 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
+ 694 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 47799 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 50374 words of extra memory for PDF output out of 51595 (max. 10000000)
 

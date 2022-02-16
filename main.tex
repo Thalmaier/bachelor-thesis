@@ -25,8 +25,9 @@
 	ndkeywords={@Deprecated, @JvmField, @JvmName, @JvmOverloads, @JvmStatic, @JvmSynthetic, Array, Byte, Double, Float, Int, Integer, Iterable, Long, Runnable, Short, String, Any, Unit, Nothing},
 	ndkeywordstyle={\color{BurntOrange}\bfseries},
 	sensitive=true,
-	stringstyle={\color{ForestGreen}\ttfamily},
+	stringstyle={\color{ForestGreen}\ttfamily}
 }
+
 \lstset{
 	basicstyle=\scriptsize\sffamily\color{black},
 	frame=single,
@@ -36,7 +37,13 @@
 	showspaces=false,
 	showstringspaces=false,
 	tabsize=1,
-	linewidth=\textwidth
+	linewidth=\textwidth,
+	captionpos=b,
+	extendedchars=true
+	inputencoding=utf8,
+	literate={ö}{{\"o}}1
+	{ä}{{\"a}}1
+	{ü}{{\"u}}1
 }
 
 

@@ -91,7 +91,7 @@ Die  Domains, Subdomains, Bounded-Contexts und ihre Kommunikation zueinander wir
 
 \begin{figure}
 	\centering
-	\includesvg[width=0.85\textwidth, inkscapelatex=false]{svg/ExampleDomain.svg}
+	\includesvg[width=0.85\textwidth, inkscapelatex=false, height=0.85\textwidth]{svg/ExampleDomain.svg}
 	\caption{Beispiel einer Context-Map anhand des Personalwesens}
 	\label{fig:Context-Map-Example}
 \end{figure}
@@ -114,7 +114,10 @@ Im Gegenzug zu einem Value Object wird eine Entity nicht durch ihre Werte identi
 
 Eine Klasse \emph{Kunde} stellt einen guten Vertreter dieser Kategorie dar. In vielen Bounded-Contexts wird ein Kunde durch eine eindeutige Id ausgewiesen. Somit sind zwei Kunden mit gleichen Namen dennoch nicht die gleichen Personen. Sollte eine Person einen Namenswechsel erfahren, muss das zugehörige Objekt ebenfalls aktualisiert werden.
 
-Daher folgt auch der Unterschied zu den Value Objects, dass eine Entity durchaus einen Lebenszyklus aufweisen. Sie werden erstellt, erhalten Anpassungen und irgendwann vom System wieder gelöscht. 
+Daher folgt auch der Unterschied zu den Value Objects, dass eine Entity durchaus einen Lebenszyklus aufweisen. Sie werden erstellt, erhalten Anpassungen und irgendwann vom System wieder gelöscht.
+
+In der Entity werden Businessanforderungen, welche sich auf ihre Daten beziehen, direkt implementiert. Dadurch wird eine hohe Kohäsion erzeugt und entsprechend des Information-Expert-Prinzips korrekt verankert.
+%TODO: Information Expert in gls
 
 %TODO: Hier Vergleich von Entity vs VO oder erst später?
 
@@ -133,39 +136,25 @@ Im Falle, dass ein Anwendungsfall die Anpassung zweier Aggregates benötigt, kan
 %TODO: CQRS?
 
 
-
-
 \subsection{Applicationservice}
 
-Sofern Funktionalitäten innerhalb der Domain nicht eindeutig einer oder mehreren Entities bzw. Wertobjekt zugewiesen werden können, werden konzeptionell zusammenhängende Aufgaben in einem Domainservice gebündelt. Um Seiteneffekte durch Zustandsänderungen zu vermeiden halten Service allgemein keinen eigenen Zustand.
+Aufgaben, welche kein Domainwissen erfordert, werden in den Applicationservices realisiert. Dazu gehören das Management von Transaktionen, simple Ablaufsteuerung und Aufrufe anderer Service oder Funktionen eines Aggregate Roots. Um Nebeneffekte ausschließen zu können und Parallelität zu ermöglichen, müssen die Applicationservice ohne Zustand designt werden. Innerhalb dieser Service dürfen zudem keine Businessanforderungen enthalten sein oder Invarianten überprüft werden, dieser Aufgabenbereich wird durch die Domainservices abgedeckt.
 
 \subsection{Domainservice}
 
-Ähnlich zu den Domainservices sind Applicationservices zur zustandslosen Bereitstellung von Funktionen zuständig. Hierbei ist das Unterscheidungsmerkmal, dass sie kein Kenntnisse über Wissen der Domain besitzen dürfen.
+Soweit anwendbar, werden meist alle Businessanforderungen direkt in den  zuständigen Entities oder Value Objects realisiert. Allerdings existieren Fälle, in denen keine klare Zuteilung der Aufgaben möglich ist. Dies kann beispielsweise auftreten wenn sich der Prozess über zwei oder mehr Aggregates spannt. In diesem Fall wird die Funktionalität in einem Domainservice ausgelagert. Ein weiterer Grund für die Anwendung eines Domainservices kann sein, dass die auszuführende Logik Abhängigkeiten zu anderen Services besitzt. Da das Datenmodell selbst keine Referenz auf die Domainservices haben, kann der Methodenaufruf nicht in dem Klasse selbst geschehen. Analog zu den Applicationservices werden Domainservice zustandslos implementiert.
 
 \subsection{Factory}
 
-Die wiederholten Erstellung von komplexen Objekten kann in eine Factory ausgelagert werden, um eine erhöhte Wiederverwendbarkeit zu erreichen.
+Die wiederholten Erstellung von komplexen Objekten kann unnötigen Platz im Quelltext einnehmen und die Übersichtlichkeit einschränken. Dieser Effekt wird vervielfacht, sollte das Codefragment an verschiedenen Stellen auftreten. Zur Auslagerung der Objekterzeugung sind sogenannte Factories gedacht. Sie nehmen alle nötigen Daten entgegen und geben das gefragte Objekt zurück.
 
 \subsection{Repository}
 
-Der Datenzugriff mittels einer Datenbank wird durch ein Repository ermöglicht. Dadurch werden die konzeptionelle Abhängigkeiten zur Datenbank von der Domain getrennt. Daher sollte generell die Kommunikation zu Repositories über ein fest definiertes Interface geschehen.
+Eine Grundfunktion von allen Anwendungen stellt die Speicherung und das Laden von Daten dar. Mithilfe von Repositories wird der Datenbankzugriff ermöglicht und orchestriert. In Domain-Driven Design benötigt ein Aggregate ihr eigenes Repositorie, da sie unabhängig voneinander geladen werden müssen. Durch diese Zuordnung der Zuständigkeiten wird die konzeptionelle Abhängigkeit der Domain von den Datenbanken getrennt. Die Kommunikation mit einem Repository sollte stets über ein fest definiertes Interface geschehen, damit bei Änderungen der darunterliegenden Datenbanktechnologie der Domainkern unbetroffen bleibt. 
 
-\comment{\begin{itemize}[]
-		\item \textbf{Value Objects: } {Zusammengehörige Daten, welche durch ihre konkreten Werte identifizierbar sind, werden durch Value Objects modelliert. Somit gelten Objekte mit der gleichen Wertbelegung als identisch. Aus Gründen der Wiederverwendbarkeit und zur Unterdrückung von unerwünschten Seiteneffekten gilt es als positives Designmuster Werteobjekte \gls{immutable} zu gestalten. Zudem besitzen sie keinen eigenen Lebenszyklus und können nur in Kombination mit einer Entity existieren.}
-		\item \textbf{Entities: } {Im Gegenzug zu Value Objects sind Entities nicht durch ihre Werte identifizierbar sondern behalten in ihren Lebenszyklus die gleiche Identität bei. Somit sind zwei Entities mit gleichen Werten nicht identisch. Aufgrund dieser Eigenschaften werden Entities meist benutzt, um Daten in einer Datenbank zu persistieren und nach diesen zu suchen.}
-		\item \textbf{Aggregate: } {Innerhalb des Bounded-Context gilt ein Aggregate als ein Zusammenschluss aus Entities und Value Objects, welches von außen als eine einzige Einheit wahrgenommen wird. Externe Komponente dürfen ein Aggregat nur durch das sogenannte Aggregate Root referenzieren und nicht direkt auf enthaltene Objekte zugreifen. Innerhalb eines Aggregates gilt, dass Anforderungen bzw. Invarianten an die enthaltenen Objekte vor und nach einer Transaktion erfüllt sein müssen, dies stellt das Aggregate Root sicher. Aufgrund dessen muss das Wurzelobjekt eine Entity darstellen, da ein Value Object nicht alleinig existieren darf. } %TODO: bessere Erklärung von Aggregate der erst in späterem Kapitel? Aggregate Root als alleinstehende Auflistung? Bzw. allgemein wie detailiert hier im Vergleich zu anderen Kaptieln?
-		\item \textbf{Domainservice: } {Sofern Funktionalitäten innerhalb der Domain nicht eindeutig einer oder mehreren Entities bzw. Wertobjekt zugewiesen werden können, werden konzeptionell zusammenhängende Aufgaben in einem Domainservice gebündelt. Um Seiteneffekte durch Zustandsänderungen zu vermeiden halten Service allgemein keinen eigenen Zustand.}
-		\item \textbf{Applicationservice: } {Ähnlich zu den Domainservices sind Applicationservices zur zustandslosen Bereitstellung von Funktionen zuständig. Hierbei ist das Unterscheidungsmerkmal, dass sie kein Kenntnisse über Wissen der Domain besitzen dürfen.} %TODO: Replace "Verhalten"
-		\item \textbf{Factories: } {Die wiederholten Erstellung von komplexen Objekten kann in eine Factory ausgelagert werden, um eine erhöhte Wiederverwendbarkeit zu erreichen. }
-		\item \textbf{Repositories: } {Der Datenzugriff mittels einer Datenbank wird durch ein Repository ermöglicht. Dadurch werden die konzeptionelle Abhängigkeiten zur Datenbank von der Domain getrennt. Daher sollte generell die Kommunikation zu Repositories über ein fest definiertes Interface geschehen.}
-	\end{itemize}
-}
 %TODO: Above klingt sehr stark nach Wiki: https://de.wikipedia.org/wiki/Domain-driven_Design
 
-\comment{Zusätzlich zum Design des Domain-Modells muss innerhalb eines Bounded-Contexts die grundlegende Architektur durch das zugehörige Team bestimmt werden. Je nach Sachverhalt des jeweiligen Kontexts kann sich diese stark von zwischen Bounded-Contexts unterscheiden. Beliebte Modellierungs- und Designstile in Verbindung mit DDD sind unter anderem Microservices, CQRS, Event-Driven Design, Schichtenarchitektur und Hexagonale Architektur. In den vorhergehenden Unterkapiteln wurden bereits die Vorzüge und Nachteile der zwei zuletzt genannten Architekturen erläutert. Auf Basis dieser Analyse wird generell für komplexere Software eine Hexagonale Architektur bevorzugt. Zudem verfolgen Domain-Driven Design und Hexagonale Architektur ähnliche Ziele, wodurch die Software natürlich an Kohäsion und Stabilität gewinnt. Im Zentrum der beiden steht das Domain-Modell, welches ohne Abhängigkeiten zu externen Modulen arbeitet. Primäre und Sekundäre Adapter sind hierzu technisch notwendige Komponente, welche durch fest definierte Ports auf den Applikationskern zugreifen können. Somit ermöglicht die Kombination aus Domain-Driven Design und Hexagonaler Architektur in Zeiten von häufigen technischen Neuheiten und komplexen Businessanforderungen weiterhin eine anpassbare, testbare und übersichtliche Software zu verwirklichen.}
-
-\comment{Mithilfe des, in diesem Kapitel erarbeiteten, Wissen wurden die Grundgedanken hinter den verwendeten Prinzipien verdeutlicht und bildet somit ein solides Fundament für die Durchführung dieses Projekts. Im folgendem wird die Planungsphase des Proof-of-Concepts erläutert auf Basis einer Domain-Driven Hexagonalen Architektur.}
+Mithilfe des, in diesem Kapitel erarbeiteten, Wissen wurden die Grundgedanken hinter Designprinzipien verdeutlicht und bildet somit ein solides Fundament für die Durchführung dieses Projekts. Im folgendem wird die Planungsphase des Proof-of-Concepts erläutert.
 
 
 

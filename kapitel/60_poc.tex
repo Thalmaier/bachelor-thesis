@@ -4,7 +4,7 @@
 %TODO: Framework in gls
 Im Verlaufe dieses Projekts wurde ebenfalls das Datenmodell mitsamt der Hexagonalen Architektur und Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der, in dieser Arbeit beschriebenen, Anforderungen unter Anwendung der gewonnen Erkenntnisse. 
 
-Zu Beginn wurde ein neues Projekt aufgesetzt, welches benötigte Frameworks und Abhängigkeiten importiert, um Boilerplate-Code weitestgehend zu vermeiden. Die gesamte Software wurde mithilfe von Kotlin entwickelt und Komponenten wurden analog zu einer Hexagonalen Architektur in die drei Bereiche Primäre Adapter, Applikationskern und Sekundäre Adapter aufgeteilt. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Der verwendete Aggregationsschnitt ist äquivalent zu einem großes Aggregat mit den Basket als Aggregate Root.
+Zu Beginn wurde ein neues Projekt aufgesetzt, welches benötigte Frameworks und Abhängigkeiten importiert, um Boilerplate-Code weitestgehend zu vermeiden. Die gesamte Software wurde mithilfe von Kotlin entwickelt und Komponenten wurden analog zu einer Hexagonalen Architektur in die drei Bereiche Primäre Adapter, Applikationskern und Sekundäre Adapter aufgeteilt. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Der verwendete Aggregationsschnitt des POCs ist äquivalent zu einem einzelnen, großen Aggregate mit den Basket als Aggregate Root.
 
 %TODO: Hier oder weiter unten Einfügen eines Bildes der Architektur
 
@@ -16,16 +16,8 @@ Primäre Adapter sind Komponente, welche den Datenfluss aufgrund von einem Signa
 Zur Implementierung dieser Funktionalität wurde das Framework 'Ktor' verwendet. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle Informationen, welche von außen stammen, müssen vor der Weitergabe an den Applikationskern in Datenmodelle des Applikationskerns umgewandelt werden. Ist dies nicht der Fall, besitzt der zentrale Teil der Software eine Abhängigkeit von außen. Dies würde sonst einen Bruch des \acrlong{DIP}s darstellen. Die Verwendung von sogenannten \acrfull{DTO} ist jedoch gestattet, sofern diese in einem Modul des Applikationskern liegen und auch von diesen verwaltet werden. Ein konkretes Beispiel für einen Controller ist in Listing \ref{lst:controller} abgebildet.
 %TODO: "Lisiting" schreiben? was ist übersetzung?
 
-\begin{itemize}[noitemsep,nolistsep,topsep=-6px]
-	\item Zeile 1: Definiert die HTTP-Methode PUT und die URL für diesen Endpunkt
-	\item Zeile 2: Auslesen der BasketId aus der URL als Pfadparameters 
-	\item Zeile 3: Deserialisierung des Payloads zu einem Customer-Objekt
-	\item Zeile 4: Weitergabe der Daten an den zuständigen Applicationservice durch ein Interface
-	\item Zeile 5: Antwort an die Anfrage mit HTTP-Status 200 und den Basket als Daten
-\end{itemize}
-
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-\begin{lstlisting}[caption={Beispiel eines Controllers zur setzten von Kundendaten}, label={lst:controller}, language=Kotlin]
+\begin{lstlisting}[caption={Beispiel eines Controllers zum aktualiseren von Kundendaten}, label={lst:controller}, language=Kotlin]
 	put("/basket/{id}/customer") { 
 		val basketId = BasketId(parseUUIDFromParameter("id")) 
 		val customer = call.receive<Customer>()  
@@ -35,19 +27,162 @@ Zur Implementierung dieser Funktionalität wurde das Framework 'Ktor' verwendet.
 \end{lstlisting}
 \end{minipage}
 
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 1: Definiert die HTTP-Methode PUT und die URL für diesen Endpunkt
+	\item Zeile 2: Auslesen der BasketId aus der URL als Pfadparameters 
+	\item Zeile 3: Deserialisierung des Payloads zu einem Customer-Objekt
+	\item Zeile 4: Weitergabe der Daten an den zuständigen Applicationservice durch ein Interface
+	\item Zeile 5: Antwort an die Anfrage mit HTTP-Status 200 und den Basket als Daten
+\end{itemize}
+
 %TODO: Mock-Objekt und DI
 Für jeden definierten Anwendungsfall wurde eine entsprechende Schnittstelle und Controller definiert. Im Kontextes dieses POCs umfassen die Primären Adapter alleinig die Controller, da keine komplexe Datenumwandlung oder Validierung durchgeführt werden muss. Für jede Funktion, welche durch die Adapter aufgerufen werden, existiert eine zugehörige Funktion in einem Port. Die tatsächliche Implementierung der Schnittstelle wird mittels \acrlong{DI} durch das Framework 'Koin' bestimmt und geladen. Dadurch bleiben Abhängigkeiten jederzeit austauschbar und unabhängig testbar. Beispielsweise kann die korrekte Funktionsweise eines Controllers überprüft werden, indem der Applicationservice durch ein Mock-Objekt ausgetauscht und der Aufruf seiner Funktionen ausschließlich simuliert wird. Somit erfahren die einzelnen Komponenten in Testfällen keine Beeinflussung durch die falsche Funktionsweise anderer Teile der Applikation und Fehlschläge können eindeutig einem einzelnen Codeabschnitt zugeschrieben werden.
 
 %TODO: Repos und Caching
 
 
-\section{Umsetzen des Applikationskerns}
-\blindtext
+\section{Realisierung des Applikationskerns}
 
-\section{Auslagerung von Funktionen in Applicationservices}
-\blindtext
+Der Applikationskern stellt das Herz der Anwendung dar. Das maßgeblich Ziel einer Hexagonalen Architektur ist es, dass Zentrum komplett von äußeren Modulen zu entkoppelt. Somit können Adapter jederzeit ausgetauscht werden ohne einer Notwendigkeit die Businesslogik anpassen zu müssen. Die Kommunikation mit dem Kern geschieht ausschließlich über Interfaces, den Ports.
 
-\section{Erstellen der Primären und Sekundären Adapter}
-\blindtext
+\subsection{Definition von Applicationservices anhand ihrer Aufgaben}
+
+%TODO: Umschreiben. Wortwiederholung
+Entsprechend der Definition im Domain-Driven Design liegen Applicationservice eine logische Ebene höher als die Domainservice. Der Unterschied zwischen den beiden ist ihre Einsichten in die Domain. Ein Applicationservice darf kein direktes Domainwissen verwirklichen. Dazu zählen Invarianten oder die Umsetzung von Businessanforderungen.
+Meist beinhalten diese Service folgende Anweisungen:
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Starten und schließen einer Transaktion
+	\item Laden von Aggregates aus Repositories
+	\item Einfache Ablaufsteuerung
+	\item Aufruf von Funktionen auf den Aggregates oder Domainservices
+	\item Umsetzung von technologischen Komponenten wie Event-Listener oder Caching
+\end{itemize}
+
+Ein simples Beispiel bietet uns der BasketItem-Applicationservice. Dieser wird aufgerufen, sofern Änderungen an den BasketItems durchgeführt werden sollen. Der in Figur \ref{lst:applicationservice} dargestellte Code behandelt die Entfernung eines BasketItem aus dem Warenkorb.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Eine Beispielsfunktion des BasketItem-Applikationservice}, label={lst:applicationservice}, language=Kotlin]
+		override fun removeBasketItem(basketId: BasketId, basketItemId: BasketItemId): Basket {
+			return basketStorageService.findById(basketId).also { basket ->
+				logger.info { "Remove item $basketItemId from basket $basketId" }
+				basket.removeBasketItem(basketItemId)
+				basketRefreshService.recalculateBasket(basket)
+				basketStorageService.save(basket)
+			}
+		}
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 2: Laden des Baskets durch ein Domainservice. Theoretisch könnte hier auch das Repository direkt angesporchen werden, jedoch behandelt dieser Domainservice auch die Aktualisierung veralteter Produkt- und Preisdaten.
+	\item Zeile 4: Aufruf einer Funktion auf den Basket zum Entfernen des übergebenen Eintrags
+	\item Zeile 5: Aktualisierung des CalculationResults durch einen Domainservice
+	\item Zeile 6: Speichern des Warenkorbs mit den abgeänderten Daten.
+\end{itemize}
+
+Theoretisch könnte argumentiert werden, dass die Kondition der Neuberechnung des Warenkorbs als Businessanforderung und somit als Domainwissen zählt. Jedoch wurde in diesem Fall der Funktionsaufruf eher dem Ziele der Ablaufsteuerung zugewiesen. Hingegen ist der BasketStorageService ein Domainservice, da nach dem Laden des Baskets aus dem Repository eine Aktualisierungsfunktion initiiert wird. Dies stellt mehr eine Anforderung im Sinne von 'Jeder geladene Basket wird aktualisiert sofern die enthaltenen Daten veraltet sind' dar. 
+
+\subsection{Aufteilen der Businesslogik zwischen Domainservices und Datenmodell}
+
+Der verbleibende Codeanteil im Applikationskern wird auf das Datenmodell verteilt. Aufgrund der Tatsache, dass wir nur ein Aggregat und somit auch nur ein Aggregate Root besitzen, müssen jegliche Operationen auf dem Daten des Baskets und seinen Attributen durch eine Funktion im Basket selber geschehen. Zur Trennung der Funktionalität und Datenhaltung implementiert der Basket ein Interface, welche alle nach außen hin notwendigen Funktionen beinhaltet. Dadurch kann das konkrete darunterliegende Datenmodell ausgetauscht oder auch in Tests simuliert werden. Operationen, welche es erfordern tiefer gelegene Objekte anzupassen, werden durch eine Kette von Funktionsaufrufen umgesetzt. Beispielsweise führt der Warenkorb eine 'cancelPayment'-Methode auf den PaymentProcess aus, welcher wiederum die Anfrage an den betroffenen Payment-Eintrag weitergibt. Hierbei können alle notwendigen Validierungen durchgeführt werden, da das komplette Datenmodell geladen ist. Ein veranschaulichender Codeauszug des Proof-of-Concepts ist das Abändern der Fulfillment Methode in Listing \ref{lst:basket}.
+
+%TODO: Itemize: Punkt am Ende?
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:basket}, language=Kotlin]
+		fun setFulfillment(fulfillment: FulfillmentType, fulfillmentPort: FulfillmentPort) {
+			validateIfModificationIsAllowed()
+			val availableFulfillment = fulfillmentPort.getPossibleFulfillment(outletId)
+			throwIf(!availableFulfillment.contains(fulfillment)) {
+				IllegalModificationError("cannot select $fulfillment for outlet $outletId")
+			}
+			this.fulfillment = fulfillment
+		}
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 2: Überprüfung, ob der Basket aktuell Änderungen zulässt anhand des Status. Stellt eine Invariante des Datenmodells dar.
+	\item Zeile 3: Laden aller verfügbarer Fulfillment Methoden für diesen Basket durch einen Sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
+	\item Zeile 4-6: Falls der neue Wert nicht unter den verfügbaren Fulfillment ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
+	\item Zeile 7: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
+\end{itemize}
+
+Funktionalitäten, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betrifft sind in Domainservice zu implementieren. Sollte ein Prozess Abhängigkeiten zu anderen Services oder Ports besitzen, werden diese ebenfalls in Domainservice ausgelagert. Die Domainservices liegen auf der gleichen konzeptionellen Ebene wie das Datenmodell und dürfen Businesslogik enthalten. Beispielsweise existiert im Proof-of-Concept ein Domainservice für die Abwicklung des Bezahlverfahren. Der Code-Ausschnitt \ref{lst:domainservice} enthält den Algorithmus zum Durchführen des Prozesses. 
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:domainservice}, language=Kotlin]
+		override fun executePaymentProcessAndFinalizeBasket(basketId: BasketId): Basket {
+			return basketStorageService.findById(basketId).also { basket ->
+				throwIf(!basket.isFrozen() || !basket.isPaymentInitialized()) {
+					IllegalModificationError("cannot cancel payment progress if it is not initialized")
+				}
+				val externalPaymentRef = basket.getExternalPaymentRef()
+				paymentPort.executePayment(externalPaymentRef)
+				basket.executePayments() and basket.finalize()
+				basketStorageService.save(basket)
+				logger.info { "Basket payment was executed, saved and finalized" }
+				createOrderAfterFinalization(basket)
+			}
+		}
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 2: Laden des aktualisierten Baskets aus dem BasketStorageService.
+	\item Zeile 3-5: Weist die Durchführung zurück sofern der Basket nicht in den erwarteten Zustand ist. Dies kann auftreten, wenn die REST-API aufgerufen worden ist, ohne dass ein Bezahlprozess zuvor gestartet wurde.
+	\item Zeile 4-6: Falls der neue Wert nicht unter den verfügbaren Fulfillment ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
+	\item Zeile 7: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
+\end{itemize}
+
+\section{Anbinden externer Systeme und Datenbanken durch Sekundäre Adapter}
+
+In dem in der Planungsphase erstellten Context-Diagramm \ref{fig:ContextDiagramm} wurden verschiedenste Systeme aufgezeigt mit welchen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden zwei Gruppen von Komponenten eingeführt. Die API-Service, welche einen Aufruf der externen Schnittstellen simulieren, und die Sekundären Adapter. Letztere implementieren eine vom Applikationskern definierte Schnittstelle, um den notwendigen Dienst bereitzustellen. Analog zu den Primären Adapter, existieren im Anwendungskern keine direkten Abhängigkeiten zu diesem Teil der Software.
+
+Ein Spezialfall sind hierbei die Adapter für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance Verbesserungen wurden zwei Arten von Adapter implementiert. Einerseits der normal fungierende Service, welcher den dazugehörigen API-Service aufruft und anderseits dein Adapter mit Caching-Funktion, welcher zuerst den Preis bzw. Artikel aus dem Cache lädt und zurückgibt. Sollte der Cache-Eintrag veraltet sein, wird der eigentliche Adapter angesprochen, um ein aktuelles Ergebnis aus dem externen System zu erfragen. In Listing \ref{lst:adapter} ist die Klasse zuständig für das Aktualisieren des Preises abgebildet.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Preisadapter mit Caching-Funktion}, label={lst:adapter}, language=Kotlin]
+		class CachedPriceAdapter(priceApiService: PriceApiService, 
+		                         private val priceRepository: CachedPriceRepository)
+		             : PriceAdapter(priceApiService) {
+			
+		     override fun fetchPrice(priceId: PriceId): Price {
+		      return priceRepository.getAndUpdateIfInvalid(priceId, fallback = {
+			     super.fetchPrice(priceId)
+		      })
+		     }	
+		}
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 1-2: Der Cache-Preisadapter hat eine Abhängigkeit zum normalen Preisadapter und zu einem Repository zum abrufen des zwischengespeicherten Preises
+	\item Zeile 6: Abfragen des Preises aus dem Cache-Repository. Sollte der Preis invalide sein wird Zeile 7 ausgeführt.
+	\item Zeile 7: Weiterleitung der Anfrage an den eigentlichen Adapter. Das Ergebnis wird wieder im Cache abgelegt mit dem aktuellen Zeitstempel.
+\end{itemize}
+
+Zusätzlich zu diesen Adaptern gehören ebenfalls die Repositories in diesem Bereich der Hexagonalen Architektur. Sie managen den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen. In dem Proof-of-Concept wird das gesamte Basket-Aggregate abgespeichert. Aus diesem Grund wird nur ein Repository benötigt, welches eine grundlegende Suchfunktion mithilfe der BasketId und eine Speicherfunktion anbietet. Abgesehen davon gehören noch die zwei Caching-Repositories zu dieser Gruppe. Zur Veranschaulichung wird in dem Quelltext-Block \ref{lst:repository} die verwendete Funktion 'getAndUpdateIfInvalide' aus Zeile 6 des Listings \ref{lst:adapter} ebenfalls vorgezeigt.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Preisadapter mit Caching-Funktion}, label={lst:repository}, language=Kotlin]
+		override fun getAndUpdateIfInvalid(key: K, fallback: () -> E): E {
+			  val cachedEntity = getCacheable(key)
+			  return when (cachedEntity != null && isValid(cachedEntity)) {
+			  	  true -> cachedEntity.payload
+			  	  false -> fallback().also { this.put(mapping(it)) }
+			  }
+		}
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}[noitemsep,nolistsep]
+	\item Zeile 2: Laden des Objektes aus dem Cache anhand ihrer Id.
+	\item Zeile 4: Sollte das Objekt für die übergebende Id  vorhanden und noch nicht veraltet sein, wird es dem Aufrufer zurückgegeben
+	\item Zeile 7: Ist diese Bedingung nicht erfüllt, wird die übergebene Aktualisierungsfunktion ausgeführt und das Ergebnis zugleich mit den aktuellen Zeitstempel in den Cache geschrieben.
+\end{itemize}
 
 %TODO: Kapitel über die Implementierung der anderen Varianten
+
+%TODO: Kaptiel über die gesamte Software als kleine Zusammenfassung vor dem Fazit

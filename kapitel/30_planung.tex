@@ -21,7 +21,7 @@ Ein Basket, also ein Warenkorb, stellt das grundlegendste Konstrukt des Checkout
 %TODO: Legende für die Zeichen im Diagramm?
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL Basketcreation.svg}
+	\includesvg[inkscapelatex=false, width=0.9\textwidth]{svg/SL Basketcreation.svg}
 	\caption{Swimlane Diagramm für die Erstellung eines Baskets}
 	\label{fig:SL-Basketcreation}
 \end{figure}
@@ -77,7 +77,6 @@ Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln und d
 
 Eine weiter essentielle Funktion ist das Hinzufügen von Bezahlarten, damit der Kauf erfolgreich initiiert werden kann.  Da es sich nur um das ungeprüfte Anhängen der Beizahlinformationen handelt, müssen keine strengen Validierungen vorgenommen werden, da diese Aufgabe durch ein externes System in einem späteren Schritt des Checkouts erledigt wird. Dennoch werden logische Überprüfungen durchgeführt, wie zum Beispiel, dass der Warenkorb nicht leer oder bereits bezahlt sein darf, da dies keinen Anwendungsfall in diesem Prozess darstellt. Ebenfalls ist eine Neuberechnung aller Bezahlinformationen notwendig. Analog zu den vorgehenden Fällen wurde das Diagramm \ref{fig:SL-PutBezahlmethode} designt.
 
-%TODO: "nein" fehlt auf einen Pfeil des Graphes
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL PutBezahlmethode.svg}
@@ -100,10 +99,6 @@ Nachdem die Bearbeitung des Baskets abgeschlossen ist, kann der Bezahlprozess ge
 
 Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des Bezahlungsvorgangs, abgebildet in Figur \ref{fig:SL-ExecPayment}. Die Checkout-Software dient hierbei als Proxy zwischen Touchpoint und Payment-API. Sofern die Bezahlung erfolgreich war, wird der Status des Baskets auf 'finalized' gestellt. Zugleich wird eine Bestellung durch die Order-API erstellt und im Basket durch eine Referenz verlinkt.
 
-%TODO: Aufruf durch Payment API nicht Touchpoint, i guess
-% TODO: Ein Pfeil zeigt nicht auf die Mitte des Kastens
-%TODO: Umschreiben von "Bezahlprozess nicht gestartet" zu "Bezahlprozess initiiert"
-%TODO: Setzten des Fehler mittig vom Kasten darunter
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL ExecPayment.svg}
@@ -112,6 +107,18 @@ Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des B
 \end{figure}
 
 Es existieren noch weiter simplere Anwendungsfälle, jedoch auf genaue Ausführung wurde verzichtet, um den Fokus der Arbeit beizubehalten. Durch die Anforderungen an unsere Software kann auch bestimmt werden, welche Systeme als Kommunikationspartner benötigt werden. Dies ergib das Umfeld des Projekts. 
+
+\subsection{Resultierende API-Schnittstellen aus den Anwendungsfällen}
+%TODO: Hinzufügen der Rest API Doku hier.
+%TODO: HTTP etc. in glossary
+Anhand dieser Anwendungsfälle wird es möglich eine klare Schnittstellendefinition für die Checkout-Applikation zu erstellen. Hierbei beinhaltet diese alle benötigten Operationen zum erfolgreichen Bewältigen der Anforderungen aus Sicht des Touchpoints. Die Kommunikation der Systeme geschieht über eine REST-API und somit auf Basis des HTTP-Protokolls. In folgender Grafik \ref{fig:REST-API} sind alle relevanten Endpunkte enthalten mitsamt ihrer HTTP-Methode, Parameter und gesendeten bzw. empfangenen Datensätze.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth, height=\textheight]{svg/REST API.svg}
+	\caption{REST-API der Checkout-Software für diesen Proof-of-Concept}
+	\label{fig:REST-API}
+\end{figure}
 
 \section{Projektumfeld und technologische Vorschläge}
 
