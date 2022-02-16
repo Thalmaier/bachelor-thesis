@@ -194,6 +194,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{DTO}%
+{%
+name={DTO},%
+sort={DTO},%
+type={acronym},%
+first={Data-Transfer-Object\glsspace (DTO)},%
+firstplural={Data-Transfer-Object\acrpluralsuffix \glsspace (DTO\acrpluralsuffix )},%
+text={DTO},%
+plural={DTO\acrpluralsuffix },%
+description={Data-Transfer-Object},%
+descriptionplural={Data-Transfer-Object\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Data-Transfer-Object},%
+longplural={Data-Transfer-Objects},%
+short={DTO},%
+shortplural={DTOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DI}%
+{%
+name={DI},%
+sort={DI},%
+type={acronym},%
+first={Dependency-Injection\glsspace (DI)},%
+firstplural={Dependency-Injection\acrpluralsuffix \glsspace (DI\acrpluralsuffix )},%
+text={DI},%
+plural={DI\acrpluralsuffix },%
+description={Dependency-Injection},%
+descriptionplural={Dependency-Injection\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dependency-Injection},%
+longplural={Dependency-Injections},%
+short={DI},%
+shortplural={DIs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{immutable}%
 {%
 name={immutable},%

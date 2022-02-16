@@ -180,7 +180,7 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 
 \domainModell{Payment}{
 	\item \textbf{PaymentId: } {Die Id des Payments.}
-	\item \textbf{Method: } {Bezahlungsart, wie Gutschein oder Barzahlung.}
+	\item \textbf{PaymentMethod: } {Bezahlungsart, wie Gutschein oder Barzahlung.}
 	\item \textbf{PaymentStatus: } {Aktueller Zustand des Payments. Mögliche Werte entsprechen SELECTED, INITIALIZED, EXECUTED, CANCELED. Ein Payment ist bei Hinzufügung im Status SELECTED.}
 	\item \textbf{AmountSelected: } {Betrag welcher durch dieses Payment bezahlt werden soll. Falls dieser Wert leer ist, wird der gesamte Warenkorb durch dieses Payment bezahlt.}
 	\item \textbf{AmountUsed: } {Betrag wie viel insgesamt durch dieses Payment abgedeckt wurde, falls nur ein Bruchteil des AmountSelectes benötigt wird.}
@@ -191,12 +191,32 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 	\item \textbf{OrderRef: } {Referenz auf die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses gesetzt.}
 }
 
-Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um weiterhin eine klare Übersicht zu bieten, wurde im Klassendiagramm ... dieses Konstrukt zusammenfassend dargestellt.
+Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Model in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Der Customer und PaymentProcess wurden aus Platzgründen in separate Klassendiagramme, Abbildung \ref{fig:VO-Customer} und \ref{fig:VO-Payment}, verlagert. Anzumerken ist, dass bei Fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Der Kunde ist in diesem Anwendungsfall genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine genaue Kundennummer. Daher existiert keine Zuweisung zwischen Kunden und mehreren Warenkörben.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/ValueObjectBasketDiagram.svg}
+	\caption{Klassendiagramm eines Baskets}
+	\label{fig:VO-Basket}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/ValueObjectCustomerDiagram.svg}
+	\caption{Zugehöriges Klassendiagramm des Customer Value Objects}
+	\label{fig:VO-Customer}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/ValueObjectPaymentDiagram.svg}
+	\caption{Darstellung des Payment Process als Klassendiagramm}
+	\label{fig:VO-Payment}
+\end{figure}
 
 %TODO: Datentyp hinter name?
 %TODO: Definition doppelt?
 %TODO: Zu oft Value Objects
-%TODO: Klassendiagram
 %TODO: Wie darstellen?
 
 \section{Bestimmung der Entities anhand ihrer Identität und Lebenszyklus}
@@ -204,7 +224,7 @@ Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle kor
 Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien:
 
 %TODO: Ref auf Tabelle?
-\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.47\textwidth} | } 
+\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.46\textwidth} | } 
 	\hline
 	& {\textbf{\centering Value Object} } & \textbf{\centering Entity} \\ 
 	\hline

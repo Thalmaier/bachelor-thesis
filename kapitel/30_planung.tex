@@ -21,7 +21,7 @@ Ein Basket, also ein Warenkorb, stellt das grundlegendste Konstrukt des Checkout
 %TODO: Legende für die Zeichen im Diagramm?
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL Basketcreation.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL Basketcreation.svg}
 	\caption{Swimlane Diagramm für die Erstellung eines Baskets}
 	\label{fig:SL-Basketcreation}
 \end{figure}
@@ -34,7 +34,7 @@ Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgef
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL Basketabruf.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL Basketabruf.svg}
 	\caption{Swimlane Diagramm für den Abruf eines Baskets}
 	\label{fig:SL-Basketabruf}
 \end{figure}
@@ -45,7 +45,7 @@ Der Warenkorb kann sich in verschiedenen Zuständen befinden. Hauptsächlich wir
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL Basketstornierung.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL Basketstornierung.svg}
 	\caption{Swimlane Diagramm für die Stornierung eines Baskets}
 	\label{fig:SL-Basketstornierung}
 \end{figure}
@@ -57,18 +57,18 @@ Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden impl
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL Checkoutdata.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL Checkoutdata.svg}
 	\caption{Swimlane Diagramm für das Setzen der Checkout Daten}
 	\label{fig:SL-Checkoutdata}
 \end{figure}
 
 \subsection{Hinzufügen eines Produktes anhand einer Produkt-ID}
 
-Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln und deren Quantität, Produktbeschreibung und ausgewählte Service bzw. Garantien. Der aufwändigste und deswegen in Grafik \ref{fig:SL-AddProduct} abgebildete Prozess ist hierbei das Hinzufügen eines neuen Produktes zum Basket. Dabei sendet der Client lediglich die zugehörige Produkt-ID, deswegen müssen externe System von der Checkout-Software aufgerufen werden. Dazu gehört die Product-Api, welche alle notwendigen Produktdetails sendet. Der Artikelpreis selbst ist hierbei nicht in den Produktinformationen zu finden, da dieser vom jeweiligen Markt unterschiedlich sein kann. Daher ist ein weiterer Aufruf einer API benötigt, welche zu den IDs des Produktes und Outlets den jetzigen Preis zurückschickt. Diese zwei APIs müssen ebenfalls bei der Aktualisierung des Warenkorbs in anderen Anwendungsfällen aufgerufen werden. Zusätzlich folgt eine Validierung des Warenkorbs auf verschiedene Parameter. Unter anderem darf die Gesamtanzahl der Artikel im Warenkorb keinen festen Wert überschreiten. Der aktualisierte Basket wird beim erfolgreichen Abschluss der Operation an den Touchpoint zurückgegeben.
+Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln und deren Quantität, Produktbeschreibung und ausgewählte Service bzw. Garantien. Der aufwändigste und deswegen in Grafik \ref{fig:SL-AddProduct} abgebildete Prozess ist hierbei das Hinzufügen eines neuen Produktes zum Basket. Dabei sendet der Client lediglich die zugehörige Produkt-ID, deswegen müssen externe System von der Checkout-Software aufgerufen werden. Dazu gehört die Product-API, welche alle notwendigen Produktdetails sendet. Der Artikelpreis selbst ist hierbei nicht in den Produktinformationen zu finden, da dieser vom jeweiligen Markt unterschiedlich sein kann. Daher ist ein weiterer Aufruf einer API benötigt, welche zu den IDs des Produktes und Outlets den jetzigen Preis zurückschickt. Diese zwei APIs müssen ebenfalls bei der Aktualisierung des Warenkorbs in anderen Anwendungsfällen aufgerufen werden. Zusätzlich folgt eine Validierung des Warenkorbs auf verschiedene Parameter. Unter anderem darf die Gesamtanzahl der Artikel im Warenkorb keinen festen Wert überschreiten. Der aktualisierte Basket wird beim erfolgreichen Abschluss der Operation an den Touchpoint zurückgegeben.
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL AddProduct.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL AddProduct.svg}
 	\caption{Swimlane Diagramm für das Hinzufügen eines Produktes }
 	\label{fig:SL-AddProduct}
 \end{figure}
@@ -80,7 +80,7 @@ Eine weiter essentielle Funktion ist das Hinzufügen von Bezahlarten, damit der 
 %TODO: "nein" fehlt auf einen Pfeil des Graphes
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL PutBezahlmethode.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL PutBezahlmethode.svg}
 	\caption{Swimlane Diagramm für das Hinzufügen einer Bezahlmethode}
 	\label{fig:SL-PutBezahlmethode}
 \end{figure}
@@ -91,14 +91,14 @@ Nachdem die Bearbeitung des Baskets abgeschlossen ist, kann der Bezahlprozess ge
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL InitPayment.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL InitPayment.svg}
 	\caption{Swimlane Diagramm für das Initiieren des Bezahlvorgangs }
 	\label{fig:SL-InitPayment}
 \end{figure}
 
 \subsection{Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}
 
-Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des Bezahlungsvorgangs, abgebildet in Figur \ref{fig:SL-ExecPayment}. Die Checkout-Software dient hierbei als Proxy zwischen Touchpoint und Payment-Api. Sofern die Bezahlung erfolgreich war, wird der Status des Baskets auf 'finalized' gestellt. Zugleich wird eine Bestellung durch die Order-Api erstellt und im Basket durch eine Referenz verlinkt.
+Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des Bezahlungsvorgangs, abgebildet in Figur \ref{fig:SL-ExecPayment}. Die Checkout-Software dient hierbei als Proxy zwischen Touchpoint und Payment-API. Sofern die Bezahlung erfolgreich war, wird der Status des Baskets auf 'finalized' gestellt. Zugleich wird eine Bestellung durch die Order-API erstellt und im Basket durch eine Referenz verlinkt.
 
 %TODO: Aufruf durch Payment API nicht Touchpoint, i guess
 % TODO: Ein Pfeil zeigt nicht auf die Mitte des Kastens
@@ -106,7 +106,7 @@ Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des B
 %TODO: Setzten des Fehler mittig vom Kasten darunter
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/SL ExecPayment.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/SL ExecPayment.svg}
 	\caption{Swimlane Diagramm für das Ausführen des Bezahlvorgangs }
 	\label{fig:SL-ExecPayment}
 \end{figure}
@@ -116,23 +116,19 @@ Es existieren noch weiter simplere Anwendungsfälle, jedoch auf genaue Ausführu
 \section{Projektumfeld und technologische Vorschläge}
 
 %TODO: Contract, Boilerplate in Glossary
-Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur mit zahlreichen Abhängigkeiten zwischen Teams und ihren betreuten Systemen. Es ist unmöglich ein solches Konstrukt aufzubauen ohne die Kommunikation der Systeme zu definieren. Als Leitfaden für unser Projektumfeld dienen die Anwendungsfälle des vorgehenden Unterkapitels. In dem vereinfachten Checkout-Prozess werden sechs verschiedene Schnittstellen aufgerufen. Dass plötzliche Änderungen von Systemen keine Auswirkung auf die Funktionsweise der abhängigen Clients hat, wird ein Api-Contract beschlossen, welcher die benötigten Informationen, mögliche Fehlerfälle und die zurückgelieferten Daten festlegt. Der Proof-Of-Concept orientiert sich an diese Contracts, erleichtert allerdings die Kommunikationsbedingungen, um unnötigen Boilerplate zu unterdrücken. Als Ergebnis stellt die Grafik \ref{fig:ContextDiagramm} ein Context-Diagramm unserer Umgebung dar.
+Die komplette Systemumgebung von MediaMarktSaturn ist eine komplexe Struktur mit zahlreichen Abhängigkeiten zwischen Teams und ihren betreuten Systemen. Es ist unmöglich ein solches Konstrukt aufzubauen ohne die Kommunikation der Systeme zu definieren. Als Leitfaden für unser Projektumfeld dienen die Anwendungsfälle des vorgehenden Unterkapitels. In dem vereinfachten Checkout-Prozess werden sechs verschiedene Schnittstellen aufgerufen. Dass plötzliche Änderungen von Systemen keine Auswirkung auf die Funktionsweise der abhängigen Clients hat, wird ein API-Contract beschlossen, welcher die benötigten Informationen, mögliche Fehlerfälle und die zurückgelieferten Daten festlegt. Der Proof-Of-Concept orientiert sich an diese Contracts, erleichtert allerdings die Kommunikationsbedingungen, um unnötigen Boilerplate zu unterdrücken. Als Ergebnis stellt die Grafik \ref{fig:ContextDiagramm} ein Context-Diagramm unserer Umgebung dar.
 
 %TODO: Kotlin, MongoDB, REST, evtl asynchron mit CQRS, DDD und Hexagonal
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false]{svg/ContextDiagramm.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/ContextDiagramm.svg}
 	\caption{Context Diagramm der produktiven Checkout-Umgebung}
 	\label{fig:ContextDiagramm}
 \end{figure}
 
-%TODO: API oder Api?
-Zusätzlich bestehen noch firmen- bzw. teaminterne Vorbedingungen. Wo sinnvoll anwendbar, wird in der Firma Java als Entwicklungssprache angewandt. Über die letzten Jahre gewann Kotlin an Beliebtheit und wird seitdem ebenfalls in MediaMarktSaturn eingesetzt. Die aktuelle Live-Umgebung nutzt zu dem jetzigen Stand noch Java, jedoch werden Codeanpassungen zukünftig in Kotlin vorgenommen, um eine langsame Migration zu gewährleisten. Aus diesen Grund wird ebenfalls der Proof-Of-Concept in Kotlin umgesetzt. Zudem ist die Technologie der systemübergreifenden Kommunikation auf Rest Apis festgelegt. Dies kommt mit einigen Einschränkungen und muss in der Entwicklung der primären und sekundären Adapter beachtet werden. Die Auswahl der Datenbank ist grundsätzlich nicht vorgegeben. Da die Applikation eine Vielzahl an Leseoperationen durchführt und somit einen hohen Nutzen aus der erhöhten Performance von No-SQL Datenbanken zieht, wurde die Benutzung einer MongoDB beschlossen.
+Zusätzlich bestehen noch firmen- bzw. teaminterne Vorbedingungen. Wo sinnvoll anwendbar, wird in der Firma Java als Entwicklungssprache angewandt. Über die letzten Jahre gewann Kotlin an Beliebtheit und wird seitdem ebenfalls in MediaMarktSaturn eingesetzt. Die aktuelle Live-Umgebung nutzt zu dem jetzigen Stand noch Java, jedoch werden Codeanpassungen zukünftig in Kotlin vorgenommen, um eine langsame Migration zu gewährleisten. Aus diesen Grund wird ebenfalls der Proof-Of-Concept in Kotlin umgesetzt. Zudem ist die Technologie der systemübergreifenden Kommunikation auf REST-APIs festgelegt. Dies kommt mit einigen Einschränkungen und muss in der Entwicklung der primären und sekundären Adapter beachtet werden. Die Auswahl der Datenbank ist grundsätzlich nicht vorgegeben. Da die Applikation eine Vielzahl an Leseoperationen durchführt und somit einen hohen Nutzen aus der erhöhten Performance von No-SQL Datenbanken zieht, wurde die Benutzung einer MongoDB beschlossen.
 
 Zum aktuellen Standpunkt sind alle notwendigen Vorbereitungen zum erfolgreiche Anwenden des Domain-Driven Designs getroffen.  
 
-
-%TODO: Weglassen?
-\section{Aktuelles Design der Produktivanwendung}
-\blindtext
+%TODO: Stand der Produktivumgebung erklären?

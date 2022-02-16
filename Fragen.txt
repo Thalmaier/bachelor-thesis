@@ -1,6 +1,9 @@
 Prio:
 
 Stefano:
+- https://docs.mongodb.com/manual/core/write-operations-atomicity/  MEANING?
+- Ein Request => Mehrere Transaktions?
+- Eventual consistency. Wie schütze ich die erste Entität vor Änderungen bevor die zweite Änderung stattfindet.
 - ValueObject vs Entity
 - PriceAdjustment als Use-Case?
 - POC Source Code besprechen

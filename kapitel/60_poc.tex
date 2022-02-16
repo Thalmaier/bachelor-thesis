@@ -1,6 +1,47 @@
-\chapter{Implementierung der Hexagonalen Architektur im Bounded-Context}
+\chapter{Implementierung des Proof-of-Concepts}
 
-\section{Domainservice} %TODO: Titelanpassen
+%TODO: Wie verlinken zum Projekt. API Swagger Website.
+%TODO: Framework in gls
+Im Verlaufe dieses Projekts wurde ebenfalls das Datenmodell mitsamt der Hexagonalen Architektur und Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der, in dieser Arbeit beschriebenen, Anforderungen unter Anwendung der gewonnen Erkenntnisse. 
+
+Zu Beginn wurde ein neues Projekt aufgesetzt, welches benötigte Frameworks und Abhängigkeiten importiert, um Boilerplate-Code weitestgehend zu vermeiden. Die gesamte Software wurde mithilfe von Kotlin entwickelt und Komponenten wurden analog zu einer Hexagonalen Architektur in die drei Bereiche Primäre Adapter, Applikationskern und Sekundäre Adapter aufgeteilt. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Der verwendete Aggregationsschnitt ist äquivalent zu einem großes Aggregat mit den Basket als Aggregate Root.
+
+%TODO: Hier oder weiter unten Einfügen eines Bildes der Architektur
+
+\section{Design der Primären Adapter}
+
+%TODO: Gls für URL und HTTP-Methode
+Primäre Adapter sind Komponente, welche den Datenfluss aufgrund von einem Signal eines externen Systems initiieren. Grundlegend sind sie die Kommunikationsschnittstelle zwischen Clients und der Software. Im Proof-of-Concept fallen hauptsächlich in diesen Bereich sogenannte Controller, welche zuständig sind für den Empfang von REST-API Anfragen und der Deserialisierung übergebener Daten, sowie der Serialisierung des Antwortinhaltes. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Die zuständige Komponente wird aus einen Zusammenschluss von aufgerufener URL und HTTP-Methode bestimmt. 
+
+Zur Implementierung dieser Funktionalität wurde das Framework 'Ktor' verwendet. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle Informationen, welche von außen stammen, müssen vor der Weitergabe an den Applikationskern in Datenmodelle des Applikationskerns umgewandelt werden. Ist dies nicht der Fall, besitzt der zentrale Teil der Software eine Abhängigkeit von außen. Dies würde sonst einen Bruch des \acrlong{DIP}s darstellen. Die Verwendung von sogenannten \acrfull{DTO} ist jedoch gestattet, sofern diese in einem Modul des Applikationskern liegen und auch von diesen verwaltet werden. Ein konkretes Beispiel für einen Controller ist in Listing \ref{lst:controller} abgebildet.
+%TODO: "Lisiting" schreiben? was ist übersetzung?
+
+\begin{itemize}[noitemsep,nolistsep,topsep=-6px]
+	\item Zeile 1: Definiert die HTTP-Methode PUT und die URL für diesen Endpunkt
+	\item Zeile 2: Auslesen der BasketId aus der URL als Pfadparameters 
+	\item Zeile 3: Deserialisierung des Payloads zu einem Customer-Objekt
+	\item Zeile 4: Weitergabe der Daten an den zuständigen Applicationservice durch ein Interface
+	\item Zeile 5: Antwort an die Anfrage mit HTTP-Status 200 und den Basket als Daten
+\end{itemize}
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+\begin{lstlisting}[caption={Beispiel eines Controllers zur setzten von Kundendaten}, label={lst:controller}, language=Kotlin]
+	put("/basket/{id}/customer") { 
+		val basketId = BasketId(parseUUIDFromParameter("id")) 
+		val customer = call.receive<Customer>()  
+		val basket = basketApiPort.setCustomer(basketId, customer)
+		call.respond(HttpStatusCode.OK, basket)
+	}
+\end{lstlisting}
+\end{minipage}
+
+%TODO: Mock-Objekt und DI
+Für jeden definierten Anwendungsfall wurde eine entsprechende Schnittstelle und Controller definiert. Im Kontextes dieses POCs umfassen die Primären Adapter alleinig die Controller, da keine komplexe Datenumwandlung oder Validierung durchgeführt werden muss. Für jede Funktion, welche durch die Adapter aufgerufen werden, existiert eine zugehörige Funktion in einem Port. Die tatsächliche Implementierung der Schnittstelle wird mittels \acrlong{DI} durch das Framework 'Koin' bestimmt und geladen. Dadurch bleiben Abhängigkeiten jederzeit austauschbar und unabhängig testbar. Beispielsweise kann die korrekte Funktionsweise eines Controllers überprüft werden, indem der Applicationservice durch ein Mock-Objekt ausgetauscht und der Aufruf seiner Funktionen ausschließlich simuliert wird. Somit erfahren die einzelnen Komponenten in Testfällen keine Beeinflussung durch die falsche Funktionsweise anderer Teile der Applikation und Fehlschläge können eindeutig einem einzelnen Codeabschnitt zugeschrieben werden.
+
+%TODO: Repos und Caching
+
+
+\section{Umsetzen des Applikationskerns}
 \blindtext
 
 \section{Auslagerung von Funktionen in Applicationservices}
@@ -8,3 +49,5 @@
 
 \section{Erstellen der Primären und Sekundären Adapter}
 \blindtext
+
+%TODO: Kapitel über die Implementierung der anderen Varianten
