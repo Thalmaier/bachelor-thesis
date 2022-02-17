@@ -4,11 +4,11 @@
 %TODO: Framework in gls
 Im Verlaufe dieses Projekts wurde ebenfalls das Datenmodell mitsamt der Hexagonalen Architektur und Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der, in dieser Arbeit beschriebenen, Anforderungen unter Anwendung der gewonnen Erkenntnisse. 
 
-Zu Beginn wurde ein neues Projekt aufgesetzt, welches benötigte Frameworks und Abhängigkeiten importiert, um Boilerplate-Code weitestgehend zu vermeiden. Die gesamte Software wurde mithilfe von Kotlin entwickelt und Komponenten wurden analog zu einer Hexagonalen Architektur in die drei Bereiche Primäre Adapter, Applikationskern und Sekundäre Adapter aufgeteilt. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Der verwendete Aggregationsschnitt des POCs ist äquivalent zu einem einzelnen, großen Aggregate mit den Basket als Aggregate Root.
+Zu Beginn wurde ein neues Projekt aufgesetzt, welches benötigte Frameworks und Abhängigkeiten importiert, um Boilerplate-Code weitestgehend zu vermeiden. Die gesamte Software wurde mithilfe von Kotlin entwickelt und Komponenten wurden analog zu einer Hexagonalen Architektur in die drei Bereiche primäre Adapter, Applikationskern und ekundäre Adapter aufgeteilt. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Der verwendete Aggregationsschnitt des POCs ist äquivalent zu einem einzelnen, großen Aggregate mit den Basket als Aggregate Root.
 
 %TODO: Hier oder weiter unten Einfügen eines Bildes der Architektur
 
-\section{Design der Primären Adapter}
+\section{Design der primären Adapter}
 
 %TODO: Gls für URL und HTTP-Methode
 Primäre Adapter sind Komponente, welche den Datenfluss aufgrund von einem Signal eines externen Systems initiieren. Grundlegend sind sie die Kommunikationsschnittstelle zwischen Clients und der Software. Im Proof-of-Concept fallen hauptsächlich in diesen Bereich sogenannte Controller, welche zuständig sind für den Empfang von REST-API Anfragen und der Deserialisierung übergebener Daten, sowie der Serialisierung des Antwortinhaltes. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Die zuständige Komponente wird aus einen Zusammenschluss von aufgerufener URL und HTTP-Methode bestimmt. 
@@ -36,7 +36,7 @@ Zur Implementierung dieser Funktionalität wurde das Framework 'Ktor' verwendet.
 \end{itemize}
 
 %TODO: Mock-Objekt und DI
-Für jeden definierten Anwendungsfall wurde eine entsprechende Schnittstelle und Controller definiert. Im Kontextes dieses POCs umfassen die Primären Adapter alleinig die Controller, da keine komplexe Datenumwandlung oder Validierung durchgeführt werden muss. Für jede Funktion, welche durch die Adapter aufgerufen werden, existiert eine zugehörige Funktion in einem Port. Die tatsächliche Implementierung der Schnittstelle wird mittels \acrlong{DI} durch das Framework 'Koin' bestimmt und geladen. Dadurch bleiben Abhängigkeiten jederzeit austauschbar und unabhängig testbar. Beispielsweise kann die korrekte Funktionsweise eines Controllers überprüft werden, indem der Applicationservice durch ein Mock-Objekt ausgetauscht und der Aufruf seiner Funktionen ausschließlich simuliert wird. Somit erfahren die einzelnen Komponenten in Testfällen keine Beeinflussung durch die falsche Funktionsweise anderer Teile der Applikation und Fehlschläge können eindeutig einem einzelnen Codeabschnitt zugeschrieben werden.
+Für jeden definierten Anwendungsfall wurde eine entsprechende Schnittstelle und Controller definiert. Im Kontextes dieses POCs umfassen die primären Adapter alleinig die Controller, da keine komplexe Datenumwandlung oder Validierung durchgeführt werden muss. Für jede Funktion, welche durch die Adapter aufgerufen werden, existiert eine zugehörige Funktion in einem Port. Die tatsächliche Implementierung der Schnittstelle wird mittels \acrlong{DI} durch das Framework 'Koin' bestimmt und geladen. Dadurch bleiben Abhängigkeiten jederzeit austauschbar und unabhängig testbar. Beispielsweise kann die korrekte Funktionsweise eines Controllers überprüft werden, indem der Applicationservice durch ein Mock-Objekt ausgetauscht und der Aufruf seiner Funktionen ausschließlich simuliert wird. Somit erfahren die einzelnen Komponenten in Testfällen keine Beeinflussung durch die falsche Funktionsweise anderer Teile der Applikation und Fehlschläge können eindeutig einem einzelnen Codeabschnitt zugeschrieben werden.
 
 %TODO: Repos und Caching
 
@@ -104,7 +104,7 @@ Der verbleibende Codeanteil im Applikationskern wird auf das Datenmodell verteil
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Zeile 2: Überprüfung, ob der Basket aktuell Änderungen zulässt anhand des Status. Stellt eine Invariante des Datenmodells dar.
-	\item Zeile 3: Laden aller verfügbarer Fulfillment Methoden für diesen Basket durch einen Sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
+	\item Zeile 3: Laden aller verfügbarer Fulfillment Methoden für diesen Basket durch einen sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
 	\item Zeile 4-6: Falls der neue Wert nicht unter den verfügbaren Fulfillment ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
 	\item Zeile 7: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
 \end{itemize}
@@ -136,9 +136,9 @@ Funktionalitäten, welche nicht direkt einem Objekt zugewiesen werden können od
 	\item Zeile 7: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
 \end{itemize}
 
-\section{Anbinden externer Systeme und Datenbanken durch Sekundäre Adapter}
+\section{Anbinden externer Systeme und Datenbanken durch sekundäre Adapter}
 
-In dem in der Planungsphase erstellten Context-Diagramm \ref{fig:ContextDiagramm} wurden verschiedenste Systeme aufgezeigt mit welchen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden zwei Gruppen von Komponenten eingeführt. Die API-Service, welche einen Aufruf der externen Schnittstellen simulieren, und die Sekundären Adapter. Letztere implementieren eine vom Applikationskern definierte Schnittstelle, um den notwendigen Dienst bereitzustellen. Analog zu den Primären Adapter, existieren im Anwendungskern keine direkten Abhängigkeiten zu diesem Teil der Software.
+In dem in der Planungsphase erstellten Context-Diagramm \ref{fig:ContextDiagramm} wurden verschiedenste Systeme aufgezeigt mit welchen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden zwei Gruppen von Komponenten eingeführt. Die API-Service, welche einen Aufruf der externen Schnittstellen simulieren, und die Sekundären Adapter. Letztere implementieren eine vom Applikationskern definierte Schnittstelle, um den notwendigen Dienst bereitzustellen. Analog zu den primären Adapter, existieren im Anwendungskern keine direkten Abhängigkeiten zu diesem Teil der Software.
 
 Ein Spezialfall sind hierbei die Adapter für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance Verbesserungen wurden zwei Arten von Adapter implementiert. Einerseits der normal fungierende Service, welcher den dazugehörigen API-Service aufruft und anderseits dein Adapter mit Caching-Funktion, welcher zuerst den Preis bzw. Artikel aus dem Cache lädt und zurückgibt. Sollte der Cache-Eintrag veraltet sein, wird der eigentliche Adapter angesprochen, um ein aktuelles Ergebnis aus dem externen System zu erfragen. In Listing \ref{lst:adapter} ist die Klasse zuständig für das Aktualisieren des Preises abgebildet.
 

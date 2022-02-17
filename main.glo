@@ -1,4 +1,8 @@
 \glossaryentry{Scrum?\glossentry{Scrum}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{Sprint?\glossentry{Sprint}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{Kohäsion?\glossentry{Kohasion}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{Product Owner?\glossentry{Product Owner}|setentrycounter[]{page}"\glsnumberformat}{25}
 \glossaryentry{Enumeration?\glossentry{Enumeration}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{43}

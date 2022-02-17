@@ -223,32 +223,39 @@ Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle kor
 
 Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien:
 
-%TODO: Ref auf Tabelle?
-\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.46\textwidth} | } 
-	\hline
-	& {\textbf{\centering Value Object} } & \textbf{\centering Entity} \\ 
-	\hline
-	Identität & 
-	Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität & 
-	Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch. \\ 
-	\hline
-	Lebenszyklus & 
-	Stellt nur eine Momentaufnahme des Applikationszustands dar. &
-	Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.  \\ 
-	\hline
-	Veränderbarkeit & 
-	Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable. &
-	Aufgrund ihrer Eigenschaften sind Entities mutable.  \\ 
-	\hline
-	Abhängigkeit & 
-	Können nur als Unterobjekt einer oder mehrerer Entities existieren. &
-	Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.  \\ 
-	\hline
-	Zugriffsmethode & 
-	Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen. &
-	Können als Aggregate Root direkt Zugriff erfahren. \\ 
-	\hline
-\end{tabular}
+%TODO: Ref auf Tabelle im Darstellungsverzeichnis. Kein "Abbilung" in Unterschrift
+{
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.46\textwidth} | } 
+		\hline
+		& {\textbf{\centering Value Object} } & \textbf{\centering Entity} \\ 
+		\hline
+		
+		Identität & 
+		Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität & 
+		Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch. \\ 
+		\hline
+		Lebenszyklus & 
+		Stellt nur eine Momentaufnahme des Applikationszustands dar. &
+		Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.  \\ 
+		\hline
+		Veränderbarkeit & 
+		Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable. &
+		Aufgrund ihrer Eigenschaften sind Entities mutable.  \\ 
+		\hline
+		Abhängigkeit & 
+		Können nur als Unterobjekt einer oder mehrerer Entities existieren. &
+		Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.  \\ 
+		\hline
+		Zugriffsmethode & 
+		Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen. &
+		Können als Aggregate Root direkt Zugriff erfahren. \\ 
+		\hline
+	\end{tabular}
+\end{table}
+
+}
 
 Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin alle Entities bestimmt werden.
 
