@@ -27,7 +27,7 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 
 %TODO: Eventuell Touchpoint hinzufügen
 {\large \textbf{Domain-Modell:}}
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}
 	\item \textbf{Basket (Warenkorb): } {Die zentrale Datenklasse, welche den Warenkorb darstellt.}
 	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar und orientiert sich an den Prozessen. Beinhaltet 'open', 'frozen', 'finalized' und 'canceled'. Der Startzustand ist 'open'.}
 	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma. Ebenfalls kann ein nicht eingeloggter Kunde im Onlineshop durch seine eindeutige Session-ID einen Warenkorb besitzen.} %TODO: Kann er beides sein, wie funktioniert das aus business sicht?
@@ -50,8 +50,9 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 \vspace{0.4em}
 %TODO: Maybe add PriceAdjustment
 
+%TODO: Abstand Zeielen ein bisschen weniger genauso wie im näcshten Kapitel
 {\large \textbf{Prozesse:}}
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}[]
 	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlenden, notwendigen Werten.}
 	\item \textbf{Basket Finalization: } {Überprüfung der Korrektheit des Baskets durch die Basket Validation, Sperrung des Baskets durch Setzen des Zustands 'finalized' vor weiteren Abänderungen, Reservierung der Produkte im Basket und Anlegen einer Bestellung. Wird nach erfolgreichem Zahlvorgang durchgeführt. Beinhaltet den Prozess der Initiierung und Durchführung des Bezahlugnsprozesses.}
 	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets. Kann nur auf einen offenen Basket ausgeführt werden und setzt den Zustand auf 'canceled'. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. }

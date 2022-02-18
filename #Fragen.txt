@@ -33,8 +33,8 @@ Allgemein:
 
 Todo:
 - Überlegung was ist Entity und was ist ValueObject
-- Hexagonale Architektur von POC korrigieren
-- Diagrammtext in English oder Deutsch
+- Hexagonale Architektur Diagramm von POC korrigieren
+- Überschriften anpassen und verschönern
 - Zeigen des Bestellprozesses anhand von MediamarktSaturn
 - Calculation Result update only when needed or while update items as use case and aggregate design
 - Context Map kommunikation zwischen Bounded Contexts

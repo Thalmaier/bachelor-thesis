@@ -3,13 +3,13 @@
 
 Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies den Schnitt der Aggregates. Verschiedene Schnitte genießen verschiedene Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aufteilungen untersucht und durch verschiedene Kriterien bewertet. Diese Kriterien umfassen unter anderem Performance, Komplexität, Konsistenz, Parallelität, Relevanz und Anwendbarkeit im Bezug auf den Bounded Contexts des Checkouts.
 
-\section{Initiales Design als ein großes Basket-Aggregate}
+\section{Ein zusammengehöriges Basket-Aggregate als initiales Design}
 
 Das Design eines großen Aggregats fällt Entwicklern meist natürlich leichter. Eine einzelne zusammenhängende Struktur, durch welche Daten einfach bearbeitet und Invarianten überprüft werden können. Daher hält sich die Komplexität bei diesem Aggregationsschnitt weitestgehend in Grenzen. Vor allem müssen kaum Überlegungen über transaktionale Konsistenz getroffen werden, da die Grenzen der Transaktion all umspannend ist. Die erste Variante des Proof-Of-Concepts wurde mit diesem Design im Gedanken entwickelt und stellt das Grundgerüst für alle folgenden Konzepte dar. Zur vereinfachten Referenz auf die einzelnen Umsetzungsvarianten wird das Design, welches einen großen Basket zugrundeliegend hat, als '\emph{Variante A}' betitelt.
-%TODO: Variante A ist ok???
+%TODO: Variante A als Bezeichnung ok???
 
 
-\subsection{Performance von großen Aggregates im Vergleich}
+\subsection{Performance von unterschiedlich großen Aggregates im Vergleich}
 
 %TODO: Lazy loading
 Als Konsequenz eines großen Aggregates ergibt sich, dass immer das ganze Aggregate geladen werden muss, da auf darunterliegende Datenstrukturen nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung einer Entity tief im Aggregat müssen alle anderen Daten ebenfalls geladen werden. Die Auswirkungen dieser Aussage kann auf Datenbankebene anhand von Lazy-Loading oder durch Einsatz einer dokumentbasierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird die diese Richtlinie anhand unseres Bounded Contexts analysiert.

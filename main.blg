@@ -1,5 +1,86 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[73] biber:340> INFO - === Do Feb 17, 2022, 09:33:07
-[89] Utils.pm:409> ERROR - Cannot find 'main.bcf'!
-[89] Biber.pm:135> INFO - ERRORS: 1
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: glossary.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: kapitel/00_abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: kapitel/10_einleitung.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: kapitel/20_grundlagen.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: kapitel/30_planung.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: kapitel/40_model.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: kapitel/50_aggregatdesign.aux
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+A level-1 auxiliary file: kapitel/60_poc.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: kapitel/70_fazit.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: main-blx.bib
+Database file #2: ref/ref.bib
+Biblatex version: 3.16
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 2 entries,
+            6393 wiz_defined-function locations,
+            1218 strings with 9291 characters,
+and the built_in function-call counts, 6307 in all, are:
+= -- 392
+> -- 185
+< -- 61
++ -- 143
+- -- 52
+* -- 276
+:= -- 706
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 46
+chr.to.int$ -- 42
+cite$ -- 2
+duplicate$ -- 559
+empty$ -- 546
+format.name$ -- 49
+if$ -- 1401
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 46
+num.names$ -- 82
+pop$ -- 374
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 343
+stack$ -- 0
+substring$ -- 528
+swap$ -- 161
+text.length$ -- 45
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 56
+warning$ -- 0
+while$ -- 110
+width$ -- 0
+write$ -- 45

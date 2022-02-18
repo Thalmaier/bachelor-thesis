@@ -306,6 +306,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{Lost Update}%
+{%
+name={Lost Update},%
+sort={Lost Update},%
+type={main},%
+first={Lost Update},%
+firstplural={Lost Updates},%
+text={Lost Update},%
+plural={Lost Updates},%
+description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist.},%
+descriptionplural={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Information-Expert-Prinzip}%
+{%
+name={Information-Expert-Prinzip},%
+sort={Information-Expert-Prinzip},%
+type={main},%
+first={Information-Expert-Prinzip},%
+firstplural={Information-Expert-Prinzips},%
+text={Information-Expert-Prinzip},%
+plural={Information-Expert-Prinzips},%
+description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt.},%
+descriptionplural={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Invariante}%
+{%
+name={Invariante},%
+sort={Invariante},%
+type={main},%
+first={Invariante},%
+firstplural={Invariantes},%
+text={Invariante},%
+plural={Invariantes},%
+description={Bedinung, welche auch nach Datenanpassungen jederzeit erfüllt sein muss},%
+descriptionplural={Bedinung, welche auch nach Datenanpassungen jederzeit erfüllt sein muss},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{Kohasion}%
 {%
 name={Kohäsion},%
