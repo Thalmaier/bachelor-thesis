@@ -40,19 +40,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm eines Baskets}}{30}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm eines Baskets}}{29}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Zugehöriges Klassendiagramm des Customer Value Objects}}{31}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Zugehöriges Klassendiagramm des Customer Value Objects}}{30}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Darstellung des Payment Process als Klassendiagramm}}{31}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Darstellung des Payment Process als Klassendiagramm}}{30}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B}}{35}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B}}{34}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C}}{38}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C}}{36}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}}{39}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}}{38}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de}}{40}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Aggregationsschnitt der Variante D}}{42}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
