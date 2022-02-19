@@ -39,6 +39,9 @@ Todo:
     - and validationService.validateAndThrowIfInvalid(this)     SHOULDNT freeze call validate on basket?
     - adjustQuantity make repeate - 1 and call with update = true
     - comment why basketrepo always save at refresh? 
+    - calculateAmounts is more resetAmounts
+    - "cannot cancel payment progress if it is not initialized" even tho it is execute
+    - Comment: GET endpoint retrieve a [BasketData] resource wrong
 - Überlegung was ist Entity und was ist ValueObject
 - Hexagonale Architektur Diagramm von POC korrigieren
 - Überschriften anpassen und verschönern
@@ -73,5 +76,9 @@ Vorgehen:
     - need so set flag when chaning item quantity, or fulfillment or shipping address
     - need flag when basket item shipping needs update
 - TODO: When is all data needed -> Implement
+<<<<<<< HEAD
 - Waay harder for client
 - Problem mit circualr dependencies
+=======
+- Waay harder for client
+>>>>>>> 2a16e09e7bbf9e8739160d7dfe521fd418a25d00
