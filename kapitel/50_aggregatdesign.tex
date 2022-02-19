@@ -1,5 +1,4 @@
-\chapter{Design der Aggregates anhand der Anwendungsfälle}
-%TODO: Zeigen des Bestellprozesses anhand von MediamarktSaturn
+\chapter{Design möglicher Aggregationsschnitte }
 
 Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies den Schnitt der Aggregates. Verschiedene Schnitte genießen verschiedene Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aufteilungen untersucht und durch verschiedene Kriterien bewertet. Diese Kriterien umfassen unter anderem Performance, Komplexität, Konsistenz, Parallelität, Relevanz und Anwendbarkeit im Bezug auf den Bounded Contexts des Checkouts.
 
@@ -58,8 +57,10 @@ Eine Lösung dieses Problems kann durch optimistischen oder pessimistischen Verf
 
 Abschließend kann anhand der vorhergehenden Überlegungen der Aggregationsschnitt von \emph{Variante A} bewertet werden.
 
+%TODO: Schreibweise von Sourcecode in der ganzen BA überprüfen. Sourcecode oder Source code
+
 \begin{itemize}[noitemsep,nolistsep,topsep=-2pt]
-	\item \textbf{Komplexität: } {Die Handhabung und Anwendung der Businessanforderungen können maximal mühelos umgesetzt werden. Der Source Code muss durch keine komplizierteren Vorgänge ergänzt werden. }
+	\item \textbf{Komplexität: } {Die Umsetzung der Businessanforderungen in der Applikation kann übersichtlich erfolgen. Der Sourcecode muss durch keine komplizierteren Vorgänge ergänzt werden. }
 	\item \textbf{Performance: } {Jede Anfrage benötigt das Auslesen des ganzen Baskets. Jedoch ist dies in den meisten Anwendungsfällen ohnehin von Nöten. Ein kleinere Aggregationsschnitts kann die Performance sogar verschlechtern. }
 	\item \textbf{Parallelität: } {Eine zeitgleiche Bearbeitung des Baskets oder eines Objektes innerhalb ist nicht möglich.}
 	\item \textbf{Anwendbarkeit: } {In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.}
@@ -129,15 +130,69 @@ Eventuelle Konsistenz ist aus den Gründen des vorgehenden Unterkapitels nicht a
 
 Weiterhin besteht die Frage, ob \emph{Variante C} ein valides Aggregationsdesign darstellt, da in vielen Funktionen eine Überschreitung der transaktionalen Grenzen stattfindet. Begründet kann diese Entscheidung dadurch, dass der Bezahlvorgang eine kritische Operation aus rechtlicher Sicht darstellt. Sobald dieser gestartet wird, muss das ganze Datenmodell stets konsistent sein. Wenn es uns nicht erlaubt sein sollte, eine Transaktion über mehrere Aggregates durchzuführen, sind somit alle Aggregationsschnitte, abgesehen von \emph{Variante A}, nicht zulässig. Eventuell kann diese Erkenntnis bereits eine vorläufige Antwort für die initiale Forschungsfrage dieser Arbeit darstellen.
 
-Letztendlich soll die Architektur und das Datenmodell die Businessprozesse optimal unterstützen, während die Software weiterhin flexibel und performant bleibt. Die Richtlinie stellt einzig einen Leitfaden dar, um ein korrektes Design zu erleichtern, jedoch keine absolute Regel. Der Anreiz für eine genauer Unterteilung der Aggregates ist das separate Laden und zeitgleiche Bearbeiten unterschiedlicher Aggregates, welches weiterhin in \emph{Variante C} entlang der Richtlinie möglich ist. Anhand dieser Begründung wird für den Proof-of-Concept angenommen, dass ein solcher Aggregationsschnitt als Designentscheidung vertretbar ist.
+Letztendlich soll die Architektur und das Datenmodell die Businessprozesse optimal unterstützen, während die Software weiterhin flexibel und performant bleibt. Die Richtlinie stellt einzig einen Leitfaden dar, um ein korrektes Design zu erleichtern, jedoch keine absolute Regel. Der Anreiz für eine genauer Unterteilung der Aggregates ist das separate Laden und zeitgleiche Bearbeiten unterschiedlicher Aggregates, welches weiterhin in \emph{Variante C} entlang der Richtlinie möglich ist. Anhand dieser Begründung wird für den Proof-of-Concept angenommen, dass ein solcher Aggregationsschnitt als Designentscheidung vertretbar ist. 
+
+%TODO: Bewertung
+
+
+\section{Verkleinerung der Aggregates durch Analyse existierender Businessanforderungen}
+
+Die ideale Gruppierung von Klassen zu einem Aggregate hängt stark von den Invarianten ab, welche sie zusammenbinden. Anhand einer Untersuchung von Anwendungsfällen ist es möglich, das Zusammenspiel von Entities und Value Objects innerhalb eines Aggregates klarer herauszukristallisieren und neue Ansätze zur Neuverteilung zu finden.
+
+\subsection{Herausschneiden der Berechnungsergebnisse aus dem Basket-Aggregate}
+
+%TODO: User Story
+Zum jetzigen Zeitpunkt existieren einige Performance-Einbußen, welche eventuell durch einen verbesserten Aggregationsschnitt verhindert werden können. Viele Anwendungsfälle erfordern ein Neukalkulation des Baskets, ansonsten wäre sein Zustand inkonsistent, wodurch auch die transaktionalen Grenzen des Aggregates ungültig werden würden. In den meisten User Stories fügt der Kunde erst die gewünschten Artikel zum Warenkorb hinzu und öffnet danach Basket, sobald der Kauf abgeschlossen werden sollte. Dadurch ist es möglich die Neuberechnung der Preise erst bei Abruf explizit durchzuführen und Berechnungszeit einzusparen. Zudem werden weniger Daten zwischen Client und Checkout-Software gesendet, wodurch die Netzwerklast vor allem bei mobilen Touchpoints verringert wird. Dieses Design kommt allerdings mit einigen Fragen, welche zuerst beantwortet werden müssen.
+
+\textbf{Ist die Trennung der Kalkulation vom Warenkorb überhaupt möglich aus Sicht des Business?}
+
+Bevor Überlegungen über die Umsetzung des neuen Aggregationsschnittes stattfinden können, müssen es die Businessanforderungen zulassen. Aus technischen Gründen hätte die Abspaltung positive Auswirkungen, jedoch kann es vorkommen, dass die Clients bei jedem Aufruf der API auch ein CalculationResult erwarten. Ist dies immer oder in den meisten Anforderungen der Fall, kann die Trennung nicht sinngemäß durchgeführt werden, ohne auf die Probleme der bisherigen Aggregationsschnitte zu stoßen. Zum Zwecken der Analyse wird angenommen, dass eine solche Änderung für die Touchpoints akzeptabel ist.
+
+\textbf{Wann muss der Basket sowohl als auch das CalculationResult bearbeitet werden?}
+
+
+Als Folge der gewonnen Erkenntnisse kann es problematisch sein, zwei Aggregates gleichzeitig anzupassen. Das Ergebnis der Preisberechnung wird nur bei der Anzeige des ganzen Warenkorbs benötigt, daher sind alle Operationen, welche den Gesamtpreis während der Einsicht des Baskets manipulieren bedenklich. Um diese Situationen ausfindig machen zu können, muss der Checkout-Prozess genauer untersucht werden. In der Abbildung \ref{fig:Checkout-Process} sind die zwei relevanten Seiten des Checkouts dargestellt. Die roten Pfeile zeigen auf wichtige Stellen des Warenkorbs für dieses Abschnitt.
+
+\vspace{0.5cm}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\linewidth]{bilder/Checkout.png}
+	\caption{Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de}
+	\label{fig:Checkout-Process}
+\end{figure}
+
+Eine Neukalkulation findet statt sofern die Anzahl der Produkte im Warenkorb oder die Lieferkosten manipuliert werden. Ersteres kann außerhalb des Warenkorbs geschehen oder durch Hinzufügen von Services während der Anzeige des Baskets. Ebenfalls kann die Fulfillment-Methode und Lieferadresse angepasst werden, wodurch sich die Lieferkosten ändern können. Somit existieren einige Anwendungsfälle in denen eine Transaktion über beide Aggregate hinweg notwendig ist.
+
+\textbf{Gibt es Invarianten zwischen den Warenkorb und den CalculationResult?}
+
+Die Businessanforderung, dass das Berechnungsergebnis stets aktuell sein muss, wurde bereits gelockert. Verbleibend ist es zudem Notwendig aus rechtlichen Gründen, dass sich der Preis nach Initiierung des Bezahlvorgangs nicht ändert. Dieses Problem kann allerdings nicht auftreten, da der Warenkorb selbst nicht mehr manipuliert werden darf, somit bleibt der Gesamtpreis ebenfalls unberührt. Weitere Voraussetzungen existieren zum jetzigen Zeitpunkt nicht, jedoch müssen eventuelle zukünftige Anwendungsfälle berücksichtigt werden, ansonsten kann die Flexibilität der Anwendung gefährdet sein. 
+
+Zur Veranschaulichung kann Auswirkungen einer neuen Regelung untersucht werden. Beispielsweise wird angenommen, dass der Gesamtpreis eines Warenkorbs nicht über 20.000€ liegen darf. In diesem Fall würde eine Anpassungen des Basket auch eine Neukalkulation benötigen, wodurch die Abtrennung des CalculationResults sinnfrei wird. Allerdings kann eine mildere Form dieser Richtlinie keine negativen Effekt besitzen, indem die Prüfung erst bei der Initiierung des Bezahlvorgangs ausgeführt wird, da zu diesem Zeitpunkt beide Aggregates immer synchron sind und keine Änderungen mehr erfahren können. Weitere erdenkbaren zukünftige Businessanforderungen sollten berücksichtigt werden, bevor ein Neudesign der Applikation durchgeführt wird.
+
+Grundsätzlich scheint eine Abspaltung der Berechnungsergebnisse vom Warenkorb durchaus plausibel zu sein. Diese Vorgehensweise der Analyse kann analog auf verschiedene Anwendungsfälle durchgeführt werden, um weitere Teile des Baskets zu finden, welche separat agieren können. 
+
+%TODO: Gleiche Überschrift oder nciht?
+\subsection{Herausschneiden der Checkout-Daten aus dem Basket-Aggregate}
+
+In dem Swimlane Diagramm \ref{fig:SL-Checkoutdata} wurde das Hinzufügen der Kundendaten, Bezahlungsmethode und Fulfillment beschrieben. Dieser Prozess ist ein Hinweise darauf, dass diese Daten eventuell aus dem Basket-Aggregat genommen werden können. Die Summe der Attribute wird als 'Checkout-Daten' betitelt und beinhalten Kundendaten, Fulfillment, Rechnungs- und Lieferadresse. Nachteilig ist jedoch, dass dadurch die Value Objects zu einer Entity zusammengefasst werden, da die Rolle des Aggregate Root nur durch Entities verfüllt werden darf. Ähnlich zum vorgehenden Unterkapitel ist eine Untersuchung der Implikationen eines solches Aggregationsschnittes notwendig.
+
+Anpassungen an diesen Daten dürfen nur durchgeführt werden, wenn der Basket im Status 'open' ist. Dadurch muss bei jedem API-Aufruf zuvor der Zustand überprüft und der Warenkorb-Datenbankeintrag gesperrt werden. Aufgrund von möglichen Interleavings kann ansonsten die Initiierung des Bezahlvorgang auf invalide Checkout-Data stattfinden. Weiterhin wird durch das Setzten eines neuen Fulfillments die Neuberechnung des Warenkorbs angestoßen und bei Übergabe eines Payments muss der PaymentProcess aktualisiert werden.
+
+Vorteilhaft an dieser Variante ist, dass der Basket leichtgewichtiger wird und geringere Datenmengen transportiert werden müssen. Zusätzlich bleiben die negativen Auswirkungen der getrennten Collections in der Datenbank gering, da die Anpassungen der Checkout-Daten nur selten in den User Stories vorkommt.
+
+\section{Zusammenführung der vorgehenden Aggregationsschnitte}
+
+Als Ergebnis aller Analysen dieses Kapitels kann ein neuer, zusammengefasster Aggregationsschnitt gebildet werden.  
+
+%TODO: Warum nicht BaskeItems trennen
+%TODO: Add Bewertung zu allen Aggregationsschnitte
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarD.svg}
+	\caption{Aggregationsschnitt der Variante D}
+	\label{fig:VarD}
+\end{figure}
+
 
 %TODO: Implementierung der Variante
-\subsection{Implementierung von Aggregates mit geteilten Invarianten}
-
-
-
-\section{Verkleinerung der Aggregates durch Anpassung existierender Businessanforderungen }
-\blindtext
-
-\section{Maximale Unterteilung des Models mithilfe asynchroner Verarbeitung }
-\blindtext

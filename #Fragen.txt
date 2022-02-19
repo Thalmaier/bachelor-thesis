@@ -20,6 +20,7 @@ Apel:
 - Wie weit erklären, dass Checkout-Software exisitert? 30_Planung ?
 - Wie darstellen? Wie Satzbau? Wortwiederholungen? Zum Beispiel Ubiquitous Language
 - Zitierungsstil? Konkrete Zeilen etc.
+- Titel und Stil der Aufzählungen, passt so? Oder eher versuchen unterschiedlich zu machen?
 
 Allgemein:
 - Hibernate, Optimisstic Changes, Version Number, do you need implementation for that?
@@ -32,6 +33,10 @@ Allgemein:
 ( - Entities behalten immer ihre Identität, während Value Objects sie durch erstellen neuer Objecte ändern können )
 
 Todo:
+- updateBasketCalculationResultAndPaymentProcess doku in master branch
+    - getAvailableFulfillment only needs getStaleBasketData etc.
+    - REMOVE this.paymentProcess.calculate(calculationResult.grandTotal)
+    - and validationService.validateAndThrowIfInvalid(this)     SHOULDNT freeze call validate on basket?
 - Überlegung was ist Entity und was ist ValueObject
 - Hexagonale Architektur Diagramm von POC korrigieren
 - Überschriften anpassen und verschönern
@@ -54,3 +59,16 @@ https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3
 - Vorgehen für die Bewertung der Architekturen
 - Transferierbarkeit der Ergebnisse im Fazit
 - Parameter
+
+
+Vorgehen:
+- Aggregate erstellen und Referenzen löschen
+- Alle Funktionen die in Basket nun nicht mehr funktionieren -> DomainService
+- Create Repos for all aggregates
+- Problem Aggregate könnte änderungen durchgehen, die nicht erlaubt sind
+    - ODER: Passing basketDataRepo or injecting it
+- Two Version, always calculate or only if needed (with flag?)
+    - need so set flag when chaning item quantity, or fulfillment or shipping address
+    - need flag when basket item shipping needs update
+- TODO: When is all data needed -> Implement
+- Waay harder for client

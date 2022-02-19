@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  18 FEB 2022 03:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  18 FEB 2022 20:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1750,19 +1750,19 @@ File: ./svg-inkscape/ContextDiagramm_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/ContextDiagramm_svg-raw.pdf  used on in
 put line 132.
 (pdftex.def)             Requested size: 482.17522pt x 271.38823pt.
-) [22 <./svg-inkscape/ContextDiagramm_svg-raw.pdf>] [23]
+) [22 <./svg-inkscape/ContextDiagramm_svg-raw.pdf>]
 \openout2 = `kapitel/40_model.aux'.
 
 
 (kapitel/40_model.tex
 chapter 4.
-[24
+[23
 
 
 
 
-] [25] [26] [27] [28] [29]
-<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=335, 505.13719pt x 509
+] [24] [25] [26] [27] [28]
+<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=332, 505.13719pt x 509
 .65407pt>
 File: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf Graphic file (type pd
 f)
@@ -1770,7 +1770,7 @@ f)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf  u
 sed on input line 199.
 (pdftex.def)             Requested size: 505.13596pt x 509.65282pt.
-<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=336, 429.85594pt x 2
+<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=333, 429.85594pt x 2
 22.07968pt>
 File: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf Graphic file (type 
 pdf)
@@ -1778,7 +1778,7 @@ pdf)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf 
  used on input line 206.
 (pdftex.def)             Requested size: 429.85489pt x 222.07913pt.
-<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=337, 497.60907pt x 24
+<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=334, 497.60907pt x 24
 3.15843pt>
 File: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf Graphic file (type p
 df)
@@ -1786,7 +1786,7 @@ df)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf  
 used on input line 213.
 (pdftex.def)             Requested size: 497.60785pt x 243.15784pt.
- [30 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [31 <./svg-inkscape
+ [29 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [30 <./svg-inkscape
 /ValueObjectCustomerDiagram_svg-raw.pdf> <./svg-inkscape/ValueObjectPaymentDiag
 ram_svg-raw.pdf
 
@@ -1798,45 +1798,42 @@ Underfull \hbox (badness 2237) in paragraph at lines 237--237
 \OT1/lmss/m/n/10.95 (+20) Wer-ten be-sitz-ten glei-che
  []
 
-[32]) [33]
+[31]) [32]
 \openout2 = `kapitel/50_aggregatdesign.aux'.
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
-[34
+[33
 
 
 
 
 ]
-<./svg-inkscape/VarB_svg-raw.pdf, id=569, 325.215pt x 115.18031pt>
+<./svg-inkscape/VarB_svg-raw.pdf, id=566, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarB_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarB_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 23
+Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 22
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
-
-Underfull \vbox (badness 2326) has occurred while \output is active []
-
- [35 <./svg-inkscape/VarB_svg-raw.pdf>] [36]
-<./svg-inkscape/VarC_svg-raw.pdf, id=584, 325.215pt x 115.18031pt>
+ [34 <./svg-inkscape/VarB_svg-raw.pdf>] [35]
+<./svg-inkscape/VarC_svg-raw.pdf, id=581, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarC_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarC_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 74
+Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 75
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
- [37]
+ [36 <./svg-inkscape/VarC_svg-raw.pdf>]
 LaTeX Font Info:    Trying to load font information for OMS+lmss on input line 
-91.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 91.
+92.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 92.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 91.
+(Font)              for symbol `textbraceleft' on input line 92.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-95.
+96.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1845,18 +1842,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 89--102
+Overfull \hbox (10.95pt too wide) in paragraph at lines 90--103
 []$[]$ 
  []
 
-<./svg-inkscape/VarC Sequenz_svg-raw.pdf, id=589, 526.96875pt x 406.89516pt>
+<./svg-inkscape/VarC Sequenz_svg-raw.pdf, id=593, 526.96875pt x 406.89516pt>
 File: ./svg-inkscape/VarC Sequenz_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarC Sequenz_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/VarC Sequenz_svg-raw.pdf  used on input
- line 111.
+ line 112.
 (pdftex.def)             Requested size: 526.96745pt x 406.89415pt.
-[38 <./svg-inkscape/VarC_svg-raw.pdf>] [39 <./svg-inkscape/VarC Sequenz_svg-raw
-.pdf>] [40]) [41]
+[37] [38 <./svg-inkscape/VarC Sequenz_svg-raw.pdf>] [39]
+<bilder/Checkout.png, id=615, 2325.68875pt x 818.05624pt>
+File: bilder/Checkout.png Graphic file (type png)
+<use bilder/Checkout.png>
+Package pdftex.def Info: bilder/Checkout.png  used on input line 159.
+(pdftex.def)             Requested size: 459.6215pt x 161.66107pt.
+ [40 <./bilder/Checkout.png>]
+<./svg-inkscape/VarD_svg-raw.pdf, id=621, 310.15875pt x 137.85503pt>
+File: ./svg-inkscape/VarD_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/VarD_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 18
+9.
+(pdftex.def)             Requested size: 310.15799pt x 137.85468pt.
+ [41]) [42 <./svg-inkscape/VarD_svg-raw.pdf>]
 \openout2 = `kapitel/60_poc.aux'.
 
  (kapitel/60_poc.tex
@@ -1874,7 +1883,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
 []$[]$ 
  []
 
-[42
+[43
 
 
 
@@ -1897,17 +1906,17 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 64--76
 []$[]$ 
  []
 
-[43]
+[44]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 92--104
 []$[]$ 
  []
 
-[44]
+[45]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 114--131
 []$[]$ 
  []
 
-[45]
+[46]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 145--159
 []$[]$ 
  []
@@ -1917,17 +1926,12 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 168--179
 []$[]$ 
  []
 
-) [46]
+) [47]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [47
-
-
-
-
-] [48
+) [48
 
 
 
@@ -1935,8 +1939,7 @@ chapter 7.
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 39.
-
-(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -1948,6 +1951,10 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 [1
+
+
+
+
 
 ] (main.aux (glossary.aux) (kapitel/00_abstract.aux)
 (kapitel/10_einleitung.aux) (kapitel/20_grundlagen.aux) (kapitel/30_planung.aux
@@ -1961,13 +1968,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32370 strings out of 478659
- 663652 string characters out of 2845920
- 1588956 words of memory out of 3000000
- 49570 multiletter control sequences out of 15000+600000
- 505948 words of font info for 224 fonts, out of 8000000 for 9000
+ 32392 strings out of 478659
+ 664159 string characters out of 2845920
+ 1588978 words of memory out of 3000000
+ 49587 multiletter control sequences out of 15000+600000
+ 505924 words of font info for 224 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 108i,21n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,20n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
 /Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/U
@@ -1982,9 +1989,9 @@ s8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
 bx10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 sso10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mtt8.pfb>
-Output written on main.pdf (61 pages, 941147 bytes).
+Output written on main.pdf (61 pages, 1056587 bytes).
 PDF statistics:
- 701 PDF objects out of 1000 (max. 8388607)
+ 713 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 50374 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 50384 words of extra memory for PDF output out of 51595 (max. 10000000)
 
