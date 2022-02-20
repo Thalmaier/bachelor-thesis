@@ -8,10 +8,10 @@ Aktueller Fortschritt bis zu einem Erstentwurf:
 2. Grundlagen
 	2.1 SOLID Überarbeitet
 	2.2 Architekturmuster Überarbeitet
-	2.3 Domain-Driven Design 100%
+	2.3 Domain-Driven Design Überarbeitet
 3. Planungs- und Analysephase
-	3.1 Ausschlaggebende Anwendungsfallbeschreibung 100%
-	3.2 Projektumfeld und technologische Vorschläge 100%
+	3.1 Ausschlaggebende Anwendungsfallbeschreibung Überarbeitet
+	3.2 Projektumfeld und technologische Vorschläge Überarbeitet
 4. Festlegung des Datenmodells durch Domain-Driven Design
 	4.1 Abgrenzung der Domain und Bounded Contexts mithilfe der Planungspahse 100%
 	4.2 Festlegung einer Ubiquitous Language 100%
@@ -19,8 +19,8 @@ Aktueller Fortschritt bis zu einem Erstentwurf:
 	4.4 Bestimmung der Entities anhand ihrer Identität und Lebenszyklus 100%
 5. Design der Aggregates anhand der Anwendungfälle
 	5.1 Ein zusammengehöriges Basket-Aggregate als initiales Design 100%
-	5.2 Trennung der Zahlungsinformationen von dem Basket-Aggregate 60%
-	5.3 --- (Abspaltung der Checkout-Daten vom Aggregate) 0%
+	5.2 Trennung der Zahlungsinformationen von dem Basket-Aggregate 90%
+	5.3 Abspaltung der Checkout-Daten vom Aggregate 90%
 	5.4 ---- 0%
 6. Implementierung der Hexagonalen Architektur im Bounded-Contexts
 	6.1 Design der primären Adapter 100%

@@ -306,6 +306,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{CQRS}%
+{%
+name={CQRS},%
+sort={CQRS},%
+type={acronym},%
+first={Command and Query Responsibility Segregation\glsspace (CQRS)},%
+firstplural={Command and Query Responsibility Segregation\acrpluralsuffix \glsspace (CQRS\acrpluralsuffix )},%
+text={CQRS},%
+plural={CQRS\acrpluralsuffix },%
+description={Command and Query Responsibility Segregation},%
+descriptionplural={Command and Query Responsibility Segregation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Command and Query Responsibility Segregation},%
+longplural={Command and Query Responsibility Segregations},%
+short={CQRS},%
+shortplural={CQRSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Boilerplate}%
+{%
+name={Boilerplate},%
+sort={Boilerplate},%
+type={main},%
+first={Boilerplate},%
+firstplural={Boilerplates},%
+text={Boilerplate},%
+plural={Boilerplates},%
+description={Ein Teil einer Software, welcher viele Zeilen an Code einnimmt, obwohl dadurch nur wenig bis gar keine Funktion bereitgestellt wird},%
+descriptionplural={Ein Teil einer Software, welcher viele Zeilen an Code einnimmt, obwohl dadurch nur wenig bis gar keine Funktion bereitgestellt wird},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Stakeholder}%
+{%
+name={Stakeholder},%
+sort={Stakeholder},%
+type={main},%
+first={Stakeholder},%
+firstplural={Stakeholders},%
+text={Stakeholder},%
+plural={Stakeholders},%
+description={Eine Gruppe von Personen mit relevanten Interesse und Einfluss auf eine Sache bzw. Projekt},%
+descriptionplural={Eine Gruppe von Personen mit relevanten Interesse und Einfluss auf eine Sache bzw. Projekt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{Lost Update}%
 {%
 name={Lost Update},%
@@ -315,8 +399,8 @@ first={Lost Update},%
 firstplural={Lost Updates},%
 text={Lost Update},%
 plural={Lost Updates},%
-description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist.},%
-descriptionplural={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist.},%
+description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist},%
+descriptionplural={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -343,8 +427,8 @@ first={Information-Expert-Prinzip},%
 firstplural={Information-Expert-Prinzips},%
 text={Information-Expert-Prinzip},%
 plural={Information-Expert-Prinzips},%
-description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt.},%
-descriptionplural={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt.},%
+description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt},%
+descriptionplural={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

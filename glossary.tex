@@ -10,15 +10,23 @@
 \newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}
 \newacronym{REST}{REST}{Representational State Transfer}
 \newacronym{CRUD}{CRUD}{Create Update Delete}
+\newacronym{CQRS}{CQRS}{Command and Query Responsibility Segregation}
 
 
 %TODO: QUellen in Glossary?
 
+
+\newglossaryentry{Boilerplate}{name=Boilerplate,
+	description={Ein Teil einer Software, welcher viele Zeilen an Code einnimmt, obwohl dadurch nur wenig bis gar keine Funktion bereitgestellt wird}
+}
+\newglossaryentry{Stakeholder}{name=Stakeholder,
+	description={Eine Gruppe von Personen mit relevanten Interesse und Einfluss auf eine Sache bzw. Projekt}
+}
 \newglossaryentry{Lost Update}{name=Lost Update,
-	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist.}
+	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist}
 }
 \newglossaryentry{Information-Expert-Prinzip}{name=Information-Expert-Prinzip,
-	description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt.}
+	description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt}
 }
 \newglossaryentry{Invariante}{name=Invariante,
 	description={Bedinung, welche auch nach Datenanpassungen jederzeit erfüllt sein muss}
@@ -28,12 +36,6 @@
 }
 \newglossaryentry{DI}{name={Dependency Injection},
 	description={Eine erweiterte Form des Dependency-Inversion-Prinzip, welches Abhängigkeiten erst zur Laufzeit des Programmes hinzufügt}
-}
-\newglossaryentry{HTTP}{name={Hypertext Transfer Protocol},
-	description={Zustandsloses Protokoll zum Austausch von Infromationen zwischen zwei Systemen. Meist verwendet zur Kommunikation im Internet}
-}
-\newglossaryentry{REST}{name={Representational State Transfer},
-	description={Ressourcenbasierte Kommunikationsstil zwischen einem Client und Server}
 }
 \newglossaryentry{immutable}{name=immutable,
 	description={Die Unveränderlichkeit von Werten bzw. Variablen innerhalb einer Klasse}
