@@ -18,12 +18,12 @@ Zur Implementierung dieser Funktionalität wurde das Framework 'Ktor' verwendet.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 \begin{lstlisting}[caption={Beispiel eines Controllers zum aktualiseren von Kundendaten}, label={lst:controller}, language=Kotlin]
-	put("/basket/{id}/customer") { 
-		val basketId = BasketId(parseUUIDFromParameter("id")) 
-		val customer = call.receive<Customer>()  
-		val basket = basketApiPort.setCustomer(basketId, customer)
-		call.respond(HttpStatusCode.OK, basket)
-	}
+put("/basket/{id}/customer") { 
+	val basketId = BasketId(parseUUIDFromParameter("id")) 
+	val customer = call.receive<Customer>()  
+	val basket = basketApiPort.setCustomer(basketId, customer)
+	call.respond(HttpStatusCode.OK, basket)
+}
 \end{lstlisting}
 \end{minipage}
 
@@ -63,14 +63,14 @@ Ein simples Beispiel bietet uns der BasketItem-Applicationservice. Dieser wird a
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Eine Beispielsfunktion des BasketItem-Applikationservice}, label={lst:applicationservice}, language=Kotlin]
-		override fun removeBasketItem(basketId: BasketId, basketItemId: BasketItemId): Basket {
-			return basketStorageService.findById(basketId).also { basket ->
-				logger.info { "Remove item $basketItemId from basket $basketId" }
-				basket.removeBasketItem(basketItemId)
-				basketRefreshService.recalculateBasket(basket)
-				basketStorageService.save(basket)
-			}
-		}
+override fun removeBasketItem(basketId: BasketId, basketItemId: BasketItemId): Basket {
+	return basketStorageService.findById(basketId).also { basket ->
+		logger.info { "Remove item $basketItemId from basket $basketId" }
+		basket.removeBasketItem(basketItemId)
+		basketRefreshService.recalculateBasket(basket)
+		basketStorageService.save(basket)
+	}
+}
 	\end{lstlisting}
 \end{minipage}
 
@@ -91,14 +91,14 @@ Der verbleibende Codeanteil im Applikationskern wird auf das Datenmodell verteil
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:basket}, language=Kotlin]
-		fun setFulfillment(fulfillment: FulfillmentType, fulfillmentPort: FulfillmentPort) {
-			validateIfModificationIsAllowed()
-			val availableFulfillment = fulfillmentPort.getPossibleFulfillment(outletId)
-			throwIf(!availableFulfillment.contains(fulfillment)) {
-				IllegalModificationError("cannot select $fulfillment for outlet $outletId")
-			}
-			this.fulfillment = fulfillment
-		}
+fun setFulfillment(fulfillment: FulfillmentType, fulfillmentPort: FulfillmentPort) {
+	validateIfModificationIsAllowed()
+	val availableFulfillment = fulfillmentPort.getPossibleFulfillment(outletId)
+	throwIf(!availableFulfillment.contains(fulfillment)) {
+		IllegalModificationError("cannot select $fulfillment for outlet $outletId")
+	}
+	this.fulfillment = fulfillment
+}
 	\end{lstlisting}
 \end{minipage}
 
@@ -112,20 +112,20 @@ Der verbleibende Codeanteil im Applikationskern wird auf das Datenmodell verteil
 Funktionalitäten, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betrifft sind in Domainservice zu implementieren. Sollte ein Prozess Abhängigkeiten zu anderen Services oder Ports besitzen, werden diese ebenfalls in Domainservice ausgelagert. Die Domainservices liegen auf der gleichen konzeptionellen Ebene wie das Datenmodell und dürfen Businesslogik enthalten. Beispielsweise existiert im Proof-of-Concept ein Domainservice für die Abwicklung des Bezahlverfahren. Der Code-Ausschnitt \ref{lst:domainservice} enthält den Algorithmus zum Durchführen des Prozesses. 
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:domainservice}, language=Kotlin]
-		override fun executePaymentProcessAndFinalizeBasket(basketId: BasketId): Basket {
-			return basketStorageService.findById(basketId).also { basket ->
-				throwIf(!basket.isFrozen() || !basket.isPaymentInitialized()) {
-					IllegalModificationError("cannot cancel payment progress if it is not initialized")
-				}
-				val externalPaymentRef = basket.getExternalPaymentRef()
-				paymentPort.executePayment(externalPaymentRef)
-				basket.executePayments() and basket.finalize()
-				basketStorageService.save(basket)
-				logger.info { "Basket payment was executed, saved and finalized" }
-				createOrderAfterFinalization(basket)
-			}
+	\begin{lstlisting}[caption={Ausführung des Bezahlvorgangs in einem Domainservice}, label={lst:domainservice}, language=Kotlin]
+override fun executePaymentProcessAndFinalizeBasket(basketId: BasketId): Basket {
+	return basketStorageService.findById(basketId).also { basket ->
+		throwIf(!basket.isFrozen() || !basket.isPaymentInitialized()) {
+			IllegalModificationError("cannot cancel payment process if not initialized")
 		}
+		val externalPaymentRef = basket.getExternalPaymentRef()
+		paymentPort.executePayment(externalPaymentRef)
+		basket.executePayments() and basket.finalize()
+		basketStorageService.save(basket)
+		logger.info { "Basket payment was executed, saved and finalized" }
+		createOrderAfterFinalization(basket)
+	}
+}
 	\end{lstlisting}
 \end{minipage}
 
@@ -144,16 +144,16 @@ Ein Spezialfall sind hierbei die Adapter für das Erfragen der aktuellen Preis- 
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Preisadapter mit Caching-Funktion}, label={lst:adapter}, language=Kotlin]
-		class CachedPriceAdapter(priceApiService: PriceApiService, 
-		                         private val priceRepository: CachedPriceRepository)
-		             : PriceAdapter(priceApiService) {
-			
-		     override fun fetchPrice(priceId: PriceId): Price {
-		      return priceRepository.getAndUpdateIfInvalid(priceId, fallback = {
-			     super.fetchPrice(priceId)
-		      })
-		     }	
-		}
+class CachedPriceAdapter(priceApiService: PriceApiService,
+						 private val priceRepository: CachedPriceRepository
+						 ) : PriceAdapter(priceApiService) {
+	
+	override fun fetchPrice(priceId: PriceId): Price {
+		return priceRepository.getAndUpdateIfInvalid(priceId, fallback = {
+			super.fetchPrice(priceId)
+		})
+	}
+}
 	\end{lstlisting}
 \end{minipage}
 
@@ -166,21 +166,21 @@ Ein Spezialfall sind hierbei die Adapter für das Erfragen der aktuellen Preis- 
 Zusätzlich zu diesen Adaptern gehören ebenfalls die Repositories in diesem Bereich der Hexagonalen Architektur. Sie managen den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen. In dem Proof-of-Concept wird das gesamte Basket-Aggregate abgespeichert. Aus diesem Grund wird nur ein Repository benötigt, welches eine grundlegende Suchfunktion mithilfe der BasketId und eine Speicherfunktion anbietet. Abgesehen davon gehören noch die zwei Caching-Repositories zu dieser Gruppe. Zur Veranschaulichung wird in dem Quelltext-Block \ref{lst:repository} die verwendete Funktion 'getAndUpdateIfInvalide' aus Zeile 6 des Listings \ref{lst:adapter} ebenfalls vorgezeigt.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-	\begin{lstlisting}[caption={Preisadapter mit Caching-Funktion}, label={lst:repository}, language=Kotlin]
-		override fun getAndUpdateIfInvalid(key: K, fallback: () -> E): E {
-			  val cachedEntity = getCacheable(key)
-			  return when (cachedEntity != null && isValid(cachedEntity)) {
-			  	  true -> cachedEntity.payload
-			  	  false -> fallback().also { this.put(mapping(it)) }
-			  }
-		}
+	\begin{lstlisting}[caption={Abstraktes Repository zum Caching von Daten}, label={lst:repository}, language=Kotlin]
+override fun getAndUpdateIfInvalid(key: K, fallback: () -> E): E {
+	val cachedEntity = getCacheable(key)
+	return when (cachedEntity != null && isValid(cachedEntity)) {
+		true -> cachedEntity.payload
+		false -> fallback().also { this.put(mapping(it)) }
+	}
+}
 	\end{lstlisting}
 \end{minipage}
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Zeile 2: Laden des Objektes aus dem Cache anhand ihrer Id.
-	\item Zeile 4: Sollte das Objekt für die übergebende Id  vorhanden und noch nicht veraltet sein, wird es dem Aufrufer zurückgegeben
-	\item Zeile 7: Ist diese Bedingung nicht erfüllt, wird die übergebene Aktualisierungsfunktion ausgeführt und das Ergebnis zugleich mit den aktuellen Zeitstempel in den Cache geschrieben.
+	\item Zeile 3: Sollte das Objekt für die übergebende Id  vorhanden und noch nicht veraltet sein, wird es dem Aufrufer zurückgegeben
+	\item Zeile 5: Ist diese Bedingung nicht erfüllt, wird die übergebene Aktualisierungsfunktion ausgeführt und das Ergebnis zugleich mit den aktuellen Zeitstempel in den Cache geschrieben.
 \end{itemize}
 
 %TODO: Kapitel über die Implementierung der anderen Varianten

@@ -63,7 +63,7 @@ Abschließend kann anhand der vorhergehenden Überlegungen der Aggregationsschni
 	\item \textbf{Komplexität: } {Die Umsetzung der Businessanforderungen in der Applikation kann übersichtlich erfolgen. Der Sourcecode muss durch keine komplizierteren Vorgänge ergänzt werden. }
 	\item \textbf{Performance: } {Jede Anfrage benötigt das Auslesen des ganzen Baskets. Jedoch ist dies in den meisten Anwendungsfällen ohnehin von Nöten. Ein kleinere Aggregationsschnitts kann die Performance sogar verschlechtern. }
 	\item \textbf{Parallelität: } {Eine zeitgleiche Bearbeitung des Baskets oder eines Objektes innerhalb ist nicht möglich.}
-	\item \textbf{Anwendbarkeit: } {In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.}
+	\item \textbf{Client-Freundlichkeit: } {In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.}
 \end{itemize}
 
 \section{Trennung der Zahlungsinformationen von dem Basket-Aggregate}
@@ -180,19 +180,122 @@ Anpassungen an diesen Daten dürfen nur durchgeführt werden, wenn der Basket im
 
 Vorteilhaft an dieser Variante ist, dass der Basket leichtgewichtiger wird und geringere Datenmengen transportiert werden müssen. Zusätzlich bleiben die negativen Auswirkungen der getrennten Collections in der Datenbank gering, da die Anpassungen der Checkout-Daten nur selten in den User Stories vorkommt.
 
-\section{Zusammenführung der vorgehenden Aggregationsschnitte}
+\section{Zusammenführung der vorgehenden Domain-Modelle}
 
-Als Ergebnis aller Analysen dieses Kapitels kann ein neuer, zusammengefasster Aggregationsschnitt gebildet werden.  
-
-%TODO: Warum nicht BaskeItems trennen
-%TODO: Add Bewertung zu allen Aggregationsschnitte
+Anhand der vorgehenden Analyse kann ein neuer, zusammengefasster Aggregationsschnitt gebildet werden.  Dieser hebt das CalculationResult, die CheckoutData und den PaymentProcess aus dem Basket heraus in ihre eigenen Aggregates, wie in Figur \ref{fig:VarD} dargestellt. Eine Abspaltung der BasketItems erfordert zu viele zusätzliche Datenbankoperationen, wodurch diese weiterhin unter dem Basket aufgehängt sind. Falls in zukünftigen Szenarien die parallele Bearbeitung der Warenkorbinhalte unerlässlich ist, kann weiterhin die Trennung der beiden Klassen voneinander in Betracht gezogen werden.  
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarD.svg}
+	\includesvg[inkscapelatex=false, width=0.70\textwidth]{svg/VarD.svg}
 	\caption{Aggregationsschnitt der Variante D}
 	\label{fig:VarD}
 \end{figure}
 
+\subsection{Aktualisieren von veralteten Datenständen}
 
+Ähnlich zu anderen Aggregationsschnitte benötigen viele Anwendungsfälle das Laden und Bearbeiten mehrerer Aggregates. Beispielsweise erfordert das Hinzufügen eines neuen BasketItems die Neuberechnung des PaymentProcesses und CalculationResults. Gleichermaßen muss dieser Prozess angestoßen werden, wenn das Fulfillment in der CheckoutData bearbeitet und die Versandkosten des Warenkorbs sich dadurch ändern. In einer solchen Situation sollte die Neuberechnung allerdings nicht sofort stattfinden, ansonsten gehen die Performance-Verbesserungen durch eine Kalkulation erst bei Bedarf verloren. Aus diesem Grund wird eine Zusatzinformation benötigt, um zu indizieren, dass der aktuelle Berechnungswert veraltet ist. In der konkreten Implementierung wurde zu diesem Zweck ein 'Outdated'-Wahrheitswert in dem Basket- und CheckoutData-Aggregate hinterlegt. Bei Zustandsänderungen, welche den Gesamtwert des Warenkorbs beeinflussen wird dieser auf 'wahr' gesetzt. Sobald ein CalculationResult des dazugehörigen Baskets aus der Datenbank geladen wird, findet auch eine Neuberechnung statt, sofern der 'Outdated'-Wert wahr ist, welche zugleich auch den PaymentProcess aktualisiert. 
+
+\subsection{Dependency Injection von Services in Domain-Driven Design}
+
+Zur Durchführung der Applikationslogik werden Services und Repositories benötigt. Dies stellt die Frage, an welchen Stellen die Funktionsaufrufe im Code stattfinden und wie die Services an das Objekt weitergegeben wird. In diesem Proof-of-Concept wird für die Initiierung von Objekten das Prinzip der Dependency Injection verwendet. Ein Framework erstellt erforderlichen Objekte durch ihren Konstruktor indem die Parameter ebenfalls injiziert werden. Dadurch entsteht ein rekursives Muster bis alle notwendigen Objekte erzeugt sind.
+
+\textbf{Injektion des Services in ein Aggregate durch das Repository}
+
+Eine Realisierungsmöglichkeit ist die Haltung und Aufrufen einer Referenz im Aggregate selbst. Folglich muss beim Lesen der Datensätze aus der Datenbank alle relevanten Service durch das Repository in das Aggregate injiziert werden. Im kurzen Beispielcode \ref{lst:injection} wird dieser Gedanke verdeutlicht.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Injektion des Services in ein Aggregate durch das Repository}, label={lst:injection}, language=Kotlin]
+class Aggregate(val someData: Data) {
+	lateinit var domainService: SomeService
+	
+	fun inject(domainService: SomeService) {
+		this.domainService = domainService
+	}
+	
+	fun executeBusinessLogic() {
+		domainService.doStuff(someData)
+	}
+}
+class AggregateRepository(val someService: SomeService) {
+	fun load(id: Id): Aggregate {
+		val aggregate = searchInDatabase(id)
+		aggregate.inject(someService)
+		return aggregate
+	}
+}
+	\end{lstlisting}
+\end{minipage}
+
+Jedoch hat sich diese Methodik bei der Implementierung als problematisch erwiesen. Einerseits ist es fragwürdig, ob Datenklassen aus Programmiersicht überhaupt Referenzen auf Services halten sollten, da äußere Abhängigkeiten in das innere Datenmodell getragen werden. Davon abgesehen erhöht sich stark die Wahrscheinlichkeit auf eine 'Circular Dependency' (dt. Zirkelbezug) innerhalb der Repositories, weil sie selbst alle Services besitzen müssen, um diese den Aggregate zu injizieren. Das bedeutet konkret, dass die Repositories so miteinander in Abhängigkeit stehen können, sodass ein endloser Zyklus während der Dependency Injection entsteht. Verdeutlicht wird dieser Effekt anhand eines sachbezogenen Anwendungsfalles in Abbildung \ref{fig:CircularDependency}. In dem Beispiel benötigt das 'CheckoutDataRepository' das 'BasketDataRepository' zur Initiierung und anders herum erfordert das 'BasketDataRepository' das 'CheckoutDataRepository'. Dadurch ist es unmöglich ein Objekt der jeweiligen Klasse zu erzeugen und die Applikation ist nicht mehr ausführbar. In der Checkout-Software stehen die Aggregates in enger Bindung zueinander und benötigen zur Validierung somit ihre gegenseitigen Repositories. In Variante A kann ein solcher Zyklus nicht auftreten, da nur ein Repository existiert.
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.70\textwidth]{svg/Circular Dependency.svg}
+	\caption{Beispiel einer Circular Dependency}
+	\label{fig:CircularDependency}
+\end{figure}
+
+\textbf{Auslagerung der Referenz in einen Domainservice}
+
+Ein anderer Lösungsansatz kann das Extrahieren einer Teilfunktionalität aus dem Aggregat in einen dafür vorgesehenen Domainservice darstellen. Das Listing \ref{lst:extract} implementiert einen Service zur Validierung einer Invariante. 
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Auslagerung der Referenz in einen Domainservice}, label={lst:extract}, language=Kotlin]
+class DomainService(someService: SomeService) {
+	
+	// Kann unabsichtlich umgangen werden, durch direkten Aufruf von aggregate.doStuff()
+	fun doStuff(aggregate: Aggregate) {
+		if (someService.isActionValid()) {     
+			aggregate.doStuff()
+		}
+	}
+
+	// Kann nicht direkt umgangen werden, da doSomeOtherStuff einen Parameter erwartet
+	fun doSomeOtherStuff(aggregate: Aggregate) {
+		val data = someService.getData()
+		aggregate.doSomeOtherStuff(data)        
+	}
+}
+	\end{lstlisting}
+\end{minipage}
+
+Die Wahrscheinlichkeit auf eine Circular Dependency wird hierbei gesenkt, da die Injektionen in verschiedenen Klassen verteilt stattfindet. Nachteilig kann weiterhin aus einem anderen Codeabschnitt 'aggregate.doStuff()' aufgerufen werden ohne Durchführung der Validierung. Die Konsistenz des Aggregatzustandes ist somit gefährdet und anhand einer unvorsichtigen Änderung des Quellcodes können neue Bugs entstehen. Unproblematisch sind Serviceaufrufe, welche lediglich Daten erzeugen und diese den Aggregate weitergeben.
+
+\textbf{Übergabe der Referenz an das Aggregate als Parameter}
+
+Ein Aggregate sollte stets selbst alle wesentlichen Invarianten überprüfen, sodass die Ausführung von invaliden Aktionen unterbunden ist. Um dies zu gewährleisten, muss der Service direkt aus dem Aggregate aufgerufen werden, weswegen dieser eine Referenz auf das gefragte Objekt besitzen muss. Als letzte Realisierungsmöglichkeit in Figur \ref{lst:parameter} kann der Service als Parameter übergeben werden.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Übergabe der Referenz an das Aggregate als Parameter}, label={lst:parameter}, language=Kotlin]
+class DomainService(someService: SomeService) {
+	fun doStuff(aggregate: Aggregate) {
+		aggregate.doStuff(someService)
+	}
+}
+class Aggregate {
+	fun doStuff(someService: SomeService) {
+		if (someService.isActionValid()) {
+			...
+		}
+	}
+}
+	\end{lstlisting}
+\end{minipage}
+
+Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedoch werden die Funktionssignaturen aufgebläht. Aus Sicht der Skalierbarkeit und Fehleranfälligkeit ist generell dieser Ansatz zu bevorzugen, aus welchem Grund auch die Implementierung des Proof-of-Concepts die Domainservices als Parameter übergibt.
+
+\subsection{Bewertung des verkleinerten Aggregationsschnitt}
+
+Die finale Evaluation ist ein Resultat der vorgehenden theoretischen Überlegungen, ein Vergleich mit anderen Varianten des Aggregationsschnitts und ihren tatsächlichen Implementierungen.
+
+Innerhalb eines solchen Domain-Modells ist es möglich, die Kalkulation des Warenkorbs erst bei expliziter Abfrage der Ergebnisse erfolgen, wodurch insgesamt unnötige Berechnungszeit eingespart werden kann. Ein solches Vorgehen erlaubt es bei einer hohen Auslastung der Systeme multiplikativ an Performance zu gewinnen. Zusätzlich müssen weniger Nutzlast zwischen den Clients und den Server gesendet werden, da die einzelnen Aggregates eine geringere Anzahl an Attributen beinhalten. Es muss allerdings genauer Untersucht werden, ob die zusätzlichen Datenbankabfragen diesen Effekt negieren oder dennoch insgesamt ein positiver Einfluss auf die Applikationsgeschwindigkeit zu verzeichnen ist. 
+
+\begin{itemize}[noitemsep,nolistsep,topsep=-2pt]
+	\item \textbf{Komplexität: } {Viele Prozesse benötigen zum Abfragen von externen Informationen oder für die Einhaltung von Invarianten mehr als ein Aggregat, wodurch der Quelltext an Übersichtlichkeit verliert aufgrund der zusätzlichen Funktionsaufrufe. Dabei müssen die Referenzen auf die Repositories oder Service an die Aggregates weitergegeben werden, wodurch weiter die Übersichtlichkeit leidet. Das Transaktionsmanagement gewinnt ebenfalls an Relevanz, sodass Datensätze so kurz wie möglich gesperrt sind. Weiterhin muss für die Neuberechnung der Preise Nebeneffekte von Funktionen eingeführt werden zum Setzen des 'Outdated'-Wertes. \emph{Insgesamt gewinnt die Applikation stark an Komplexität.}}
+	\item \textbf{Performance: } {}
+	\item \textbf{Parallelität: } {}
+	\item \textbf{Client-Freundlichkeit: } {}
+\end{itemize}
+
+%TODO: Add Bewertung zu allen Aggregationsschnitte
 %TODO: Implementierung der Variante
