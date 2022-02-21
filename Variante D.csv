@@ -1,0 +1,1201 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1645423114705,5,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,1,1,http://localhost:8080/basket,5,0,1
+1645423114711,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,1,1,null,0,0,0
+1645423114719,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1204,253,1,1,http://localhost:8080/basket/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/item/acc716ce-683e-4b90-a18b-4103ac51ce6b,5,0,0
+1645423114728,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2161,253,1,1,http://localhost:8080/basket/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/item/8ac98b5a-83a1-48f9-b0cf-1182492bb635,4,0,0
+1645423114736,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3094,253,1,1,http://localhost:8080/basket/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/item/dd9a906f-72bf-4492-aa82-ea4817111fce,4,0,0
+1645423114740,12,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,1,1,http://localhost:8080/checkout/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/checkout-data,12,0,0
+1645423114752,10,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4796,189,1,1,http://localhost:8080/full/081f1262-8450-4b2e-ac75-a1fb5f74f3d9,10,0,0
+1645423114762,3,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4810,189,1,1,http://localhost:8080/full/081f1262-8450-4b2e-ac75-a1fb5f74f3d9,3,0,0
+1645423114765,5,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1010,331,1,1,http://localhost:8080/payment/081f1262-8450-4b2e-ac75-a1fb5f74f3d9,5,0,0
+1645423114771,6,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4032,223,1,1,http://localhost:8080/payment/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/initialize,6,0,0
+1645423114777,3,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4051,220,1,1,http://localhost:8080/payment/081f1262-8450-4b2e-ac75-a1fb5f74f3d9/execute,3,0,0
+1645423114705,75,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26844,3113,1,1,null,57,0,1
+1645423114781,1,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,1,1,http://localhost:8080/basket,1,0,0
+1645423114782,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,1,1,null,0,0,0
+1645423114783,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1202,253,1,1,http://localhost:8080/basket/64db0367-7d09-43aa-adce-dffb7507728f/item/502da064-af25-4412-a5de-98caf5a307e1,5,0,0
+1645423114788,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2142,253,1,1,http://localhost:8080/basket/64db0367-7d09-43aa-adce-dffb7507728f/item/ecbd1eb6-681e-48dd-9d16-a64c40cb6353,4,0,0
+1645423114792,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3082,253,1,1,http://localhost:8080/basket/64db0367-7d09-43aa-adce-dffb7507728f/item/d8e83124-0081-4ad4-beb1-33832c41832e,4,0,0
+1645423114805,8,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,2,2,http://localhost:8080/basket,8,0,1
+1645423114814,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,2,2,null,0,0,0
+1645423114815,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1202,253,2,2,http://localhost:8080/basket/6ff6db31-5e99-4c12-a767-44975b07cc1c/item/8ba1d3d1-ef84-4161-80fa-0a226dfa8d3a,6,0,0
+1645423114796,26,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,2,2,http://localhost:8080/checkout/64db0367-7d09-43aa-adce-dffb7507728f/checkout-data,26,0,0
+1645423114821,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2143,253,2,2,http://localhost:8080/basket/6ff6db31-5e99-4c12-a767-44975b07cc1c/item/ffa4ce68-e8d2-4ad3-bf84-838858ab6a87,5,0,0
+1645423114827,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3083,253,2,2,http://localhost:8080/basket/6ff6db31-5e99-4c12-a767-44975b07cc1c/item/4ba4b371-c83f-4eb8-aa1c-d97b95ec5776,5,0,0
+1645423114822,16,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4676,189,2,2,http://localhost:8080/full/64db0367-7d09-43aa-adce-dffb7507728f,16,0,0
+1645423114838,6,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4677,189,2,2,http://localhost:8080/full/64db0367-7d09-43aa-adce-dffb7507728f,6,0,0
+1645423114833,18,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1344,999,2,2,http://localhost:8080/checkout/6ff6db31-5e99-4c12-a767-44975b07cc1c/checkout-data,18,0,0
+1645423114844,8,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1003,331,2,2,http://localhost:8080/payment/64db0367-7d09-43aa-adce-dffb7507728f,8,0,0
+1645423114853,8,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4025,223,2,2,http://localhost:8080/payment/64db0367-7d09-43aa-adce-dffb7507728f/initialize,8,0,0
+1645423114852,13,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4791,189,2,2,http://localhost:8080/full/6ff6db31-5e99-4c12-a767-44975b07cc1c,13,0,0
+1645423114861,8,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4108,220,2,2,http://localhost:8080/payment/64db0367-7d09-43aa-adce-dffb7507728f/execute,8,0,0
+1645423114781,88,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26601,3113,2,2,null,86,0,0
+1645423114870,1,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,2,2,http://localhost:8080/basket,1,0,0
+1645423114872,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,2,2,null,0,0,0
+1645423114865,8,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4764,189,2,2,http://localhost:8080/full/6ff6db31-5e99-4c12-a767-44975b07cc1c,8,0,0
+1645423114872,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1202,253,2,2,http://localhost:8080/basket/ece35e1c-3027-46ab-9639-99307ec97e38/item/29be86fe-9972-4b7a-b69a-658c318ecfa7,6,0,0
+1645423114874,6,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1003,331,2,2,http://localhost:8080/payment/6ff6db31-5e99-4c12-a767-44975b07cc1c,6,0,0
+1645423114878,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2144,253,2,2,http://localhost:8080/basket/ece35e1c-3027-46ab-9639-99307ec97e38/item/546cb59e-c1f7-447f-8a56-f4cdf803c4a9,6,0,0
+1645423114881,9,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4017,223,2,2,http://localhost:8080/payment/6ff6db31-5e99-4c12-a767-44975b07cc1c/initialize,9,0,0
+1645423114884,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3117,253,2,2,http://localhost:8080/basket/ece35e1c-3027-46ab-9639-99307ec97e38/item/d5ecf4b3-7d2e-4dba-91e6-2aa83fd460b4,8,0,0
+1645423114890,5,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4099,220,2,2,http://localhost:8080/payment/6ff6db31-5e99-4c12-a767-44975b07cc1c/execute,5,0,0
+1645423114805,91,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26788,3113,2,2,null,83,0,1
+1645423114896,2,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,2,2,http://localhost:8080/basket,2,0,0
+1645423114899,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,2,2,null,0,0,0
+1645423114906,15,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,3,3,http://localhost:8080/basket,15,0,1
+1645423114921,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,3,3,null,0,0,0
+1645423114921,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1203,253,3,3,http://localhost:8080/basket/11f4098e-9374-429c-8c63-a5cca4f41a70/item/6bc409e5-3920-4cd6-a243-296524d2d22c,8,0,0
+1645423114899,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1209,253,3,3,http://localhost:8080/basket/7778983a-47bc-4f61-90b4-d5d32872dbe5/item/d0bd9fd6-d731-4e37-929c-025a558f1a68,31,0,0
+1645423114931,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2158,253,3,3,http://localhost:8080/basket/7778983a-47bc-4f61-90b4-d5d32872dbe5/item/639b6181-90fd-4ed5-bd14-86d36b3f35fd,6,0,0
+1645423114892,45,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,3,3,http://localhost:8080/checkout/ece35e1c-3027-46ab-9639-99307ec97e38/checkout-data,45,0,0
+1645423114937,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3106,253,3,3,http://localhost:8080/basket/7778983a-47bc-4f61-90b4-d5d32872dbe5/item/56dfd6d1-ab67-4b41-9ccd-8f932e4361e0,6,0,0
+1645423114929,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2147,253,3,3,http://localhost:8080/basket/11f4098e-9374-429c-8c63-a5cca4f41a70/item/0c4a30fc-6eba-48bb-9771-af23b9e2c0da,14,0,0
+1645423114944,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3087,253,3,3,http://localhost:8080/basket/11f4098e-9374-429c-8c63-a5cca4f41a70/item/851186c3-5f55-4221-8add-cdf696a4fb4c,10,0,0
+1645423114937,38,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4799,189,3,3,http://localhost:8080/full/ece35e1c-3027-46ab-9639-99307ec97e38,38,0,0
+1645423114954,27,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1351,999,3,3,http://localhost:8080/checkout/11f4098e-9374-429c-8c63-a5cca4f41a70/checkout-data,27,0,0
+1645423114943,39,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1350,999,3,3,http://localhost:8080/checkout/7778983a-47bc-4f61-90b4-d5d32872dbe5/checkout-data,39,0,0
+1645423114976,6,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4767,189,3,3,http://localhost:8080/full/ece35e1c-3027-46ab-9639-99307ec97e38,5,0,0
+1645423114982,12,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1009,331,3,3,http://localhost:8080/payment/ece35e1c-3027-46ab-9639-99307ec97e38,12,0,0
+1645423114994,11,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4012,223,3,3,http://localhost:8080/payment/ece35e1c-3027-46ab-9639-99307ec97e38/initialize,10,0,0
+1645423114982,27,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4653,189,4,4,http://localhost:8080/full/7778983a-47bc-4f61-90b4-d5d32872dbe5,27,0,0
+1645423115005,5,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4055,220,4,4,http://localhost:8080/payment/ece35e1c-3027-46ab-9639-99307ec97e38/execute,5,0,0
+1645423114869,142,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26791,3113,4,4,null,136,0,0
+1645423115007,4,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,4,4,http://localhost:8080/basket,4,0,0
+1645423115011,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,4,4,null,0,0,0
+1645423114981,33,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4771,189,4,4,http://localhost:8080/full/11f4098e-9374-429c-8c63-a5cca4f41a70,33,0,0
+1645423115011,3,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,4,4,http://localhost:8080/basket,3,0,0
+1645423115015,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,4,4,null,0,0,0
+1645423115010,7,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4661,189,4,4,http://localhost:8080/full/7778983a-47bc-4f61-90b4-d5d32872dbe5,7,0,0
+1645423115012,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1223,253,4,4,http://localhost:8080/basket/70af6e6a-45b4-41cb-97f1-e1ff70239d49/item/8089fe5e-fae1-481a-8879-6cee2faf47d6,9,0,0
+1645423115015,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1202,253,4,4,http://localhost:8080/basket/96c0147f-f452-4183-98bf-49bc7f44c3ea/item/1d2d0429-0bda-42f3-885c-14638563d18f,10,0,0
+1645423115021,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2147,253,4,4,http://localhost:8080/basket/70af6e6a-45b4-41cb-97f1-e1ff70239d49/item/abaf006e-1dc6-4295-bc86-5fcc3350fb49,6,0,0
+1645423115017,12,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1009,331,4,4,http://localhost:8080/payment/7778983a-47bc-4f61-90b4-d5d32872dbe5,12,0,0
+1645423115025,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2152,253,4,4,http://localhost:8080/basket/96c0147f-f452-4183-98bf-49bc7f44c3ea/item/81f4a60e-7e60-4df8-9c9b-38104528fc08,8,0,0
+1645423115015,18,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4817,189,4,4,http://localhost:8080/full/11f4098e-9374-429c-8c63-a5cca4f41a70,18,0,0
+1645423115027,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3102,253,4,4,http://localhost:8080/basket/70af6e6a-45b4-41cb-97f1-e1ff70239d49/item/b09dda7c-6e50-466a-9c18-18be15daeee1,8,0,0
+1645423115034,15,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1017,331,4,4,http://localhost:8080/payment/11f4098e-9374-429c-8c63-a5cca4f41a70,15,0,0
+1645423115029,20,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4032,223,4,4,http://localhost:8080/payment/7778983a-47bc-4f61-90b4-d5d32872dbe5/initialize,20,0,0
+1645423115033,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3106,253,4,4,http://localhost:8080/basket/96c0147f-f452-4183-98bf-49bc7f44c3ea/item/f95dfc14-3cb1-45a9-bbae-7eec7f46863b,18,0,0
+1645423115049,7,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4076,220,4,4,http://localhost:8080/payment/7778983a-47bc-4f61-90b4-d5d32872dbe5/execute,7,0,0
+1645423114896,160,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26596,3113,4,4,null,157,0,0
+1645423115056,5,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,4,4,http://localhost:8080/basket,5,0,0
+1645423115061,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,4,4,null,0,0,0
+1645423115049,14,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4061,223,4,4,http://localhost:8080/payment/11f4098e-9374-429c-8c63-a5cca4f41a70/initialize,14,0,0
+1645423115035,30,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1351,999,4,4,http://localhost:8080/checkout/70af6e6a-45b4-41cb-97f1-e1ff70239d49/checkout-data,30,0,0
+1645423115063,5,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4098,220,4,4,http://localhost:8080/payment/11f4098e-9374-429c-8c63-a5cca4f41a70/execute,5,0,0
+1645423114906,163,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26894,3113,4,4,null,159,0,1
+1645423115062,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1209,253,4,4,http://localhost:8080/basket/132a7826-18ad-450f-80a7-7ab42d69dac5/item/b3fa86dd-3a3c-4bc3-8d3d-38a75051e9b4,8,0,0
+1645423115069,1,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,4,4,http://localhost:8080/basket,1,0,0
+1645423115071,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,4,4,null,0,0,0
+1645423115071,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1210,253,4,4,http://localhost:8080/basket/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/item/20d5afa1-c093-4005-affa-32991318c6e6,5,0,0
+1645423115070,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2145,253,4,4,http://localhost:8080/basket/132a7826-18ad-450f-80a7-7ab42d69dac5/item/0b41ad23-07e0-4982-a816-2d094bb201a4,7,0,0
+1645423115051,26,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1356,999,4,4,http://localhost:8080/checkout/96c0147f-f452-4183-98bf-49bc7f44c3ea/checkout-data,26,0,0
+1645423115065,16,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4815,189,4,4,http://localhost:8080/full/70af6e6a-45b4-41cb-97f1-e1ff70239d49,16,0,0
+1645423115077,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2149,253,4,4,http://localhost:8080/basket/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/item/2c2c5c5b-d336-4052-8997-7bc6c0caf44d,6,0,0
+1645423115077,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3088,253,4,4,http://localhost:8080/basket/132a7826-18ad-450f-80a7-7ab42d69dac5/item/a28d4883-c4e0-4b40-abfe-88891c5c23f4,6,0,0
+1645423115081,6,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4811,189,4,4,http://localhost:8080/full/70af6e6a-45b4-41cb-97f1-e1ff70239d49,6,0,0
+1645423115083,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3086,253,4,4,http://localhost:8080/basket/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/item/a8bb25be-352b-46f5-b1f6-51da32b1ef52,5,0,0
+1645423115077,15,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4815,189,4,4,http://localhost:8080/full/96c0147f-f452-4183-98bf-49bc7f44c3ea,15,0,0
+1645423115087,6,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,4,4,http://localhost:8080/payment/70af6e6a-45b4-41cb-97f1-e1ff70239d49,6,0,0
+1645423115092,5,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4771,189,4,4,http://localhost:8080/full/96c0147f-f452-4183-98bf-49bc7f44c3ea,5,0,0
+1645423115083,19,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1350,999,4,4,http://localhost:8080/checkout/132a7826-18ad-450f-80a7-7ab42d69dac5/checkout-data,19,0,0
+1645423115089,16,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1350,999,4,4,http://localhost:8080/checkout/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/checkout-data,16,0,0
+1645423115093,15,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,4051,223,5,5,http://localhost:8080/payment/70af6e6a-45b4-41cb-97f1-e1ff70239d49/initialize,8,0,0
+1645423115097,13,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1017,331,5,5,http://localhost:8080/payment/96c0147f-f452-4183-98bf-49bc7f44c3ea,13,0,0
+1645423115107,5,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,5,5,http://localhost:8080/basket,5,0,1
+1645423115112,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,5,5,null,0,0,0
+1645423115109,6,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4091,220,5,5,http://localhost:8080/payment/70af6e6a-45b4-41cb-97f1-e1ff70239d49/execute,6,0,0
+1645423115007,108,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26936,3113,5,5,null,99,0,0
+1645423115115,7,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,5,5,http://localhost:8080/basket,6,0,0
+1645423115122,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,5,5,null,0,0,0
+1645423115105,20,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4736,189,5,5,http://localhost:8080/full/fd88538d-19ca-4cd6-8cf5-4f3c4133104b,20,0,0
+1645423115102,27,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4728,189,5,5,http://localhost:8080/full/132a7826-18ad-450f-80a7-7ab42d69dac5,27,0,0
+1645423115111,18,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,3994,223,5,5,http://localhost:8080/payment/96c0147f-f452-4183-98bf-49bc7f44c3ea/initialize,18,0,0
+1645423115122,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1204,253,5,5,http://localhost:8080/basket/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/item/f2d778e4-f747-4402-b5b6-cabfefad427f,9,0,0
+1645423115131,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2164,253,5,5,http://localhost:8080/basket/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/item/e48885d1-e7e8-4d36-9b75-d425f1533e57,7,0,0
+1645423115125,14,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4724,189,5,5,http://localhost:8080/full/fd88538d-19ca-4cd6-8cf5-4f3c4133104b,14,0,0
+1645423115113,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1201,253,5,5,http://localhost:8080/basket/3259b4e1-5575-42f2-be2f-1bb5381dab96/item/1bddeb06-abe7-43de-b2a9-f61c53a8af6a,27,0,0
+1645423115129,16,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4703,189,5,5,http://localhost:8080/full/132a7826-18ad-450f-80a7-7ab42d69dac5,16,0,0
+1645423115138,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3086,253,5,5,http://localhost:8080/basket/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/item/029afea1-9ded-4c1b-b1f3-53ec39c8da58,7,0,0
+1645423115140,7,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1003,331,5,5,http://localhost:8080/payment/fd88538d-19ca-4cd6-8cf5-4f3c4133104b,7,0,0
+1645423115130,23,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4078,220,5,5,http://localhost:8080/payment/96c0147f-f452-4183-98bf-49bc7f44c3ea/execute,23,0,0
+1645423115011,142,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26833,3113,5,5,null,139,0,0
+1645423115145,9,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1003,331,5,5,http://localhost:8080/payment/132a7826-18ad-450f-80a7-7ab42d69dac5,9,0,0
+1645423115147,16,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4048,223,5,5,http://localhost:8080/payment/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/initialize,16,0,0
+1645423115140,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2143,253,5,5,http://localhost:8080/basket/3259b4e1-5575-42f2-be2f-1bb5381dab96/item/e8c1ab51-cbdd-490f-8f19-bb5bd0984c29,24,0,0
+1645423115153,15,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,5,5,http://localhost:8080/basket,15,0,0
+1645423115169,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,5,5,null,0,0,0
+1645423115154,16,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,3994,223,5,5,http://localhost:8080/payment/132a7826-18ad-450f-80a7-7ab42d69dac5/initialize,16,0,0
+1645423115163,7,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4090,220,5,5,http://localhost:8080/payment/fd88538d-19ca-4cd6-8cf5-4f3c4133104b/execute,7,0,0
+1645423115069,102,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26738,3113,5,5,null,97,0,0
+1645423115171,3,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,5,5,http://localhost:8080/basket,3,0,0
+1645423115175,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,5,5,null,0,0,0
+1645423115170,7,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4085,220,5,5,http://localhost:8080/payment/132a7826-18ad-450f-80a7-7ab42d69dac5/execute,7,0,0
+1645423115056,122,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26647,3113,5,5,null,120,0,0
+1645423115146,32,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,5,5,http://localhost:8080/checkout/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/checkout-data,32,0,0
+1645423115175,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1204,253,5,5,http://localhost:8080/basket/b8fb4535-703c-4501-b8a4-8c00af45d75d/item/de79c584-54e2-4ed4-a4e9-64417a25bd6f,9,0,0
+1645423115164,21,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3085,253,5,5,http://localhost:8080/basket/3259b4e1-5575-42f2-be2f-1bb5381dab96/item/4a488688-c0e0-4db3-b961-9fe08b67bffc,21,0,0
+1645423115178,7,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,5,5,http://localhost:8080/basket,7,0,0
+1645423115185,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,5,5,null,0,0,0
+1645423115184,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2159,253,5,5,http://localhost:8080/basket/b8fb4535-703c-4501-b8a4-8c00af45d75d/item/0bff6632-40b2-49c7-9433-b4002cb11a96,10,0,0
+1645423115186,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1215,253,5,5,http://localhost:8080/basket/8bddff86-2cd2-4309-a43f-8948c68a03f9/item/93dfc9ef-15ba-461e-88df-36a2749f9980,11,0,0
+1645423115169,37,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1215,253,5,5,http://localhost:8080/basket/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/item/00f31d2d-2bf3-475d-ae56-ae95f7eef241,36,0,0
+1645423115195,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3080,253,6,6,http://localhost:8080/basket/b8fb4535-703c-4501-b8a4-8c00af45d75d/item/069a7103-7cc3-442e-9fd2-f487c0dd867e,16,0,0
+1645423115197,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2156,253,6,6,http://localhost:8080/basket/8bddff86-2cd2-4309-a43f-8948c68a03f9/item/358e27be-48fa-41a5-b5eb-af3b1e5477d8,15,0,0
+1645423115206,9,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,6,6,http://localhost:8080/basket,8,0,1
+1645423115215,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,6,6,null,0,0,0
+1645423115212,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3107,253,6,6,http://localhost:8080/basket/8bddff86-2cd2-4309-a43f-8948c68a03f9/item/b98b0891-9d6d-4005-97a0-e8578a579e4c,13,0,0
+1645423115179,47,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4768,189,6,6,http://localhost:8080/full/93e90cd5-81bb-4ee0-82b9-19098dec5f4c,46,0,0
+1645423115216,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1215,253,6,6,http://localhost:8080/basket/2a20c025-4805-42c4-ba6a-51d6f7731450/item/4ae26b46-2ae4-489d-a471-068761367976,18,0,0
+1645423115211,25,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1344,999,6,6,http://localhost:8080/checkout/b8fb4535-703c-4501-b8a4-8c00af45d75d/checkout-data,25,0,0
+1645423115185,54,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1344,999,6,6,http://localhost:8080/checkout/3259b4e1-5575-42f2-be2f-1bb5381dab96/checkout-data,54,0,0
+1645423115226,15,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4769,189,6,6,http://localhost:8080/full/93e90cd5-81bb-4ee0-82b9-19098dec5f4c,15,0,0
+1645423115206,38,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2140,253,6,6,http://localhost:8080/basket/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/item/1c2fc6d4-4dc9-464b-9066-e30bfc89fc2b,38,0,0
+1645423115242,9,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,6,6,http://localhost:8080/payment/93e90cd5-81bb-4ee0-82b9-19098dec5f4c,9,0,0
+1645423115235,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2155,253,6,6,http://localhost:8080/basket/2a20c025-4805-42c4-ba6a-51d6f7731450/item/352899de-26f4-4816-8eb4-afbc9b5c700e,16,0,0
+1645423115239,23,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4806,189,6,6,http://localhost:8080/full/3259b4e1-5575-42f2-be2f-1bb5381dab96,23,0,0
+1645423115245,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3115,253,6,6,http://localhost:8080/basket/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/item/24d5028c-3573-41fa-86c1-81778adf54da,24,0,0
+1645423115236,35,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4724,189,6,6,http://localhost:8080/full/b8fb4535-703c-4501-b8a4-8c00af45d75d,35,0,0
+1645423115252,21,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,4062,223,6,6,http://localhost:8080/payment/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/initialize,21,0,0
+1645423115263,12,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4795,189,6,6,http://localhost:8080/full/3259b4e1-5575-42f2-be2f-1bb5381dab96,12,0,0
+1645423115225,54,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1349,999,6,6,http://localhost:8080/checkout/8bddff86-2cd2-4309-a43f-8948c68a03f9/checkout-data,54,0,0
+1645423115271,8,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4693,189,6,6,http://localhost:8080/full/b8fb4535-703c-4501-b8a4-8c00af45d75d,8,0,0
+1645423115273,7,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4101,220,6,6,http://localhost:8080/payment/93e90cd5-81bb-4ee0-82b9-19098dec5f4c/execute,7,0,0
+1645423115115,165,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26843,3113,6,6,null,159,0,0
+1645423115280,3,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,6,6,http://localhost:8080/basket,3,0,0
+1645423115283,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,6,6,null,0,0,0
+1645423115283,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1208,253,6,6,http://localhost:8080/basket/dd799b39-d1c1-4e60-b286-606b33874a00/item/2b18d669-4e86-46bf-9da7-062e321cded1,8,0,0
+1645423115253,39,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3085,253,6,6,http://localhost:8080/basket/2a20c025-4805-42c4-ba6a-51d6f7731450/item/28d4874d-b917-49f1-8859-3bbd7db999b7,39,0,0
+1645423115280,14,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1003,331,6,6,http://localhost:8080/payment/b8fb4535-703c-4501-b8a4-8c00af45d75d,14,0,0
+1645423115270,26,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1351,999,6,6,http://localhost:8080/checkout/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/checkout-data,26,0,0
+1645423115292,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2155,253,6,6,http://localhost:8080/basket/dd799b39-d1c1-4e60-b286-606b33874a00/item/c276435d-dc88-4526-a219-af71687d7e18,8,0,0
+1645423115275,28,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1010,331,6,6,http://localhost:8080/payment/3259b4e1-5575-42f2-be2f-1bb5381dab96,28,0,0
+1645423115294,12,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4037,223,7,7,http://localhost:8080/payment/b8fb4535-703c-4501-b8a4-8c00af45d75d/initialize,12,0,0
+1645423115301,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3083,253,7,7,http://localhost:8080/basket/dd799b39-d1c1-4e60-b286-606b33874a00/item/f1b4ec2e-0e05-4692-b4d4-ecd9ccbb9b1e,10,0,0
+1645423115279,34,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4761,189,7,7,http://localhost:8080/full/8bddff86-2cd2-4309-a43f-8948c68a03f9,34,0,0
+1645423115306,10,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4042,220,7,7,http://localhost:8080/payment/b8fb4535-703c-4501-b8a4-8c00af45d75d/execute,10,0,0
+1645423115171,145,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26628,3113,7,7,null,142,0,0
+1645423115306,16,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,7,7,http://localhost:8080/basket,16,0,0
+1645423115316,7,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,7,7,http://localhost:8080/basket,7,0,0
+1645423115323,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,7,7,null,0,0,0
+1645423115323,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,7,7,null,0,0,0
+1645423115297,33,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4780,189,7,7,http://localhost:8080/full/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4,32,0,0
+1645423115323,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1202,253,7,7,http://localhost:8080/basket/539195a8-191b-4064-afac-ecc45f6e5d6b/item/699fda54-cf76-4cf0-808b-ee487b2c097c,8,0,0
+1645423115312,20,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1342,999,7,7,http://localhost:8080/checkout/dd799b39-d1c1-4e60-b286-606b33874a00/checkout-data,20,0,0
+1645423115304,37,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4038,223,7,7,http://localhost:8080/payment/3259b4e1-5575-42f2-be2f-1bb5381dab96/initialize,37,0,0
+1645423115330,15,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4767,189,7,7,http://localhost:8080/full/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4,15,0,0
+1645423115323,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1211,253,7,7,http://localhost:8080/basket/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/item/653c470c-e4c9-4c26-b981-4a2a83b3bce7,22,0,0
+1645423115342,7,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4096,220,7,7,http://localhost:8080/payment/3259b4e1-5575-42f2-be2f-1bb5381dab96/execute,7,0,0
+1645423115107,242,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26860,3113,7,7,null,238,0,1
+1645423115331,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2145,253,7,7,http://localhost:8080/basket/539195a8-191b-4064-afac-ecc45f6e5d6b/item/d49434c5-0baf-4bad-809b-f189c61b1bfc,19,0,0
+1645423115332,21,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4760,189,7,7,http://localhost:8080/full/dd799b39-d1c1-4e60-b286-606b33874a00,21,0,0
+1645423115345,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2147,253,7,7,http://localhost:8080/basket/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/item/6e6eb062-d348-4412-9bb4-392fcc6b9570,12,0,0
+1645423115354,5,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4761,189,7,7,http://localhost:8080/full/dd799b39-d1c1-4e60-b286-606b33874a00,5,0,0
+1645423115292,68,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1351,999,7,7,http://localhost:8080/checkout/2a20c025-4805-42c4-ba6a-51d6f7731450/checkout-data,68,0,0
+1645423115360,5,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1001,331,7,7,http://localhost:8080/payment/dd799b39-d1c1-4e60-b286-606b33874a00,5,0,0
+1645423115313,54,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4813,189,7,7,http://localhost:8080/full/8bddff86-2cd2-4309-a43f-8948c68a03f9,54,0,0
+1645423115350,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3080,253,7,7,http://localhost:8080/basket/539195a8-191b-4064-afac-ecc45f6e5d6b/item/359a6a77-3d5a-4ddb-961a-74d1f15dedd9,19,0,0
+1645423115349,21,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,7,7,http://localhost:8080/basket,21,0,0
+1645423115370,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,7,7,null,0,0,0
+1645423115345,28,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1003,331,7,7,http://localhost:8080/payment/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4,28,0,0
+1645423115370,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1220,253,7,7,http://localhost:8080/basket/0cf2d17e-57c5-4a21-8c49-439b31466e13/item/4dd5cac0-5219-4813-8ea8-0c3ace1c14be,6,0,0
+1645423115358,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3114,253,7,7,http://localhost:8080/basket/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/item/7868b136-ecda-483e-8e06-e6a40fafc77e,19,0,0
+1645423115373,10,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4043,223,7,7,http://localhost:8080/payment/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/initialize,10,0,0
+1645423115365,19,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3988,223,7,7,http://localhost:8080/payment/dd799b39-d1c1-4e60-b286-606b33874a00/initialize,19,0,0
+1645423115376,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2143,253,7,7,http://localhost:8080/basket/0cf2d17e-57c5-4a21-8c49-439b31466e13/item/55c405fc-6117-473f-8d94-3c6ae77d0c2c,14,0,0
+1645423115361,32,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4767,189,7,7,http://localhost:8080/full/2a20c025-4805-42c4-ba6a-51d6f7731450,31,0,0
+1645423115384,11,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4098,220,7,7,http://localhost:8080/payment/dd799b39-d1c1-4e60-b286-606b33874a00/execute,11,0,0
+1645423115280,115,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26738,3113,7,7,null,110,0,0
+1645423115383,14,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4095,220,7,7,http://localhost:8080/payment/3a8fed96-a321-4bb1-bcdc-9788fc1a52e4/execute,14,0,0
+1645423115153,244,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26851,3113,7,7,null,238,0,0
+1645423115395,3,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,7,7,http://localhost:8080/basket,3,0,0
+1645423115399,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,7,7,null,0,0,0
+1645423115367,37,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1009,331,7,7,http://localhost:8080/payment/8bddff86-2cd2-4309-a43f-8948c68a03f9,37,0,0
+1645423115369,39,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1342,999,7,7,http://localhost:8080/checkout/539195a8-191b-4064-afac-ecc45f6e5d6b/checkout-data,38,0,0
+1645423115393,23,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4800,189,8,8,http://localhost:8080/full/2a20c025-4805-42c4-ba6a-51d6f7731450,23,0,0
+1645423115399,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1209,253,8,8,http://localhost:8080/basket/9b84f292-997e-4514-ae86-67c65f2ad1e8/item/35c40d23-5d2f-4feb-bfed-5ef8e99dcc8e,19,0,0
+1645423115391,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3084,253,8,8,http://localhost:8080/basket/0cf2d17e-57c5-4a21-8c49-439b31466e13/item/a71ce45f-c09d-46e9-bf66-3c7b94f69f38,28,0,0
+1645423115409,13,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,8,8,http://localhost:8080/basket,13,0,0
+1645423115397,25,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,8,8,http://localhost:8080/basket,25,0,0
+1645423115422,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,8,8,null,0,0,0
+1645423115422,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,8,8,null,0,0,0
+1645423115419,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2156,253,8,8,http://localhost:8080/basket/9b84f292-997e-4514-ae86-67c65f2ad1e8/item/3f340ca7-5983-42e6-9200-014b7a6dc781,13,0,0
+1645423115405,33,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4013,223,8,8,http://localhost:8080/payment/8bddff86-2cd2-4309-a43f-8948c68a03f9/initialize,33,0,0
+1645423115438,9,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4063,220,8,8,http://localhost:8080/payment/8bddff86-2cd2-4309-a43f-8948c68a03f9/execute,9,0,0
+1645423115178,269,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26828,3113,8,8,null,267,0,0
+1645423115423,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1204,253,8,8,http://localhost:8080/basket/83b99b8e-e83e-4a73-9892-7dc712fe39e7/item/bceb8583-74a7-49e3-ade5-8a66ff21e645,25,0,0
+1645423115377,72,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1351,999,8,8,http://localhost:8080/checkout/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/checkout-data,72,0,0
+1645423115420,36,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1342,999,8,8,http://localhost:8080/checkout/0cf2d17e-57c5-4a21-8c49-439b31466e13/checkout-data,36,0,0
+1645423115433,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3111,253,8,8,http://localhost:8080/basket/9b84f292-997e-4514-ae86-67c65f2ad1e8/item/9d172af2-f845-4dea-b163-8fafb11a55ca,25,0,0
+1645423115417,42,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1003,331,8,8,http://localhost:8080/payment/2a20c025-4805-42c4-ba6a-51d6f7731450,42,0,0
+1645423115448,13,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,8,8,http://localhost:8080/basket,13,0,0
+1645423115461,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,8,8,null,0,0,0
+1645423115423,42,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1207,253,8,8,http://localhost:8080/basket/f5fd93d1-910f-491e-850f-1394e7fd0ea6/item/fcc2b69b-7635-4b76-be41-3515742d8861,42,0,0
+1645423115449,21,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2157,253,8,8,http://localhost:8080/basket/83b99b8e-e83e-4a73-9892-7dc712fe39e7/item/87886a2d-0559-499e-be14-9725c696c392,21,0,0
+1645423115408,69,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4809,189,8,8,http://localhost:8080/full/539195a8-191b-4064-afac-ecc45f6e5d6b,69,0,0
+1645423115460,21,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4037,223,8,8,http://localhost:8080/payment/2a20c025-4805-42c4-ba6a-51d6f7731450/initialize,21,0,0
+1645423115456,29,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4797,189,8,8,http://localhost:8080/full/0cf2d17e-57c5-4a21-8c49-439b31466e13,29,0,0
+1645423115461,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1216,253,8,8,http://localhost:8080/basket/a688485d-b683-4fbb-8b06-c80e2003c95c/item/936858e7-ce31-4aaf-a890-54085e6b1596,26,0,0
+1645423115459,32,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,8,8,http://localhost:8080/checkout/9b84f292-997e-4514-ae86-67c65f2ad1e8/checkout-data,32,0,0
+1645423115466,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2161,253,8,8,http://localhost:8080/basket/f5fd93d1-910f-491e-850f-1394e7fd0ea6/item/572fdb24-dbbd-422e-8e46-c7576da132a4,28,0,0
+1645423115481,16,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4049,220,8,8,http://localhost:8080/payment/2a20c025-4805-42c4-ba6a-51d6f7731450/execute,16,0,0
+1645423115206,291,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26804,3113,8,8,null,282,0,1
+1645423115450,48,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4750,189,8,8,http://localhost:8080/full/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9,48,0,0
+1645423115470,29,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3107,253,8,8,http://localhost:8080/basket/83b99b8e-e83e-4a73-9892-7dc712fe39e7/item/308f8df0-3e16-40a2-9fb1-aa72f461ce28,29,0,0
+1645423115486,14,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4799,189,8,8,http://localhost:8080/full/0cf2d17e-57c5-4a21-8c49-439b31466e13,14,0,0
+1645423115477,27,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4759,189,8,8,http://localhost:8080/full/539195a8-191b-4064-afac-ecc45f6e5d6b,27,0,0
+1645423115488,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2164,253,8,8,http://localhost:8080/basket/a688485d-b683-4fbb-8b06-c80e2003c95c/item/a6977469-1505-49cd-8d33-878bca324913,16,0,0
+1645423115497,15,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,9,9,http://localhost:8080/basket,15,0,0
+1645423115512,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,9,9,null,0,0,0
+1645423115494,20,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3117,253,9,9,http://localhost:8080/basket/f5fd93d1-910f-491e-850f-1394e7fd0ea6/item/0cb25f86-26f1-4b30-85be-6aebe1fdaf89,20,0,0
+1645423115505,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3107,253,9,9,http://localhost:8080/basket/a688485d-b683-4fbb-8b06-c80e2003c95c/item/590dc971-d473-4941-8d48-211de9f7c727,12,0,0
+1645423115498,19,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4743,189,9,9,http://localhost:8080/full/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9,19,0,0
+1645423115500,20,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1002,331,9,9,http://localhost:8080/payment/0cf2d17e-57c5-4a21-8c49-439b31466e13,20,0,0
+1645423115506,14,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,9,9,http://localhost:8080/basket,14,0,0
+1645423115521,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,9,9,null,0,0,0
+1645423115513,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1211,253,9,9,http://localhost:8080/basket/1fde0e13-cc3c-46a3-8357-c88c98aeef05/item/278f3ee0-65cf-4131-b49f-a1a67b6d8034,10,0,0
+1645423115491,35,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4702,189,9,9,http://localhost:8080/full/9b84f292-997e-4514-ae86-67c65f2ad1e8,35,0,0
+1645423115504,23,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1008,331,9,9,http://localhost:8080/payment/539195a8-191b-4064-afac-ecc45f6e5d6b,23,0,0
+1645423115524,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2156,253,9,9,http://localhost:8080/basket/1fde0e13-cc3c-46a3-8357-c88c98aeef05/item/b9b87d3b-2036-48ad-8b6d-62976d465424,8,0,0
+1645423115520,13,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4017,223,9,9,http://localhost:8080/payment/0cf2d17e-57c5-4a21-8c49-439b31466e13/initialize,13,0,0
+1645423115528,10,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4032,223,9,9,http://localhost:8080/payment/539195a8-191b-4064-afac-ecc45f6e5d6b/initialize,10,0,0
+1645423115518,26,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1003,331,9,9,http://localhost:8080/payment/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9,26,0,0
+1645423115499,47,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1356,999,9,9,http://localhost:8080/checkout/83b99b8e-e83e-4a73-9892-7dc712fe39e7/checkout-data,47,0,0
+1645423115517,34,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1344,999,9,9,http://localhost:8080/checkout/a688485d-b683-4fbb-8b06-c80e2003c95c/checkout-data,34,0,0
+1645423115538,13,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4042,220,9,9,http://localhost:8080/payment/539195a8-191b-4064-afac-ecc45f6e5d6b/execute,13,0,0
+1645423115316,235,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26761,3113,9,9,null,233,0,0
+1645423115515,37,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,9,9,http://localhost:8080/checkout/f5fd93d1-910f-491e-850f-1394e7fd0ea6/checkout-data,37,0,0
+1645423115526,27,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4703,189,9,9,http://localhost:8080/full/9b84f292-997e-4514-ae86-67c65f2ad1e8,26,0,0
+1645423115532,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3123,253,9,9,http://localhost:8080/basket/1fde0e13-cc3c-46a3-8357-c88c98aeef05/item/300cd78d-12b7-4a4e-932e-82abbdc87f71,24,0,0
+1645423115521,37,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1222,253,9,9,http://localhost:8080/basket/53c90c78-4a05-4364-96e0-4888df3b2767/item/cfb826d4-2e93-4776-b6f9-5452eb0ddf7d,37,0,0
+1645423115544,17,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4040,223,9,9,http://localhost:8080/payment/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/initialize,17,0,0
+1645423115551,12,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,9,9,http://localhost:8080/basket,12,0,0
+1645423115563,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,9,9,null,0,0,0
+1645423115534,30,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4047,220,9,9,http://localhost:8080/payment/0cf2d17e-57c5-4a21-8c49-439b31466e13/execute,30,0,0
+1645423115349,215,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26793,3113,9,9,null,211,0,0
+1645423115561,8,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4052,220,9,9,http://localhost:8080/payment/514bd4bd-4e16-4ab3-b1a2-2e1bb529c0c9/execute,8,0,0
+1645423115305,264,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26753,3113,9,9,null,259,0,0
+1645423115546,28,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4770,189,9,9,http://localhost:8080/full/83b99b8e-e83e-4a73-9892-7dc712fe39e7,27,0,0
+1645423115564,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1217,253,9,9,http://localhost:8080/basket/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/item/dba25275-3d80-4807-8040-4ee9063d6e8e,12,0,0
+1645423115570,8,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,9,9,http://localhost:8080/basket,8,0,0
+1645423115578,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,9,9,null,0,0,0
+1645423115551,28,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4696,189,9,9,http://localhost:8080/full/a688485d-b683-4fbb-8b06-c80e2003c95c,28,0,0
+1645423115553,28,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1010,331,9,9,http://localhost:8080/payment/9b84f292-997e-4514-ae86-67c65f2ad1e8,28,0,0
+1645423115553,33,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4769,189,9,9,http://localhost:8080/full/f5fd93d1-910f-491e-850f-1394e7fd0ea6,32,0,0
+1645423115576,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2166,253,9,9,http://localhost:8080/basket/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/item/626ba6ac-82d6-45dc-8217-04bd9db6c2a9,14,0,0
+1645423115559,33,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2150,253,9,9,http://localhost:8080/basket/53c90c78-4a05-4364-96e0-4888df3b2767/item/f48c896d-ab0d-4d93-b833-0daa495d1175,33,0,0
+1645423115564,31,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,9,9,http://localhost:8080/basket,31,0,0
+1645423115595,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,9,9,null,0,0,0
+1645423115574,24,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4810,189,9,9,http://localhost:8080/full/83b99b8e-e83e-4a73-9892-7dc712fe39e7,24,0,0
+1645423115578,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1201,253,9,9,http://localhost:8080/basket/eb75a394-009c-4c4e-9d25-6be0145f427d/item/47efceb3-c675-44c7-80c2-e60c6146eed3,22,0,0
+1645423115586,15,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4770,189,9,9,http://localhost:8080/full/f5fd93d1-910f-491e-850f-1394e7fd0ea6,15,0,0
+1645423115556,48,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1344,999,9,9,http://localhost:8080/checkout/1fde0e13-cc3c-46a3-8357-c88c98aeef05/checkout-data,48,0,0
+1645423115591,20,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3106,253,10,10,http://localhost:8080/basket/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/item/baff72ab-ec35-4344-a953-eb1dbd431920,20,0,0
+1645423115579,37,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4742,189,10,10,http://localhost:8080/full/a688485d-b683-4fbb-8b06-c80e2003c95c,37,0,0
+1645423115581,35,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3993,223,10,10,http://localhost:8080/payment/9b84f292-997e-4514-ae86-67c65f2ad1e8/initialize,35,0,0
+1645423115592,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3096,253,10,10,http://localhost:8080/basket/53c90c78-4a05-4364-96e0-4888df3b2767/item/23acfcc2-9490-4d1d-9691-2e1e885796dc,28,0,0
+1645423115601,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2138,253,10,10,http://localhost:8080/basket/eb75a394-009c-4c4e-9d25-6be0145f427d/item/7aa756a2-9e8f-4004-917c-6999dd15796c,24,0,0
+1645423115599,32,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1010,331,10,10,http://localhost:8080/payment/83b99b8e-e83e-4a73-9892-7dc712fe39e7,32,0,0
+1645423115596,35,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1207,253,10,10,http://localhost:8080/basket/37b470af-6355-4be1-8ca7-5266037e094c/item/5cb8c833-b55f-4410-8482-ec5f9d7f6e82,35,0,0
+1645423115617,30,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4050,220,10,10,http://localhost:8080/payment/9b84f292-997e-4514-ae86-67c65f2ad1e8/execute,30,0,0
+1645423115395,253,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26620,3113,10,10,null,246,0,0
+1645423115601,48,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1003,331,10,10,http://localhost:8080/payment/f5fd93d1-910f-491e-850f-1394e7fd0ea6,48,0,0
+1645423115604,55,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4700,189,10,10,http://localhost:8080/full/1fde0e13-cc3c-46a3-8357-c88c98aeef05,55,0,0
+1645423115606,54,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,10,10,http://localhost:8080/basket,54,0,1
+1645423115661,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,10,10,null,0,0,0
+1645423115631,30,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4028,223,10,10,http://localhost:8080/payment/83b99b8e-e83e-4a73-9892-7dc712fe39e7/initialize,30,0,0
+1645423115611,51,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1351,999,10,10,http://localhost:8080/checkout/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/checkout-data,51,0,0
+1645423115648,17,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,17,0,0
+1645423115665,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423115631,39,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2154,253,10,10,http://localhost:8080/basket/37b470af-6355-4be1-8ca7-5266037e094c/item/46e9d1d1-5315-4a98-afa3-125ad3af0af3,39,0,0
+1645423115625,46,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3100,253,10,10,http://localhost:8080/basket/eb75a394-009c-4c4e-9d25-6be0145f427d/item/332d190e-de59-4474-89bc-fb86d1a68cf3,46,0,0
+1645423115616,56,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1010,331,10,10,http://localhost:8080/payment/a688485d-b683-4fbb-8b06-c80e2003c95c,56,0,0
+1645423115662,14,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4051,220,10,10,http://localhost:8080/payment/83b99b8e-e83e-4a73-9892-7dc712fe39e7/execute,14,0,0
+1645423115408,268,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26835,3113,10,10,null,262,0,0
+1645423115659,21,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4746,189,10,10,http://localhost:8080/full/1fde0e13-cc3c-46a3-8357-c88c98aeef05,21,0,0
+1645423115665,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1209,253,10,10,http://localhost:8080/basket/91f5e1f8-3df2-4330-9fe3-21bb49657fed/item/cd462c56-64d3-4d6a-b0dd-fb12cc04fcf6,17,0,0
+1645423115676,8,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,8,0,0
+1645423115684,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423115663,24,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4796,189,10,10,http://localhost:8080/full/43b10ba4-41d0-4c30-aac8-cecaf6e73d84,23,0,0
+1645423115661,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1211,253,10,10,http://localhost:8080/basket/548f5831-dbaf-4005-a024-67e3f760097f/item/040abd42-56f1-44d3-b413-ef76ae96c6cb,26,0,0
+1645423115683,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2163,253,10,10,http://localhost:8080/basket/91f5e1f8-3df2-4330-9fe3-21bb49657fed/item/44c7016e-3129-4171-8f3c-7eb37c2b808f,6,0,0
+1645423115620,69,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1350,999,10,10,http://localhost:8080/checkout/53c90c78-4a05-4364-96e0-4888df3b2767/checkout-data,69,0,0
+1645423115672,24,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4022,223,10,10,http://localhost:8080/payment/a688485d-b683-4fbb-8b06-c80e2003c95c/initialize,24,0,0
+1645423115684,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1202,253,10,10,http://localhost:8080/basket/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/item/6179581d-9c26-460b-81c1-bb6719d6e554,13,0,0
+1645423115690,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3085,253,10,10,http://localhost:8080/basket/91f5e1f8-3df2-4330-9fe3-21bb49657fed/item/3b6f616f-c6ef-4d4b-9c37-096ca38110e8,13,0,0
+1645423115688,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2146,253,10,10,http://localhost:8080/basket/548f5831-dbaf-4005-a024-67e3f760097f/item/f40410a1-41e3-43a3-9332-af3e9c284089,17,0,0
+1645423115680,31,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1003,331,10,10,http://localhost:8080/payment/1fde0e13-cc3c-46a3-8357-c88c98aeef05,30,0,0
+1645423115698,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2143,253,10,10,http://localhost:8080/basket/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/item/793b0b76-b56a-4e12-8041-9ccee7af8d6d,13,0,0
+1645423115672,42,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,10,10,http://localhost:8080/checkout/eb75a394-009c-4c4e-9d25-6be0145f427d/checkout-data,42,0,0
+1645423115649,65,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,3993,223,10,10,http://localhost:8080/payment/f5fd93d1-910f-491e-850f-1394e7fd0ea6/initialize,65,0,0
+1645423115697,22,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4084,220,10,10,http://localhost:8080/payment/a688485d-b683-4fbb-8b06-c80e2003c95c/execute,22,0,0
+1645423115447,272,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26727,3113,10,10,null,268,0,0
+1645423115670,54,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3096,253,10,10,http://localhost:8080/basket/37b470af-6355-4be1-8ca7-5266037e094c/item/8294b774-eb96-4896-b26c-b853c89ec5ca,54,0,0
+1645423115705,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3118,253,10,10,http://localhost:8080/basket/548f5831-dbaf-4005-a024-67e3f760097f/item/41e7e481-dc37-4a3c-9092-e721d417d82c,31,0,0
+1645423115687,49,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4770,189,10,10,http://localhost:8080/full/43b10ba4-41d0-4c30-aac8-cecaf6e73d84,49,0,0
+1645423115703,46,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,10,10,http://localhost:8080/checkout/91f5e1f8-3df2-4330-9fe3-21bb49657fed/checkout-data,46,0,0
+1645423115711,42,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,3992,223,10,10,http://localhost:8080/payment/1fde0e13-cc3c-46a3-8357-c88c98aeef05/initialize,42,0,0
+1645423115690,63,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4765,189,10,10,http://localhost:8080/full/53c90c78-4a05-4364-96e0-4888df3b2767,63,0,0
+1645423115720,34,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,10,10,http://localhost:8080/basket,34,0,0
+1645423115754,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,10,10,null,0,0,0
+1645423115711,47,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3121,253,10,10,http://localhost:8080/basket/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/item/359d956a-6e3e-47be-90a0-d035c4a3918b,47,0,0
+1645423115715,46,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4050,220,10,10,http://localhost:8080/payment/f5fd93d1-910f-491e-850f-1394e7fd0ea6/execute,46,0,0
+1645423115753,8,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4049,220,10,10,http://localhost:8080/payment/1fde0e13-cc3c-46a3-8357-c88c98aeef05/execute,8,0,0
+1645423115497,264,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26666,3113,10,10,null,261,0,0
+1645423115397,364,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26756,3113,10,10,null,358,0,0
+1645423115715,51,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4782,189,10,10,http://localhost:8080/full/eb75a394-009c-4c4e-9d25-6be0145f427d,51,0,0
+1645423115737,40,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1010,331,10,10,http://localhost:8080/payment/43b10ba4-41d0-4c30-aac8-cecaf6e73d84,40,0,0
+1645423115749,33,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4785,189,10,10,http://localhost:8080/full/91f5e1f8-3df2-4330-9fe3-21bb49657fed,32,0,0
+1645423115767,20,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4764,189,10,10,http://localhost:8080/full/eb75a394-009c-4c4e-9d25-6be0145f427d,20,0,0
+1645423115725,68,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1354,999,10,10,http://localhost:8080/checkout/37b470af-6355-4be1-8ca7-5266037e094c/checkout-data,68,0,0
+1645423115736,57,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1344,999,10,10,http://localhost:8080/checkout/548f5831-dbaf-4005-a024-67e3f760097f/checkout-data,57,0,0
+1645423115753,47,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4766,189,10,10,http://localhost:8080/full/53c90c78-4a05-4364-96e0-4888df3b2767,47,0,0
+1645423115755,48,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1211,253,10,10,http://localhost:8080/basket/778655d1-493e-4546-8361-f4e90e5149a0/item/cd8cd9c9-2a29-410d-9817-b94726734847,48,0,0
+1645423115777,26,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,3993,223,10,10,http://localhost:8080/payment/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/initialize,26,0,0
+1645423115761,42,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,10,10,http://localhost:8080/basket,42,0,0
+1645423115804,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,10,10,null,0,0,0
+1645423115762,52,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,10,10,http://localhost:8080/basket,52,0,0
+1645423115814,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,10,10,null,0,0,0
+1645423115788,35,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1003,331,10,10,http://localhost:8080/payment/eb75a394-009c-4c4e-9d25-6be0145f427d,35,0,0
+1645423115803,25,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4050,220,10,10,http://localhost:8080/payment/43b10ba4-41d0-4c30-aac8-cecaf6e73d84/execute,25,0,0
+1645423115551,277,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26801,3113,10,10,null,272,0,0
+1645423115793,38,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4668,189,10,10,http://localhost:8080/full/548f5831-dbaf-4005-a024-67e3f760097f,38,0,0
+1645423115793,43,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4734,189,10,10,http://localhost:8080/full/37b470af-6355-4be1-8ca7-5266037e094c,43,0,0
+1645423115803,34,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2165,253,10,10,http://localhost:8080/basket/778655d1-493e-4546-8361-f4e90e5149a0/item/2a58fd0c-7a0d-4080-8b83-fdd1dbe7a92c,34,0,0
+1645423115758,82,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1344,999,10,10,http://localhost:8080/checkout/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/checkout-data,82,0,0
+1645423115823,18,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4034,223,10,10,http://localhost:8080/payment/eb75a394-009c-4c4e-9d25-6be0145f427d/initialize,18,0,0
+1645423115828,15,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,10,10,http://localhost:8080/basket,15,0,0
+1645423115843,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,10,10,null,0,0,0
+1645423115814,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1211,253,10,10,http://localhost:8080/basket/f75de144-35a5-4cca-ab39-ac1d13748be8/item/aae410f2-ac9b-40d8-bff0-f1965168c6d3,31,0,0
+1645423115804,42,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1202,253,10,10,http://localhost:8080/basket/e5886a52-1aa3-4da0-97e5-404cb69fd795/item/a9a15eca-b816-4f14-8d52-94db7b6f7b87,42,0,0
+1645423115841,9,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4085,220,10,10,http://localhost:8080/payment/eb75a394-009c-4c4e-9d25-6be0145f427d/execute,9,0,0
+1645423115569,281,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26793,3113,10,10,null,275,0,0
+1645423115782,69,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4772,189,10,10,http://localhost:8080/full/91f5e1f8-3df2-4330-9fe3-21bb49657fed,69,0,0
+1645423115837,16,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4714,189,10,10,http://localhost:8080/full/37b470af-6355-4be1-8ca7-5266037e094c,15,0,0
+1645423115832,23,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4635,189,10,10,http://localhost:8080/full/548f5831-dbaf-4005-a024-67e3f760097f,23,0,0
+1645423115801,59,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,10,10,http://localhost:8080/payment/53c90c78-4a05-4364-96e0-4888df3b2767,59,0,0
+1645423115837,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3086,253,10,10,http://localhost:8080/basket/778655d1-493e-4546-8361-f4e90e5149a0/item/c8011fa7-769d-4810-b7cc-e78d3c2fb75c,24,0,0
+1645423115843,20,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1204,253,10,10,http://localhost:8080/basket/d1cb1eef-67e1-43fa-b984-968244244ed8/item/13b2d3e2-74fa-477a-ad29-239ee2455064,20,0,0
+1645423115850,14,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,10,10,http://localhost:8080/basket,14,0,0
+1645423115864,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,10,10,null,0,0,0
+1645423115845,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2145,253,10,10,http://localhost:8080/basket/f75de144-35a5-4cca-ab39-ac1d13748be8/item/cb114da1-c515-4e65-83b4-2c9250c851d3,25,0,0
+1645423115847,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2142,253,10,10,http://localhost:8080/basket/e5886a52-1aa3-4da0-97e5-404cb69fd795/item/9df47b39-1342-49ea-a6d4-0d9ba349965a,24,0,0
+1645423115840,33,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4698,189,10,10,http://localhost:8080/full/821fb4b0-67a9-415b-9d1b-44b2d28e13c9,33,0,0
+1645423115863,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2144,253,10,10,http://localhost:8080/basket/d1cb1eef-67e1-43fa-b984-968244244ed8/item/89a2732e-2231-4d93-859b-29e1442c75fb,13,0,0
+1645423115851,28,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,10,10,http://localhost:8080/payment/91f5e1f8-3df2-4330-9fe3-21bb49657fed,28,0,0
+1645423115861,19,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,3990,223,10,10,http://localhost:8080/payment/53c90c78-4a05-4364-96e0-4888df3b2767/initialize,19,0,0
+1645423115855,25,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1010,331,10,10,http://localhost:8080/payment/548f5831-dbaf-4005-a024-67e3f760097f,25,0,0
+1645423115865,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1208,253,10,10,http://localhost:8080/basket/29906d6a-c22a-4066-be58-ebd836908eb2/item/c1d79c8a-4d59-40d9-bc2a-4e9b560b744b,17,0,0
+1645423115853,31,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1008,331,10,10,http://localhost:8080/payment/37b470af-6355-4be1-8ca7-5266037e094c,31,0,0
+1645423115872,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3085,253,10,10,http://localhost:8080/basket/e5886a52-1aa3-4da0-97e5-404cb69fd795/item/6cb21dc5-8297-48a0-a01d-1b9b662ba8fb,15,0,0
+1645423115876,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3084,253,10,10,http://localhost:8080/basket/d1cb1eef-67e1-43fa-b984-968244244ed8/item/18d0594e-3da9-4bb0-bd11-33c12b8f61b8,12,0,0
+1645423115874,14,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4699,189,10,10,http://localhost:8080/full/821fb4b0-67a9-415b-9d1b-44b2d28e13c9,14,0,0
+1645423115871,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3118,253,10,10,http://localhost:8080/basket/f75de144-35a5-4cca-ab39-ac1d13748be8/item/e8151e0c-1ad4-4eef-94b0-2d83234572fd,18,0,0
+1645423115880,13,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4074,220,10,10,http://localhost:8080/payment/53c90c78-4a05-4364-96e0-4888df3b2767/execute,13,0,0
+1645423115505,388,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26758,3113,10,10,null,382,0,0
+1645423115883,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2137,253,10,10,http://localhost:8080/basket/29906d6a-c22a-4066-be58-ebd836908eb2/item/417fb5b6-6b64-4075-b956-549a36013b98,11,0,0
+1645423115880,16,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3990,223,10,10,http://localhost:8080/payment/91f5e1f8-3df2-4330-9fe3-21bb49657fed/initialize,16,0,0
+1645423115881,16,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,3993,223,10,10,http://localhost:8080/payment/548f5831-dbaf-4005-a024-67e3f760097f/initialize,16,0,0
+1645423115897,5,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4094,220,10,10,http://localhost:8080/payment/91f5e1f8-3df2-4330-9fe3-21bb49657fed/execute,5,0,0
+1645423115648,255,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26787,3113,10,10,null,249,0,0
+1645423115885,26,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4015,223,10,10,http://localhost:8080/payment/37b470af-6355-4be1-8ca7-5266037e094c/initialize,26,0,0
+1645423115894,18,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,10,10,http://localhost:8080/basket,18,0,0
+1645423115913,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,10,10,null,0,0,0
+1645423115889,25,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1010,331,10,10,http://localhost:8080/payment/821fb4b0-67a9-415b-9d1b-44b2d28e13c9,25,0,0
+1645423115904,11,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,11,0,0
+1645423115916,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423115888,30,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1344,999,10,10,http://localhost:8080/checkout/d1cb1eef-67e1-43fa-b984-968244244ed8/checkout-data,30,0,0
+1645423115862,57,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1356,999,10,10,http://localhost:8080/checkout/778655d1-493e-4546-8361-f4e90e5149a0/checkout-data,57,0,0
+1645423115894,29,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3077,253,10,10,http://localhost:8080/basket/29906d6a-c22a-4066-be58-ebd836908eb2/item/52d67db2-7b2a-43ab-b468-a79ca11ffbc5,29,0,0
+1645423115914,10,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,3991,223,10,10,http://localhost:8080/payment/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/initialize,10,0,0
+1645423115898,27,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4096,220,10,10,http://localhost:8080/payment/548f5831-dbaf-4005-a024-67e3f760097f/execute,27,0,0
+1645423115606,319,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26563,3113,10,10,null,314,0,1
+1645423115916,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1204,253,10,10,http://localhost:8080/basket/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/item/2b65ec67-21f8-4abc-b724-700a88cfb3e3,13,0,0
+1645423115920,22,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4794,189,10,10,http://localhost:8080/full/778655d1-493e-4546-8361-f4e90e5149a0,22,0,0
+1645423115890,55,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,10,10,http://localhost:8080/checkout/f75de144-35a5-4cca-ab39-ac1d13748be8/checkout-data,55,0,0
+1645423115919,27,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4750,189,10,10,http://localhost:8080/full/d1cb1eef-67e1-43fa-b984-968244244ed8,27,0,0
+1645423115924,24,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4095,220,10,10,http://localhost:8080/payment/821fb4b0-67a9-415b-9d1b-44b2d28e13c9/execute,24,0,0
+1645423115676,272,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26645,3113,10,10,null,269,0,0
+1645423115911,42,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4091,220,10,10,http://localhost:8080/payment/37b470af-6355-4be1-8ca7-5266037e094c/execute,42,0,0
+1645423115564,389,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26715,3113,10,10,null,384,0,0
+1645423115929,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2154,253,10,10,http://localhost:8080/basket/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/item/22f4f582-d4fe-49b4-8dee-e07c7d4fb25d,26,0,0
+1645423115949,7,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,7,0,0
+1645423115957,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423115913,48,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1202,253,10,10,http://localhost:8080/basket/053cb070-8059-4785-867b-163b0192c67a/item/9c2d3f0a-bccb-4a93-a035-dbc3d88c11c1,48,0,0
+1645423115955,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3100,253,10,10,http://localhost:8080/basket/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/item/dce3ebff-5456-414e-ad29-bccc3d26bfc1,6,0,0
+1645423115888,78,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1351,999,10,10,http://localhost:8080/checkout/e5886a52-1aa3-4da0-97e5-404cb69fd795/checkout-data,78,0,0
+1645423115923,45,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1342,999,10,10,http://localhost:8080/checkout/29906d6a-c22a-4066-be58-ebd836908eb2/checkout-data,45,0,0
+1645423115957,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1216,253,10,10,http://localhost:8080/basket/af3fcd81-601a-41b0-b740-732120ffea77/item/f417366f-06c0-4b55-9108-e82c648bc013,11,0,0
+1645423115925,46,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,10,10,http://localhost:8080/basket,46,0,0
+1645423115972,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,10,10,null,0,0,0
+1645423115943,35,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4795,189,10,10,http://localhost:8080/full/778655d1-493e-4546-8361-f4e90e5149a0,35,0,0
+1645423115947,32,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4746,189,10,10,http://localhost:8080/full/d1cb1eef-67e1-43fa-b984-968244244ed8,32,0,0
+1645423115945,38,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4734,189,10,10,http://localhost:8080/full/f75de144-35a5-4cca-ab39-ac1d13748be8,38,0,0
+1645423115962,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2144,253,10,10,http://localhost:8080/basket/053cb070-8059-4785-867b-163b0192c67a/item/15ee1259-3fdf-444a-8f30-0591adbbc0d4,28,0,0
+1645423115962,30,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,10,10,http://localhost:8080/checkout/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/checkout-data,30,0,0
+1645423115984,12,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4702,189,10,10,http://localhost:8080/full/f75de144-35a5-4cca-ab39-ac1d13748be8,12,0,0
+1645423115954,43,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,10,10,http://localhost:8080/basket,43,0,0
+1645423115997,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,10,10,null,0,0,0
+1645423115969,29,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2140,253,10,10,http://localhost:8080/basket/af3fcd81-601a-41b0-b740-732120ffea77/item/f3eb8773-50de-4b29-a476-86a696f35654,29,0,0
+1645423115966,36,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4722,189,10,10,http://localhost:8080/full/e5886a52-1aa3-4da0-97e5-404cb69fd795,36,0,0
+1645423115968,37,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4687,189,10,10,http://localhost:8080/full/29906d6a-c22a-4066-be58-ebd836908eb2,36,0,0
+1645423115990,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3112,253,10,10,http://localhost:8080/basket/053cb070-8059-4785-867b-163b0192c67a/item/3d8ecc09-5792-4a9d-b384-2efcf8b2749d,17,0,0
+1645423115993,17,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4733,189,10,10,http://localhost:8080/full/86f89ce3-c920-4f51-9c9f-59ec5e9a0731,17,0,0
+1645423115979,32,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1010,331,10,10,http://localhost:8080/payment/d1cb1eef-67e1-43fa-b984-968244244ed8,32,0,0
+1645423115972,41,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1209,253,10,10,http://localhost:8080/basket/f4dc2873-1d08-491c-8b89-3b0674b4a98e/item/8f26bf7c-c210-43f5-86db-7f8ae52c9868,41,0,0
+1645423115998,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1216,253,10,10,http://localhost:8080/basket/18c699b0-4d0d-498a-81ff-e4015e4020d9/item/a11d0025-99f7-4be8-9b94-970eadc9f0e0,16,0,0
+1645423115999,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3079,253,10,10,http://localhost:8080/basket/af3fcd81-601a-41b0-b740-732120ffea77/item/b75ea9c3-4eaa-445f-8098-b97bf4013bfc,18,0,0
+1645423116005,14,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4727,189,10,10,http://localhost:8080/full/29906d6a-c22a-4066-be58-ebd836908eb2,14,0,0
+1645423116002,18,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4748,189,10,10,http://localhost:8080/full/e5886a52-1aa3-4da0-97e5-404cb69fd795,18,0,0
+1645423115997,24,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1010,331,10,10,http://localhost:8080/payment/f75de144-35a5-4cca-ab39-ac1d13748be8,24,0,0
+1645423116010,13,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4749,189,10,10,http://localhost:8080/full/86f89ce3-c920-4f51-9c9f-59ec5e9a0731,13,0,0
+1645423115978,47,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1010,331,10,10,http://localhost:8080/payment/778655d1-493e-4546-8361-f4e90e5149a0,47,0,0
+1645423116014,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2169,253,10,10,http://localhost:8080/basket/18c699b0-4d0d-498a-81ff-e4015e4020d9/item/7de562ea-1f7d-4c3e-8c77-9f8b8bbac580,13,0,0
+1645423116011,19,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4048,223,10,10,http://localhost:8080/payment/d1cb1eef-67e1-43fa-b984-968244244ed8/initialize,19,0,0
+1645423116013,20,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2144,253,10,10,http://localhost:8080/basket/f4dc2873-1d08-491c-8b89-3b0674b4a98e/item/706c5916-eeca-451d-9d84-f26b0e60b27a,20,0,0
+1645423116020,15,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1007,331,10,10,http://localhost:8080/payment/29906d6a-c22a-4066-be58-ebd836908eb2,15,0,0
+1645423116020,18,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1010,331,10,10,http://localhost:8080/payment/e5886a52-1aa3-4da0-97e5-404cb69fd795,18,0,0
+1645423116031,12,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4048,220,10,10,http://localhost:8080/payment/d1cb1eef-67e1-43fa-b984-968244244ed8/execute,12,0,0
+1645423115828,215,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26720,3113,10,10,null,212,0,0
+1645423116018,27,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1344,999,10,10,http://localhost:8080/checkout/af3fcd81-601a-41b0-b740-732120ffea77/checkout-data,27,0,0
+1645423116026,29,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4014,223,10,10,http://localhost:8080/payment/778655d1-493e-4546-8361-f4e90e5149a0/initialize,29,0,0
+1645423116036,19,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,3982,223,10,10,http://localhost:8080/payment/29906d6a-c22a-4066-be58-ebd836908eb2/initialize,19,0,0
+1645423116007,49,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1351,999,10,10,http://localhost:8080/checkout/053cb070-8059-4785-867b-163b0192c67a/checkout-data,49,0,0
+1645423116043,13,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,10,10,http://localhost:8080/basket,13,0,0
+1645423116056,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,10,10,null,0,0,0
+1645423116023,34,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,10,10,http://localhost:8080/payment/86f89ce3-c920-4f51-9c9f-59ec5e9a0731,34,0,0
+1645423116056,5,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4039,220,10,10,http://localhost:8080/payment/29906d6a-c22a-4066-be58-ebd836908eb2/execute,5,0,0
+1645423115850,211,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26548,3113,10,10,null,205,0,0
+1645423116033,32,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3101,253,10,10,http://localhost:8080/basket/f4dc2873-1d08-491c-8b89-3b0674b4a98e/item/e4661d31-ad8b-44e3-bc0b-f7887a0d2e1d,32,0,0
+1645423116057,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1216,253,10,10,http://localhost:8080/basket/f032d4ee-71fd-4c8c-b055-32e166561a85/item/4e38661c-ac03-4431-91e3-2f4d3933c389,11,0,0
+1645423116057,12,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,4050,223,10,10,http://localhost:8080/payment/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/initialize,12,0,0
+1645423116062,8,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,10,10,http://localhost:8080/basket,8,0,0
+1645423116070,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,10,10,null,0,0,0
+1645423116022,48,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4039,223,10,10,http://localhost:8080/payment/f75de144-35a5-4cca-ab39-ac1d13748be8/initialize,48,0,0
+1645423116068,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2140,253,10,10,http://localhost:8080/basket/f032d4ee-71fd-4c8c-b055-32e166561a85/item/488fb377-8784-4b5a-84c3-a765ea38a204,6,0,0
+1645423116027,49,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3116,253,10,10,http://localhost:8080/basket/18c699b0-4d0d-498a-81ff-e4015e4020d9/item/cbb86e3e-4e2a-4755-8aec-9d351ee50334,49,0,0
+1645423116038,42,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4038,223,10,10,http://localhost:8080/payment/e5886a52-1aa3-4da0-97e5-404cb69fd795/initialize,42,0,0
+1645423116071,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1211,253,10,10,http://localhost:8080/basket/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/item/360840bd-7406-43ab-aea2-3ae9d8973c92,10,0,0
+1645423116055,29,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4070,220,10,10,http://localhost:8080/payment/778655d1-493e-4546-8361-f4e90e5149a0/execute,29,0,0
+1645423115720,365,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26843,3113,10,10,null,359,0,0
+1645423116075,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3107,253,10,10,http://localhost:8080/basket/f032d4ee-71fd-4c8c-b055-32e166561a85/item/ddab3177-f455-485a-a7a1-6eb06781a7e0,14,0,0
+1645423116080,16,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4071,220,10,10,http://localhost:8080/payment/e5886a52-1aa3-4da0-97e5-404cb69fd795/execute,16,0,0
+1645423115761,336,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26711,3113,10,10,null,331,0,0
+1645423116056,44,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4807,189,10,10,http://localhost:8080/full/053cb070-8059-4785-867b-163b0192c67a,44,0,0
+1645423116055,45,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4808,189,10,10,http://localhost:8080/full/af3fcd81-601a-41b0-b740-732120ffea77,45,0,0
+1645423116081,20,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2144,253,10,10,http://localhost:8080/basket/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/item/085c3894-d8f6-493d-b320-6b9f60daf356,20,0,0
+1645423116071,35,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4050,220,10,10,http://localhost:8080/payment/f75de144-35a5-4cca-ab39-ac1d13748be8/execute,35,0,0
+1645423115761,345,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26695,3113,10,10,null,338,0,0
+1645423116069,40,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4044,220,10,10,http://localhost:8080/payment/86f89ce3-c920-4f51-9c9f-59ec5e9a0731/execute,39,0,0
+1645423115903,206,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26723,3113,10,10,null,201,0,0
+1645423116101,16,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4797,189,10,10,http://localhost:8080/full/af3fcd81-601a-41b0-b740-732120ffea77,16,0,0
+1645423116109,9,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,9,0,0
+1645423116119,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423116065,62,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1342,999,10,10,http://localhost:8080/checkout/f4dc2873-1d08-491c-8b89-3b0674b4a98e/checkout-data,62,0,0
+1645423116085,43,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,10,10,http://localhost:8080/basket,43,0,0
+1645423116128,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,10,10,null,0,0,0
+1645423116117,13,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1003,331,10,10,http://localhost:8080/payment/af3fcd81-601a-41b0-b740-732120ffea77,13,0,0
+1645423116097,35,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,10,10,http://localhost:8080/basket,35,0,0
+1645423116133,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,10,10,null,0,0,0
+1645423116076,60,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1344,999,10,10,http://localhost:8080/checkout/18c699b0-4d0d-498a-81ff-e4015e4020d9/checkout-data,60,0,0
+1645423116090,47,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1342,999,10,10,http://localhost:8080/checkout/f032d4ee-71fd-4c8c-b055-32e166561a85/checkout-data,47,0,0
+1645423116119,23,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1204,253,10,10,http://localhost:8080/basket/547c516f-b766-4bd4-bb02-aaadcfe910c1/item/cc7f6a16-6c8b-4d37-8e3c-aee57c12bb5c,23,0,0
+1645423116101,45,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3098,253,10,10,http://localhost:8080/basket/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/item/681af5fa-6d07-439b-886c-0fa98f015cb9,44,0,0
+1645423116100,53,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4763,189,10,10,http://localhost:8080/full/053cb070-8059-4785-867b-163b0192c67a,52,0,0
+1645423116127,31,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4647,189,10,10,http://localhost:8080/full/f4dc2873-1d08-491c-8b89-3b0674b4a98e,31,0,0
+1645423116129,34,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1202,253,10,10,http://localhost:8080/basket/2cb3fed1-e83a-4a00-9a68-148e8451fe48/item/25a6328d-adfd-43cf-a406-d202c72b36f9,34,0,0
+1645423116130,35,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4032,223,10,10,http://localhost:8080/payment/af3fcd81-601a-41b0-b740-732120ffea77/initialize,35,0,0
+1645423116133,38,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1202,253,10,10,http://localhost:8080/basket/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/item/9637bdfc-cb84-4690-acfb-e2540454d7c9,38,0,0
+1645423116137,37,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4733,189,10,10,http://localhost:8080/full/18c699b0-4d0d-498a-81ff-e4015e4020d9,36,0,0
+1645423116142,32,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2177,253,10,10,http://localhost:8080/basket/547c516f-b766-4bd4-bb02-aaadcfe910c1/item/6f3f6956-9ae4-4b77-921c-8d0a6e1de801,32,0,0
+1645423116107,68,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,10,10,http://localhost:8080/basket,68,0,0
+1645423116175,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,10,10,null,0,0,0
+1645423116158,20,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4655,189,10,10,http://localhost:8080/full/f4dc2873-1d08-491c-8b89-3b0674b4a98e,20,0,0
+1645423116137,43,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4747,189,10,10,http://localhost:8080/full/f032d4ee-71fd-4c8c-b055-32e166561a85,43,0,0
+1645423116165,16,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4044,220,10,10,http://localhost:8080/payment/af3fcd81-601a-41b0-b740-732120ffea77/execute,16,0,0
+1645423115948,233,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26805,3113,10,10,null,217,0,0
+1645423116174,8,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4701,189,10,10,http://localhost:8080/full/18c699b0-4d0d-498a-81ff-e4015e4020d9,8,0,0
+1645423116164,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2143,253,10,10,http://localhost:8080/basket/2cb3fed1-e83a-4a00-9a68-148e8451fe48/item/65a5ccb0-1c2c-42d4-9261-d65f0fa3f355,25,0,0
+1645423116174,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3117,253,10,10,http://localhost:8080/basket/547c516f-b766-4bd4-bb02-aaadcfe910c1/item/04962853-b9b1-4738-a7fe-c367a86318de,17,0,0
+1645423116181,12,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,12,0,0
+1645423116194,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423116153,42,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,10,10,http://localhost:8080/payment/053cb070-8059-4785-867b-163b0192c67a,42,0,0
+1645423116171,25,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2138,253,10,10,http://localhost:8080/basket/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/item/9bb797b6-62df-4fbf-b76a-c9eb0655989b,25,0,0
+1645423116176,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1211,253,10,10,http://localhost:8080/basket/4818aa02-8ea4-4cfd-823e-eacd342878dc/item/23081da0-b316-4ac4-aa21-07a10022512b,28,0,0
+1645423116146,59,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,10,10,http://localhost:8080/checkout/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/checkout-data,59,0,0
+1645423116189,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3083,253,10,10,http://localhost:8080/basket/2cb3fed1-e83a-4a00-9a68-148e8451fe48/item/9b486183-f2b0-4814-994a-723fb83a9e0f,17,0,0
+1645423116181,33,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4806,189,10,10,http://localhost:8080/full/f032d4ee-71fd-4c8c-b055-32e166561a85,32,0,0
+1645423116178,37,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1010,331,10,10,http://localhost:8080/payment/f4dc2873-1d08-491c-8b89-3b0674b4a98e,37,0,0
+1645423116195,23,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,3988,223,10,10,http://localhost:8080/payment/053cb070-8059-4785-867b-163b0192c67a/initialize,23,0,0
+1645423116191,29,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1351,999,10,10,http://localhost:8080/checkout/547c516f-b766-4bd4-bb02-aaadcfe910c1/checkout-data,29,0,0
+1645423116196,29,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3094,253,10,10,http://localhost:8080/basket/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/item/33a8352f-291b-4602-9867-cc2f09c4a91b,29,0,0
+1645423116183,42,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1003,331,10,10,http://localhost:8080/payment/18c699b0-4d0d-498a-81ff-e4015e4020d9,42,0,0
+1645423116194,35,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1221,253,10,10,http://localhost:8080/basket/5de91060-984f-47af-9f0a-c4c1c1778495/item/9e423415-7a25-4dc2-97a7-dad765539adc,35,0,0
+1645423116204,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2147,253,10,10,http://localhost:8080/basket/4818aa02-8ea4-4cfd-823e-eacd342878dc/item/96dad744-89a0-4fe4-a6c7-58a4cde1de3f,27,0,0
+1645423116205,29,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4767,189,10,10,http://localhost:8080/full/6b82a34e-5805-4e2f-baf5-e41ad1856ed4,28,0,0
+1645423116219,19,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4045,220,10,10,http://localhost:8080/payment/053cb070-8059-4785-867b-163b0192c67a/execute,19,0,0
+1645423115893,345,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26757,3113,10,10,null,340,0,0
+1645423116215,26,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4027,223,10,10,http://localhost:8080/payment/f4dc2873-1d08-491c-8b89-3b0674b4a98e/initialize,26,0,0
+1645423116214,30,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1001,331,10,10,http://localhost:8080/payment/f032d4ee-71fd-4c8c-b055-32e166561a85,30,0,0
+1645423116226,24,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,3992,223,10,10,http://localhost:8080/payment/18c699b0-4d0d-498a-81ff-e4015e4020d9/initialize,24,0,0
+1645423116220,31,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4701,189,10,10,http://localhost:8080/full/547c516f-b766-4bd4-bb02-aaadcfe910c1,29,0,0
+1645423116234,17,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4768,189,10,10,http://localhost:8080/full/6b82a34e-5805-4e2f-baf5-e41ad1856ed4,17,0,0
+1645423116251,33,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1003,331,10,10,http://localhost:8080/payment/6b82a34e-5805-4e2f-baf5-e41ad1856ed4,33,0,0
+1645423116251,33,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4096,220,10,10,http://localhost:8080/payment/18c699b0-4d0d-498a-81ff-e4015e4020d9/execute,33,0,0
+1645423115953,331,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26712,3113,10,10,null,324,0,0
+1645423116244,41,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4026,223,10,10,http://localhost:8080/payment/f032d4ee-71fd-4c8c-b055-32e166561a85/initialize,41,0,0
+1645423116239,46,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,10,10,http://localhost:8080/basket,46,0,0
+1645423116285,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,10,10,null,0,0,0
+1645423116232,54,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3083,253,10,10,http://localhost:8080/basket/4818aa02-8ea4-4cfd-823e-eacd342878dc/item/527843eb-ca79-4182-92e9-5ccf1b17d65f,54,0,0
+1645423116229,57,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2157,253,10,10,http://localhost:8080/basket/5de91060-984f-47af-9f0a-c4c1c1778495/item/9b095112-fabc-4165-85bf-7e9b626e758f,57,0,0
+1645423116251,37,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4753,189,10,10,http://localhost:8080/full/547c516f-b766-4bd4-bb02-aaadcfe910c1,36,0,0
+1645423116207,82,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1349,999,10,10,http://localhost:8080/checkout/2cb3fed1-e83a-4a00-9a68-148e8451fe48/checkout-data,82,0,0
+1645423116241,53,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4070,220,10,10,http://localhost:8080/payment/f4dc2873-1d08-491c-8b89-3b0674b4a98e/execute,53,0,0
+1645423115925,369,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26547,3113,10,10,null,368,0,0
+1645423116285,10,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4024,223,10,10,http://localhost:8080/payment/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/initialize,10,0,0
+1645423116286,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3120,253,10,10,http://localhost:8080/basket/5de91060-984f-47af-9f0a-c4c1c1778495/item/fd9db5fe-291b-43f4-9b06-ea78ad3ca4a2,9,0,0
+1645423116285,15,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4090,220,10,10,http://localhost:8080/payment/f032d4ee-71fd-4c8c-b055-32e166561a85/execute,15,0,0
+1645423116043,257,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26817,3113,10,10,null,252,0,0
+1645423116288,14,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,10,10,http://localhost:8080/payment/547c516f-b766-4bd4-bb02-aaadcfe910c1,14,0,0
+1645423116296,10,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4084,220,10,10,http://localhost:8080/payment/6b82a34e-5805-4e2f-baf5-e41ad1856ed4/execute,10,0,0
+1645423116061,245,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26785,3113,10,10,null,239,0,0
+1645423116301,6,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,10,10,http://localhost:8080/basket,6,0,0
+1645423116307,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,10,10,null,0,0,0
+1645423116286,24,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,10,10,http://localhost:8080/checkout/4818aa02-8ea4-4cfd-823e-eacd342878dc/checkout-data,24,0,0
+1645423116285,26,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,10,10,http://localhost:8080/basket,26,0,0
+1645423116312,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,10,10,null,0,0,0
+1645423116307,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1211,253,10,10,http://localhost:8080/basket/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/item/45c840b5-3a82-496f-8136-834c10f6b830,6,0,0
+1645423116306,8,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,10,10,http://localhost:8080/basket,8,0,0
+1645423116314,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,10,10,null,0,0,0
+1645423116225,91,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1349,999,10,10,http://localhost:8080/checkout/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/checkout-data,91,0,0
+1645423116285,35,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1212,253,10,10,http://localhost:8080/basket/7f2350a0-f998-4b93-9569-05025e3fc7ff/item/5ec8eb4f-922a-453f-b9c7-e2b801ce2145,35,0,0
+1645423116314,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2143,253,10,10,http://localhost:8080/basket/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/item/3db98ddd-527b-4e2a-a5bd-736558821452,7,0,0
+1645423116296,26,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1351,999,10,10,http://localhost:8080/checkout/5de91060-984f-47af-9f0a-c4c1c1778495/checkout-data,26,0,0
+1645423116315,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1197,253,10,10,http://localhost:8080/basket/82712527-6b55-4e85-8658-50af7c6f137c/item/3220d2ba-d350-447f-a653-79ecc72bab65,10,0,0
+1645423116289,44,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4800,189,10,10,http://localhost:8080/full/2cb3fed1-e83a-4a00-9a68-148e8451fe48,44,0,0
+1645423116302,31,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3992,223,10,10,http://localhost:8080/payment/547c516f-b766-4bd4-bb02-aaadcfe910c1/initialize,31,0,0
+1645423116321,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3087,253,10,10,http://localhost:8080/basket/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/item/f04102e1-872b-4db9-bee6-5a30fda5f72a,12,0,0
+1645423116310,29,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4671,189,10,10,http://localhost:8080/full/4818aa02-8ea4-4cfd-823e-eacd342878dc,29,0,0
+1645423116326,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2145,253,10,10,http://localhost:8080/basket/82712527-6b55-4e85-8658-50af7c6f137c/item/7f12292c-b45d-42b9-888f-0784c40faac7,15,0,0
+1645423116312,34,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1208,253,10,10,http://localhost:8080/basket/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/item/a23b749e-7b42-418f-9345-78bf31dcd2e1,34,0,0
+1645423116320,34,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2163,253,10,10,http://localhost:8080/basket/7f2350a0-f998-4b93-9569-05025e3fc7ff/item/31075d2c-baa9-4be2-8891-0df4def27259,34,0,0
+1645423116322,34,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4771,189,10,10,http://localhost:8080/full/5de91060-984f-47af-9f0a-c4c1c1778495,34,0,0
+1645423116294,68,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,10,10,http://localhost:8080/basket,68,0,0
+1645423116362,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,10,10,null,0,0,0
+1645423116333,31,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4049,220,10,10,http://localhost:8080/payment/547c516f-b766-4bd4-bb02-aaadcfe910c1/execute,31,0,0
+1645423116109,255,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26689,3113,10,10,null,251,0,0
+1645423116316,50,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4694,189,10,10,http://localhost:8080/full/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced,45,0,0
+1645423116339,28,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4633,189,10,10,http://localhost:8080/full/4818aa02-8ea4-4cfd-823e-eacd342878dc,28,0,0
+1645423116356,16,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4772,189,10,10,http://localhost:8080/full/5de91060-984f-47af-9f0a-c4c1c1778495,16,0,0
+1645423116346,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2143,253,10,10,http://localhost:8080/basket/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/item/8dd4e4c4-2444-4cea-bd47-998d9c1e210e,28,0,0
+1645423116364,11,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,11,0,0
+1645423116375,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423116333,43,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4762,189,10,10,http://localhost:8080/full/2cb3fed1-e83a-4a00-9a68-148e8451fe48,43,0,0
+1645423116333,48,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1351,999,10,10,http://localhost:8080/checkout/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/checkout-data,48,0,0
+1645423116373,16,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1003,331,10,10,http://localhost:8080/payment/5de91060-984f-47af-9f0a-c4c1c1778495,16,0,0
+1645423116342,48,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3079,253,10,10,http://localhost:8080/basket/82712527-6b55-4e85-8658-50af7c6f137c/item/3177c4cd-cdeb-4641-be25-039bf1e81f49,48,0,0
+1645423116362,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1211,253,10,10,http://localhost:8080/basket/96551787-99e2-4fd8-856b-1157d08a9510/item/57015173-1875-4284-8639-ab6bcf68251d,31,0,0
+1645423116355,44,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3120,253,10,10,http://localhost:8080/basket/7f2350a0-f998-4b93-9569-05025e3fc7ff/item/d9faf460-7780-4f05-a227-ebf569df78a1,44,0,0
+1645423116375,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1201,253,10,10,http://localhost:8080/basket/3ed6185f-5387-456f-b1aa-e7e12738cad2/item/4fa7487a-535f-4663-a457-0fac1899fad7,26,0,0
+1645423116366,42,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4711,189,10,10,http://localhost:8080/full/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced,42,0,0
+1645423116368,44,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1010,331,10,10,http://localhost:8080/payment/4818aa02-8ea4-4cfd-823e-eacd342878dc,44,0,0
+1645423116381,35,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4703,189,10,10,http://localhost:8080/full/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c,35,0,0
+1645423116394,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2145,253,10,10,http://localhost:8080/basket/96551787-99e2-4fd8-856b-1157d08a9510/item/a64c9251-3fa9-4d17-9457-4320691cbc25,26,0,0
+1645423116389,34,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4041,223,10,10,http://localhost:8080/payment/5de91060-984f-47af-9f0a-c4c1c1778495/initialize,34,0,0
+1645423116374,49,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3084,253,10,10,http://localhost:8080/basket/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/item/9fae4b36-5e47-4ae3-b74e-2531577d589b,49,0,0
+1645423116377,49,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1007,331,10,10,http://localhost:8080/payment/2cb3fed1-e83a-4a00-9a68-148e8451fe48,49,0,0
+1645423116405,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2167,253,10,10,http://localhost:8080/basket/3ed6185f-5387-456f-b1aa-e7e12738cad2/item/ab2fc3ae-5a1a-46ff-8a29-a0cad6ce8422,24,0,0
+1645423116420,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3125,253,10,10,http://localhost:8080/basket/96551787-99e2-4fd8-856b-1157d08a9510/item/0c536d37-b884-4075-8c10-c250c22a5685,12,0,0
+1645423116423,10,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4105,220,10,10,http://localhost:8080/payment/5de91060-984f-47af-9f0a-c4c1c1778495/execute,10,0,0
+1645423116181,252,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26883,3113,10,10,null,249,0,0
+1645423116413,23,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4043,223,10,10,http://localhost:8080/payment/4818aa02-8ea4-4cfd-823e-eacd342878dc/initialize,23,0,0
+1645423116408,32,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1001,331,10,10,http://localhost:8080/payment/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced,32,0,0
+1645423116429,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3117,253,10,10,http://localhost:8080/basket/3ed6185f-5387-456f-b1aa-e7e12738cad2/item/1b9da0e2-fba1-4037-936f-f248141a4a25,11,0,0
+1645423116433,8,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,8,0,0
+1645423116441,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423116391,53,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,10,10,http://localhost:8080/checkout/82712527-6b55-4e85-8658-50af7c6f137c/checkout-data,53,0,0
+1645423116416,34,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4704,189,10,10,http://localhost:8080/full/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c,34,0,0
+1645423116426,26,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4022,223,10,10,http://localhost:8080/payment/2cb3fed1-e83a-4a00-9a68-148e8451fe48/initialize,26,0,0
+1645423116400,58,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1344,999,10,10,http://localhost:8080/checkout/7f2350a0-f998-4b93-9569-05025e3fc7ff/checkout-data,58,0,0
+1645423116440,21,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4005,223,10,10,http://localhost:8080/payment/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/initialize,21,0,0
+1645423116440,21,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,10,10,http://localhost:8080/checkout/3ed6185f-5387-456f-b1aa-e7e12738cad2/checkout-data,21,0,0
+1645423116436,27,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4048,220,10,10,http://localhost:8080/payment/4818aa02-8ea4-4cfd-823e-eacd342878dc/execute,27,0,0
+1645423116107,356,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26532,3113,10,10,null,352,0,0
+1645423116444,22,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4739,189,10,10,http://localhost:8080/full/82712527-6b55-4e85-8658-50af7c6f137c,21,0,0
+1645423116442,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1209,253,10,10,http://localhost:8080/basket/842c0e1b-a717-4c57-942e-3a1d8537d969/item/98c8f279-3df3-4161-8276-55ec6f2db440,26,0,0
+1645423116466,7,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4733,189,10,10,http://localhost:8080/full/82712527-6b55-4e85-8658-50af7c6f137c,6,0,0
+1645423116433,42,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1344,999,10,10,http://localhost:8080/checkout/96551787-99e2-4fd8-856b-1157d08a9510/checkout-data,42,0,0
+1645423116450,28,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1010,331,10,10,http://localhost:8080/payment/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c,27,0,0
+1645423116424,55,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1344,999,10,10,http://localhost:8080/checkout/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/checkout-data,55,0,0
+1645423116453,26,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4091,220,10,10,http://localhost:8080/payment/2cb3fed1-e83a-4a00-9a68-148e8451fe48/execute,26,0,0
+1645423116085,395,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26801,3113,10,10,null,389,0,0
+1645423116461,21,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4767,189,10,10,http://localhost:8080/full/3ed6185f-5387-456f-b1aa-e7e12738cad2,21,0,0
+1645423116461,23,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4042,220,10,10,http://localhost:8080/payment/f8b2c6d8-7785-4965-95a3-c82dbbfb3ced/execute,23,0,0
+1645423116097,387,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26578,3113,10,10,null,381,0,0
+1645423116473,12,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1016,331,10,10,http://localhost:8080/payment/82712527-6b55-4e85-8658-50af7c6f137c,12,0,0
+1645423116468,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2155,253,10,10,http://localhost:8080/basket/842c0e1b-a717-4c57-942e-3a1d8537d969/item/ba00df1f-8f35-4de9-97d6-6e5116d58002,19,0,0
+1645423116482,10,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4801,189,10,10,http://localhost:8080/full/3ed6185f-5387-456f-b1aa-e7e12738cad2,10,0,0
+1645423116458,35,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4703,189,10,10,http://localhost:8080/full/7f2350a0-f998-4b93-9569-05025e3fc7ff,35,0,0
+1645423116478,16,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,3994,223,10,10,http://localhost:8080/payment/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/initialize,16,0,0
+1645423116488,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3096,253,10,10,http://localhost:8080/basket/842c0e1b-a717-4c57-942e-3a1d8537d969/item/253ce5c9-b5c4-4486-b8ad-3034266e0ef1,8,0,0
+1645423116475,26,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4739,189,10,10,http://localhost:8080/full/96551787-99e2-4fd8-856b-1157d08a9510,26,0,0
+1645423116492,9,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1003,331,10,10,http://localhost:8080/payment/3ed6185f-5387-456f-b1aa-e7e12738cad2,9,0,0
+1645423116480,23,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,10,10,http://localhost:8080/basket,23,0,0
+1645423116503,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,10,10,null,0,0,0
+1645423116484,19,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,10,10,http://localhost:8080/basket,19,0,0
+1645423116503,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,10,10,null,0,0,0
+1645423116486,19,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,3987,223,10,10,http://localhost:8080/payment/82712527-6b55-4e85-8658-50af7c6f137c/initialize,19,0,0
+1645423116494,14,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4051,220,10,10,http://localhost:8080/payment/2f97b8c6-0d9e-413e-90ea-5f7e548fc68c/execute,14,0,0
+1645423116300,208,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26596,3113,10,10,null,205,0,0
+1645423116501,8,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4739,189,10,10,http://localhost:8080/full/96551787-99e2-4fd8-856b-1157d08a9510,8,0,0
+1645423116480,30,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4700,189,10,10,http://localhost:8080/full/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c,30,0,0
+1645423116464,47,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,10,10,http://localhost:8080/basket,47,0,0
+1645423116511,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,10,10,null,0,0,0
+1645423116505,8,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4090,220,10,10,http://localhost:8080/payment/82712527-6b55-4e85-8658-50af7c6f137c/execute,8,0,0
+1645423116306,207,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26672,3113,10,10,null,200,0,0
+1645423116508,6,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,10,10,http://localhost:8080/basket,6,0,0
+1645423116514,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,10,10,null,0,0,0
+1645423116513,2,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,10,10,http://localhost:8080/basket,2,0,0
+1645423116515,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,10,10,null,0,0,0
+1645423116503,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1201,253,10,10,http://localhost:8080/basket/d341aaaa-69a6-4747-9879-be9de3e67567/item/d31e55d5-0444-495f-b0ec-ff6a646ce251,13,0,0
+1645423116493,24,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4704,189,10,10,http://localhost:8080/full/7f2350a0-f998-4b93-9569-05025e3fc7ff,24,0,0
+1645423116497,24,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1356,999,10,10,http://localhost:8080/checkout/842c0e1b-a717-4c57-942e-3a1d8537d969/checkout-data,24,0,0
+1645423116510,12,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4732,189,10,10,http://localhost:8080/full/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c,12,0,0
+1645423116515,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1209,253,10,10,http://localhost:8080/basket/6da03834-368b-462c-ad84-3875f5ffabe7/item/14a6f7a6-c80c-455c-9cad-453bfe3d130a,8,0,0
+1645423116504,21,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1202,253,10,10,http://localhost:8080/basket/521daa75-0acd-4c02-8f89-44e15b30d1f5/item/599d6b5c-0f9e-4f49-9e88-9389dc2a058c,21,0,0
+1645423116512,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1217,253,10,10,http://localhost:8080/basket/abbc907b-fd9e-48d6-be35-2f6146e94ab6/item/66c4b1e9-1201-48b5-9b81-e93f5f90c2a5,15,0,0
+1645423116516,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1201,253,10,10,http://localhost:8080/basket/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/item/5be9c060-78b6-4dd0-a8fb-94bb70fc5f03,12,0,0
+1645423116501,29,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3992,223,10,10,http://localhost:8080/payment/3ed6185f-5387-456f-b1aa-e7e12738cad2/initialize,29,0,0
+1645423116517,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2150,253,10,10,http://localhost:8080/basket/d341aaaa-69a6-4747-9879-be9de3e67567/item/89b88542-4fcd-4397-a655-9b15b2f59a1a,15,0,0
+1645423116517,17,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1017,331,10,10,http://localhost:8080/payment/7f2350a0-f998-4b93-9569-05025e3fc7ff,17,0,0
+1645423116524,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2156,253,10,10,http://localhost:8080/basket/6da03834-368b-462c-ad84-3875f5ffabe7/item/51f2fec7-db75-4870-b171-42347c0c24bb,13,0,0
+1645423116509,28,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1003,331,10,10,http://localhost:8080/payment/96551787-99e2-4fd8-856b-1157d08a9510,28,0,0
+1645423116522,18,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1003,331,10,10,http://localhost:8080/payment/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c,18,0,0
+1645423116529,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2145,253,10,10,http://localhost:8080/basket/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/item/4ae3b65f-2200-48de-9cd2-82350cf0a880,14,0,0
+1645423116526,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2143,253,10,10,http://localhost:8080/basket/521daa75-0acd-4c02-8f89-44e15b30d1f5/item/7947c4b2-1a16-492c-8290-14975b41494f,18,0,0
+1645423116528,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2147,253,10,10,http://localhost:8080/basket/abbc907b-fd9e-48d6-be35-2f6146e94ab6/item/b16e9d98-c73a-4d55-9cf2-7aa427e3f991,18,0,0
+1645423116537,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3083,253,10,10,http://localhost:8080/basket/6da03834-368b-462c-ad84-3875f5ffabe7/item/755db6a3-d937-436a-bd84-d82a4ac4a685,12,0,0
+1645423116521,30,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4696,189,10,10,http://localhost:8080/full/842c0e1b-a717-4c57-942e-3a1d8537d969,30,0,0
+1645423116543,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3112,253,10,10,http://localhost:8080/basket/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/item/eddb4298-98ae-4841-843a-6d1a89c41f5d,12,0,0
+1645423116530,25,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4049,220,10,10,http://localhost:8080/payment/3ed6185f-5387-456f-b1aa-e7e12738cad2/execute,25,0,0
+1645423116364,191,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26783,3113,10,10,null,187,0,0
+1645423116532,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3078,253,10,10,http://localhost:8080/basket/d341aaaa-69a6-4747-9879-be9de3e67567/item/2aed2289-01ca-42c7-af73-82d62e04c00f,24,0,0
+1645423116551,9,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4708,189,10,10,http://localhost:8080/full/842c0e1b-a717-4c57-942e-3a1d8537d969,9,0,0
+1645423116556,5,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,5,0,0
+1645423116561,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423116534,30,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4001,223,10,10,http://localhost:8080/payment/7f2350a0-f998-4b93-9569-05025e3fc7ff/initialize,30,0,0
+1645423116537,29,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4034,223,10,10,http://localhost:8080/payment/96551787-99e2-4fd8-856b-1157d08a9510/initialize,28,0,0
+1645423116560,7,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1022,331,10,10,http://localhost:8080/payment/842c0e1b-a717-4c57-942e-3a1d8537d969,7,0,0
+1645423116562,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1209,253,10,10,http://localhost:8080/basket/124cebee-58ab-4efd-bf53-0556afbac79d/item/ae4c5d0d-7e9c-437d-be81-e3967f95c126,10,0,0
+1645423116544,32,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3110,253,10,10,http://localhost:8080/basket/521daa75-0acd-4c02-8f89-44e15b30d1f5/item/fa526224-0a84-455a-83af-4c481bc207f0,32,0,0
+1645423116549,34,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1342,999,10,10,http://localhost:8080/checkout/6da03834-368b-462c-ad84-3875f5ffabe7/checkout-data,34,0,0
+1645423116541,43,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,3992,223,10,10,http://localhost:8080/payment/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/initialize,43,0,0
+1645423116566,23,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4102,220,10,10,http://localhost:8080/payment/96551787-99e2-4fd8-856b-1157d08a9510/execute,23,0,0
+1645423116294,295,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26784,3113,10,10,null,292,0,0
+1645423116547,44,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3087,253,10,10,http://localhost:8080/basket/abbc907b-fd9e-48d6-be35-2f6146e94ab6/item/e9a05aac-d940-47d7-88c2-50f5173ecb37,44,0,0
+1645423116567,25,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4040,223,10,10,http://localhost:8080/payment/842c0e1b-a717-4c57-942e-3a1d8537d969/initialize,25,0,0
+1645423116564,30,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4085,220,10,10,http://localhost:8080/payment/7f2350a0-f998-4b93-9569-05025e3fc7ff/execute,30,0,0
+1645423116238,356,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26691,3113,10,10,null,353,0,0
+1645423116573,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2141,253,10,10,http://localhost:8080/basket/124cebee-58ab-4efd-bf53-0556afbac79d/item/a3bbaa21-f09f-411a-8b9e-d8907bd2df8a,27,0,0
+1645423116585,15,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4049,220,10,10,http://localhost:8080/payment/ae1e8e23-e9fd-48bf-b802-efcd7d497b0c/execute,15,0,0
+1645423116284,317,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26597,3113,10,10,null,310,0,0
+1645423116595,10,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,10,10,http://localhost:8080/basket,10,0,0
+1645423116605,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,10,10,null,0,0,0
+1645423116592,18,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4046,220,10,10,http://localhost:8080/payment/842c0e1b-a717-4c57-942e-3a1d8537d969/execute,18,0,0
+1645423116433,177,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26670,3113,10,10,null,174,0,0
+1645423116555,56,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,10,10,http://localhost:8080/checkout/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/checkout-data,56,0,0
+1645423116556,58,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1342,999,10,10,http://localhost:8080/checkout/d341aaaa-69a6-4747-9879-be9de3e67567/checkout-data,58,0,0
+1645423116589,26,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,10,10,http://localhost:8080/basket,26,0,0
+1645423116615,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,10,10,null,0,0,0
+1645423116601,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3084,253,10,10,http://localhost:8080/basket/124cebee-58ab-4efd-bf53-0556afbac79d/item/c881201c-8af2-4643-bfef-dc8c7fb71065,15,0,0
+1645423116610,7,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,7,0,0
+1645423116617,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423116617,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1207,253,10,10,http://localhost:8080/basket/7c52500a-286c-433b-b340-74629d96e327/item/86c7900c-8cc4-4447-a7b8-012c7c3ad0b9,10,0,0
+1645423116591,39,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1344,999,10,10,http://localhost:8080/checkout/abbc907b-fd9e-48d6-be35-2f6146e94ab6/checkout-data,39,0,0
+1645423116576,60,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1344,999,10,10,http://localhost:8080/checkout/521daa75-0acd-4c02-8f89-44e15b30d1f5/checkout-data,60,0,0
+1645423116583,54,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4719,189,10,10,http://localhost:8080/full/6da03834-368b-462c-ad84-3875f5ffabe7,54,0,0
+1645423116605,34,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1218,253,10,10,http://localhost:8080/basket/e9924c6f-5f16-497b-a12f-c94c150ca30d/item/23e78b00-97ce-4eb7-b898-d919cb3be9f6,34,0,0
+1645423116601,41,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,10,10,http://localhost:8080/basket,41,0,0
+1645423116642,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,10,10,null,0,0,0
+1645423116617,34,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1351,999,10,10,http://localhost:8080/checkout/124cebee-58ab-4efd-bf53-0556afbac79d/checkout-data,34,0,0
+1645423116614,40,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4716,189,10,10,http://localhost:8080/full/d341aaaa-69a6-4747-9879-be9de3e67567,39,0,0
+1645423116611,46,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4723,189,10,10,http://localhost:8080/full/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a,45,0,0
+1645423116631,26,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4803,189,10,10,http://localhost:8080/full/abbc907b-fd9e-48d6-be35-2f6146e94ab6,26,0,0
+1645423116628,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2160,253,10,10,http://localhost:8080/basket/7c52500a-286c-433b-b340-74629d96e327/item/4864326f-fd87-442a-8856-eb5c8d43141b,31,0,0
+1645423116615,44,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1209,253,10,10,http://localhost:8080/basket/2f7c9364-e950-4291-a156-9d27ddf69497/item/e4b603bc-3119-4996-ab39-24a3f0115cf2,44,0,0
+1645423116637,25,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4706,189,10,10,http://localhost:8080/full/6da03834-368b-462c-ad84-3875f5ffabe7,25,0,0
+1645423116639,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2147,253,10,10,http://localhost:8080/basket/e9924c6f-5f16-497b-a12f-c94c150ca30d/item/b46572ca-8167-47d8-8768-f6f87c54a91f,27,0,0
+1645423116657,13,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4720,189,10,10,http://localhost:8080/full/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a,13,0,0
+1645423116642,30,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1215,253,10,10,http://localhost:8080/basket/ff13f685-e873-4926-9f53-2246dfdce47e/item/e84b822c-59b3-4fbf-bbdc-1141365744e1,30,0,0
+1645423116651,23,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4768,189,10,10,http://localhost:8080/full/124cebee-58ab-4efd-bf53-0556afbac79d,23,0,0
+1645423116662,14,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1001,331,10,10,http://localhost:8080/payment/6da03834-368b-462c-ad84-3875f5ffabe7,14,0,0
+1645423116658,21,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4771,189,10,10,http://localhost:8080/full/abbc907b-fd9e-48d6-be35-2f6146e94ab6,21,0,0
+1645423116659,21,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3082,253,10,10,http://localhost:8080/basket/7c52500a-286c-433b-b340-74629d96e327/item/179034c6-4a8e-4ae2-a1a9-66b82b5656c5,21,0,0
+1645423116670,12,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1016,331,10,10,http://localhost:8080/payment/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a,12,0,0
+1645423116666,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3089,253,10,10,http://localhost:8080/basket/e9924c6f-5f16-497b-a12f-c94c150ca30d/item/7c4b40d3-ee6f-40f4-ace3-184a8d8bc815,19,0,0
+1645423116674,12,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4795,189,10,10,http://localhost:8080/full/124cebee-58ab-4efd-bf53-0556afbac79d,12,0,0
+1645423116673,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2142,253,10,10,http://localhost:8080/basket/ff13f685-e873-4926-9f53-2246dfdce47e/item/53ff259c-00e2-4d69-8169-645aba719bc4,19,0,0
+1645423116636,58,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4739,189,10,10,http://localhost:8080/full/521daa75-0acd-4c02-8f89-44e15b30d1f5,58,0,0
+1645423116654,45,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4717,189,10,10,http://localhost:8080/full/d341aaaa-69a6-4747-9879-be9de3e67567,45,0,0
+1645423116677,27,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,3988,223,10,10,http://localhost:8080/payment/6da03834-368b-462c-ad84-3875f5ffabe7/initialize,27,0,0
+1645423116660,44,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2145,253,10,10,http://localhost:8080/basket/2f7c9364-e950-4291-a156-9d27ddf69497/item/46fd754c-b520-4674-9035-d66a9189a5df,44,0,0
+1645423116679,26,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1003,331,10,10,http://localhost:8080/payment/abbc907b-fd9e-48d6-be35-2f6146e94ab6,26,0,0
+1645423116680,30,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1344,999,10,10,http://localhost:8080/checkout/7c52500a-286c-433b-b340-74629d96e327/checkout-data,30,0,0
+1645423116694,16,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4747,189,10,10,http://localhost:8080/full/521daa75-0acd-4c02-8f89-44e15b30d1f5,16,0,0
+1645423116682,30,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,3993,223,10,10,http://localhost:8080/payment/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/initialize,30,0,0
+1645423116704,11,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4097,220,10,10,http://localhost:8080/payment/6da03834-368b-462c-ad84-3875f5ffabe7/execute,11,0,0
+1645423116508,207,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26643,3113,10,10,null,204,0,0
+1645423116686,29,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1010,331,10,10,http://localhost:8080/payment/124cebee-58ab-4efd-bf53-0556afbac79d,29,0,0
+1645423116705,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3129,253,10,10,http://localhost:8080/basket/2f7c9364-e950-4291-a156-9d27ddf69497/item/d86d1ce7-388a-4578-83f4-b02b73158aeb,11,0,0
+1645423116712,10,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4089,220,10,10,http://localhost:8080/payment/21507cc2-2ad8-408b-ae38-a2e2db5f6d2a/execute,10,0,0
+1645423116513,210,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26685,3113,10,10,null,206,0,0
+1645423116686,37,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1344,999,10,10,http://localhost:8080/checkout/e9924c6f-5f16-497b-a12f-c94c150ca30d/checkout-data,37,0,0
+1645423116715,9,Create Basket,201,Created,Thread-Gruppe 1-3,text,true,,342,203,10,10,http://localhost:8080/basket,9,0,0
+1645423116724,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-3,text,true,,0,0,10,10,null,0,0,0
+1645423116700,24,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1014,331,10,10,http://localhost:8080/payment/d341aaaa-69a6-4747-9879-be9de3e67567,24,0,0
+1645423116723,3,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,10,10,http://localhost:8080/basket,3,0,0
+1645423116727,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,10,10,null,0,0,0
+1645423116693,36,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3113,253,10,10,http://localhost:8080/basket/ff13f685-e873-4926-9f53-2246dfdce47e/item/2fddbc5c-51ae-4b08-8117-7b95a7eab9ac,36,0,0
+1645423116710,20,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1003,331,10,10,http://localhost:8080/payment/521daa75-0acd-4c02-8f89-44e15b30d1f5,20,0,0
+1645423116725,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,1211,253,10,10,http://localhost:8080/basket/011be731-b42f-4205-82d0-ade919e5870d/item/e4c912f0-e94f-4a4a-b63b-42fae96210c0,8,0,0
+1645423116710,25,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4716,189,10,10,http://localhost:8080/full/7c52500a-286c-433b-b340-74629d96e327,25,0,0
+1645423116727,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1211,253,10,10,http://localhost:8080/basket/f1f33b19-df3f-44c7-86e3-2e538578bf40/item/4c275ee3-e5f7-4af3-8dba-3c2234049e78,12,0,0
+1645423116733,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,2159,253,10,10,http://localhost:8080/basket/011be731-b42f-4205-82d0-ade919e5870d/item/5349396b-0ce0-4129-85cc-c6f47bd3d995,10,0,0
+1645423116717,27,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1344,999,10,10,http://localhost:8080/checkout/2f7c9364-e950-4291-a156-9d27ddf69497/checkout-data,27,0,0
+1645423116725,24,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4029,223,10,10,http://localhost:8080/payment/d341aaaa-69a6-4747-9879-be9de3e67567/initialize,24,0,0
+1645423116705,46,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,4028,223,10,10,http://localhost:8080/payment/abbc907b-fd9e-48d6-be35-2f6146e94ab6/initialize,46,0,0
+1645423116716,37,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,4024,223,10,10,http://localhost:8080/payment/124cebee-58ab-4efd-bf53-0556afbac79d/initialize,37,0,0
+1645423116739,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2159,253,10,10,http://localhost:8080/basket/f1f33b19-df3f-44c7-86e3-2e538578bf40/item/7a39275b-735a-47c9-bc6c-943a99f89c11,16,0,0
+1645423116736,23,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4730,189,10,10,http://localhost:8080/full/7c52500a-286c-433b-b340-74629d96e327,23,0,0
+1645423116731,29,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4044,223,10,10,http://localhost:8080/payment/521daa75-0acd-4c02-8f89-44e15b30d1f5/initialize,29,0,0
+1645423116744,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-3,text,true,,3085,253,10,10,http://localhost:8080/basket/011be731-b42f-4205-82d0-ade919e5870d/item/f83a7eb4-83ef-4972-97d3-20d2cd16dd13,17,0,0
+1645423116723,45,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4801,189,10,10,http://localhost:8080/full/e9924c6f-5f16-497b-a12f-c94c150ca30d,44,0,0
+1645423116752,19,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4071,220,10,10,http://localhost:8080/payment/abbc907b-fd9e-48d6-be35-2f6146e94ab6/execute,19,0,0
+1645423116463,308,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26813,3113,10,10,null,301,0,0
+1645423116744,31,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4781,189,10,10,http://localhost:8080/full/2f7c9364-e950-4291-a156-9d27ddf69497,31,0,0
+1645423116753,23,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4049,220,10,10,http://localhost:8080/payment/124cebee-58ab-4efd-bf53-0556afbac79d/execute,23,0,0
+1645423116555,221,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26773,3113,10,10,null,215,0,0
+1645423116755,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3086,253,10,10,http://localhost:8080/basket/f1f33b19-df3f-44c7-86e3-2e538578bf40/item/29ce7817-c296-4192-b7ac-2d718087395c,22,0,0
+1645423116750,30,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4093,220,10,10,http://localhost:8080/payment/d341aaaa-69a6-4747-9879-be9de3e67567/execute,30,0,0
+1645423116480,300,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26682,3113,10,10,null,295,0,0
+1645423116759,24,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1010,331,10,10,http://localhost:8080/payment/7c52500a-286c-433b-b340-74629d96e327,24,0,0
+1645423116776,9,Create Basket,201,Created,Thread-Gruppe 1-4,text,true,,342,203,10,10,http://localhost:8080/basket,9,0,0
+1645423116785,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-4,text,true,,0,0,10,10,null,0,0,0
+1645423116760,27,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4068,220,10,10,http://localhost:8080/payment/521daa75-0acd-4c02-8f89-44e15b30d1f5/execute,27,0,0
+1645423116484,303,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26742,3113,10,10,null,300,0,0
+1645423116729,65,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1349,999,10,10,http://localhost:8080/checkout/ff13f685-e873-4926-9f53-2246dfdce47e/checkout-data,65,0,0
+1645423116776,19,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4770,189,10,10,http://localhost:8080/full/2f7c9364-e950-4291-a156-9d27ddf69497,19,0,0
+1645423116781,15,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,10,10,http://localhost:8080/basket,15,0,0
+1645423116797,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,10,10,null,0,0,0
+1645423116783,15,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4031,223,10,10,http://localhost:8080/payment/7c52500a-286c-433b-b340-74629d96e327/initialize,15,0,0
+1645423116787,11,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,10,10,http://localhost:8080/basket,11,0,0
+1645423116799,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,10,10,null,0,0,0
+1645423116768,34,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4807,189,10,10,http://localhost:8080/full/e9924c6f-5f16-497b-a12f-c94c150ca30d,33,0,0
+1645423116796,10,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1010,331,10,10,http://localhost:8080/payment/2f7c9364-e950-4291-a156-9d27ddf69497,10,0,0
+1645423116785,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,1211,253,10,10,http://localhost:8080/basket/a109310b-f678-4ab7-b369-ffb4298dffb1/item/712be5a0-1b8b-4e65-ad3d-1d74c1ecee92,22,0,0
+1645423116761,47,Set Checkout Data,200,OK,Thread-Gruppe 1-3,text,true,,1351,999,10,10,http://localhost:8080/checkout/011be731-b42f-4205-82d0-ade919e5870d/checkout-data,47,0,0
+1645423116799,12,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4100,220,10,10,http://localhost:8080/payment/7c52500a-286c-433b-b340-74629d96e327/execute,12,0,0
+1645423116610,201,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26722,3113,10,10,null,198,0,0
+1645423116797,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1209,253,10,10,http://localhost:8080/basket/ec708ec5-4393-4ae8-8ff5-16032d45d349/item/4b947e44-c91a-44ad-87c6-81a32dd2a57c,16,0,0
+1645423116795,22,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4725,189,10,10,http://localhost:8080/full/ff13f685-e873-4926-9f53-2246dfdce47e,22,0,0
+1645423116772,46,Create Basket,201,Created,Thread-Gruppe 1-1,text,true,,342,203,10,10,http://localhost:8080/basket,46,0,0
+1645423116818,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-1,text,true,,0,0,10,10,null,0,0,0
+1645423116799,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1202,253,10,10,http://localhost:8080/basket/358a00e8-9c60-4b31-bbee-fadf896bfab1/item/8190fa00-742e-4ccf-9f81-96c94a23871e,22,0,0
+1645423116807,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,2145,253,10,10,http://localhost:8080/basket/a109310b-f678-4ab7-b369-ffb4298dffb1/item/541a0c65-da0e-49e7-bd68-452a39f779b4,14,0,0
+1645423116812,10,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,10,10,http://localhost:8080/basket,10,0,0
+1645423116822,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,10,10,null,0,0,0
+1645423116821,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-4,text,true,,3119,253,10,10,http://localhost:8080/basket/a109310b-f678-4ab7-b369-ffb4298dffb1/item/7d1aa832-1be8-4bd0-ad6e-c178592c5e5a,6,0,0
+1645423116806,23,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4019,223,10,10,http://localhost:8080/payment/2f7c9364-e950-4291-a156-9d27ddf69497/initialize,23,0,0
+1645423116802,27,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,10,10,http://localhost:8080/payment/e9924c6f-5f16-497b-a12f-c94c150ca30d,27,0,0
+1645423116778,52,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,10,10,http://localhost:8080/checkout/f1f33b19-df3f-44c7-86e3-2e538578bf40/checkout-data,52,0,0
+1645423116814,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2144,253,10,10,http://localhost:8080/basket/ec708ec5-4393-4ae8-8ff5-16032d45d349/item/adf660b9-0383-4eb2-995e-ce896cd2e26b,19,0,0
+1645423116822,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1211,253,10,10,http://localhost:8080/basket/27383e19-c2ea-4778-b025-afb9159b125c/item/f5fcd866-5cdf-4f01-be8d-56f1c0f12e70,15,0,0
+1645423116818,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,1222,253,10,10,http://localhost:8080/basket/5571d4b8-b7ab-406d-bba2-cd98f8f47236/item/25ebb8b3-291a-4d01-9ddf-2ec3768b4606,19,0,0
+1645423116821,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2157,253,10,10,http://localhost:8080/basket/358a00e8-9c60-4b31-bbee-fadf896bfab1/item/f43180d4-345c-48a8-a117-a15d6c829553,19,0,0
+1645423116818,24,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4751,189,10,10,http://localhost:8080/full/ff13f685-e873-4926-9f53-2246dfdce47e,24,0,0
+1645423116829,24,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,3996,223,10,10,http://localhost:8080/payment/e9924c6f-5f16-497b-a12f-c94c150ca30d/initialize,24,0,0
+1645423116829,25,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4050,220,10,10,http://localhost:8080/payment/2f7c9364-e950-4291-a156-9d27ddf69497/execute,25,0,0
+1645423116589,265,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26799,3113,10,10,null,260,0,0
+1645423116827,28,Set Checkout Data,200,OK,Thread-Gruppe 1-4,text,true,,1344,999,10,10,http://localhost:8080/checkout/a109310b-f678-4ab7-b369-ffb4298dffb1/checkout-data,28,0,0
+1645423116808,49,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4768,189,10,10,http://localhost:8080/full/011be731-b42f-4205-82d0-ade919e5870d,49,0,0
+1645423116838,21,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,2145,253,10,10,http://localhost:8080/basket/5571d4b8-b7ab-406d-bba2-cd98f8f47236/item/5a3c4c70-d505-49a5-ae42-2d001bff731e,21,0,0
+1645423116837,24,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2170,253,10,10,http://localhost:8080/basket/27383e19-c2ea-4778-b025-afb9159b125c/item/79a891fd-6015-4b3f-bc2e-7766be7fed20,24,0,0
+1645423116834,30,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3106,253,10,10,http://localhost:8080/basket/ec708ec5-4393-4ae8-8ff5-16032d45d349/item/47b4444f-28dc-45d8-bb5e-c8e194d4b721,30,0,0
+1645423116853,13,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4106,220,10,10,http://localhost:8080/payment/e9924c6f-5f16-497b-a12f-c94c150ca30d/execute,13,0,0
+1645423116594,273,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26853,3113,10,10,null,268,0,0
+1645423116840,30,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3106,253,10,10,http://localhost:8080/basket/358a00e8-9c60-4b31-bbee-fadf896bfab1/item/5cc4410e-538a-4cbf-a847-2a2e0b3eb231,30,0,0
+1645423116855,17,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,10,10,http://localhost:8080/basket,17,0,0
+1645423116872,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,10,10,null,0,0,0
+1645423116842,37,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1001,331,10,10,http://localhost:8080/payment/ff13f685-e873-4926-9f53-2246dfdce47e,37,0,0
+1645423116856,29,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4778,189,10,10,http://localhost:8080/full/a109310b-f678-4ab7-b369-ffb4298dffb1,29,0,0
+1645423116860,30,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-1,text,true,,3104,253,10,10,http://localhost:8080/basket/5571d4b8-b7ab-406d-bba2-cd98f8f47236/item/445ad729-212d-4e70-aebc-5acd10c4bb82,30,0,0
+1645423116830,62,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4701,189,10,10,http://localhost:8080/full/f1f33b19-df3f-44c7-86e3-2e538578bf40,62,0,0
+1645423116862,31,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3127,253,10,10,http://localhost:8080/basket/27383e19-c2ea-4778-b025-afb9159b125c/item/1937ee85-bb0b-4b37-93c9-6deed730c093,31,0,0
+1645423116865,33,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1344,999,10,10,http://localhost:8080/checkout/ec708ec5-4393-4ae8-8ff5-16032d45d349/checkout-data,33,0,0
+1645423116857,45,View Basket,200,OK,Thread-Gruppe 1-3,text,true,,4769,189,10,10,http://localhost:8080/full/011be731-b42f-4205-82d0-ade919e5870d,45,0,0
+1645423116886,15,View Basket,200,OK,Thread-Gruppe 1-4,text,true,,4772,189,10,10,http://localhost:8080/full/a109310b-f678-4ab7-b369-ffb4298dffb1,13,0,0
+1645423116892,14,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4702,189,10,10,http://localhost:8080/full/f1f33b19-df3f-44c7-86e3-2e538578bf40,14,0,0
+1645423116879,29,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,3987,223,10,10,http://localhost:8080/payment/ff13f685-e873-4926-9f53-2246dfdce47e/initialize,29,0,0
+1645423116867,42,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,10,10,http://localhost:8080/basket,42,0,0
+1645423116909,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,10,10,null,0,0,0
+1645423116873,37,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1217,253,10,10,http://localhost:8080/basket/be05b659-4e69-4635-b872-d293db406124/item/7ee92f1b-aae0-4b1b-90f4-8186c1d49a16,37,0,0
+1645423116905,11,Add Payment,200,OK,Thread-Gruppe 1-3,text,true,,1003,331,10,10,http://localhost:8080/payment/011be731-b42f-4205-82d0-ade919e5870d,11,0,0
+1645423116908,10,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4065,220,10,10,http://localhost:8080/payment/ff13f685-e873-4926-9f53-2246dfdce47e/execute,7,0,0
+1645423116601,317,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26690,3113,10,10,null,310,0,0
+1645423116894,27,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1356,999,10,10,http://localhost:8080/checkout/27383e19-c2ea-4778-b025-afb9159b125c/checkout-data,27,0,0
+1645423116906,15,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1016,331,10,10,http://localhost:8080/payment/f1f33b19-df3f-44c7-86e3-2e538578bf40,15,0,0
+1645423116905,25,Add Payment,200,OK,Thread-Gruppe 1-4,text,true,,1022,331,10,10,http://localhost:8080/payment/a109310b-f678-4ab7-b369-ffb4298dffb1,25,0,0
+1645423116871,62,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1356,999,10,10,http://localhost:8080/checkout/358a00e8-9c60-4b31-bbee-fadf896bfab1/checkout-data,62,0,0
+1645423116890,44,Set Checkout Data,200,OK,Thread-Gruppe 1-1,text,true,,1351,999,10,10,http://localhost:8080/checkout/5571d4b8-b7ab-406d-bba2-cd98f8f47236/checkout-data,44,0,0
+1645423116916,19,Initialize Payment,200,OK,Thread-Gruppe 1-3,text,true,,4050,223,10,10,http://localhost:8080/payment/011be731-b42f-4205-82d0-ade919e5870d/initialize,19,0,0
+1645423116919,36,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,10,10,http://localhost:8080/basket,36,0,0
+1645423116956,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,10,10,null,0,0,0
+1645423116910,47,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1203,253,10,10,http://localhost:8080/basket/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/item/b1516346-5232-4df3-98e8-1ce30187bac8,47,0,0
+1645423116922,36,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4032,223,10,10,http://localhost:8080/payment/f1f33b19-df3f-44c7-86e3-2e538578bf40/initialize,36,0,0
+1645423116921,41,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4709,189,10,10,http://localhost:8080/full/27383e19-c2ea-4778-b025-afb9159b125c,41,0,0
+1645423116935,29,Execute Payment,200,OK,Thread-Gruppe 1-3,text,true,,4103,220,10,10,http://localhost:8080/payment/011be731-b42f-4205-82d0-ade919e5870d/execute,29,0,0
+1645423116715,249,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-3,,true,,26841,3113,10,10,null,244,0,0
+1645423116898,67,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4830,189,9,9,http://localhost:8080/full/ec708ec5-4393-4ae8-8ff5-16032d45d349,67,0,0
+1645423116958,12,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4089,220,9,9,http://localhost:8080/payment/f1f33b19-df3f-44c7-86e3-2e538578bf40/execute,12,0,0
+1645423116723,247,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26682,3113,9,9,null,244,0,0
+1645423116970,2,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,9,9,http://localhost:8080/basket,2,0,0
+1645423116973,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,9,9,null,0,0,0
+1645423116910,67,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2171,253,9,9,http://localhost:8080/basket/be05b659-4e69-4635-b872-d293db406124/item/0d21ebe6-5057-4b1f-90fb-1354deadb835,67,0,0
+1645423116973,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1214,253,9,9,http://localhost:8080/basket/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/item/deb4957c-4a64-4db2-96b0-344876148096,8,0,0
+1645423116930,53,Initialize Payment,200,OK,Thread-Gruppe 1-4,text,true,,3995,223,9,9,http://localhost:8080/payment/a109310b-f678-4ab7-b369-ffb4298dffb1/initialize,53,0,0
+1645423116935,50,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4752,189,9,9,http://localhost:8080/full/5571d4b8-b7ab-406d-bba2-cd98f8f47236,50,0,0
+1645423116962,30,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4743,189,9,9,http://localhost:8080/full/27383e19-c2ea-4778-b025-afb9159b125c,30,0,0
+1645423116981,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2165,253,9,9,http://localhost:8080/basket/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/item/c1454196-a624-4ec9-9c79-5f11ba586a28,15,0,0
+1645423116983,15,Execute Payment,200,OK,Thread-Gruppe 1-4,text,true,,4105,220,9,9,http://localhost:8080/payment/a109310b-f678-4ab7-b369-ffb4298dffb1/execute,15,0,0
+1645423116776,222,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-4,,true,,26833,3113,9,9,null,214,0,0
+1645423116933,69,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4729,189,8,8,http://localhost:8080/full/358a00e8-9c60-4b31-bbee-fadf896bfab1,69,0,0
+1645423116992,14,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1010,331,8,8,http://localhost:8080/payment/27383e19-c2ea-4778-b025-afb9159b125c,14,0,0
+1645423116956,52,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1197,253,8,8,http://localhost:8080/basket/eadd56a4-5d80-4b41-97dc-cf98734479dd/item/4c6fee8c-90b8-4fc2-a655-5da4b6a7d252,52,0,0
+1645423116966,46,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4769,189,8,8,http://localhost:8080/full/ec708ec5-4393-4ae8-8ff5-16032d45d349,46,0,0
+1645423116978,41,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3113,253,8,8,http://localhost:8080/basket/be05b659-4e69-4635-b872-d293db406124/item/8d6552e1-bca4-43cc-8f97-c7c67e84662a,41,0,0
+1645423116957,64,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2173,253,8,8,http://localhost:8080/basket/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/item/41380da5-728d-4fbf-86b5-c5834428d6e9,64,0,0
+1645423117007,14,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,3994,223,8,8,http://localhost:8080/payment/27383e19-c2ea-4778-b025-afb9159b125c/initialize,14,0,0
+1645423116996,28,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3082,253,8,8,http://localhost:8080/basket/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/item/353fcdd0-d419-424a-b1a8-06dbb64753f8,28,0,0
+1645423117003,23,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4730,189,8,8,http://localhost:8080/full/358a00e8-9c60-4b31-bbee-fadf896bfab1,23,0,0
+1645423117021,7,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4103,220,8,8,http://localhost:8080/payment/27383e19-c2ea-4778-b025-afb9159b125c/execute,7,0,0
+1645423116811,217,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26765,3113,8,8,null,213,0,0
+1645423117029,3,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,8,8,http://localhost:8080/basket,3,0,0
+1645423117033,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,8,8,null,0,0,0
+1645423116985,50,View Basket,200,OK,Thread-Gruppe 1-1,text,true,,4702,189,8,8,http://localhost:8080/full/5571d4b8-b7ab-406d-bba2-cd98f8f47236,50,0,0
+1645423117013,23,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1016,331,8,8,http://localhost:8080/payment/ec708ec5-4393-4ae8-8ff5-16032d45d349,23,0,0
+1645423117009,33,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2131,253,8,8,http://localhost:8080/basket/eadd56a4-5d80-4b41-97dc-cf98734479dd/item/f816ec0d-0b2e-41ba-ba75-3e294c357b88,33,0,0
+1645423117033,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1225,253,8,8,http://localhost:8080/basket/dbf41afd-5190-47e6-98ac-1b22028b1d3e/item/7e96c074-b206-4438-a81e-632cc8918d7a,11,0,0
+1645423117021,30,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3087,253,8,8,http://localhost:8080/basket/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/item/209bb56e-17d3-43f7-9e1f-21dca5b2fe0e,30,0,0
+1645423117044,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2150,253,8,8,http://localhost:8080/basket/dbf41afd-5190-47e6-98ac-1b22028b1d3e/item/cd4dff53-abf1-45f4-b41e-31cdb47adf0c,9,0,0
+1645423117024,32,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1356,999,8,8,http://localhost:8080/checkout/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/checkout-data,32,0,0
+1645423117035,24,Add Payment,200,OK,Thread-Gruppe 1-1,text,true,,1010,331,8,8,http://localhost:8080/payment/5571d4b8-b7ab-406d-bba2-cd98f8f47236,24,0,0
+1645423117020,41,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1351,999,8,8,http://localhost:8080/checkout/be05b659-4e69-4635-b872-d293db406124/checkout-data,41,0,0
+1645423117054,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3086,253,8,8,http://localhost:8080/basket/dbf41afd-5190-47e6-98ac-1b22028b1d3e/item/d16e3ce5-4c45-4431-b32a-3365f2088cc3,7,0,0
+1645423117042,27,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3071,253,8,8,http://localhost:8080/basket/eadd56a4-5d80-4b41-97dc-cf98734479dd/item/ab7e9d6f-157b-4a7d-bcf2-133d8605fcdd,27,0,0
+1645423117056,20,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4789,189,8,8,http://localhost:8080/full/9918d31f-d230-4bb0-aa5e-a9693cb4d77c,20,0,0
+1645423117036,42,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,3992,223,8,8,http://localhost:8080/payment/ec708ec5-4393-4ae8-8ff5-16032d45d349/initialize,42,0,0
+1645423117059,22,Initialize Payment,200,OK,Thread-Gruppe 1-1,text,true,,3992,223,8,8,http://localhost:8080/payment/5571d4b8-b7ab-406d-bba2-cd98f8f47236/initialize,22,0,0
+1645423117076,7,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4802,189,8,8,http://localhost:8080/full/9918d31f-d230-4bb0-aa5e-a9693cb4d77c,7,0,0
+1645423117062,24,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1356,999,8,8,http://localhost:8080/checkout/dbf41afd-5190-47e6-98ac-1b22028b1d3e/checkout-data,24,0,0
+1645423117083,7,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1010,331,8,8,http://localhost:8080/payment/9918d31f-d230-4bb0-aa5e-a9693cb4d77c,7,0,0
+1645423117061,34,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4749,189,8,8,http://localhost:8080/full/be05b659-4e69-4635-b872-d293db406124,34,0,0
+1645423117027,73,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1003,331,8,8,http://localhost:8080/payment/358a00e8-9c60-4b31-bbee-fadf896bfab1,73,0,0
+1645423117087,15,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4768,189,8,8,http://localhost:8080/full/dbf41afd-5190-47e6-98ac-1b22028b1d3e,15,0,0
+1645423117090,13,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4036,223,8,8,http://localhost:8080/payment/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/initialize,13,0,0
+1645423117051,52,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1344,999,8,8,http://localhost:8080/checkout/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/checkout-data,52,0,0
+1645423117078,28,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4049,220,8,8,http://localhost:8080/payment/ec708ec5-4393-4ae8-8ff5-16032d45d349/execute,28,0,0
+1645423116780,326,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26801,3113,8,8,null,319,0,0
+1645423117082,26,Execute Payment,200,OK,Thread-Gruppe 1-1,text,true,,4069,220,8,8,http://localhost:8080/payment/5571d4b8-b7ab-406d-bba2-cd98f8f47236/execute,26,0,0
+1645423116772,336,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-1,,true,,26689,3113,8,8,null,332,0,0
+1645423117103,5,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4110,220,8,8,http://localhost:8080/payment/9918d31f-d230-4bb0-aa5e-a9693cb4d77c/execute,5,0,0
+1645423116970,138,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26906,3113,8,8,null,137,0,0
+1645423117102,9,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4775,189,7,7,http://localhost:8080/full/dbf41afd-5190-47e6-98ac-1b22028b1d3e,8,0,0
+1645423117109,2,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,7,7,http://localhost:8080/basket,2,0,0
+1645423117111,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,7,7,null,0,0,0
+1645423117095,19,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4742,189,7,7,http://localhost:8080/full/be05b659-4e69-4635-b872-d293db406124,19,0,0
+1645423117112,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1219,253,7,7,http://localhost:8080/basket/5a27dc1d-4058-46d7-9026-f74f2851db43/item/ab199de8-9f99-4683-8836-2802588d52bb,8,0,0
+1645423117101,21,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4040,223,7,7,http://localhost:8080/payment/358a00e8-9c60-4b31-bbee-fadf896bfab1/initialize,21,0,0
+1645423117106,17,Create Basket,201,Created,Thread-Gruppe 1-2,text,true,,342,203,7,7,http://localhost:8080/basket,17,0,0
+1645423117123,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-2,text,true,,0,0,7,7,null,0,0,0
+1645423117111,13,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1003,331,7,7,http://localhost:8080/payment/dbf41afd-5190-47e6-98ac-1b22028b1d3e,13,0,0
+1645423117115,13,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1010,331,7,7,http://localhost:8080/payment/be05b659-4e69-4635-b872-d293db406124,13,0,0
+1645423117121,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2169,253,7,7,http://localhost:8080/basket/5a27dc1d-4058-46d7-9026-f74f2851db43/item/54bce92d-ef1c-4ccc-9a54-04287ed8831f,8,0,0
+1645423117070,63,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1342,999,7,7,http://localhost:8080/checkout/eadd56a4-5d80-4b41-97dc-cf98734479dd/checkout-data,63,0,0
+1645423117125,10,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4026,223,7,7,http://localhost:8080/payment/dbf41afd-5190-47e6-98ac-1b22028b1d3e/initialize,10,0,0
+1645423117122,13,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4050,220,7,7,http://localhost:8080/payment/358a00e8-9c60-4b31-bbee-fadf896bfab1/execute,13,0,0
+1645423116787,348,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26715,3113,7,7,null,343,0,0
+1645423117135,6,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4077,220,7,7,http://localhost:8080/payment/dbf41afd-5190-47e6-98ac-1b22028b1d3e/execute,5,0,0
+1645423117028,113,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26808,3113,7,7,null,105,0,0
+1645423117129,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3105,253,7,7,http://localhost:8080/basket/5a27dc1d-4058-46d7-9026-f74f2851db43/item/d1440359-a356-411e-a0c7-0ec7d909522b,14,0,0
+1645423117141,3,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,7,7,http://localhost:8080/basket,3,0,0
+1645423117144,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,7,7,null,0,0,0
+1645423117123,23,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,1209,253,7,7,http://localhost:8080/basket/06f6b28a-76bc-46ee-8f67-a56b18da09d2/item/989f2db6-7b08-44a0-985f-12362ae6bd69,23,0,0
+1645423117145,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1221,253,7,7,http://localhost:8080/basket/24ced352-c63f-4945-af72-2dfc097119a6/item/2764bc0d-4369-490f-bcff-8f3d4243e006,9,0,0
+1645423117154,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2145,253,7,7,http://localhost:8080/basket/24ced352-c63f-4945-af72-2dfc097119a6/item/3dd713f8-f9b1-4537-9423-e9251ef4627f,8,0,0
+1645423117129,33,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,3993,223,7,7,http://localhost:8080/payment/be05b659-4e69-4635-b872-d293db406124/initialize,33,0,0
+1645423117103,61,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4702,189,7,7,http://localhost:8080/full/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3,60,0,0
+1645423117135,36,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,7,7,http://localhost:8080/basket,36,0,0
+1645423117172,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,7,7,null,0,0,0
+1645423117146,26,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,2145,253,7,7,http://localhost:8080/basket/06f6b28a-76bc-46ee-8f67-a56b18da09d2/item/a17250ca-127a-4dfe-a2cd-d006f6c1549b,26,0,0
+1645423117162,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3098,253,7,7,http://localhost:8080/basket/24ced352-c63f-4945-af72-2dfc097119a6/item/6921c4ba-748d-44e5-b7ff-402f6d8f4495,10,0,0
+1645423117143,34,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1351,999,7,7,http://localhost:8080/checkout/5a27dc1d-4058-46d7-9026-f74f2851db43/checkout-data,34,0,0
+1645423117162,18,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4050,220,7,7,http://localhost:8080/payment/be05b659-4e69-4635-b872-d293db406124/execute,18,0,0
+1645423116854,326,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26738,3113,7,7,null,320,0,0
+1645423117172,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1216,253,7,7,http://localhost:8080/basket/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/item/e3c3e344-27e2-4af5-9c44-9870d780a28e,17,0,0
+1645423117178,19,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4798,189,7,7,http://localhost:8080/full/5a27dc1d-4058-46d7-9026-f74f2851db43,19,0,0
+1645423117173,26,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1351,999,7,7,http://localhost:8080/checkout/24ced352-c63f-4945-af72-2dfc097119a6/checkout-data,26,0,0
+1645423117173,29,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-2,text,true,,3105,253,7,7,http://localhost:8080/basket/06f6b28a-76bc-46ee-8f67-a56b18da09d2/item/67ed8578-7963-4f51-a30f-3f055ad0332e,29,0,0
+1645423117197,8,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4766,189,7,7,http://localhost:8080/full/5a27dc1d-4058-46d7-9026-f74f2851db43,8,0,0
+1645423117133,74,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4790,189,7,7,http://localhost:8080/full/eadd56a4-5d80-4b41-97dc-cf98734479dd,74,0,0
+1645423117189,22,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2163,253,7,7,http://localhost:8080/basket/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/item/69643875-e612-4619-96b0-6aba87d812dd,22,0,0
+1645423117180,32,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,7,7,http://localhost:8080/basket,32,0,0
+1645423117212,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,7,7,null,0,0,0
+1645423117206,12,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1003,331,7,7,http://localhost:8080/payment/5a27dc1d-4058-46d7-9026-f74f2851db43,12,0,0
+1645423117164,55,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4741,189,7,7,http://localhost:8080/full/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3,54,0,0
+1645423117211,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3080,253,7,7,http://localhost:8080/basket/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/item/560f015b-1187-4005-b4f6-fdde7cccfd58,13,0,0
+1645423117207,18,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4758,189,7,7,http://localhost:8080/full/eadd56a4-5d80-4b41-97dc-cf98734479dd,18,0,0
+1645423117199,32,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4702,189,7,7,http://localhost:8080/full/24ced352-c63f-4945-af72-2dfc097119a6,32,0,0
+1645423117218,14,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,3991,223,7,7,http://localhost:8080/payment/5a27dc1d-4058-46d7-9026-f74f2851db43/initialize,14,0,0
+1645423117233,4,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4076,220,7,7,http://localhost:8080/payment/5a27dc1d-4058-46d7-9026-f74f2851db43/execute,4,0,0
+1645423117108,129,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26820,3113,7,7,null,123,0,0
+1645423117232,8,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4703,189,7,7,http://localhost:8080/full/24ced352-c63f-4945-af72-2dfc097119a6,8,0,0
+1645423117219,23,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,7,7,http://localhost:8080/payment/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3,23,0,0
+1645423117238,4,Create Basket,201,Created,Thread-Gruppe 1-7,text,true,,342,203,7,7,http://localhost:8080/basket,4,0,0
+1645423117243,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-7,text,true,,0,0,7,7,null,0,0,0
+1645423117226,21,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1001,331,7,7,http://localhost:8080/payment/eadd56a4-5d80-4b41-97dc-cf98734479dd,21,0,0
+1645423117240,16,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1016,331,7,7,http://localhost:8080/payment/24ced352-c63f-4945-af72-2dfc097119a6,16,0,0
+1645423117243,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,1211,253,7,7,http://localhost:8080/basket/b7507399-de0f-4161-9839-e5dae812f93c/item/d3b7f54a-ab7c-41c6-a1e2-e5fe1082617a,14,0,0
+1645423117202,56,Set Checkout Data,200,OK,Thread-Gruppe 1-2,text,true,,1351,999,7,7,http://localhost:8080/checkout/06f6b28a-76bc-46ee-8f67-a56b18da09d2/checkout-data,55,0,0
+1645423117258,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,2162,253,7,7,http://localhost:8080/basket/b7507399-de0f-4161-9839-e5dae812f93c/item/539eb005-caff-4ff8-b917-b87c9dc67db9,5,0,0
+1645423117242,23,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4048,223,7,7,http://localhost:8080/payment/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/initialize,23,0,0
+1645423117212,55,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1201,253,7,7,http://localhost:8080/basket/24bfe533-dc79-4195-9d4a-5844963c79eb/item/c090af38-d2b5-4e76-b4e2-1fc1b637da57,55,0,0
+1645423117257,13,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,3993,223,7,7,http://localhost:8080/payment/24ced352-c63f-4945-af72-2dfc097119a6/initialize,13,0,0
+1645423117264,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-7,text,true,,3109,253,7,7,http://localhost:8080/basket/b7507399-de0f-4161-9839-e5dae812f93c/item/1b275c1b-7946-4b3c-9de2-f6deaf04d028,9,0,0
+1645423117270,6,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4078,220,7,7,http://localhost:8080/payment/24ced352-c63f-4945-af72-2dfc097119a6/execute,6,0,0
+1645423117141,135,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26649,3113,7,7,null,131,0,0
+1645423117277,2,Create Basket,201,Created,Thread-Gruppe 1-8,text,true,,342,203,7,7,http://localhost:8080/basket,2,0,0
+1645423117279,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-8,text,true,,0,0,7,7,null,0,0,0
+1645423117256,25,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4012,223,7,7,http://localhost:8080/payment/eadd56a4-5d80-4b41-97dc-cf98734479dd/initialize,25,0,0
+1645423117279,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,1210,253,7,7,http://localhost:8080/basket/6ab30fb0-e06f-45a2-8586-1041f1a0a124/item/67e5c081-b5dc-42be-aecb-fafe06ac134e,8,0,0
+1645423117258,30,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4701,189,7,7,http://localhost:8080/full/06f6b28a-76bc-46ee-8f67-a56b18da09d2,30,0,0
+1645423117266,23,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4051,220,7,7,http://localhost:8080/payment/d8ecdb39-99ff-4b35-b8e7-edc85b9d80f3/execute,23,0,0
+1645423116867,423,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26694,3113,7,7,null,418,0,0
+1645423117288,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,2161,253,7,7,http://localhost:8080/basket/6ab30fb0-e06f-45a2-8586-1041f1a0a124/item/9e561f9c-1903-4d82-b7aa-f2bbe7b36e9e,7,0,0
+1645423117281,14,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4089,220,7,7,http://localhost:8080/payment/eadd56a4-5d80-4b41-97dc-cf98734479dd/execute,14,0,0
+1645423116918,378,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26733,3113,7,7,null,363,0,0
+1645423117290,7,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,7,7,http://localhost:8080/basket,7,0,0
+1645423117297,1,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,7,7,null,0,0,0
+1645423117274,24,Set Checkout Data,200,OK,Thread-Gruppe 1-7,text,true,,1344,999,7,7,http://localhost:8080/checkout/b7507399-de0f-4161-9839-e5dae812f93c/checkout-data,24,0,0
+1645423117296,3,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,7,7,http://localhost:8080/basket,3,0,0
+1645423117299,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,7,7,null,0,0,0
+1645423117295,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-8,text,true,,3088,253,7,7,http://localhost:8080/basket/6ab30fb0-e06f-45a2-8586-1041f1a0a124/item/ba3931b6-1321-41a4-9506-af49072e3384,8,0,0
+1645423117298,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1211,253,7,7,http://localhost:8080/basket/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/item/c4b0b4b1-af10-4666-891c-9316ad402ad9,8,0,0
+1645423117299,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1202,253,7,7,http://localhost:8080/basket/289915f4-ce23-4f4a-9e99-e0c9b241e67c/item/5d1851d7-575e-4bd0-bb5f-f7899e3f40d2,15,0,0
+1645423117224,91,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1344,999,7,7,http://localhost:8080/checkout/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/checkout-data,91,0,0
+1645423117268,52,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2160,253,7,7,http://localhost:8080/basket/24bfe533-dc79-4195-9d4a-5844963c79eb/item/30746918-2e7a-44e5-9042-57d39ed4e0da,52,0,0
+1645423117299,22,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4728,189,7,7,http://localhost:8080/full/b7507399-de0f-4161-9839-e5dae812f93c,21,0,0
+1645423117307,16,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2139,253,7,7,http://localhost:8080/basket/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/item/389f3d23-dc59-4d53-bf0c-cbacbe42780a,16,0,0
+1645423117304,22,Set Checkout Data,200,OK,Thread-Gruppe 1-8,text,true,,1351,999,7,7,http://localhost:8080/checkout/6ab30fb0-e06f-45a2-8586-1041f1a0a124/checkout-data,22,0,0
+1645423117321,7,View Basket,200,OK,Thread-Gruppe 1-7,text,true,,4708,189,7,7,http://localhost:8080/full/b7507399-de0f-4161-9839-e5dae812f93c,7,0,0
+1645423117314,15,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2143,253,7,7,http://localhost:8080/basket/289915f4-ce23-4f4a-9e99-e0c9b241e67c/item/6bf9e1b8-68ba-41d1-9b2c-96f6c2de6a48,15,0,0
+1645423117289,40,View Basket,200,OK,Thread-Gruppe 1-2,text,true,,4707,189,7,7,http://localhost:8080/full/06f6b28a-76bc-46ee-8f67-a56b18da09d2,40,0,0
+1645423117324,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3112,253,7,7,http://localhost:8080/basket/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/item/63e7ffc4-d5ec-453c-b292-238ac1cd57b0,11,0,0
+1645423117329,8,Add Payment,200,OK,Thread-Gruppe 1-7,text,true,,1003,331,7,7,http://localhost:8080/payment/b7507399-de0f-4161-9839-e5dae812f93c,8,0,0
+1645423117330,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3118,253,7,7,http://localhost:8080/basket/289915f4-ce23-4f4a-9e99-e0c9b241e67c/item/8ec36eee-b27a-4cc0-bbca-e9dff4af0c79,12,0,0
+1645423117326,22,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4798,189,7,7,http://localhost:8080/full/6ab30fb0-e06f-45a2-8586-1041f1a0a124,21,0,0
+1645423117337,15,Initialize Payment,200,OK,Thread-Gruppe 1-7,text,true,,4014,223,7,7,http://localhost:8080/payment/b7507399-de0f-4161-9839-e5dae812f93c/initialize,15,0,0
+1645423117315,37,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4760,189,7,7,http://localhost:8080/full/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497,37,0,0
+1645423117348,9,View Basket,200,OK,Thread-Gruppe 1-8,text,true,,4811,189,7,7,http://localhost:8080/full/6ab30fb0-e06f-45a2-8586-1041f1a0a124,9,0,0
+1645423117352,6,Execute Payment,200,OK,Thread-Gruppe 1-7,text,true,,4045,220,7,7,http://localhost:8080/payment/b7507399-de0f-4161-9839-e5dae812f93c/execute,6,0,0
+1645423117237,121,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-7,,true,,26666,3113,7,7,null,113,0,0
+1645423117320,44,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3083,253,6,6,http://localhost:8080/basket/24bfe533-dc79-4195-9d4a-5844963c79eb/item/0222ddae-8b8c-45a0-9274-16732e7ec8ae,44,0,0
+1645423117352,17,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4761,189,6,6,http://localhost:8080/full/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497,17,0,0
+1645423117336,37,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1356,999,6,6,http://localhost:8080/checkout/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/checkout-data,37,0,0
+1645423117358,15,Add Payment,200,OK,Thread-Gruppe 1-8,text,true,,1003,331,6,6,http://localhost:8080/payment/6ab30fb0-e06f-45a2-8586-1041f1a0a124,15,0,0
+1645423117330,44,Add Payment,200,OK,Thread-Gruppe 1-2,text,true,,1010,331,6,6,http://localhost:8080/payment/06f6b28a-76bc-46ee-8f67-a56b18da09d2,44,0,0
+1645423117374,16,Initialize Payment,200,OK,Thread-Gruppe 1-8,text,true,,4034,223,6,6,http://localhost:8080/payment/6ab30fb0-e06f-45a2-8586-1041f1a0a124/initialize,16,0,0
+1645423117365,29,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1344,999,6,6,http://localhost:8080/checkout/24bfe533-dc79-4195-9d4a-5844963c79eb/checkout-data,29,0,0
+1645423117390,6,Execute Payment,200,OK,Thread-Gruppe 1-8,text,true,,4051,220,6,6,http://localhost:8080/payment/6ab30fb0-e06f-45a2-8586-1041f1a0a124/execute,6,0,0
+1645423117276,120,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-8,,true,,26849,3113,6,6,null,114,0,0
+1645423117343,55,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1344,999,5,5,http://localhost:8080/checkout/289915f4-ce23-4f4a-9e99-e0c9b241e67c/checkout-data,55,0,0
+1645423117369,36,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1003,331,5,5,http://localhost:8080/payment/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497,36,0,0
+1645423117374,39,Initialize Payment,200,OK,Thread-Gruppe 1-2,text,true,,4053,223,5,5,http://localhost:8080/payment/06f6b28a-76bc-46ee-8f67-a56b18da09d2/initialize,39,0,0
+1645423117373,44,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4764,189,5,5,http://localhost:8080/full/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73,44,0,0
+1645423117395,32,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4720,189,5,5,http://localhost:8080/full/24bfe533-dc79-4195-9d4a-5844963c79eb,32,0,0
+1645423117399,31,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4725,189,5,5,http://localhost:8080/full/289915f4-ce23-4f4a-9e99-e0c9b241e67c,30,0,0
+1645423117417,18,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4765,189,5,5,http://localhost:8080/full/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73,18,0,0
+1645423117405,35,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4040,223,5,5,http://localhost:8080/payment/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/initialize,35,0,0
+1645423117430,12,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4699,189,5,5,http://localhost:8080/full/289915f4-ce23-4f4a-9e99-e0c9b241e67c,12,0,0
+1645423117414,30,Execute Payment,200,OK,Thread-Gruppe 1-2,text,true,,4097,220,5,5,http://localhost:8080/payment/06f6b28a-76bc-46ee-8f67-a56b18da09d2/execute,30,0,0
+1645423117106,338,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-2,,true,,26720,3113,5,5,null,333,0,0
+1645423117427,24,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4728,189,4,4,http://localhost:8080/full/24bfe533-dc79-4195-9d4a-5844963c79eb,24,0,0
+1645423117435,16,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,4,4,http://localhost:8080/payment/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73,16,0,0
+1645423117440,16,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4043,220,4,4,http://localhost:8080/payment/d0f7e23d-e17c-462a-bb96-2e6e8ebbd497/execute,16,0,0
+1645423117135,321,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26752,3113,4,4,null,320,0,0
+1645423117443,16,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1003,331,4,4,http://localhost:8080/payment/289915f4-ce23-4f4a-9e99-e0c9b241e67c,16,0,0
+1645423117451,12,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1016,331,4,4,http://localhost:8080/payment/24bfe533-dc79-4195-9d4a-5844963c79eb,12,0,0
+1645423117456,9,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,4,4,http://localhost:8080/basket,9,0,0
+1645423117465,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,4,4,null,0,0,0
+1645423117451,18,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,3988,223,4,4,http://localhost:8080/payment/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/initialize,18,0,0
+1645423117463,13,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4047,223,4,4,http://localhost:8080/payment/24bfe533-dc79-4195-9d4a-5844963c79eb/initialize,13,0,0
+1645423117459,20,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4023,223,4,4,http://localhost:8080/payment/289915f4-ce23-4f4a-9e99-e0c9b241e67c/initialize,20,0,0
+1645423117465,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1197,253,4,4,http://localhost:8080/basket/048af48d-39f2-4821-b880-514f27521f8a/item/ed47b14d-0f8d-422b-8660-4d119defa488,17,0,0
+1645423117469,15,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4097,220,4,4,http://localhost:8080/payment/e9b9eed9-6f5c-4ee4-afa3-3234cddf9f73/execute,15,0,0
+1645423117290,194,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26777,3113,4,4,null,190,0,0
+1645423117477,9,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4080,220,4,4,http://localhost:8080/payment/24bfe533-dc79-4195-9d4a-5844963c79eb/execute,9,0,0
+1645423117180,307,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26721,3113,4,4,null,302,0,0
+1645423117479,9,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4047,220,4,4,http://localhost:8080/payment/289915f4-ce23-4f4a-9e99-e0c9b241e67c/execute,9,0,0
+1645423117296,192,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26646,3113,4,4,null,187,0,0
+1645423117485,4,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,4,4,http://localhost:8080/basket,4,0,0
+1645423117490,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,4,4,null,0,0,0
+1645423117489,2,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,4,4,http://localhost:8080/basket,2,0,0
+1645423117491,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,4,4,null,0,0,0
+1645423117482,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2150,253,4,4,http://localhost:8080/basket/048af48d-39f2-4821-b880-514f27521f8a/item/24e95b50-db29-43d3-a4b7-53c76a5e4d77,10,0,0
+1645423117490,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1220,253,4,4,http://localhost:8080/basket/f56675ba-4d70-497d-b0b0-4ab85be547e0/item/f4da1e2f-041a-425d-adb2-a4676a5b5677,6,0,0
+1645423117492,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3114,253,4,4,http://localhost:8080/basket/048af48d-39f2-4821-b880-514f27521f8a/item/4600d436-6fc6-48ac-b077-2f7c223e107b,5,0,0
+1645423117487,11,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,4,4,http://localhost:8080/basket,11,0,0
+1645423117498,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,4,4,null,0,0,0
+1645423117491,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1204,253,4,4,http://localhost:8080/basket/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/item/f93b31a2-7cac-47cd-9e76-519054ea4e12,11,0,0
+1645423117496,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2158,253,4,4,http://localhost:8080/basket/f56675ba-4d70-497d-b0b0-4ab85be547e0/item/9f6ffcfb-5365-4db7-8722-9112bac16e4b,10,0,0
+1645423117502,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2165,253,4,4,http://localhost:8080/basket/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/item/26324d02-1249-498e-a715-2129c8c1ddaa,7,0,0
+1645423117497,15,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1349,999,4,4,http://localhost:8080/checkout/048af48d-39f2-4821-b880-514f27521f8a/checkout-data,15,0,0
+1645423117506,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3131,253,4,4,http://localhost:8080/basket/f56675ba-4d70-497d-b0b0-4ab85be547e0/item/0c1af397-66bf-4858-b988-d8be4f2374b9,8,0,0
+1645423117498,19,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1208,253,4,4,http://localhost:8080/basket/d1953b83-a435-4d2a-879b-f4c99e0b1038/item/7c04b6a4-92ca-4a30-9678-9b33a4752f60,19,0,0
+1645423117509,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3134,253,4,4,http://localhost:8080/basket/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/item/579277f8-d29f-4288-bf91-af3905e7e748,11,0,0
+1645423117512,15,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4723,189,4,4,http://localhost:8080/full/048af48d-39f2-4821-b880-514f27521f8a,15,0,0
+1645423117518,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2155,253,4,4,http://localhost:8080/basket/d1953b83-a435-4d2a-879b-f4c99e0b1038/item/aa59f3a0-66fe-4fd0-8639-2363d5fa8ca4,12,0,0
+1645423117514,20,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1351,999,4,4,http://localhost:8080/checkout/f56675ba-4d70-497d-b0b0-4ab85be547e0/checkout-data,20,0,0
+1645423117527,9,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4712,189,4,4,http://localhost:8080/full/048af48d-39f2-4821-b880-514f27521f8a,9,0,0
+1645423117530,10,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3083,253,4,4,http://localhost:8080/basket/d1953b83-a435-4d2a-879b-f4c99e0b1038/item/9d574cc9-f184-43e2-8cf7-561245fc4ac2,10,0,0
+1645423117536,13,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1001,331,4,4,http://localhost:8080/payment/048af48d-39f2-4821-b880-514f27521f8a,13,0,0
+1645423117520,34,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1344,999,4,4,http://localhost:8080/checkout/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/checkout-data,34,0,0
+1645423117540,45,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1349,999,4,4,http://localhost:8080/checkout/d1953b83-a435-4d2a-879b-f4c99e0b1038/checkout-data,45,0,0
+1645423117534,54,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4749,189,4,4,http://localhost:8080/full/f56675ba-4d70-497d-b0b0-4ab85be547e0,54,0,0
+1645423117549,44,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4033,223,4,4,http://localhost:8080/payment/048af48d-39f2-4821-b880-514f27521f8a/initialize,44,0,0
+1645423117555,50,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4772,189,4,4,http://localhost:8080/full/f42c4aab-f70b-404f-a1d6-28acd28c9f4c,50,0,0
+1645423117585,27,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4760,189,4,4,http://localhost:8080/full/d1953b83-a435-4d2a-879b-f4c99e0b1038,27,0,0
+1645423117589,24,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4704,189,4,4,http://localhost:8080/full/f56675ba-4d70-497d-b0b0-4ab85be547e0,24,0,0
+1645423117593,24,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4036,220,4,4,http://localhost:8080/payment/048af48d-39f2-4821-b880-514f27521f8a/execute,24,0,0
+1645423117456,161,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26657,3113,4,4,null,161,0,0
+1645423117605,13,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4807,189,4,4,http://localhost:8080/full/f42c4aab-f70b-404f-a1d6-28acd28c9f4c,13,0,0
+1645423117612,8,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4794,189,4,4,http://localhost:8080/full/d1953b83-a435-4d2a-879b-f4c99e0b1038,8,0,0
+1645423117613,10,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1010,331,4,4,http://localhost:8080/payment/f56675ba-4d70-497d-b0b0-4ab85be547e0,10,0,0
+1645423117617,7,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,4,4,http://localhost:8080/basket,7,0,0
+1645423117625,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,4,4,null,0,0,0
+1645423117619,9,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1003,331,4,4,http://localhost:8080/payment/f42c4aab-f70b-404f-a1d6-28acd28c9f4c,9,0,0
+1645423117620,9,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1001,331,4,4,http://localhost:8080/payment/d1953b83-a435-4d2a-879b-f4c99e0b1038,9,0,0
+1645423117625,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1201,253,4,4,http://localhost:8080/basket/99e0528d-07c5-4da9-9247-89dd3115a24d/item/9909c91d-f067-4746-ab2a-4096621ce3d9,9,0,0
+1645423117624,13,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4045,223,4,4,http://localhost:8080/payment/f56675ba-4d70-497d-b0b0-4ab85be547e0/initialize,13,0,0
+1645423117629,10,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4041,223,4,4,http://localhost:8080/payment/d1953b83-a435-4d2a-879b-f4c99e0b1038/initialize,10,0,0
+1645423117629,13,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4048,223,4,4,http://localhost:8080/payment/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/initialize,13,0,0
+1645423117634,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2160,253,4,4,http://localhost:8080/basket/99e0528d-07c5-4da9-9247-89dd3115a24d/item/ce1d075f-df98-4de9-9758-a29c6b6c5970,9,0,0
+1645423117637,9,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4098,220,4,4,http://localhost:8080/payment/f56675ba-4d70-497d-b0b0-4ab85be547e0/execute,9,0,0
+1645423117640,6,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4045,220,4,4,http://localhost:8080/payment/d1953b83-a435-4d2a-879b-f4c99e0b1038/execute,6,0,0
+1645423117484,162,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26808,3113,4,4,null,158,0,0
+1645423117487,159,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26778,3113,4,4,null,157,0,0
+1645423117642,7,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4110,220,4,4,http://localhost:8080/payment/f42c4aab-f70b-404f-a1d6-28acd28c9f4c/execute,7,0,0
+1645423117488,161,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26929,3113,4,4,null,157,0,0
+1645423117646,4,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,4,4,http://localhost:8080/basket,4,0,0
+1645423117650,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,4,4,null,0,0,0
+1645423117650,1,Create Basket,201,Created,Thread-Gruppe 1-5,text,true,,342,203,4,4,http://localhost:8080/basket,1,0,0
+1645423117652,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-5,text,true,,0,0,4,4,null,0,0,0
+1645423117643,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3080,253,4,4,http://localhost:8080/basket/99e0528d-07c5-4da9-9247-89dd3115a24d/item/29f0c970-2a77-4f8c-b280-94a0d256a23d,9,0,0
+1645423117646,7,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,4,4,http://localhost:8080/basket,7,0,0
+1645423117654,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,4,4,null,0,0,0
+1645423117651,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1216,253,4,4,http://localhost:8080/basket/06eeb6fa-c227-4248-aaf7-5aa28f107684/item/cf635690-f4ba-49b2-b503-07c884802685,5,0,0
+1645423117652,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,1216,253,4,4,http://localhost:8080/basket/8eeabc58-8f18-4e26-87f4-fdb678906441/item/10344073-b802-4dab-8dc1-383d05b44753,11,0,0
+1645423117657,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2156,253,4,4,http://localhost:8080/basket/06eeb6fa-c227-4248-aaf7-5aa28f107684/item/7eb0586b-4d1f-4c5d-9d40-fc22e5d44c47,9,0,0
+1645423117653,15,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1354,999,4,4,http://localhost:8080/checkout/99e0528d-07c5-4da9-9247-89dd3115a24d/checkout-data,15,0,0
+1645423117663,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,2145,253,4,4,http://localhost:8080/basket/8eeabc58-8f18-4e26-87f4-fdb678906441/item/2abe68e4-bae2-480a-a3da-f0f12d999cb8,9,0,0
+1645423117654,18,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1216,253,4,4,http://localhost:8080/basket/985b2186-1ceb-474e-a241-cfd035f3a3a3/item/cd3d7a12-bfc5-4465-a554-7e10774734e4,18,0,0
+1645423117667,8,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3117,253,4,4,http://localhost:8080/basket/06eeb6fa-c227-4248-aaf7-5aa28f107684/item/aed7b8d7-33ac-437c-acf2-ce17fe7d568a,8,0,0
+1645423117672,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-5,text,true,,3129,253,4,4,http://localhost:8080/basket/8eeabc58-8f18-4e26-87f4-fdb678906441/item/f955cdb0-9b47-490a-9a91-a2b781bd97e7,6,0,0
+1645423117668,15,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4743,189,4,4,http://localhost:8080/full/99e0528d-07c5-4da9-9247-89dd3115a24d,15,0,0
+1645423117672,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2163,253,4,4,http://localhost:8080/basket/985b2186-1ceb-474e-a241-cfd035f3a3a3/item/9a8ff333-6d0e-4276-a59d-ec96daa0cf32,13,0,0
+1645423117683,5,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4733,189,4,4,http://localhost:8080/full/99e0528d-07c5-4da9-9247-89dd3115a24d,5,0,0
+1645423117675,14,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1351,999,4,4,http://localhost:8080/checkout/06eeb6fa-c227-4248-aaf7-5aa28f107684/checkout-data,14,0,0
+1645423117686,6,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3117,253,4,4,http://localhost:8080/basket/985b2186-1ceb-474e-a241-cfd035f3a3a3/item/ea3fc14b-d07d-4e81-9a13-29c9774927f2,6,0,0
+1645423117689,6,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1008,331,4,4,http://localhost:8080/payment/99e0528d-07c5-4da9-9247-89dd3115a24d,6,0,0
+1645423117679,21,Set Checkout Data,200,OK,Thread-Gruppe 1-5,text,true,,1351,999,4,4,http://localhost:8080/checkout/8eeabc58-8f18-4e26-87f4-fdb678906441/checkout-data,21,0,0
+1645423117692,14,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1344,999,4,4,http://localhost:8080/checkout/985b2186-1ceb-474e-a241-cfd035f3a3a3/checkout-data,14,0,0
+1645423117690,19,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4686,189,4,4,http://localhost:8080/full/06eeb6fa-c227-4248-aaf7-5aa28f107684,19,0,0
+1645423117696,16,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4045,223,4,4,http://localhost:8080/payment/99e0528d-07c5-4da9-9247-89dd3115a24d/initialize,16,0,0
+1645423117701,17,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4739,189,4,4,http://localhost:8080/full/8eeabc58-8f18-4e26-87f4-fdb678906441,17,0,0
+1645423117706,15,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4808,189,4,4,http://localhost:8080/full/985b2186-1ceb-474e-a241-cfd035f3a3a3,15,0,0
+1645423117709,12,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4668,189,4,4,http://localhost:8080/full/06eeb6fa-c227-4248-aaf7-5aa28f107684,12,0,0
+1645423117712,12,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4043,220,4,4,http://localhost:8080/payment/99e0528d-07c5-4da9-9247-89dd3115a24d/execute,12,0,0
+1645423117617,107,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26709,3113,4,4,null,103,0,0
+1645423117718,7,View Basket,200,OK,Thread-Gruppe 1-5,text,true,,4700,189,4,4,http://localhost:8080/full/8eeabc58-8f18-4e26-87f4-fdb678906441,7,0,0
+1645423117721,6,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4769,189,4,4,http://localhost:8080/full/985b2186-1ceb-474e-a241-cfd035f3a3a3,6,0,0
+1645423117721,7,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1010,331,4,4,http://localhost:8080/payment/06eeb6fa-c227-4248-aaf7-5aa28f107684,7,0,0
+1645423117724,5,Create Basket,201,Created,Thread-Gruppe 1-6,text,true,,342,203,4,4,http://localhost:8080/basket,5,0,0
+1645423117729,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-6,text,true,,0,0,4,4,null,0,0,0
+1645423117725,7,Add Payment,200,OK,Thread-Gruppe 1-5,text,true,,1022,331,4,4,http://localhost:8080/payment/8eeabc58-8f18-4e26-87f4-fdb678906441,7,0,0
+1645423117728,4,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1003,331,4,4,http://localhost:8080/payment/985b2186-1ceb-474e-a241-cfd035f3a3a3,4,0,0
+1645423117728,10,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4039,223,4,4,http://localhost:8080/payment/06eeb6fa-c227-4248-aaf7-5aa28f107684/initialize,10,0,0
+1645423117729,12,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,1211,253,4,4,http://localhost:8080/basket/6700cfc8-96a8-4251-b09a-f055854a350f/item/f1623628-065c-4ca7-bb08-985eb2b3660d,12,0,0
+1645423117732,11,Initialize Payment,200,OK,Thread-Gruppe 1-5,text,true,,4032,223,4,4,http://localhost:8080/payment/8eeabc58-8f18-4e26-87f4-fdb678906441/initialize,11,0,0
+1645423117733,16,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,3992,223,4,4,http://localhost:8080/payment/985b2186-1ceb-474e-a241-cfd035f3a3a3/initialize,16,0,0
+1645423117744,5,Execute Payment,200,OK,Thread-Gruppe 1-5,text,true,,4048,220,4,4,http://localhost:8080/payment/8eeabc58-8f18-4e26-87f4-fdb678906441/execute,5,0,0
+1645423117650,99,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-5,,true,,26724,3113,4,4,null,95,0,0
+1645423117738,11,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4050,220,4,4,http://localhost:8080/payment/06eeb6fa-c227-4248-aaf7-5aa28f107684/execute,11,0,0
+1645423117646,103,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26635,3113,4,4,null,99,0,0
+1645423117749,2,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,3,3,http://localhost:8080/basket,2,0,0
+1645423117752,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,3,3,null,0,0,0
+1645423117742,13,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,2159,253,3,3,http://localhost:8080/basket/6700cfc8-96a8-4251-b09a-f055854a350f/item/2cc83691-8532-4454-8558-fe1b256dc6c4,13,0,0
+1645423117752,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1203,253,3,3,http://localhost:8080/basket/ffc61ecc-3896-43cb-94d7-de57713772a7/item/da3bc24a-8072-4a52-b4c2-4924cd9e01ee,5,0,0
+1645423117757,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2158,253,3,3,http://localhost:8080/basket/ffc61ecc-3896-43cb-94d7-de57713772a7/item/092f2cd5-8663-4126-8e72-81e200282667,4,0,0
+1645423117749,13,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4049,220,3,3,http://localhost:8080/payment/985b2186-1ceb-474e-a241-cfd035f3a3a3/execute,13,0,0
+1645423117646,116,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26803,3113,3,3,null,112,0,0
+1645423117755,11,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-6,text,true,,3089,253,3,3,http://localhost:8080/basket/6700cfc8-96a8-4251-b09a-f055854a350f/item/168cf057-6aae-45d0-8cbe-4eb74c312968,11,0,0
+1645423117761,7,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3115,253,3,3,http://localhost:8080/basket/ffc61ecc-3896-43cb-94d7-de57713772a7/item/b00a7452-99ed-4888-9672-040320354e2a,6,0,0
+1645423117762,11,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,3,3,http://localhost:8080/basket,11,0,0
+1645423117773,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,3,3,null,0,0,0
+1645423117768,13,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1351,999,3,3,http://localhost:8080/checkout/ffc61ecc-3896-43cb-94d7-de57713772a7/checkout-data,13,0,0
+1645423117766,20,Set Checkout Data,200,OK,Thread-Gruppe 1-6,text,true,,1356,999,3,3,http://localhost:8080/checkout/6700cfc8-96a8-4251-b09a-f055854a350f/checkout-data,20,0,0
+1645423117773,17,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1202,253,3,3,http://localhost:8080/basket/e79af685-94f4-4518-be25-e0c0ad20ee9f/item/f7adde1e-b401-4bd0-94a2-2db7dcbb6760,17,0,0
+1645423117781,11,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4825,189,3,3,http://localhost:8080/full/ffc61ecc-3896-43cb-94d7-de57713772a7,11,0,0
+1645423117792,3,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4827,189,3,3,http://localhost:8080/full/ffc61ecc-3896-43cb-94d7-de57713772a7,3,0,0
+1645423117786,13,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4773,189,3,3,http://localhost:8080/full/6700cfc8-96a8-4251-b09a-f055854a350f,13,0,0
+1645423117795,6,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1003,331,3,3,http://localhost:8080/payment/ffc61ecc-3896-43cb-94d7-de57713772a7,6,0,0
+1645423117790,14,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2145,253,3,3,http://localhost:8080/basket/e79af685-94f4-4518-be25-e0c0ad20ee9f/item/b0ae9931-18ab-4e73-9575-dc5d51e417ae,14,0,0
+1645423117802,5,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4030,223,3,3,http://localhost:8080/payment/ffc61ecc-3896-43cb-94d7-de57713772a7/initialize,5,0,0
+1645423117799,9,View Basket,200,OK,Thread-Gruppe 1-6,text,true,,4813,189,3,3,http://localhost:8080/full/6700cfc8-96a8-4251-b09a-f055854a350f,9,0,0
+1645423117808,3,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4111,220,3,3,http://localhost:8080/payment/ffc61ecc-3896-43cb-94d7-de57713772a7/execute,3,0,0
+1645423117749,62,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26965,3113,3,3,null,58,0,0
+1645423117805,9,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3124,253,3,3,http://localhost:8080/basket/e79af685-94f4-4518-be25-e0c0ad20ee9f/item/80bbd69b-3d14-49bb-a2c0-be2afa399034,9,0,0
+1645423117811,2,Create Basket,201,Created,Thread-Gruppe 1-9,text,true,,342,203,3,3,http://localhost:8080/basket,2,0,0
+1645423117814,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-9,text,true,,0,0,3,3,null,0,0,0
+1645423117808,10,Add Payment,200,OK,Thread-Gruppe 1-6,text,true,,1016,331,3,3,http://localhost:8080/payment/6700cfc8-96a8-4251-b09a-f055854a350f,10,0,0
+1645423117814,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,1209,253,3,3,http://localhost:8080/basket/cad76ea5-802f-4f2d-acf3-471d00e006b7/item/b9ccf769-d5fa-45c3-94d2-b2bdf37fc593,5,0,0
+1645423117819,5,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,2157,253,3,3,http://localhost:8080/basket/cad76ea5-802f-4f2d-acf3-471d00e006b7/item/36eec0d4-5cb3-4ec8-980a-21d63e13d2c6,5,0,0
+1645423117824,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-9,text,true,,3112,253,3,3,http://localhost:8080/basket/cad76ea5-802f-4f2d-acf3-471d00e006b7/item/7a94ca8e-0f3f-4d5b-966b-84914815f959,4,0,0
+1645423117814,16,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1351,999,3,3,http://localhost:8080/checkout/e79af685-94f4-4518-be25-e0c0ad20ee9f/checkout-data,16,0,0
+1645423117818,20,Initialize Payment,200,OK,Thread-Gruppe 1-6,text,true,,4042,223,3,3,http://localhost:8080/payment/6700cfc8-96a8-4251-b09a-f055854a350f/initialize,20,0,0
+1645423117828,12,Set Checkout Data,200,OK,Thread-Gruppe 1-9,text,true,,1362,999,3,3,http://localhost:8080/checkout/cad76ea5-802f-4f2d-acf3-471d00e006b7/checkout-data,12,0,0
+1645423117830,17,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4806,189,3,3,http://localhost:8080/full/e79af685-94f4-4518-be25-e0c0ad20ee9f,17,0,0
+1645423117838,12,Execute Payment,200,OK,Thread-Gruppe 1-6,text,true,,4106,220,3,3,http://localhost:8080/payment/6700cfc8-96a8-4251-b09a-f055854a350f/execute,12,0,0
+1645423117724,126,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-6,,true,,26907,3113,3,3,null,125,0,0
+1645423117840,12,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4739,189,2,2,http://localhost:8080/full/cad76ea5-802f-4f2d-acf3-471d00e006b7,12,0,0
+1645423117847,6,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4825,189,2,2,http://localhost:8080/full/e79af685-94f4-4518-be25-e0c0ad20ee9f,6,0,0
+1645423117852,5,View Basket,200,OK,Thread-Gruppe 1-9,text,true,,4747,189,2,2,http://localhost:8080/full/cad76ea5-802f-4f2d-acf3-471d00e006b7,5,0,0
+1645423117854,5,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1010,331,2,2,http://localhost:8080/payment/e79af685-94f4-4518-be25-e0c0ad20ee9f,5,0,0
+1645423117858,5,Add Payment,200,OK,Thread-Gruppe 1-9,text,true,,1022,331,2,2,http://localhost:8080/payment/cad76ea5-802f-4f2d-acf3-471d00e006b7,5,0,0
+1645423117859,6,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4012,223,2,2,http://localhost:8080/payment/e79af685-94f4-4518-be25-e0c0ad20ee9f/initialize,6,0,0
+1645423117865,3,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4048,220,2,2,http://localhost:8080/payment/e79af685-94f4-4518-be25-e0c0ad20ee9f/execute,3,0,0
+1645423117762,107,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26865,3113,2,2,null,104,0,0
+1645423117863,7,Initialize Payment,200,OK,Thread-Gruppe 1-9,text,true,,4050,223,2,2,http://localhost:8080/payment/cad76ea5-802f-4f2d-acf3-471d00e006b7/initialize,7,0,0
+1645423117869,1,Create Basket,201,Created,Thread-Gruppe 1-10,text,true,,342,203,2,2,http://localhost:8080/basket,1,0,0
+1645423117871,0,Set Basket Item Id,200,OK,Thread-Gruppe 1-10,text,true,,0,0,2,2,null,0,0,0
+1645423117870,3,Execute Payment,200,OK,Thread-Gruppe 1-9,text,true,,4094,220,2,2,http://localhost:8080/payment/cad76ea5-802f-4f2d-acf3-471d00e006b7/execute,3,0,0
+1645423117811,62,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-9,,true,,26834,3113,2,2,null,60,0,0
+1645423117871,4,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,1221,253,1,1,http://localhost:8080/basket/107df57f-c714-44e3-ac85-06f0e22421c1/item/35366749-4b11-44ba-a74e-2b610707ee41,4,0,0
+1645423117876,3,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,2144,253,1,1,http://localhost:8080/basket/107df57f-c714-44e3-ac85-06f0e22421c1/item/13084108-a700-4338-b63d-8ad52f241c8f,3,0,0
+1645423117880,3,Precondition: Create Basket Item,200,OK,Thread-Gruppe 1-10,text,true,,3105,253,1,1,http://localhost:8080/basket/107df57f-c714-44e3-ac85-06f0e22421c1/item/b1e12fc9-cba7-4930-a7d3-02356bc4a67f,3,0,0
+1645423117884,9,Set Checkout Data,200,OK,Thread-Gruppe 1-10,text,true,,1349,999,1,1,http://localhost:8080/checkout/107df57f-c714-44e3-ac85-06f0e22421c1/checkout-data,9,0,0
+1645423117893,8,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4729,189,1,1,http://localhost:8080/full/107df57f-c714-44e3-ac85-06f0e22421c1,8,0,0
+1645423117904,4,View Basket,200,OK,Thread-Gruppe 1-10,text,true,,4731,189,1,1,http://localhost:8080/full/107df57f-c714-44e3-ac85-06f0e22421c1,4,0,0
+1645423117908,5,Add Payment,200,OK,Thread-Gruppe 1-10,text,true,,1008,331,1,1,http://localhost:8080/payment/107df57f-c714-44e3-ac85-06f0e22421c1,5,0,0
+1645423117913,6,Initialize Payment,200,OK,Thread-Gruppe 1-10,text,true,,4031,223,1,1,http://localhost:8080/payment/107df57f-c714-44e3-ac85-06f0e22421c1/initialize,6,0,0
+1645423117919,3,Execute Payment,200,OK,Thread-Gruppe 1-10,text,true,,4112,220,1,1,http://localhost:8080/payment/107df57f-c714-44e3-ac85-06f0e22421c1/execute,3,0,0
+1645423117869,53,Transaction Controller,200,"Number of samples in transaction : 13, number of failing samples : 0",Thread-Gruppe 1-10,,true,,26772,3113,1,1,null,46,0,0
