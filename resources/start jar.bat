@@ -1,0 +1,1 @@
+java -Xms1g  -Xmx8g  -jar Checkout-POC-1.0-SNAPSHOT-all.jar
