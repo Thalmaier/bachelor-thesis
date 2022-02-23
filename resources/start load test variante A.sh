@@ -1,1 +1,1 @@
-../../apache-jmeter-5.4.3/bin/jmeter -n -t "Lasttest Variante A.jmx" -l "Variante A 3000-100.csv" -e
+../../apache-jmeter-5.4.3/bin/jmeter -n -t "Lasttest Variante A.jmx" -l "Variante A.csv" -e

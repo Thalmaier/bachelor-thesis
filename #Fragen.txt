@@ -1,11 +1,22 @@
-Prio:
+Today:
+- Quellen in Glossary? JA ; Gleicher Satzbau oder unterschiedlich? REST in Glossar
+- Kapitel 30: Erst Diagramm oder erst Beschreibung? EGAL ; Legende von Nöte für das Swimlane?  Beim ersten mal legende (ANHANG) Machen als BPMN oder Aktivitätsdiagramm
+- Einbindung des Source Codes ok?
+- Soll ich Domäne schreiben oder nur Domain
+- Ubiquitous Language so darstellen? Gleicher Schreibstil mit Wortwiederholungen? Vollständige Sätze
+- Same with Domain-Modell (IdentifiedCustomer)
+- Variante A als Bezeichnung ok?
+- Compension
+- Fazit schluss ziehen auf Einleitung
+
+- Sequenzdiagram asynchron pfeilspitze
+- Empfehlungen Fazit; mitnehmen für andere
+- Pseudocode
+- Indizierung Postgres & Mongodb
 
 Stefano:
-- https://docs.mongodb.com/manual/core/write-operations-atomicity/  MEANING?
 - Ein Request => Mehrere Transaktions?
 - Eventual consistency. Wie schütze ich die erste Entität vor Änderungen bevor die zweite Änderung stattfindet.
-- Macht Sinn dass BasketItem Immutable ist?
-- PriceAdjustment als Use-Case?
 - POC Source Code besprechen
 - Mehr Infos zum Checkout-Team?
 - Wie weit erklären, dass Checkout-Software exisitert? 30_Planung
@@ -18,7 +29,6 @@ Stefano:
 
 Apel:
 - Wie weit erklären, dass Checkout-Software exisitert? 30_Planung ?
-- Wie darstellen? Wie Satzbau? Wortwiederholungen? Zum Beispiel Ubiquitous Language
 - Zitierungsstil? Konkrete Zeilen etc.
 - Titel und Stil der Aufzählungen, passt so? Oder eher versuchen unterschiedlich zu machen?
 
@@ -34,6 +44,7 @@ Allgemein:
 
 Todo:
 - Überlegung was ist Entity und was ist ValueObject
+- No Boolean for Variant D 
 - Hexagonale Architektur Diagramm von POC korrigieren
 - Überschriften anpassen und verschönern
 - Zeigen des Bestellprozesses anhand von MediamarktSaturn

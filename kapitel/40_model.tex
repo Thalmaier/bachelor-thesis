@@ -8,16 +8,11 @@ Durch die Schaffung eines grundlegenden Verständnis für Designprinzipien, Hexa
 
 Die Wahl der Programmiersprache ist aufgrund der Teamexpertisen und dem vorliegenden Anwendungsfall auf Java oder Kotlin beschränkt. Kotlin ist eine, auf Java basierende, Programmiersprache, welche in ihrem Design einen hohen Fokus auf Lesbarkeit und Flexibilität legt. Aufgrund einer Vielzahl von Vorteile, welche durch den Einsatz von Kotlin erzielt werden können, wurde diese als die zu verwendende Sprache festgelegt. Zugleich wird nach Projektabschluss jegliche Codeanpassung an der produktiven Checkout-Software in Kotlin vorgenommen und somit ein langsame Migration des Sourcecodes erreicht.
 
-%TODO: Wie Einbindung des Source Codes
-%TODO: Bild der Architektur
-%TODO: Domain oder Domäne
-%TODO: Programmiersprache, REST, MongoDB in Umfeldanalyse oder hier ein extra Unterkapitel?
-
 \section{Abgrenzung der Domain und Bounded Contexts mithilfe der Planungsphase}
 
 %TODO: Buch nachlesen was man hier alles machen muss.
 %TODO: https://confluence.media-saturn.com/display/Miraklmarketplace/Architecture+Diagram
-Aufgrund der ausführlichen Vorbereitung wurde die Domain bereits passiv festgelegt und analysiert. Das Context-Diagramm \ref{fig:ContextDiagramm} beschreibt hierbei unsere Domaingrenzen. Eine Domain und die Subdomains spannen den Problemraum auf. Dazu zählen alle definierten Anwendungsfälle und Businessanforderungen. Die Größe der Domain ist entscheidend für die Bestimmung der Subdomains und Bounded Contexts. Den Checkout als eine Domain anzusehen würde resultieren, dass entweder sich nur ein Bounded Context ergibt, welcher sich über die ganze Domain erstreckt, oder der Checkout selbst eine weitere Unterteilung erfahren muss. Anhand der Richtlinie, dass ein Team zuständig sein soll für ein Bounded Context kann abgeleitet werden, dass dieser Domainschnitt zu klein ausfällt. Folglich kann der Checkout und alle abhängigen Systeme als nächstmögliche Domain angesehen werden. Zu Beachten ist hierbei sich nicht auf die Systeme zu fixieren, dass sie eher der Lösungsebene und somit Bounded Contexts zuweisbar sind. In den Zuständigkeitsbereich der zuständigen Domain fallen unter anderem Anforderungen an der Abwicklung des Zahlungs- und Bestellungsprozesses. Zusätzlich müssen Produkt- und Preisinformationen abrufbar sein. Hierfür muss eine Verwaltungsmöglichkeit für diese Daten bereitgestellt werden. Die Abgrenzung der Bounded Context ist durch die jetzigen Überlegungen und die bereits bestehenden Architektur vorgegeben. Eine weitere Unterteilung des Checkouts in mehrere kleiner Bounded Contexts ist wieder durch die Einschränkung auf einem Team per Bounded Context sinnfrei. Ebenfalls würde dies eine Verteilung der Verantwortlichkeiten bedeuten, was entgegen dem Ziel ein einzelnes, universelles Produkt für den Checkout anzubieten. Aus diesen Überlegungen kann folgende Context-Map erstellt werden. % TODO: Context-Map. Verwaltung Kundendaten zu Domain
+Aufgrund der ausführlichen Vorbereitung wurde die Domain bereits passiv festgelegt und analysiert. Das Context-Diagramm \ref{fig:ContextDiagramm} beschreibt hierbei unsere Domaingrenzen. Eine Domain und die Subdomains spannen den Problemraum auf. Dazu zählen alle definierten Anwendungsfälle und Businessanforderungen. Die Größe der Domain ist entscheidend für die Bestimmung der Subdomains und Bounded Contexts. Den Checkout als eine Domain anzusehen würde resultieren, dass entweder sich nur ein Bounded Context ergibt, welcher sich über die ganze Domain erstreckt, oder der Checkout selbst eine weitere Unterteilung erfahren muss. Anhand der Richtlinie, dass ein Team zuständig sein soll für ein Bounded Context kann abgeleitet werden, dass dieser Domainschnitt zu klein ausfällt. Folglich kann der Checkout und alle abhängigen Systeme als nächstmögliche Domain angesehen werden. Zu Beachten ist hierbei sich nicht auf die Systeme zu fixieren, dass sie eher der Lösungsebene und somit Bounded Contexts zuweisbar sind. In den Zuständigkeitsbereich der zuständigen Domain fallen unter anderem Anforderungen an der Abwicklung des Zahlungs- und Bestellungsprozesses. Zusätzlich müssen Produkt- und Preisinformationen abrufbar sein. Hierfür muss eine Verwaltungsmöglichkeit für diese Daten bereitgestellt werden. Die Abgrenzung der Bounded Context ist durch die jetzigen Überlegungen und die bereits bestehenden Architektur vorgegeben. Eine weitere Unterteilung des Checkouts in mehrere kleiner Bounded Contexts ist wieder durch die Einschränkung auf einem Team per Bounded Context sinnfrei. Ebenfalls würde dies eine Verteilung der Verantwortlichkeiten bedeuten, was entgegen dem Ziel ein einzelnes, universelles Produkt für den Checkout anzubieten. Aus diesen Überlegungen kann folgende Context-Map erstellt werden.
 
 \section{Festlegen einer Ubiquitous Language}
 
@@ -30,11 +25,11 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 \begin{itemize}
 	\item \textbf{Basket (Warenkorb): } {Die zentrale Datenklasse, welche den Warenkorb darstellt.}
 	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar und orientiert sich an den Prozessen. Beinhaltet 'open', 'frozen', 'finalized' und 'canceled'. Der Startzustand ist 'open'.}
-	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma. Ebenfalls kann ein nicht eingeloggter Kunde im Onlineshop durch seine eindeutige Session-ID einen Warenkorb besitzen.} %TODO: Kann er beides sein, wie funktioniert das aus business sicht?
+	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma. Ebenfalls kann ein nicht eingeloggter Kunde im Onlineshop durch seine eindeutige Session-ID einen Warenkorb besitzen.} 
 	\item \textbf{Product (Artikel, Ware): } {Ein Artikel aus dem Warenbestand, welcher zu Verkauf steht. Kann ebenfalls für eine Gruppierung von mehreren Artikeln stehen.}
 	\item \textbf{Outlet: } {Repräsentiert einen Markt oder den länderbezogenen Onlineshop, welche durch eine einzigartige Outlet Nummer referenziert werden können.}
 	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um beispielsweise die Quantität eines Artikels anzupassen oder ihn zu entfernen.}
-	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung.} %TODO
+	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung.}
 	\item \textbf{VAT (Steuersatz): } {Der Steuersatz zu einem bestimmten Nettobetrag.}
 	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und einem Nettobetrag. Die Währung gleicht die des Nettobetrags.}
 	\item \textbf{Fulfillment: } {Zustellungsart der Waren seitens der Firma.}
@@ -48,7 +43,6 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 	\item \textbf{Order: } {Bestellung eines Warenkorbs, welche durch nachfolgende Systeme angelegt und verwaltet wird.}
 \end{itemize}
 \vspace{0.4em}
-%TODO: Maybe add PriceAdjustment
 
 %TODO: Abstand Zeielen ein bisschen weniger genauso wie im näcshten Kapitel
 {\large \textbf{Prozesse:}}
@@ -64,9 +58,6 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 \end{itemize}
 \vspace{0.4em}
 
-%TODO: Basket Finalization oder finalize Basket?
-%TODO: Lieber Wortwiederholungen oder Abwechslung
-%TODO: Stil der Sätze... Punkt nach unvollständigen Satz?
 %TODO: Doppelt gemoppelt der obere Absatz mit den unteren?
 
 Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend das Datenmodell designt. 
@@ -102,10 +93,10 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 		\item \textit{FirstName: } {Vorname des Kunden.} %TODO: Punktsetzung?
 		\item \textit{LastName: } {Nachname des Kunden.}
 	}
-	\item \textbf{Email: } {Email des Kunden.} %TODO: Warum benötigt?
-	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung, da diese ausgewiesen werden muss} %TODO: ///    Muss TaxId ausgewiesen werden?
-	\item \textbf{BusinessType: } {Bestimmt ob Kunde als B2C oder B2B gilt.} %TODO: gls? /// Wie wird bestimmt?
-	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend bei einem B2B-Kunden} %TODO: Korrekt?
+	\item \textbf{Email: } {Email des Kunden.}
+	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung, da diese ausgewiesen werden muss} 
+	\item \textbf{BusinessType: } {Bestimmt ob Kunde als Business-to-Customer (B2C) oder Business-to-Business (B2B) gilt.} %TODO: gls?
+	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend bei einem B2B-Kunden}
 	\item \textbf{CompanyTaxId: } {Steuernummer zugehörig zur Firma des Kunden, falls eine Firma angegeben wurde.} %TODO: Korrekt? Wofür? Warum CustomerTaxId und CompanyTaxId? TaxId in Language?
 }
 
@@ -274,7 +265,7 @@ Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin a
 	\item \textbf{Payment: } {Ein Payment hat eine eindeutige Id, welche eine hohe Wichtigkeit trägt für den Ablauf des Bezahlprozesses und alle folgenden rechtlichen Prozesse. Dadurch ist weder der konkrete Betrag noch die Bezahlmethode von Relevanz bei der Identifikation. Ähnlich zum PaymentProcess ist auch hier ein Lebenszyklus im Form eines Statusfeldes vertreten und eine Verwirklichung als \emph{Entity} ist zu empfehlen.}
 }
 
-%TODO: Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
+ Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
 
 
 

@@ -5,7 +5,6 @@ Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies 
 \section{Ein zusammengehöriges Basket-Aggregate als initiales Design}
 
 Das Design eines großen Aggregats fällt Entwicklern meist natürlich leichter. Eine einzelne zusammenhängende Struktur, durch welche Daten einfach bearbeitet und Invarianten überprüft werden können. Daher hält sich die Komplexität bei diesem Aggregationsschnitt weitestgehend in Grenzen. Vor allem müssen kaum Überlegungen über transaktionale Konsistenz getroffen werden, da die Grenzen der Transaktion all umspannend ist. Die erste Variante des Proof-Of-Concepts wurde mit diesem Design im Gedanken entwickelt und stellt das Grundgerüst für alle folgenden Konzepte dar. Zur vereinfachten Referenz auf die einzelnen Umsetzungsvarianten wird das Design, welches einen großen Basket zugrundeliegend hat, als '\emph{Variante A}' betitelt.
-%TODO: Variante A als Bezeichnung ok???
 
 
 \subsection{Performance von unterschiedlich großen Aggregates im Vergleich}
@@ -36,7 +35,6 @@ Das Design einer Software soll stets so weit wie möglich unabhängig von verwen
 
 Laut Definition erhält jedes Aggregate seine eigene Tabelle in der darunterliegenden Datenbank. Daher existieren in \emph{Variante B} mindestens die Tabelle für den Basket, BasketItems und PaymentProcess. In \emph{Variante A} kann der PaymentProcess in die gleiche Tabelle wie der Basket geschrieben werden, da eine Eins-zu-Eins Relation vorliegt. Obwohl es nur ein Aggregate gibt, sind dennoch zwei Tabellen für Basket und BasketItem notwendig, da in einer Relationalen Datenbank eine Eins-zu-N Beziehung nicht anders dargestellt werden kann. Demnach muss beim Abruf eines kompletten Baskets in \emph{Variante A} N Joins durchgeführt werden, wobei \emph{Variante B} N+1 Joins benötigt, wobei N die Anzahl der BasketItems entspricht. Dies resultiert in eine schlechtere Performance der \emph{Variante B} zumindest in Bezug der Datenbankabfrage. Wie bereits erwähnt, erwarten eine Vielzahl von Anfragen alle Daten des Baskets zurück und dadurch erhalten wir eine erhöhte Bearbeitungszeit der Anfragen.
 
-%TODO: Performaceanalyse im POC
 %TODO: Collection
 Sollte die verwendete Datenbank jedoch einen dokumentbasierten Ansatz verfolgen, gilt vorheriger Absatz nur noch bedingt. Hierbei benötigt \emph{Variante B} weiterhin drei eigene Collections, jedoch kann \emph{Variante A} in einem einzigen Eintrag gespeichert und geladen werden. An sich besitzt der einzelne Datensatz zwar mehr Daten, allerdings hat dies keine Auswirkung auf die Gesamtperformance. Daher würde bei einem Umbau der Aggregate für die meisten Anwendungsfälle eine einzelne Suchanfrage in N+1 Suchanfragen abgewandelt werden. Dies kann bemerkbare Auswirkungen auf die Antwortzeit unserer Applikation haben.
 
@@ -101,7 +99,6 @@ Bei der Implementierung von Variante A ist es möglich as Einfrieren des Warenko
 	\end{lstlisting}
 \end{minipage}
 
-%TODO: Transactional Annotation in POC Code
 %TODO: Thread
 Zwischen dem Persistieren des eingefrorenen Warenkorb und der Initiierung des PaymentProcesses können aufgrund von Parallelität der Warenkorb durch separate Anfragen weiterhin bearbeitet werden. Konkret könnte eine Bedingung für die Validierung sein, dass die Kundendaten nicht leer sein dürfen. Jedoch wird zwischen Zeile 4 und Zeile 7 in einem parallel laufenden Thread durch einen externen API-Aufruf die Kundendaten entfernt. Dadurch wäre die eigentliche Validierung in Zeile 2 fehlgeschlagen und die Initiierung darf nicht durchgeführt werden, jedoch wird diese dennoch in unseren Beispiel angestoßen, da davon ausgegangen wird, dass sich der Basket in der Zwischenzeit nicht verändert hat. Die diese beiden Operationen nicht als eine atomare Einheit umgesetzt ist, entsteht immer eine Möglichkeit des Interleavings zwischen den einzelnen Codezeilen.
 

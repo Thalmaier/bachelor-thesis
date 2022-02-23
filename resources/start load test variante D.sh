@@ -1,0 +1,1 @@
+../../apache-jmeter-5.4.3/bin/jmeter -n -t "Lasttest Variante D.jmx" -l "Variante D.csv" -e
