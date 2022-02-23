@@ -1,0 +1,106 @@
+%% Creator: Inkscape 1.1.2 (1:1.1+202202050950+0a00cf5339), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'entityvsvalueobject_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{510.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5154185)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976505,0.46328928){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Value Object}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826725,0.46328928){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Entity}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.08076358,0.38179148){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Identität}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976505,0.40014684){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Summe der Werte der Objekte.\end{tabular}}}}%
+    \put(0.35976506,0.37958884){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Objekte mit gleichen Werten besitzen\end{tabular}}}}%
+    \put(0.35976505,0.35903084){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c} gleiche Identität\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826725,0.41042584){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Bestimmt anhand eines Identifikator,\end{tabular}}}}%
+    \put(0.77826726,0.38986784){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}zum Beispiel einer Datenbank-Id. Objekte\end{tabular}}}}%
+    \put(0.77826725,0.36930984){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}mit gleichen Werten sind ungleich, außer\end{tabular}}}}%
+    \put(0.77826726,0.34875184){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}ihre Identifikatoren sind identisch.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.08076358,0.29515419){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Lebenszyklus}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976505,0.30396476){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Stellt nur eine Momentaufnahme\end{tabular}}}}%
+    \put(0.35976505,0.28340675){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}des Applikationszustandes dar.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826725,0.32452276){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Werden zu einem bestimmten Zeitpunkt\end{tabular}}}}%
+    \put(0.77826725,0.30396476){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}erstellt, bearbeitet, gespeichert oder\end{tabular}}}}%
+    \put(0.77826726,0.28340675){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}gelöscht und besitzen somit\end{tabular}}}}%
+    \put(0.77826725,0.26284875){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}einen Verlauf ihrer Wertänderungen.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.08076358,0.20998532){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Veränderbarkeit}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976505,0.21879589){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Durch einen fehlenden Lebenszyklus\end{tabular}}}}%
+    \put(0.35976506,0.19823789){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}gelten Value Objects als immutable.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826725,0.21879589){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Aufgrund ihrer Eigenschaften\end{tabular}}}}%
+    \put(0.77826725,0.19823789){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}sind Entities mutable.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.08076358,0.12481645){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Abhängigkeit}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976506,0.1328928){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Können nur als Unterobjekt einer oder\end{tabular}}}}%
+    \put(0.35976505,0.1123348){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}mehrerer Entities existieren.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826725,0.14317181){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Um einen eigenen Lebenszyklus zu besitzen,\end{tabular}}}}%
+    \put(0.77826726,0.1226138){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}können sie unabhängig von anderen Objekten\end{tabular}}}}%
+    \put(0.77826725,0.1020558){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}erstellt werden.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.08076358,0.03817915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Zugriffsmethode}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.35976505,0.04698972){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Auf Daten und Funktionen wird mithilfe\end{tabular}}}}%
+    \put(0.35976506,0.02643172){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}einer Entität zugegriffen.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{entityvsvalueobject_svg-tex.pdf}}%
+    \put(0.77826726,0.03817915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Können als Aggregate Root direkt Zugriff erfahren.\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

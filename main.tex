@@ -174,7 +174,12 @@ automark,		% Lebende Kolumnentitel
 	\begin{itemize}[noitemsep,topsep=-5pt]#1\end{itemize}
 	\vspace{8pt}
 }
+\newcommand{\centertable}[1]{\vspace{0.1cm}#1\vspace{0.1cm}}
 
+\usepackage{array}
+
+\def\table{\def\figurename{Tabelle}\figure}
+\let\endtable\endfigure 
 
 \begin{document}
   

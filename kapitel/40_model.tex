@@ -213,38 +213,38 @@ Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle kor
 
 \section{Bestimmung der Entities anhand ihrer Identität und Lebenszyklus}
 
-Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien:
+Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien in Tabelle \ref{fig:entityvsvalueobject}.
 
-%TODO: Ref auf Tabelle im Darstellungsverzeichnis. Kein "Abbilung" in Unterschrift
-{
-\begin{table}
+{	
+\begin{table}[h!]
 	\centering
-	\begin{tabular}{ | p{0.16\textwidth} | p{0.27\textwidth} | p{0.46\textwidth} | } 
+	\begin{tabular}{ | >{\centering\arraybackslash}m{0.16\textwidth} | m{0.28\textwidth} | m{0.46\textwidth} | } 
 		\hline
-		& {\textbf{\centering Value Object} } & \textbf{\centering Entity} \\ 
+		& \vspace{0.8mm}\textbf{Value Object}\vspace{0.5mm} & \vspace{0.8mm}\textbf{Entity}\vspace{0.5mm} \\ 
 		\hline
-		
-		Identität & 
-		Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität & 
-		Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch. \\ 
+		{\centering Identität} & 
+		\centertable{Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität} & 
+		\centertable{Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch.} \\ 
 		\hline
 		Lebenszyklus & 
-		Stellt nur eine Momentaufnahme des Applikationszustands dar. &
-		Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.  \\ 
+		\centertable{Stellt nur eine Momentaufnahme des Applikationszustands dar.} &
+		\centertable{Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.}  \\ 
 		\hline
 		Veränderbarkeit & 
-		Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable. &
-		Aufgrund ihrer Eigenschaften sind Entities mutable.  \\ 
+		\centertable{Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable.} &
+		\centertable{Aufgrund ihrer Eigenschaften sind Entities mutable.}  \\ 
 		\hline
 		Abhängigkeit & 
-		Können nur als Unterobjekt einer oder mehrerer Entities existieren. &
-		Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.  \\ 
+		\centertable{Können nur als Unterobjekt einer oder mehrerer Entities existieren.} &
+		\centertable{Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.}  \\ 
 		\hline
 		Zugriffsmethode & 
-		Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen. &
-		Können als Aggregate Root direkt Zugriff erfahren. \\ 
+		\centertable{Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen.} &
+		\centertable{Können als Aggregate Root direkt Zugriff erfahren.} \\ 
 		\hline
 	\end{tabular}
+	\caption{Vergleich zwischen Value Object und Entity}
+	\label{fig:entityvsvalueobject}
 \end{table}
 
 }
@@ -265,7 +265,7 @@ Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin a
 	\item \textbf{Payment: } {Ein Payment hat eine eindeutige Id, welche eine hohe Wichtigkeit trägt für den Ablauf des Bezahlprozesses und alle folgenden rechtlichen Prozesse. Dadurch ist weder der konkrete Betrag noch die Bezahlmethode von Relevanz bei der Identifikation. Ähnlich zum PaymentProcess ist auch hier ein Lebenszyklus im Form eines Statusfeldes vertreten und eine Verwirklichung als \emph{Entity} ist zu empfehlen.}
 }
 
- Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
+%TODO: Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
 
 
 
