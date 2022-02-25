@@ -281,6 +281,23 @@ class Aggregate {
 
 Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedoch werden die Funktionssignaturen aufgebläht. Aus Sicht der Skalierbarkeit und Fehleranfälligkeit ist generell dieser Ansatz zu bevorzugen, aus welchem Grund auch die Implementierung des Proof-of-Concepts die Domainservices als Parameter übergibt.
 
+\subsection{Performance-Analyse der Aggregationsschnitte durch }
+
+
+\begin{figure}[htbp]
+	\centering
+	\small
+	\includesvg[width=0.70\textwidth]{svg/PerformanceReqPerSec.svg}
+	\caption{Durchschnittliche abgearbeitete Anfragen pro Sekunde bei insgesamt 10.000 Anfragen}
+	\label{fig:Performance}
+\end{figure}
+
+%TODO: Allgemeiner Performance Vergleich
+%TODO: Berechnen ist schneller als Speichern, kann aber Abweichen wegen Aufrufe von APIS und komplexere Berechnungen! Rauslassen?
+%TODO: Vergleich zwischen MongoDb und Postgres knapp
+%TODO: Unterschied zwischen MongoDB A und D nicht so groß wie Postgres A und P
+
+
 \subsection{Bewertung des verkleinerten Aggregationsschnitt}
 
 Die finale Evaluation ist ein Resultat der vorgehenden theoretischen Überlegungen, ein Vergleich mit anderen Varianten des Aggregationsschnitts und ihren tatsächlichen Implementierungen.

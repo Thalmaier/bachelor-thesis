@@ -1,0 +1,48 @@
+
+%TODO: Chapter mit Nummer im Inhaltsverzeichnis oder nicht?
+\chapter{Anhang}
+
+\section{Ergebnisse des Lasttests}
+
+%TODO: Beschreibung von Werten. Angabe von Bedeutung von AZ und dass alles in ms ist
+
+\begin{landscape}
+\begin{table}[h!]
+	\centering
+	\small
+	\begin{tabular}{ |c|c|c|c|c|c|c|c|c|} 
+		\hline
+		Name & Pre-Daten & Anfragen & min. AZ & max. AZ & durchschn. AZ & Median der AZ & Anfragen/Sekunde & Testdauer \\ 
+		\hline
+		Variante A-M & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+		\hline
+		Variante D-M & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+		\hline
+		Variante D-MC & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+		\hline
+		\hline
+	\end{tabular}
+	\caption{Analyseergebnis des Lasttests der verschiedenen Variationen}
+	\label{fig:performance-mongo}
+\end{table}
+\end{landscape}
+
+\begin{landscape}
+	\begin{table}[h!]
+		\centering
+		\small
+		\begin{tabular}{ |c|c|c|c|c|c|c|c|c|} 
+			\hline
+			Name & Pre-Daten & Anfragen & min. AZ & max. AZ & durchschn. AZ & Median der AZ & Anfragen/Sekunde & Testdauer \\ 
+			\hline
+			Variante A-P & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+			\hline
+			Variante D-P & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+			\hline
+			Variante D-PO & 3000 & 100 & 14 & 46 & 18,48 & 16,5 & 94,88 & 1054 \\ 
+			\hline
+		\end{tabular}
+		\caption{Analyseergebnis des Lasttests der verschiedenen Variationen}
+		\label{fig:performance-postgres}
+	\end{table}
+\end{landscape}

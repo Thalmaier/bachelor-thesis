@@ -1,18 +1,27 @@
+ToDo:
+
+- Alle Kapitel schreiben
+- Alle Kapitel überarbeiten
+- Überarbeiten von Performance in Variante D
+
+- Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
+- Pseudocode schreiben
+- Glossary überarbeiten. REST erklären etc.
+- Aktivitätsdiagramm schreiben statt Swimlane (Erwähnen der Syntax und Ersetzen der Wörter für "Swimlane")
+- README in Github Repo (Describe Calculation)
+
+- calculateWithoutSaving should be named more correctly
+
 Today:
-- Quellen in Glossary? JA ; Gleicher Satzbau oder unterschiedlich? REST in Glossar
+- Quellen in Glossary? JA ; Gleicher Satzbau oder unterschiedlich?
 - Kapitel 30: Erst Diagramm oder erst Beschreibung? EGAL ; Legende von Nöte für das Swimlane?  Beim ersten mal legende (ANHANG) Machen als BPMN oder Aktivitätsdiagramm
-- Einbindung des Source Codes ok?
 - Soll ich Domäne schreiben oder nur Domain
 - Ubiquitous Language so darstellen? Gleicher Schreibstil mit Wortwiederholungen? Vollständige Sätze
 - Same with Domain-Modell (IdentifiedCustomer)
-- Variante A als Bezeichnung ok?
-- Compension
+- Compension wie GRAPHQL etc.
 - Fazit schluss ziehen auf Einleitung
 
-- Sequenzdiagram asynchron pfeilspitze
 - Empfehlungen Fazit; mitnehmen für andere
-- Pseudocode
-- Indizierung Postgres & Mongodb
 
 Stefano:
 - Ein Request => Mehrere Transaktions?
@@ -44,15 +53,13 @@ Allgemein:
 
 Todo:
 - Überlegung was ist Entity und was ist ValueObject
-- No Boolean for Variant D 
 - Hexagonale Architektur Diagramm von POC korrigieren
 - Überschriften anpassen und verschönern
-- Zeigen des Bestellprozesses anhand von MediamarktSaturn
 - Calculation Result update only when needed or while update items as use case and aggregate design
 - Context Map kommunikation zwischen Bounded Contexts
 - Umfeldanalyse mit Systemen, Datenbank, Kotlin
 - Anwendungsfälle
-- README in Github Repo (Describe Calculation)
+
 - Source Code Documentation
 https://microservices.io/patterns/data/saga.html
 https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf
@@ -67,16 +74,4 @@ https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3
 - Transferierbarkeit der Ergebnisse im Fazit
 - Parameter
 
-
-Vorgehen:
-- Aggregate erstellen und Referenzen löschen
-- Alle Funktionen die in Basket nun nicht mehr funktionieren -> DomainService
-- Create Repos for all aggregates
-- Problem Aggregate könnte änderungen durchgehen, die nicht erlaubt sind
-    - ODER: Passing basketDataRepo or injecting it
-- Two Version, always calculate or only if needed (with flag?)
-    - need so set flag when chaning item quantity, or fulfillment or shipping address
-    - need flag when basket item shipping needs update
-- TODO: When is all data needed -> Implement
-- Waay harder for client
-- Problem mit circualr dependencies
+Eig: 80 / 200 / 250   Now: 50/60/60
