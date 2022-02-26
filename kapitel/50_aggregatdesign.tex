@@ -234,7 +234,7 @@ Jedoch hat sich diese Methodik bei der Implementierung als problematisch erwiese
 
 \textbf{Auslagerung der Referenz in einen Domainservice}
 
-Ein anderer Lösungsansatz kann das Extrahieren einer Teilfunktionalität aus dem Aggregat in einen dafür vorgesehenen Domainservice darstellen. Das Listing \ref{lst:extract} implementiert einen Service zur Validierung einer Invariante. 
+Ein anderer Lösungsansatz kann das Extrahieren einer Teilfunktionalität aus dem Aggregat in einen dafür vorgesehenen Domainservice darstellen. Das Codebeispiel \ref{lst:extract} implementiert einen Service zur Validierung einer Invariante. 
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Auslagerung der Referenz in einen Domainservice}, label={lst:extract}, language=Kotlin]
@@ -283,35 +283,41 @@ Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedo
 
 \subsection{Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}
 
-Zur Verfassung einer genaueren Bewertung der Performance wird ein Lasttest durchgeführt. Der Versuchsaufbau wird mit der Open-Source-Software 'JMeter' realisiert. Hierbei wird zuerst die Datenbank mit 1000 Datensätze befüllt und anschließend im eigentlichen Test ein gängiger Anwendungsfall simuliert. Dieser beschränkt sich auf folgende Aktionen: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Dieser Ablauf wird in jeder Variante innerhalb von zehn Threads X mal abgearbeitet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Ebenfalls, um die Auswirkungen des Umbaus bei Verwendung einer relational Datenbank zu beobachten, wurde der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Zur simpleren Referenz auf die getesteten Varianten wird die Verwendung von MongoDB als 'M' und von PostgreSQL auf 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt unterteilt in 'F' bzw. 'C', wobei 'C' stets das Kalkulationsergebnis neu berechnet und 'F' anhand von Flags erkennt, wann eine Neuberechnung notwendig ist. Beispielsweise steht die Variante D-PF für den Aggregationsschnitt D mit einer PostgreSQL und Flags.
+Zur Verfassung einer genaueren Bewertung der Performance wird ein Lasttest durchgeführt. Der Versuchsaufbau wird mit der Open-Source-Software 'JMeter' realisiert. Hierbei wird zuerst die Datenbank mit 1000 Datensätze befüllt und anschließend im eigentlichen Test ein gängiger Anwendungsfall simuliert. Dieser beschränkt sich auf folgende Aktionen: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Dieser Ablauf wird in jeder Variante innerhalb von zehn Threads X-mal abgearbeitet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Ebenfalls, um die Auswirkungen des Umbaus bei Verwendung einer relational Datenbank zu beobachten, wurde der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Zur simpleren Referenz auf die getesteten Varianten wird die Verwendung von MongoDB als 'M' und von PostgreSQL auf 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt unterteilt in 'F' bzw. 'C', wobei 'C' stets das Kalkulationsergebnis neu berechnet und 'F' anhand von Flags erkennt, wann eine Neuberechnung notwendig ist. Beispielsweise steht die Variante D-PF für den Aggregationsschnitt D mit einer PostgreSQL und Flags.
 
 \textbf{Annahmen und Bemerkungen}
 
-In realen Umständen beträgt die Zeitspanne, in welcher die Software lediglich auf eine Antwort der externen Aufrufe wartet, für diesen Anwendungsfall insgesamt durchschnittlich 465 Millisekunden anhand des Checkout-Monitorings. Sofern ein Aggregationsschnitt öfters Informationen von Systemen benötigt als andere, muss eine Simulation dieser Wartezeit zur Wahrung der Integrität eingebaut werden. Da alle Varianten aktuell eine identische Anzahl an API-Abfragen aufweisen, wird diese Tatsache im Performance-Test vernachlässigt.
+In realen Umständen beträgt die Zeitspanne, in welcher die Software lediglich auf eine Antwort der externen Aufrufe wartet, für diesen Anwendungsfall insgesamt durchschnittlich 465 Millisekunden anhand des Checkout-Monitorings. Sofern ein Aggregationsschnitt öfters Informationen von Systemen benötigt als andere, muss eine Simulation dieser Wartezeit zur Wahrung der Integrität eingebaut werden. Da alle Varianten aktuell eine identische Anzahl an API-Abfragen aufweisen, kann diese Tatsache im Performance-Test theoretisch vernachlässigt werden. Aus diesem Grund existieren zwei Durchführungen des Teste, einerseits inklusive der Wartezeiten-Simulation und andererseits ohne diese. Das Ergebnis der letzteren Abwandlung ist in Tabelle \ref{fig:performance-delay} zusammengefasst.
 
 %TODO: Connection-Pools in gls
-Zudem können weiterhin Optimierungsoptionen vorgenommen werden, wie die angepasste Einstellung des Connection-Pools oder das Einsparen von ganzen Datenbankoperationen durch Caching. Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je nach Anwendungsfall und Software ab.
+Zudem können weiterhin Optimierungsoptionen vorgenommen werden, wie die angepasste Einstellung des Connection-Pools oder das Einsparen von ganzen Datenbankoperationen durch Caching. 
 
-Der Performance-Unterschied zwischen Varianten C und F kann gesenkt werden, da in der Live-Umgebung die Berechnung weitaus komplizierter ist und hierdurch mehr Ressourcen in Beanspruchung stehen.
+Es wurde versucht so weit wie möglich eine gleiche Basis für alle Testarten zu bieten. Testergebnisse sind hierbei von Hardware zu Hardware unterschiedlich. Hinzukommt, dass zum Beispiel bei verteilten Datenbanken die gemessenen Werte weiter abweichen können.
 
-\textbf{Abgeleitete Aussagen}
+Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je nach Anwendungsfall und Software ab. Anhand der Analyse sollen vorgehende Aussagen bewiesen und Argumente für das Fazit gebildet werden.
 
-In Diagramm \ref{fig:Performance} wurde der Durchschnitt der 'Abläufe pro Sekunde' über 10.000 Abläufe gebildet und grafisch dargestellt. 
+\textbf{Abgeleitete Kernaussagen}
 
-\begin{figure}[htbp]
+In Diagramm \ref{fig:Performance} sind die Testergebnisse als Durchschnitt der 'Abläufe pro Sekunde' über 10.000 Abläufe grafisch dargestellt. Dabei ist der obere Graph eine Mischung aus Tabelle \ref{fig:performance-mongo} und \ref{fig:performance-postgres}. Unterhalb wurden die Wartezeiten von externen API-Anfragen eingebaut anhand von Tabelle \ref{fig:performance-delay} abgebildet.
+
+\begin{figure}[t]
 	\centering
 	\small
-	\includesvg[width=0.70\textwidth]{svg/PerformanceReqPerSec.svg}
+	\includesvg[width=0.70\textwidth]{svg/PerformanceReqPerSec Sum.svg}
 	\caption{Durchschnittliche abgearbeitete Abläufe pro Sekunde bei insgesamt 10.000 Abläufen}
 	\label{fig:Performance}
 \end{figure}
 
-Grundlegend ist eine erhöhte Bearbeitungszeit durch zusätzliche Datenbankoperationen in Variante D zu vermerken.  Dieser beläuft sich bei Variante D-MC auf 10\% und bei D-MF auf 22\%. Aufgrund der fehlenden API-Aufrufe ist jedoch der prozentuale Performance-Verlust unnatürlich inflationiert.
+Grundlegend ist eine erhöhte Bearbeitungszeit durch zusätzliche Datenbankoperationen in Variante D zu vermerken, wodurch die möglichen abgearbeiteten Anwendungsfälle pro Sekunde sinken.  Dieser beläuft sich im Vergleich zu Variante A-M bei D-MC auf 10\% und bei D-MF auf 22\%. Aufgrund der fehlenden API-Aufrufe ist jedoch der prozentuale Performance-Verlust unnatürlich inflationiert. In der aktuellen Live-Umgebung wäre hingegen die Einbüßen nahezu irrelevant für den täglichen Betrieb, sowie unter Höchstlast. Daraus kann geschlussfolgert werden, dass bei niedrigen Bearbeitungszeiten einer Anfrage die zusätzlichen Datenbankabfragen und Schreiboperationen größere Auswirkungen auf die durchschnittliche Performance haben. Eine Software, welche eine Vielzahl an synchronen Aufrufen besitzt, kann horizontal generell besser skalieren.
 
-%TODO: Allgemeiner Performance Vergleich
-%TODO: Berechnen ist schneller als Speichern, kann aber Abweichen wegen Aufrufe von APIS und komplexere Berechnungen! Rauslassen?
-%TODO: Vergleich zwischen MongoDb und Postgres knapp
-%TODO: Unterschied zwischen MongoDB A und D nicht so groß wie Postgres A und P
+Weiterhin ist ein geringerer Durchsatz beim Wechsel auf eine PostgreSQL-Datenbank bemerkbar. Dies ist auf die Natur von relationalen bzw. dokumentbasierten Datenbanken zurückzuführen. Eine Aussage aus einem vorgehenden Kapitel hat die theoretische Behauptung aufgestellt, dass der messbare Performance-Verlust beim Umbau eines großen Aggregates in kleinere sich größer gestalten, sofern eine dokumentbasierte Datenbank verwendet wird, im Vergleich zu einem darunterliegenden relationalen Datenspeicher. Ohne die API-Simulation ist dies nicht der Fall, jedoch deutlich zu sehen in der zweiten Version des Lasttests. Um eine genauere Interpretation der Ergebnisse zu erzielen müssen weitere Analysen durchgeführt werden, wodurch allerdings der Umfang dieser Arbeit gesprengt wird.
+
+Alle Varianten, welche als 'C' markiert sind, berechnen den Gesamtpreis des Warenkorbs bei jeden Abruf neu. Die auf Flags basierenden Varianten fallen allgemein langsamer aus, jedoch sollte der Unterschied in der Live-Umgebung deutlich geringer sein, oder eventuell sogar umgekehrt, da die Ressourcenauslastung durch eine deutlich komplexere Kalkulation erhöht sind. Ein exakter Vergleich kann in dem Proof-of-Concept erst bei Implementierung der kompletten Checkout-Komplexität durchgeführt werden. Negativ ist anzumerken, dass die Verwendung von Flags einhergeht mit einem komplexeren Programmablauf, da die Aktualisierung von Daten asynchron stattfinden.
+
+Die Software ist bei einem Umbau von Variante A auf Variante D negativ betroffen. Einer der Hauptpunkte für einen kleineren Aggregationsschnitt sollte die erhöhte Performance sein. Dies ist hier nicht gegeben, wodurch die Motivationsgrundlage hinterfragt werden muss. 
+
+
+%TODO: Warum ist von A-P zu D-PC negativ aber im zweiteren positiv? Sollte immer positiv sein!
 
 
 \subsection{Bewertung des verkleinerten Aggregationsschnitt}
@@ -320,12 +326,22 @@ Die finale Evaluation ist ein Resultat der vorgehenden theoretischen Überlegung
 
 Innerhalb eines solchen Domain-Modells ist es möglich, die Kalkulation des Warenkorbs erst bei expliziter Abfrage der Ergebnisse erfolgen, wodurch insgesamt unnötige Berechnungszeit eingespart werden kann. Ein solches Vorgehen erlaubt es bei einer hohen Auslastung der Systeme multiplikativ an Performance zu gewinnen. Zusätzlich müssen weniger Nutzlast zwischen den Clients und den Server gesendet werden, da die einzelnen Aggregates eine geringere Anzahl an Attributen beinhalten. Es muss allerdings genauer Untersucht werden, ob die zusätzlichen Datenbankabfragen diesen Effekt negieren oder dennoch insgesamt ein positiver Einfluss auf die Applikationsgeschwindigkeit zu verzeichnen ist. 
 
-\begin{itemize}[noitemsep,nolistsep,topsep=-2pt]
-	\item \textbf{Komplexität: } {Viele Prozesse benötigen zum Abfragen von externen Informationen oder für die Einhaltung von Invarianten mehr als ein Aggregat, wodurch der Quelltext an Übersichtlichkeit verliert aufgrund der zusätzlichen Funktionsaufrufe. Dabei müssen die Referenzen auf die Repositories oder Service an die Aggregates weitergegeben werden, wodurch weiter die Übersichtlichkeit leidet. Das Transaktionsmanagement gewinnt ebenfalls an Relevanz, sodass Datensätze so kurz wie möglich gesperrt sind. Weiterhin muss für die Neuberechnung der Preise Nebeneffekte von Funktionen eingeführt werden zum Setzen des 'Outdated'-Wertes. \emph{Insgesamt gewinnt die Applikation stark an Komplexität.}}
-	\item \textbf{Performance: } {}
-	\item \textbf{Parallelität: } {}
-	\item \textbf{Client-Freundlichkeit: } {}
+\begin{itemize}[topsep=-2pt]
+	\item \textbf{Komplexität: } {Viele Prozesse benötigen zum Abfragen von externen Informationen oder für die Einhaltung von Invarianten mehr als ein Aggregat, wodurch zusätzlichen Funktionsaufrufe und Übergabeparameter eingeführt werden müssen. Dabei leidet die Übersichtlichkeit des Quellcodes. Dennoch ist es beispielsweise möglich durch Verwendung eines Kontextobjekts, auf welches überall in der Applikation Zugriff besteht, diese Auswirkungen einzudämmen, indem geladene Aggregate dort eingespeichert und abgerufen werden.
+		
+	Das Transaktionsmanagement gewinnt ebenfalls an Relevanz, sodass Datensätze so kurz wie möglich gesperrt sind. Sofern keine synchronen Aufrufe stattfinden, wirkt sich dies jedoch nicht bemerkbar auf die Performance aus. 
+	
+	Weiterhin muss für die Neuberechnung der Preise zum Abarbeiten von Nebeneffekten Flags eingeführt werden, sofern eine Vermeidung von extra Schreibprozesse angestrebt wird. 
+	
+	\emph{Insgesamt gewinnt die Applikation generell an Komplexität, welche je nach Realisierungsmethode stärker oder schwächer ausfallen kann.}}
+
+	\item \textbf{Performance: } { \emph{Basierend auf die vorgehende Analyse ist ein Verlust von Performance vorhanden, da in der Live-Umgebung eine MongoDB verwendet wird. Dies stellte den eigentlichen Hauptgrund für einen Umgestaltung der Applikation dar.} }
+	
+	\item \textbf{Parallelität: } { Generell können zwei unterschiedliche Aggregates unabhängig voneinander bearbeitet werden. Als konkretes Beispiel ist die Bearbeitung von enthaltenen Artikeln und das setzen von Checkout-Informationen gleichzeitig möglich. Eine tatsächliche Anwendung dieses Falles ist allerdings kaum denkbar. Sofern zusätzlich die Abspaltung der BasketItems hinzukommt, gewinnt dieser Aspekt an Bedeutung. Aus zuvor dargebotenen Gründen ist die erhöhte Transaktionsanzahl nicht vertretbar, da in den meisten Fällen der Warenkorb einer einzelnen Person gehört. \emph{Die gewonnene Parallelität ist folglich nahezu vernachlässigbar bzw. nicht anwendbar.}}
+	%TODO: Api-Contract erklärt irgendwo?
+	\item \textbf{Client-Freundlichkeit: } { Touchpoints erhalten als Antwort auf API-Anfragen in dieser Variante nur einen Teilaspekt des Baskets, denn andererseits müssten wieder alle Aggregate geladen werden, wodurch der Sinn einer Trennung verloren geht. Vornherein findet mit den Clients eine Klärung über die erwarteten Antwortdaten mithilfe einer API-Vereinbarung statt, sodass diese ohne zusätzliche Anfragen weiterhin ihre Arbeitsprozesse abwickeln können. Die Verwendung von Technologien wie GraphQL kann diese Anforderung erleichtern. \emph{Letztendlich sind Clients nur maximal neutral von der neuen Architektur betroffen.}}
 \end{itemize}
 
+Zusammenfassend existiert nur sehr beschränkt ein wirklicher Grund für die Anwendung von Variante D oder ähnlichen Aggregationsschnitten.
+
 %TODO: Add Bewertung zu allen Aggregationsschnitte
-%TODO: Implementierung der Variante

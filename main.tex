@@ -184,6 +184,8 @@ automark,		% Lebende Kolumnentitel
 \def\table{\def\figurename{Tabelle}\figure}
 \let\endtable\endfigure 
 
+\newcommand{\ul}[1]{\emph{#1}}
+
 \begin{document}
   
   \include{glossary}
@@ -206,8 +208,9 @@ automark,		% Lebende Kolumnentitel
   
   %Abbildungsverzeichnis
   \newpage
-  \renewcommand*{\lstlistlistingname}{Listingsverzeichnis}
-  \addcontentsline{toc}{chapter}{Listingsverzeichnis}
+  \renewcommand{\lstlistingname}{Codebeispiel}
+  \renewcommand*{\lstlistlistingname}{Codebeispiel-Verzeichnis}
+  \addcontentsline{toc}{chapter}{Codebeispiel-Verzeichnis}
   \lstlistoflistings
   
   %Acronyms

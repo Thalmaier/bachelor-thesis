@@ -6,17 +6,19 @@ ToDo:
 - Erwähenen der Zwei Varianten von mit flag und ohne flag
     - Ohne flag muss trotzdem abgespeichert werden aus rechtlichen gründen.
 - Alle Klassennamen in \emph aber als eigener Befehl z.B. \name{}
+- Erklären warum nicht Basketitems getrennt worden sind.
 
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
 - Pseudocode schreiben
 - Glossary überarbeiten. REST erklären etc.
-- Umbennenen von "Listing" in Bildunterschriften und Text
 - Aktivitätsdiagramm schreiben statt Swimlane (Erwähnen der Syntax und Ersetzen der Wörter für "Swimlane")
 - README in Github Repo (Describe Calculation)
 
+- Sehr oft "model" bzw "Datenmodell"
 - calculateWithoutSaving should be named more correctly
 
 Today:
+- Aggregationsschnitte oder Aggregatsschnite?
 - Quellen in Glossary? JA ; Gleicher Satzbau oder unterschiedlich?
 - Kapitel 30: Erst Diagramm oder erst Beschreibung? EGAL ; Legende von Nöte für das Swimlane?  Beim ersten mal legende (ANHANG) Machen als BPMN oder Aktivitätsdiagramm
 - Soll ich Domäne schreiben oder nur Domain

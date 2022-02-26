@@ -1,12 +1,9 @@
 
 %% PROOF OF CONCEPT %% 
 
-%TODO: Datenmodells ist korrekt nicht Datenmodel. Überprüfung der Vorkommnisse.
 \chapter{Festlegung des Datenmodells durch Domain-Driven Design}
 
-Durch die Schaffung eines grundlegenden Verständnis für Designprinzipien, Hexagonaler Architektur und Domain-Driven Design kann auf Basis der vorgehenden Analysen ein Proof of Concept entwickelt werden. Hierzu wird weiterhin das typisches Vorgehen von DDD verfolgt und zunächst die Domain und Ubiquitous Language definiert, gefolgt vom Erstellen des zentralen Domain-Modell. 
-
-Die Wahl der Programmiersprache ist aufgrund der Teamexpertisen und dem vorliegenden Anwendungsfall auf Java oder Kotlin beschränkt. Kotlin ist eine, auf Java basierende, Programmiersprache, welche in ihrem Design einen hohen Fokus auf Lesbarkeit und Flexibilität legt. Aufgrund einer Vielzahl von Vorteile, welche durch den Einsatz von Kotlin erzielt werden können, wurde diese als die zu verwendende Sprache festgelegt. Zugleich wird nach Projektabschluss jegliche Codeanpassung an der produktiven Checkout-Software in Kotlin vorgenommen und somit ein langsame Migration des Sourcecodes erreicht.
+Durch die Schaffung eines grundlegenden Verständnis für Designprinzipien, Hexagonaler Architektur und Domain-Driven Design kann auf zusätzlicher Basis der vorgehenden Analysen ein Proof-of-Concept der Checkout-Software entwickelt werden. Hierzu wird weiterhin das typisches Vorgehen von Domain-Driven Design verfolgt und zunächst der Domainumfang und die Ubiquitous Language definiert, gefolgt vom Erstellen des zentralen Domain-Modells.
 
 \section{Abgrenzung der Domain und Bounded Contexts mithilfe der Planungsphase}
 
@@ -60,7 +57,7 @@ In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird 
 
 %TODO: Doppelt gemoppelt der obere Absatz mit den unteren?
 
-Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend das Datenmodell designt. 
+Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend alle notwendigen Klassen designt. 
 
 \section{Definition der Value Objects}
 Aufgrund der Simplizität und klaren Zuteilung vom Modell zu Value Objects lassen sich diese als leichtes bestimmen. Value Objects kapseln sowohl Daten als auch das dazugehörige Verhalten. Wobei ihre Funktionalitäten keine Änderungen an den beinhalteten Attributen durchführen dürfen, da sie als immutable gelten. Daher wird, anstatt einer direkten Wertanpassung, in der Regel eine Kopie des aktuellen Objektes mitsamt der aktualisierten Werte erstellt und zurückgegeben. Zudem gilt diese Kopie als ein neues Value Object, dank der Eigenschaft, dass die Identität eines Value Objects alleinig von ihren Attributen und den zugeteilten Werten abhängt. Anfangs sollte jede Datenstruktur des Domain-Modells als ein Value Object definiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden.
@@ -183,7 +180,7 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 	\item \textbf{OrderRef: } {Referenz auf die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses gesetzt.}
 }
 
-Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Model in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Der Customer und PaymentProcess wurden aus Platzgründen in separate Klassendiagramme, Abbildung \ref{fig:VO-Customer} und \ref{fig:VO-Payment}, verlagert. Anzumerken ist, dass bei Fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Der Kunde ist in diesem Anwendungsfall genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine genaue Kundennummer. Daher existiert keine Zuweisung zwischen Kunden und mehreren Warenkörben.
+Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Der Customer und PaymentProcess wurden aus Platzgründen in separate Klassendiagramme, Abbildung \ref{fig:VO-Customer} und \ref{fig:VO-Payment}, verlagert. Anzumerken ist, dass bei Fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Der Kunde ist in diesem Anwendungsfall genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine genaue Kundennummer. Daher existiert keine Zuweisung zwischen Kunden und mehreren Warenkörben.
 
 \begin{figure}[htbp]
 	\centering

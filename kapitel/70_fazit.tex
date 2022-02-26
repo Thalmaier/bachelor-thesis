@@ -2,4 +2,11 @@
 %% FAZIT %% 
 
 \chapter{Fazit und Empfehlungen}
-\blindtext
+
+Die Begründungen für einen anderen Aggregationsschnitt bilden sind nach den Grundprinzipen des Domain-Driven Designs aus erhöhter Skalierbarkeit und Performance. Letzteres wurde anhand der Performance-Analyse widerlegt, da sowohl für den Proof-of-Concept als auch für die Live-Umgebung eine MongoDB eingesetzt wird. Die Förderung der Skalierbarkeit wird durch weniger Datenbankoperationen erhöhte Parallelität erreicht. Auch dieser Aspekt findet kaum eine Anwendung auf mögliche Aggregationsschnitte. Hinzukommt, dass die Softwarekomplexität durch andere Architekturen weiter ansteigt. Letztendlich besteht kein Anreiz für ein Neudesign der Anwendung.
+
+Sofern zukünftig eine Notwendigkeit zur parallelen Bearbeitung der Artikel im Warenkorb besteht, kann positiv für einen Abtrennung der Items argumentiert werden. Jedoch besteht aktuell kein solcher Anwendungsfall.
+
+Dieses Resultat kommt aus dem hohen logischen Zusammenhalt des Warenkorbs zustande. Jedes mögliche Aggregate hat Abhängigkeiten zu anderen Aggregates, wodurch die transaktionalen Grenzen sich über den ganzen Warenkorb spannen. Andere Applikationen können weiterhin von kleineren Aggregationsschnitten profitierten, dies ist allerdings hier nicht anwendbar.
+
+Als Empfehlungen kann dargeboten werden, dass durch eine genaue Analyse der Anwendungsfälle und Integritätsgrenzen der idealen Aggregationsschnitt sich herauskristallisiert. Invarianten zwischen Objekte bestimmen maßgeblich mögliche Designs. Weiterhin kann durchaus verwendete Technologien einen Einfluss auf die Architektur der Software haben, allerdings sollte dies mit dem Bewusstsein geschehen, dass sich Techniken zeitnahe ändern können und weiterhin ein Risiko bei deren Einbindung in den Entscheidungsprozess darstellen. Tatsächliche Anforderungen an die Applikation und in der Praxis existierende Kompromisse stehen meist über den theoretischen Prinzipien des Softwaredesigns. Diese bieten zwar Richtlinien für eine langlebige Anwendung, allerdings sind sie nicht immer die beste Lösung für ein konkretes Problem und der zugrundeliegenden Antrieb für ihre Einhaltung sollte hinterfragt werden. Nichtsdestotrotz ist in den meisten Fällen ein kleinerer Aggregationsschnitt zu bevorzugen, da viele Applikationen keine starken Invarianten besitzen. Lediglich eine Checkout-Software hat viele Businessbedingungen, welche aus rechtlichen Gründen streng überprüft werden müssen.

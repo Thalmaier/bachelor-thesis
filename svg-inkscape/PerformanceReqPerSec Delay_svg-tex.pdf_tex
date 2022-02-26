@@ -1,0 +1,98 @@
+%% Creator: Inkscape 1.1.2 (1:1.1+202202050950+0a00cf5339), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PerformanceReqPerSec Delay_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{526.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.48433048)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.08760684,0.44230769){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Abläufe pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.08760684,0.41096866){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sekunde\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.04202279,0.10327635){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}18,50\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.04202279,0.17450142){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.04202279,0.247151){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,50\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.04202279,0.31695157){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.19444444,0.33119658){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,96\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.31267806,0.29273504){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,69\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.75,0.15883191){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}18,75\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.75,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-PF\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.19444444,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}A-M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.42236467,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-MF\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.53632479,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}A-P\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.92806268,0.03490028){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Varianten\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.42236467,0.28418803){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,63\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.31267806,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-MC\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.6502849,0.00925926){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-PC\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.6502849,0.23433048){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,28\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.53632479,0.23005698){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}19,25\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+    \put(0.04202279,0.03205128){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}18,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{PerformanceReqPerSec Delay_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%
