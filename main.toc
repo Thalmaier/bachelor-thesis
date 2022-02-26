@@ -122,28 +122,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.2}Dependency Injection von Services in Domain-Driven Design}{43}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Performance-Analyse der Aggregationsschnitte durch}{46}{}%
+\contentsline {subsection}{\numberline {5.4.3}Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}{46}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.4}Bewertung des verkleinerten Aggregationsschnitt}{46}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Implementierung des Proof-of-Concepts}{47}{}%
+\contentsline {chapter}{\numberline {6}Implementierung des Proof-of-Concepts}{48}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Design der primären Adapter}{47}{}%
+\contentsline {section}{\numberline {6.1}Design der primären Adapter}{48}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Realisierung des Applikationskerns}{48}{}%
+\contentsline {section}{\numberline {6.2}Realisierung des Applikationskerns}{49}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Definition von Applicationservices anhand ihrer Aufgaben}{48}{}%
+\contentsline {subsection}{\numberline {6.2.1}Definition von Applicationservices anhand ihrer Aufgaben}{49}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Aufteilen der Businesslogik zwischen Domainservices und Datenmodell}{49}{}%
+\contentsline {subsection}{\numberline {6.2.2}Aufteilen der Businesslogik zwischen Domainservices und Datenmodell}{50}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Anbinden externer Systeme und Datenbanken durch sekundäre Adapter}{50}{}%
+\contentsline {section}{\numberline {6.3}Anbinden externer Systeme und Datenbanken durch sekundäre Adapter}{51}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{52}{}%
+\contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{53}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Anhang}{i}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Ergebnisse des Lasttests}{i}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{iv}{}%
+\contentsline {chapter}{Literatur}{v}{}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

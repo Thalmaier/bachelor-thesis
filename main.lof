@@ -62,7 +62,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Beispiel einer Circular Dependency}}{44}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Durchschnittliche abgearbeitete Anfragen pro Sekunde bei insgesamt 10.000 Anfragen}}{46}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Durchschnittliche abgearbeitete Abläufe pro Sekunde bei insgesamt 10.000 Abläufen}}{47}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -70,8 +70,10 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen}}{ii}{}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit MongoDB}}{ii}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen}}{iii}{}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit Postgres}}{iii}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Lasttest-Ergebnisse mit Simulation der API-Aufruf durch künstliche Verzögerung}}{iv}{}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

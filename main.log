@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  24 FEB 2022 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  26 FEB 2022 01:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1700,15 +1700,6 @@ File: ./svg-inkscape/AD Basketcreation_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/AD Basketcreation_svg-raw.pdf  used on 
 input line 20.
 (pdftex.def)             Requested size: 369.63002pt x 128.7306pt.
-Package svg Info: Calling Inkscape on input line 31.
-runsystem(inkscape "svg/AD Basketabruf.svg" -D --export-filename="AD Basketabru
-f_svg-raw.pdf")...executed.
-
-runsystem(if not exist "./svg-inkscape/" mkdir "./svg-inkscape/")...executed.
-
-runsystem(move "AD Basketabruf_svg-raw.pdf" "./svg-inkscape/AD Basketabruf_svg-
-raw.pdf")...executed.
-
 <./svg-inkscape/AD Basketabruf_svg-raw.pdf, id=139, 482.55281pt x 181.42781pt>
 File: ./svg-inkscape/AD Basketabruf_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD Basketabruf_svg-raw.pdf>
@@ -1920,171 +1911,172 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 265--281
 []$[]$ 
  []
 
+[45]
 Package svg Info: Last page of `./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf
-' is 23 on input line 290.
-(svg-inkscape/PerformanceReqPerSec_svg-tex.pdf_tex
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=667, page=1, 528.47438pt x
+' is 23 on input line 304.
+ (svg-inkscape/PerformanceReqPerSec_svg-tex.pdf_tex
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=670, page=1, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=668, page=2, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=671, page=2, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 2 used on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=669, page=3, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=672, page=3, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 3 used on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=670, page=4, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=673, page=4, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 4 used on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=671, page=5, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=674, page=5, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 5 used on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=672, page=6, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=675, page=6, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=673, page=7, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=676, page=7, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 7 used on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=674, page=8, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=677, page=8, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 8 used on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=675, page=9, 528.47438pt x
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=678, page=9, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 9 used on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=676, page=10, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=679, page=10, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 10 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=677, page=11, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=680, page=11, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 11 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=678, page=12, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=681, page=12, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 12 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=679, page=13, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=682, page=13, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 13 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=680, page=14, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=683, page=14, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 14 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=681, page=15, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=684, page=15, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 15 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=682, page=16, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=685, page=16, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 16 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=683, page=17, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=686, page=17, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 17 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=684, page=18, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=687, page=18, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 18 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=685, page=19, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=688, page=19, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 19 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=686, page=20, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=689, page=20, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 20 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=687, page=21, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=690, page=21, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 21 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=688, page=22, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=691, page=22, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 22>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 22 used on input line 98.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=689, page=23, 528.47438pt 
+<./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, id=692, page=23, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf, page 23>
 Package pdftex.def Info: ./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf , page
 23 used on input line 100.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-) [45]) [46 <./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf> <./svg-inkscape/P
+) [46]) [47 <./svg-inkscape/PerformanceReqPerSec_svg-tex.pdf> <./svg-inkscape/P
 erformanceReqPerSec_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/PerformanceReqPerSec_svg-tex.
@@ -2191,7 +2183,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
 []$[]$ 
  []
 
-[47
+[48
 
 
 
@@ -2214,17 +2206,17 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 64--76
 []$[]$ 
  []
 
-[48]
+[49]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 92--104
 []$[]$ 
  []
 
-[49]
+[50]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 114--131
 []$[]$ 
  []
 
-[50]
+[51]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 145--159
 []$[]$ 
  []
@@ -2234,12 +2226,17 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 168--179
 []$[]$ 
  []
 
-) [51]
+) [52]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [52
+) [53
+
+
+
+
+] [54
 
 
 
@@ -2252,20 +2249,22 @@ chapter 8.
 [1
 
 
-
-
-
-
 ] [2
 
 ] [3
 
 
-])
+]
+
+LaTeX Warning: Float too large for page by 24.17825pt on input line 255.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4])
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 49.
-
-(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -2276,7 +2275,9 @@ LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-[4
+[5
+
+
 
 
 
@@ -2293,10 +2294,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32766 strings out of 478659
- 675430 string characters out of 2845920
- 1604952 words of memory out of 3000000
- 49933 multiletter control sequences out of 15000+600000
+ 32765 strings out of 478659
+ 675389 string characters out of 2845920
+ 1599963 words of memory out of 3000000
+ 49932 multiletter control sequences out of 15000+600000
  515302 words of font info for 234 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,21n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2314,9 +2315,9 @@ s8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
 bx10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 sso10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mtt8.pfb>
-Output written on main.pdf (68 pages, 1094272 bytes).
+Output written on main.pdf (71 pages, 1107568 bytes).
 PDF statistics:
- 784 PDF objects out of 1000 (max. 8388607)
+ 793 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  54605 words of extra memory for PDF output out of 61914 (max. 10000000)
 

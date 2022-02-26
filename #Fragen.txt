@@ -3,10 +3,14 @@ ToDo:
 - Alle Kapitel schreiben
 - Alle Kapitel überarbeiten
 - Überarbeiten von Performance in Variante D
+- Erwähenen der Zwei Varianten von mit flag und ohne flag
+    - Ohne flag muss trotzdem abgespeichert werden aus rechtlichen gründen.
+- Alle Klassennamen in \emph aber als eigener Befehl z.B. \name{}
 
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
 - Pseudocode schreiben
 - Glossary überarbeiten. REST erklären etc.
+- Umbennenen von "Listing" in Bildunterschriften und Text
 - Aktivitätsdiagramm schreiben statt Swimlane (Erwähnen der Syntax und Ersetzen der Wörter für "Swimlane")
 - README in Github Repo (Describe Calculation)
 
@@ -75,3 +79,7 @@ https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3
 - Parameter
 
 Eig: 80 / 200 / 250   Now: 50/60/60
+
+A: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1
+D: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1
+D no flag: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1

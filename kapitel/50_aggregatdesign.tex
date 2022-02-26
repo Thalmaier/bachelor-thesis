@@ -281,16 +281,32 @@ class Aggregate {
 
 Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedoch werden die Funktionssignaturen aufgebläht. Aus Sicht der Skalierbarkeit und Fehleranfälligkeit ist generell dieser Ansatz zu bevorzugen, aus welchem Grund auch die Implementierung des Proof-of-Concepts die Domainservices als Parameter übergibt.
 
-\subsection{Performance-Analyse der Aggregationsschnitte durch }
+\subsection{Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}
 
+Zur Verfassung einer genaueren Bewertung der Performance wird ein Lasttest durchgeführt. Der Versuchsaufbau wird mit der Open-Source-Software 'JMeter' realisiert. Hierbei wird zuerst die Datenbank mit 1000 Datensätze befüllt und anschließend im eigentlichen Test ein gängiger Anwendungsfall simuliert. Dieser beschränkt sich auf folgende Aktionen: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Dieser Ablauf wird in jeder Variante innerhalb von zehn Threads X mal abgearbeitet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Ebenfalls, um die Auswirkungen des Umbaus bei Verwendung einer relational Datenbank zu beobachten, wurde der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Zur simpleren Referenz auf die getesteten Varianten wird die Verwendung von MongoDB als 'M' und von PostgreSQL auf 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt unterteilt in 'F' bzw. 'C', wobei 'C' stets das Kalkulationsergebnis neu berechnet und 'F' anhand von Flags erkennt, wann eine Neuberechnung notwendig ist. Beispielsweise steht die Variante D-PF für den Aggregationsschnitt D mit einer PostgreSQL und Flags.
+
+\textbf{Annahmen und Bemerkungen}
+
+In realen Umständen beträgt die Zeitspanne, in welcher die Software lediglich auf eine Antwort der externen Aufrufe wartet, für diesen Anwendungsfall insgesamt durchschnittlich 465 Millisekunden anhand des Checkout-Monitorings. Sofern ein Aggregationsschnitt öfters Informationen von Systemen benötigt als andere, muss eine Simulation dieser Wartezeit zur Wahrung der Integrität eingebaut werden. Da alle Varianten aktuell eine identische Anzahl an API-Abfragen aufweisen, wird diese Tatsache im Performance-Test vernachlässigt.
+
+%TODO: Connection-Pools in gls
+Zudem können weiterhin Optimierungsoptionen vorgenommen werden, wie die angepasste Einstellung des Connection-Pools oder das Einsparen von ganzen Datenbankoperationen durch Caching. Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je nach Anwendungsfall und Software ab.
+
+Der Performance-Unterschied zwischen Varianten C und F kann gesenkt werden, da in der Live-Umgebung die Berechnung weitaus komplizierter ist und hierdurch mehr Ressourcen in Beanspruchung stehen.
+
+\textbf{Abgeleitete Aussagen}
+
+In Diagramm \ref{fig:Performance} wurde der Durchschnitt der 'Abläufe pro Sekunde' über 10.000 Abläufe gebildet und grafisch dargestellt. 
 
 \begin{figure}[htbp]
 	\centering
 	\small
 	\includesvg[width=0.70\textwidth]{svg/PerformanceReqPerSec.svg}
-	\caption{Durchschnittliche abgearbeitete Anfragen pro Sekunde bei insgesamt 10.000 Anfragen}
+	\caption{Durchschnittliche abgearbeitete Abläufe pro Sekunde bei insgesamt 10.000 Abläufen}
 	\label{fig:Performance}
 \end{figure}
+
+Grundlegend ist eine erhöhte Bearbeitungszeit durch zusätzliche Datenbankoperationen in Variante D zu vermerken.  Dieser beläuft sich bei Variante D-MC auf 10\% und bei D-MF auf 22\%. Aufgrund der fehlenden API-Aufrufe ist jedoch der prozentuale Performance-Verlust unnatürlich inflationiert.
 
 %TODO: Allgemeiner Performance Vergleich
 %TODO: Berechnen ist schneller als Speichern, kann aber Abweichen wegen Aufrufe von APIS und komplexere Berechnungen! Rauslassen?
