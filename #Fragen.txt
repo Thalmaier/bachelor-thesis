@@ -7,9 +7,11 @@ ToDo:
     - Ohne flag muss trotzdem abgespeichert werden aus rechtlichen gründen.
 - Alle Klassennamen in \emph aber als eigener Befehl z.B. \name{}
 - Erklären warum nicht Basketitems getrennt worden sind.
+- Rename "doumentbased" zu Dokumentenorientierte Datenbank
+- Schreiben bei D => More database requests -> More Safety (Add to disclaimer in perfromance test too)
 
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
-- Pseudocode schreiben
+- Pseudocode Zeilen prüfen ob noch passend Schluss von 60 prüfen
 - Glossary überarbeiten. REST erklären etc.
 - Aktivitätsdiagramm schreiben statt Swimlane (Erwähnen der Syntax und Ersetzen der Wörter für "Swimlane")
 - README in Github Repo (Describe Calculation)
@@ -85,3 +87,5 @@ Eig: 80 / 200 / 250   Now: 50/60/60
 A: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1
 D: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1
 D no flag: fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 2, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1
+
+fetchProduct: 3, fetchPrice: 3, fetchShippingCosts: 1, createPaymentProcess: 1, initializeAllSubPayments: 1, executePayment: 1, createOrder: 1

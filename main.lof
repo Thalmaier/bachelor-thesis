@@ -1,42 +1,81 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Beispielhafte Darstellung einer Drei-Schichtenarchitektur}}{6}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Grundstruktur einer Hexagonalen Architektur}}{8}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Beispiel einer Context-Map anhand des Personalwesens einer Firma}}{10}{}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Swimlane Diagramm für die Erstellung eines Baskets}}{16}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Swimlane Diagramm für den Abruf eines Baskets}}{17}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Swimlane Diagramm für die Stornierung eines Baskets}}{17}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Swimlane Diagramm für das Setzen der Checkout Daten}}{18}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Swimlane Diagramm für das Hinzufügen eines Produktes }}{19}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Swimlane Diagramm für das Hinzufügen einer Bezahlmethode}}{20}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Swimlane Diagramm für das Initiieren des Bezahlvorgangs }}{20}{}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Swimlane Diagramm für das Ausführen des Bezahlvorgangs }}{21}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktivitätsdiagramm für die Erstellung eines Baskets}}{16}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Aktivitätsdiagramm für den Abruf eines Baskets}}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Aktivitätsdiagramm für die Stornierung eines Baskets}}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Aktivitätsdiagramm für das Setzen der Checkout Daten}}{18}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Aktivitätsdiagramm für das Hinzufügen eines Produktes }}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Aktivitätsdiagramm für das Hinzufügen einer Bezahlmethode}}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Aktivitätsdiagramm für das Initiieren des Bezahlvorgangs }}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Aktivitätsdiagramm für das Ausführen des Bezahlvorgangs }}{21}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.9}{\ignorespaces REST-API der Checkout-Software für diesen Proof-of-Concept}}{22}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Context Diagramm der produktiven Checkout-Umgebung}}{23}{}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm eines Baskets}}{30}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Zugehöriges Klassendiagramm des Customer Value Objects}}{31}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Darstellung des Payment Process als Klassendiagramm}}{31}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Vergleich zwischen Value Object und Entity}}{32}{}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B}}{35}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C}}{37}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}}{39}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de}}{41}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Aggregationsschnitt der Variante D}}{43}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Beispiel einer Circular Dependency}}{44}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Durchschnittliche abgearbeitete Abläufe pro Sekunde bei insgesamt 10.000 Abläufen}}{47}{}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8.1}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit MongoDB}}{ii}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8.2}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit Postgres}}{iii}{}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Lasttest-Ergebnisse mit Simulation der API-Aufruf durch künstliche Verzögerung}}{iv}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Lasttest-Ergebnisse mit Datenbanken von einem externen Cloud-Anbieter}}{iv}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Lasttest-Ergebnisse mit Simulation der API-Aufruf durch künstliche Verzögerung}}{v}{}%
+\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

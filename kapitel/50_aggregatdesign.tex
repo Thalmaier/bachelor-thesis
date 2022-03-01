@@ -25,7 +25,7 @@ Wird die \emph{Variante A} unterteilt in Basket-, Payment und BasketItem-Aggrega
 
 \subsubsection{Invarianten über Aggregatsgrenzen hinweg}
 
-Wird dem Warenkorb ein neuer Artikel hinzugefügt hat dies zu Folge, dass nicht nur ein neues Item angelegt, sondern auch der Baskets neu berechnet werden muss. Sofern eine Aggregatstrennung zwischen Basket und BasketItem vorliegt, muss dennoch der ganze Basket geladen werden, andernfalls ist es nicht möglich den Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Contexts existieren viele dieser Businessanforderungen, welche mehrere Objekte benötigen, um angewandt zu werden. Zudem ist es gegen die grundlegenden Bestimmungen eines Aggregates, dass eine Anfrage bzw. Transaktion zwei oder mehrere Aggregate bearbeiten. Dieser Anwendungsfall hätte eine Speicherung eines neuen BasketItems und die Aktualisierung des CalculationResults des Baskets zufolge. Schlussfolgernd wäre eine solche Operation nicht erlaubt ohne Verwendung von eventueller Konsistenz. Um genauer zu bestimmen, welche tatsächliche Performance erzielt werden kann durch kleinere Aggregates am konkreten Design der \emph{Variante B} müssen die Anzahl der tatsächlich unabhängig abschließbaren Operationen untersucht werden. Die vorher festgelegten Swimlane Diagramme helfen bei dieser Aufgabe.
+Wird dem Warenkorb ein neuer Artikel hinzugefügt hat dies zu Folge, dass nicht nur ein neues Item angelegt, sondern auch der Baskets neu berechnet werden muss. Sofern eine Aggregatstrennung zwischen Basket und BasketItem vorliegt, muss dennoch der ganze Basket geladen werden, andernfalls ist es nicht möglich den Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Contexts existieren viele dieser Businessanforderungen, welche mehrere Objekte benötigen, um angewandt zu werden. Zudem ist es gegen die grundlegenden Bestimmungen eines Aggregates, dass eine Anfrage bzw. Transaktion zwei oder mehrere Aggregate bearbeiten. Dieser Anwendungsfall hätte eine Speicherung eines neuen BasketItems und die Aktualisierung des CalculationResults des Baskets zufolge. Schlussfolgernd wäre eine solche Operation nicht erlaubt ohne Verwendung von eventueller Konsistenz. Um genauer zu bestimmen, welche tatsächliche Performance erzielt werden kann durch kleinere Aggregates am konkreten Design der \emph{Variante B} müssen die Anzahl der tatsächlich unabhängig abschließbaren Operationen untersucht werden. Die vorher festgelegten Aktivitätsdiagramme helfen bei dieser Aufgabe.
 
 Ein Abruf eines Baskets kommt einher mit dem Laden aller anderen Aggregates, da die Touchpoints den gesamten Basket benötigen. Dies gilt ebenfalls für alle anderen Anwendungsfälle, welche als Antwort auf ihre Anfrage einen kompletten Basket erwarten. Das Stornieren des Baskets und Setzten der Checkout-Daten ist positiv von dieser Anpassung betroffen. Jedoch ist die Initiierung und Durchführung des Bezahlvorgangs nicht komplett unabhängig abschließbar, da im Nachhinein der Status des Baskets angepasst werden muss. Dadurch entsteht eine Abhängigkeit, welche im Nachhinein erfüllt werden muss und somit zur eventuellen Konsistenz führt. Die größte Anzahl an API-Anfragen beziehen sich auf das Hinzufügen und Bearbeiten von BasketItems und die Verwaltung des Bezahlvorgangs. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle durch einen Umbau der Architektur von Variante A auf Variante B wirklich positiv betroffen.
 
@@ -83,19 +83,19 @@ Bevor ein Bezahlprozess gestartet werden darf, muss eine Evaluierung des Warenko
 \subsection{Eventuelle Konsistenz zwischen Aggregates}
 %TODO: Message Broker und Listener in gls
 
-Bei der Implementierung von Variante A ist es möglich as Einfrieren des Warenkorbs und die Initiierung innerhalb einer Transaktion erfolgt. Aufgrund der Richtlinie, dass jede Transaktion nur ein Aggregate bearbeiten darf, müssen somit diese Funktionalitäten aufgespalten werden. Das konkrete Problem, welches sich dabei ergibt, ist im Codebeispiel \ref{lst:eventualConsistency} veranschaulicht.
+Bei der Implementierung von Variante A ist es möglich, dass das Einfrieren des Warenkorbs und die Initiierung innerhalb einer Transaktion erfolgt. Aufgrund der Richtlinie, dass jede Transaktion nur ein Aggregate bearbeiten darf, müssen somit diese Funktionalitäten aufgespalten werden. Das konkrete Problem, welches sich dabei ergibt, ist im Codebeispiel \ref{lst:eventualConsistency} veranschaulicht.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Getrennte Transaktionen für die Initiierung des Bezahlvorgangs}, label={lst:eventualConsistency}, language=Kotlin]
-		fun initializePaymentProcess(basket: Basket, paymentProcess: PaymentProcess) {
-			basket.validate()
-			basket.freeze()
-			basketRepository.save(basket)
-			// Mögliches Interleaving anderer Operation, welche zur Abänderung des
-			// Baskets und des Validierungsergebnisses führt.
-			paymentProcess.initialize()
-			paymentProcessRepository.save(paymentProcess)
-		}
+function initializePayment(Basket basket, PaymentProcess paymentProcess) {
+	basket.validate()
+	basket.freeze()
+	basketRepository.store(basket)
+	// Mögliches Interleaving anderer Operation, welche zur Abänderung des
+	// Baskets und des Validierungsergebnisses führt.
+	paymentProcess.initialize()
+	paymentProcessRepository.store(paymentProcess)
+}
 	\end{lstlisting}
 \end{minipage}
 
@@ -171,7 +171,7 @@ Grundsätzlich scheint eine Abspaltung der Berechnungsergebnisse vom Warenkorb d
 %TODO: Gleiche Überschrift oder nciht?
 \subsection{Herausschneiden der Checkout-Daten aus dem Basket-Aggregate}
 
-In dem Swimlane Diagramm \ref{fig:SL-Checkoutdata} wurde das Hinzufügen der Kundendaten, Bezahlungsmethode und Fulfillment beschrieben. Dieser Prozess ist ein Hinweise darauf, dass diese Daten eventuell aus dem Basket-Aggregat genommen werden können. Die Summe der Attribute wird als 'Checkout-Daten' betitelt und beinhalten Kundendaten, Fulfillment, Rechnungs- und Lieferadresse. Nachteilig ist jedoch, dass dadurch die Value Objects zu einer Entity zusammengefasst werden, da die Rolle des Aggregate Root nur durch Entities verfüllt werden darf. Ähnlich zum vorgehenden Unterkapitel ist eine Untersuchung der Implikationen eines solches Aggregationsschnittes notwendig.
+In dem Aktivitätsdiagramm \ref{fig:SL-Checkoutdata} wurde das Hinzufügen der Kundendaten, Bezahlungsmethode und Fulfillment beschrieben. Dieser Prozess ist ein Hinweise darauf, dass diese Daten eventuell aus dem Basket-Aggregat genommen werden können. Die Summe der Attribute wird als 'Checkout-Daten' betitelt und beinhalten Kundendaten, Fulfillment, Rechnungs- und Lieferadresse. Nachteilig ist jedoch, dass dadurch die Value Objects zu einer Entity zusammengefasst werden, da die Rolle des Aggregate Root nur durch Entities verfüllt werden darf. Ähnlich zum vorgehenden Unterkapitel ist eine Untersuchung der Implikationen eines solches Aggregationsschnittes notwendig.
 
 Anpassungen an diesen Daten dürfen nur durchgeführt werden, wenn der Basket im Status 'open' ist. Dadurch muss bei jedem API-Aufruf zuvor der Zustand überprüft und der Warenkorb-Datenbankeintrag gesperrt werden. Aufgrund von möglichen Interleavings kann ansonsten die Initiierung des Bezahlvorgang auf invalide Checkout-Data stattfinden. Weiterhin wird durch das Setzten eines neuen Fulfillments die Neuberechnung des Warenkorbs angestoßen und bei Übergabe eines Payments muss der PaymentProcess aktualisiert werden.
 
@@ -202,23 +202,23 @@ Eine Realisierungsmöglichkeit ist die Haltung und Aufrufen einer Referenz im Ag
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Injektion des Services in ein Aggregate durch das Repository}, label={lst:injection}, language=Kotlin]
-class Aggregate(val someData: Data) {
-	lateinit var domainService: SomeService
+class Aggregate {
 	
-	fun inject(domainService: SomeService) {
+	variable SomeService domainService
+	
+	// Setzen des konkreten Service
+	function inject(SomeService domainService) {
 		this.domainService = domainService
 	}
-	
-	fun executeBusinessLogic() {
-		domainService.doStuff(someData)
-	}
 }
-class AggregateRepository(val someService: SomeService) {
-	fun load(id: Id): Aggregate {
-		val aggregate = searchInDatabase(id)
+class AggregateRepository {
+	
+	function load(Id id) returns Aggregate {
+		variable aggregate = searchInDatabase(id)
 		aggregate.inject(someService)
 		return aggregate
 	}
+	
 }
 	\end{lstlisting}
 \end{minipage}
@@ -238,19 +238,13 @@ Ein anderer Lösungsansatz kann das Extrahieren einer Teilfunktionalität aus de
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Auslagerung der Referenz in einen Domainservice}, label={lst:extract}, language=Kotlin]
-class DomainService(someService: SomeService) {
-	
-	// Kann unabsichtlich umgangen werden, durch direkten Aufruf von aggregate.doStuff()
-	fun doStuff(aggregate: Aggregate) {
+class DomainService {
+	// Überprüfung von aggregate.isActionValid() kann unabsichtlich umgangen werden
+	// Durch direkten Aufruf von aggregate.doStuff()
+	function doStuff(Aggregate aggregate) {
 		if (someService.isActionValid()) {     
 			aggregate.doStuff()
 		}
-	}
-
-	// Kann nicht direkt umgangen werden, da doSomeOtherStuff einen Parameter erwartet
-	fun doSomeOtherStuff(aggregate: Aggregate) {
-		val data = someService.getData()
-		aggregate.doSomeOtherStuff(data)        
 	}
 }
 	\end{lstlisting}
@@ -264,13 +258,17 @@ Ein Aggregate sollte stets selbst alle wesentlichen Invarianten überprüfen, so
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Übergabe der Referenz an das Aggregate als Parameter}, label={lst:parameter}, language=Kotlin]
-class DomainService(someService: SomeService) {
-	fun doStuff(aggregate: Aggregate) {
+class DomainService {
+	
+	variable SomeService someService
+	
+	function doStuff(Aggregate aggregate) {
 		aggregate.doStuff(someService)
 	}
 }
 class Aggregate {
-	fun doStuff(someService: SomeService) {
+	// Kann nicht umgegangen werden, da Validierung dierekt in Funktion geschieht
+	function doStuff(SomeService someService) {
 		if (someService.isActionValid()) {
 			...
 		}

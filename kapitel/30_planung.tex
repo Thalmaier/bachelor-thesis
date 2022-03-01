@@ -7,7 +7,7 @@ Der erfolgreiche Abschluss eines Projektes mit Domain-Driven Design erfordert di
 
 \section{Ausschlaggebende Anwendungsfallbeschreibungen}
 
-Um den Kunden im Onlineshop oder den Mitarbeitern in den Märkten eine einwandfreie Benutzererfahrung zu gewährleisten, soll die Checkout-Software alle Prozesse vom Erstellen eines Warenkorbs bis hin zum Kaufabschluss verwalten können. Dadurch entstehen eine Vielzahl von relevanten Anwendungsfällen, welche alle korrekt und möglichst performant abgearbeitet werden müssen. Zur Dokumentation dieser Vorgänge empfiehlt es sich in der Entwicklungsphase die Prozesse in einem Diagramm abzubilden. Zusätzlich zu den Dokumentationszwecken kommt noch hinzu, dass eventuelle Unklarheiten aufgedeckt, Bedingungen an den Daten oder Programmfluss geklärt und sich eine natürliche Benutzung der Ubiquitous Language etabliert. Auf Basis dieser Anwendungsfälle ist es später möglich, Artefakte des Domain-Driven Designs leichter zu definieren. Vor allem die entscheidenden Invarianten bilden sich heraus und das Datenmodell kann klarer in Aggregates unterteilt werden. Die wichtigsten Anwendungsfälle für den Proof-of-Concept sind in diesem Kapitel vereinfacht beschrieben. Zu beachten war bei der Reduzierung der Prozesse, dass Bedingungen zwischen Datenstrukturen weiterhin unverändert sind, damit die Aggregationsschnitte im Zentrum dieser Arbeit nicht von den möglichen Varianten der Produktivanwendung abweicht. Dieses Kapitel dient somit als Grundlage für das Design der Software und wird in späteren Kapiteln referenziert. Die folgenden Prozesse wurden in Zusammenarbeit zwischen den Teams des Onlineshops, dem Checkout-Team und zuständigen \Gls{Stakeholder}n erarbeitet. Als Darstellungsmethode wurde sich auf Swimlane Diagramme geeinigt, damit die Interaktion zwischen den Systemen ebenfalls abgebildet werden kann.
+Um den Kunden im Onlineshop oder den Mitarbeitern in den Märkten eine einwandfreie Benutzererfahrung zu gewährleisten, soll die Checkout-Software alle Prozesse vom Erstellen eines Warenkorbs bis hin zum Kaufabschluss verwalten können. Dadurch entstehen eine Vielzahl von relevanten Anwendungsfällen, welche alle korrekt und möglichst performant abgearbeitet werden müssen. Zur Dokumentation dieser Vorgänge empfiehlt es sich in der Entwicklungsphase die Prozesse in einem Diagramm abzubilden. Zusätzlich zu den Dokumentationszwecken kommt noch hinzu, dass eventuelle Unklarheiten aufgedeckt, Bedingungen an den Daten oder Programmfluss geklärt und sich eine natürliche Benutzung der Ubiquitous Language etabliert. Auf Basis dieser Anwendungsfälle ist es später möglich, Artefakte des Domain-Driven Designs leichter zu definieren. Vor allem die entscheidenden Invarianten bilden sich heraus und das Datenmodell kann klarer in Aggregates unterteilt werden. Die wichtigsten Anwendungsfälle für den Proof-of-Concept sind in diesem Kapitel vereinfacht beschrieben. Zu beachten war bei der Reduzierung der Prozesse, dass Bedingungen zwischen Datenstrukturen weiterhin unverändert sind, damit die Aggregationsschnitte im Zentrum dieser Arbeit nicht von den möglichen Varianten der Produktivanwendung abweicht. Dieses Kapitel dient somit als Grundlage für das Design der Software und wird in späteren Kapiteln referenziert. Die folgenden Prozesse wurden in Zusammenarbeit zwischen den Teams des Onlineshops, dem Checkout-Team und zuständigen \Gls{Stakeholder}n erarbeitet. Als Darstellungsmethode wurde sich auf Aktivitätsdiagramme geeinigt, damit die Interaktion zwischen den Systemen ebenfalls abgebildet werden kann.
 
 \subsection{Erstellung eines neuen, leeren Baskets}
 
@@ -18,18 +18,18 @@ Die Warenkorberstellung besteht hauptsächlich aus dem Empfangen der Kundendaten
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=0.9\textwidth]{svg/AD Basketcreation.svg}
-	\caption{Swimlane Diagramm für die Erstellung eines Baskets}
+	\caption{Aktivitätsdiagramm für die Erstellung eines Baskets}
 	\label{fig:SL-Basketcreation}
 \end{figure}
 
 \subsection{Abruf eines Warenkorbs anhand der Basket-ID}
 
-Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Die wichtigste Bedingung für diesen Anwendungsfall besagt, dass der Warenkorb stets mit aktuellen Daten befüllt sein muss. Dies stellt eine Herausforderung dar, da sich Preise und Artikeldetails mit dem Verlauf der Zeit ändern. Um das Problem möglichst performant zu lösen, werden die Informationen auf begrenzte Dauer zwischengespeichert. Dadurch wird nicht jedes Mal das externe System aufgerufen sondern die Werte aus dem Cache geladen. Genaue Zeitspannen wurden durch die verantwortlichen Teams festgelegt. Dies bedeutet jedoch, dass die Software das Alter der im Warenkorb enthaltenen Informationen analysieren und gegebenenfalls aktualisieren muss. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für die Projektumsetzung besitzt. Es verbleiben Aufgaben, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Objekte und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das zugehörige Swimlane Diagramm für diesen Anwendungsfall dar.
+Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Die wichtigste Bedingung für diesen Anwendungsfall besagt, dass der Warenkorb stets mit aktuellen Daten befüllt sein muss. Dies stellt eine Herausforderung dar, da sich Preise und Artikeldetails mit dem Verlauf der Zeit ändern. Um das Problem möglichst performant zu lösen, werden die Informationen auf begrenzte Dauer zwischengespeichert. Dadurch wird nicht jedes Mal das externe System aufgerufen sondern die Werte aus dem Cache geladen. Genaue Zeitspannen wurden durch die verantwortlichen Teams festgelegt. Dies bedeutet jedoch, dass die Software das Alter der im Warenkorb enthaltenen Informationen analysieren und gegebenenfalls aktualisieren muss. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für die Projektumsetzung besitzt. Es verbleiben Aufgaben, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Objekte und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das zugehörige Aktivitätsdiagramm für diesen Anwendungsfall dar.
 
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Basketabruf.svg}
-	\caption{Swimlane Diagramm für den Abruf eines Baskets}
+	\caption{Aktivitätsdiagramm für den Abruf eines Baskets}
 	\label{fig:SL-Basketabruf}
 \end{figure}
 
@@ -40,18 +40,18 @@ Der Warenkorb kann sich in verschiedenen Zuständen befinden. Hauptsächlich wir
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Basketstornierung.svg}
-	\caption{Swimlane Diagramm für die Stornierung eines Baskets}
+	\caption{Aktivitätsdiagramm für die Stornierung eines Baskets}
 	\label{fig:SL-Basketstornierung}
 \end{figure}
 
 \subsection{Aktualisieren der Checkout Daten des Baskets}
 
-Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden implizit durch einen Prozess innerhalb der Software gesetzt, andere durch Empfangen der Daten von einem externen System. Beim sogenannten 'Checkout-Prozess' werden einige dieser Daten vom Touchpoint an den Warenkorb gesendet, unter anderem Kundendaten, Bezahlmethoden und Zustellungsart. Da diese Daten im gleichen Schritt durch das vorgelagerte System gesetzt werden, bietet es sich an, diese Schnittstelle so zu designen, dass all diese Informationen gleichzeitig angepasst werden können. Eine Überprüfung der Daten erfolgt in diesem Schritt dabei nicht, mit der Ausnahme, dass die gewählte Zustellungsart, in diesem Bounded-Context 'Fulfillment' genannt, für den ausgewählten Warenkorb und dessen Produkte überhaupt verfügbar sein muss. Zudem ist es notwendig eine Neuberechnung der Geldbeträge, wie Gesamtpreis, Mehrwertsteuer usw., durchzuführen, falls eine neue Bezahlmethode hinzugefügt worden ist. Diese Bedingungen und der dazugehörige Prozess sind im Swimlane Diagramm \ref{fig:SL-Checkoutdata} veranschaulicht worden.
+Ein Warenkorb besitzt eine große Menge an Attributen. Einige dieser werden implizit durch einen Prozess innerhalb der Software gesetzt, andere durch Empfangen der Daten von einem externen System. Beim sogenannten 'Checkout-Prozess' werden einige dieser Daten vom Touchpoint an den Warenkorb gesendet, unter anderem Kundendaten, Bezahlmethoden und Zustellungsart. Da diese Daten im gleichen Schritt durch das vorgelagerte System gesetzt werden, bietet es sich an, diese Schnittstelle so zu designen, dass all diese Informationen gleichzeitig angepasst werden können. Eine Überprüfung der Daten erfolgt in diesem Schritt dabei nicht, mit der Ausnahme, dass die gewählte Zustellungsart, in diesem Bounded-Context 'Fulfillment' genannt, für den ausgewählten Warenkorb und dessen Produkte überhaupt verfügbar sein muss. Zudem ist es notwendig eine Neuberechnung der Geldbeträge, wie Gesamtpreis, Mehrwertsteuer usw., durchzuführen, falls eine neue Bezahlmethode hinzugefügt worden ist. Diese Bedingungen und der dazugehörige Prozess sind im Aktivitätsdiagramm \ref{fig:SL-Checkoutdata} veranschaulicht worden.
 
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Checkoutdata.svg}
-	\caption{Swimlane Diagramm für das Setzen der Checkout Daten}
+	\caption{Aktivitätsdiagramm für das Setzen der Checkout Daten}
 	\label{fig:SL-Checkoutdata}
 \end{figure}
 
@@ -62,7 +62,7 @@ Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln, dere
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD AddProduct.svg}
-	\caption{Swimlane Diagramm für das Hinzufügen eines Produktes }
+	\caption{Aktivitätsdiagramm für das Hinzufügen eines Produktes }
 	\label{fig:SL-AddProduct}
 \end{figure}
 
@@ -73,7 +73,7 @@ Eine weiter essentielle Funktion ist das Hinzufügen von Bezahlarten, damit der 
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD PutBezahlmethode.svg}
-	\caption{Swimlane Diagramm für das Hinzufügen einer Bezahlmethode}
+	\caption{Aktivitätsdiagramm für das Hinzufügen einer Bezahlmethode}
 	\label{fig:SL-PutBezahlmethode}
 \end{figure}
 
@@ -84,7 +84,7 @@ Nachdem die Bearbeitung des Baskets abgeschlossen ist, kann der Bezahlprozess ge
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD InitPayment.svg}
-	\caption{Swimlane Diagramm für das Initiieren des Bezahlvorgangs }
+	\caption{Aktivitätsdiagramm für das Initiieren des Bezahlvorgangs }
 	\label{fig:SL-InitPayment}
 \end{figure}
 
@@ -95,7 +95,7 @@ Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des B
 \begin{figure}[htbp]
 	\centering
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD ExecPayment.svg}
-	\caption{Swimlane Diagramm für das Ausführen des Bezahlvorgangs }
+	\caption{Aktivitätsdiagramm für das Ausführen des Bezahlvorgangs }
 	\label{fig:SL-ExecPayment}
 \end{figure}
 
