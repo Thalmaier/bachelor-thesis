@@ -16,8 +16,10 @@ ToDo:
 - Aktivitätsdiagramm schreiben statt Swimlane (Erwähnen der Syntax und Ersetzen der Wörter für "Swimlane")
 - README in Github Repo (Describe Calculation)
 
+
 - Sehr oft "model" bzw "Datenmodell"
 - calculateWithoutSaving should be named more correctly
+- Check REST API Dokumentation in Software (write for variant-d and add metrics)
 
 Today:
 - Aggregationsschnitte oder Aggregatsschnite?
