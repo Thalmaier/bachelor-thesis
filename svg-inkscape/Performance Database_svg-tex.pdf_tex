@@ -1,0 +1,101 @@
+%% Creator: Inkscape 1.1.1 (3bf5ae0d25, 2021-09-20), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Performance Database_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{526.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5982906)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.10327635){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2,50\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.17450142){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.247151){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7,50\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.31695157){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}10,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.38817664){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}12,50\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.45940171){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}15,00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Performance Database_svg-tex.pdf}}%
+    \put(0.42521368,0.23005698){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6,11\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Performance Database_svg-tex.pdf}}%
+    \put(0.75,0.10185185){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1,62\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Performance Database_svg-tex.pdf}}%
+    \put(0.75,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-PF\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Performance Database_svg-tex.pdf}}%
+    \put(0.19444444,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}A-M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Performance Database_svg-tex.pdf}}%
+    \put(0.42236467,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-MF\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Performance Database_svg-tex.pdf}}%
+    \put(0.53632479,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}A-P\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Performance Database_svg-tex.pdf}}%
+    \put(0.92806268,0.03490028){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Varianten\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Performance Database_svg-tex.pdf}}%
+    \put(0.08760684,0.55626781){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Abläufe pro\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Performance Database_svg-tex.pdf}}%
+    \put(0.08760684,0.52492877){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Sekunde\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Performance Database_svg-tex.pdf}}%
+    \put(0.31267806,0.26139601){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7,20\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Performance Database_svg-tex.pdf}}%
+    \put(0.31267806,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-MC\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Performance Database_svg-tex.pdf}}%
+    \put(0.6502849,0.00925926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}D-PC\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{Performance Database_svg-tex.pdf}}%
+    \put(0.6502849,0.11467236){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2,08\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{Performance Database_svg-tex.pdf}}%
+    \put(0.04202279,0.03205128){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{Performance Database_svg-tex.pdf}}%
+    \put(0.19301994,0.51495726){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}16,13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{Performance Database_svg-tex.pdf}}%
+    \put(0.53917379,0.12606838){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2,48\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

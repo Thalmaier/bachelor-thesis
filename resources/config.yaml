@@ -4,5 +4,5 @@ database:
   #connectionUrl: mongodb+srv://thale:BachelorTestDatabase123@basket.v5qc5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 application:
   port: 8080
-  simulateApiCalls: false
-  recordMetrics: false
+  simulateApiCalls: true
+  recordMetrics: true

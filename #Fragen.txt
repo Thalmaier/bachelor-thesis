@@ -7,7 +7,7 @@ ToDo:
     - Ohne flag muss trotzdem abgespeichert werden aus rechtlichen gründen.
 - Alle Klassennamen in \emph aber als eigener Befehl z.B. \name{}
 - Erklären warum nicht Basketitems getrennt worden sind.
-- Rename "doumentbased" zu Dokumentenorientierte Datenbank
+- Rename "doumentbased" zu dokumentenorientierten Datenbank
 - Schreiben bei D => More database requests -> More Safety (Add to disclaimer in perfromance test too)
 
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten

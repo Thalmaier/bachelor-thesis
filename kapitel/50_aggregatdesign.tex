@@ -281,9 +281,7 @@ Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedo
 
 \subsection{Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}
 
-Damit eine genaueren Bewertung der Performance möglich ist, wird ein Lasttest mithilfe der Open-Source-Software 'JMeter' realisiert. Zuerst wurde hierfür ein gängiger Anwendungsfall definiert. Dieser umfasst folgende Aktionen: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs.
-
-Nach dem Befüllen der Datenbank mit 1000 Datensätze wird anschließend diese Aktionsfolge in jeder Variation der Aggregationsschnitte innerhalb von zehn simultanen Threads 'X'-mal abgearbeitet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Um die Auswirkungen der Verwendung einer relational Datenbank zu beobachten, wurde ebenfalls der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. 
+Damit eine genaueren Bewertung der Performance von Variante A und D möglich ist, wird ein Lasttest mithilfe der Open-Source-Software 'JMeter' realisiert. Zuerst wurde hierfür ein gängiger Anwendungsfall definiert, welcher folgende Aktionen umfasst: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Nach dem Vorbefüllen der Datenbank mit 1000 Datensätze wird anschließend diese Aktionsfolge in jeder Variation der Aggregationsschnitte innerhalb von zehn simultanen Threads 'X'-mal abgearbeitet. Dieser Vorgang wird drei mal wiederholt, um ungewöhnliche Resultate auszuschließen. Die Ergebnisse wurden dem Anhang hinzugefügt.
 
 Zur simpleren Referenz auf die getesteten Varianten wird die Verwendung von MongoDB als 'M' und von PostgreSQL auf 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt D in die Untertypen 'F' bzw. 'C' unterteilt. Hierbei findet in der Abwandlung 'C' stets die Neuberechnung des Kalkulationsergebnis statt, wohingegen bei 'F' anhand von Flags erkennt wird, wann eine Neukalkulation notwendig ist. Folglich steht beispielsweise die Variante D-PF für den Aggregationsschnitt D mit einer PostgreSQL-Datenbank und Flags.
 
@@ -296,17 +294,23 @@ Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je n
 
 \textbf{Erster Testdurchlauf und hieraus ableitbare Aussagen}
 
-In den folgenden Diagramm sind die Testergebnisse als Durchschnitt der möglichen 'Abläufe pro Sekunde' über einen Gesamttestumfang von 10.000 Abläufe grafisch dargestellt. 
+Zu Beginn wurde der Proof-of-Concept für Variante A und D mitsamt ihren Abwandlungen implementiert und sachbezogene KPIs anhand des obigen Testaufbaus ausgewertet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Um die Auswirkungen der Verwendung einer relational Datenbank zu beobachten, wurde ebenfalls der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Um einen schnellen Überblick zu bieten, wurde die durchschnittlichen 'Abläufe pro Sekunde' über einen Gesamtumfang von 10.000 Abläufen per Variante in der Grafik \ref{fig:PerformanceDefault} abgebildet.
 
-
-In einem früheren Kapitel wurde nachfolgende These aufgestellt: \\
-\emph{Die Unterteilung von großen Aggregaten in kleiner kann unter Verwendung einer dokument-orientierten Datenbank zu geringeren oder sogar negativen Performance-Gewinnen führen als bei Einsatz einer relationale Datenbank als Datenspeicher.}
-
-Das Diagramm zeigt, dass die Variante D im Vergleich zu Variante A einen höheren Durchsatz besitzen. Theoretisch müsste laut vorliegender Aussage somit die Differenz zwischen A-M und D-M kleiner ausfallen als zwischen A-P und D-P. Diese Tatsache ist jedoch nicht der Grafik zu entnehmen, da hierfür eher die Dauer eines Durchlaufes untersucht werden muss. In Tabelle \ref{fig:durationofexecution} wurde der Median über die Ausführungsdauer eines Anwendungsfalls gebildet und die Gesamtzahl der Datenbankoperationen aufgelistet. Der Performance-Unterschied beläuft sich auf lediglich 4 Millisekunden sofern eine MongoDB als Datenbankmanagementsystem genutzt wird. Hingegen werden 6 Millisekunden bei einer PostgreSQL eingespart.
-
-\begin{table}[h!]
+\begin{figure}
 	\centering
-	\begin{tabular}{ | >{\raggedright\arraybackslash}m{0.18\textwidth} || c | c | c | c | c | c | } 
+	\footnotesize
+	\includesvg[width=0.70\textwidth]{svg/Performance Default.svg}
+	\caption{Performance-Ergebnisse aus dem ersten Testdurchlauf}
+	\label{fig:PerformanceDefault}
+\end{figure}
+
+Mithilfe der Verwendung von Flags werden Neukalkulationen eingespart im Austausch für zusätzliche Datenbankoperationen, jedoch sind die eigentlichen Berechnungen des Warenkorbs in dem verkleinerten Proof-of-Concept trivial, weshalb zu beobachten ist, dass ein solches Vorgehen insgesamt zu einer geringeren Performance führt. In der aktuellen Live-Applikation kann aufgrund der Komplexeren Berechnungsgrundlage dies weitaus performanter ausfallen. Negativ ist anzumerken, dass die Verwendung von Flags einhergeht mit einem komplexeren Programmablauf, da die Aktualisierung von Daten asynchron stattfinden. Schlussendlich kann eine genaue Aussage ohne den Ausbau der getesteten Software über den Vergleich zwischen D-C und D-F nicht getroffen werden.
+
+In einem früheren Kapitel wurde die These aufgestellt, dass die Unterteilung von großen Aggregaten in kleinere unter Verwendung einer dokument-orientierten Datenbank in geringeren oder sogar negativen Performance-Gewinnen resultieren kann als bei Einsatz einer relationale Datenbank als darunterliegenden Datenspeicher. Diese Aussage rührt auf der Basis, dass mehr Datenbankoperationen bei einer MongoDB benötigt werden sobald die Anzahl der Aggregates steigen, da zuvor alle Daten in einer einzelnen Collection abgespeichert werden konnten. Hingegen ist in relationalen Datenbanksystemen aufgrund von Mehrfachbeziehungen und zur Einhaltung von Normalformen ein Aggregat bereits in mehrere Tabellen verteilt und die weitere Abspaltung von Objekten führt zu insgesamt weniger neuen Relationen bzw. Tabellen. In Tabelle \ref{fig:durationofexecution} wurde der Median über die Ausführungsdauer eines Anwendungsfalles pro Aggregationsschnitt gebildet und die Gesamtzahl der hierfür benötigten Datenbankoperationen aufgelistet. 
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | >{\raggedright\arraybackslash}m{0.20\textwidth} || c | c | c | c | c | c | } 
 		\hline
 		Variante & A-M & D-MC & D-MF & A-P & D-PC & D-MF \\ 
 		\hline
@@ -317,30 +321,57 @@ Das Diagramm zeigt, dass die Variante D im Vergleich zu Variante A einen höhere
 		Schreiboperationen & 15 & 27 & 28 & 108 & 98 & 127 \\
 		\hline
 	\end{tabular}
-	\caption{Median der Ausführungszeit eines Durchlaufes pro Testvariante}
+	\caption{Median der Ausführungszeit und Datenbankoperationen eines Durchlaufes}
 	\label{fig:durationofexecution}
 \end{table}
 
+Der Performance-Unterschied beläuft sich auf 4 Millisekunden zwischen A-M und D-MC, sofern eine MongoDB als Datenbankmanagementsystem genutzt wird, wohingegen ein Einsparung von 6 Millisekunden bei einer PostgreSQL möglich ist. Dieser Effekt kann weiterhin deutlicher in kommende Testaufbaus beobachtet werden. Eine Frage, welche sich aus den Daten ergibt, ist, warum der Umbau zu Variante D überhaupt einen Performance-Gewinn mit sich bringt, obwohl dies mit mehr Datenbankoperationen einhergeht. 
 
+Zum Speichern oder Laden von Datensätzen muss eine sogenannte De- bzw. Serialisierung stattfinden, damit die Daten richtig interpretiert werden können. Bei genauer Untersuchung der Datenbankzugriffe stellt sich heraus, dass dieser Vorgang den Großteil der Bearbeitungszeit in Anspruch nimmt, nicht wie zu vermuten die eigentliche Datenbankoperation. Deshalb sind die Variationen A insgesamt langsamer, da mehr Daten verarbeitet werden und somit zugleich die De-/Serialisierungsdauer erhöht wird. Diese Situation entsteht, da die Datenbank auf der gleichen Maschine ausgeführt wird wie die eigentliche Software. Die Kommunikation zwischen den Systemen ist nicht vom Netzwerk abhängig und ein Datenbankzugriff beläuft sich auf circa 1,5 Millisekunden. In den meisten Produktivumgebungen ist die Datenbank allerdings physisch getrennt, woraus Verzögerungen durch den Datentransport über das Netzwerk entstehen. Zur Simulation dieses Phänomens wird ein weiterer Performance-Test durchgeführt. 
 
+\textbf{Aushängen der Datenbank in eine Cloud-Umgebung}
 
+Damit eine ähnlichere Situation zu Produktivanwendungen geboten werden kann, wurde bei Cloud-Anbietern jeweils eine MongoDB und PostgreSQL in einem frankfurter Datenzentrum mit 8 Gigabyte Arbeitsspeicher und 4 virtuellen Kernen angemietet. Der vorherige Testaufbau wird mit diesen Datenspeichern wiederholt und tabellarisch dem Anhand unter \ref{fig:performance-database} hinzugefügt. Das Diagramm \ref{fig:PerformanceDatabase} bietet die dazugehörige grafische Auswertung.
 
+\begin{figure}
+	\centering
+	\footnotesize
+	\includesvg[width=0.70\textwidth]{svg/Performance Database.svg}
+	\caption{Performance-Ergebnisse bei Auslagerung der Datenbanksysteme}
+	\label{fig:PerformanceDatabase}
+\end{figure}
 
+Die zusätzlichen Datenbankoperationen wirken sich stark nun auf die Performance des Proof-of-Concepts aus. Der mögliche Durchsatz von Variante A ist höher als der verkleinerte Aggregationsschnitt, da die De-/Serialisierung nur noch ein Bruchstück der Gesamtdauer ausmacht und die eigentliche Datenbankverbindung hingegen mehr Zeit in Anspruch nimmt. Konkret kann die aktuelle Bearbeitungszeit der Tabelle \ref{fig:durationofexecutionDatabase} entnommen werden. Die Differenz zwischen Variante A-M und D-MC beträgt hierbei durch das Netzwerk 751 Millisekunden. Es muss beachtet werden, dass die Kommunikation mit den Datenspeicher die einzige Wartezeit der Applikation darstellt, wodurch der Einfluss auf die Performance unnatürlich hoch ausfällt und die Testergebnisse weiterhin alleinig als Veranschaulichung dienen. Zudem kann die Performance erhöht werden, sofern die Systeme physisch näher zusammenliegen oder innerhalb eines Cloud-Anbieters ein virtuelles Netzwerk über die Softwarekomponenten erstellt wird. 
 
+\begin{table}
+	\centering
+	\begin{tabular}{ | >{\raggedright\arraybackslash}m{0.20\textwidth} || c | c | c | c | c | c | } 
+		\hline
+		Variante & A-M & D-MC & D-MF & A-P & D-PC & D-MF \\ 
+		\hline
+		Median-Dauer & 615ms & 1366ms & 1622ms & 3799ms & 4543ms & 5750ms \\
+		\hline
+	\end{tabular}
+	\caption{Median der Ausführungszeit und Datenbankoperationen eines Durchlaufes}
+	\label{fig:durationofexecutionDatabase}
+\end{table}
+ 
 
+\textbf{Simulation von Wartezeiten bei Aufrufen von externen APIs}
 
+Die Tatsache, dass Aufrufe an externe Systeme in zusätzlicher Wartezeit resultiert, wurde bis jetzt in den Performance-Test vernachlässigt. Aus der Analyse von Monitoring-Systemen der aktuellen Produktivanwendung konnten durchschnittliche API-Abrufzeiten gebildet und in die Applikation mit eingebaut werden. Im Mittel verbringt die Software 465 Millisekunden auf Antworten von abhängigen Systemen zu warten, wobei alle Aggregationsschnitte die gleiche Anzahl an API-Aufrufe erfordern. Sollte dies nicht der Fall sein, muss ein solcher Fakt ebenfalls mit in die Bewertung der Aggregates mit einfließen. Der Testablauf wird auf Basis des ersten Tests dementsprechend erneut durchgeführt inklusive der Simulation der Wartezeiten. Die gemessenen Werte befinden sich in Tabelle \ref{fig:performance-delay} und im Balkendiagramm \ref{fig:PerformanceDelay}.
 
+\begin{figure}
+	\centering
+	\footnotesize
+	\includesvg[width=0.70\textwidth]{svg/Performance Delay.svg}
+	\caption{Performance-Ergebnisse unter Beachtung der Wartezeiten bei API-Aufrufe}
+	\label{fig:PerformanceDelay}
+\end{figure}
 
-Grundlegend ist eine erhöhte Bearbeitungszeit durch zusätzliche Datenbankoperationen in Variante D zu vermerken, wodurch die möglichen abgearbeiteten Anwendungsfälle pro Sekunde sinken.  Dieser beläuft sich im Vergleich zu Variante A-M bei D-MC auf 10\% und bei D-MF auf 22\%. Aufgrund der fehlenden API-Aufrufe ist jedoch der prozentuale Performance-Verlust unnatürlich inflationiert. In der aktuellen Live-Umgebung wäre hingegen die Einbüßen nahezu irrelevant für den täglichen Betrieb, sowie unter Höchstlast. Daraus kann geschlussfolgert werden, dass bei niedrigen Bearbeitungszeiten einer Anfrage die zusätzlichen Datenbankabfragen und Schreiboperationen größere Auswirkungen auf die durchschnittliche Performance haben. Eine Software, welche eine Vielzahl an synchronen Aufrufen besitzt, kann horizontal generell besser skalieren.
+\textbf{Fazit aus dem Performance-Test}
 
-Weiterhin ist ein geringerer Durchsatz beim Wechsel auf eine PostgreSQL-Datenbank bemerkbar. Dies ist auf die Natur von relationalen bzw. dokumentbasierten Datenbanken zurückzuführen. Eine Aussage aus einem vorgehenden Kapitel hat die theoretische Behauptung aufgestellt, dass der messbare Performance-Verlust beim Umbau eines großen Aggregates in kleinere sich größer gestalten, sofern eine dokumentbasierte Datenbank verwendet wird, im Vergleich zu einem darunterliegenden relationalen Datenspeicher. Ohne die API-Simulation ist dies nicht der Fall, jedoch deutlich zu sehen in der zweiten Version des Lasttests. Um eine genauere Interpretation der Ergebnisse zu erzielen müssen weitere Analysen durchgeführt werden, wodurch allerdings der Umfang dieser Arbeit gesprengt wird.
-
-Alle Varianten, welche als 'C' markiert sind, berechnen den Gesamtpreis des Warenkorbs bei jeden Abruf neu. Die auf Flags basierenden Varianten fallen allgemein langsamer aus, jedoch sollte der Unterschied in der Live-Umgebung deutlich geringer sein, oder eventuell sogar umgekehrt, da die Ressourcenauslastung durch eine deutlich komplexere Kalkulation erhöht sind. Ein exakter Vergleich kann in dem Proof-of-Concept erst bei Implementierung der kompletten Checkout-Komplexität durchgeführt werden. Negativ ist anzumerken, dass die Verwendung von Flags einhergeht mit einem komplexeren Programmablauf, da die Aktualisierung von Daten asynchron stattfinden.
-
-Die Software ist bei einem Umbau von Variante A auf Variante D negativ betroffen. Einer der Hauptpunkte für einen kleineren Aggregationsschnitt sollte die erhöhte Performance sein. Dies ist hier nicht gegeben, wodurch die Motivationsgrundlage hinterfragt werden muss. 
-
-
-%TODO: Warum ist von A-P zu D-PC negativ aber im zweiteren positiv? Sollte immer positiv sein!
+Jegliche Art von Kommunikation mit externen Systemen gehen einher mit erheblichen Performance-Verluste des Proof-of-Concepts, da die eigentliche Datenverarbeitung der Anwendung minimal gehalten wurde. In produktiven Umgebungen sind die Performance-Einflüsse durch das Datenmodell weitaus geringer als in diesem Beispiel, dennoch bleibt die Tendenz gleich, dass ein kleinerer Aggregationsschnitt im Kontext einer Checkout-Software in Kombination mit einer dokumentenorientierten Datenbank negative Auswirkungen besitzt. Folglich fällt die Argumentation der erhöhten Performance weg und die Motivationsgrundlage für einen Umbau wird geschwächt. 
 
 
 \subsection{Bewertung des verkleinerten Aggregationsschnitt}
