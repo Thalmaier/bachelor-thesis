@@ -642,31 +642,3 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{Enumeration}%
-{%
-name={Enumeration},%
-sort={Enumeration},%
-type={main},%
-first={Enumeration},%
-firstplural={Enumerations},%
-text={Enumeration},%
-plural={Enumerations},%
-description={Eine Auflistung von konstanten, unveränderlichen Werten},%
-descriptionplural={Eine Auflistung von konstanten, unveränderlichen Werten},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-

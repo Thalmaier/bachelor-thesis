@@ -1,0 +1,91 @@
+%% Creator: Inkscape 1.1.2 (1:1.1+202202050950+0a00cf5339), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ExampleDomainV2_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{563.625bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.49634065)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.60479042,0.25216234){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Personal-}\end{tabular}}}}%
+    \put(0.60479042,0.22821025){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{beschaffung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.60479042,0.39853626){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Stellenbesetzung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.3493014,0.41051231){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Training \&}\end{tabular}}}}%
+    \put(0.35207585,0.38656021){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Weiterbildung }\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.86027944,0.25216234){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Diversität \&}\end{tabular}}}}%
+    \put(0.86027944,0.22821025){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Inklusion}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.60479042,0.09514305){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Firmenkultur \&}\end{tabular}}}}%
+    \put(0.60479042,0.07119095){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Revision}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.3493014,0.25216234){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Sicherheit \&}\end{tabular}}}}%
+    \put(0.3493014,0.22821025){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Gesundheit}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.86286095,0.41051231){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Finanzen \&}\end{tabular}}}}%
+    \put(0.86286095,0.38656021){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{ Vergütung}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.86027944,0.09514305){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{Unternehmens-}\end{tabular}}}}%
+    \put(0.86027944,0.07119095){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{kommunikation}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.10578842,0.39055223){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Domain\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.10578842,0.25482369){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Subdomain\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.10578842,0.12109115){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Bounded-Context\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.10578843,0.01796407){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Kommunikation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ExampleDomainV2_svg-tex.pdf}}%
+    \put(0.35462409,0.09580838){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Domain\end{tabular}}}}%
+    \put(0.35462408,0.06387226){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Personalwesen\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

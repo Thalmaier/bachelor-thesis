@@ -7,78 +7,77 @@ Durch die Schaffung eines grundlegenden Verständnis für Designprinzipien, Hexa
 
 \section{Abgrenzung der Domain und Bounded Contexts mithilfe der Planungsphase}
 
-%TODO: Buch nachlesen was man hier alles machen muss.
-%TODO: https://confluence.media-saturn.com/display/Miraklmarketplace/Architecture+Diagram
-Aufgrund der ausführlichen Vorbereitung wurde die Domain bereits passiv festgelegt und analysiert. Das Context-Diagramm \ref{fig:ContextDiagramm} beschreibt hierbei unsere Domaingrenzen. Eine Domain und die Subdomains spannen den Problemraum auf. Dazu zählen alle definierten Anwendungsfälle und Businessanforderungen. Die Größe der Domain ist entscheidend für die Bestimmung der Subdomains und Bounded Contexts. Den Checkout als eine Domain anzusehen würde resultieren, dass entweder sich nur ein Bounded Context ergibt, welcher sich über die ganze Domain erstreckt, oder der Checkout selbst eine weitere Unterteilung erfahren muss. Anhand der Richtlinie, dass ein Team zuständig sein soll für ein Bounded Context kann abgeleitet werden, dass dieser Domainschnitt zu klein ausfällt. Folglich kann der Checkout und alle abhängigen Systeme als nächstmögliche Domain angesehen werden. Zu Beachten ist hierbei sich nicht auf die Systeme zu fixieren, dass sie eher der Lösungsebene und somit Bounded Contexts zuweisbar sind. In den Zuständigkeitsbereich der zuständigen Domain fallen unter anderem Anforderungen an der Abwicklung des Zahlungs- und Bestellungsprozesses. Zusätzlich müssen Produkt- und Preisinformationen abrufbar sein. Hierfür muss eine Verwaltungsmöglichkeit für diese Daten bereitgestellt werden. Die Abgrenzung der Bounded Context ist durch die jetzigen Überlegungen und die bereits bestehenden Architektur vorgegeben. Eine weitere Unterteilung des Checkouts in mehrere kleiner Bounded Contexts ist wieder durch die Einschränkung auf einem Team per Bounded Context sinnfrei. Ebenfalls würde dies eine Verteilung der Verantwortlichkeiten bedeuten, was entgegen dem Ziel ein einzelnes, universelles Produkt für den Checkout anzubieten. Aus diesen Überlegungen kann folgende Context-Map erstellt werden.
+Aufgrund der ausführlichen Vorbereitung wurde die Domain bereits passiv festgelegt und analysiert. Beispielsweise beschreibt das Context-Diagramm \ref{fig:ContextDiagramm} hierbei unsere Domaingrenzen. Eine Domain und die dazugehörigen Subdomains spannen den Problemraum über alle definierten Anwendungsfälle und Businessanforderungen auf. Die Größe der Domain ist entscheidend für die Bestimmung der Subdomains und des Bounded-Contexts. Den Checkout beispielsweise als eine zusammengehörige Domain anzusehen, würde darin resultieren, dass sich entweder nur ein Bounded-Context ergibt oder der Checkout selbst eine weitere Unterteilung erfahren muss. Diese Aufteilung fällt dementsprechend zu klein aus, da grundlegend je Bounded-Context nur maximal ein Team zuständig sein sollte. Folglich kann als nächstmögliche Eingrenzung der Checkout und alle abhängigen Systeme angesehen werden. Zu Beachten ist hierbei, sich nicht auf die konkreten Systeme zu fixieren, da sie eher der Lösungsebene zuweisbar sind, sondern logisch naheliegende Aufgaben in eine Gruppe zusammenzufassen. In den Zuständigkeitsbereich der Domain fallen unter anderem Anforderungen an der Abwicklung des Zahlungs- und Bestellprozesses, sowie Bereitstellung von Preis- bzw. Artikelinformationen. Hierfür muss ebenfalls eine Verwaltungsmöglichkeit für diese Daten bereitgestellt werden. Die Abgrenzungen der Bounded-Contexts ist durch die jetzigen Überlegungen und die bereits bestehenden Architektur vorgegeben, wodurch das vorgehende Context-Diagramm \ref{fig:ContextDiagramm} ebenfalls als Context-Map fungieren kann.
 
 \section{Festlegen einer Ubiquitous Language}
 
-In der Kommunikation zwischen den Business und Entwicklern kann es oft zu Missverständnisse kommen. Womöglich werden Informationen, Einschränkungen oder Prozesse ausgelassen oder für selbstverständlich erachtet. Durch die klare Definition von gemeinsam verwendeten Begriffen und ihren Bedeutungen wird implizit notwendiges Wissen über die Domain und ihre Prozesse geschaffen. Viele dieser Fachbegriffe können für notwendige Anwendungsfälle wiederverwendet werden und machen die Personen, welche die Businessanforderungen umsetzten sollen, mit der Domain vertraut. Da mit geringem Domainwissen die Korrektheit der Software gefährdet wird, stellt die Ubiquitous Language in Domain-Driven Design ein wichtiger Teilaspekt dar.
+In der Kommunikation zwischen den Business und Entwicklern kann es oft zu Missverständnisse kommen. Womöglich weil Informationen, Einschränkungen oder Prozesse ausgelassen bzw. für selbstverständlich erachtet werden. Durch die klare Definition von gemeinsam verwendeten Begriffen und ihren Bedeutungen wird implizit notwendiges Wissen über die Domain und ihre Eigenschaften geschaffen. Viele dieser Fachbegriffe können für notwendige Anwendungsfälle wiederverwendet werden und machen die Personen, welche letztendlich die Businessanforderungen umsetzten sollen, mit der Domain vertraut. Da ein Team mit geringem Domainwissen auch die Korrektheit der Software gefährdet, stellt die Ubiquitous Language ein wichtiger Meilenstein in Domain-Driven Design dar.
 
-In Zusammenarbeit mit den Lead-Developer und \Gls{Product Owner} des Teams wird im folgenden Abschnitt die Ubiquitous Language definiert, um ein solches Verständnis über den Checkout Bounded-Context zu gewährleisten. Hierbei wurde sich auf die, für dieses Projekt, relevanten Terme beschränkt und stellt lediglich eine mögliche Umsetzung einer Ubiquitous Language dar. Dank der Planungsphase wurde eine Vielzahl von Begriffen bereits definiert und hilft bei der Erstellung einer solchen Dokumentation. Eingeklammerte Wörter beschreiben Synonyme zu dem vorangestellten Ausdruck.
+In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird im folgenden Abschnitt die Ubiquitous Language definiert, um ein solches Verständnis über den Checkout Bounded-Context zu gewährleisten. Hierbei wurde sich auf die, für dieses Projekt, relevanten Terme beschränkt und stellt lediglich eine mögliche Umsetzung einer Ubiquitous Language dar. Dank der Planungsphase sind zahlreiche Begriffen bereits definiert und helfen bei der Erstellung einer solchen Dokumentation. Eingeklammerte Wörter beschreiben Synonyme zu dem vorangestellten Ausdruck.
 
-%TODO: Eventuell Touchpoint hinzufügen
-{\large \textbf{Domain-Modell:}}
-\begin{itemize}
-	\item \textbf{Basket (Warenkorb): } {Die zentrale Datenklasse, welche den Warenkorb darstellt.}
-	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar und orientiert sich an den Prozessen. Beinhaltet 'open', 'frozen', 'finalized' und 'canceled'. Der Startzustand ist 'open'.}
-	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person sein oder eine Firma. Ebenfalls kann ein nicht eingeloggter Kunde im Onlineshop durch seine eindeutige Session-ID einen Warenkorb besitzen.} 
+{\large \textbf{Ubiquitous Language des Domain-Modells:}}
+\begin{itemize}[topsep=-3px]
+	\item \textbf{Basket (Warenkorb): } {Repräsentiert den gesamten Warenkorb mit allen Artikel, Kundeninformationen, Preisen etc.}
+	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar, welcher sich an den Prozessen orientiert. Kann die Werte 'open', 'frozen', 'finalized' und 'canceled' annehmen. Der Startzustand ist hierbei 'open'.}
+	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person oder Firma sein. Ein nicht-eingeloggter Kunde im Onlineshop wird der zugehörige Warenkorb durch seine eindeutige Session-ID zugewiesen.} 
 	\item \textbf{Product (Artikel, Ware): } {Ein Artikel aus dem Warenbestand, welcher zu Verkauf steht. Kann ebenfalls für eine Gruppierung von mehreren Artikeln stehen.}
-	\item \textbf{Outlet: } {Repräsentiert einen Markt oder den länderbezogenen Onlineshop, welche durch eine einzigartige Outlet Nummer referenziert werden können.}
-	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um beispielsweise die Quantität eines Artikels anzupassen oder ihn zu entfernen.}
-	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit dazugehöriger Währung.}
-	\item \textbf{VAT (Steuersatz): } {Der Steuersatz zu einem bestimmten Nettobetrag.}
-	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und einem Nettobetrag. Die Währung gleicht die des Nettobetrags.}
+	\item \textbf{Outlet: } {Repräsentiert einen Markt oder den länderbezogenen Onlineshop, welche durch eine einzigartige Outlet-Nummer referenziert werden.}
+	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um einen Eintrag zu bearbeiten oder entfernen.}
+	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit Währung.}
+	\item \textbf{VAT (Steuersatz): } {Der Steuersatz eines zugehörigen Nettobetrag.}
+	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und Nettobetrag. Die Währung gleicht die des Nettobetrags.}
 	\item \textbf{Fulfillment: } {Zustellungsart der Waren seitens der Firma.}
-	\begin{itemize}[noitemsep,nolistsep]
+	\begin{itemize}[noitemsep,nolistsep, topsep=-5px]
 		\item \textit{Pickup: } {Warenabholung in einem ausgewählten Markt durch den Kunden. Nur möglich sofern Artikel im Markt auf Lager ist.}
 		\item \textit{Delivery: } {Zustellung der Ware an den Kunden durch einen Vertragspartner.}
 		\item \textit{Packstation: } {Lieferung der Ware an eine ausgewählte Packstation durch einen Vertragspartner.}
 	\end{itemize}
-	\item \textbf{Payment Process (Bezahlungsprozess): } {Alle relevanten Informationen der aktuelle Status des Bestellungsprozesses und alle zugewiesenen Payments.}
-	\item \textbf{Payment: } {Zahlung des Kunden inklusive Beträge und Zahlungsmethode, wie Barzahlung oder Paypal.}
-	\item \textbf{Order: } {Bestellung eines Warenkorbs, welche durch nachfolgende Systeme angelegt und verwaltet wird.}
+	\item \textbf{Payment Process (Zahlungsprozess): } {Beinhaltet alle relevanten Informationen für das Bezahlen eines Warenkorbs, wie ausgewählte Zahlungsarten und Beträge.}
+	\item \textbf{Payment: } {Zahlung des Kunden inklusive Betrag und Zahlungsmethode, wie Barzahlung oder Paypal.}
+	\item \textbf{Order: } {Bestellung eines Warenkorbs nach Abschluss des Zahlvorgangs, welche durch nachfolgende Systeme angelegt und verwaltet wird.}
 \end{itemize}
-\vspace{0.4em}
 
-%TODO: Abstand Zeielen ein bisschen weniger genauso wie im näcshten Kapitel
-{\large \textbf{Prozesse:}}
-\begin{itemize}[]
-	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlenden, notwendigen Werten.}
-	\item \textbf{Basket Finalization: } {Überprüfung der Korrektheit des Baskets durch die Basket Validation, Sperrung des Baskets durch Setzen des Zustands 'finalized' vor weiteren Abänderungen, Reservierung der Produkte im Basket und Anlegen einer Bestellung. Wird nach erfolgreichem Zahlvorgang durchgeführt. Beinhaltet den Prozess der Initiierung und Durchführung des Bezahlugnsprozesses.}
-	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets. Kann nur auf einen offenen Basket ausgeführt werden und setzt den Zustand auf 'canceled'. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. }
-	\item \textbf{Basket Creation: } {Explizite oder Implizite Erstellung eines neuen Baskets. Findet automatisch statt sofern noch kein Basket für den Customer existiert. Dies ist ebenfalls der Fall nach einer Basket Finalization.}
-	\item \textbf{Basket Calculation: } {Das Berechnen der Geldbeträge des Baskets. Beinhaltet die Auswertung aller Products mitsamt ihren Net Amounts und VATs. Der resultierende Betrag aus unterschiedlichen VATs muss weiterhin aus rechtlichen Gründen einzeln verwiesen werden können.}
+\vspace{2em}
+
+{\large \textbf{Ubiquitous Language der Businessprozesse:}}
+\begin{itemize}[topsep=-3px]
+	\item \textbf{Touchpoint: } { Eine Komponente, welche mit der Checkout-Software interagiert, wie Kassensysteme im Markt, die Onlineshop-Seite oder Handy-App.}
+	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlende jedoch notwendige Werte.}
+	\item \textbf{Basket Finalization: } {Erfolgt automatisch nach erfolgreichem Zahlvorgang und setzt den Warenkorb in den Zustand 'finalized'. Danach folgt die Reservierung der Produkte im Basket und das Anlegen einer neuen Bestellung.}
+	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets mithilfe des Zustandswechsel auf 'canceled'. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. Der Warenkorb muss sich zuvor im Zustand 'open' befinden. }
+	\item \textbf{Basket Creation: } {Explizite oder Implizite Erstellung eines neuen Baskets. Findet automatisch statt sofern noch kein Basket für den Customer existiert, sowie nach einer Basket Finalization.}
+	\item \textbf{Basket Calculation: } {Das Berechnen der Summe von beinhalteten Preisen des Baskets, sowie die Kalkulation von Bruttobeträgen für alle Artikel. Beträge aus unterschiedlichen Mehrwertsteuern müssen weiterhin aus rechtlichen Gründen einzeln verwiesen werden können.}
 	\item \textbf{High Volume Ordering: } {Die Bestellung von Artikeln in hoher Stückzahl. Aufgrund von Businessanforderungen soll es nur begrenzt möglich sein, dass ein Kunde in einem Basket oder wiederholt das gleiche Produkt mehrfach kauft.}
-	\item \textbf{Payment Initialization: } {Start des Zahlungsvorgangs. Nur möglich auf einen offenen Basket, welcher Produkte und Payments enthält. Nach Validierung der Basket Inhalte wird der Zustand auf 'frozen' gesetzt. Keine weiteren Inhaltsänderungen an den einzelnen Basket Items dürfen durchgeführt werden.}
-	\item \textbf{Payment Execution: } {Durchführung des Zahlungsvorgangs. Nur möglich auf einen gefrorenen Basket. Setzt den Basket bei Erfolg auf 'finalized' und legt eine Order für diesen Basket an.}
+	\item \textbf{Payment Initialization: } {Start des Zahlungsvorgangs, nachdem der Warenkorb auf invalide Zustände überprüft wird. Nur möglich auf einen offenen Basket, welcher Produkte und Payments enthält. Resultiert in den Zustand 'frozen', wodurch keine weiteren Inhaltsänderungen an den Warenkorb durchgeführt werden dürfen.}
+	\item \textbf{Payment Execution: } {Durchführung des Zahlungsvorgangs eines gefrorenen Basket. Anschließend findet die Basket Finalization statt.}
 \end{itemize}
-\vspace{0.4em}
+\vspace{2em}
 
-%TODO: Doppelt gemoppelt der obere Absatz mit den unteren?
-
-Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels und den vorgehenden Analysen anschließend alle notwendigen Klassen designt. 
+Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufdeckt und Businessanforderungen vorgegeben. Ein gutes Datenmodell spiegelt hierbei ebenfalls die Sprache des Bounded-Contexts wieder, daher wird auf Basis dieses Unterkapitels die Klassen designt. 
 
 \section{Definition der Value Objects}
-Aufgrund der Simplizität und klaren Zuteilung vom Modell zu Value Objects lassen sich diese als leichtes bestimmen. Value Objects kapseln sowohl Daten als auch das dazugehörige Verhalten. Wobei ihre Funktionalitäten keine Änderungen an den beinhalteten Attributen durchführen dürfen, da sie als immutable gelten. Daher wird, anstatt einer direkten Wertanpassung, in der Regel eine Kopie des aktuellen Objektes mitsamt der aktualisierten Werte erstellt und zurückgegeben. Zudem gilt diese Kopie als ein neues Value Object, dank der Eigenschaft, dass die Identität eines Value Objects alleinig von ihren Attributen und den zugeteilten Werten abhängt. Anfangs sollte jede Datenstruktur des Domain-Modells als ein Value Object definiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden.
 
-Anfangs wird das Daten-Modell mithilfe dem erlangten Domainwissen grundlegend aufgebaut. Die Ubiquitous Language unterstützt bei der richtigen Benamung der Klassen. Der Basket stellt den Ausgangspunkt der Modellierung dar. Bei der Definition der Attribute wurde auf eine schlankes Datenmodell geachtet, ohne dabei den Aggregationsschnitt zu beeinflussen. Folgende Attribute werden benötigt:
+Aufgrund der Simplizität und klaren Zuteilung der Value Objects lassen sich diese als leichtes bestimmen. Anfangs sollte jede Datenstruktur des Domain-Modells als ein Value Object definiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden. Der Basket stellt hierbei den Ausgangspunkt der Modellierung dar und die Ubiquitous Language unterstützt bei der richtigen Klassen-Benamung. Es wird auf eine schlankes Design im Vergleich zur Produktivanwendung geachtet, ohne dabei mögliche Aggregationsschnitte zu beeinflussen.
 
 \domainModell{Basket}{
-	\item \textbf{BasketId: } {Eindeutige ID des Baskets zur Referenzierung durch externe System, wie den Touchpoints.}
-	\item \textbf{OutletId: } {Eine Referenz zugehörig zu dem Markt oder Onlineshop, durch welchen Warenkorb angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten. Wir benötigen nur die Id des Outlets und nicht alle Daten, da nur die Id für unsere Kommunikationspartner relevant ist.}
+	\item \textbf{BasketId: } {Eindeutige Identifikation des Baskets zur Referenzierung durch die Touchpoints.}
+	\item \textbf{OutletId: } {Eine Referenz zugehörig zu dem Markt oder Onlineshop, durch welchen der Warenkorb angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten.}
 	\item \textbf{BasketStatus: } {Repräsentiert den aktuellen Zustands des Warenkorbs. Mögliche Werte sind OPEN, FROZEN, FINALIZED und CANCELED.} 
 	\item \textbf{Customer: } {Speichert Kundendaten (IdentifiedCustomer) oder Session-Informationen (SessionCustomer).} 
 	\item \textbf{FulfillmentType: } {Lieferart, wie PICKUP oder DELIVERY.} 
 	\item \textbf{BillingAddress: } {Adresse für die Rechnungserstellung.} 
 	\item \textbf{ShippingAddress: } {Adresse für die Warenlieferung.} 
-	\item \textbf{BasketItems: } {Liste aller Produkten und ihren zugehörigen Informationen aktuell im Warenkorb.}
-	\item \textbf{BasketCalculationResult: } {Beinhaltet die berechneten Werte des Warenkorbs, wie Nettobetrag, Bruttobetrag und VAT. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
-	\item \textbf{PaymentProcess: } {Beinhaltet alle Informationen zur erfolgreichen Abwicklung des Zahlungsprozesses.}
-	\item \textbf{Order: } {Speichert Referenz zur zugehörigen Bestellung des Baskets.}  
+	\item \textbf{BasketItems: } {Liste aller enthaltenen Produkten im Warenkorb und ihren zugehörigen Informationen.}
+	\item \textbf{BasketCalculationResult: } {Beinhaltet die berechneten Werte des Warenkorbs, wie Nettobetrag, Bruttobetrag und Mehrwertsteuer. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
+	\item \textbf{PaymentProcess: } {Bindet alle Informationen zur erfolgreichen Abwicklung des Zahlungsprozesses.}
+	\item \textbf{Order: } {Speichert eine Referenz auf die Bestellung für einen Basket. Wird erst nach Zahlungsabschluss befüllt.}  
 }
 
-Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleichen Vorgehensweise definiert, sofern sie nicht durch einfache Strings oder \Glspl{Enumeration} darstellbar sind:
+\vspace{1em}
+Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleichen Vorgehensweise definiert, sofern sie nicht durch einen einfachen Text oder Aufzählungen darstellbar sind, bzw. ihre Inhalte keine nähere Erklärung erfordern:
+\vspace{1em}
+
+\comment{Nachfolgenden Abschnitt verkürzen? Auslassen von selbsterklärenden Werten?}
 
 \domainModell{SessionCustomer}{
 	\item \textbf{SessionID: } {Eindeutige ID zur Zuweisung einer Session im Onlineshop zum zugehörigen Basket. Notwendig, um eine Einkaufmöglichkeit für anonyme Kunden zu bieten.}
@@ -86,28 +85,19 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 
 \domainModell{IdentifiedCustomer}{
 	\item \textbf{Name: } {Enthält den Vor- und Nachnamen als eigenes Datenkonstrukt.}
-	\subDomainModell{ %TODO: Untergliedern?
-		\item \textit{FirstName: } {Vorname des Kunden.} %TODO: Punktsetzung?
+	\subDomainModell{
+		\item \textit{FirstName: } {Vorname des Kunden.}
 		\item \textit{LastName: } {Nachname des Kunden.}
 	}
 	\item \textbf{Email: } {Email des Kunden.}
-	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung, da diese ausgewiesen werden muss} 
-	\item \textbf{BusinessType: } {Bestimmt ob Kunde als Business-to-Customer (B2C) oder Business-to-Business (B2B) gilt.} %TODO: gls?
-	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend bei einem B2B-Kunden}
-	\item \textbf{CompanyTaxId: } {Steuernummer zugehörig zur Firma des Kunden, falls eine Firma angegeben wurde.} %TODO: Korrekt? Wofür? Warum CustomerTaxId und CompanyTaxId? TaxId in Language?
+	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung.} 
+	\item \textbf{BusinessType: } {Bestimmt ob Kunde als Business-to-Customer (B2C) oder Business-to-Business (B2B) gilt.}
+	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend für einen B2B-Kunden.}
+	\item \textbf{CompanyTaxId: } {Steuernummer der Firma eines B2B-Kunden.}
 }
-
-\domainModell{Address}{
-	\item \textbf{Country: } {Land der Adresse.}
-	\item \textbf{City: } {Stadt der Adresse.}
-	\item \textbf{ZipCode: } {Postleitzahl der Adresse.}
-	\item \textbf{Street: } {Straße der Adresse.}
-	\item \textbf{HouseNumber: } {Hausnummer der zugehörigen Straße.}
-}
-
 
 \domainModell{BasketItem}{
-	\item \textbf{Id: } {Eindeutige Nummer des Items in diesem Basket.}
+	\item \textbf{Id: } {Eindeutige Referenz auf den Warenkorbeintrag.}
 	\item \textbf{Product: } {Beinhaltet alle Produktinformationen, welche durch die Touchpoints benötigt werden.}
 	\item \textbf{Price: } {Aktueller Preis des zugehörigen Products. Kann sich zeitlich ändern, muss daher durch eine Businessfunktion aktualisiert werden. }
 	\item \textbf{ShippingCost: } {Betrag der Lieferkosten des Items.}
@@ -115,14 +105,14 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 }
 
 \domainModell{Product}{
-	\item \textbf{Id: } {Eindeutige Referenz für dieses Product im externen System.}
+	\item \textbf{Id: } {Eindeutige Referenz des Products im externen System.}
 	\item \textbf{Name: } {Textuelle Produktbezeichnung des Products.}
 	\item \textbf{Vat: } {Mehrwertsteuerinformationen des Products.}
 	\item \textbf{UpdatedAt: } {Zeitstempel notwendig für die Aktualisierungsfunktion der Artikelinformationen.}
 }
 
 \domainModell{Vat}{
-	\item \textbf{Sign: } {Identifizierung des Steuertyps, abhängig von genauen Prozentsatz und zugehörigen Land.}
+	\item \textbf{Sign: } {Identifizierung des Steuertyps, abhängig von jeweiligen Prozentsatz und Land.}
 	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer, wie beispielsweise '19\%'.}
 }
 
@@ -147,7 +137,7 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 \domainModell{VatAmount}{
 	\item \textbf{Sign: } {Identifizierung des Steuertyps, abhängig von genauen Prozentsatz und zugehörigen Land.}
 	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer.}
-	item \textbf{Amount: } {Berechneter Betrag der Mehrwertsteuer zugehörig zu einem Bruttobetrag.}
+	\item \textbf{Amount: } {Berechneter Betrag der Mehrwertsteuer zugehörig zu einem Bruttobetrag.}
 }
 
 \domainModell{BasketCalculationResult}{
@@ -159,7 +149,7 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 
 \domainModell{PaymentProcess}{
 	\item \textbf{BasketId: } {Id des zugehörigen Baskets.}
-	\item \textbf{ExternalPaymentRef: } {Referenz zu dem zugehörigen Payment Prozess des externen Systems. Anfangs leer bis zur Initiierung des Payments.}
+	\item \textbf{ExternalPaymentRef: } {Referenz auf den Bezahlvorgangs im externen System. Anfangs leer bis zur Initiierung des Payments.}
 	\item \textbf{AmountToPay: } {Betrag der insgesamt bezahlt werden muss. Entspricht dem GrandTotal des Baskets.}
 	\item \textbf{AmountPayed: } {Rechnet alle Payments zusammen und bestimmt in welchem Maße der Basket bereits bezahlt ist.}
 	\item \textbf{AmountToReturn: } {Falls der bezahlte Betrag größer ist als gefordert, wird dieser Wert berechnet. Repräsentiert den Betrag, welcher durch das System zurückgegeben werden muss.}
@@ -168,19 +158,21 @@ Anschließend werden die im Basket enthaltenen Klassen ebenfalls mit der gleiche
 }
 
 \domainModell{Payment}{
-	\item \textbf{PaymentId: } {Die Id des Payments.}
+	\item \textbf{PaymentId: } {Die Id der Zahlung.}
 	\item \textbf{PaymentMethod: } {Bezahlungsart, wie Gutschein oder Barzahlung.}
 	\item \textbf{PaymentStatus: } {Aktueller Zustand des Payments. Mögliche Werte entsprechen SELECTED, INITIALIZED, EXECUTED, CANCELED. Ein Payment ist bei Hinzufügung im Status SELECTED.}
-	\item \textbf{AmountSelected: } {Betrag welcher durch dieses Payment bezahlt werden soll. Falls dieser Wert leer ist, wird der gesamte Warenkorb durch dieses Payment bezahlt.}
+	\item \textbf{AmountSelected: } {Betrag, welcher durch dieses Payment bezahlt werden soll. Falls dieser Wert leer ist, wird der gesamte Warenkorb durch dieses Payment bezahlt.}
 	\item \textbf{AmountUsed: } {Betrag wie viel insgesamt durch dieses Payment abgedeckt wurde, falls nur ein Bruchteil des AmountSelectes benötigt wird.}
-	\item \textbf{AmountOverpaid: } {Berechnet durch Abziehen des AmountSelecteds und AmountUsed.}
+	\item \textbf{AmountOverpaid: } {Berechnet durch Subtraktion von AmountSelected und AmountUsed.}
 }
 
 \domainModell{Order}{
 	\item \textbf{OrderRef: } {Referenz auf die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses gesetzt.}
 }
 
-Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Der Customer und PaymentProcess wurden aus Platzgründen in separate Klassendiagramme, Abbildung \ref{fig:VO-Customer} und \ref{fig:VO-Payment}, verlagert. Anzumerken ist, dass bei Fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Der Kunde ist in diesem Anwendungsfall genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine genaue Kundennummer. Daher existiert keine Zuweisung zwischen Kunden und mehreren Warenkörben.
+Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Der \ul{Customer} und \ul{PaymentProcess} wurden aus Platzgründen in separate Klassendiagramme \ref{fig:VO-Customer} und \ref{fig:VO-Payment} verlagert. Anzumerken ist, dass bei fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Speziell, ist der Kunde in diesem Kontext genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine Kundennummer, wodurch keine Zuweisung zwischen Kunde und mehreren Warenkörben existiert.
+
+\comment{Im Anhang oder direkt darunter hinzufügen?}
 
 \begin{figure}[htbp]
 	\centering
@@ -203,68 +195,55 @@ Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle kor
 	\label{fig:VO-Payment}
 \end{figure}
 
-%TODO: Datentyp hinter name?
-%TODO: Definition doppelt?
-%TODO: Zu oft Value Objects
-%TODO: Wie darstellen?
 
 \section{Bestimmung der Entities anhand ihrer Identität und Lebenszyklus}
 
-Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in DDD kein objektive Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung existieren folgende grundlegende Unterscheidungsmerkmale und Richtlinien in Tabelle \ref{fig:entityvsvalueobject}.
+Anhand der vorgehenden Sektion ist das Datenmodell nun vollständig definiert. Jedoch besteht weiterhin die Frage, ob die jeweiligen Klassen eine eigene Identität besitzen und somit als Entity designt werden müssen. Es existiert in Domain-Driven Design kein objektives Verfahren zur Bestimmung der Entities, da je nach Bounded-Context Datengruppierungen unterschiedliche Eigenschaften besitzen. Als Hilfestellung für diese Entscheidung können folgende grundlegende Unterscheidungsmerkmale und Richtlinien in Tabelle \ref{fig:entityvsvalueobject} verwendet werden.
 
-{	
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{ | >{\centering\arraybackslash}m{0.16\textwidth} | m{0.28\textwidth} | m{0.46\textwidth} | } 
+	\begin{tabular}{ | >{\centering\arraybackslash}m{0.16\textwidth} | m{0.33\textwidth} | m{0.41\textwidth} | } 
 		\hline
 		& \vspace{0.8mm}\textbf{Value Object}\vspace{0.5mm} & \vspace{0.8mm}\textbf{Entity}\vspace{0.5mm} \\ 
 		\hline
 		{\centering Identität} & 
-		\centertable{Summe der Werte der Objekte. Objekte mit gleichen Werten besitzten gleiche Identität} & 
-		\centertable{Bestimmt anhand eines Identifikator, zum Beispiel einer Datenbank-Id. Objekte mit gleichen Werten sind ungleich, außer ihre Identifikatoren sind identisch.} \\ 
+		\centertable{Summe der Werte der Objekte. Objekte mit gleichen Werten besitzen gleiche Identität.} & 
+		\centertable{Bestimmt anhand eines Identifikators, zum Beispiel einer Datenbank-Id. Objekte gelten als ungleich, außer ihre Identifikatoren sind identisch.} \\ 
 		\hline
 		Lebenszyklus & 
 		\centertable{Stellt nur eine Momentaufnahme des Applikationszustands dar.} &
-		\centertable{Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht und besitzen somit einen Verlauf ihrer Wertänderungen.}  \\ 
+		\centertable{Werden zu einem bestimmten Zeitpunkt erstellt, bearbeitet, gespeichert oder gelöscht. Besitzen somit einen impliziten Verlauf ihrer Wertänderungen.}  \\ 
 		\hline
 		Veränderbarkeit & 
-		\centertable{Durch einen fehlenden Lebenszyklus gelten Value Objects als immutable.} &
-		\centertable{Aufgrund ihrer Eigenschaften sind Entities mutable.}  \\ 
+		\centertable{Durch einen fehlenden Lebenszyklus gelten Value Objects als \gls{immutable}.} &
+		\centertable{Aufgrund ihrer Eigenschaften sind Entities veränderbar.}  \\ 
 		\hline
 		Abhängigkeit & 
-		\centertable{Können nur als Unterobjekt einer oder mehrerer Entities existieren.} &
-		\centertable{Um einen eigenen Lebenszyklus zu besitzen, können sie unabhängig von anderen Objekten erstellt werden.}  \\ 
+		\centertable{Können nur als Unterobjekt von Entities existieren.} &
+		\centertable{Damit ein eigener Lebenszyklus möglich ist, können sie unabhängig von anderen Objekten leben.}  \\ 
 		\hline
 		Zugriffsmethode & 
 		\centertable{Auf Daten und Funktionen wird mithilfe einer Entität zugegriffen.} &
-		\centertable{Können als Aggregate Root direkt Zugriff erfahren.} \\ 
+		\centertable{Können als Aggregate Root oder durch dieses direkten Zugriff erfahren.} \\ 
 		\hline
 	\end{tabular}
 	\caption{Vergleich zwischen Value Object und Entity}
 	\label{fig:entityvsvalueobject}
 \end{table}
 
-}
 
-Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin alle Entities bestimmt werden.
+Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin alle Entities bestimmt werden:
 
-
-%TODO: Subsection oder itemize, oder einfach fette überschiften und dann text?
 \domainModellWithoutTitle{
-	\item \textbf{Basket: } {Als zentrales Datenobjekt besitzt ein Basket zur eindeutigen Identifikation durch den Touchpoint eine Id. Diese Eigenschaft spricht stark für eine Entity. Zusätzlich bestimmen nicht die enthaltenen Attribute wie Products oder der zugehörige Kunde die Identität des Baskets, sondern alleinig die Id. Aufgrund der geforderten Anwendungsfälle entsteht zugleich ein Lebenszyklus für die Instanzen eines Baskets und er durchgeht verschiedene Zustände. Folglich ist ein Basket eine \emph{Entity}.}
-	\item \textbf{IdentifiedCustomer: } {In Bounded-Contexts, welche mit den Kundendaten operieren, kann diese Klasse durchaus eine Entity darstellen. In unserer Domain finden keine Operationen auf diesen Informationen statt und die vorangestellten Systeme senden bei Änderungen der Kundendaten diese zu. Folglich besitzen sie keinen eigenen Lebenszyklus, werden ebenfalls nicht separat gespeichert und kann weiterhin als \emph{Value Object} designt werden.}
-	\item \textbf{Address: } {Auf Basis der Begründungen für die IdentifiedCustomer-Klasse kann eine analoge Schlussfolgerung für alle Addressen getroffen werden und weiterhin ihren Status als \emph{Value Object} beibehalten.}
-	\item \textbf{SessionCustomer: } {Die Identifikation dieses Objekts geschieht über die SessionId. Dadurch ist ein SessionCustomer die Klasse der Entities zuzuweisen. }
-	\item \textbf{BasketItem: } {Auf erstem Blick ist es eindeutig ein BasketItem als Entity zu designen. Es besitzt eine eigene Id und wird durch das Aktualisieren der Preise und Produktdaten bearbeitet. Somit entsteht ebenfalls ein Lebenszyklus. Jedoch lassen sich auch Argumente finden, warum ein BasketItem durchaus ein Value Object sein kann. Die Identifikation erfolgt zwar durch eine Id, allerdings kann dies durch folgenden Anwendungsfall hinterfragt werden. Wenn das gleiche Produkt mehrmals sich im Basket befindet, existieren auch mehrere zugehörige BasketItems. Bei der Anpassung der Quantität beispielsweise von vier auf eins, werden anhand der Id alle Items gesucht, welche das gleiche Produkt besitzen und aus dieser Liste werden drei gelöscht. Dies würde aber bedeuten, dass ein BasketItem zusätzlich anhand seines Produktes identifiziert wird. Sollte die ProduktId die Identität des Baskets ausmachen, dann wären alle BasketItems mit dem gleiche Produkt auch identisch. Dies stimmt allerdings nur bedingt, da sie sich theoretisch durch unterschiedliche Preise und Lieferkosten unterscheiden können, falls die Aktualisierung der Preise noch nicht durchgeführt wurde. Als Folgerung kann geschlossen werden, dass ein BasketItem lediglich eine Momentaufnahme darstellt, wodurch das Design als Value Object berechtigt wäre. Letztendlich kann das BasketItem in diesem Bounded Context sowohl als Entity sowie als Value Object definiert werden. Für den Proof-Of-Concept wurde das BasketItem als Entity festgelegt. Die Begründung hierfür ist, dass die schiere Anzahl von Datenanpassungen und Operationen auf einem BasketItem als \emph{Entity} natürlicher bewältigt werden können.}
-	\item \textbf{Product und Price: } {Die vorgehende Analyse des BasketItems kann auch auf das Product und den Price angewandt werden. Beide besitzen eine Id zur Identifikation und werden stetig aktualisiert. Allerdings ist ein Price bzw. Product mit unterschiedlichen Daten aber gleicher Id in unserem Kontext auch unterschiedliche Objekte. Theoretisch ist auch hier eine Entscheidung für beide Möglichkeiten vertretbar. Jedoch ist das Datenkonstrukt beider Klassen relativ klein und Anpassungen betreffen nahezu alle Attribute, wodurch ein unveränderliches Design natürlich ausfällt. Als Folge dessen sind beide Klassen als \emph{Value Object} umgesetzt worden. }
+	\item \textbf{Basket: } {Als zentrales Datenobjekt besitzt ein Basket zur eindeutigen Identifikation durch den Touchpoint eine Referenznummer. Diese Eigenschaft spricht stark für eine Entity. Zusätzlich bestimmen nicht die enthaltenen Attribute wie Products oder der zugehörige Kunde die Identität des Baskets, sondern alleinig diese Id. Aufgrund der geforderten Anwendungsfälle entsteht zugleich ein Lebenszyklus für die Instanzen eines Baskets und er durchgeht verschiedene Zustandsänderungen. Folglich ist ein Basket eine \emph{Entity}.}
+	\item \textbf{IdentifiedCustomer: } {In Bounded-Contexts, welche mit den Kundendaten operieren, kann diese Klasse durchaus eine Entity darstellen. In unserer Domain finden keine Operationen auf diesen Informationen statt und die vorangestellten Systeme senden bei Änderungen der Kundendaten diese zu. Folglich besitzen sie keinen eigenen Lebenszyklus und können weiterhin als \emph{Value Object} designt werden.}
+	\item \textbf{SessionCustomer: } {Die Identifikation dieses Objekts geschieht über die SessionId. Dadurch ist ein SessionCustomer in der Gruppe der \emph{Entities} aufzuhängen. }
+	\item \textbf{BasketItem: } {Auf erstem Blick ist ein BasketItem als Entity zu designen. Es besitzt eine eigene Id und wird durch das Aktualisieren der Preise und Produktdaten bearbeitet. Somit entsteht ebenfalls ein Lebenszyklus. Jedoch lassen sich auch Argumente finden, warum ein BasketItem durchaus ein Value Object sein kann. Die Identifikation erfolgt zwar durch eine Id, allerdings kann dies durch folgenden Anwendungsfall hinterfragt werden. Wenn das gleiche Produkt mehrmals sich im Basket befindet, existieren auch mehrere zugehörige BasketItems. Bei der Anpassung der Quantität beispielsweise von vier auf eins, werden anhand der Id alle Items gesucht, welche das gleiche Produkt besitzen und aus dieser Liste werden drei gelöscht. Dies würde aber bedeuten, dass ein BasketItem zusätzlich anhand seines Produktes identifiziert wird. Sollte die ProduktId die Identität des Baskets ausmachen, dann wären alle BasketItems mit dem gleiche Produkt auch identisch. Dies stimmt allerdings nur bedingt, da sie sich theoretisch durch unterschiedliche Preise und Serviceangebote (in der Produktivumgebung) unterscheiden können. Als Folgerung kann geschlossen werden, dass ein BasketItem lediglich eine Momentaufnahme darstellt, wodurch das Design als Value Object berechtigt wäre. Letztendlich kann das BasketItem in diesem Bounded-Context als Entity oder Value Object definiert werden. Für den Proof-Of-Concept wurde das BasketItem als Entity festgelegt. Die Begründung hierfür ist die schiere Anzahl von Datenanpassungen und Operationen auf einem BasketItem, welche als \emph{Entity} natürlicher bewältigt werden können.}
+	\item \textbf{Product und Price: } {Die vorgehende Analyse des BasketItems kann auch auf das Product und den Price angewandt werden. Beide besitzen eine Id zur Identifikation und werden stetig aktualisiert. Allerdings ist ein Price bzw. Product mit unterschiedlichen Daten aber gleicher Id in diesem Kontext auch unterschiedliche Objekte. Theoretisch ist auch hier eine Entscheidung für beide Möglichkeiten vertretbar. Jedoch ist das Datenkonstrukt beider Klassen relativ klein und Anpassungen betreffen nahezu alle Attribute, wodurch ein unveränderliches Design natürlich ausfällt. Als Folge dessen sind beide Klassen als \emph{Value Object} umgesetzt worden. }
 	\item \textbf{CalculationResult: } {Als Datenstruktur, welche bei jeder Neuberechnung aktualisiert wird, könnte die Eigenschaft eines Lebenszyklus erfüllt sein. Dennoch stellt die Klasse einzig ein Zwischenspeicher der Ergebnisse dar und ohne den Kontext eines darüberlegenden, zugehörigen Objekt besitzen diese Daten keine Aussagekraft. Weiterhin sind die gleichen Ergebnisse unterschiedlicher Baskets im Sinne der Identität äquivalent. Dadurch überwiegen die Argumente für ein \emph{Value Object}.}
-	\item \textbf{PaymentProcess: } {Der Bezahlungsprozess besitzt zur korrekter Ausführung ein Feld zum Speichern des aktuellen Status. Somit ist ein Lebenszyklus zuweisbar. Die Identität eine Payment Process ist gleich mit der BasketId, da eine Eins-zu-Eins Relation zwischen ihnen existiert. Die Lebensdauer des Objektes ist somit auch an die des Baskets gebunden. Weiterhin verwaltet ein PaymentProcess alle darunterliegenden Payments. Diese Eigenschaft erfüllen fast nur Entities. Dementsprechend ist ein PaymentProcess eine \emph{Entity}.}
-	\item \textbf{Payment: } {Ein Payment hat eine eindeutige Id, welche eine hohe Wichtigkeit trägt für den Ablauf des Bezahlprozesses und alle folgenden rechtlichen Prozesse. Dadurch ist weder der konkrete Betrag noch die Bezahlmethode von Relevanz bei der Identifikation. Ähnlich zum PaymentProcess ist auch hier ein Lebenszyklus im Form eines Statusfeldes vertreten und eine Verwirklichung als \emph{Entity} ist zu empfehlen.}
+	\item \textbf{PaymentProcess: } {Der Bezahlungsprozess besitzt zur korrekter Ausführung ein Feld zum Speichern des aktuellen Status. Somit ist ein Lebenszyklus zuweisbar. Die Identität eines Payment Processes ist gleich mit der BasketId, da eine Eins-zu-Eins Relation zwischen ihnen existiert. Die Lebensdauer des Objektes ist somit auch an die des Baskets gebunden. Weiterhin verwaltet ein PaymentProcess alle darunterliegenden Payments. Zusammenfassend spricht jede Eigenschaft für ein Design als \emph{Entity}.}
+	\item \textbf{Payment: } {Ein Payment hat eine eindeutige Id, welche eine hohe Relevanz für den Ablauf des Bezahlprozesses und alle folgenden rechtlichen Prozesse hat. Dadurch ist weder der konkrete Betrag noch die Bezahlmethode bei der Identifikation wichtig. Ähnlich zum PaymentProcess ist auch hier ein Lebenszyklus im Form eines Statusfeldes vertreten und eine Verwirklichung als \emph{Entity} ist zu empfehlen.}
 }
-
-%TODO: Wieder doppelt? Schon in DDD Kapitel? Als Tabelle oder als itemize?
-
-
 
 
 
