@@ -1,20 +1,21 @@
 \chapter{Design möglicher Aggregationsschnitte }
 
-Ein Domainmodell kann unterschiedlich gestaltet werden. Ebenfalls betrifft dies den Schnitt der Aggregates. Verschiedene Schnitte genießen verschiedene Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aufteilungen untersucht und durch verschiedene Kriterien bewertet. Diese Kriterien umfassen unter anderem Performance, Komplexität, Konsistenz, Parallelität, Relevanz und Anwendbarkeit im Bezug auf den Bounded-Contexts des Checkouts.
+Ein Domainmodell kann auf unterschiedliche Weisen realisiert werden. Dies gilt ebenfalls für den Schnitt der Aggregates. Verschiedene Schnitte genießen zugleich andere Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aggregationsaufteilungen untersucht und anhand von Kriterien, wie unter anderem Performance, Komplexität, Parallelität, Anwendbarkeit und Client-Freundlichkeit, bewertet.
 
 \section{Ein zusammengehöriges Basket-Aggregate als initiales Design}
 
-Das Design eines großen Aggregats fällt Entwicklern meist natürlich leichter. Eine einzelne zusammenhängende Struktur, durch welche Daten einfach bearbeitet und Invarianten überprüft werden können. Daher hält sich die Komplexität bei diesem Aggregationsschnitt weitestgehend in Grenzen. Vor allem müssen kaum Überlegungen über transaktionale Konsistenz getroffen werden, da die Grenzen der Transaktion all umspannend ist. Die erste Variante des Proof-Of-Concepts wurde mit diesem Design im Gedanken entwickelt und stellt das Grundgerüst für alle folgenden Konzepte dar. Zur vereinfachten Referenz auf die einzelnen Umsetzungsvarianten wird das Design, welches einen großen Basket zugrundeliegend hat, als '\emph{Variante A}' betitelt.
+Das Design eines großen Aggregats fällt Entwicklern meist einfacher. Bei einer einzelnen, zusammenhängenden Struktur, durch welche unmittelbar Daten bearbeitet und Invarianten überprüft werden können, hält sich die Komplexität weitestgehend in Grenzen. Vor allem müssen kaum Überlegungen über die transaktionale Konsistenz getroffen werden, da die Transaktion das gesamte Datenmodell umspannend. Die erste Variante des Proof-Of-Concepts wurde mit diesem Design in Gedanken entwickelt und stellt das Grundgerüst für alle folgenden Konzepte dar. Folglich ist der Basket hier das Aggregate Root und alle verbleibenden Klassen sind diesem unterteilt. Zur vereinfachten Referenz auf die einzelnen Umsetzungsmöglichkeiten wird das Design als '\emph{Variante A}' betitelt.
 
 
 \subsection{Performance von unterschiedlich großen Aggregates im Vergleich}
 
-%TODO: Lazy loading
-Als Konsequenz eines großen Aggregates ergibt sich, dass immer das ganze Aggregate geladen werden muss, da auf darunterliegende Datenstrukturen nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung einer Entity tief im Aggregat müssen alle anderen Daten ebenfalls geladen werden. Die Auswirkungen dieser Aussage kann auf Datenbankebene anhand von Lazy-Loading oder durch Einsatz einer dokumentbasierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird die diese Richtlinie anhand unseres Bounded-Contexts analysiert.
+Als Konsequenz eines großen Aggregates muss immer das ganze Aggregate geladen werden, da auf darunterliegende Datenstrukturen nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung von Daten tief im Aggregat müssen alle anderen Objekte ebenfalls aus der Datenbank gelesen werden. Die Auswirkungen dieser Tatsache kann mithilfe von \gls{Lazy Loading} oder durch Einsatz einer dokumentenorientierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird diese Richtlinie anhand des vorliegenden Bounded-Contexts analysiert.
 
-Wie oben erwähnt, ermöglicht ein kleinerer Aggregationsschnitt das unabhängige laden und bearbeiten der Aggregates. In Betrachtung der Anwendungsfälle können die Operationen in drei große Gruppen umfasst werden. Anfragen, welche Value Objects im Basket bearbeiten stellt die erste Ansammlung dar. Diese würden unnötige Daten laden, da nur der Basket mit möglichst wenig Value Objects relevant ist. Ebenfalls gilt dies für die Anfragen, welche BasketItems oder den PaymentProcess anpassen, weil sie den ganzen Basket laden anstatt nur die wirklich benötigten Daten.
+\subsubsection{Untergliederung des Baskets in kleinere Bestandteile}
 
-Wird die \emph{Variante A} unterteilt in Basket-, Payment und BasketItem-Aggregate (\emph{Variante B}) können diese somit unabhängig voneinander geladen und bearbeitet werden. Ohne Beachtung, welche Auswirkungen dieses neu überlegte Design auf andere Faktoren hat, ist eine Performanceverbesserung anhand ersten Überlegungen zu erwarten. Die vermeintlich gewonnene Performance wird allerdings aufgrund mehrerer Umständen verringert. Eine kurze Übersicht über diesen neuen Aggregationsschnitt bietet Abbildung \ref{fig:VarB}.
+\comment{Obige Überschrift lassen oder entfernen?}
+
+Wie oben erwähnt, ermöglicht ein kleinerer Aggregationsschnitt das unabhängige Laden und Bearbeiten der Aggregates. In Betrachtung der Anwendungsfälle beziehen sich Aktionen meist auf einzelne Value Objects, BasketItems oder PaymentProcesses. Dementsprechend wäre das explizite Abfragen dieser Daten aus der Datenquelle effektiver. Dies ist in Domain-Driven Design jedoch nur möglich, sofern diese Klassen die Rolle eines Aggregate Root einnehmen. Wird die \emph{Variante A} unterteilt in ein Basket-, Payment und BasketItem-Aggregate (\emph{'Variante B'}) können sie somit unabhängig voneinander gehandhabt werden. Eine kurze Übersicht über diesen neuen Aggregationsschnitt bietet Abbildung \ref{fig:VarB}. Ohne Beachtung, welche Auswirkungen dieses neu überlegte Design auf andere Faktoren hat, ist eine erhöhte Performance anhand ersten Überlegungen zu erwarten. Die vermeintlich gewonnene Leistungsverbesserung wird allerdings aufgrund folgender Umstände minimiert.
 
 \begin{figure}[htbp]
 	\centering
@@ -23,50 +24,64 @@ Wird die \emph{Variante A} unterteilt in Basket-, Payment und BasketItem-Aggrega
 	\label{fig:VarB}
 \end{figure}
 
-\subsubsection{Invarianten über Aggregatsgrenzen hinweg}
+\subsubsection{Invarianten über Aggregationsgrenzen hinweg}
 
-Wird dem Warenkorb ein neuer Artikel hinzugefügt hat dies zu Folge, dass nicht nur ein neues Item angelegt, sondern auch der Baskets neu berechnet werden muss. Sofern eine Aggregatstrennung zwischen Basket und BasketItem vorliegt, muss dennoch der ganze Basket geladen werden, andernfalls ist es nicht möglich den Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Contexts existieren viele dieser Businessanforderungen, welche mehrere Objekte benötigen, um angewandt zu werden. Zudem ist es gegen die grundlegenden Bestimmungen eines Aggregates, dass eine Anfrage bzw. Transaktion zwei oder mehrere Aggregate bearbeiten. Dieser Anwendungsfall hätte eine Speicherung eines neuen BasketItems und die Aktualisierung des CalculationResults des Baskets zufolge. Schlussfolgernd wäre eine solche Operation nicht erlaubt ohne Verwendung von eventueller Konsistenz. Um genauer zu bestimmen, welche tatsächliche Performance erzielt werden kann durch kleinere Aggregates am konkreten Design der \emph{Variante B} müssen die Anzahl der tatsächlich unabhängig abschließbaren Operationen untersucht werden. Die vorher festgelegten Aktivitätsdiagramme helfen bei dieser Aufgabe.
+Wird dem Warenkorb ein neuer Artikel hinzugefügt, hat dies nicht nur das Anlegen eines  Items, sondern auch die Neukalkulation des Baskets zu folge. Sofern eine Trennung zwischen Basket und BasketItem vorliegt, muss dennoch der ganze Warenkorb aus der Datenbank geladen werden, andernfalls ist es nicht möglich den neuen Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Kontextes existieren viele dieser klassenübergreifenden Businessanforderungen, weshalb die Kopplung des Datenmodells oftmals eine wirklich unabhängige Datenanpassung eines Aggregates verhindert.
 
-Ein Abruf eines Baskets kommt einher mit dem Laden aller anderen Aggregates, da die Touchpoints den gesamten Basket benötigen. Dies gilt ebenfalls für alle anderen Anwendungsfälle, welche als Antwort auf ihre Anfrage einen kompletten Basket erwarten. Das Stornieren des Baskets und Setzten der Checkout-Daten ist positiv von dieser Anpassung betroffen. Jedoch ist die Initiierung und Durchführung des Bezahlvorgangs nicht komplett unabhängig abschließbar, da im Nachhinein der Status des Baskets angepasst werden muss. Dadurch entsteht eine Abhängigkeit, welche im Nachhinein erfüllt werden muss und somit zur eventuellen Konsistenz führt. Die größte Anzahl an API-Anfragen beziehen sich auf das Hinzufügen und Bearbeiten von BasketItems und die Verwaltung des Bezahlvorgangs. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle durch einen Umbau der Architektur von Variante A auf Variante B wirklich positiv betroffen.
+Durch eine genauere Untersuchung der Anwendungsfälle kann eine Abwägung getroffen werden, wie viele Prozesse tatsächlich unabhängig abzuarbeiten sind. Ein Abruf eines Baskets kommt einher mit dem Laden aller anderen Aggregates, da die Touchpoints den gesamten Basket benötigen. Dies gilt ebenfalls für alle anderen Anwendungsfälle, welche als Antwort auf ihre Anfrage einen kompletten Basket erwarten, wodurch die Effektivität des Aggregationsdesigns ebenfalls an die Bedürfnisse der Clients gekoppelt sind. Das Stornieren des Baskets und Setzten der Checkout-Daten ist hingegen positiv von dieser Anpassung betroffen, denn diese verwaltet alleinig der Warenkorb. Die meisten API-Anfragen beziehen sich allerdings auf beinhaltete BasketItems und die Verwaltung des Bezahlvorgangs, welche Wechselwirkungen mit dem Warenkorb oder sein zugehöriger Gesamtpreis besitzen. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle mithilfe von Variante B isoliert abschließbar, somit steigt die Anzahl der benötigten Datenbankoperationen auch bei kleineren Aggregates und die damit verbundene Bearbeitungszeit wieder an.
 
-\subsubsection{Einfluss des Datenbankmodells auf den Aggregationsschnitt}
+In dem Buch '\citetitle{Evans.2011}' wird zusätzlich auf eine Richtlinie hingewiesen, dass bei korrekten Aggregationsdesign eine Transaktion maximal ein Aggregate bearbeiten sollte \cite[S. 354]{Evans.2011}. Dies führt zu einem Konflikt mit den vorgehenden Businessanforderungen. Beispielsweise wäre es nicht möglich bei der Initiierung des Zahlungsvorgangs zeitgleich den Warenkorb einzufrieren. Ein möglicher Lösungsansatz stellt hierbei das Verwenden von eventueller Konsistenz dar. Konkret findet die Bearbeitung der Aggregates zeitversetzt voneinander statt, weshalb eine Zeitspanne existiert in welcher der Datensatz einen invaliden Stand besitzt. Angewandt an den vorgehenden Anwendungsfall bedeutet dies, dass zwar der Warenkorb eingefroren, allerdings der Bezahlvorgang noch nicht gestartet ist. Verbundene Implikationen mit eventueller Konsistenz werden in einem folgenden Kapitel besprochen.
 
-Das Design einer Software soll stets so weit wie möglich unabhängig von verwendeten Technologien sein. Technologien entwickeln sich weiter, werden durch neuer ersetzt und bringen unnötige Abhängigkeiten in den Quelltext. Theoretisch hat somit eine Beeinflussung der Architektur durch eine externe Komponente einen negativen Effekt auf die Qualität der Software und ihre Wartbarkeit. Dennoch kann in der Praxis dieser Gedanke durchaus Vorteile bergen, welche dieses Vorgehen gerechtfertigt. Folglich wird der Aggregatsschnitt aus Sicht der Datenbank bewertet.
+\subsubsection{Einfluss des verwendeten Datenbanksystems auf den Aggregationsschnitt}
 
-Laut Definition erhält jedes Aggregate seine eigene Tabelle in der darunterliegenden Datenbank. Daher existieren in \emph{Variante B} mindestens die Tabelle für den Basket, BasketItems und PaymentProcess. In \emph{Variante A} kann der PaymentProcess in die gleiche Tabelle wie der Basket geschrieben werden, da eine Eins-zu-Eins Relation vorliegt. Obwohl es nur ein Aggregate gibt, sind dennoch zwei Tabellen für Basket und BasketItem notwendig, da in einer Relationalen Datenbank eine Eins-zu-N Beziehung nicht anders dargestellt werden kann. Demnach muss beim Abruf eines kompletten Baskets in \emph{Variante A} N Joins durchgeführt werden, wobei \emph{Variante B} N+1 Joins benötigt, wobei N die Anzahl der BasketItems entspricht. Dies resultiert in eine schlechtere Performance der \emph{Variante B} zumindest in Bezug der Datenbankabfrage. Wie bereits erwähnt, erwarten eine Vielzahl von Anfragen alle Daten des Baskets zurück und dadurch erhalten wir eine erhöhte Bearbeitungszeit der Anfragen.
+Das Design einer Software soll stets, so weit wie möglich, isoliert von verwendeten Technologien sein. Technologien entwickeln sich weiter, werden durch neuer ersetzt und bringen unnötige Abhängigkeiten in den Quelltext. Theoretisch hat somit eine Beeinflussung der Architektur durch eine externe Komponente einen negativen Effekt auf die Qualität der Software und ihre Wartbarkeit. Dennoch kann in der Praxis dieser Gedanke durchaus Vorteile bergen, welche dieses Vorgehen rechtfertigt. Folglich wird das Aggregationsdesign aus Sicht der Datenbank bewertet.
 
-%TODO: Collection
-Sollte die verwendete Datenbank jedoch einen dokumentbasierten Ansatz verfolgen, gilt vorheriger Absatz nur noch bedingt. Hierbei benötigt \emph{Variante B} weiterhin drei eigene Collections, jedoch kann \emph{Variante A} in einem einzigen Eintrag gespeichert und geladen werden. An sich besitzt der einzelne Datensatz zwar mehr Daten, allerdings hat dies keine Auswirkung auf die Gesamtperformance. Daher würde bei einem Umbau der Aggregate für die meisten Anwendungsfälle eine einzelne Suchanfrage in N+1 Suchanfragen abgewandelt werden. Dies kann bemerkbare Auswirkungen auf die Antwortzeit unserer Applikation haben.
+Laut Definition erhält jedes Aggregate bzw. Aggregate Root seine eigene Tabelle in der darunterliegenden, relationalen Datenbank. Deshalb existiert in \emph{Variante B} mindestens eine Tabelle für den Basket, BasketItems und PaymentProcess. Hingegen kann bei \emph{Variante A} der PaymentProcess in die Basket-Tabelle hinzugefügt werden, da eine Eins-zu-Eins Relation vorliegt. Weitergehend benötigen beide Aggregationsschnitte aufgrund der Eins-zu-N Beziehung zwei Tabellen für Basket und BasketItem. Dementsprechend muss beim Abruf eines kompletten Baskets in \emph{Variante A} im Vergleich zu \emph{Variante B} weniger Ladevorgänge durchgeführt werden. Das kleiner Aggregationsdesign ist bei isolierten Modifikationen von Aggregates aus Sicht der Datenbankoperationen jedoch vorteilhafter. Je nach Businessanforderungen können sich diese Aspekte ausgleichen und lediglich einen geringen Effekt auf die generelle Performance der Anwendung besitzen.
 
-Im ersten Absatz wurde beschrieben, dass eine Technologie keine Auswirkung auf die Architektur haben sollte, konträr dazu ist bei der Betrachtung der Applikationsperformance dies eventuell sinnvoll. Sollte eine relationale Datenbank verwendet werden, hält sich die Performance Einbußen in Grenzen. Hingegen bei einer dokumentbasierten Datenbank ist dieser Effekt vervielfacht. Daher kann die Entscheidung über den verwendeten Aggregationsschnitt durchaus von einer konkreten Technologie beeinflusst werden. 
+Sollte die verwendete Datenbank allerdings einen dokumentenorientierten Ansatz verfolgen, gilt vorheriger Absatz nur noch bedingt. Hierbei benötigt \emph{Variante B} weiterhin pro Aggregate eine eigene \gls{Collection}. \emph{Variante A} kann das komplette Datenmodell hingegen in einem einzigen Eintrag persistierten. An sich ist der einzelne Datensatz umfangreicher, allerdings ist dies durch die eingesparten Datenbankoperationen dennoch effektiver. Daher würde bei einem Umbau der Aggregates für die meisten Anwendungsfälle eine einzelne Suchanfrage in mehrere abgewandelt werden, wodurch bemerkbare Auswirkungen auf die Antwortzeit unserer Applikation entstehen können. 
 
-%TODO: ,da erstezten durch andere Wörte in der ganzen Bachelorarbeit
+Anfangs wurde beschrieben, dass eine Technologie idealerweise keine Auswirkung auf die Architektur haben sollte, konträr dazu ist bei der Betrachtung der Applikationsperformance dies eventuell sinnvoll. Sollte eine relationale Datenbank verwendet werden, hält sich die Performance-Unterschiede in Grenzen, wohingegen dies bei einen umfangreicher Aggregationsschnitt mit einer dokumentenorientierten Datenbank nicht gewährleistet werden kann. Anhand eines konkreten Lasttests wird in einem späteren Kapitel dieser Effekt genauer untersucht und bewertet.
 
 \subsection{Parallele Bearbeitung eines großen Aggregates}
-% TODO: Datenbankanomalien erklären etc.
-%TODO: Lockin method
-Aufgrund dessen, dass ein Aggregat eine transaktionale Grenze abbildet, wirkt sich der Aggregationsschnitt auf die mögliche Parallelität der Anfragen aus. Ausgehend von \emph{Variante A} resultiert eine Bearbeitung der Daten des Baskets in der Speicherung des kompletten Warenkorbs in der Datenbank. Bei Schreibprozessen können Anomalien auftreten wodurch die Transaktion bzw. der Schreibvorgang abgebrochen werden muss. Eine mögliche Anomalie ist das sogenannte 'Lost Update'-Problem. Es kann auftreten wenn zwei Transaktionen den gleichen Datensatz zeitgleich bearbeiten. Sie beginnen ihre Operationen auf den selben Startzustand und schreien ihre Ergebnisse zurück in die Datenbank. Dabei kann die Änderungen einer Transaktion sofort durch eine andere überschrieben werden und dessen Datenänderungen gehen verloren.
 
-Konkretisiert kann dieses Problem anhand des Baskets. Zwei Personen fügen beispielsweise einen neuen Artikel zu ein und demselben Warenkorb hinzu. Dies kann zum Beispiel bei einer Wishlist auftreten, welche von einer Personengruppe bearbeitet werden kann. Der erste Kunde legt hierbei ein neues Handy in den Warenkorb, wohingegen zeitgleich ein anderer Nutzer einen Fernseher hinzufügt. Beide Transaktionen starten mit einem leeren Warenkorb und schreiben in die Datenbank einen aktualisierten Datensatz mit nur einem Artikel. Daher geht die Änderung eines der zwei Personen verloren. 
+Ausgehend von \emph{Variante A} resultiert eine Bearbeitung des Baskets in der Speicherung des kompletten Warenkorbs in der Datenbank. Bei Schreibprozessen können Anomalien auftreten, wodurch die Operation abgebrochen werden muss. Eine mögliche Anomalie ist das sogenannte 'Lost Update'-Problem. Es kann auftreten, wenn zwei Transaktionen den gleichen Datensatz zeitgleich bearbeiten. Anfangs besitzen beide den selben Startzustand, jedoch beim Zurückschreiben ihrer Ergebnisse stößt der letztere von beiden Transaktionen auf einen nun neueren Stand. Hierbei muss diese Transaktion erkannt und abgebrochen werden, da sonst die zuvor geschehene Datenänderung der ersteren Transaktion verloren gehen würde.
 
-Eine Lösung dieses Problems kann durch optimistischen oder pessimistischen Verfahren erzielt werden. Entweder wird im optimistischen Ansatz anhand eines Versionsfeldes überprüft, ob der Datensatz in der Zwischenzeit geändert worden ist und im Falle dessen zurückgewiesen, oder der Datensatz wird durch die pessimistischen Methode gesperrt und die zweite Transaktion muss warten bis die erste den Schreibprozess abschließt. Dementsprechend ist die zeitgleiche Bearbeitung eines Aggregats eingeschränkt. Existieren Anwendungsfälle in denen eine hohe Parallelität notwendig ist, sollten die Aggregates sofern realisierbar voneinander getrennt werden. 
+Konkretisiert kann dieses Problem auftreten, wenn beispielsweise zwei Personen einen neuen Artikel dem selben Warenkorb hinzufügen. Der erste Kunde legt hierbei ein neues Handy in den Warenkorb, wohingegen zeitgleich ein anderer Nutzer einen Fernseher hinzufügt. Beide Transaktionen starten mit einem leeren Warenkorb und schreiben in die Datenbank einen Datensatz mit nur einem Artikel. Das System aktualisiert den Eintrag in der Datenbank zuerst mit dem Handy. Aufgrund dessen, dass die zweite Anfrage mit einem leeren Warenkorb initiiert worden ist, wird der Datensatz ebenfalls mit nur einen Artikel persistiert. Letztendlich enthält der Basket nun nur einen Fernseher statt den eigentlichen zwei Artikeln. Alternativ kann die letztere Operation anhand des neuen Zustandes erneut durchgeführt werden oder der Datensatz wird beim Laden für weitere Anfragen gesperrt, sodass ein solches Problem nicht auftreten kann. Diese Lösungsansätze nennen sich optimistisches bzw. pessimistisches Sperrverfahren. 
+
+Innerhalb eines großen Aggregates kann es bei zeitgleichen Aktionen vermehrt zu Schreibanomalien kommen, wodurch sie sich für parallele Bearbeitung nicht eigenen. In \emph{Variante B} ist es möglich BasketItems zum selben Zeitpunkt anzupassen, da sie in der Datenbank unabhängig voneinander persistiert werden. Existieren Businessanforderungen für Ressourcen, welche mehrere Nutzer gleichzeitig verwalten, ist ein umfassenderer Aggregationsschnitt nur noch bedingt möglich. Deswegen muss vor dem Entwicklungsprozess bei der Funktionsaufnahme auf solche Bedürfnisse geachtet werden. Zum jetzigen Zeitpunkt ist eine parallele Bearbeitung eines Warenkorbs nicht geplant.
 
 \subsection{Bewertung des großen Aggregationsschnitts}
 
-Abschließend kann anhand der vorhergehenden Überlegungen der Aggregationsschnitt von \emph{Variante A} bewertet werden.
-
-%TODO: Schreibweise von Sourcecode in der ganzen BA überprüfen. Sourcecode oder Source code
-
 \begin{itemize}[noitemsep,nolistsep,topsep=-2pt]
-	\item \textbf{Komplexität: } {Die Umsetzung der Businessanforderungen in der Applikation kann übersichtlich erfolgen. Der Sourcecode muss durch keine komplizierteren Vorgänge ergänzt werden. }
-	\item \textbf{Performance: } {Jede Anfrage benötigt das Auslesen des ganzen Baskets. Jedoch ist dies in den meisten Anwendungsfällen ohnehin von Nöten. Ein kleinere Aggregationsschnitts kann die Performance sogar verschlechtern. }
-	\item \textbf{Parallelität: } {Eine zeitgleiche Bearbeitung des Baskets oder eines Objektes innerhalb ist nicht möglich.}
-	\item \textbf{Client-Freundlichkeit: } {In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.}
+	\item \textbf{Komplexität: } {
+		\begin{itemize}
+			\item {Die Umsetzung der Businessanforderungen in der Applikation kann übersichtlich erfolgen und eventuelle Konsistenz ist nicht von Nöten. }
+			\item {Der Sourcecode muss durch keine komplizierteren Verfahren ergänzt werden.}
+			\item {Invarianten können direkt geprüft werden, da stets alle Informationen geladen sind. }
+		\end{itemize}
+	}
+	\item \textbf{Performance: } {
+		\begin{itemize}
+			\item Jede Anfrage benötigt das Auslesen des ganzen Baskets. Da eine dokumentenorientierte Datenbank verwendet wird, beläuft sich dies auf einen einzelnen Suchvorgang.
+			\item Sofern eine relationale Datenbank eingesetzt wird, leidet die Software an eventuell unnötigen Datenbankoperationen, wodurch eine Verkleinerung des Aggregationsschnittes zu Performance-Verbesserungen führen kann.
+		\end{itemize}
+	}
+	\item \textbf{Parallelität: } {
+		\begin{itemize}
+			\item Eine zeitgleiche Bearbeitung des Baskets oder eines Objektes innerhalb ist nicht möglich.
+		\end{itemize}	
+	}
+	\item \textbf{Client-Freundlichkeit: } {
+		\begin{itemize}
+			\item In Hinsicht auf die wichtigsten Anwendungsfälle erfährt der Client keine Einschränkungen und alle Businessanforderungen können erfüllt werden.
+		\end{itemize}
+	}
 \end{itemize}
+
 
 \section{Trennung der Zahlungsinformationen von dem Basket-Aggregate}
 
-Damit ein neues Aggregat aus der großen Basket-Klasse herausgeschnitten werden kann, wird ein Root Aggregate benötigt. Aus diesem Grund ist der erste Ansatz eine Entity vom Basket abzutrennen. Hierbei ist der PaymentProcess nur schwach an den eigentlichen Basket gebunden und mögliche Anwendungsfälle beziehen sich meist alleinig auf entweder den Warenkorb und seine Items oder den Bezahlprozess. Daher wird in der \emph{Variante C} die Aggregate in Basket und PaymentProcess, wie in Grafik \ref{fig:VarC}, aufgeteilt. 
+Damit ein neues Aggregat aus der großen Basket-Klasse herausgeschnitten werden kann, wird ein Root Aggregate und somit eine Entity benötigt. Hierbei ist der \ul{PaymentProcess} nur schwach an den eigentlichen Basket gebunden und mögliche Anwendungsfälle beziehen sich meist alleinig auf entweder den Warenkorb und seine Items oder den Zahlvorgang. Daher wird in der \emph{Variante C} das Datenmodell in Basket und PaymentProcess, entlang der Grafik \ref{fig:VarC}, aufgeteilt. 
 
 \begin{figure}[htbp]
 	\centering
@@ -75,15 +90,13 @@ Damit ein neues Aggregat aus der großen Basket-Klasse herausgeschnitten werden 
 	\label{fig:VarC}
 \end{figure}
 
-Da die Aggregates unabhängig voneinander agieren, müssen sie auch getrennt geladen und abgespeichert werden können. Folglich wird ein neues Repository benötigt, welches diese Operationen für das neue Aggregate absolviert. Die Referenz auf den PaymentProcess wird aus dem Basket entfernt und alle Funktionen, welche Aufrufe auf dieses Objekt benötigt haben, müssen entweder in die PaymentProcess-Klasse verlagert oder durch einen Domainservice durchgeführt werden. Es entstehen Auswirkungen auf die bisherige Funktionsweise und den Datenfluss der Applikation, welche in den kommenden Unterkapiteln anhand der Initiierung des Bezahlvorgangs genauer untersucht werden.
-
-Kurze Zusammenfassung des Anwendungsfalles: 
-Bevor ein Bezahlprozess gestartet werden darf, muss eine Evaluierung des Warenkorbzustands stattfinden, wie die Überprüfung der hinzugefügten Zahlungsarten, Kundendaten und errechneten Geldbeträge. Nach erfolgreicher Validierung wird der Warenkorbzustand auf 'freeze' abgeändert und der PaymentProcess kann eingeleitet werden.
+Da die Aggregates unabhängig voneinander agieren, müssen sie auch getrennt geladen und abgespeichert werden können. Folglich wird ein Repository angelegt, welches diese Operationen für das neue Aggregate absolviert. Die Referenz auf den PaymentProcess wird aus dem Basket entfernt und alle Funktionen, welche Aufrufe auf dieses Objekt benötigt haben, müssen entweder in die PaymentProcess-Klasse verlagert oder durch einen Domainservice realisiert werden. Es entstehen Auswirkungen auf die bisherige Funktionsweise und den Datenfluss der Applikation, welche in den kommenden Unterkapiteln anhand der Initiierung des Bezahlvorgangs genauer untersucht werden. Eine kurze Zusammenfassung des Anwendungsfalles lautet wie folgt:
+ 
+Bevor ein Bezahlvorgang gestartet werden darf, muss eine Evaluierung des Warenkorbzustands stattfinden, wie beispielsweise die Überprüfung der hinzugefügten Zahlungsarten, Kundendaten und errechneten Geldbeträge. Nach erfolgreicher Validierung wird der Warenkorbzustand auf 'freeze' abgeändert und der Zahlungsprozess kann eingeleitet werden.
 
 \subsection{Eventuelle Konsistenz zwischen Aggregates}
-%TODO: Message Broker und Listener in gls
 
-Bei der Implementierung von Variante A ist es möglich, dass das Einfrieren des Warenkorbs und die Initiierung innerhalb einer Transaktion erfolgt. Aufgrund der Richtlinie, dass jede Transaktion nur ein Aggregate bearbeiten darf, müssen somit diese Funktionalitäten aufgespalten werden. Das konkrete Problem, welches sich dabei ergibt, ist im Codebeispiel \ref{lst:eventualConsistency} veranschaulicht.
+Bei der Implementierung von Variante A ist es möglich, dass das Einfrieren des Warenkorbs und die Initiierung innerhalb einer Transaktion erfolgt. Aufgrund der Richtlinie, dass jede Transaktion nur ein Aggregate bearbeiten darf, müssen somit diese Funktionalitäten aufgespalten werden. Zwischen den beiden Aktionen existiert deswegen eine Zeitspanne in welcher der Warenkorb zwar eingefroren, allerdings der Bezahlvorgang noch nicht gestartet ist. Der Warenkorb hat hierbei temporär einen inkonsistenten Zustand, weshalb diese Art von Konsistenz auch als 'eventuelle Konsistenz' betitelt wird. Generell kann in vielen Anwendungsfällen eine kurzzeitige Abweichung der Voraussetzungen akzeptiert werden. Zum Beispiel in einem Gruppenchat hat ein kurzer, verzögerter Empfang der Nachrichten unter den Teilnehmern keinen großen Einfluss auf die Nutzererfahrung oder korrekte Funktionsweise der Applikation. Hingegen gilt bei der Initiierung des Zahlungsprozesses ein hoher Fokus auf fiskalisch korrekte Abarbeitung des Prozesses. Das resultierende Problem der eventuellen Konsistenz ist im Codebeispiel \ref{lst:eventualConsistency} veranschaulicht.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Getrennte Transaktionen für die Initiierung des Bezahlvorgangs}, label={lst:eventualConsistency}, language=Kotlin]
@@ -91,27 +104,32 @@ function initializePayment(Basket basket, PaymentProcess paymentProcess) {
 	basket.validate()
 	basket.freeze()
 	basketRepository.store(basket)
-	// Mögliches Interleaving anderer Operation, welche zur Abänderung des
-	// Baskets und des Validierungsergebnisses führt.
+	// Mögliches Zwischenschalten anderer Operation, welche zur Abänderung des
+	// Baskets und des Validierungsergebnisses führen kann.
 	paymentProcess.initialize()
 	paymentProcessRepository.store(paymentProcess)
 }
 	\end{lstlisting}
 \end{minipage}
 
-%TODO: Thread
-Zwischen dem Persistieren des eingefrorenen Warenkorb und der Initiierung des PaymentProcesses können aufgrund von Parallelität der Warenkorb durch separate Anfragen weiterhin bearbeitet werden. Konkret könnte eine Bedingung für die Validierung sein, dass die Kundendaten nicht leer sein dürfen. Jedoch wird zwischen Zeile 4 und Zeile 7 in einem parallel laufenden Thread durch einen externen API-Aufruf die Kundendaten entfernt. Dadurch wäre die eigentliche Validierung in Zeile 2 fehlgeschlagen und die Initiierung darf nicht durchgeführt werden, jedoch wird diese dennoch in unseren Beispiel angestoßen, da davon ausgegangen wird, dass sich der Basket in der Zwischenzeit nicht verändert hat. Die diese beiden Operationen nicht als eine atomare Einheit umgesetzt ist, entsteht immer eine Möglichkeit des Interleavings zwischen den einzelnen Codezeilen.
-
-Verdeutlicht wird dieser Effekt bei der Benutzung eines Message Brokers, falls exemplarisch die einzelnen Prozesse in verschiedenen Microservices ablaufen. Hierbei wird die konkrete Initiierung in einem anderen Service durchgeführt, welcher bei Empfang eines bestimmten Events ausgeführt wird. Folglich feuert die Funktion nach Einfrieren des Warenkorbs ein solches Event ab. Ein möglicher Programmablauf ist in Diagramm \ref{fig:VarC-Sequence} zu sehen. 
+Zwischen dem Persistieren des eingefrorenen Warenkorb und der Initiierung des PaymentProcesses kann aufgrund von parallel ablaufenden Anfragen der Warenkorb weiterhin bearbeitet werden. Diese \Gls{Race Condition} kann Bedingungen, welche zuvor explizit überprüft und erfüllt waren, nun invalide gestalten. Beispielsweise kann in einem anderen Thread ein externer API-Aufruf die einzige Zahlungsmethode zwischen Zeile 4 und 7 entfernen, wodurch die Initiierung eigentlich Fehlschlagen sollte, jedoch trotzdem Ausgeführt wird. Es entsteht ein invalider Zustand des Datensatzes, weshalb weitere Operationen auf den Warenkorb fehlschlagen und zusätzlich rechtliche Probleme entstehen könnten. Verdeutlicht wird dieser Effekt im Sequenzdiagramm \ref{fig:VarC-Sequence-Alt}. Beide Anfragen richten sich an den gleichen Warenkorb. Der rot markierte Bereich stellt die Zeitspanne dar, in welcher andere Prozesse den Warenkorb weiterhin bearbeiten können, obwohl dies nicht vorgesehen ist. Da die Baskets vor den Modifikationen der anderen Threads geladen werden, ist das Abfangen eines solchen Fehlerzustandes ebenfalls nicht realisierbar.
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarC Sequenz.svg}
+	\includesvg[inkscapelatex=false, width=0.80\textwidth]{svg/VarC-Sequence Alt.svg}
 	\caption{Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}
-	\label{fig:VarC-Sequence}
+	\label{fig:VarC-Sequence-Alt}
 \end{figure}
 
-Der rot markierte Bereich stellt die Zeitspanne dar, in welcher andere Prozesse den Warenkorb weiterhin bearbeiten können und dadurch die eigentliche Initiierung invalide, jedoch weiterhin durchgeführt wird. Als Folge dessen entstehen weitere Herausforderungen für das Domainmodell und die Interleavingsmöglichkeiten müssen stets in Betracht gezogen werden. Diese Art von Konsistenz wird als 'Eventuelle Konsistenz' betitelt, da es einen Zeitpunkt gibt in dem die Businessanforderungen temporär nur \emph{eventuell} erfüllt sind. Generell kann in vielen Anwendungsfällen eine kurzzeitige Abweichung der Voraussetzungen akzeptiert werden, zum Beispiel in einem Gruppenchat hat ein kurzer verzögerter Empfang der Nachrichten unter den Teilnehmern keinen großen Einfluss auf die Nutzererfahrung oder korrekte Funktionsweise der Applikation. Hingegen gilt bei der Initiierung des Zahlungsprozesses ein hoher Fokus auf fiskalisch korrekte Abarbeitung des Prozesses. Clients, welche den aktuellen Stand des Bestellprozess abfragen, erhalten bis zur Speicherung des Payment Aggregates einen veralteten Stand. Dies stellt einen bedeutenden Bruch der Invarianten dar. Folglich kann das Zusammenspiel zwischen Basket und PaymentProcess nicht durch eventuelle Konsistenz gelöst werden ohne ein hohes Risiko einzugehen.
+Als Folge dessen entstehen weitere Herausforderungen für das Domainmodell. Die möglichen Verschränkungen von Prozessen führt zu  .
+
+
+
+ 
+
+Verdeutlicht wird dieser Effekt bei der Benutzung eines Message Brokers, falls exemplarisch die einzelnen Prozesse in verschiedenen Microservices ablaufen. Hierbei wird die konkrete Initiierung in einem anderen Service durchgeführt, welcher bei Empfang eines bestimmten Events ausgeführt wird. Folglich feuert die Funktion nach Einfrieren des Warenkorbs ein solches Event ab. Ein möglicher Programmablauf ist in Diagramm \ref{fig:VarC-Sequence-Alt} zu sehen. 
+
+Der rot markierte Bereich stellt die Zeitspanne dar, in welcher andere Prozesse den Warenkorb weiterhin bearbeiten können und dadurch die eigentliche Initiierung invalide, jedoch weiterhin durchgeführt wird.   Clients, welche den aktuellen Stand des Bestellprozess abfragen, erhalten bis zur Speicherung des Payment Aggregates einen veralteten Stand. Dies stellt einen bedeutenden Bruch der Invarianten dar. Folglich kann das Zusammenspiel zwischen Basket und PaymentProcess nicht durch eventuelle Konsistenz gelöst werden ohne ein hohes Risiko einzugehen.
 
 \subsection{Atomare Transaktionen über mehrere Aggregates}
 

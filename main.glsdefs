@@ -334,6 +334,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{Race Condition}%
+{%
+name={Race Condition},%
+sort={Race Condition},%
+type={main},%
+first={Race Condition},%
+firstplural={Race Conditions},%
+text={Race Condition},%
+plural={Race Conditions},%
+description={Eine Situtation in welcher, aufgrund von parallelen Aktionen, das Resultat von deren zeitlichen Stattfinden abhängig ist.},%
+descriptionplural={Eine Situtation in welcher, aufgrund von parallelen Aktionen, das Resultat von deren zeitlichen Stattfinden abhängig ist.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{Boilerplate}%
 {%
 name={Boilerplate},%
@@ -625,6 +653,62 @@ text={Product Owner},%
 plural={Product Owners},%
 description={Eine Scrum-Rolle, welche die wirtschaftliche Ziele und Prioritäten der Aufgabenpakete bestimmt},%
 descriptionplural={Eine Scrum-Rolle, welche die wirtschaftliche Ziele und Prioritäten der Aufgabenpakete bestimmt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Lazy Loading}%
+{%
+name={Lazy Loading},%
+sort={Lazy Loading},%
+type={main},%
+first={Lazy Loading},%
+firstplural={Lazy Loadings},%
+text={Lazy Loading},%
+plural={Lazy Loadings},%
+description={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald diese benötigt werden, wodurch unnötiges Laden minimiert wird.},%
+descriptionplural={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald diese benötigt werden, wodurch unnötiges Laden minimiert wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Collection}%
+{%
+name={Collection},%
+sort={Collection},%
+type={main},%
+first={Collection},%
+firstplural={Collections},%
+text={Collection},%
+plural={Collections},%
+description={Analog zu den Tabellen in einer relationalen Datenbank, stellen persistieren Collections pro Eintrag einen Datensatz.},%
+descriptionplural={Analog zu den Tabellen in einer relationalen Datenbank, stellen persistieren Collections pro Eintrag einen Datensatz.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

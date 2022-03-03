@@ -1,4 +1,4 @@
-This is makeindex, version 2.16 [MiKTeX 21.12].
+This is makeindex, version 2.16 [MiKTeX 22.1].
 Scanning style file ./main.ist.............................done (29 attributes redefined, 0 ignored).
 Scanning input file main.acn....done (38 entries accepted, 0 rejected).
 Sorting entries....done (226 comparisons).

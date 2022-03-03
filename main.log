@@ -1,31 +1,36 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  2 MAR 2022 08:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  3 MAR 2022 17:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21>
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrreprt.cls
+LaTeX2e <2021-11-15>
+L3 programming layer <2021-11-22>
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrreprt.cl
+s
 Document Class: scrreprt 2021/11/13 v3.35 KOMA-Script document class (report)
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.st
+y
 Package: scrkbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
 Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.st
+y
 Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-ho
+ok.sty
 Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
 Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
-)))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+))) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
@@ -33,7 +38,8 @@ Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line
  368.
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.st
+y
 Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
 \scr@dte@tocline@numbox=\box50
@@ -49,14 +55,16 @@ Package scrreprt Info: You've used standard option `11pt'.
 Class scrreprt Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2487.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrsize11pt.clo
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsize11pt
+.clo
 File: scrsize11pt.clo 2021/11/13 v3.35 KOMA-Script font size class option (11pt
 )
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.st
+y
 Package: typearea 2021/11/13 v3.35 KOMA-Script package (type area)
 \ta@bcor=\skip48
-\ta@div=\count185
+\ta@div=\count183
 \ta@hblk=\skip49
 \ta@vblk=\skip50
 \ta@temp=\skip51
@@ -88,13 +96,13 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1743.
 )
-\c@part=\count186
-\c@chapter=\count187
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@subparagraph=\count192
+\c@part=\count184
+\c@chapter=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
 \scr@dte@chapter@maxnumwidth=\skip53
 Class scrreprt Info: using compatibility default `afterindent=bysign'
 (scrreprt)           for `\chapter on input line 5717.
@@ -133,23 +141,23 @@ Package tocbasic Info: babel extension for `lof' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 6958.
 
 \scr@dte@figure@maxnumwidth=\skip62
-\c@figure=\count193
+\c@figure=\count191
 Package tocbasic Info: babel extension for `lot' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 6974.
 
 \scr@dte@table@maxnumwidth=\skip63
-\c@table=\count194
+\c@table=\count192
 Class scrreprt Info: Redefining `\numberline' on input line 7142.
 \bibindent=\dimen138
-) (/home/thalmaier/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
@@ -161,179 +169,179 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/dvipsnam.def
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/listings/listings.sty
-\lst@mode=\count195
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count193
 \lst@gtempboxa=\box52
 \lst@token=\toks17
-\lst@length=\count196
+\lst@length=\count194
 \lst@currlwidth=\dimen139
-\lst@column=\count197
-\lst@pos=\count198
+\lst@column=\count195
+\lst@pos=\count196
 \lst@lostspace=\dimen140
 \lst@width=\dimen141
-\lst@newlines=\count199
-\lst@lineno=\count266
+\lst@newlines=\count197
+\lst@lineno=\count198
 \lst@maxwidth=\dimen142
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count267
-\lst@skipnumbers=\count268
+\c@lstnumber=\count199
+\lst@skipnumbers=\count266
 \lst@framebox=\box53
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(/usr/local/share/miktex-texmf/tex/latex/base/inputenc.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
 )
-(/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
-Package: babel 2021/12/30 3.69 The Babel package
-\babel@savecnt=\count269
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/11/29 3.67 The Babel package
+\babel@savecnt=\count267
 \U@D=\dimen143
-\l@unhyphenated=\language1
+\l@unhyphenated=\language79
 
-(/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count270
+\bbl@dirlevel=\count268
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/babel-german/ngerman.ldf
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
 Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
 phy)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/babel-german/ngermanb.ldf
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.l
+df
 Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
 aphy)
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'German (new orthography)' into the format.
-
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 48.
-
 Package babel Info: Making " an active character on input line 122.
-)) (/home/thalmaier/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+))
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
 Language: english 2017/06/06 v3.3r English support from the babel system
-)) (/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
-)
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/svg/svg.sty
+) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/svg\svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/tools/shellesc.sty
+) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/ifplatform/ifplatform.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
+ty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/catchfile/catchfile.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-))
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/iftex/ifluatex.sty
+)) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-runsystem(uname -s > "main.w18")...executed.
-
-
-(main.w18)
-runsystem(rm -- "main.w18")...executed.
-
-)
-\c@svg@param@lastpage=\count271
+))
+\c@svg@param@lastpage=\count269
 \svg@box=\box54
-\c@svg@param@currpage=\count272
+\c@svg@param@currpage=\count270
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/transparent/transparent.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent
+.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-commo
-n.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
 \pgfutil@everybye=\toks20
 \pgfutil@tempdima=\dimen146
 \pgfutil@tempdimb=\dimen147
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-commo
-n-lists.tex))
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex
-.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common-lists.tex))
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
 \pgfutil@abb=\box55
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.t
-ex (/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code
-.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.
-tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
 \pgfkeys@pathtoks=\toks21
 \pgfkeys@temptoks=\toks22
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfilter
-ed.code.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+filtered.code.tex
 \pgfkeys@tmptoks=\toks23
 ))
 \pgf@x=\dimen148
@@ -348,81 +356,81 @@ ed.code.tex
 \pgf@yd=\dimen157
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count273
-\c@pgf@countb=\count274
-\c@pgf@countc=\count275
-\c@pgf@countd=\count276
+\c@pgf@counta=\count271
+\c@pgf@countb=\count272
+\c@pgf@countc=\count273
+\c@pgf@countd=\count274
 \t@pgf@toka=\toks24
 \t@pgf@tokb=\toks25
 \t@pgf@tokc=\toks26
-\pgf@sys@id@count=\count277
+\pgf@sys@id@count=\count275
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdft
-ex.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
 File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-comm
-on-pdf.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftp
-ath.code.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count278
-\pgfsyssoftpath@bigbuffer@items=\count279
+\pgfsyssoftpath@smallbuffer@items=\count276
+\pgfsyssoftpath@bigbuffer@items=\count277
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysproto
-col.code.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/float/float.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count280
+\c@float@type=\count278
 \float@exts=\toks27
 \float@box=\box56
 \@float@everytoks=\toks28
 \@floatcapt=\box57
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip64
 \enit@outerparindent=\dimen158
 \enit@toks=\toks29
 \enit@inbox=\box58
-\enit@count@id=\count281
-\enitdp@description=\count282
+\enit@count@id=\count279
+\enitdp@description=\count280
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/blindtext/blindtext.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/tools/xspace.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count283
-\c@Blindtext=\count284
-\c@blind@countparstart=\count285
-\blind@countxx=\count286
-\blindtext@numBlindtext=\count287
-\blind@countyy=\count288
-\c@blindlist=\count289
-\c@blindlistlevel=\count290
-\c@blindlist@level=\count291
-\blind@listitem=\count292
-\c@blind@listcount=\count293
-\c@blind@levelcount=\count294
-\blind@mathformula=\count295
-\blind@Mathformula=\count296
-\c@blind@randomcount=\count297
-\c@blind@randommax=\count298
-\c@blind@pangramcount=\count299
-\c@blind@pangrammax=\count300
+\c@blindtext=\count281
+\c@Blindtext=\count282
+\c@blind@countparstart=\count283
+\blind@countxx=\count284
+\blindtext@numBlindtext=\count285
+\blind@countyy=\count286
+\c@blindlist=\count287
+\c@blindlistlevel=\count288
+\c@blindlist@level=\count289
+\blind@listitem=\count290
+\c@blind@listcount=\count291
+\c@blind@levelcount=\count292
+\blind@mathformula=\count293
+\blind@Mathformula=\count294
+\c@blind@randomcount=\count295
+\c@blind@randommax=\count296
+\c@blind@pangramcount=\count297
+\c@blind@pangrammax=\count298
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/lmodern.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -457,9 +465,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/sansmath/sansmath.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/sansmath\sansmath.sty
 Package: sansmath 2007/02/28  ver 1.1 Donald Arseneau
-\c@mv@sans=\count301
+\c@mv@sans=\count299
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `sans'
 (Font)                  OT1/cmr/m/n --> OT1/lmss/m/n on input line 103.
 LaTeX Font Info:    Overwriting math alphabet `\mathsfsl' in version `sans'
@@ -473,119 +481,119 @@ LaTeX Font Info:    Overwriting symbol font `symbols' in version `sans'
 LaTeX Font Info:    Overwriting math alphabet `\mathsfbf' in version `sans'
 (Font)                  OT1/lmss/bx/sl --> OT1/lmss/bx/n on input line 112.
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/microtype.sty
-Package: microtype 2021/12/10 v3.0b Micro-typographical refinements (RS)
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2021/12/02 v3.0a Micro-typographical refinements (RS)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count302
+\etb@tempcnta=\count300
 )
 \MT@toks=\toks30
-\MT@count=\count303
+\MT@count=\count301
 \MT@tempbox=\box59
-LaTeX Info: Redefining \leftprotrusion on input line 1010.
-LaTeX Info: Redefining \rightprotrusion on input line 1018.
-LaTeX Info: Redefining \textls on input line 1173.
+LaTeX Info: Redefining \leftprotrusion on input line 1006.
+LaTeX Info: Redefining \rightprotrusion on input line 1014.
+LaTeX Info: Redefining \textls on input line 1182.
 \MT@outer@kern=\dimen159
-LaTeX Info: Redefining \textmicrotypecontext on input line 1759.
-\MT@listname@count=\count304
+LaTeX Info: Redefining \textmicrotypecontext on input line 1768.
+\MT@listname@count=\count302
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/microtype-pdftex.de
-f
-File: microtype-pdftex.def 2021/12/10 v3.0b Definitions specific to pdftex (RS)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
+tex.def
+File: microtype-pdftex.def 2021/12/02 v3.0a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 897.
 LaTeX Info: Redefining \lslig on input line 897.
 \MT@outer@space=\skip65
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2021/12/10 v3.0b microtype main configuration file (RS)
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2021/12/02 v3.0a microtype main configuration file (RS)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count305
-\csq@gtype=\count306
-\csq@glevel=\count307
-\csq@qlevel=\count308
-\csq@maxlvl=\count309
-\csq@tshold=\count310
+\csq@reset=\count303
+\csq@gtype=\count304
+\csq@glevel=\count305
+\csq@qlevel=\count306
+\csq@maxlvl=\count307
+\csq@tshold=\count308
 \csq@ltx@everypar=\toks31
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+)) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.st
+y
+Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+)) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count311
+\lrq@indent=\count309
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/url/url.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count312
-\c@listtotal=\count313
-\c@listcount=\count314
-\c@liststart=\count315
-\c@liststop=\count316
-\c@citecount=\count317
-\c@citetotal=\count318
-\c@multicitecount=\count319
-\c@multicitetotal=\count320
-\c@instcount=\count321
-\c@maxnames=\count322
-\c@minnames=\count323
-\c@maxitems=\count324
-\c@minitems=\count325
-\c@citecounter=\count326
-\c@maxcitecounter=\count327
-\c@savedcitecounter=\count328
-\c@uniquelist=\count329
-\c@uniquename=\count330
-\c@refsection=\count331
-\c@refsegment=\count332
-\c@maxextratitle=\count333
-\c@maxextratitleyear=\count334
-\c@maxextraname=\count335
-\c@maxextradate=\count336
-\c@maxextraalpha=\count337
-\c@abbrvpenalty=\count338
-\c@highnamepenalty=\count339
-\c@lownamepenalty=\count340
-\c@maxparens=\count341
-\c@parenlevel=\count342
-\blx@tempcnta=\count343
-\blx@tempcntb=\count344
-\blx@tempcntc=\count345
-\c@blx@maxsection=\count346
-\c@blx@maxsegment@0=\count347
-\blx@notetype=\count348
-\blx@parenlevel@text=\count349
-\blx@parenlevel@foot=\count350
-\c@blx@sectionciteorder@0=\count351
-\blx@entrysetcounter=\count352
-\blx@biblioinstance=\count353
+\c@tabx@nest=\count310
+\c@listtotal=\count311
+\c@listcount=\count312
+\c@liststart=\count313
+\c@liststop=\count314
+\c@citecount=\count315
+\c@citetotal=\count316
+\c@multicitecount=\count317
+\c@multicitetotal=\count318
+\c@instcount=\count319
+\c@maxnames=\count320
+\c@minnames=\count321
+\c@maxitems=\count322
+\c@minitems=\count323
+\c@citecounter=\count324
+\c@maxcitecounter=\count325
+\c@savedcitecounter=\count326
+\c@uniquelist=\count327
+\c@uniquename=\count328
+\c@refsection=\count329
+\c@refsegment=\count330
+\c@maxextratitle=\count331
+\c@maxextratitleyear=\count332
+\c@maxextraname=\count333
+\c@maxextradate=\count334
+\c@maxextraalpha=\count335
+\c@abbrvpenalty=\count336
+\c@highnamepenalty=\count337
+\c@lownamepenalty=\count338
+\c@maxparens=\count339
+\c@parenlevel=\count340
+\blx@tempcnta=\count341
+\blx@tempcntb=\count342
+\blx@tempcntc=\count343
+\blx@maxsection=\count344
+\blx@maxsegment@0=\count345
+\blx@notetype=\count346
+\blx@parenlevel@text=\count347
+\blx@parenlevel@foot=\count348
+\blx@sectionciteorder@0=\count349
+\blx@entrysetcounter=\count350
+\blx@biblioinstance=\count351
 \labelnumberwidth=\skip66
 \labelalphawidth=\skip67
 \biblabelsep=\skip68
@@ -596,88 +604,88 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip73
 \blx@bcfin=\read4
 \blx@bcfout=\write4
-\blx@langwohyphens=\language2
-\c@mincomprange=\count354
-\c@maxcomprange=\count355
-\c@mincompwidth=\count356
+\blx@langwohyphens=\language80
+\c@mincomprange=\count352
+\c@maxcomprange=\count353
+\c@mincompwidth=\count354
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count357
-\c@savedafterword=\count358
-\c@annotator=\count359
-\c@savedannotator=\count360
-\c@author=\count361
-\c@savedauthor=\count362
-\c@bookauthor=\count363
-\c@savedbookauthor=\count364
-\c@commentator=\count365
-\c@savedcommentator=\count366
-\c@editor=\count367
-\c@savededitor=\count368
-\c@editora=\count369
-\c@savededitora=\count370
-\c@editorb=\count371
-\c@savededitorb=\count372
-\c@editorc=\count373
-\c@savededitorc=\count374
-\c@foreword=\count375
-\c@savedforeword=\count376
-\c@holder=\count377
-\c@savedholder=\count378
-\c@introduction=\count379
-\c@savedintroduction=\count380
-\c@namea=\count381
-\c@savednamea=\count382
-\c@nameb=\count383
-\c@savednameb=\count384
-\c@namec=\count385
-\c@savednamec=\count386
-\c@translator=\count387
-\c@savedtranslator=\count388
-\c@shortauthor=\count389
-\c@savedshortauthor=\count390
-\c@shorteditor=\count391
-\c@savedshorteditor=\count392
-\c@labelname=\count393
-\c@savedlabelname=\count394
-\c@institution=\count395
-\c@savedinstitution=\count396
-\c@lista=\count397
-\c@savedlista=\count398
-\c@listb=\count399
-\c@savedlistb=\count400
-\c@listc=\count401
-\c@savedlistc=\count402
-\c@listd=\count403
-\c@savedlistd=\count404
-\c@liste=\count405
-\c@savedliste=\count406
-\c@listf=\count407
-\c@savedlistf=\count408
-\c@location=\count409
-\c@savedlocation=\count410
-\c@organization=\count411
-\c@savedorganization=\count412
-\c@origlocation=\count413
-\c@savedoriglocation=\count414
-\c@origpublisher=\count415
-\c@savedorigpublisher=\count416
-\c@publisher=\count417
-\c@savedpublisher=\count418
-\c@language=\count419
-\c@savedlanguage=\count420
-\c@origlanguage=\count421
-\c@savedoriglanguage=\count422
-\c@pageref=\count423
-\c@savedpageref=\count424
+\c@afterword=\count355
+\c@savedafterword=\count356
+\c@annotator=\count357
+\c@savedannotator=\count358
+\c@author=\count359
+\c@savedauthor=\count360
+\c@bookauthor=\count361
+\c@savedbookauthor=\count362
+\c@commentator=\count363
+\c@savedcommentator=\count364
+\c@editor=\count365
+\c@savededitor=\count366
+\c@editora=\count367
+\c@savededitora=\count368
+\c@editorb=\count369
+\c@savededitorb=\count370
+\c@editorc=\count371
+\c@savededitorc=\count372
+\c@foreword=\count373
+\c@savedforeword=\count374
+\c@holder=\count375
+\c@savedholder=\count376
+\c@introduction=\count377
+\c@savedintroduction=\count378
+\c@namea=\count379
+\c@savednamea=\count380
+\c@nameb=\count381
+\c@savednameb=\count382
+\c@namec=\count383
+\c@savednamec=\count384
+\c@translator=\count385
+\c@savedtranslator=\count386
+\c@shortauthor=\count387
+\c@savedshortauthor=\count388
+\c@shorteditor=\count389
+\c@savedshorteditor=\count390
+\c@labelname=\count391
+\c@savedlabelname=\count392
+\c@institution=\count393
+\c@savedinstitution=\count394
+\c@lista=\count395
+\c@savedlista=\count396
+\c@listb=\count397
+\c@savedlistb=\count398
+\c@listc=\count399
+\c@savedlistc=\count400
+\c@listd=\count401
+\c@savedlistd=\count402
+\c@liste=\count403
+\c@savedliste=\count404
+\c@listf=\count405
+\c@savedlistf=\count406
+\c@location=\count407
+\c@savedlocation=\count408
+\c@organization=\count409
+\c@savedorganization=\count410
+\c@origlocation=\count411
+\c@savedoriglocation=\count412
+\c@origpublisher=\count413
+\c@savedorigpublisher=\count414
+\c@publisher=\count415
+\c@savedpublisher=\count416
+\c@language=\count417
+\c@savedlanguage=\count418
+\c@origlanguage=\count419
+\c@savedoriglanguage=\count420
+\c@pageref=\count421
+\c@savedpageref=\count422
 \shorthandwidth=\skip74
 \shortjournalwidth=\skip75
 \shortserieswidth=\skip76
@@ -695,15 +703,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-bibtex.def
+File: blx-bibtex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 
 Package biblatex Warning: Using fall-back BibTeX(8) backend:
 (biblatex)                functionality may be reduced/unavailable.
@@ -711,48 +718,53 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count425
-\c@textcitetotal=\count426
-\c@textcitemaxnames=\count427
-\c@biburlbigbreakpenalty=\count428
-\c@biburlbreakpenalty=\count429
-\c@biburlnumpenalty=\count430
-\c@biburlucpenalty=\count431
-\c@biburllcpenalty=\count432
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+\c@textcitecount=\count423
+\c@textcitetotal=\count424
+\c@textcitemaxnames=\count425
+\c@biburlbigbreakpenalty=\count426
+\c@biburlbreakpenalty=\count427
+\c@biburlnumpenalty=\count428
+\c@biburlucpenalty=\count429
+\c@biburllcpenalty=\count430
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count433
+\c@smartand=\count431
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
+mp.bbx
+File: numeric-comp.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count434
-\c@bbx:relatedtotal=\count435
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count432
+\c@bbx:relatedtotal=\count433
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count436
-\c@cbx@tempcntb=\count437
-\c@cbx@tempcntc=\count438
-\c@cbx@tempcntd=\count439
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-co
+mp.cbx
+File: numeric-comp.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count434
+\c@cbx@tempcntb=\count435
+\c@cbx@tempcntc=\count436
+\c@cbx@tempcntd=\count437
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -767,75 +779,53 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Document encoding is UTF8 ....
-
-(/usr/local/share/miktex-texmf/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.de
-f
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count440
-\l__pdf_internal_box=\box60
-))
-Package biblatex Info: ... and expl3
-(biblatex)             2022-01-21 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
-)
-Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
-)) (/home/thalmaier/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+)) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip88
 
 For additional information on amsmath, use the `?' option.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks32
 \ex@=\dimen160
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen161
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count441
+\inf@bad=\count438
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count442
-\leftroot@=\count443
+\uproot@=\count439
+\leftroot@=\count440
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count444
-\DOTSCASE@=\count445
+\classnum@=\count441
+\DOTSCASE@=\count442
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
+\Mathstrutbox@=\box60
+\strutbox@=\box61
 \big@size=\dimen162
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count446
-\c@MaxMatrixCols=\count447
+\macc@depth=\count443
+\c@MaxMatrixCols=\count444
 \dotsspace@=\muskip21
-\c@parentequation=\count448
-\dspbrk@lvl=\count449
+\c@parentequation=\count445
+\dspbrk@lvl=\count446
 \tag@help=\toks33
-\row@=\count450
-\column@=\count451
-\maxfields@=\count452
+\row@=\count447
+\column@=\count448
+\maxfields@=\count449
 \andhelp@=\toks34
 \eqnshift@=\dimen163
 \alignsep@=\dimen164
@@ -850,10 +840,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -861,11 +851,13 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrlayer-scrpage.
-sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlayer-sc
+rpage.sty
 Package: scrlayer-scrpage 2021/11/13 v3.35 KOMA-Script package (end user interf
 ace for scrlayer)
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/koma-script/scrlayer.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlayer.st
+y
 Package: scrlayer 2021/11/13 v3.35 KOMA-Script package (defining layers and pag
 e styles)
 Package scrlayer Info: Using already defined \footheight
@@ -885,7 +877,7 @@ Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 1: chapter
 1: chapter
 1: section
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/abstract/abstract.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/abstract\abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
 \abstitleskip=\skip91
 \absleftindent=\skip92
@@ -893,30 +885,30 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparindent=\skip94
 \absparsep=\skip95
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks37
 \XKV@tempa@toks=\toks38
 )
-\XKV@depth=\count453
+\XKV@depth=\count450
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box63
+\collectedbox=\box62
 )
 \tc@llx=\dimen169
 \tc@lly=\dimen170
@@ -924,7 +916,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@ury=\dimen172
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen173
@@ -936,119 +928,121 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen179
 \adjbox@ptotalheight=\dimen180
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count454
-)
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+\c@checkoddpage=\count451
+) (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box64
-\sift@deathcycles=\count455
+\@vwid@box=\box63
+\sift@deathcycles=\count452
 \@vwid@loff=\dimen181
 \@vwid@roff=\dimen182
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/base/glossaries.st
-y
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
+ies.sty
 Package: glossaries 2021/11/01 v4.49 (NLCT)
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/mfirstuc/mfirstuc.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2021/10/15 v2.07 (NLCT)
 \@glsmfirst=\toks39
 \@glsmrest=\toks40
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/textcase/textcase.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/xfor/xfor.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/datatool/datatool-base.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.
+sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/substr/substr.sty
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count456
+\c@su@anzahl=\count453
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/datatool/datatool-fp.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.st
+y
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
-
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp.sty
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/defpattern.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count457
+\actioncount=\count454
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-basic.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count458
-\FP@xia=\count459
-\FP@xib=\count460
-\FP@xfa=\count461
-\FP@xfb=\count462
-\FP@rega=\count463
-\FP@regb=\count464
-\FP@regs=\count465
-\FP@times=\count466
+\FP@xs=\count455
+\FP@xia=\count456
+\FP@xib=\count457
+\FP@xfa=\count458
+\FP@xfb=\count459
+\FP@rega=\count460
+\FP@regb=\count461
+\FP@regs=\count462
+\FP@times=\count463
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-addons.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-snap.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-exp.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-trigo.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-pas.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-random.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count467
+\FPseed=\count464
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-eqn.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-upn.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/fp/fp-eval.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks41
-\@dtl@tmpcount=\count468
+\@dtl@tmpcount=\count465
 \dtl@tmplength=\skip96
-\dtl@sortresult=\count469
-\@dtl@numgrpsepcount=\count470
-\@dtl@datatype=\count471
-\dtl@codeA=\count472
-\dtl@codeB=\count473
-\@dtl@foreach@level=\count474
+\dtl@sortresult=\count466
+\@dtl@numgrpsepcount=\count467
+\@dtl@datatype=\count468
+\dtl@codeA=\count469
+\dtl@codeB=\count470
+\@dtl@foreach@level=\count471
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/base/glossaries-co
-mpatible-307.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
+ies-compatible-307.sty
 Package: glossaries-compatible-307 2021/11/01 v4.49 (NLCT)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/tracklang/tracklang.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
 Package: tracklang 2020/06/30 v1.5 (NLCT) Track Languages
 
-(/home/thalmaier/.miktex/texmfs/install/tex/generic/tracklang/tracklang.tex))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/translator/translator.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.t
+ex))
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.s
+ty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries-english/glossaries
--english.ldf
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-english\glos
+saries-english.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries-german/glossaries-
-german.ldf
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-german\gloss
+aries-german.ldf
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
-\gls@level=\count475
+\gls@level=\count472
 \@gls@tmpb=\toks42
 \gls@tmplen=\skip97
 \glskeylisttok=\toks43
@@ -1056,48 +1050,50 @@ File: glossaries-german.ldf 2014/11/23 v1.0
 \glsshorttok=\toks45
 \glslongtok=\toks46
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-hy
-pernav.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-hypernav.sty
 Package: glossary-hypernav 2021/11/01 v4.49 (NLCT)
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-li
-st.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-list.sty
 Package: glossary-list 2021/11/01 v4.49 (NLCT)
 \glslistdottedwidth=\skip98
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-lo
-ng.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-long.sty
 Package: glossary-long 2021/11/01 v4.49 (NLCT)
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/tools/longtable.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip99
 \LTright=\skip100
 \LTpre=\skip101
 \LTpost=\skip102
-\LTchunksize=\count476
+\LTchunksize=\count473
 \LTcapwidth=\dimen183
-\LT@head=\box65
-\LT@firsthead=\box66
-\LT@foot=\box67
-\LT@lastfoot=\box68
-\LT@gbox=\box69
-\LT@cols=\count477
-\LT@rows=\count478
-\c@LT@tables=\count479
-\c@LT@chunks=\count480
+\LT@head=\box64
+\LT@firsthead=\box65
+\LT@foot=\box66
+\LT@lastfoot=\box67
+\LT@gbox=\box68
+\LT@cols=\count474
+\LT@rows=\count475
+\c@LT@tables=\count476
+\c@LT@chunks=\count477
 \LT@p@ftn=\toks47
 )
 Class scrreprt Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip103
 \glspagelistwidth=\skip104
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-su
-per.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-super.sty
 Package: glossary-super 2021/11/01 v4.49 (NLCT)
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/supertabular/supertabular.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
+ar.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count481
+\c@tracingst=\count478
 \ST@wd=\dimen184
 \ST@rightskip=\skip105
 \ST@leftskip=\skip106
@@ -1111,10 +1107,10 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@prevht=\dimen191
 \ST@toadd=\dimen192
 \ST@dimen=\dimen193
-\ST@pbox=\box70
+\ST@pbox=\box69
 ))
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/glossaries/styles/glossary-tr
-ee.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
+ary-tree.sty
 Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glstreeindent=\skip108
 ))
@@ -1127,17 +1123,19 @@ Package glossaries Info: Writing glossary file main.glo on input line 106.
 \openout7 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 106.
- (/home/thalmaier/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-) (/home/thalmaier/.miktex/texmfs/install/tex/latex/tools/array.sty
+)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen194
-\ar@mcellbox=\box71
+\ar@mcellbox=\box70
 \extrarowheight=\dimen195
 \NC@list=\toks48
 \extratabsurround=\skip109
 \backup@length=\skip110
-\ar@cellbox=\box72
+\ar@cellbox=\box71
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1146,8 +1144,14 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
 192.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ot1lmss.fd
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count479
+\l__pdf_internal_box=\box72
 )
 
 LaTeX Warning: Unused global option(s):
@@ -1173,33 +1177,33 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
 LaTeX Font Info:    ... okay on input line 192.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
 LaTeX Font Info:    ... okay on input line 192.
-Package scrbase Info: activating ngerman \contentsname on input line 192.
-Package scrbase Info: activating ngerman \listfigurename on input line 192.
-Package scrbase Info: activating ngerman \listtablename on input line 192.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count482
+\scratchcounter=\count480
 \scratchdimen=\dimen196
 \scratchbox=\box73
-\nofMPsegments=\count483
-\nofMParguments=\count484
+\nofMPsegments=\count481
+\nofMParguments=\count482
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count485
+\MPscratchCnt=\count483
 \MPscratchDim=\dimen197
-\MPnumerator=\count486
-\makeMPintoPDFobject=\count487
+\MPnumerator=\count484
+\makeMPintoPDFobject=\count485
 \everyMPtoPDFconversion=\toks50
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.st
-y
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
- (/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count488
+\c@lstlisting=\count486
 LaTeX Info: Redefining \microtypecontext on input line 192.
 Package microtype Info: Applying patch `item' on input line 192.
 Package microtype Info: Applying patch `toc' on input line 192.
@@ -1222,42 +1226,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
+x
+File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/lbx/ngerman.lbx
-File: ngerman.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lb
+x
+File: ngerman.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+)
+Package biblatex Info: ... and expl3
+(biblatex)             2021-11-22 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2021-11-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
+)
 \openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'main.bbl' is wrong format version - expected 3.
-2.
-
 Package biblatex Info: ... file 'main.bbl' found.
-(main.bbl)
+ (main.bbl)
 Package biblatex Info: Reference section=0 on input line 192.
 Package biblatex Info: Reference segment=0 on input line 192.
  (main.glsdefs)
@@ -1276,19 +1294,19 @@ Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 197.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 197
 .
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/mt-msa.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 197
 .
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/mt-msb.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 [1
@@ -1300,7 +1318,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 
-{/home/thalmaier/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./bilder//th
+{C:/Users/simon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bilder//th
 i_logo_cropped.pdf>] [2
 
 ]
@@ -1314,7 +1332,7 @@ i_logo_cropped.pdf>] [2
 Package tocbasic Info: character protrusion at toc deactivated on input line 20
 4.
  (main.toc
-Overfull \hbox (2.58478pt too wide) detected at line 9
+Overfull \hbox (2.58478pt too wide) detected at line 13
  []\OT1/lmss/bx/n/10.95 VIII
  []
 
@@ -1363,22 +1381,8 @@ Class scrreprt Warning: \float@listhead detected!
 
 ] (main.gls
 Underfull \hbox (badness 10000) in paragraph at lines 9--9
-[]\OT1/lmss/m/n/10.95 (+20) Eine erweiterte Form des Dependency-Inversion-Prinz
-ip, welches
- []
-
-
-Package glossaries Warning: Glossary entry `Enumeration' has not been defined o
-n input line 12.
-
-
-Package glossaries Warning: Glossary entry `Enumeration' has not been defined o
-n input line 12.
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 22--22
-[]\OT1/lmss/m/n/10.95 (+20) Grad der logischen inneren Zusammengeh[]origkeit ei
-ner Komponente.
+[]\OT1/lmss/m/n/10.95 (+20) Eine er-wei-ter-te Form des Dependency-Inversion-Pr
+inzip, wel-ches
  []
 
 )
@@ -1422,39 +1426,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 22.
 
-Overfull \hbox (8.49207pt too wide) in paragraph at lines 26--27
-\OT1/lmss/m/n/10.95 (-20) ist eine Tochtergesellschaft der MediaMarktSaturn Ret
-ail Group und zust[]andig f[]ur alle Entwicklungst[]atigen
- []
-
-
-Overfull \hbox (6.7066pt too wide) in paragraph at lines 34--35
-\OT1/lmss/m/n/10.95 (-20) Durch den fortlaufend Anstieg der Komplexit[]at von S
-oftwareprojekten haben sich g[]angige Designprinzipien
- []
-
-
-Overfull \hbox (12.81865pt too wide) in paragraph at lines 34--35
-\OT1/lmss/m/n/10.95 (-20) und Architekturstile f[]ur den Entwicklungsprozess et
-abliert, sodass auch weiterhin die Businessanforderungen
- []
-
-
 Overfull \hbox (11.1631pt too wide) in paragraph at lines 36--37
-[]\OT1/lmss/m/n/10.95 (-20) Dieses Projekt hilft somit bei der []Uberpr[]ufung 
-der bestehenden Architektur auf Verbesserungsm[]oglichkeiten
- []
-
-
-Overfull \hbox (28.78033pt too wide) in paragraph at lines 36--37
-\OT1/lmss/m/n/10.95 (-20) und eventuelle Schwachstellen. Zudem existieren aufgr
-und des jetzigen zugrundeliegenden Aggregationsschnitts
- []
-
-
-Overfull \hbox (26.23167pt too wide) in paragraph at lines 36--37
-\OT1/lmss/m/n/10.95 (-20) Reverenz f[]ur zuk[]unftige Softwareprojekte verwende
-t werden, da viele Projekte mit []ahnlichen Problemstellungen
+[]\OT1/lmss/m/n/10.95 (-20) Dieses Pro-jekt hilft so-mit bei der []Uberpr[]ufun
+g der be-ste-hen-den Ar-chi-tek-tur auf Ver-bes-se-rungsm[]oglichkeiten
  []
 
 [2]) [3]
@@ -1462,46 +1436,24 @@ t werden, da viele Projekte mit []ahnlichen Problemstellungen
 
  (kapitel/20_grundlagen.tex
 chapter 2.
-
-Overfull \hbox (42.58165pt too wide) in paragraph at lines 10--11
-\OT1/lmss/m/n/10.95 (-20) namentlich das []Single-Responsibility-Prinzip ([]SRP
-), []Open-Closed-Prinzip ([]OCP), []Liskovsches Substitutionsprinzip
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
 13.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ts1lmss.fd
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (1.51778pt too wide) in paragraph at lines 13--14
-[][]\OT1/lmss/bx/n/10.95 (-20) Single-Responsibility-Prinzip:  \OT1/lmss/m/n/10
-.95 (-20) Jede Softwarekomponente darf laut SRP maximal eine zugeh[]orige
- []
-
-
-Overfull \hbox (6.54897pt too wide) in paragraph at lines 14--15
-\OT1/lmss/m/n/10.95 (-20) Auswirkung auf eine andere besitzt, werden Komponente
- als 'geschlossen' gegen[]uber Ver[]anderungen
- []
-
-[4
+ [4
 
 
 
 
 ]
-Overfull \hbox (8.58261pt too wide) in paragraph at lines 20--21
-[]\OT1/lmss/m/n/10.95 (-20) Architekturen und Kompositionen k[]onnen anhand die
-ser Prinzipien bewertet werden. Diese Vorgehensweise
- []
-
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 ' is 6 on input line 35.
+
 (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=66, page=1, 282.30469pt x 
 188.96257pt>
@@ -1546,38 +1498,38 @@ Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
 ) [5]
-Overfull \hbox (10.28424pt too wide) in paragraph at lines 40--41
-\OT1/lmss/m/n/10.95 (-20) Erreichen von geringen Abh[]angigkeiten zwischen den 
-Komponenten. Dadurch sollen Qualit[]atseigenschaften
+Overfull \hbox (0.20927pt too wide) in paragraph at lines 40--41
+\OT1/lmss/m/n/10.95 (-20) rei-chen von ge-rin-gen Abh[]angigkeiten zwi-schen de
+n Kom-po-nen-ten. Da-durch sol-len Qua-lit[]atseigenschaften
  []
 
 
 Overfull \hbox (8.42444pt too wide) in paragraph at lines 42--43
-[]\OT1/lmss/m/n/10.95 (-20) Beispielsweise sind die SOLID-Prinzipien nur minima
-l im Grundaufbau verankert. Das []Single-Responsibility-
+[]\OT1/lmss/m/n/10.95 (-20) Beispielsweise sind die SOLID-Prinzipien nur mi-ni-
+mal im Grund-auf-bau ver-an-kert. Das []Single-Responsibility-
  []
 
 [6 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf> <./svg-inkscape/Schichtena
 rchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitektur_svg-tex.pd
 f' is 11 on input line 57.
@@ -1667,44 +1619,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
 [7] [8 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf> <./svg-inkscape/Hexag
 onaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [9]
 Package svg Info: Last page of `./svg-inkscape/ExampleDomainV2_svg-tex.pdf' is 
 13 on input line 96.
@@ -1808,52 +1760,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 [10 <./svg-inkscape/ExampleDomainV2_svg-tex.pdf> <./svg-inkscape/ExampleDomainV
 2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
@@ -1869,24 +1821,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  (kapitel/30_planung.tex
 chapter 3.
-
-Overfull \hbox (6.58846pt too wide) in paragraph at lines 10--11
-\OT1/lmss/m/n/10.95 (-20) Um den Kunden im Onlineshop oder den Mitarbeitern in 
-den M[]arkten eine einwandfreie Benutzererfahrung
- []
-
-
-Overfull \hbox (1.9025pt too wide) in paragraph at lines 10--11
-\OT1/lmss/m/n/10.95 (-20) war bei der Reduzierung der Prozesse, dass Bedingunge
-n zwischen Datenstrukturen weiterhin unver[]andert
- []
-
-
-Overfull \hbox (34.19301pt too wide) in paragraph at lines 14--15
-\OT1/lmss/m/n/10.95 (-20) Kunde zum ersten Mal den Onlineshop aufrufen, wird ei
-n Warenkorb mit der Session-ID als Kundeninformationen
- []
-
 [14
 
 
@@ -1916,8 +1850,8 @@ on input line 42.
  [15 <./svg-inkscape/AD Basketcreation_svg-raw.pdf>] [16 <./svg-inkscape/AD Bas
 ketabruf_svg-raw.pdf> <./svg-inkscape/AD Basketstornierung_svg-raw.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/AD Basketstornierung_svg-raw.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/AD Basketstornierung_svg-raw.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <./svg-inkscape/AD Checkoutdata_svg-raw.pdf, id=187, 482.55281pt x 181.42781pt>
 
@@ -1926,19 +1860,13 @@ File: ./svg-inkscape/AD Checkoutdata_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/AD Checkoutdata_svg-raw.pdf  used on in
 put line 53.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
-
-Overfull \hbox (33.47151pt too wide) in paragraph at lines 60--61
-\OT1/lmss/m/n/10.95 (-20) Der Warenkorb fungiert ebenfalls als ein Speicher ein
-er Liste von Artikeln, deren Quantit[]at, Produktbeschreibung
- []
-
 <./svg-inkscape/AD AddProduct_svg-raw.pdf, id=188, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/AD AddProduct_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD AddProduct_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD AddProduct_svg-raw.pdf  used on inpu
 t line 64.
 (pdftex.def)             Requested size: 482.55162pt x 301.87706pt.
-[17 <./svg-inkscape/AD Checkoutdata_svg-raw.pdf>]
+ [17 <./svg-inkscape/AD Checkoutdata_svg-raw.pdf>]
 <./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf, id=206, 482.55281pt x 181.4278
 1pt>
 File: ./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf Graphic file (type pdf)
@@ -1958,8 +1886,8 @@ Underfull \vbox (badness 1755) has occurred while \output is active []
  [18 <./svg-inkscape/AD AddProduct_svg-raw.pdf>] [19 <./svg-inkscape/AD PutBeza
 hlmethode_svg-raw.pdf> <./svg-inkscape/AD InitPayment_svg-raw.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/AD InitPayment_svg-raw.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/AD InitPayment_svg-raw.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <./svg-inkscape/AD ExecPayment_svg-raw.pdf, id=256, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/AD ExecPayment_svg-raw.pdf Graphic file (type pdf)
@@ -1991,78 +1919,17 @@ put line 122.
 
 (kapitel/40_model.tex
 chapter 4.
-
-Overfull \hbox (2.95085pt too wide) in paragraph at lines 14--15
-\OT1/lmss/m/n/10.95 (-20) erachtet werden. Durch die klare Definition von gemei
-nsam verwendeten Begriffen und ihren Bedeutungen
- []
-
 [23
 
 
 
 
-]
-Overfull \hbox (20.9928pt too wide) in paragraph at lines 20--21
-[]\OT1/lmss/bx/n/10.95 (-20) Basket (Warenkorb):  \OT1/lmss/m/n/10.95 (-20) Rep
-r[]asentiert den gesamten Warenkorb mit allen Artikel, Kundeninformationen,
- []
-
-
-Overfull \hbox (5.74754pt too wide) in paragraph at lines 33--34
-[]\OT1/lmss/m/sl/10.95 (-20) Packstation:  \OT1/lmss/m/n/10.95 (-20) Lieferung 
-der Ware an eine ausgew[]ahlte Packstation durch einen Vertragspartner. 
- []
-
-[24]
-Overfull \hbox (4.3428pt too wide) in paragraph at lines 44--45
-[]\OT1/lmss/bx/n/10.95 (-20) Touchpoint:   \OT1/lmss/m/n/10.95 (-20) Eine Kompo
-nente, welche mit der Checkout-Software interagiert, wie Kassensysteme
- []
-
-
-Overfull \hbox (5.32726pt too wide) in paragraph at lines 56--57
-\OT1/lmss/m/n/10.95 (-20) Benamungen von Datenobjekten aufdeckt und Businessanf
-orderungen vorgegeben. Ein gutes Datenmodell
- []
-
-[25]
-Overfull \hbox (30.77007pt too wide) in paragraph at lines 74--74
-[]\OT1/lmss/bx/n/10.95 (-20) Customer:  \OT1/lmss/m/n/10.95 (-20) Speichert Kun
-dendaten (IdentifiedCustomer) oder Session-Informationen (SessionCustomer). 
- []
-
-
-Overfull \hbox (10.5611pt too wide) in paragraph at lines 74--74
-[]\OT1/lmss/bx/n/10.95 (-20) BasketItems:  \OT1/lmss/m/n/10.95 (-20) Liste alle
-r enthaltenen Produkten im Warenkorb und ihren zugeh[]origen Informationen. 
- []
-
-
-Overfull \hbox (14.17883pt too wide) in paragraph at lines 74--74
-[]\OT1/lmss/bx/n/10.95 (-20) Order:  \OT1/lmss/m/n/10.95 (-20) Speichert eine R
-eferenz auf die Bestellung f[]ur einen Basket. Wird erst nach Zahlungsabschluss
-
- []
-
-
+] [24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-
-Overfull \hbox (5.39513pt too wide) in paragraph at lines 97--97
-[]\OT1/lmss/bx/n/10.95 (-20) CompanyName:  \OT1/lmss/m/n/10.95 (-20) Firmenname
- des Kunden. Kann optional angegeben werden oder ist verpflichtend
- []
-
-[26] [27]
-Overfull \hbox (0.24034pt too wide) in paragraph at lines 171--171
-[]\OT1/lmss/bx/n/10.95 (-20) OrderRef:  \OT1/lmss/m/n/10.95 (-20) Referenz auf 
-die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses
- []
-
-[28]
+[26] [27] [28]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
@@ -2092,99 +1959,67 @@ Package pdftex.def Info: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf
 used on input line 193.
 (pdftex.def)             Requested size: 497.60785pt x 243.15784pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [30 <./svg-inkscape
-/ValueObjectCustomerDiagram_svg-raw.pdf> <./svg-inkscape/ValueObjectPaymentDiag
-ram_svg-raw.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw
-.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 3323) in paragraph at lines 210--210
-\OT1/lmss/m/n/10.95 (+20) Objekte mit gleichen Werten
+Underfull \hbox (badness 4266) in paragraph at lines 215--216
+[]|\OT1/lmss/m/n/10.95 (+20) Werden zu ei-nem be-stimm-ten Zeit-
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 211--212
-[]|\OT1/lmss/m/n/10.95 (+20) Bestimmt anhand eines Identifikators,
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[29] [30 <./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf>] [31 <./svg-inks
+cape/ValueObjectCustomerDiagram_svg-raw.pdf> <./svg-inkscape/ValueObjectPayment
+Diagram_svg-raw.pdf
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
-\OT1/lmss/m/n/10.95 (+20) zum Beispiel einer Datenbank-Id.
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 215--216
-\OT1/lmss/m/n/10.95 (+20) erstellt, bearbeitet, gespeichert oder
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--218
-[]|\OT1/lmss/m/n/10.95 (+20) Durch einen fehlenden
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--218
-\OT1/lmss/m/n/10.95 (+20) Lebenszyklus gelten Value
- []
-
-[31]
-Overfull \hbox (23.34651pt too wide) in paragraph at lines 246--246
-\OT1/lmss/m/n/10.95 (-20) Objekt besitzen diese Daten keine Aussagekraft. Weite
-rhin sind die gleichen Ergebnisse unterschiedlicher
- []
-
-) [32]
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ValueObjectPaymentDiagram_svg
+-raw.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>] [32]) [33]
 \openout2 = `kapitel/50_aggregatdesign.aux'.
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
 
-Overfull \hbox (24.72311pt too wide) in paragraph at lines 7--8
-\OT1/lmss/m/n/10.95 (-20) Das Design eines groen Aggregats f[]allt Entwicklern
- meist nat[]urlich leichter. Eine einzelne zusammenh[]angende
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
  []
 
-[33
+[34
 
 
 
 
 ]
-<./svg-inkscape/VarB_svg-raw.pdf, id=582, 325.215pt x 115.18031pt>
+<./svg-inkscape/VarB_svg-raw.pdf, id=585, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarB_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarB_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 21
+Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 22
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
- [34 <./svg-inkscape/VarB_svg-raw.pdf>]
-Overfull \hbox (6.51775pt too wide) in paragraph at lines 48--49
-\OT1/lmss/m/n/10.95 (-20) Aufgrund dessen, dass ein Aggregat eine transaktional
-e Grenze abbildet, wirkt sich der Aggregationsschnitt
+ [35 <./svg-inkscape/VarB_svg-raw.pdf>] [36]
+Overfull \hbox (8.50534pt too wide) in paragraph at lines 66--67
+\OT1/lmss/m/n/10.95 (-20) Da-ten-ban-k-ope-ra-tio-nen, wo-durch ei-ne Ver-klei-
+ne-rung des Ag-gre-ga-ti-ons-schnit-tes zu Performance-
  []
 
-[35]
-<./svg-inkscape/VarC_svg-raw.pdf, id=597, 325.215pt x 115.18031pt>
+[37]
+<./svg-inkscape/VarC_svg-raw.pdf, id=604, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarC_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarC_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 73
+Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 88
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
- [36 <./svg-inkscape/VarC_svg-raw.pdf>]
 LaTeX Font Info:    Trying to load font information for OMS+lmss on input line 
-90.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 90.
+103.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 103.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 90.
+(Font)              for symbol `textbraceleft' on input line 103.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-94.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
+107.
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2192,837 +2027,822 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 88--101
+Overfull \hbox (10.95pt too wide) in paragraph at lines 101--114
 []$[]$ 
  []
 
-<./svg-inkscape/VarC Sequenz_svg-raw.pdf, id=609, 526.96875pt x 406.89516pt>
-File: ./svg-inkscape/VarC Sequenz_svg-raw.pdf Graphic file (type pdf)
-<use ./svg-inkscape/VarC Sequenz_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarC Sequenz_svg-raw.pdf  used on input
- line 109.
-(pdftex.def)             Requested size: 526.96745pt x 406.89415pt.
+[38 <./svg-inkscape/VarC_svg-raw.pdf>]
+Package svg Info: Calling Inkscape on input line 127.
+runsystem(inkscape "svg/VarC-Sequence Alt.svg" -D --export-filename="VarC-Seque
+nce Alt_svg-raw.pdf")...executed.
 
-Overfull \hbox (29.57059pt too wide) in paragraph at lines 114--115
-\OT1/lmss/m/n/10.95 (-20) Als Folge dessen entstehen weitere Herausforderungen 
-f[]ur das Domainmodell und die Interleavingsm[]oglichkeiten
+runsystem(if not exist "./svg-inkscape/" mkdir "./svg-inkscape/")...executed.
+
+runsystem(move "VarC-Sequence Alt_svg-raw.pdf" "./svg-inkscape/VarC-Sequence Al
+t_svg-raw.pdf")...executed.
+
+<./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf, id=616, 624.69176pt x 414.42328p
+t>
+File: ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf Graphic file (type pdf)
+<use ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf>
+Package pdftex.def Info: ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf  used on 
+input line 127.
+(pdftex.def)             Requested size: 624.69023pt x 414.42226pt.
+ [39 <./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf>]
+
+LaTeX Warning: Reference `fig:VarC-Sequence' on page 40 undefined on input line
+ 144.
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
  []
 
-[37] [38 <./svg-inkscape/VarC Sequenz_svg-raw.pdf>]
-Overfull \hbox (5.7305pt too wide) in paragraph at lines 142--143
-\OT1/lmss/m/n/10.95 (-20) Zum jetzigen Zeitpunkt existieren einige Performance-
-Einbuen, welche eventuell durch einen verbesserten
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-
-Overfull \hbox (11.52077pt too wide) in paragraph at lines 148--149
-\OT1/lmss/m/n/10.95 (-20) Trennung nicht sinngem[]a durchgef[]uhrt werden, ohn
-e auf die Probleme der bisherigen Aggregationsschnitte
- []
-
-<bilder/Checkout.png, id=631, 2325.68875pt x 818.05624pt>
+[41]
+<bilder/Checkout.png, id=637, 2325.68875pt x 818.05624pt>
 File: bilder/Checkout.png Graphic file (type png)
 <use bilder/Checkout.png>
-Package pdftex.def Info: bilder/Checkout.png  used on input line 158.
+Package pdftex.def Info: bilder/Checkout.png  used on input line 176.
 (pdftex.def)             Requested size: 459.6215pt x 161.66107pt.
-[40] [41 <./bilder/Checkout.png>]
-<./svg-inkscape/VarD_svg-raw.pdf, id=640, 310.15875pt x 137.85503pt>
+ [42 <./bilder/Checkout.png>]
+<./svg-inkscape/VarD_svg-raw.pdf, id=643, 310.15875pt x 137.85503pt>
 File: ./svg-inkscape/VarD_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarD_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 18
-8.
+Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 20
+6.
 (pdftex.def)             Requested size: 310.15799pt x 137.85468pt.
-
-Overfull \hbox (5.9756pt too wide) in paragraph at lines 195--196
-\OT1/lmss/m/n/10.95 (-20) mehrerer Aggregates. Beispielsweise erfordert das Hin
-zuf[]ugen eines neuen BasketItems die Neuberechnung
- []
-
-
-Overfull \hbox (8.6815pt too wide) in paragraph at lines 195--196
-\OT1/lmss/m/n/10.95 (-20) des Warenkorbs beeinflussen wird dieser auf 'wahr' ge
-setzt. Sobald ein CalculationResult des dazugeh[]origen
- []
-
-[42 <./svg-inkscape/VarD_svg-raw.pdf>]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 205--227
+ [43]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 223--245
 []$[]$ 
  []
 
-<./svg-inkscape/Circular Dependency_svg-raw.pdf, id=652, 473.89546pt x 171.2648
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./svg-inkscape/VarD_svg-raw.pdf>]
+<./svg-inkscape/Circular Dependency_svg-raw.pdf, id=659, 473.89546pt x 171.2648
 5pt>
 File: ./svg-inkscape/Circular Dependency_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Circular Dependency_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/Circular Dependency_svg-raw.pdf  used o
-n input line 232.
+n input line 250.
 (pdftex.def)             Requested size: 473.8943pt x 171.26442pt.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 241--254
+Overfull \hbox (10.95pt too wide) in paragraph at lines 259--272
 []$[]$ 
  []
 
-[43]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 261--281
+[45 <./svg-inkscape/Circular Dependency_svg-raw.pdf>]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 279--299
 []$[]$ 
  []
 
-[44 <./svg-inkscape/Circular Dependency_svg-raw.pdf>]
+[46]
 Package svg Info: Last page of `./svg-inkscape/Performance Default_svg-tex.pdf'
- is 24 on input line 304.
-
-(svg-inkscape/Performance Default_svg-tex.pdf_tex
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=669, page=1, 528.47438pt x 
+ is 24 on input line 322.
+ (svg-inkscape/Performance Default_svg-tex.pdf_tex
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=675, page=1, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
  used on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=670, page=2, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=676, page=2, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
  used on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=671, page=3, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=677, page=3, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page3
  used on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=672, page=4, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=678, page=4, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page4
  used on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=673, page=5, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=679, page=5, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page5
  used on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=674, page=6, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=680, page=6, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page6
  used on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=675, page=7, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=681, page=7, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page7
  used on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=676, page=8, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=682, page=8, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page8
  used on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=677, page=9, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=683, page=9, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page9
  used on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=678, page=10, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=684, page=10, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 0 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=679, page=11, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=685, page=11, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 1 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=680, page=12, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=686, page=12, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 2 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=681, page=13, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=687, page=13, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 3 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=682, page=14, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=688, page=14, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 4 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=683, page=15, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=689, page=15, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 5 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=684, page=16, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=690, page=16, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 6 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=685, page=17, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=691, page=17, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 7 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=686, page=18, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=692, page=18, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 8 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=687, page=19, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=693, page=19, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 9 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=688, page=20, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=694, page=20, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 0 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=689, page=21, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=695, page=21, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 1 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=690, page=22, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=696, page=22, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 22>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 2 used on input line 98.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=691, page=23, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=697, page=23, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 23>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 3 used on input line 100.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=692, page=24, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=698, page=24, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 24>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 4 used on input line 102.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-) [45] [46 <./svg-inkscape/Performance Default_svg-tex.pdf> <./svg-inkscape/Per
-formance Default_svg-tex.pdf
+) [47 <./svg-inkscape/Performance Default_svg-tex.pdf> <./svg-inkscape/Performa
+nce Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Default_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+>] [48]
 Package svg Info: Last page of `./svg-inkscape/Performance Database_svg-tex.pdf
-' is 22 on input line 342.
+' is 22 on input line 360.
  (svg-inkscape/Performance Database_svg-tex.pdf_tex
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=702, page=1, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=708, page=1, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=703, page=2, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=709, page=2, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 2 used on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=704, page=3, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=710, page=3, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 3 used on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=705, page=4, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=711, page=4, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 4 used on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=706, page=5, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=712, page=5, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 5 used on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=707, page=6, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=713, page=6, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=708, page=7, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=714, page=7, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 7 used on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=709, page=8, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=715, page=8, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 8 used on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=710, page=9, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=716, page=9, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 9 used on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=711, page=10, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=717, page=10, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 10 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=712, page=11, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=718, page=11, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 11 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=713, page=12, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=719, page=12, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 12 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=714, page=13, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=720, page=13, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 13 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=715, page=14, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=721, page=14, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 14 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=716, page=15, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=722, page=15, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 15 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=717, page=16, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=723, page=16, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 16 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=718, page=17, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=724, page=17, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 17 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=719, page=18, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=725, page=18, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 18 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=720, page=19, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=726, page=19, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 19 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=721, page=20, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=727, page=20, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 20 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=722, page=21, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=728, page=21, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 21 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=723, page=22, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=729, page=22, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 22>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 22 used on input line 98.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-) [47 <./svg-inkscape/Performance Database_svg-tex.pdf> <./svg-inkscape/Perform
-ance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
+)
 Package svg Info: Last page of `./svg-inkscape/Performance Delay_svg-tex.pdf' i
-s 21 on input line 357.
- (svg-inkscape/Performance Delay_svg-tex.pdf_tex
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=730, page=1, 532.23843pt x 25
+s 21 on input line 375.
+
+(svg-inkscape/Performance Delay_svg-tex.pdf_tex
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=731, page=1, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page1 u
 sed on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=731, page=2, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=732, page=2, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page2 u
 sed on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=732, page=3, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=733, page=3, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page3 u
 sed on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=733, page=4, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=734, page=4, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page4 u
 sed on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=734, page=5, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=735, page=5, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page5 u
 sed on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=735, page=6, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=736, page=6, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page6 u
 sed on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=736, page=7, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=737, page=7, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page7 u
 sed on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=737, page=8, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=738, page=8, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page8 u
 sed on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=738, page=9, 532.23843pt x 25
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=739, page=9, 532.23843pt x 25
 5.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page9 u
 sed on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=739, page=10, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=740, page=10, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page10 
 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=740, page=11, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=741, page=11, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page11 
 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=741, page=12, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=742, page=12, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page12 
 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=742, page=13, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=743, page=13, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page13 
 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=743, page=14, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=744, page=14, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page14 
 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=744, page=15, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=745, page=15, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page15 
 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=745, page=16, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=746, page=16, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page16 
 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=746, page=17, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=747, page=17, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page17 
 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=747, page=18, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=748, page=18, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page18 
 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=748, page=19, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=749, page=19, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page19 
 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=749, page=20, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=750, page=20, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page20 
 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-<./svg-inkscape/Performance Delay_svg-tex.pdf, id=750, page=21, 532.23843pt x 2
+<./svg-inkscape/Performance Delay_svg-tex.pdf, id=751, page=21, 532.23843pt x 2
 55.95625pt>
 File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Delay_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page21 
 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-) [48 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performanc
-e Delay_svg-tex.pdf
+) [49 <./svg-inkscape/Performance Database_svg-tex.pdf> <./svg-inkscape/Perform
+ance Database_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [50 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performan
+ce Delay_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./svg-inkscape/Performance Delay_svg-tex.pdf
 
-pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->]) [49]
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]) [51]
 \openout2 = `kapitel/60_poc.aux'.
 
  (kapitel/60_poc.tex
 chapter 6.
-
-Overfull \hbox (11.62378pt too wide) in paragraph at lines 5--6
-\OT1/lmss/m/n/10.95 (-20) Unterstreichung einer m[]oglichen praktischen Umsetzu
-ng der, in dieser Arbeit beschriebenen, Anforderungen
- []
-
 LaTeX Font Info:    Trying to load font information for OML+lmss on input line 
 23.
 LaTeX Font Info:    No file OMLlmss.fd. on input line 23.
@@ -3036,7 +2856,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
 []$[]$ 
  []
 
-[50
+[52
 
 
 
@@ -3046,15 +2866,10 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 64--73
 []$[]$ 
  []
 
-[51]
-Overfull \hbox (5.00848pt too wide) in paragraph at lines 81--82
-\OT1/lmss/m/n/10.95 (-20) eher dem Ziele der Ablaufsteuerung zugewiesen. Hingeg
-en ist der BasketStorageService ein Domainservice,
- []
-
+[53]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
 95.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ts1lmtt.fd
+ (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -3069,7 +2884,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 89--101
 []$[]$ 
  []
 
-[52]
+[54]
 Overfull \hbox (9.58327pt too wide) in paragraph at lines 116--117
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][] 
@@ -3085,17 +2900,17 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 140--155
 []$[]$ 
  []
 
-[53]) [54]
+[55]) [56]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [55
+) [57
 
 
 
 
-] [56
+] [58
 
 
 
@@ -3123,14 +2938,14 @@ chapter 8.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 55.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
 (Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 255.
 
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+(C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -3146,35 +2961,39 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33042 strings out of 480528
- 686165 string characters out of 2896682
- 1591295 words of memory out of 3000000
- 50032 multiletter control sequences out of 15000+600000
- 592637 words of font info for 240 fonts, out of 8000000 for 9000
- 3 hyphenation exceptions out of 8191
- 108i,21n,106p,10601b,2603s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/thalmaier/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmsc.enc}{/home
-/thalmaier/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ts1.enc}{/home/thalmaie
-r/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-rmtt.enc}{/home/thalmaier/.mikte
-x/texmfs/install/fonts/enc/dvips/lm/lm-rm.enc}</home/thalmaier/.miktex/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/thalmaier/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/thalmaier/.miktex/texm
-fs/install/fonts/type1/public/lm/lmcsc10.pfb></home/thalmaier/.miktex/texmfs/in
-stall/fonts/type1/public/lm/lmss10.pfb></home/thalmaier/.miktex/texmfs/install/
-fonts/type1/public/lm/lmss12.pfb></home/thalmaier/.miktex/texmfs/install/fonts/
-type1/public/lm/lmss8.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/p
-ublic/lm/lmss9.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/l
-m/lmssbx10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lm
-sso10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lmtt8.p
-fb>
-Output written on main.pdf (74 pages, 1133326 bytes).
+ 33001 strings out of 478659
+ 688483 string characters out of 2845920
+ 1596036 words of memory out of 3000000
+ 50154 multiletter control sequences out of 15000+600000
+ 527131 words of font info for 242 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 108i,21n,106p,10601b,2521s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
+{C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
+/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/U
+sers/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users
+/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcs
+c10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+s10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+s12.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+s8.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
+9.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssb
+x10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
+so10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+tt8.pfb>
+Output written on main.pdf (76 pages, 1137823 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
+ 863 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  58996 words of extra memory for PDF output out of 61914 (max. 10000000)
 

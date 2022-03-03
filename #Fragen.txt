@@ -9,6 +9,10 @@ ToDo:
 - Erklären warum nicht Basketitems getrennt worden sind.
 - Rename "doumentbased" zu dokumentenorientierten Datenbank
 - Schreiben bei D => More database requests -> More Safety (Add to disclaimer in perfromance test too)
+- \subsubsection statt textbf
+- %TODO: ,da erstezten durch andere Wörte in der ganzen Bachelorarbeit
+- Mehr variationen von ,da jedoch wohingegen dass weshalb etc.
+%TODO: Schreibweise von Sourcecode in der ganzen BA überprüfen. Sourcecode oder Source code
 
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
 - Pseudocode Zeilen prüfen ob noch passend Schluss von 60 prüfen
