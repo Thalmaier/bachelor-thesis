@@ -334,6 +334,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{User Story}%
+{%
+name={User Story},%
+sort={User Story},%
+type={main},%
+first={User Story},%
+firstplural={User Storys},%
+text={User Story},%
+plural={User Storys},%
+description={Ein möglicher Ablauf des kompletten Businessprozesses aus Sicht des Kunden.},%
+descriptionplural={Ein möglicher Ablauf des kompletten Businessprozesses aus Sicht des Kunden.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{Race Condition}%
 {%
 name={Race Condition},%
