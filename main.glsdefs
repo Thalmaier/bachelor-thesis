@@ -334,6 +334,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{KPI}%
+{%
+name={KPI},%
+sort={KPI},%
+type={acronym},%
+first={Key-Performance-Indicator\glsspace (KPI)},%
+firstplural={Key-Performance-Indicator\acrpluralsuffix \glsspace (KPI\acrpluralsuffix )},%
+text={KPI},%
+plural={KPI\acrpluralsuffix },%
+description={Key-Performance-Indicator},%
+descriptionplural={Key-Performance-Indicator\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Key-Performance-Indicator},%
+longplural={Key-Performance-Indicators},%
+short={KPI},%
+shortplural={KPIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Serialisierung}%
+{%
+name={Serialisierung},%
+sort={Serialisierung},%
+type={main},%
+first={Serialisierung},%
+firstplural={Serialisierungs},%
+text={Serialisierung},%
+plural={Serialisierungs},%
+description={Konvertierung von Datenobjekte in ein sequenzielles Format},%
+descriptionplural={Konvertierung von Datenobjekte in ein sequenzielles Format},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Deserialisierung}%
+{%
+name={Deserialisierung},%
+sort={Deserialisierung},%
+type={main},%
+first={Deserialisierung},%
+firstplural={Deserialisierungs},%
+text={Deserialisierung},%
+plural={Deserialisierungs},%
+description={Die Umkehrung einer Serialisierung. Wandelt ein sequenzielles Datenformat in Objekte einer Klasse um.},%
+descriptionplural={Die Umkehrung einer Serialisierung. Wandelt ein sequenzielles Datenformat in Objekte einer Klasse um.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{User Story}%
 {%
 name={User Story},%
@@ -737,6 +821,34 @@ text={Collection},%
 plural={Collections},%
 description={Analog zu den Tabellen in einer relationalen Datenbank, stellen persistieren Collections pro Eintrag einen Datensatz.},%
 descriptionplural={Analog zu den Tabellen in einer relationalen Datenbank, stellen persistieren Collections pro Eintrag einen Datensatz.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Connection-Pool}%
+{%
+name={Connection-Pool},%
+sort={Connection-Pool},%
+type={main},%
+first={Connection-Pool},%
+firstplural={Connection-Pools},%
+text={Connection-Pool},%
+plural={Connection-Pools},%
+description={Eine Ansammlung von Verbindungen meist zu Datenbanken zur Performance-Optimierung, indem alte Verbindungen wiederverwendet werden.},%
+descriptionplural={Eine Ansammlung von Verbindungen meist zu Datenbanken zur Performance-Optimierung, indem alte Verbindungen wiederverwendet werden.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

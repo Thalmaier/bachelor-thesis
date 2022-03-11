@@ -9,8 +9,10 @@
 \glossaryentry{Stakeholder?\glossentry{Stakeholder}|setentrycounter[]{page}"\glsnumberformat}{14}
 \glossaryentry{Boilerplate?\glossentry{Boilerplate}|setentrycounter[]{page}"\glsnumberformat}{22}
 \glossaryentry{Product Owner?\glossentry{Product Owner}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{32}
-\glossaryentry{Lazy Loading?\glossentry{Lazy Loading}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{Collection?\glossentry{Collection}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{Race Condition?\glossentry{Race Condition}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Lazy Loading?\glossentry{Lazy Loading}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Collection?\glossentry{Collection}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{Race Condition?\glossentry{Race Condition}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{Connection-Pool?\glossentry{Connection-Pool}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{Serialisierung?\glossentry{Serialisierung}|setentrycounter[]{page}"\glsnumberformat}{48}
+\glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{53}

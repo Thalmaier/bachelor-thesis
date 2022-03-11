@@ -236,7 +236,7 @@ Um einen möglichst unterteilten Aggregationsschnitt zu gewährleisten, wird auf
 
 Ähnlich zu anderen Designvariationen benötigen viele Anwendungsfälle das gleichzeitige Laden und Bearbeiten mehrerer Aggregates. Beispielsweise beim Hinzufügen eines neuen BasketItems ist die Neuberechnung des PaymentProcesses und CalculationResults notwendig. Gleichermaßen muss dieser Prozess angestoßen werden, wenn das Fulfillment in den Checkout-Daten bearbeitet und die Versandkosten des Warenkorbs sich dadurch ändern. Zur Abwicklung einer solchen Abhängigkeit sind mehrere Implementierungsmöglichkeiten denkbar.
 
-Sollte die Kalkulationen erst bei Bedarf stattfinden, werden Zusatzinformation benötigt, um zu indizieren, dass der aktuelle Berechnungswert veraltet ist. Zu diesem Zweck wird ein Wahrheitswert in dem Basket und Checkout-Daten hinterlegt. Bei Zustandsänderungen, welche den Gesamtwert des Warenkorbs beeinflussen wird dieser auf 'wahr' gesetzt. Sobald ein CalculationResult des dazugehörigen Baskets aus der Datenbank geladen wird, findet auch eine Neuberechnung statt, sofern der Wert 'wahr' ist, welche zugleich auch den PaymentProcess aktualisiert. Dieses Vorgehen spart Berechnungszeit auf Kosten von zusätzlichen Datenbankoperationen ein. Die Komplexität und Fehleranfälligkeit der Software steigt hierbei an.
+Sollte die Kalkulationen erst bei Bedarf stattfinden, werden Zusatzinformation benötigt, um zu indizieren, dass der aktuelle Berechnungswert veraltet ist. Zu diesem Zweck wird ein Wahrheitswert (auch 'Flag' genannt) in den Basket und Checkout-Daten hinterlegt. Bei Zustandsänderungen, welche den Gesamtwert des Warenkorbs beeinflussen wird dieser auf 'wahr' gesetzt. Sobald ein CalculationResult des dazugehörigen Baskets aus der Datenbank geladen wird, findet auch eine Neuberechnung statt, sofern der Wert 'wahr' ist, welche zugleich auch den PaymentProcess aktualisiert. Dieses Vorgehen spart Berechnungszeit auf Kosten von zusätzlichen Datenbankoperationen ein. Die Komplexität und Fehleranfälligkeit der Software steigt hierbei an.
 
 Andernfalls kann das CalculationResult bei jedem Abruf aus der Datenbank aktualisiert werden. Die Vor- und Nachteile sind im Vergleich zur vorherigen Lösung invertiert. Es sind mehr Kalkulationen notwendig, jedoch wird die Datenquelle entlastet. Sofern die Preisberechnung sich umfangreich gestaltet, sind Performance-Einbußen zu erwarten.
 
@@ -246,69 +246,45 @@ In dem Proof-of-Concept sind erstere und letztere Vorgehensweise implementiert, 
 
 \subsection{Dependency Injection von Services in Domain-Driven Design}
 
-Zur Durchführung der Applikationslogik werden Services und Repositories benötigt. Der Proof-of-Concept verwendet für die Erstellung dieser Objekten das Prinzip der Dependency Injection. Ein Framework initialisiert hierbei erforderlichen Objekte durch ihren Konstruktor, indem die notwendigen Parameter ebenfalls injiziert werden. Dadurch entsteht ein rekursives Muster bis schließlich alle Objekte erzeugt worden sind.
+Umfangreiche oder nicht klar zuordenbare Funktionalitäten werde in Services ausgelagert. Die Reihenfolge der Serviceaufrufe ist durch den Anwendungsfall bereits vorgegeben, jedoch nicht in welcher Klasse diese stattfindet und wie die notwendigen Komponente an die Objekte übergeben wird. Verschiedene Implementierungen besitzen auch unterschiedliche Vor- bzw. Nachteile. Dieses Unterkapitel geht unter Beachtung von Dependency Injection auf einige Realisierungsmöglichkeiten genauer ein. 
 
-\textbf{Injektion des Services in ein Aggregate durch das Repository}
-
-Ein Aggregate
-
-Eine Realisierungsmöglichkeit ist die Haltung und Aufrufen einer Referenz im Aggregate selbst. Folglich muss beim Lesen der Datensätze aus der Datenbank alle relevanten Service durch das Repository in das Aggregate injiziert werden. Im kurzen Beispielcode \ref{lst:injection} wird dieser Gedanke verdeutlicht.
-
-\begin{minipage}{\linewidth} % No pagebreak inside a minipage
-	\begin{lstlisting}[caption={Injektion des Services in ein Aggregate durch das Repository}, label={lst:injection}, language=Kotlin]
-class Aggregate {
-	
-	variable SomeService domainService
-	
-	// Setzen des konkreten Service
-	function inject(SomeService domainService) {
-		this.domainService = domainService
-	}
-}
-class AggregateRepository {
-	
-	function load(Id id) returns Aggregate {
-		variable aggregate = searchInDatabase(id)
-		aggregate.inject(someService)
-		return aggregate
-	}
-	
-}
-	\end{lstlisting}
-\end{minipage}
-
-Jedoch hat sich diese Methodik bei der Implementierung als problematisch erwiesen. Einerseits ist es fragwürdig, ob Datenklassen aus Programmiersicht überhaupt Referenzen auf Services halten sollten, da äußere Abhängigkeiten in das innere Datenmodell getragen werden. Davon abgesehen erhöht sich stark die Wahrscheinlichkeit auf eine 'Circular Dependency' (dt. Zirkelbezug) innerhalb der Repositories, weil sie selbst alle Services besitzen müssen, um diese den Aggregate zu injizieren. Das bedeutet konkret, dass die Repositories so miteinander in Abhängigkeit stehen können, sodass ein endloser Zyklus während der Dependency Injection entsteht. Verdeutlicht wird dieser Effekt anhand eines sachbezogenen Anwendungsfalles in Abbildung \ref{fig:CircularDependency}. In dem Beispiel benötigt das 'CheckoutDataRepository' das 'BasketDataRepository' zur Initiierung und anders herum erfordert das 'BasketDataRepository' das 'CheckoutDataRepository'. Dadurch ist es unmöglich ein Objekt der jeweiligen Klasse zu erzeugen und die Applikation ist nicht mehr ausführbar. In der Checkout-Software stehen die Aggregates in enger Bindung zueinander und benötigen zur Validierung somit ihre gegenseitigen Repositories. In Variante A kann ein solcher Zyklus nicht auftreten, da nur ein Repository existiert.
+Dependency Injection ist eine spezielle Art des \acrlong{DIP}s. Hierbei initialisiert ein Framework erforderlichen Klassen durch ihren Konstruktor, indem die obligatorisch Parameter ebenfalls injiziert werden. Dadurch entsteht ein rekursives Muster bis schließlich alle Objekte erzeugt worden sind. Dadurch wird eine lose Kopplung der Module erreicht und eine Möglichkeit geschaffen, die konkreten Implementierungen anhand von Konfigurationsdateien auszutauschen. Eine Problematik dieser Vorgehensweise, welche auf inkorrektes Klassendesign hinweisen kann, ist die Bildung einer 'Circular Dependency' (dt. Zirkelbezug). Entsprechend der Grafik \ref{fig:circulardependency} tritt dies auf, sofern zwei Komponente voneinander abhängig sind. Das Framework versucht eine der beiden Klassen zu initialisieren, wobei im Konstruktor die verbleibende Klasse benötigt wird. Da diese jedoch ein Objekt der noch nicht erzeugen ersteren Klasse erwartet, entsteht ein ewiger Kreislauf von Konstruktoraufrufen. Eine Applikation mit einer Circular Dependency ist folglich nicht mehr ausführbar und die Eliminierung einer der Abhängigkeiten ist erforderlich. 
 
 \begin{figure}[htbp]
 	\centering
-	\includesvg[inkscapelatex=false, width=0.70\textwidth]{svg/Circular Dependency.svg}
-	\caption{Beispiel einer Circular Dependency}
-	\label{fig:CircularDependency}
+	\footnotesize
+	\includesvg[width=\textwidth]{svg/circular dependency.svg}
+	\caption{Darstellung einer Circular Dependency}
+	\label{fig:circulardependency}
 \end{figure}
 
-\textbf{Auslagerung der Referenz in einen Domainservice}
+Je mehr Abhängigkeiten eine Klasse besitzt, desto höher ist die Wahrscheinlichkeit des Auftretens einer Circular Dependency. Bei der konkreten Implementierung des Proof-of-Concepts stellte die Vermeidung einer solchen Situation teilweise eine Herausforderung dar.
 
-Ein anderer Lösungsansatz kann das Extrahieren einer Teilfunktionalität aus dem Aggregat in einen dafür vorgesehenen Domainservice darstellen. Das Codebeispiel \ref{lst:extract} implementiert einen Service zur Validierung einer Invariante. 
+
+\textbf{Steuerung des Programmablauf innerhalb von Domainservices}
+
+Sofern mehrere Komponente für die Durchführung eines Anwendungsfalles notwendig sind, fällt das Wissen über deren Aufrufreihenfolge in den Kontext der Domain. Deshalb sind Klassen außerhalb des Datenmodells mit mehreren Serviceaufrufen den Domainservices zuzuordnen. Im ersten Lösungsansatz wird der Programmablauf außerhalb des Aggregates durch einen Domainservice bestimmt. Das Codebeispiel \ref{lst:extract} implementiert beispielsweise einen Service zur Validierung einer Invariante. Dass zuvor eine Überprüfung der Validität einer Aktion stattfinden muss, stellt hier das Domainwissen dar. 
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-	\begin{lstlisting}[caption={Auslagerung der Referenz in einen Domainservice}, label={lst:extract}, language=Kotlin]
+	\begin{lstlisting}[caption={Bestimmung des Steuerflusses durch einen Domainservice}, label={lst:extract}, language=Kotlin]
 class DomainService {
-	// Überprüfung von aggregate.isActionValid() kann unabsichtlich umgangen werden
-	// Durch direkten Aufruf von aggregate.doStuff()
+	
 	function doStuff(Aggregate aggregate) {
 		if (someService.isActionValid()) {     
 			aggregate.doStuff()
 		}
 	}
+
 }
 	\end{lstlisting}
 \end{minipage}
 
-Die Wahrscheinlichkeit auf eine Circular Dependency wird hierbei gesenkt, da die Injektionen in verschiedenen Klassen verteilt stattfindet. Nachteilig kann weiterhin aus einem anderen Codeabschnitt 'aggregate.doStuff()' aufgerufen werden ohne Durchführung der Validierung. Die Konsistenz des Aggregatzustandes ist somit gefährdet und anhand einer unvorsichtigen Änderung des Quellcodes können neue Bugs entstehen. Unproblematisch sind Serviceaufrufe, welche lediglich Daten erzeugen und diese den Aggregate weitergeben.
+Die Eintrittswahrscheinlichkeit einer Circular Dependency ist gesenkt, da normalerweise die Domainservices sich nicht gegenseitig benötigen. Der größte Nachteil dieses Ansatzes liegt jedoch in der eingeführten Fehleranfälligkeit des Programms. Bei unvorsichtigen Codeanpassungen kann der Aufruf von 'aggregate.doStuff()' von anderen Abschnitten der Software ohne die vorgehende Validierung geschehen. Die Konsistenz des Aggregatzustandes ist somit gefährdet und damit verbundenen Qualitätsmerkmale werden geschwächt. Zur Verhinderung einer solchen Situation ist eine Verlagerung des Funktionsaufrufs in das Aggregate selber denkbar.
+
 
 \textbf{Übergabe der Referenz an das Aggregate als Parameter}
 
-Ein Aggregate sollte stets selbst alle wesentlichen Invarianten überprüfen, sodass die Ausführung von invaliden Aktionen unterbunden ist. Um dies zu gewährleisten, muss der Service direkt aus dem Aggregate aufgerufen werden, weswegen dieser eine Referenz auf das gefragte Objekt besitzen muss. Als letzte Realisierungsmöglichkeit in Figur \ref{lst:parameter} kann der Service als Parameter übergeben werden.
+Ein Aggregate sollte stets direkt alle wesentlichen Invarianten überprüfen, sodass die Ausführung von invaliden Aktionen unterbunden ist. Um dies zu gewährleisten, muss der Service innerhalb des Aggregate aufgerufen werden, weswegen dieser eine Referenz auf das gefragte Objekt benötigt. Dementsprechend wird in Figur \ref{lst:parameter} der Service als Parameter an das Aggregate übergeben.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Übergabe der Referenz an das Aggregate als Parameter}, label={lst:parameter}, language=Kotlin]
@@ -321,7 +297,7 @@ class DomainService {
 	}
 }
 class Aggregate {
-	// Kann nicht umgegangen werden, da Validierung dierekt in Funktion geschieht
+	// Kann nicht umgegangen werden, da Validierung direkt in der Funktion geschieht
 	function doStuff(SomeService someService) {
 		if (someService.isActionValid()) {
 			...
@@ -331,24 +307,51 @@ class Aggregate {
 	\end{lstlisting}
 \end{minipage}
 
-Dies ermöglicht die Kombination der Vorteile der beiden anderen Varianten, jedoch werden die Funktionssignaturen aufgebläht. Aus Sicht der Skalierbarkeit und Fehleranfälligkeit ist generell dieser Ansatz zu bevorzugen, aus welchem Grund auch die Implementierung des Proof-of-Concepts die Domainservices als Parameter übergibt.
+Dies löst das vorgehende Problem der Fehleranfälligkeit, jedoch wird die Funktionssignatur und das Aggregate aufgebläht. Grundlegend ist eine Abwägung notwendig, wann es sinnvoll ist, den Funktionsaufruf in das Aggregate mitaufzunehmen. Bei wichtigen Validierungen sollte diese Variante bevorzugt werden. Die Bewertung der Dependency Injection bleibt hier unverändert im Vergleich zur vorherigen Implementierung. Der Proof-of-Concept verwendet diesen Ansatz, um Abhängigkeiten zu realisieren.
+
+\textbf{Injektion der Service in ein Aggregate durch das Repository}
+
+Weiterhin können auch zur Minimierung der Funktionsparameter die Service in das Aggregate hinein injiziert werden. Folglich halten die Aggregates selbst eine Referenz auf die jeweilig Klassen und rufen diese bei Notwendigkeit auf. Die Injektion muss bei Objekterzeugung geschehen, weshalb die Verantwortung bei den Repositories liegt. Im kurzen Beispielcode \ref{lst:injection} wird dieser Gedanke verdeutlicht.
+
+\begin{minipage}{\linewidth} % No pagebreak inside a minipage
+	\begin{lstlisting}[caption={Injektion des Services in ein Aggregate durch das Repository}, label={lst:injection}, language=Kotlin]
+class Aggregate {
+	
+	variable SomeService domainService
+	
+	// Setzen des konkreten Service
+	function inject(SomeService domainService) {
+		this.domainService = domainService
+	}
+}
+
+class AggregateRepository {
+	
+	function load(Id id) returns Aggregate {
+		variable aggregate = searchInDatabase(id)
+		aggregate.inject(someService)
+		return aggregate
+	}
+	
+}
+	\end{lstlisting}
+\end{minipage}
+
+Diese Methodik hat sich bei der Implementierung allerdings als problematisch erwiesen. Einerseits ist es fragwürdig, ob Datenklassen aus Entwicklersicht überhaupt Referenzen auf Services halten sollten, da weiter Abhängigkeiten erzeugt werden. Davon abgesehen erhöht sich stark die Wahrscheinlichkeit auf eine Circular Dependency innerhalb der Repositories, weil sie alle Services besitzen müssen, um diese den Aggregate zu übergeben. In \emph{Variante D} der Checkout-Software stehen die Aggregates in enger Bindung zueinander und benötigen zum Laden dieser somit ihre gegenseitigen Repositories. Deshalb kann es bei Wechselwirkungen zwischen den Aggregates vorkommen , dass zwei Repositories sich gegenseitig benötigen.
 
 \subsection{Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}
 
-Damit eine genaueren Aussage über Performance von Variante A und D möglich ist, wird ein Lasttest mithilfe der Open-Source-Software 'JMeter' realisiert. Zuerst wurde hierfür ein gängiger Anwendungsfall definiert, welcher folgende Aktionen umfasst: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Nach dem Vorbefüllen der Datenbank mit 1000 Datensätze wird anschließend dieser Prozessablauf durch die verschiedenen Aggregationsschnitte innerhalb von zehn simultanen Threads 'X'-mal abgearbeitet. Diese wird insgesamt drei mal wiederholt, um abweichende Ergebnisse auszuschließen. Die Auswertungen wurden dem Anhang hinzugefügt.
-
-%TODO: Connection-Pools in gls
+Damit eine genaueren Aussage über die Performance von Variante A und D möglich ist, wird ein Lasttest mithilfe der Open-Source-Software 'JMeter' realisiert. Zuerst wurde hierfür ein gängiger Anwendungsfall definiert, welcher folgende Aktionen umfasst: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. Nach dem Vorbefüllen der Datenbank mit 1000 Datensätze wird anschließend dieser Prozessablauf in zehn parallelen Threads 'X'-mal durch die verschiedenen Aggregationsschnitte abgearbeitet. Zum Ausschließen von abweichenden Ergebnissen wird dies drei mal wiederholt. Die Auswertungen dieses Kapitels ist im Anhang zu finden.
 
 \textbf{Bemerkungen zum Performance-Test}
 
-Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je nach Anwendungsfall, Hardware, Netzwerk und Softwareimplementierung ab. Zudem können weiterhin Optimierungsoptionen vorgenommen werden, wie die angepasste Einstellung des Connection-Pools, das Einsparen von ganzen Datenbankoperationen durch Caching oder schnellere Kommunikation der Systeme untereinander. Anhand der Analyse sollen vorgehende Aussagen bewiesen und Argumente für das Fazit gebildet werden.
+Die Performance-Analyse dient lediglich als genereller Vergleich und weicht je nach Anwendungsfall, Hardware, Netzwerk und Softwareimplementierung ab. Zudem können weiterhin Optimierungsoptionen vorgenommen werden, wie die angepasste Einstellung des \Gls{Connection-Pool}s, das Einsparen von ganzen Datenbankoperationen durch Caching oder schnellere Kommunikation der Systeme untereinander. Anhand der Analyse sollen vorgehende Aussagen bewiesen und Argumente für das Fazit gebildet werden.
 
-Zur simpleren Referenz der getesteten Varianten wird die Verwendung von MongoDB mit 'M' und von PostgreSQL mit 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt D in die Untertypen 'F' bzw. 'C' unterteilt. Hierbei finden in der Abwandlung 'C' Nebeneffekte, wie die Neuberechnung des Gesamtpreises sofort statt, wohingegen in 'F' erst bei Abruf der jeweiligen Daten anhand von Flags erkennt wird, wann eine Neukalkulation notwendig ist. Folglich steht beispielsweise die Variante D-PF für den Aggregationsschnitt D mit einer PostgreSQL-Datenbank und Implementierung von Flags.
+Zur simpleren Referenz der getesteten Varianten wird die Verwendung von MongoDB mit 'M' und von PostgreSQL mit 'P' abgekürzt. Weiterhin ist der Aggregationsschnitt D in die Untertypen 'F' bzw. 'C' unterteilt. Hierbei finden in der Abwandlung 'C' Nebeneffekte, wie die Neuberechnung des Gesamtpreises sofort statt, wohingegen in 'F' erst bei Abruf der jeweiligen Daten anhand von Flags erkennt wird, wann eine Neukalkulation notwendig ist. Folglich steht beispielsweise 'Variante D-PF' für den Aggregationsschnitt D mit einer PostgreSQL-Datenbank und eine Implementierung von Flags.
 
 \textbf{Erster Testdurchlauf und hieraus ableitbare Aussagen}
 
-%TODO: KPIs in gls
-Zu Beginn wurde der Proof-of-Concept für Variante A und D mitsamt ihren Abwandlungen implementiert und sachbezogene KPIs anhand des obigen Testaufbaus ausgewertet. Das Ergebnis ist in Tabellenform im Anhang unter \ref{fig:performance-mongo} zu finden. Um die Auswirkungen der Verwendung einer relational Datenbank zu beobachten, wurde ebenfalls der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Um einen schnellen Überblick zu bieten, wurde die durchschnittlichen 'Abläufe pro Sekunde' über einen Gesamtumfang von 10.000 Abläufen per Variante in der Grafik \ref{fig:PerformanceDefault} abgebildet.
+Zu Beginn wurde der Proof-of-Concept für Variante A und D mitsamt ihren Abwandlungen implementiert und sachbezogene \acrshort{KPI}s (\acrlong{KPI}) anhand des obigen Testaufbaus ausgewertet. Das Ergebnis kann dem Anhang unter \ref{fig:performance-mongo} entnommen werden. Um die Konsequenz bei Verwendung einer relational Datenbank zu beobachten, wurde ebenfalls der Versuch mit einer PostgreSQL-Datenbank wiederholt. Die Auswertungen sind in Tabelle \ref{fig:performance-postgres} hinterlegt. Zum Präsentieren einer schnellen Übersicht wurde die durchschnittlichen 'Abläufe pro Sekunde' über einen Gesamtumfang von 10.000 Abläufen in der Grafik \ref{fig:PerformanceDefault} visualisiert.
 
 \begin{figure}
 	\centering
@@ -358,9 +361,9 @@ Zu Beginn wurde der Proof-of-Concept für Variante A und D mitsamt ihren Abwandl
 	\label{fig:PerformanceDefault}
 \end{figure}
 
-Mithilfe der Verwendung von Flags werden Neukalkulationen eingespart im Austausch für zusätzliche Datenbankoperationen, jedoch sind die eigentlichen Berechnungen des Warenkorbs in dem verkleinerten Proof-of-Concept trivial, weshalb zu beobachten ist, dass ein solches Vorgehen insgesamt zu einer geringeren Performance führt. In der aktuellen Live-Applikation kann aufgrund der komplexeren Berechnungsgrundlage dieses Vorgehen weitaus performanter ausfallen. Negativ ist anzumerken, dass die Verwendung von Flags einhergeht mit einem komplexeren Programmablauf, da die Aktualisierung von Daten asynchron stattfinden. Bei der Implementierung von neuen Funktionen müssen stets die Wechselwirkungen zwischen den Flags und Businessprozessen beachtet werden, wodurch die Fehleranfälligkeit der Software steigt. Folglich sollten Flags nur verwendet werden, sofern Performance-Verbesserungen vernehmbar und relevant für die Applikation sind. Schlussendlich kann allerdings eine genaue Aussage für die Produktivanwendung ohne den Ausbau der getesteten Software zwischen D-C und D-F nicht getroffen werden.
+Mithilfe von Flags werden Neukalkulationen im Austausch für zusätzliche Datenbankoperationen eingespart, jedoch sind die eigentlichen Berechnungen des Warenkorbs in dem verkleinerten Proof-of-Concept trivial, weshalb zu beobachten ist, dass ein solches Vorgehen insgesamt zu einer geringeren Performance führt. In der aktuellen Live-Applikation kann aufgrund der komplexeren Berechnungsgrundlage dieser Ansatz allerdings weitaus performanter ausfallen. Negativ ist anzumerken, dass die Nutzung von Flags mit einem komplexeren Programmablauf einhergeht, da die Aktualisierung von Daten asynchron stattfinden. Bei der Implementierung von neuen Funktionen müssen stets die Wechselwirkungen zwischen den Wahrheitswerten und Businessprozessen beachtet werden, wodurch die Fehleranfälligkeit der Software steigt. Folglich sollten Flags nur in Betracht gezogen werden, sofern relevante Performance-Verbesserungen vernehmbar sind. Schlussendlich kann eine finale Aussage zwischen Variante D-C und D-F für die Produktivanwendung aufgrund der fehlenden Komplexität nicht getroffen werden.
 
-In einem früheren Kapitel wurde die These aufgestellt, dass die Unterteilung von großen Aggregaten in kleinere unter Verwendung einer dokument-orientierten Datenbank in geringeren oder sogar negativen Performance-Gewinnen resultieren kann, als beim Einsatz einer relationale Datenbank. Diese Aussage ruht auf der Basis, dass mehr Datenbankoperationen bei einer MongoDB benötigt werden sobald die Anzahl der Aggregates steigen, da zuvor alle Daten in einer einzelnen Collection abgespeichert werden konnten. Hingegen ist in relationalen Datenbanksystemen, aufgrund von Mehrfachbeziehungen und der Einhaltung von Normalformen, ein Aggregat bereits in mehrere Tabellen unterteilt und die weitere Abspaltung von Objekten führt zu insgesamt weniger neuen Relationen. In Tabelle \ref{fig:durationofexecution} wurde der Median über die Ausführungsdauer eines Anwendungsfalles pro Aggregationsschnitt gebildet und die Gesamtzahl der hierfür benötigten Datenbankoperationen aufgelistet. 
+In einem früheren Kapitel wurde die These aufgestellt, dass die Unterteilung von großen Aggregaten in kleinere unter Verwendung einer dokument-orientierten Datenbank in geringeren oder sogar negativen Performance-Gewinnen resultieren kann, als beim Einsatz einer relationale Datenbank. Diese Aussage ruht auf der Basis, dass mehr Datenbankoperationen bei einer MongoDB benötigt werden, sobald die Anzahl der Aggregates steigen, da zuvor alle Daten in einer einzelnen Collection abgespeichert werden konnten. Hingegen ist in relationalen Datenbanksystemen, aufgrund von Mehrfachbeziehungen und der Einhaltung von Normalformen, ein Aggregat bereits in mehrere Tabellen unterteilt und die weitere Abspaltung von Objekten führt zu insgesamt weniger neuen Relationen. In Tabelle \ref{fig:durationofexecution} wurde der Median über die Ausführungsdauer eines Anwendungsfalles pro Aggregationsschnitt gebildet und die Gesamtzahl der hierfür benötigten Datenbankoperationen aufgelistet. 
 
 \begin{table}
 	\centering
@@ -379,14 +382,13 @@ In einem früheren Kapitel wurde die These aufgestellt, dass die Unterteilung vo
 	\label{fig:durationofexecution}
 \end{table}
 
-Der Performance-Unterschied beläuft sich auf 4 Millisekunden zwischen A-M und D-MC, sofern eine MongoDB als Datenbankmanagementsystem genutzt wird, wohingegen ein Einsparung von 6 Millisekunden bei einer PostgreSQL möglich ist. Dieser Effekt kann weiterhin deutlicher in kommende Testaufbauten beobachtet werden, worauf die These gestützt wird. Aus den Daten ergibt sein die Frage, warum der Umbau zu Variante D überhaupt einen Performance-Gewinn mit sich bringt, obwohl dies mit mehr Datenbankoperationen einhergeht. 
+Der Performance-Unterschied beläuft sich auf 4 Millisekunden zwischen A-M und D-MC, sofern eine MongoDB als Datenbankmanagementsystem genutzt wird, wohingegen ein Einsparung von 6 Millisekunden bei einer PostgreSQL möglich ist. Dieser Effekt kann weiterhin deutlicher in kommende Testaufbauten beobachtet werden, worauf die These gestützt wird. Aus den Daten ergibt sich allerdings die Frage, warum der Umbau zu Variante D überhaupt einen Performance-Gewinn mit sich bringt, obwohl dies mit mehr Datenbankoperationen einhergeht. 
 
-%TODO De-/Serialiserung in gls
-Zum Speichern oder Laden von Datensätzen muss eine sogenannte De- bzw. Serialisierung stattfinden, damit die Daten richtig interpretiert werden können. Bei genauer Untersuchung der Datenbankzugriffe stellt sich heraus, dass dieser Vorgang aktuell den Großteil der Bearbeitungszeit in Anspruch nimmt, nicht wie zu vermuten die eigentliche Datenbankoperation. Deshalb sind die Variationen A insgesamt langsamer, da mehr Daten verarbeitet werden und somit zugleich die De-/Serialisierungsdauer erhöht wird. Diese Situation entsteht, da die Datenbank auf der gleichen Maschine wie die eigentliche Software ausgeführt wird. Die Kommunikation zwischen den Systemen ist nicht vom Netzwerk abhängig und ein Datenbankzugriff beläuft sich auf circa 1,5 Millisekunden. In den meisten Produktivumgebungen ist die Datenbank allerdings physisch getrennt, woraus Verzögerungen durch den Datentransport über das Netzwerk entstehen. Zur Simulation dieses Phänomens wird ein weiterer Performance-Test durchgeführt. 
+Zum Speichern oder Laden von Datensätzen muss eine sogenannte De- bzw. \Gls{Serialisierung} stattfinden, damit die Daten richtig interpretiert werden können. Bei genauer Untersuchung der Datenbankzugriffe stellt sich heraus, dass dieser Vorgang aktuell den Großteil der Bearbeitungszeit in Anspruch nimmt, nicht wie zu vermuten die eigentliche Datenbankoperation. Deshalb sind die Variationen A insgesamt langsamer, da mehr Daten verarbeitet werden und somit zugleich die De-/Serialisierungsdauer erhöht wird. Diese Situation entsteht, da die Datenbank auf der gleichen Maschine wie die eigentliche Software ausgeführt wird. Die Kommunikation zwischen den Systemen ist nicht vom Netzwerk abhängig und ein Datenbankzugriff beläuft sich auf circa 1,5 Millisekunden. In den meisten Produktivumgebungen ist die Datenbank allerdings physisch getrennt, woraus Verzögerungen durch den Datentransport über das Netzwerk entstehen. Zur Simulation dieses Phänomens wird ein weiterer Performance-Test durchgeführt. 
 
 \textbf{Aushängen der Datenbank in eine Cloud-Umgebung}
 
-Damit eine ähnlichere Situation zu Produktivanwendungen geboten werden kann, wurde bei Cloud-Anbietern jeweils eine MongoDB und PostgreSQL in einem frankfurter Datenzentrum mit 8 Gigabyte Arbeitsspeicher und 4 virtuellen Kernen angemietet. Der vorherige Testaufbau wird unter Verwendung dieser Datenspeichern wiederholt und tabellarisch dem Anhand unter \ref{fig:performance-database} hinzugefügt. Das Diagramm \ref{fig:PerformanceDatabase} bietet die dazugehörige grafische Auswertung.
+Damit eine ähnlichere Situation zur Produktivanwendungen geboten werden kann, wurde bei einem Cloud-Anbieter jeweils eine MongoDB und PostgreSQL in einem frankfurter Datenzentrum mit 8 Gigabyte Arbeitsspeicher und 4 virtuellen Kernen angemietet. Der vorherige Testaufbau wird unter Verwendung dieser Datenspeichern wiederholt und tabellarisch dem Anhand unter \ref{fig:performance-database} hinzugefügt. Das Diagramm \ref{fig:PerformanceDatabase} bietet die dazugehörige grafische Auswertung.
 
 \begin{figure}
 	\centering
@@ -396,12 +398,12 @@ Damit eine ähnlichere Situation zu Produktivanwendungen geboten werden kann, wu
 	\label{fig:PerformanceDatabase}
 \end{figure}
 
-Die zusätzlichen Datenbankoperationen wirken sich nun stark auf die Performance des Proof-of-Concepts aus. Der mögliche Durchsatz von Variante A ist höher als der verkleinerte Aggregationsschnitt, da die De-/Serialisierung nur noch ein Bruchstück der Gesamtdauer ausmacht und die eigentliche Datenbankverbindung hingegen mehr Zeit in Anspruch nimmt. Die Differenz zwischen Variante A-M und D-MC beträgt hierbei durch das Netzwerk durchschnittlich 751 Millisekunden. Es muss beachtet werden, dass die Kommunikation mit den Datenspeicher die einzige Wartezeit der Applikation darstellt, wodurch der Einfluss auf die Performance unnatürlich hoch ausfällt. Zudem kann die Einbußen verringert werden, indem beispielsweise die Systeme physisch näher zusammenliegen oder eine dedizierte Verbindung mit der Datenbank hergestellt wird.
+Die zusätzlichen Datenbankoperationen wirken sich nun stark auf die Performance des Proof-of-Concepts aus. Der mögliche Durchsatz von Variante A ist höher als der verkleinerte Aggregationsschnitt, da die De-/Serialisierung nur noch ein Bruchstück der Gesamtdauer ausmacht und die eigentliche Datenbankverbindung hingegen mehr Zeit in Anspruch nimmt. Die Differenz zwischen Variante A-M und D-MC beträgt hierbei durch das Netzwerk durchschnittlich 751 Millisekunden. Es muss beachtet werden, dass die Kommunikation mit den Datenspeicher aktuell die einzige Wartezeit der Applikation darstellt, wodurch der Einfluss auf die Performance unnatürlich hoch ausfällt. Zudem kann die Einbußen verringert werden, indem beispielsweise die Systeme physisch näher zusammenliegen oder eine dedizierte Verbindung mit der Datenbank über das Netzwerk hergestellt wird.
 
 
 \textbf{Simulation von Wartezeiten bei Aufrufen von externen APIs}
 
-Die Tatsache, dass Aufrufe an externe Systeme in zusätzlicher Wartezeit resultiert, wurde bis jetzt in den Performance-Test vernachlässigt. Aus der Analyse von Monitoring-Systemen der aktuellen Produktivanwendung konnten durchschnittliche API-Abrufzeiten gebildet und in die Applikation eingebaut werden. Im Mittel verbringt die Software 465 Millisekunden mit dem Warten auf Antworten von abhängigen Systemen. Alle Aggregationsschnitte erfordern die gleiche Anzahl an API-Aufrufe. Sollte dies nicht der Fall sein, muss ein solcher Fakt ebenfalls mit in die Bewertung der Aggregates mit einfließen. Der Testablauf wird auf Basis des ersten Tests inklusive der Wartezeiten-Simulation dementsprechend erneut durchgeführt . Die gemessenen Werte befinden sich in Tabelle \ref{fig:performance-delay} und im Balkendiagramm \ref{fig:PerformanceDelay}. Der mögliche Durchsatz sinkt bemerkbar und Unterschiede zwischen den Aggregationsdesigns verwaschen.
+Die Tatsache, dass Aufrufe an externe Systeme in zusätzlicher Wartezeit resultiert, wurde bis jetzt in den Performance-Test vernachlässigt. Aus der Analyse von Monitoring-Systemen der aktuellen Produktivanwendung konnten durchschnittliche API-Abrufzeiten gebildet und in die Applikation eingebaut werden. Im Mittel verbringt die Software 465 Millisekunden mit dem Warten auf Antworten von abhängigen Systemen. Der Testablauf wird auf Basis des ersten Tests inklusive der Wartezeiten-Simulation dementsprechend erneut durchgeführt . Die gemessenen Werte befinden sich in Tabelle \ref{fig:performance-delay} und im Balkendiagramm \ref{fig:PerformanceDelay}. 
 
 \begin{figure}
 	\centering
@@ -410,6 +412,9 @@ Die Tatsache, dass Aufrufe an externe Systeme in zusätzlicher Wartezeit resulti
 	\caption{Performance-Ergebnisse unter Beachtung der Wartezeiten bei API-Aufrufe}
 	\label{fig:PerformanceDelay}
 \end{figure}
+
+Der mögliche Durchsatz sinkt bemerkbar und Unterschiede zwischen den Aggregationsdesigns verwaschen. Alle Aggregationsschnitte erfordern im Proof-of-Concept die gleiche Anzahl an API-Aufrufe. Sollte dies nicht der Fall sein, muss ein solcher Fakt ebenfalls mit in die Bewertung der Aggregates mit einfließen, weil sich unterschiedliche Wartezeiten und folglich Performance-Unterschiede ergeben. 
+
 
 \textbf{Fazit aus dem Performance-Test}
 
@@ -422,19 +427,16 @@ Die finale Evaluation ist ein Resultat der vorgehenden theoretischen Überlegung
 \begin{itemize}[topsep=-2pt]
 	\item \textbf{Komplexität: } {Viele Prozesse benötigen zum Abfragen von externen Informationen oder für die Einhaltung von Invarianten mehr als ein Aggregat, wodurch zusätzlichen Funktionsaufrufe und Übergabeparameter eingeführt werden müssen. Dabei leidet die Übersichtlichkeit des Quellcodes. Dennoch ist es beispielsweise möglich durch Verwendung eines Kontextobjekts, auf welches überall in der Applikation Zugriff besteht, diese Auswirkungen einzudämmen, indem geladene Aggregate dort eingespeichert und abgerufen werden.
 		
-	Das Transaktionsmanagement gewinnt ebenfalls an Relevanz, sodass Datensätze so kurz wie möglich gesperrt sind. Sofern keine synchronen Aufrufe stattfinden, wirkt sich dies jedoch nicht bemerkbar auf die Performance aus. 
+	Das Transaktionsmanagement gewinnt ebenfalls an Relevanz, sodass Datensätze so kurz wie möglich gesperrt sind. Sofern keine zeitgleichen Aufrufe auf dieselben Aggregates stattfinden, wirkt sich dies jedoch nicht bemerkbar auf die Performance aus. 
 	
 	Weiterhin muss für die Neuberechnung der Preise zum Abarbeiten von Nebeneffekten Flags eingeführt werden, sofern eine Vermeidung von extra Schreibprozesse angestrebt wird. 
 	
 	\emph{Insgesamt gewinnt die Applikation generell an Komplexität, welche je nach Realisierungsmethode stärker oder schwächer ausfallen kann.}}
 
-	\item \textbf{Performance: } { \emph{Basierend auf die vorgehende Analyse ist ein Verlust von Performance vorhanden, da in der Live-Umgebung eine MongoDB verwendet wird. Dies stellte den eigentlichen Hauptgrund für einen Umgestaltung der Applikation dar.} }
+	\item \textbf{Performance: } { \emph{Basierend auf die vorgehende Analyse ist ein Verlust von Performance vorhanden, da in der Live-Umgebung eine MongoDB verwendet wird.} }
 	
-	\item \textbf{Parallelität: } { Generell können zwei unterschiedliche Aggregates unabhängig voneinander bearbeitet werden. Als konkretes Beispiel ist die Bearbeitung von enthaltenen Artikeln und das setzen von Checkout-Informationen gleichzeitig möglich. Eine tatsächliche Anwendung dieses Falles ist allerdings kaum denkbar. Sofern zusätzlich die Abspaltung der BasketItems hinzukommt, gewinnt dieser Aspekt an Bedeutung. Aus zuvor dargebotenen Gründen ist die erhöhte Transaktionsanzahl nicht vertretbar, da in den meisten Fällen der Warenkorb einer einzelnen Person gehört. \emph{Die gewonnene Parallelität ist folglich nahezu vernachlässigbar bzw. nicht anwendbar.}}
-	%TODO: Api-Contract erklärt irgendwo?
-	\item \textbf{Client-Freundlichkeit: } { Touchpoints erhalten als Antwort auf API-Anfragen in dieser Variante nur einen Teilaspekt des Baskets, denn andererseits müssten wieder alle Aggregate geladen werden, wodurch der Sinn einer Trennung verloren geht. Vornherein findet mit den Clients eine Klärung über die erwarteten Antwortdaten mithilfe einer API-Vereinbarung statt, sodass diese ohne zusätzliche Anfragen weiterhin ihre Arbeitsprozesse abwickeln können. \emph{Letztendlich sind Clients nur maximal neutral von der neuen Architektur betroffen.}}
+	\item \textbf{Parallelität: } { Generell können zwei unterschiedliche Aggregates unabhängig voneinander bearbeitet werden. Als konkretes Beispiel ist die Bearbeitung von enthaltenen Artikeln und das setzen von Checkout-Informationen gleichzeitig möglich. Eine tatsächliche Anwendung dieses Falles ist allerdings kaum denkbar. Sofern zusätzlich die Abspaltung der BasketItems hinzukommt, gewinnt dieser Aspekt an Bedeutung. \emph{Die gewonnene Parallelität ist folglich nahezu vernachlässigbar bzw. nicht anwendbar.}}
+	\item \textbf{Client-Freundlichkeit: } { Touchpoints erhalten als Antwort auf API-Anfragen in dieser Variante nur einen Teilaspekt des Baskets, denn andererseits müssten wieder alle Aggregate geladen werden, wodurch der Sinn einer Trennung verloren geht. Im Vorhinein findet mit den Clients eine Klärung über die erwarteten Antwortdaten mithilfe einer API-Vereinbarung statt, sodass diese ohne zusätzliche Anfragen weiterhin ihre Arbeitsprozesse abwickeln können. \emph{Letztendlich sind Clients bestenfalls nur neutral von der neuen Architektur betroffen.}}
 \end{itemize}
 
 Zusammenfassend existiert nur sehr beschränkt ein wirklicher Grund für die Anwendung von Variante D oder ähnlichen Aggregationsschnitten.
-
-%TODO: Add Bewertung zu allen Aggregationsschnitte

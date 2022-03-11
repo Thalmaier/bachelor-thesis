@@ -14,6 +14,8 @@ ToDo:
 - Mehr variationen von ,da jedoch wohingegen dass weshalb etc.
 %TODO: Schreibweise von Sourcecode in der ganzen BA überprüfen. Sourcecode oder Source code
 
+- Erklären von Acronymen im Verzeichnis
+
 - Sqeuenzdiagram asynchrone Pfeilspitzen überarbeiten
 - Pseudocode Zeilen prüfen ob noch passend Schluss von 60 prüfen
 - Glossary überarbeiten. REST erklären etc.
