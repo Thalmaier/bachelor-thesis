@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  11 MAR 2022 05:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  12 MAR 2022 06:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2642,7 +2642,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Default_svg-tex.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/Performance Database_svg-tex.pdf
-' is 22 on input line 397.
+' is 22 on input line 396.
  (svg-inkscape/Performance Database_svg-tex.pdf_tex
 <./svg-inkscape/Performance Database_svg-tex.pdf, id=709, page=1, 528.47438pt x
  316.18124pt>
@@ -2885,7 +2885,7 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Database_svg-tex.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/Performance Delay_svg-tex.pdf' i
-s 21 on input line 412.
+s 21 on input line 411.
  (svg-inkscape/Performance Delay_svg-tex.pdf_tex
 <./svg-inkscape/Performance Delay_svg-tex.pdf, id=738, page=1, 532.23843pt x 25
 5.95625pt>
@@ -3034,8 +3034,14 @@ File: ./svg-inkscape/Performance Delay_svg-tex.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/Performance Delay_svg-tex.pdf , page21 
 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 154.72707pt.
-) [50 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performanc
-e Delay_svg-tex.pdf
+)
+Overfull \hbox (4.26613pt too wide) in paragraph at lines 416--417
+[]\OT1/lmss/m/n/10.95 (-20) Der m[]ogliche Durchsatz sinkt bemerkbar und Unters
+chiede zwischen den Aggregationsdesigns verwaschen.
+ []
+
+[50 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performance 
+Delay_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file ./svg-inkscape/Performance Delay_svg-tex.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -3121,21 +3127,20 @@ DF inclusion: multiple pdfs with page group included in a single page
  (kapitel/60_poc.tex
 chapter 6.
 
-Overfull \hbox (11.62378pt too wide) in paragraph at lines 5--6
-\OT1/lmss/m/n/10.95 (-20) Unterstreichung einer m[]oglichen praktischen Umsetzu
-ng der, in dieser Arbeit beschriebenen, Anforderungen
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
  []
 
 LaTeX Font Info:    Trying to load font information for OML+lmss on input line 
-23.
-LaTeX Font Info:    No file OMLlmss.fd. on input line 23.
+19.
+LaTeX Font Info:    No file OMLlmss.fd. on input line 19.
 
 LaTeX Font Warning: Font shape `OML/lmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 23.
+(Font)              for symbol `textless' on input line 19.
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
+Overfull \hbox (10.95pt too wide) in paragraph at lines 15--25
 []$[]$ 
  []
 
@@ -3145,19 +3150,14 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 19--29
 
 
 ]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 64--73
+Overfull \hbox (10.95pt too wide) in paragraph at lines 55--64
 []$[]$ 
  []
 
 [53]
-Overfull \hbox (5.00848pt too wide) in paragraph at lines 81--82
-\OT1/lmss/m/n/10.95 (-20) eher dem Ziele der Ablaufsteuerung zugewiesen. Hingeg
-en ist der BasketStorageService ein Domainservice,
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-95.
-(/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ts1lmtt.fd
+81.
+ (/home/thalmaier/.miktex/texmfs/install/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -3168,27 +3168,25 @@ Package microtype Info: Character `texttrademark ' is missing
 (microtype)             in font `TS1/lmtt/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 89--101
+Overfull \hbox (10.95pt too wide) in paragraph at lines 75--87
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 97--112
 []$[]$ 
  []
 
 [54]
-Overfull \hbox (9.58327pt too wide) in paragraph at lines 116--117
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (10.95pt too wide) in paragraph at lines 111--126
+Overfull \hbox (10.95pt too wide) in paragraph at lines 127--142
 []$[]$ 
  []
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 140--155
-[]$[]$ 
- []
+Underfull \vbox (badness 5446) has occurred while \output is active []
 
-[55]) [56]
+ [55])
+[56]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
@@ -3254,10 +3252,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33306 strings out of 480528
- 693168 string characters out of 2896682
+ 33307 strings out of 480528
+ 693169 string characters out of 2896682
  1599299 words of memory out of 3000000
- 50292 multiletter control sequences out of 15000+600000
+ 50293 multiletter control sequences out of 15000+600000
  592731 words of font info for 241 fonts, out of 8000000 for 9000
  3 hyphenation exceptions out of 8191
  108i,21n,106p,10601b,2603s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3275,7 +3273,7 @@ ublic/lm/lmss9.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/l
 m/lmssbx10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lm
 sso10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lmtt8.p
 fb>
-Output written on main.pdf (76 pages, 1125874 bytes).
+Output written on main.pdf (76 pages, 1124527 bytes).
 PDF statistics:
  864 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

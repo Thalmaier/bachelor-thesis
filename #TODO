@@ -1,0 +1,32 @@
+Till Done:
+
+TODOs:
+
+    BA:
+    - Transferierbarkeit der Ergebnisse im Fazit
+        - Compension wie GRAPHQL etc.
+        - Fazit schluss ziehen auf Einleitung
+        - Empfehlungen Fazit; mitnehmen für andere
+    - Alle Kapitel überarbeiten
+        - Bild der Hexagonalen Architektur
+    - BA in Word einfügen um rechtschreibfehler zu finden
+    - Alle Titel überarbeiten
+    - Alle Ressourcen verlinken in BA (Swagger, Repo, etc.)
+    - Erklären von Acronymen
+    - Quellen hinzufügen
+    - Überprüfen
+        - dokumentenorientierten immer so geschrieben?
+        - \textbf statt \subsubsection
+        - ",da"/ "hingegen", "weshalb", "jedoch" ersetzten durch andere Wörter
+        - schreibweise von Sourcecode überprüfen
+        - Aggregate Root Schreibweise einheitlich
+        - Sehr oft "model" bzw. "Datenmodell"
+
+    Software/Repo:
+        - Swagger Docu Aktuallisieren
+        - README schreiben
+        - calculateWithoutSaving should be named more correctly
+
+
+    Überlegungen:
+    - Alle Klassennamen in \emph ?
