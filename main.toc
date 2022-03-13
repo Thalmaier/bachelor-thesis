@@ -62,7 +62,7 @@
 \contentsline {subsection}{\numberline {5.3.1}Herausschneiden der Berechnungsergebnisse aus dem Basket-Aggregate}{40}{}%
 \contentsline {subsection}{\numberline {5.3.2}Herausschneiden der Checkout-Daten aus dem Basket-Aggregate}{42}{}%
 \contentsline {section}{\numberline {5.4}Zusammenführung der vorgehenden Domain-Modelle}{43}{}%
-\contentsline {subsection}{\numberline {5.4.1}Aktualisieren von veralteten Datenständen}{44}{}%
+\contentsline {subsection}{\numberline {5.4.1}Aktualisieren von veralteten Datenständen}{43}{}%
 \contentsline {subsection}{\numberline {5.4.2}Dependency Injection von Services in Domain-Driven Design}{44}{}%
 \contentsline {subsection}{\numberline {5.4.3}Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}{47}{}%
 \contentsline {subsection}{\numberline {5.4.4}Bewertung des verkleinerten Aggregationsschnitt}{50}{}%

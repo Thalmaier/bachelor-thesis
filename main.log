@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  12 MAR 2022 06:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.15)  13 MAR 2022 06:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2258,16 +2258,17 @@ File: ./svg-inkscape/VarD_svg-raw.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 23
 0.
 (pdftex.def)             Requested size: 310.15799pt x 137.85468pt.
-[43 <./svg-inkscape/VarD_svg-raw.pdf>]
+[43]
 Overfull \hbox (2.70226pt too wide) in paragraph at lines 249--250
 \OT1/lmss/m/n/10.95 (-20) Umfangreiche oder nicht klar zuordenbare Funktionalit
 []aten werde in Services ausgelagert. Die Reihenfolge
  []
 
-[44]
+[44 <./svg-inkscape/VarD_svg-raw.pdf>]
 Package svg Info: Last page of `./svg-inkscape/circular dependency_svg-tex.pdf'
  is 7 on input line 256.
- (svg-inkscape/circular dependency_svg-tex.pdf_tex
+
+(svg-inkscape/circular dependency_svg-tex.pdf_tex
 <./svg-inkscape/circular dependency_svg-tex.pdf, id=660, page=1, 558.58687pt x 
 129.48375pt>
 File: ./svg-inkscape/circular dependency_svg-tex.pdf Graphic file (type pdf)
@@ -2334,11 +2335,6 @@ Overfull \hbox (38.03491pt too wide) in paragraph at lines 282--283
 n Codeanpassungen kann der Aufruf von 'aggregate.doStuff()'
  []
 
-
-Overfull \hbox (10.95pt too wide) in paragraph at lines 289--309
-[]$[]$ 
- []
-
 [45 <./svg-inkscape/circular dependency_svg-tex.pdf> <./svg-inkscape/circular d
 ependency_svg-tex.pdf
 
@@ -2365,6 +2361,11 @@ pdfTeX warning: pdflatex (file ./svg-inkscape/circular dependency_svg-tex.pdf):
 pdfTeX warning: pdflatex (file ./svg-inkscape/circular dependency_svg-tex.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 289--309
+[]$[]$ 
+ []
+
+
 Overfull \hbox (10.95pt too wide) in paragraph at lines 316--339
 []$[]$ 
  []
@@ -3191,22 +3192,26 @@ Underfull \vbox (badness 5446) has occurred while \output is active []
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [57
+[57
 
 
 
 
-] [58
+])
+Underfull \hbox (badness 10000) in paragraph at lines 20--245
 
+ []
 
-
-
-]
+[58]
 \openout2 = `kapitel/80_anhang.aux'.
 
  (kapitel/80_anhang.tex
 chapter 8.
 [1
+
+
+
+
 
 
 ] [2
@@ -3254,7 +3259,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  33307 strings out of 480528
  693169 string characters out of 2896682
- 1599299 words of memory out of 3000000
+ 1600299 words of memory out of 3000000
  50293 multiletter control sequences out of 15000+600000
  592731 words of font info for 241 fonts, out of 8000000 for 9000
  3 hyphenation exceptions out of 8191
@@ -3273,7 +3278,7 @@ ublic/lm/lmss9.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/l
 m/lmssbx10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lm
 sso10.pfb></home/thalmaier/.miktex/texmfs/install/fonts/type1/public/lm/lmtt8.p
 fb>
-Output written on main.pdf (76 pages, 1124527 bytes).
+Output written on main.pdf (76 pages, 1126592 bytes).
 PDF statistics:
  864 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
