@@ -2,9 +2,199 @@
 %TODO: Chapter mit Nummer im Inhaltsverzeichnis oder nicht?
 \chapter{Anhang}
 
-\section{Ergebnisse des Lasttests}
+\section{Sourcecode des Proof-of-Concepts} \label{label:sourcecode}
 
-%TODO: Beschreibung von Werten. Angabe von Bedeutung von AZ und dass alles in ms ist
+\note{TODO der Verlinkung auf das Repository}
+
+\section{Aktivitätsdiagramme der Anwendungsfälle}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Basketcreation.svg}
+	\caption{Aktivitätsdiagramm für die Erstellung eines Baskets}
+	\label{fig:SL-Basketcreation}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Basketabruf.svg}
+	\caption{Aktivitätsdiagramm für den Abruf eines Baskets}
+	\label{fig:SL-Basketabruf}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Basketstornierung.svg}
+	\caption{Aktivitätsdiagramm für die Stornierung eines Baskets}
+	\label{fig:SL-Basketstornierung}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD Checkoutdata.svg}
+	\caption{Aktivitätsdiagramm für das Setzen der Checkout Daten}
+	\label{fig:SL-Checkoutdata}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD AddProduct.svg}
+	\caption{Aktivitätsdiagramm für das Hinzufügen eines Produktes }
+	\label{fig:SL-AddProduct}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD PutBezahlmethode.svg}
+	\caption{Aktivitätsdiagramm für das Hinzufügen einer Bezahlmethode}
+	\label{fig:SL-PutBezahlmethode}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD InitPayment.svg}
+	\caption{Aktivitätsdiagramm für das Initiieren des Bezahlvorgangs }
+	\label{fig:SL-InitPayment}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD ExecPayment.svg}
+	\caption{Aktivitätsdiagramm für das Ausführen des Bezahlvorgangs }
+	\label{fig:SL-ExecPayment}
+\end{figure}
+
+\section{API-Endpunkte}
+
+\begin{figure}[h!]
+	\centering
+	\includesvg[inkscapelatex=false, width=\textwidth, height=0.9\textheight]{svg/REST API.svg}
+	\caption{REST-API der Checkout-Software für diesen Proof-of-Concept}
+	\label{fig:REST-API}
+\end{figure}
+
+\section{Komplettes Daten-Modell des Proof-of-Concepts} \label{label:Daten-Modell}
+
+\domainModell{Basket}{
+	\item \textbf{BasketId: } {Eindeutige Identifikation des Baskets zur Referenzierung durch die Touchpoints.}
+	\item \textbf{OutletId: } {Eine Referenz zugehörig zu dem Markt oder Onlineshop, durch welchen der Warenkorb angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten.}
+	\item \textbf{BasketStatus: } {Repräsentiert den aktuellen Zustands des Warenkorbs. Mögliche Werte sind OPEN, FROZEN, FINALIZED und CANCELED.} 
+	\item \textbf{Customer: } {Speichert Kundendaten (IdentifiedCustomer) oder Session-Informationen (SessionCustomer).} 
+	\item \textbf{FulfillmentType: } {Lieferart, wie PICKUP oder DELIVERY.} 
+	\item \textbf{BillingAddress: } {Adresse für die Rechnungserstellung.} 
+	\item \textbf{ShippingAddress: } {Adresse für die Warenlieferung.} 
+	\item \textbf{BasketItems: } {Liste aller enthaltenen Produkten im Warenkorb und ihren zugehörigen Informationen.}
+	\item \textbf{BasketCalculationResult: } {Beinhaltet die berechneten Werte des Warenkorbs, wie Nettobetrag, Bruttobetrag und Mehrwertsteuer. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
+	\item \textbf{PaymentProcess: } {Bindet alle Informationen zur erfolgreichen Abwicklung des Zahlungsprozesses.}
+	\item \textbf{Order: } {Speichert eine Referenz auf die Bestellung für einen Basket. Wird erst nach Zahlungsabschluss befüllt.}  
+}
+
+\domainModell{SessionCustomer}{
+	\item \textbf{SessionID: } {Eindeutige ID zur Zuweisung einer Session im Onlineshop zum zugehörigen Basket. Notwendig, um eine Einkaufmöglichkeit für anonyme Kunden zu bieten.}
+}
+
+\domainModell{IdentifiedCustomer}{
+	\item \textbf{Name: } {Enthält den Vor- und Nachnamen als eigenes Datenkonstrukt.}
+	\subDomainModell{
+		\item \textit{FirstName: } {Vorname des Kunden.}
+		\item \textit{LastName: } {Nachname des Kunden.}
+	}
+	\item \textbf{Email: } {Email des Kunden.}
+	\item \textbf{CustomerTaxId: } {Die Steuernummer des Kunden. Relevant aus Sicht der Rechnungsabwicklung und für den Ausdruck der Rechnung.} 
+	\item \textbf{BusinessType: } {Bestimmt ob Kunde als Business-to-Customer (B2C) oder Business-to-Business (B2B) gilt.}
+	\item \textbf{CompanyName: } {Firmenname des Kunden. Kann optional angegeben werden oder ist verpflichtend für einen B2B-Kunden.}
+	\item \textbf{CompanyTaxId: } {Steuernummer der Firma eines B2B-Kunden.}
+}
+
+\domainModell{BasketItem}{
+	\item \textbf{Id: } {Eindeutige Referenz auf den Warenkorbeintrag.}
+	\item \textbf{Product: } {Beinhaltet alle Produktinformationen, welche durch die Touchpoints benötigt werden.}
+	\item \textbf{Price: } {Aktueller Preis des zugehörigen Products. Kann sich zeitlich ändern, muss daher durch eine Businessfunktion aktualisiert werden. }
+	\item \textbf{ShippingCost: } {Betrag der Lieferkosten des Items.}
+	\item \textbf{BasketItemCalculationResult: } {Speichert die Bruttokosten des Produktes, die errechneten Nettokosten, Lieferkosten und den Gesamtpreis.}
+}
+
+\domainModell{Product}{
+	\item \textbf{Id: } {Eindeutige Referenz des Products im externen System.}
+	\item \textbf{Name: } {Textuelle Produktbezeichnung des Products.}
+	\item \textbf{Vat: } {Mehrwertsteuerinformationen des Products.}
+	\item \textbf{UpdatedAt: } {Zeitstempel notwendig für die Aktualisierungsfunktion der Artikelinformationen.}
+}
+
+\domainModell{Vat}{
+	\item \textbf{Sign: } {Identifizierung des Steuertyps, abhängig von jeweiligen Prozentsatz und Land.}
+	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer, wie beispielsweise '19\%'.}
+}
+
+\domainModell{Price}{
+	\item \textbf{PriceId: } {Setzt sich zusammen aus der ProductId und der OutletId.}
+	\item \textbf{GrossAmount: } {Bruttobetrag mit Währung.}
+	\item \textbf{UpdatedAt: } {Zeitstempel notwendig für die Aktualisierungsfunktion des Preises.}
+}
+
+\domainModell{BasketItemCalculationResult}{
+	\item \textbf{ItemCost: } {Beinhaltet Netto, Brutto und VAT Informationen in Form eines CalculationResults.}
+	\item \textbf{ShippingCost: } {Betrag der Lieferkosten.}
+	\item \textbf{TotalCost: } {Zusammengerechnete Werte der einzelnen Preise im Form eines CalculationResults.}
+}
+
+\domainModell{CalculationResult}{
+	\item \textbf{GrossAmount: } {Bruttobetrag mit Währung.}
+	\item \textbf{NetAmount: } {Nettobetrag mit Währung.}
+	\item \textbf{VatAmounts: } {Eine zusammengebautes Set aus VatAmounts der Preise der BasketItems. Benötigt, da Vats mit unterschiedlichen Prozentbeträgen rechtlich nicht kombiniert werden dürfen.}
+}
+
+\domainModell{VatAmount}{
+	\item \textbf{Sign: } {Identifizierung des Steuertyps, abhängig von genauen Prozentsatz und zugehörigen Land.}
+	\item \textbf{Rate: } {Prozentualer Wert der Mehrwertsteuer.}
+	\item \textbf{Amount: } {Berechneter Betrag der Mehrwertsteuer zugehörig zu einem Bruttobetrag.}
+}
+
+\domainModell{BasketCalculationResult}{
+	\item \textbf{GrandTotal: } {Betrag der finalen Gesamtkosten des ganzen Baskets.}
+	\item \textbf{NetTotal: } {Fasst alle Nettobeträge zusammen in einem einzelnen Betrag.}
+	\item \textbf{ShippingTotal: } {Fasst alle Lieferkosten zusammen in einem einzelnen Betrag.}
+	\item \textbf{VatAmount: } {Rechnet alle Vats zusammen, welche das gleiche Sign besitzen.}
+}
+
+\domainModell{PaymentProcess}{
+	\item \textbf{BasketId: } {Id des zugehörigen Baskets.}
+	\item \textbf{ExternalPaymentRef: } {Referenz auf den Bezahlvorgangs im externen System. Anfangs leer bis zur Initiierung des Payments.}
+	\item \textbf{AmountToPay: } {Betrag der insgesamt bezahlt werden muss. Entspricht dem GrandTotal des Baskets.}
+	\item \textbf{AmountPayed: } {Rechnet alle Payments zusammen und bestimmt in welchem Maße der Basket bereits bezahlt ist.}
+	\item \textbf{AmountToReturn: } {Falls der bezahlte Betrag größer ist als gefordert, wird dieser Wert berechnet. Repräsentiert den Betrag, welcher durch das System zurückgegeben werden muss.}
+	\item \textbf{PaymentProcessStatus: } {Status wieweit der der AmountToPay bezahlt ist. Kann die Werte TO\_PAY, PARTIALLY\_PAID und PAID annehmen.}
+	\item \textbf{Payment: } {Liste aller Payments zugehörig zu diesem Prozess.}
+}
+
+\domainModell{Payment}{
+	\item \textbf{PaymentId: } {Die Id der Zahlung.}
+	\item \textbf{PaymentMethod: } {Bezahlungsart, wie Gutschein oder Barzahlung.}
+	\item \textbf{PaymentStatus: } {Aktueller Zustand des Payments. Mögliche Werte entsprechen SELECTED, INITIALIZED, EXECUTED, CANCELED. Ein Payment ist bei Hinzufügung im Status SELECTED.}
+	\item \textbf{AmountSelected: } {Betrag, welcher durch dieses Payment bezahlt werden soll. Falls dieser Wert leer ist, wird der gesamte Warenkorb durch dieses Payment bezahlt.}
+	\item \textbf{AmountUsed: } {Betrag wie viel insgesamt durch dieses Payment abgedeckt wurde, falls nur ein Bruchteil des AmountSelectes benötigt wird.}
+	\item \textbf{AmountOverpaid: } {Berechnet durch Subtraktion von AmountSelected und AmountUsed.}
+}
+
+\domainModell{Order}{
+	\item \textbf{OrderRef: } {Referenz auf die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses gesetzt.}
+}
+
+\section{Ergebnisse des Lasttests} \label{label:Lasttests}
+
+Der Lasttest wurde mithilfe der Software 'JMeter' durchgeführt. Die Vorlage der jeweiligen Testfälle sind im Repository des Proof-of-Concepts zu finden unter \ref{label:sourcecode}. Ein Durchlauf bezieht sich auf einen typischen User Story, welche folgende Aspekte beinhaltet: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. 
+
+Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
+\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{A}: 'Variante A' des Aggregationsschnittes
+	\item \textbf{D}: 'Variante D' des Aggregationsschnittes
+	\item \textbf{M}: Verwendung des Datenbankmanagementsystems MongoDB
+	\item \textbf{P}: Verwendung des Datenbankmanagementsystems PostgreSQL
+	\item \textbf{F}: Kurz für 'Flag'. Die Kalkulation des Gesamtpreises geschieht erst bei expliziter Abfrage
+	\item \textbf{C}: Die Kalkulation des Gesamtpreises findet umgehend bei Anpassungen von relevanten Werten statt.
+	\item \textbf{AZ}: Kurz für 'Ablaufzeit'. Angabe in Millisekunden. Die Zeit für einen einzelnen Ablauf des Anwendungsfalles. 
+\end{itemize}
+
 
 \begin{landscape}
 \begin{table}[h!]

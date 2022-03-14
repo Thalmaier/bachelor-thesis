@@ -194,6 +194,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{gls-DTO}%
+{%
+name={Data-Transfer-Object},%
+sort={Data-Transfer-Object},%
+type={main},%
+first={Data-Transfer-Object},%
+firstplural={Data-Transfer-Objects},%
+text={Data-Transfer-Object},%
+plural={Data-Transfer-Objects},%
+description={Ein Objekt zum Transportieren innerhalb der Applikation ohne jegliche Logik},%
+descriptionplural={Ein Objekt zum Transportieren innerhalb der Applikation ohne jegliche Logik},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{DTO}%
 {%
 name={DTO},%

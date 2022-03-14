@@ -8,6 +8,7 @@
 %  draft,				% Korrek\add{text}turfassung
   ]{scrreprt}			% scrartcl	
 
+
 % Kotlin highlighting
 \usepackage[dvipsnames]{xcolor}
 \usepackage{listings}
@@ -53,6 +54,9 @@
 \usepackage[ngerman,english]{babel}
 \selectlanguage{ngerman}
 
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
 \usepackage{graphicx}
 \graphicspath{{bilder/}}
 \usepackage{svg}
@@ -82,6 +86,9 @@
 % Mathemodus
 \usepackage{amsmath,amssymb}
 
+% Ensure figures are placed correctly
+\usepackage[section]{placeins}
+
 % Trennung
 \hyphenation{Crash-zo-ne}
 
@@ -101,8 +108,8 @@ automark,		% Lebende Kolumnentitel
 \usepackage{adjustbox}
 
 
-\usepackage[acronym]{glossaries}
-
+\usepackage[acronym]{glossaries-extra}
+\setabbreviationstyle[abbreviation]{short-desc}
 \makeglossaries
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,17 +140,43 @@ automark,		% Lebende Kolumnentitel
 
 \publishers{
   \begin{tabular}{rl}
-   \textbf{Erstprüfer} 		& - 				\\
-   \textbf{Zweitprüfer} 	& - 				\\
-   \textbf{Betreuer} 		& Sebastian Apel	\\
+   \textbf{Erstprüfer} 		& Prof. Dr. Sebastian Apel	\\
+   \textbf{Zweitprüfer} 	& Prof. Dr. rer. nat. Franz Regensburger	\\
+   \textbf{Betreuer} 		& Stefano Lucka  	\\
    \textbf{Ausgabedatum} 	& - 				\\
    \textbf{Abgabedatum} 	& -					\\
   \end{tabular}
   }
   
 % Rückseite der Titelseite
-\uppertitleback{Angaben zum Autor oder Vergleichbares.}
-\lowertitleback{Dokumenteninformation, Veröffentlichung, Rahmen, bibliographisches Angaben}
+\uppertitleback{
+	
+\adjustbox{minipage=0.8\textwidth}{
+\vspace{1.5cm} 
+	{\Large\textbf{Erklärung zur Bachelorarbeit}}
+	
+	\vspace{2em}
+	
+	{
+		
+		Ich erkläre hiermit, dass ich diese Bachelorarbeit selbständig verfasst,
+		noch nicht anderweitig für Prüfungszwecke vorgelegt, keine anderen als
+		die angegebenen Quellen und Hilfsmittel benutzt sowie wörtliche und
+		sinngemäße Zitate als solche gekennzeichnet habe. 
+		
+		\vspace{5em}
+		
+		Ingolstadt, \today
+		\hfill
+		\rule{220pt}{1pt} \\
+		
+		\hfill
+		Simon Thalmaier 
+	}
+\par}
+}
+
+\lowertitleback{} %Dokumenteninformation, Veröffentlichung, Rahmen, bibliographisches Angaben
 
 
 
@@ -192,7 +225,7 @@ automark,		% Lebende Kolumnentitel
 \begin{document}
   
   \include{glossary}
-  
+    
   \maketitle
   
   \frontmatter
@@ -219,13 +252,11 @@ automark,		% Lebende Kolumnentitel
   %Acronyms
   \newpage
   \setlength{\glsdescwidth}{0.8\textwidth}
-  \addcontentsline{toc}{chapter}{Akronyme}
   \printglossary[type=\acronymtype, style=super, nonumberlist]
   
   %Glossary
   \newpage
   \setlength{\glsdescwidth}{0.75\textwidth}
-  \addcontentsline{toc}{chapter}{Glossar}
   \printglossary[nonumberlist, style=super]
   
   \mainmatter
