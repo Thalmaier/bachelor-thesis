@@ -9,7 +9,7 @@ Das Design eines großen Aggregates fällt Entwicklern meist einfacher. Bei eine
 
 \subsection{Performance von unterschiedlich großen Aggregates im Vergleich}
 
-Als Konsequenz eines großen Aggregates muss immer die gesamte Datenstruktur geladen werden, da auf darunterliegende Objekte nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung von Attributen tief im Aggregat müssen somit alle anderen Daten ebenfalls aus der Datenbank gelesen werden. Die Auswirkungen dieser Tatsache kann mithilfe von \gls{Lazy Loading} oder durch Einsatz einer dokumentenorientierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird diese Richtlinie anhand des vorliegenden Bounded-Contexts analysiert.
+Als Konsequenz eines umfassenderen Aggregates muss immer die gesamte Datenstruktur geladen werden, da auf darunterliegende Objekte nur durch das Aggregate Root zugegriffen werden darf. Für die Aktualisierung von Attributen tief im Aggregat müssen somit alle anderen Daten ebenfalls aus der Datenbank gelesen werden. Die Auswirkungen dieser Tatsache kann mithilfe von \gls{Lazy Loading} oder durch Einsatz einer dokumentenorientierten Datenbank eingeschränkt werden. Generell gilt, dass große Aggregates aus Sicht der Performance langsamer arbeiten als kleinere. Diese Aussage ist allerdings mit Vorsicht zu genießen und kann je nach Anwendungsgebiet sogar gegensätzlich ausfallen. In diesem Unterkapitel wird diese Richtlinie anhand des vorliegenden Bounded-Contexts analysiert.
 
 \textbf{Untergliederung des Baskets in kleinere Bestandteile}
 
