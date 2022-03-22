@@ -12,21 +12,22 @@
 
 \newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}
 \newacronym[description={Representational State Transfer. Die Transition von Zuständen der Clients wird durch Abrufen einer Ressource des Servers erreicht. }]{REST}{REST}{Representational State Transfer} %TODO: https://de.wikipedia.org/wiki/Representational_State_Transfer#cite_note-fielding_experiences-1
-\newacronym{CRUD}{CRUD}{Create Update Delete}
-\newacronym[description={Command and Query Responsibility Segregation. Trennung der Datenbankzugriffe in Befehle für Schreiboperationen und Abfragen für Leseoperationen.}]{CQRS}{CQRS}{Command and Query Responsibility Segregation}
+\newacronym{CRUD}{CRUD}{Create Read Update Delete}
+\newacronym[description={Command and Query Responsibility Segregation. Trennung des Datenmodells in Befehle für Schreiboperationen und Abfragen für Leseoperationen zur Erreichung einer Aufteilung der Zuständigkeiten und einer erhöhte Performance.}]{CQRS}{CQRS}{Command and Query Responsibility Segregation}
 \newacronym{KPI}{KPI}{Key-Performance-Indicator}
 
+%TODO: Kommentar Stefano
 \newglossaryentry{Serialisierung}{name={Serialisierung}, %TODO: Quelle? https://www.duden.de/rechtschreibung/serialisieren
 	description={Konvertierung von Datenobjekte in ein sequenzielles Format}
 }
 \newglossaryentry{Deserialisierung}{name={Deserialisierung}, 
-	description={Die Umkehrung einer Serialisierung. Wandelt ein sequenzielles Datenformat in Objekte einer Klasse um.}
+	description={Die Umkehrung einer Serialisierung. Wandelt ein sequenzielles Datenformat in Objekte einer Klasse um}
 }
 \newglossaryentry{User Story}{name={User Story},
-	description={Ein möglicher Ablauf des kompletten Businessprozesses aus Sicht des Kunden.}
+	description={Ein möglicher Ablauf des kompletten Businessprozesses aus Sicht des Kunden}
 }
 \newglossaryentry{Race Condition}{name={Race Condition},
-	description={Eine Situtation in welcher, aufgrund von parallelen Aktionen, das Resultat von deren zeitlichen Stattfinden abhängig ist.}}
+	description={Zwei gleichzeitg bzw. nahezu gleichzeitig stattfindende Prozesse bedingen sich gegenseitig und führen zu nicht definierten Zuständen}}
 \newglossaryentry{Boilerplate}{name=Boilerplate,
 	description={Ein Teil einer Software, welcher viele Zeilen an Code einnimmt, obwohl dadurch nur wenig bis gar keine Funktion bereitgestellt wird}
 }
@@ -34,10 +35,10 @@
 	description={Eine Gruppe von Personen mit relevanten Interesse und Einfluss auf eine Sache bzw. Projekt}
 }
 \newglossaryentry{Lost Update}{name=Lost Update,
-	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf den alten Stand durchgeführt worden ist}
+	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen innerhalb einer Datenbank auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf dem alten Stand durchgeführt worden ist}
 }
 \newglossaryentry{Information-Expert-Prinzip}{name=Information-Expert-Prinzip,
-	description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllen besitzt}
+	description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllung besitzt}
 }
 \newglossaryentry{Invariante}{name=Invariante,
 	description={Bedinung, welche auch nach Datenanpassungen jederzeit erfüllt sein muss}
@@ -46,27 +47,27 @@
 	description={Grad der logischen inneren Zusammengehörigkeit einer Komponente. Komponente, welche nur eng beinaheliegende Aufgaben erfüllen, haben einen hohen Grad an Kohäsion}
 }
 \newglossaryentry{DI}{name={Dependency Injection},
-	description={Eine erweiterte Form des Dependency-Inversion-Prinzip, welches Abhängigkeiten erst zur Laufzeit des Programmes hinzufügt}
+	description={Eine erweiterte Form von Inversion-of-Control, welches Abhängigkeiten erst zur Laufzeit des Programmes hinzufügt}
 }
-\newglossaryentry{immutable}{name=immutable,
-	description={Die Unveränderlichkeit von Werten bzw. Variablen innerhalb einer Klasse}
+\newglossaryentry{immutable}{name=Immutable, text=immutable,
+	description={Die Unveränderlichkeit von Werten bzw. Variablen}
 }
 \newglossaryentry{Scrum}{name=Scrum,
-	description={Eine agile Entwicklungsmethode, welches hohen Fokus auf kontinuierliche Verbesserung in einem geregelten Zyklus legt}
+	description={Ein agiles Vorgehensmodell, welches hohen Fokus auf kontinuierliche Verbesserung in einem geregelten Zyklus legt}
 }
 \newglossaryentry{Sprint}{name=Sprint,
-	description={Ein wiederkehrender festgelegter Zeitraum, indem eine vorher definierter Umfang an Arbeitspakten abgearbeitet wird}
+	description={Ein wiederkehrender festgelegter Zeitraum in Scrum, indem ein vorher definierter Umfang an Arbeitspakten abgearbeitet wird}
 }
 
 \newglossaryentry{Product Owner}{name=Product Owner,
-	description={Eine Scrum-Rolle, welche die wirtschaftliche Ziele und Prioritäten der Aufgabenpakete bestimmt}
+	description={Eine Scrum-Rolle, welche den Funktionsumfang des Produktes unter Beachtung der wirtschaftlichen Aspekte bestimmt}
 }
 \newglossaryentry{Lazy Loading}{name={Lazy Loading},
-	description={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald diese benötigt werden, wodurch unnötiges Laden minimiert wird.}}
+	description={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald auf diese zugegriffen werden, wodurch unnötiges Zuvorladen minimiert wird}}
 \newglossaryentry{Collection}{name={Collection},
-	description={Analog zu den Tabellen in einer relationalen Datenbank, stellen persistieren Collections pro Eintrag einen Datensatz.}}
+	description={Analog zu den Tabellen in einer relationalen Datenbank, sind Collections eine NoSQL spezifische Benennung von gesammelten persistierten Datensätzen}}
 \newglossaryentry{Connection-Pool}{name={Connection-Pool},
-	description={Eine Ansammlung von Verbindungen meist zu Datenbanken zur Performance-Optimierung, indem alte Verbindungen wiederverwendet werden.}
+	description={Eine Gruppe von Verbindungen zu Datenbanken oder APIs zur Performance-Optimierung und Isolierung, indem zuvor erzeugte Verbindungen wiederverwendet werden}
 }
 %\newglossaryentry{Enumeration}{name=Enumeration,
 %	description={Eine Auflistung von konstanten, unveränderlichen Werten}

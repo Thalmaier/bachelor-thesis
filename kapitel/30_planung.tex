@@ -17,7 +17,7 @@ Die Warenkorberstellung besteht hauptsächlich aus dem Empfangen der Kundendaten
 
 \comment{Grafiken in Anhang? Manche weglassen? Hier hinzufügen?}
 
-\subsection{Abruf eines Warenkorbs anhand der Basket-ID}
+\subsection{Abruf eines Baskets anhand der Basket-ID}
 
 Anhand der Basket-ID kann nun der Warenkorb jederzeit durch den Touchpoint abgefragt werden. Die wichtigste Bedingung für diesen Anwendungsfall besagt, dass der Warenkorb stets mit aktuellen Daten befüllt sein muss. Dies stellt eine Herausforderung dar, da sich Preise und Artikeldetails mit dem Verlauf der Zeit ändern. Um das Problem möglichst performant zu lösen, werden die Informationen auf begrenzte Dauer zwischengespeichert. Dadurch wird nicht jedes Mal das externe System aufgerufen, sondern die Werte aus dem Cache geladen. Genaue Zeitspannen wurden durch die verantwortlichen Teams festgelegt. Dies bedeutet jedoch, dass die Software das Alter der im Warenkorb enthaltenen Informationen analysieren und gegebenenfalls aktualisieren muss. Auf Authentifizierung und Autorisierung wurde in dem POC und den Diagrammen verzichtet, da es sich rein um eine technische Funktion handelt und keine Relevanz für die Projektumsetzung besitzt. Es verbleiben Aufgaben, wie die Suche des Warenkorbs innerhalb der Datenbank, die De- und Serialisierung der Objekte und das Zurückgeben von Fehlern, falls der Warenkorb nicht gefunden werden konnte. Das Schaubild \ref{fig:SL-Basketabruf} stellt das zugehörige Aktivitätsdiagramm für diesen Anwendungsfall dar.
 
@@ -37,11 +37,11 @@ Der Warenkorb fungiert ebenfalls als ein Speicher einer Liste von Artikeln, sowi
 
 Eine weiter essentielle Funktion ist das Hinzufügen von Zahlungsmethoden, damit der Kauf erfolgreich initiiert werden kann. Da es sich nur um das ungeprüfte Anhängen der Bezahlinformationen handelt, müssen keine strengen Validierungen vorgenommen werden, weil diese Aufgabe durch ein externes System in einem späteren Schritt des Checkouts erledigt wird. Dennoch sind logische Überprüfungen durchzuführen, wie zum Beispiel, dass der Warenkorb nicht leer oder bereits bezahlt ist. Ebenfalls findet eine Neuberechnung aller Bezahlinformationen statt. Analog zu den vorgehenden Fällen wurde das Diagramm \ref{fig:SL-PutBezahlmethode} designt.
 
-\subsection{Initiierung des Bezahlprozesses und einfrieren des Baskets}
+\subsection{Initiierung des Bezahlprozesses und Einfrieren des Baskets}
 
 Nachdem die Bearbeitung des Baskets abgeschlossen ist, kann der Bezahlprozess gestartet werden. Hierbei muss der Warenkorb einen konsistenten und validen Stand besitzen. Sollte dies der Fall sein, wird der Basket in den Status 'Freeze' gestellt und jegliche weitere Datenänderungen verhindert. Der Bezahlprozess wird von einer externen Software abgewickelt. Alleinig eine Referenz auf diesem Prozess wird im Warenkorb gespeichert. Eine vereinfachte Darstellung des Prozesses bietet Abbildung \ref{fig:SL-InitPayment}
 
-\subsection{Ausführung des Bezahlprozesses und Finalisierung des Warenkorbs}
+\subsection{Ausführung des Bezahlprozesses und Finalisierung des Baskets}
 
 Als letzter, höchst relevanter Anwendungsfall befindet sich der Abschluss des Bezahlungsvorgangs, abgebildet in Figur \ref{fig:SL-ExecPayment}. Die Checkout-Software dient hierbei als Proxy zwischen Touchpoint und Payment-API. Sofern die Bezahlung erfolgreich war, wird der Status des Baskets auf 'Finalized' gestellt. Zugleich wird eine Bestellung durch die Order-API angelegt und im Basket durch eine Referenz verlinkt. \\\\
 
