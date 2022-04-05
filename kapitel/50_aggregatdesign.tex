@@ -1,6 +1,6 @@
-\chapter{Design möglicher Aggregationsschnitte }
+\chapter{Entwerfen möglicher Aggregate-Designs}
 
-Ein Domainmodell kann auf unterschiedliche Weise realisiert werden. Dies gilt ebenfalls für den Schnitt der Aggregates. Verschiedene Gruppierungen genießen zugleich andere Vor- und Nachteile. In diesem Kapitel werden mehrere mögliche Aggregationsaufteilungen untersucht und anhand von Kriterien, wie unter anderem Performance, Komplexität, Parallelität, Anwendbarkeit und Client-Freundlichkeit, bewertet.
+Ein Domainmodell kann auf unterschiedliche Weise realisiert werden. Dies gilt ebenfalls für den Schnitt der Aggregates. Verschiedene Gruppierungen genießen zugleich andere Vor- und Nachteile. In diesem Kapitel werden mehrere dieser Aufteilungen untersucht und anhand von Kriterien, wie unter anderem Performance, Komplexität, Parallelität, Anwendbarkeit und Client-Freundlichkeit, bewertet.
 
 \section{Ein zusammengehöriges Basket-Aggregate als initiales Design}
 
@@ -28,9 +28,9 @@ Wie oben erwähnt, ermöglicht ein kleinerer Aggregationsschnitt das unabhängig
 
 Wird dem Warenkorb ein neuer Artikel hinzugefügt, hat dies nicht nur das Anlegen eines Items, sondern auch die Neukalkulation des Baskets zur Folge. Sofern eine Trennung zwischen Basket und Basket-Item vorliegt, müssen dennoch alle Items aus der Datenbank geladen werden, andernfalls ist es nicht möglich den neuen Gesamtpreis zu ermittelt. Innerhalb eines Checkout-Kontextes existieren viele dieser klassenübergreifenden Businessanforderungen, weshalb die Kopplung des Datenmodells oftmals eine wirklich unabhängige Datenanpassung eines Aggregates in \emph{Variante B} verhindert.
 
-Durch eine genauere Untersuchung der Anwendungsfälle kann eine Abwägung getroffen werden, wie viele Prozesse tatsächlich isoliert abzuarbeiten sind. Die Effektivität des Aggregationsdesigns ist ebenfalls an die Bedürfnisse der Clients gekoppelt sind. Sofern diese bei einem API-Aufruf den vollständigen Warenkorb als Antwort erwarten, muss auch hier ein aggregationsübergreifender Ladevorgang stattfinden. Das Stornieren des Baskets und Setzten der Checkout-Daten ist hingegen positiv von dieser Anpassung betroffen, denn diese verwaltet alleinig der Warenkorb. Die meisten API-Anfragen beziehen sich allerdings auf beinhaltete BasketItems und die Verwaltung des Bezahlvorgangs, welche Wechselwirkungen mit dem Warenkorb oder sein zugehöriger Gesamtpreis besitzen. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle mithilfe von Variante B unabhängig abschließbar, somit steigt die Anzahl der benötigten Datenbankoperationen auch bei kleineren Aggregates und die damit verbundene Bearbeitungszeit wieder an.
+Durch eine genauere Untersuchung der Anwendungsfälle kann eine Abwägung getroffen werden, wie viele Prozesse tatsächlich isoliert abzuarbeiten sind. Die Effektivität des Aggregate-Designs ist ebenfalls an die Bedürfnisse der Clients gekoppelt sind. Sofern diese bei einem API-Aufruf den vollständigen Warenkorb als Antwort erwarten, muss auch hier ein aggregationsübergreifender Ladevorgang stattfinden. Das Stornieren des Baskets und Setzten der Checkout-Daten ist hingegen positiv von dieser Anpassung betroffen, denn diese verwaltet alleinig der Warenkorb. Die meisten API-Anfragen beziehen sich allerdings auf beinhaltete BasketItems und die Verwaltung des Bezahlvorgangs, welche Wechselwirkungen mit dem Warenkorb oder sein zugehöriger Gesamtpreis besitzen. Letztendlich sind nur eine Bruchzahl der Anwendungsfälle mithilfe von Variante B unabhängig abschließbar, somit steigt die Anzahl der benötigten Datenbankoperationen auch bei kleineren Aggregates und die damit verbundene Bearbeitungszeit wieder an.
 
-In dem Buch '\citetitle{Evans.2011}' wird zusätzlich auf eine Richtlinie hingewiesen, dass bei korrekten Aggregationsdesign eine Transaktion maximal ein Aggregate bearbeiten sollte \cite[S. 354]{Evans.2011}. Dies führt zu einem Konflikt mit den vorgehenden Businessanforderungen. Beispielsweise wäre es nicht möglich bei der Initiierung des Zahlungsvorgangs zeitgleich den Warenkorb einzufrieren. Ein möglicher Lösungsansatz stellt hierbei das Verwenden von eventueller Konsistenz dar. Konkret findet die Bearbeitung der Aggregates zeitversetzt voneinander statt, weshalb eine Zeitspanne existiert in welcher der Datensatz einen invaliden Stand besitzt. Angewandt an den vorgehenden Anwendungsfall bedeutet dies, dass zwar der Warenkorb eingefroren, allerdings der Bezahlvorgang noch nicht gestartet ist. Verbundene Implikationen mit eventueller Konsistenz werden in einem folgenden Kapitel besprochen.
+In dem Buch '\citetitle{Vernon.2015}' wird zusätzlich auf eine Richtlinie hingewiesen, dass bei korrekten Aggregationsdesign eine Transaktion maximal ein Aggregate bearbeiten sollte \cite[S. 354]{Vernon.2015}. Dies führt zu einem Konflikt mit den vorgehenden Businessanforderungen. Beispielsweise wäre es nicht möglich bei der Initiierung des Zahlungsvorgangs zeitgleich den Warenkorb einzufrieren. Ein möglicher Lösungsansatz stellt hierbei das Verwenden von eventueller Konsistenz dar. Konkret findet die Bearbeitung der Aggregates zeitversetzt voneinander statt, weshalb eine Zeitspanne existiert in welcher der Datensatz einen invaliden Stand besitzt. Angewandt an den vorgehenden Anwendungsfall bedeutet dies, dass zwar der Warenkorb eingefroren, allerdings der Bezahlvorgang noch nicht gestartet ist. Verbundene Implikationen mit eventueller Konsistenz werden in einem folgenden Kapitel besprochen.
 
 \subsubsection{Einfluss des verwendeten Datenbanksystems auf den Aggregationsschnitt}
 
@@ -253,7 +253,7 @@ Umfangreiche oder nicht klar zuordenbare Funktionalitäten werde in Services aus
 \begin{figure}[htbp]
 	\centering
 	\footnotesize
-	\includesvg[width=\textwidth]{svg/circular dependency.svg}
+	\includesvg[width=\textwidth]{svg/CircularDependency.svg}
 	\caption{Darstellung einer Circular Dependency}
 	\label{fig:circulardependency}
 \end{figure}

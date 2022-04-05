@@ -11,7 +11,7 @@
 \glossaryentry{SRP?\glossentry{SRP}|setentrycounter[]{page}"\glsnumberformat}{4}
 \glossaryentry{OCP?\glossentry{OCP}|setentrycounter[]{page}"\glsnumberformat}{4}
 \glossaryentry{LSP?\glossentry{LSP}|setentrycounter[]{page}"\glsnumberformat}{4}
-\glossaryentry{ISP?\glossentry{ISP}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{ISP?\glossentry{ISP}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{REST?\glossentry{REST}|setentrycounter[]{page}"\glsnumberformat}{5}
@@ -20,10 +20,10 @@
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{CRUD?\glossentry{CRUD}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{SRP?\glossentry{SRP}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{SRP?\glossentry{SRP}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{OCP?\glossentry{OCP}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{ISP?\glossentry{ISP}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{SRP?\glossentry{SRP}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{SRP?\glossentry{SRP}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{OCP?\glossentry{OCP}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{ISP?\glossentry{ISP}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{8}
@@ -33,8 +33,8 @@
 \glossaryentry{REST?\glossentry{REST}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{HTTP?\glossentry{HTTP}|setentrycounter[]{page}"\glsnumberformat}{18}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{KPI?\glossentry{KPI}|setentrycounter[]{page}"\glsnumberformat}{43}
-\glossaryentry{KPI?\glossentry{KPI}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{KPI?\glossentry{KPI}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{KPI?\glossentry{KPI}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{DIP?\glossentry{DIP}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{DTO?\glossentry{DTO}|setentrycounter[]{page}"\glsnumberformat}{47}
 \glossaryentry{DTO?\glossentry{DTO}|setentrycounter[]{page}"\glsnumberformat}{47}
