@@ -84,7 +84,7 @@
     \field{year}{2001}
   \endentry
 
-  \entry{oreilly.Microservices}{incollection}{}
+  \entry{oreilly.Microservices}{misc}{}
     \name{author}{2}{}{%
       {{hash=LM}{%
          family={Loukides},
@@ -109,6 +109,7 @@
     \verb{url}
     \verb https://www.oreilly.com/radar/microservices-adoption-in-2020/
     \endverb
+    \field{year}{2020}
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
@@ -545,7 +546,7 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
-  \entry{Fowler.2004}{incollection}{}
+  \entry{Fowler.2004}{misc}{}
     \name{author}{1}{}{%
       {{hash=FM}{%
          family={Fowler},
@@ -564,6 +565,8 @@
     \verb{url}
     \verb https://martinfowler.com/articles/injection.html
     \endverb
+    \field{year}{2004}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{Buschmann.2011}{book}{}
@@ -664,7 +667,7 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
-  \entry{Layered.SOLID}{incollection}{}
+  \entry{Layered.SOLID}{misc}{}
     \name{author}{1}{}{%
       {{hash=FS}{%
          family={Fronczak},
@@ -682,6 +685,236 @@
     \verb{url}
     \verb https://blog.ndepend.com/layered-architecture-solid-approach/
     \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Cockburn.Hexagonal}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CA}{%
+         family={Cockburn},
+         familyi={C\bibinitperiod},
+         given={Alistair},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{CA1}
+    \strng{fullhash}{CA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal architecture}
+    \verb{url}
+    \verb https://alistair.cockburn.us/hexagonal-architecture/
+    \endverb
+    \field{year}{2005}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{philipbrown.2014}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={philipbrown},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is Hexagonal Architecture?}
+    \verb{url}
+    \verb https://www.culttt.com/2014/12/31/hexagonal-architecture/
+    \endverb
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{hgraca.2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=h}{%
+         family={hgraca},
+         familyi={h\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{h1}
+    \strng{fullhash}{h1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{DDD, Hexagonal, Onion, Clean, CQRS, $\ldots$ How I put it all
+  together}
+    \verb{url}
+    \verb https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hex
+    \verb agonal-onion-clean-cqrs-how-i-put-it-all-together/
+    \endverb
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Griffin.2021b}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Domain-Driven Laravel}
+    \verb{doi}
+    \verb 10.1007/978-1-4842-6023-4{\textunderscore }17
+    \endverb
+    \field{isbn}{978-1-4842-6022-7}
+    \field{pages}{521\bibrangedash 544}
+    \field{title}{Hexagonal-Driven Development}
+    \list{location}{1}{%
+      {Berkeley, CA}%
+    }
+    \field{year}{2021}
+  \endentry
+
+  \entry{Alliaume.2018}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=AE}{%
+         family={Alliaume},
+         familyi={A\bibinitperiod},
+         given={Erwan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Roccaserra},
+         familyi={R\bibinitperiod},
+         given={S{\'e}bastien},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{AERS1}
+    \strng{fullhash}{AERS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal Architecture: three principles and an
+  implementation example}
+    \verb{url}
+    \verb https://blog.octo.com/hexagonal-architecture-three-principles-and-an-
+    \verb implementation-example/
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Martinez.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={Pablo},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal Architecture, there are always two sides to every
+  story}
+    \verb{url}
+    \verb https://medium.com/ssense-tech/hexagonal-architecture-there-are-alway
+    \verb s-two-sides-to-every-story-bc0780ed7d9c
+    \endverb
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Seemann.2013}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Seemann},
+         familyi={S\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Layers, Onions, Ports, Adapters: it's all the same}
+    \verb{url}
+    \verb https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all
+    \verb -the-same/
+    \endverb
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{bbom.1999}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=FB}{%
+         family={Foote},
+         familyi={F\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yoder},
+         familyi={Y\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FBYJ1}
+    \strng{fullhash}{FBYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Big Ball of Mud}
+    \verb{url}
+    \verb http://www.laputan.org/mud/
+    \endverb
+    \field{year}{1999}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Brandolini.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Brandolini},
+         familyi={B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{About Team Topologies and Context Mapping}
+    \verb{url}
+    \verb https://blog.avanscoperta.it/2021/04/22/about-team-topologies-and-con
+    \verb text-mapping/
+    \endverb
+    \field{year}{2021}
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 \enddatalist

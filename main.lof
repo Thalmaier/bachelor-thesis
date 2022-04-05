@@ -14,43 +14,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Grundstruktur einer Hexagonalen Architektur}}{8}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Beispiel einer Context-Map anhand des Personalwesens einer Firma}}{11}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Beispiel einer Context-Map anhand des Personalwesens einer Firma}}{10}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Context Diagramm der produktiven Checkout-Umgebung}}{19}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Context Diagramm der produktiven Checkout-Umgebung}}{18}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm eines Baskets}}{24}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Klassendiagramm eines Baskets}}{23}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Zugehöriges Klassendiagramm des Customer Value Objects}}{25}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Zugehöriges Klassendiagramm des Customer Value Objects}}{24}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Darstellung des Payment Process als Klassendiagramm}}{25}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Darstellung des Payment Process als Klassendiagramm}}{24}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Vergleich zwischen Value Object und Entity}}{26}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Vergleich zwischen Value Object und Entity}}{25}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B}}{29}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B}}{28}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C}}{32}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C}}{31}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}}{33}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C}}{32}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de}}{36}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de}}{35}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Aggregationsschnitt der Variante D}}{38}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Aggregationsschnitt der Variante D}}{37}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Darstellung einer Circular Dependency}}{40}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Darstellung einer Circular Dependency}}{39}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Performance-Ergebnisse aus dem ersten Testdurchlauf}}{43}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Performance-Ergebnisse aus dem ersten Testdurchlauf}}{42}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Median der Ausführungszeit und Datenbankoperationen eines Durchlaufes}}{43}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Median der Ausführungszeit und Datenbankoperationen eines Durchlaufes}}{42}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Performance-Ergebnisse bei Auslagerung der Datenbanksysteme}}{44}{}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Performance-Ergebnisse bei Auslagerung der Datenbanksysteme}}{43}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Performance-Ergebnisse unter Beachtung der Wartezeiten bei API-Aufrufe}}{45}{}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Performance-Ergebnisse unter Beachtung der Wartezeiten bei API-Aufrufe}}{44}{}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
