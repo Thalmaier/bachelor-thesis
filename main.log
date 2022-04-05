@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  5 APR 2022 03:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  5 APR 2022 03:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1684,14 +1684,9 @@ Package glossaries-extra Warning: Base acronym command \acrshort should not be
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
 28.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
 [5]
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
-' is 6 on input line 39.
+' is 6 on input line 37.
  (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=69, page=1, 282.30469pt x 
 188.96257pt>
@@ -1736,36 +1731,33 @@ Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
 )
-Overfull \hbox (0.20927pt too wide) in paragraph at lines 44--45
+Overfull \hbox (0.20927pt too wide) in paragraph at lines 42--43
 \OT1/lmss/m/n/10.95 (-20) rei-chen von ge-rin-gen Abh[]angigkeiten zwi-schen de
 n Kom-po-nen-ten. Da-durch sol-len Qua-lit[]atseigenschaften
  []
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 46
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 44
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 46
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 44
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 46
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 44
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-46.
+44.
 
-
-Underfull \vbox (badness 2717) has occurred while \output is active []
-
- [6 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf> <./svg-inkscape/Schichten
-architektur_svg-tex.pdf
+[6 <./svg-inkscape/Schichtenarchitektur_svg-tex.pdf> <./svg-inkscape/Schichtena
+rchitektur_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Schichtenarchitektur_svg-tex.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1788,16 +1780,16 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 53
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 50
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitektur_svg-tex.pd
-f' is 11 on input line 65.
+f' is 11 on input line 70.
 (svg-inkscape/HexagonaleArchitektur_svg-tex.pdf_tex
 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=81, page=1, 663.5791pt x 
 675.27281pt>
@@ -1876,41 +1868,40 @@ File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e11 used on input line 78.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-)
+) [7]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-75.
+80.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 75
-.
-
-[7]
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-76.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-76.
-
-
-Package glossaries-extra Warning: Base acronym command \acrshort should not be 
-used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-77.
-
-
-Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 77
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 80
 .
 
 
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+81.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+81.
+
+
+Package glossaries-extra Warning: Base acronym command \acrshort should not be 
+used with new abbreviation definitions. Use \glsxtrshort instead on input line 
+82.
+
+
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 81
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 82
+.
+
+
+Package glossaries-extra Warning: Base acronym command \acrlong should not be u
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 86
 .
 
 [8 <./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf> <./svg-inkscape/Hexagonal
@@ -1957,17 +1948,17 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/HexagonaleArchitektur_svg-tex
 >]
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
-sed with new abbreviation definitions. Use \glsxtrlong instead on input line 87
+sed with new abbreviation definitions. Use \glsxtrlong instead on input line 92
 .
 
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-87.
+92.
 
 [9]
 Package svg Info: Last page of `./svg-inkscape/ExampleDomainV2_svg-tex.pdf' is 
-13 on input line 102.
+13 on input line 107.
  (svg-inkscape/ExampleDomainV2_svg-tex.pdf_tex
 <./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=105, page=1, 565.73859pt x 280.
 79906pt>
@@ -2064,74 +2055,74 @@ ed on input line 87.
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-109.
+114.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
-
- []
-
-[10 <./svg-inkscape/ExampleDomainV2_svg-tex.pdf> <./svg-inkscape/ExampleDomainV
-2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[10] [11 <./svg-inkscape/ExampleDomainV2_svg-tex.pdf> <./svg-inkscape/ExampleDo
+mainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/ExampleDomainV2_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+>] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
@@ -3447,7 +3438,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  36272 strings out of 478659
  759835 string characters out of 2845920
- 1731297 words of memory out of 3000000
+ 1731327 words of memory out of 3000000
  53339 multiletter control sequences out of 15000+600000
  529415 words of font info for 260 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -3468,7 +3459,7 @@ x10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lms
 so10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 tt10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 tt8.pfb>
-Output written on main.pdf (81 pages, 1172446 bytes).
+Output written on main.pdf (81 pages, 1173938 bytes).
 PDF statistics:
  883 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

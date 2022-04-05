@@ -32,19 +32,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Schichtenarchitektur}{5}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Hexagonale Architektur}{7}{}%
+\contentsline {subsection}{\numberline {2.2.2}Hexagonale Architektur}{6}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Domain-Driven Design}{8}{}%
+\contentsline {section}{\numberline {2.3}Domain-Driven Design}{9}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Unterteilung der Problemebene in Domains und Subdomains}{9}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Bounded-Contexts und ihre Ubiquitous Language}{9}{}%
+\contentsline {subsection}{\numberline {2.3.2}Bounded-Contexts und ihre Ubiquitous Language}{10}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Kombination von Domain-Driven Design und Hexagonale Architektur}{10}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Value Object}{11}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.5}Entity}{11}{}%
+\contentsline {subsection}{\numberline {2.3.5}Entity}{12}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.6}Aggregate}{12}{}%
 \defcounter {refsection}{0}\relax 
@@ -54,7 +54,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.9}Factory}{13}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.10}Repository}{13}{}%
+\contentsline {subsection}{\numberline {2.3.10}Repository}{14}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{15}{}%
 \defcounter {refsection}{0}\relax 
