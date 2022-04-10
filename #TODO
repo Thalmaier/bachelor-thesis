@@ -23,10 +23,21 @@ TODOs:
         - Sehr oft "model" bzw. "Datenmodell"
 
     Software/Repo:
-        - Swagger Docu Aktuallisieren
         - README schreiben
         - calculateWithoutSaving should be named more correctly
 
 
     Überlegungen:
     - Alle Klassennamen in \emph ?
+
+Last Feedback:
+    Quellen für Planung (Vergleich zu anderen Checkout-Software)
+    Andere Aggregationsschnitt-Bücher
+    Bilder nach vorne evtl
+    Fazit: Schritte Aufzählen, Kernfakten, Gesamtergebnis, Vergleich zu anderen Domains, Datenbank und Wartezeiten in Fazit;
+    Quelle mit Onlineshop.
+    Ziele => Reverenz zu den einzelnen Kapiteln
+    Rausnehmen: Womöglich ergeben sich jedoch keine sinnvollen Änderungen der Produktivanwendung. Letzteres stellt dennoch eine wichtige Erkenntnis für das Team und Unternehmen dar, denn zukünftige Entwicklungstätigkeiten können mithilfe der verwendeten Vorgehensmodelle ähnliche Ergebnisse erzielen. 
+    Ubiquitous Language: Gibt es schon? Oder nur in Kontext von MMS
+    Assoziationsname oder Rolle in Klassendiagramm: Name als Rolle an den Empfänger; Trennung zwischen BasketId und OutletId raus; In Anhang;
+    Beliebtheit => Trendanalyse

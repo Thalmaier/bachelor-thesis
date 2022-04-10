@@ -73,38 +73,12 @@ Aufgrund der Simplizität und klaren Zuteilung der Value Objects lassen sich die
 	\item \textbf{Order: } {Speichert eine Referenz auf die Bestellung für einen Basket. Wird erst nach Zahlungsabschluss befüllt.}  
 }
 
+\comment{Mischen der Schreibweise Anhang A und Anhang 8.3 in Ordnung?}
+
 \vspace{1em}
-Die im Basket enthaltenen Klassen sind ebenfalls mit der gleichen Vorgehensweise im Anhang unter \ref{label:Daten-Modell} definiert worden, sofern sie nicht durch einen einfachen Text oder Aufzählungen darstellbar sind, bzw. ihre Inhalte keine nähere Erklärung erfordern. \\\\
+Die im Basket enthaltenen Klassen sind ebenfalls mit der gleichen Vorgehensweise in Anhang \ref{label:Daten-Modell} definiert worden, sofern sie nicht durch einen einfachen Text oder Aufzählungen darstellbar sind, bzw. ihre Inhalte keine nähere Erklärung erfordern. \\
 
-\comment{Im Anhang oder direkt darunter hinzufügen?}
-
-Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Figur \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Die Klasse \ul{Customer} und \ul{PaymentProcess} wurden aus Platzgründen in separate Diagramme \ref{fig:VO-Customer} und \ref{fig:VO-Payment} verlagert. Anzumerken ist, dass bei fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Speziell, ist der Kunde in diesem Kontext genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine Kundennummer, wodurch keine Zuweisung zwischen Kunde und mehreren Warenkörben existiert.
-
-\comment{Im Anhang oder direkt darunter hinzufügen?}
-
-\begin{figure}[htbp]
-	\centering
-	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectBasketDiagram.svg}
-	\caption{Klassendiagramm eines Baskets}
-	\label{fig:VO-Basket}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectCustomerDiagram.svg}
-	\caption{Zugehöriges Klassendiagramm des Customer Value Objects}
-	\label{fig:VO-Customer}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectPaymentDiagram.svg}
-	\caption{Darstellung des Payment Process als Klassendiagramm}
-	\label{fig:VO-Payment}
-\end{figure}
-
-\comment{Die Klassendiagramme sind noch sehr visuell 'unschön'...}
-
+Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Anhang \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Die Klasse \ul{Customer} und \ul{PaymentProcess} wurden aus Platzgründen in separate Klassendiagramme in Anhang \ref{fig:VO-Customer} und \ref{fig:VO-Payment} verlagert. Anzumerken ist, dass bei fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Speziell, ist der Kunde in diesem Kontext genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine Kundennummer, wodurch keine Zuweisung zwischen Kunde und mehreren Warenkörben existiert.
 
 \section{Bestimmung der Entities anhand ihrer Identität und Lebenszyklen}
 

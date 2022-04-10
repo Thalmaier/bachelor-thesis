@@ -1,10 +1,55 @@
+\def\insideAnhang{0}
 
-%TODO: Chapter mit Nummer im Inhaltsverzeichnis oder nicht?
+\newenvironment{anhang}{%
+	\ifnum\insideAnhang=1%
+	\errhelp={Let other blocks end at the beginning of the next block.}
+	\errmessage{Nested Alpha section not allowed}
+	\fi%
+	\def\insideAnhang{1}
+	
+	\renewcommand\figurename{%
+		\ifnum\insideAnhang=1% 
+		Anhang\else%
+		Abbildung\fi%
+	}%
+	
+	\ifnum\insideAnhang=1%
+	\def\table{\def\figurename{Anhang}\figure}
+	\let\endtable\endfigure
+	\fi%
+	
+	\renewcommand\thefigure{%
+		\ifnum\insideAnhang=1% 
+		\Alph{figure}\else%
+		\arabic{figure}\fi%
+	}%
+	
+}{%
+	\def\insideAnhang{0}
+}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{anhang}
+
 \chapter{Anhang}
 
-\section{Sourcecode des Proof-of-Concepts} \label{label:sourcecode}
+\section{Sourcecode des Proof-of-Concepts}
+\label{label:sourcecode}
 
-\note{TODO der Verlinkung auf das Repository}
+Die Binärdateien des Projekts wurden zur Versionierung in ein Git-Repository hinterlegt. Diese umfassen die Definition der Lasttests, API-Beschreibung, und den Quelltext, inklusive der analysierten Aggregationsschnitte. Das Repository kann unter dem Link '\url{https://github.com/Thalmaier/bachelor-thesis-checkout-poc}' aufgerufen werden. Alternativ ist in Anhang \ref{fig:Github} ein QR-Code zum Scannen mit einer Kamera abgebildet.
+
+\begin{figure}[h]
+	\centering
+	\vspace{0.8cm}
+	\includesvg[inkscapelatex=false, width=100px, height=100px]{svg/github qr code.svg}
+	\caption{QR-Code des GitHub Repositories}
+	\small URL: \hspace{0.3mm} \url{https://github.com/Thalmaier/bachelor-thesis-checkout-poc}
+	\label{fig:Github}
+\end{figure}
 
 \section{Aktivitätsdiagramme der Anwendungsfälle}
 
@@ -66,14 +111,16 @@
 
 \section{API-Endpunkte}
 
+Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem bietet bietet Anhang \ref{fig:REST-API} eine grafische Übersicht der Endpunkte für Variante A des Aggregate-Designs.
+
 \begin{figure}[h!]
 	\centering
-	\includesvg[inkscapelatex=false, width=\textwidth, height=0.9\textheight]{svg/REST API.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth, height=0.85\textheight]{svg/REST API.svg}
 	\caption{REST-API der Checkout-Software für diesen Proof-of-Concept}
 	\label{fig:REST-API}
 \end{figure}
 
-\section{Komplettes Datenmodell des Proof-of-Concepts} \label{label:Daten-Modell}
+\section{Vollständiges Datenmodell des Proof-of-Concepts} \label{label:Daten-Modell}
 
 \domainModell{Basket}{
 	\item \textbf{BasketId: } {Eindeutige Identifikation des Baskets zur Referenzierung durch die Touchpoints.}
@@ -180,9 +227,32 @@
 	\item \textbf{OrderRef: } {Referenz auf die Bestellung des Warenkorbs. Wird bei Abschluss des Zahlungsprozesses gesetzt.}
 }
 
+\section{Klassendiagramme des Datenmodells}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectBasketDiagram.svg}
+	\caption{Klassendiagramm eines Baskets}
+	\label{fig:VO-Basket}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectCustomerDiagram.svg}
+	\caption{Klassendiagramm des Customer Value Objects}
+	\label{fig:VO-Customer}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\includesvg[inkscapelatex=false, width=0.95\textwidth]{svg/ValueObjectPaymentDiagram.svg}
+	\caption{Klassendiagramm des Payment Process}
+	\label{fig:VO-Payment}
+\end{figure}
+
 \section{Ergebnisse des Lasttests} \label{label:Lasttests}
 
-Der Lasttest wurde mithilfe der Software 'JMeter' durchgeführt. Die Vorlage der jeweiligen Testfälle sind im Repository des Proof-of-Concepts zu finden unter \ref{label:sourcecode}. Ein Durchlauf bezieht sich auf einen typischen User Story, welche folgende Aspekte beinhaltet: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. 
+Der Lasttest wurde mithilfe der Software 'JMeter' durchgeführt. Die Vorlage der jeweiligen Testfälle sind im Repository des Proof-of-Concepts unter Anhang \ref{fig:Github} zu finden. Ein Durchlauf bezieht sich auf einen typischen User Story, welche folgende Aspekte beinhaltet: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. 
 
 Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
 \begin{itemize}[noitemsep,nolistsep]
@@ -382,6 +452,8 @@ Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
 	\end{table}
 \end{landscape}
 
+
+
 \begin{landscape}
 	\begin{table}[h!]
 		\centering
@@ -431,3 +503,5 @@ Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
 	\label{fig:performance-delay}
 	\end{table}
 \end{landscape}
+
+\end{anhang}

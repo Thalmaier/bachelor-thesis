@@ -303,6 +303,27 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{mms.Unternehmen}{misc}{}
+    \keyw{Einleitung}
+    \field{labeltitlesource}{title}
+    \field{title}{Unternehmensinformationen zu MediaMarktSaturn}
+    \verb{url}
+    \verb https://www.mediamarktsaturn.com/unternehmen
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{mms.technology}{misc}{}
+    \keyw{Einleitung}
+    \field{labeltitlesource}{title}
+    \field{title}{MediaMarktSaturn Technology Informationen (Firmeninternes
+  Dokument)}
+    \verb{url}
+    \verb https://mediasaturn.sharepoint.com/sites/tech-betriebsrat-msitis
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{Darcy.2010}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=DDP}{%

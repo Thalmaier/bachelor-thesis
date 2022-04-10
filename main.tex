@@ -63,6 +63,7 @@
 \usepackage{float} % Force placement of figures with [H]
 
 \usepackage{enumitem}
+\usepackage{tikz}
 
 % Blindtext
 \usepackage{blindtext} %TODO: Remove later
@@ -113,16 +114,20 @@ automark,		% Lebende Kolumnentitel
 \setabbreviationstyle[abbreviation]{short-desc}
 \makeglossaries
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\table{\def\figurename{Tabelle}\figure}
+\let\endtable\endfigure
 
+\usepackage{caption}
+\usepackage{newfloat}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Titelseite
 \titlehead{
@@ -166,6 +171,13 @@ automark,		% Lebende Kolumnentitel
 		sinngemäße Zitate als solche gekennzeichnet habe. 
 		
 		\vspace{5em}
+		
+		\begin{tikzpicture}[remember picture,overlay]
+			\node[xshift=87mm,yshift=-69mm, anchor=north west] at (current page.north west){%
+				\includegraphics[width=0.5\textwidth]{Unterschrift.png}};
+		\end{tikzpicture}
+		
+		
 		
 		Ingolstadt, \today
 		\hfill
@@ -216,10 +228,7 @@ automark,		% Lebende Kolumnentitel
 \newcommand{\centertitle}[1]{\vspace{0.8mm}#1\vspace{0.5mm}}
 \newcommand{\centertable}[1]{\vspace{0.1cm}#1\vspace{0.1cm}}
 
-\usepackage{array}
-
-\def\table{\def\figurename{Tabelle}\figure}
-\let\endtable\endfigure 
+\usepackage{array} 
 
 \newcommand{\ul}[1]{\emph{#1}}
 
