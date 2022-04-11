@@ -110,7 +110,9 @@
     \verb https://www.oreilly.com/radar/microservices-adoption-in-2020/
     \endverb
     \field{year}{2020}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Sampaio.2017}{inproceedings}{}
@@ -278,7 +280,9 @@
     \verb e_17-03-15.pdf
     \endverb
     \field{year}{2017}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Pigoski.2001}{misc}{}
@@ -300,7 +304,9 @@
     \verb https://sce.uhcl.edu/helm/SWEBOK_IEEE/data/swebok_chapter_06.pdf
     \endverb
     \field{year}{2001}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{mms.Unternehmen}{misc}{}
@@ -310,7 +316,9 @@
     \verb{url}
     \verb https://www.mediamarktsaturn.com/unternehmen
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{mms.technology}{misc}{}
@@ -321,7 +329,9 @@
     \verb{url}
     \verb https://mediasaturn.sharepoint.com/sites/tech-betriebsrat-msitis
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Darcy.2010}{inproceedings}{}
@@ -385,7 +395,9 @@
     \verb m/resources/articles/Principles_and_Patterns.pdf
     \endverb
     \field{year}{2000}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Martin.2018}{book}{}
@@ -456,7 +468,9 @@
     \verb https://web.archive.org/web/20150202200348/http://www.objectmentor.co
     \verb m/resources/articles/srp.pdf
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Meyer.2009}{book}{}
@@ -564,7 +578,9 @@
     \verb m/resources/articles/dip.pdf
     \endverb
     \field{year}{1996}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Fowler.2004}{misc}{}
@@ -587,7 +603,9 @@
     \verb https://martinfowler.com/articles/injection.html
     \endverb
     \field{year}{2004}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Buschmann.2011}{book}{}
@@ -685,7 +703,9 @@
     \field{isbn}{0135505828}
     \field{title}{Managing the data base environment}
     \field{year}{1983}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Layered.SOLID}{misc}{}
@@ -706,7 +726,9 @@
     \verb{url}
     \verb https://blog.ndepend.com/layered-architecture-solid-approach/
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Cockburn.Hexagonal}{misc}{}
@@ -728,7 +750,9 @@
     \verb https://alistair.cockburn.us/hexagonal-architecture/
     \endverb
     \field{year}{2005}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{philipbrown.2014}{misc}{}
@@ -748,7 +772,9 @@
     \verb https://www.culttt.com/2014/12/31/hexagonal-architecture/
     \endverb
     \field{year}{2014}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{hgraca.2017}{misc}{}
@@ -770,7 +796,9 @@
     \verb agonal-onion-clean-cqrs-how-i-put-it-all-together/
     \endverb
     \field{year}{2017}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Griffin.2021b}{incollection}{}
@@ -838,7 +866,9 @@
     \verb implementation-example/
     \endverb
     \field{year}{2018}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Martinez.2021}{misc}{}
@@ -862,7 +892,9 @@
     \verb s-two-sides-to-every-story-bc0780ed7d9c
     \endverb
     \field{year}{2021}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Seemann.2013}{misc}{}
@@ -885,7 +917,9 @@
     \verb -the-same/
     \endverb
     \field{year}{2013}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{bbom.1999}{misc}{}
@@ -913,7 +947,9 @@
     \verb http://www.laputan.org/mud/
     \endverb
     \field{year}{1999}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{Brandolini.2021}{misc}{}
@@ -936,7 +972,21 @@
     \verb text-mapping/
     \endverb
     \field{year}{2021}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mongodb.atomicity}{misc}{}
+    \keyw{Aggregatdesign}
+    \field{labeltitlesource}{title}
+    \field{title}{Atomicity and Transactions}
+    \verb{url}
+    \verb https://www.mongodb.com/docs/manual/core/write-operations-atomicity/
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
   \endentry
 \enddatalist
 \endinput

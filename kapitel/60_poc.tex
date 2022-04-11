@@ -50,7 +50,7 @@ Meist beinhalten diese Service folgende Anweisungen:
 	\item Umsetzung von technologischen Komponenten wie Event-Listener oder Caching
 \end{itemize}
 
-Ein simples Beispiel bietet uns der Basket-Item-Applicationservice. Dieser wird aufgerufen, sofern Änderungen an den Items durchgeführt werden sollen. Der in Figur \ref{lst:applicationservice} dargestellte Code behandelt die Entfernung eines Basket-Items aus dem Warenkorb.
+Ein simples Beispiel bietet uns der Basket-Item-Applicationservice. Dieser wird aufgerufen, sofern Änderungen an den Items durchgeführt werden sollen. Der in Figur \ref{lst:applicationservice} dargestellte Code behandelt die Entfernung eines Basket-Items.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Eine Beispielsfunktion des BasketItem-Applikationservice}, label={lst:applicationservice}, language=Kotlin]
@@ -65,12 +65,12 @@ function removeBasketItem(BasketId basketId, BasketItemId basketItemId) {
 \begin{itemize}[noitemsep,nolistsep]
 	\item Zeile 2: Laden eines Baskets anhand seiner Id durch ein Repository. 
 	\item Zeile 3: Aufruf des Basket-Aggregate-Root zum Entfernen des übergebenen Items. Innerhalb dieser Funktion werden zusätzlich Aufgaben erledigt, wie das Neuberechnen des Gesamtpreises. Sollte die Kalkulation zu komplex ausfallen, kann hier ein Berechnungsservice als Parameter übergeben werden, sodass der Basket für seine eigene Konsistenz verantwortlich ist. 
-	\item Zeile 4: Speichern des Warenkorbs mit den abgeänderten Daten.
+	\item Zeile 4: Speichern des Baskets mit den abgeänderten Daten.
 \end{itemize}
 
 \subsection{Aufteilen der Businesslogik zwischen Domainservices und Datenmodell}
 
-Aufgrund der Tatsache, dass die Software lediglich ein Aggregat und somit auch nur ein Aggregate-Root besitzt, müssen alle Operationen auf den Attributen des Baskets durch eine Methode im Warenkorb selbst geschehen. Anwendungsfälle, die es erfordern tiefer gelegene Objekte anzupassen, werden durch eine Kette von Funktionsaufrufen umgesetzt. Hierbei können alle notwendigen Invarianten überprüft werden, da das komplette Datenmodell geladen ist. Zur Trennung der Datenhaltung von den Funktionalitäten implementiert der Warenkorb ein Interface, welches jegliche von außen notwendigen Schnittstellen beinhaltet. Dadurch kann das darunterliegende Datenmodell ausgetauscht oder in Tests simuliert werden. Als Veranschaulichung für das Abändern der Fulfillment Methode dient der Codeauszug \ref{lst:basket}.
+Aufgrund der Tatsache, dass die Software lediglich ein Aggregat und somit auch nur ein Aggregate-Root besitzt, müssen alle Operationen auf den Attributen des Baskets durch eine Methode im Basket selbst geschehen. Anwendungsfälle, die es erfordern tiefer gelegene Objekte anzupassen, werden durch eine Kette von Funktionsaufrufen umgesetzt. Hierbei können alle notwendigen Invarianten überprüft werden, da das komplette Datenmodell geladen ist. Zur Trennung der Datenhaltung von den Funktionalitäten implementiert der Basket ein Interface, welches jegliche von außen notwendigen Schnittstellen beinhaltet. Dadurch kann das darunterliegende Datenmodell ausgetauscht oder in Tests simuliert werden. Als Veranschaulichung für das Abändern der Fulfillment Methode dient der Codeauszug \ref{lst:basket}.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:basket}, language=Kotlin]
@@ -116,7 +116,7 @@ function executePaymentProcessAndFinalizeBasket(BasketId basketId) {
 	\item Zeile 2: Laden des aktualisierten Baskets aus dem Repository.
 	\item Zeile 3-5: Weist die Durchführung zurück, sofern der Basket sich nicht in den erwarteten Zustand befindet. Dies kann auftreten, wenn die REST-API aufgerufen worden ist, ohne dass ein Zahlungsprozess zuvor gestartet wurde.
 	\item Zeile 6-8: Durchführung des Bezahlvorgangs. Die erforderliche Aufrufreihenfolge stellt einen Teil des Domainwissens dar und begründet die Zuteilung der Klasse in die Gruppe der Domainservices.
-	\item Zeile 9: Speichern des angepassten Warenkorbs.
+	\item Zeile 9: Speichern des angepassten Baskets.
 	\item Zeile 10: Erstellen eines Bestellvorgangs durch einen separaten Domainservice.
 \end{itemize}
 

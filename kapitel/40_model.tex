@@ -17,12 +17,12 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 
 {\large \textbf{Ubiquitous Language des Domain-Modells:}}
 \begin{itemize}[topsep=-3px]
-	\item \textbf{Basket (Warenkorb): } {Repräsentiert den gesamten Warenkorb mit allen Artikel, Kundeninformationen, Preisen etc.}
-	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar, welcher sich an den Prozessen orientiert. Kann die Werte 'open', 'frozen', 'finalized' und 'canceled' annehmen. Der Startzustand ist hierbei 'open'.}
-	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person oder Firma sein. Ein nicht-eingeloggter Kunde im Onlineshop wird der zugehörige Warenkorb durch seine eindeutige Session-ID zugewiesen.} 
+	\item \textbf{Basket: } {Repräsentiert die Funktionalität eines Warenkorbs mit allen Artikel, Kundeninformationen, Preisen etc.}
+	\item \textbf{Basket Status: } {Stellt den aktuellen Zustand des Baskets dar, welcher sich an den Prozessen orientiert. Kann die Werte 'Open', 'Frozen', 'Finalized' und 'Canceled' annehmen. Der Startzustand ist hierbei 'Open'.}
+	\item \textbf{Customer (Kunde): } {Ein Endkunde des Onlineshops oder im Markt. Kann eine zivile Person oder Firma sein. Ein nicht-eingeloggter Kunde im Onlineshop wird der zugehörige Basket durch seine eindeutige Session-ID zugewiesen.} 
 	\item \textbf{Product (Artikel, Ware): } {Ein Artikel aus dem Warenbestand, welcher zu Verkauf steht. Kann ebenfalls für eine Gruppierung von mehreren Artikeln stehen.}
 	\item \textbf{Outlet: } {Repräsentiert einen Markt oder den länderbezogenen Onlineshop, welche durch eine einzigartige Outlet-Nummer referenziert werden.}
-	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf ein Artikel des Warenkorbs. Wird aus technischen Gründen benötigt, um einen Eintrag zu bearbeiten oder entfernen.}
+	\item \textbf{BasketItemId: } {Eine, innerhalb eines Baskets, eindeutige Referenz auf einen enthaltenen Artikel. Wird aus technischen Gründen benötigt, um einen Eintrag zu bearbeiten oder entfernen.}
 	\item \textbf{Net Amount (Nettobetrag): } {Ein Nettobetrag mit Währung.}
 	\item \textbf{VAT (Steuersatz): } {Der Steuersatz eines zugehörigen Nettobetrag.}
 	\item \textbf{Gross Amount (Bruttobetrag): } {Der Bruttobetrag eines Preises errechnet aus dem Steuersatz und Nettobetrag. Die Währung gleicht die des Nettobetrags.}
@@ -32,9 +32,9 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 		\item \textit{Delivery: } {Zustellung der Ware an den Kunden durch einen Vertragspartner.}
 		\item \textit{Packstation: } {Lieferung der Ware an eine ausgewählte Packstation durch einen Vertragspartner.}
 	\end{itemize}
-	\item \textbf{Payment Process (Zahlungsprozess): } {Beinhaltet alle relevanten Informationen für das Bezahlen eines Warenkorbs, wie ausgewählte Zahlungsarten und Beträge.}
+	\item \textbf{Payment Process (Zahlungsprozess): } {Beinhaltet alle relevanten Informationen für das Bezahlen eines Baskets, wie ausgewählte Zahlungsarten und Beträge.}
 	\item \textbf{Payment: } {Zahlung des Kunden inklusive Betrag und Zahlungsmethode, wie Barzahlung oder Paypal.}
-	\item \textbf{Order: } {Bestellung eines Warenkorbs nach Abschluss des Zahlvorgangs, welche durch nachfolgende Systeme angelegt und verwaltet wird.}
+	\item \textbf{Order: } {Bestellung eines Baskets nach Abschluss des Zahlvorgangs, welche durch nachfolgende Systeme angelegt und verwaltet wird.}
 \end{itemize}
 
 \vspace{2em}
@@ -43,12 +43,12 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 \begin{itemize}[topsep=-3px]
 	\item \textbf{Touchpoint: } { Eine Komponente, welche mit der Checkout-Software interagiert, wie Kassensysteme im Markt, die Onlineshop-Seite oder Handy-App.}
 	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlende jedoch notwendige Werte.}
-	\item \textbf{Basket Finalization: } {Erfolgt automatisch nach erfolgreichem Zahlvorgang und setzt den Warenkorb in den Zustand 'finalized'. Danach folgt die Reservierung der Produkte im Basket und das Anlegen einer neuen Bestellung.}
-	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets mithilfe des Zustandswechsel auf 'canceled'. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. Der Warenkorb muss sich zuvor im Zustand 'open' befinden. }
+	\item \textbf{Basket Finalization: } {Erfolgt automatisch nach erfolgreichem Zahlvorgang und setzt den Baskets in den Zustand 'finalized'. Danach folgt die Reservierung der Produkte und das Anlegen einer neuen Bestellung.}
+	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets mithilfe des Zustandswechsel auf 'canceled'. Nach Cancellation dürfen keine weiteren Änderungen an den Basket durchgeführt werden. Der Zustand muss zuvor 'Open' sein. }
 	\item \textbf{Basket Creation: } {Explizite oder Implizite Erstellung eines neuen Baskets. Findet automatisch statt sofern noch kein Basket für den Customer existiert, sowie nach einer Basket Finalization.}
 	\item \textbf{Basket Calculation: } {Das Berechnen der Summe von beinhalteten Preisen des Baskets, sowie die Kalkulation von Bruttobeträgen für alle Artikel. Beträge aus unterschiedlichen Mehrwertsteuern müssen weiterhin aus rechtlichen Gründen einzeln verwiesen werden können.}
 	\item \textbf{High Volume Ordering: } {Die Bestellung von Artikeln in hoher Stückzahl. Aufgrund von Businessanforderungen soll es nur begrenzt möglich sein, dass ein Kunde in einem Basket oder wiederholt das gleiche Produkt mehrfach kauft.}
-	\item \textbf{Payment Initialization: } {Start des Zahlungsvorgangs, nachdem der Warenkorb auf invalide Zustände überprüft wird. Nur möglich auf einen offenen Basket, welcher Produkte und Payments enthält. Resultiert in den Zustand 'frozen', wodurch keine weiteren Inhaltsänderungen an den Warenkorb durchgeführt werden dürfen.}
+	\item \textbf{Payment Initialization: } {Start des Zahlungsvorgangs, nachdem das Datenmodell auf invalide Zustände überprüft wird. Nur möglich auf einen offenen Basket, welcher Produkte und Payments enthält. Resultiert in den Zustand 'Frozen', wodurch keine weiteren Inhaltsänderungen an den Basket durchgeführt werden dürfen.}
 	\item \textbf{Payment Execution: } {Durchführung des Zahlungsvorgangs eines gefrorenen Basket. Anschließend findet die Basket Finalization statt.}
 \end{itemize}
 \vspace{2em}
@@ -61,14 +61,14 @@ Aufgrund der Simplizität und klaren Zuteilung der Value Objects lassen sich die
 
 \domainModell{Basket-Klasse}{
 	\item \textbf{BasketId: } {Eindeutige Identifikation des Baskets zur Referenzierung durch die Touchpoints.}
-	\item \textbf{OutletId: } {Eine Referenz zugehörig zu dem Markt oder Onlineshop, durch welchen der Warenkorb angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten.}
-	\item \textbf{BasketStatus: } {Repräsentiert den aktuellen Zustands des Warenkorbs. Mögliche Werte sind OPEN, FROZEN, FINALIZED und CANCELED.} 
+	\item \textbf{OutletId: } {Eine Referenz zugehörig zu dem Markt oder Onlineshop, durch welchen der Basket angelegt wurde. Unerlässlich für die Bestimmung von unter anderem Lagerbeständen, Lieferzeiten, Fulfillment-Optionen und Versandkosten.}
+	\item \textbf{BasketStatus: } {Repräsentiert den aktuellen Zustands des Baskets. Mögliche Werte sind OPEN, FROZEN, FINALIZED und CANCELED.} 
 	\item \textbf{Customer: } {Speichert Kundendaten (IdentifiedCustomer) oder Session-Informationen (SessionCustomer).} 
 	\item \textbf{FulfillmentType: } {Lieferart, wie PICKUP oder DELIVERY.} 
 	\item \textbf{BillingAddress: } {Adresse für die Rechnungserstellung.} 
 	\item \textbf{ShippingAddress: } {Adresse für die Warenlieferung.} 
-	\item \textbf{BasketItems: } {Liste aller enthaltenen Produkten im Warenkorb und ihren zugehörigen Informationen.}
-	\item \textbf{BasketCalculationResult: } {Beinhaltet die berechneten Werte des Warenkorbs, wie Nettobetrag, Bruttobetrag und Mehrwertsteuer. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
+	\item \textbf{BasketItems: } {Liste aller enthaltenen Produkten und ihren zugehörigen Informationen.}
+	\item \textbf{BasketCalculationResult: } {Beinhaltet die berechneten Werte des Basket, wie Nettobetrag, Bruttobetrag und Mehrwertsteuer. Die Speicherung dieser Werte wäre technisch nicht notwendig, spart aber an Rechenzeit ein, da nicht bei jeder Abfrage des Basket dieser Wert neu berechnet werden muss.}
 	\item \textbf{PaymentProcess: } {Bindet alle Informationen zur erfolgreichen Abwicklung des Zahlungsprozesses.}
 	\item \textbf{Order: } {Speichert eine Referenz auf die Bestellung für einen Basket. Wird erst nach Zahlungsabschluss befüllt.}  
 }
@@ -78,7 +78,7 @@ Aufgrund der Simplizität und klaren Zuteilung der Value Objects lassen sich die
 \vspace{1em}
 Die im Basket enthaltenen Klassen sind ebenfalls mit der gleichen Vorgehensweise in Anhang \ref{label:Daten-Modell} definiert worden, sofern sie nicht durch einen einfachen Text oder Aufzählungen darstellbar sind, bzw. ihre Inhalte keine nähere Erklärung erfordern. \\
 
-Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Anhang \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Die Klasse \ul{Customer} und \ul{PaymentProcess} wurden aus Platzgründen in separate Klassendiagramme in Anhang \ref{fig:VO-Customer} und \ref{fig:VO-Payment} verlagert. Anzumerken ist, dass bei fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Speziell, ist der Kunde in diesem Kontext genau einem Warenkorb zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine Kundennummer, wodurch keine Zuweisung zwischen Kunde und mehreren Warenkörben existiert.
+Durch diese Datenstruktur ist es möglich, alle geforderten Anwendungsfälle korrekt abzuarbeiten. Um eine klare Gesamtübersicht zu bieten, wurde das Modell in mehrere Klassendiagramme unterteilt. In Anhang \ref{fig:VO-Basket} ist das Ergebnis dieses Unterkapitels abgebildet. Die Klasse \ul{Customer} und \ul{PaymentProcess} wurden aus Platzgründen in separate Klassendiagramme in Anhang \ref{fig:VO-Customer} und \ref{fig:VO-Payment} verlagert. Anzumerken ist, dass bei fehlender Multiplizität eine Eins-zu-Eins Beziehung vorliegt. Speziell, ist der Kunde in diesem Kontext genau einem Basket zugewiesen, da alleinig die Daten abgespeichert werden, nicht aber seine Kundennummer, wodurch keine Zuweisung zwischen Kunde und mehreren Warenkörben existiert.
 
 \section{Bestimmung der Entities anhand ihrer Identität und Lebenszyklen}
 

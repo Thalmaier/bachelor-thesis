@@ -74,7 +74,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.7}Initiierung des Bezahlprozesses und Einfrieren des Baskets}{17}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.8}Ausführung des Bezahlprozesses und Finalisierung des Baskets}{18}{}%
+\contentsline {subsection}{\numberline {3.1.8}Ausführung des Bezahlprozesses und Finalisierung des Baskets}{17}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.9}Resultierende API-Schnittstellen aus den Anwendungsfällen}{18}{}%
 \defcounter {refsection}{0}\relax 
