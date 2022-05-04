@@ -1,21 +1,22 @@
-\glossaryentry{Scrum?\glossentry{Scrum}|setentrycounter[]{page}"\glsnumberformat}{3}
-\glossaryentry{Sprint?\glossentry{Sprint}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{Anemic Domain Model?\glossentry{Anemic Domain Model}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{Scrum?\glossentry{Scrum}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{Sprint?\glossentry{Sprint}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{Kohäsion?\glossentry{Kohasion}|setentrycounter[]{page}"\glsnumberformat}{4}
 \glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{Immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{11}
-\glossaryentry{Immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{12}
-\glossaryentry{Invariante?\glossentry{Invariante}|setentrycounter[]{page}"\glsnumberformat}{12}
-\glossaryentry{Information-Expert-Prinzip?\glossentry{Information-Expert-Prinzip}|setentrycounter[]{page}"\glsnumberformat}{12}
-\glossaryentry{Lost Update?\glossentry{Lost Update}|setentrycounter[]{page}"\glsnumberformat}{13}
-\glossaryentry{Stakeholder?\glossentry{Stakeholder}|setentrycounter[]{page}"\glsnumberformat}{15}
-\glossaryentry{Boilerplate?\glossentry{Boilerplate}|setentrycounter[]{page}"\glsnumberformat}{18}
+\glossaryentry{Immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{Invariante?\glossentry{Invariante}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{Information-Expert-Prinzip?\glossentry{Information-Expert-Prinzip}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{Lost Update?\glossentry{Lost Update}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{Stakeholder?\glossentry{Stakeholder}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{Boilerplate-Code?\glossentry{Boilerplate-Code}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{Product Owner?\glossentry{Product Owner}|setentrycounter[]{page}"\glsnumberformat}{21}
 \glossaryentry{Immutable?\glossentry{immutable}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{Lazy Loading?\glossentry{Lazy Loading}|setentrycounter[]{page}"\glsnumberformat}{26}
 \glossaryentry{Collection?\glossentry{Collection}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{Race Condition?\glossentry{Race Condition}|setentrycounter[]{page}"\glsnumberformat}{30}
-\glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{Race Condition?\glossentry{Race Condition}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{Connection-Pool?\glossentry{Connection-Pool}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{Serialisierung?\glossentry{Serialisierung}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Boilerplate?\glossentry{Boilerplate}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{Serialisierung?\glossentry{Serialisierung}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{Boilerplate-Code?\glossentry{Boilerplate-Code}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{Dependency Injection?\glossentry{DI}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{technische Schulden?\glossentry{technische Schulden}|setentrycounter[]{page}"\glsnumberformat}{50}

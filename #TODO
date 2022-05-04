@@ -7,36 +7,23 @@ TODOs:
         - Compension wie GRAPHQL etc.
         - Fazit schluss ziehen auf Einleitung
         - Empfehlungen Fazit; mitnehmen für andere
-    - Alle Kapitel überarbeiten
-        - Bild der Hexagonalen Architektur
-    - BA in Word einfügen um rechtschreibfehler zu finden
     - Alle Titel überarbeiten
-    - Alle Ressourcen verlinken in BA (Swagger, Repo, etc.)
-    - Erklären von Acronymen
-    - Quellen hinzufügen
     - Überprüfen
-        - dokumentenorientierten immer so geschrieben?
-        - \textbf statt \subsubsection
-        - ",da"/ "hingegen", "weshalb", "jedoch" ersetzten durch andere Wörter
-        - schreibweise von Sourcecode überprüfen
-        - Aggregate Root Schreibweise einheitlich
-        - Sehr oft "model" bzw. "Datenmodell"
+        - Einheitliche Schreibweise
+        - Acronym und Glossary richtig?
+        - Titel, Anhang richtig
+        - Source code prüfen
+        - Funktionsweise der Applikation prüfen
+        - API-Contract prügen
+        - Alle Comments und Notes entfernt?
+    - Richtige Formatierung (Wie wird die Bachelorarbeit gedruckt?)
 
     Software/Repo:
-        - README schreiben
         - calculateWithoutSaving should be named more correctly
-
-
-    Überlegungen:
-    - Alle Klassennamen in \emph ?
 
 Last Feedback:
     Quellen für Planung (Vergleich zu anderen Checkout-Software)
     Andere Aggregationsschnitt-Bücher
-    Bilder nach vorne evtl
     Fazit: Schritte Aufzählen, Kernfakten, Gesamtergebnis, Vergleich zu anderen Domains, Datenbank und Wartezeiten in Fazit;
     Quelle mit Onlineshop.
-    Ziele => Reverenz zu den einzelnen Kapiteln
     Ubiquitous Language: Gibt es schon? Oder nur in Kontext von MMS
-    Assoziationsname oder Rolle in Klassendiagramm: Name als Rolle an den Empfänger; Trennung zwischen BasketId und OutletId raus; In Anhang;
-    Beliebtheit => Trendanalyse

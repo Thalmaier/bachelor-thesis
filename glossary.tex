@@ -8,16 +8,14 @@
 \newacronym{DIP}{DIP}{Dependency-Inversion-Prinzip}
 
 
-\newacronym[description={Data-Transfer-Object. Ein Objekt zum Transport von Daten innerhalb der Applikation ohne jegliche implementierte Logik.}]{DTO}{DTO}{Data-Transfer-Object}
-
+\newacronym[description={Data-Transfer-Object. Ein Objekt zum Transport von Daten innerhalb der Applikation ohne jegliche implementierte Logik. \cite[S. 401ff.]{Fowler.2011}}]{DTO}{DTO}{Data-Transfer-Object}
 \newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}
-\newacronym[description={Representational State Transfer. Die Transition von Zuständen der Clients wird durch Abrufen einer Ressource des Servers erreicht. }]{REST}{REST}{Representational State Transfer} %TODO: https://de.wikipedia.org/wiki/Representational_State_Transfer#cite_note-fielding_experiences-1
+\newacronym[description={Representational State Transfer. Die Transition von Zuständen der Clients wird durch Abrufen einer Ressource des Servers erreicht. \cite{Fielding.2000} }]{REST}{REST}{Representational State Transfer}
 \newacronym{CRUD}{CRUD}{Create Read Update Delete}
-\newacronym[description={Command and Query Responsibility Segregation. Trennung des Datenmodells in Befehle für Schreiboperationen und Abfragen für Leseoperationen zur Erreichung einer Aufteilung der Zuständigkeiten und einer erhöhte Performance.}]{CQRS}{CQRS}{Command and Query Responsibility Segregation}
+\newacronym[description={Command and Query Responsibility Segregation. Trennung des Datenmodells in Befehle für Schreiboperationen und Abfragen für Leseoperationen zur Erreichung einer Aufteilung der Zuständigkeiten und erhöhter Performance. \cite[S. 223ff.]{CQRS_2013}}]{CQRS}{CQRS}{Command and Query Responsibility Segregation}
 \newacronym{KPI}{KPI}{Key-Performance-Indicator}
 
-%TODO: Kommentar Stefano
-\newglossaryentry{Serialisierung}{name={Serialisierung}, %TODO: Quelle? https://www.duden.de/rechtschreibung/serialisieren
+\newglossaryentry{Serialisierung}{name={Serialisierung},
 	description={Konvertierung von Datenobjekte in ein sequenzielles Format}
 }
 \newglossaryentry{Deserialisierung}{name={Deserialisierung}, 
@@ -27,27 +25,27 @@
 	description={Ein möglicher Ablauf des kompletten Businessprozesses aus Sicht des Kunden}
 }
 \newglossaryentry{Race Condition}{name={Race Condition},
-	description={Zwei gleichzeitg bzw. nahezu gleichzeitig stattfindende Prozesse bedingen sich gegenseitig und führen zu nicht definierten Zuständen}}
-\newglossaryentry{Boilerplate}{name=Boilerplate,
-	description={Ein Teil einer Software, welcher viele Zeilen an Code einnimmt, obwohl dadurch nur wenig bis gar keine Funktion bereitgestellt wird}
+	description={Zwei gleichzeitg bzw. nahezu gleichzeitig stattfindende Prozesse bedingen sich gegenseitig und führen zu nicht vorgesehenen Verhalten \cite{racecondition}}}
+\newglossaryentry{Boilerplate-Code}{name=Boilerplate-Code,
+	description={Ein Codeabschnitt, welcher viele Zeilen im Quelltext einnimmt bzw. wiederholt in diesem vorkommt, obwohl hierdurch nur wenige bis gar keine Funktionen bereitgestellt werden \cite{Lammel.2003, Zaveri.2018}}
 }
 \newglossaryentry{Stakeholder}{name=Stakeholder,
-	description={Eine Gruppe von Personen mit relevanten Interesse und Einfluss auf eine Sache bzw. Projekt}
+	description={Ein Zusammenschluss von Personen außerhalb des Teams mit relevanten Interesse und/oder Einfluss auf das Projekt \cite{scrum.glossary}}
 }
 \newglossaryentry{Lost Update}{name=Lost Update,
-	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen innerhalb einer Datenbank auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden, welche jedoch als Ausgangspunkt noch auf dem alten Stand durchgeführt worden ist}
+	description={Phänomen, welches bei zeitgleichen Operationen auf den gleichen Datensätzen innerhalb einer Datenbank auftreten kann. Die angepassten Datensätze einer Transaktion gehen verloren, da sie direkt von einer zweiten Transaktion überschrieben werden. Die zweite Transaktion wurde jedoch noch auf dem alten Datenstand durchgeführt \cite{lostupdate}}
 }
 \newglossaryentry{Information-Expert-Prinzip}{name=Information-Expert-Prinzip,
-	description={Die Verantwortung eines Anliegens liegt bei der Komponente, welche die notwendigen Informationen zur Erfüllung besitzt}
+	description={Die Verantwortung einer Funktionalität soll bei der Komponente liegen, welche die notwendigen Informationen zur erfolgreichen Abwicklung besitzt \cite[S. 218]{Larman.2009}}
 }
 \newglossaryentry{Invariante}{name=Invariante,
-	description={Bedinung, welche auch nach Datenanpassungen jederzeit erfüllt sein muss}
+	description={Businessbedingung, welche jederzeit erfüllt sein muss \cite[S. 353]{Vernon.2015}}
 }
 \newglossaryentry{Kohasion}{name=Kohäsion,
-	description={Grad der logischen inneren Zusammengehörigkeit einer Komponente. Komponente, welche nur eng beinaheliegende Aufgaben erfüllen, haben einen hohen Grad an Kohäsion}
+	description={Grad der logischen inneren Zusammengehörigkeit einer Komponente. Komponente, welche nur eng beinaheliegende Aufgaben erfüllen, haben einen hohen Grad an Kohäsion \cite[S. 95]{Yourdon.1979}}
 }
 \newglossaryentry{DI}{name={Dependency Injection},
-	description={Eine erweiterte Form von Inversion-of-Control, welches Abhängigkeiten erst zur Laufzeit des Programmes hinzufügt}
+	description={Ein spezifischeres Inversion-of-Control-Prinzip, welches Implementierungen zu passenden Abstraktionen erst zur Laufzeit des Programmes lädt \cite{Fowler.2004}}
 }
 \newglossaryentry{immutable}{name=Immutable, text=immutable,
 	description={Die Unveränderlichkeit von Werten bzw. Variablen}
@@ -56,19 +54,23 @@
 	description={Ein agiles Vorgehensmodell, welches hohen Fokus auf kontinuierliche Verbesserung in einem geregelten Zyklus legt}
 }
 \newglossaryentry{Sprint}{name=Sprint,
-	description={Ein wiederkehrender festgelegter Zeitraum in Scrum, indem ein vorher definierter Umfang an Arbeitspakten abgearbeitet wird}
+	description={Ein wiederkehrender festgelegter Zeitraum in Scrum, indem ein vorher definierter Umfang an Arbeitspakten abgearbeitet wird \cite{scrum.sprint}}
 }
 
 \newglossaryentry{Product Owner}{name=Product Owner,
-	description={Eine Scrum-Rolle, welche den Funktionsumfang des Produktes unter Beachtung der wirtschaftlichen Aspekte bestimmt}
+	description={Eine Scrum-Rolle, welche die Verantwortung über die Arbeitsergebnisse des Teams besitzt und hierbei ihre Produktivität maximiert \cite{po.scrum}}
 }
 \newglossaryentry{Lazy Loading}{name={Lazy Loading},
-	description={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald auf diese zugegriffen werden, wodurch unnötiges Zuvorladen minimiert wird}}
+	description={Das Laden von Daten aus einem Datenspeicher oder sonstigen Quellen wird erst durchgeführt, sobald auf diese zugegriffen werden, wodurch unnötiges Zuvorladen minimiert wird \cite[S. 200]{Fowler.2011}}}
 \newglossaryentry{Collection}{name={Collection},
-	description={Analog zu den Tabellen in einer relationalen Datenbank, sind Collections eine NoSQL spezifische Benennung von gesammelten persistierten Datensätzen}}
+	description={MonogDB persistiert Datensätze in Collections, welche gleichbedeutend sind mit Tabellen einer relationalen Datenbank \cite{mongodb_collections}}}
 \newglossaryentry{Connection-Pool}{name={Connection-Pool},
-	description={Eine Gruppe von Verbindungen zu Datenbanken oder APIs zur Performance-Optimierung und Isolierung, indem zuvor erzeugte Verbindungen wiederverwendet werden}
+	description={Eine Gruppe von Verbindungen zu Datenbanken oder APIs zur Performance-Optimierung und Isolierung, indem zuvor erzeugte Verbindungen wiederverwendet werden \cite{Sohel.2017}}
 }
-%\newglossaryentry{Enumeration}{name=Enumeration,
-%	description={Eine Auflistung von konstanten, unveränderlichen Werten}
-%}
+
+\newglossaryentry{Anemic Domain Model}{name={Anemic Domain Model},
+	description={Ein Anti-Pattern in welchem die Domain-Objekte keine bzw. kaum Businesslogik implementieren \cite{Fowler.AnemicDomainModel}}
+}
+\newglossaryentry{technische Schulden}{name={technische Schulden},
+	description={Bewusst akzeptierte Vernachlässigung von qualitätsschadenden Eigenschaften einer Software \cite{technical.dept}}
+}

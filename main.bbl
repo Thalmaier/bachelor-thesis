@@ -17,6 +17,442 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{CQRS_2013}{book}{}
+    \name{author}{5}{}{%
+      {{hash=BD}{%
+         family={Betts},
+         familyi={B\bibinitperiod},
+         given={Dominic},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dominguez},
+         familyi={D\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Melnik},
+         familyi={M\bibinitperiod},
+         given={Grigori},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Simonazzi},
+         familyi={S\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Subramanian},
+         familyi={S\bibinitperiod},
+         given={Mani},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDDJMGSFSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{1st}
+    \field{isbn}{1621140164}
+    \field{title}{Exploring CQRS and Event Sourcing: A Journey into High
+  Scalability, Availability, and Maintainability with Windows Azure}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Fielding.2000}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FRT}{%
+         family={Fielding},
+         familyi={F\bibinitperiod},
+         given={Roy\bibnamedelima Thomas},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FRT1}
+    \strng{fullhash}{FRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Architectural Styles and the Design of Network-based Software
+  Architectures}
+    \verb{url}
+    \verb https://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm
+    \endverb
+    \field{year}{2000}
+    \field{urlday}{23}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.AnemicDomainModel}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AnemicDomainModel}
+    \verb{url}
+    \verb https://www.martinfowler.com/bliki/AnemicDomainModel.html
+    \endverb
+    \field{year}{2003}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Lammel.2003}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LR}{%
+         family={L{\"a}mmel},
+         familyi={L\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JSP}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Simon\bibnamedelima Peyton},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=LP}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Zhong},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{ACM Press}}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{LRJSP1}
+    \strng{fullhash}{LRJSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2003 ACM SIGPLAN international
+  workshop on Types in languages design and implementation - TLDI '03}
+    \verb{doi}
+    \verb 10.1145/604174.604179
+    \endverb
+    \field{isbn}{1581135262}
+    \field{pages}{26}
+    \field{title}{Scrap your boilerplate}
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{Zaveri.2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ZM}{%
+         family={Zaveri},
+         familyi={Z\bibinitperiod},
+         given={Meet},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{ZM1}
+    \strng{fullhash}{ZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is boilerplate and why do we use it? Necessity of coding
+  style guide}
+    \verb{url}
+    \verb https://medium.com/free-code-camp/whats-boilerplate-and-why-do-we-use
+    \verb -it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mongodb_collections}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MongoDB},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Databases and Collections}
+    \verb{url}
+    \verb https://www.mongodb.com/docs/manual/core/databases-and-collections/
+    \endverb
+    \field{urlday}{23}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Sohel.2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Sohel},
+         familyi={S\bibinitperiod},
+         given={Shaikh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Pachghare},
+         familyi={P\bibinitperiod},
+         given={Vinod},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{SSPV1}
+    \strng{fullhash}{SSPV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{05}
+    \field{title}{A Comparative Study of Database Connection Pooling Strategy}
+    \field{volume}{04}
+    \field{journaltitle}{International Research Journal of Engineering and
+  Technology}
+    \field{year}{2017}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.2004}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Inversion of Control Containers and the Dependency Injection
+  pattern}
+    \verb{url}
+    \verb https://martinfowler.com/articles/injection.html
+    \endverb
+    \field{year}{2004}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Larman.2009}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Larman},
+         familyi={L\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Prentice Hall}}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{3. ed., 12. print}
+    \field{isbn}{978-0131489066}
+    \field{title}{Applying UML and patterns: An introduction to object-oriented
+  analysis and design and iterative development}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2009}
+  \endentry
+
+  \entry{Vernon.2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VV}{%
+         family={Vernon},
+         familyi={V\bibinitperiod},
+         given={Vaughn},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{VV1}
+    \strng{fullhash}{VV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{Fourth printing}
+    \field{isbn}{9780321834577}
+    \field{title}{Implementing domain-driven design}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Yourdon.1979}{book}{}
+    \name{author}{2}{}{%
+      {{hash=YE}{%
+         family={Yourdon},
+         familyi={Y\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CLL}{%
+         family={Constantine},
+         familyi={C\bibinitperiod},
+         given={Larry\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice-Hall}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{YECLL1}
+    \strng{fullhash}{YECLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-13-854471-3}
+    \field{title}{Structured design: Fundamentals of a discipline of computer
+  program and systems design}
+    \list{location}{1}{%
+      {Englewood Cliffs, NJ}%
+    }
+    \field{year}{1979}
+  \endentry
+
+  \entry{Fowler.2011}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rice},
+         familyi={R\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FMRD1}
+    \strng{fullhash}{FMRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{17. print}
+    \field{isbn}{978-0321127426}
+    \field{series}{The Addison-Wesley signature series}
+    \field{title}{Patterns of enterprise application architecture}
+    \list{location}{1}{%
+      {Boston, Mass.}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{lostupdate}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{Lost-Update}
+    \verb{url}
+    \verb https://wikis.gm.fh-koeln.de/Datenbanken/Lost-Update
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{po.scrum}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{What is a Product Owner?}
+    \verb{url}
+    \verb scrum.org/resources/what-is-a-product-owner
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{racecondition}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=I}{%
+         family={IBM},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{title}{Secure programmer: Prevent race conditions: Resource
+  contention can be used against you}
+    \verb{url}
+    \verb https://web.archive.org/web/20090201132237/http://www-128.ibm.com/dev
+    \verb eloperworks/linux/library/l-sprace.html
+    \endverb
+    \field{year}{2004}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scrum.sprint}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{What is a Sprint in Scrum?}
+    \verb{url}
+    \verb https://www.scrum.org/resources/what-is-a-sprint-in-scrum
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scrum.glossary}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{Scrum Glossary}
+    \verb{url}
+    \verb https://www.scrum.org/Resources/Scrum-Glossary
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{Tamai.1992}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=TT}{%
@@ -208,31 +644,6 @@
       {Upper Saddle River, NJ}%
     }
     \field{year}{2011}
-  \endentry
-
-  \entry{Vernon.2015}{book}{}
-    \name{author}{1}{}{%
-      {{hash=VV}{%
-         family={Vernon},
-         familyi={V\bibinitperiod},
-         given={Vaughn},
-         giveni={V\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Addison-Wesley}%
-    }
-    \strng{namehash}{VV1}
-    \strng{fullhash}{VV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{edition}{Fourth printing}
-    \field{isbn}{9780321834577}
-    \field{title}{Implementing domain-driven design}
-    \list{location}{1}{%
-      {Upper Saddle River, NJ}%
-    }
-    \field{year}{2015}
   \endentry
 
   \entry{Microservice.DDD.2017}{misc}{}
@@ -583,31 +994,6 @@
     \field{urlyear}{2022}
   \endentry
 
-  \entry{Fowler.2004}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=FM}{%
-         family={Fowler},
-         familyi={F\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \keyw{Grundlagen}
-    \strng{namehash}{FM1}
-    \strng{fullhash}{FM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Inversion of Control Containers and the Dependency Injection
-  pattern}
-    \verb{url}
-    \verb https://martinfowler.com/articles/injection.html
-    \endverb
-    \field{year}{2004}
-    \field{urlday}{10}
-    \field{urlmonth}{04}
-    \field{urlyear}{2022}
-  \endentry
-
   \entry{Buschmann.2011}{book}{}
     \name{author}{3}{}{%
       {{hash=BF}{%
@@ -645,39 +1031,6 @@
     \field{volume}{/ Frank Buschmann ... ; Vol. 4}
     \list{location}{1}{%
       {Chichester}%
-    }
-    \field{year}{2011}
-  \endentry
-
-  \entry{Fowler.2011}{book}{}
-    \name{author}{2}{}{%
-      {{hash=FM}{%
-         family={Fowler},
-         familyi={F\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=RD}{%
-         family={Rice},
-         familyi={R\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Addison-Wesley}%
-    }
-    \keyw{Grundlagen}
-    \strng{namehash}{FMRD1}
-    \strng{fullhash}{FMRD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{edition}{17. print}
-    \field{isbn}{978-0321127426}
-    \field{series}{The Addison-Wesley signature series}
-    \field{title}{Patterns of enterprise application architecture}
-    \list{location}{1}{%
-      {Boston, Mass.}%
     }
     \field{year}{2011}
   \endentry
@@ -977,6 +1330,87 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{Gorodinski.2012}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GL}{%
+         family={Gorodinski},
+         familyi={G\bibinitperiod},
+         given={Lev},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{GL1}
+    \strng{fullhash}{GL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Services in Domain-Driven Design (DDD)}
+    \verb{url}
+    \verb http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-desig
+    \verb n-ddd/
+    \endverb
+    \field{year}{2012}
+    \field{urlday}{19}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Vernon.2011}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VV}{%
+         family={Vernon},
+         familyi={V\bibinitperiod},
+         given={Vaughn},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{VV1}
+    \strng{fullhash}{VV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Effective Aggregate Design Part I: Modeling a Single
+  Aggregate}
+    \verb{url}
+    \verb https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Ve
+    \verb rnon_2011_1.pdf
+    \endverb
+    \field{year}{2011}
+    \field{urlday}{20}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.2014}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{FMLJ1}
+    \strng{fullhash}{FMLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microservices: a definition of this new architectural term}
+    \verb{url}
+    \verb https://martinfowler.com/articles/microservices.html
+    \endverb
+    \field{year}{2014}
+    \field{urlday}{22}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{mongodb.atomicity}{misc}{}
     \keyw{Aggregatdesign}
     \field{labeltitlesource}{title}
@@ -985,6 +1419,149 @@
     \verb https://www.mongodb.com/docs/manual/core/write-operations-atomicity/
     \endverb
     \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Graefe.2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GG}{%
+         family={Graefe},
+         familyi={G\bibinitperiod},
+         given={Goetz},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{GG1}
+    \strng{fullhash}{GG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Revisiting optimistic and pessimistic concurrency control}
+    \verb{url}
+    \verb https://www.labs.hpe.com/techreports/2016/HPE-2016-47.pdf
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{22}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Suryanarayana.2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=SG}{%
+         family={Suryanarayana},
+         familyi={S\bibinitperiod},
+         given={Girish},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Samarthyam},
+         familyi={S\bibinitperiod},
+         given={Ganesh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Tushar},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Morgan Kaufmann an imprint of Elsevier}}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{SGSGST1}
+    \strng{fullhash}{SGSGST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-12-801397-7}
+    \field{series}{Software development and engineering}
+    \field{title}{Refactoring for software design smells: Managing technical
+  debt}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{DI_2007}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RE}{%
+         family={Razina},
+         familyi={R\bibinitperiod},
+         given={Ekaterina},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Janzen},
+         familyi={J\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACTA Press}%
+    }
+    \keyw{spring framework, dependency injection, maintainability}
+    \strng{namehash}{REJD1}
+    \strng{fullhash}{REJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Software maintenance consumes around 70% of the software life cycle.
+  Improving software maintainability could save software developers significant
+  time and money. This paper examines whether the pattern of dependency
+  injection significantly reduces dependencies of modules in a piece of
+  software, therefore making the software more maintainable. This hypothesis is
+  tested with 20 sets of open source projects from sourceforge.net, where each
+  set contains one project that uses the pattern of dependency injection and
+  one similar project that does not use the pattern. The extent of the
+  dependency injection use in each project is measured by a new Number of DIs
+  metric created specifically for this analysis. Maintainability is measured
+  using coupling and cohesion metrics on each project, then performing
+  statistical analysis on the acquired results. After completing the analysis,
+  no correlation was evident between the use of dependency injection and
+  coupling and cohesion numbers. However, a trend towards lower coupling
+  numbers in projects with a dependency injection count of 10% or more was
+  observed.%
+    }
+    \field{booktitle}{Proceedings of the 11th IASTED International Conference
+  on Software Engineering and Applications}
+    \field{isbn}{9780889867062}
+    \field{pages}{7–12}
+    \field{series}{SEA '07}
+    \field{title}{Effects of Dependency Injection on Maintainability}
+    \list{location}{1}{%
+      {Cambridge, Massachusetts}%
+    }
+    \field{year}{2007}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Lindooren.2007}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LR}{%
+         family={Lindooren},
+         familyi={L\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{LR1}
+    \strng{fullhash}{LR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Testability of Dependency injection: An attempt to find out
+  how the testability of source}
+    \verb{url}
+    \verb https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1999&re
+    \verb p=rep1&type=pdf
+    \endverb
+    \field{year}{2007}
+    \field{urlday}{23}
     \field{urlmonth}{04}
     \field{urlyear}{2022}
   \endentry

@@ -1,85 +1,101 @@
 {
     "InternalPDFViewer": {
-        "Embedded": false,
-        "File": ""
+        "Embedded": true,
+        "File": "main.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "main.tex",
+        "CurrentFile": "kapitel/80_anhang.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 36,
+                "Col": 12,
                 "EditorGroup": 0,
                 "FileName": "main.tex",
-                "FirstLine": 127,
+                "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 164
+                "Line": 8
             },
             {
-                "Col": 0,
+                "Col": 1,
+                "EditorGroup": 0,
+                "FileName": "glossary.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 72
+            },
+            {
+                "Col": 11,
                 "EditorGroup": 0,
                 "FileName": "kapitel/00_abstract.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 31
             },
             {
-                "Col": 0,
+                "Col": 736,
                 "EditorGroup": 0,
                 "FileName": "kapitel/10_einleitung.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 5
             },
             {
-                "Col": 0,
+                "Col": 424,
                 "EditorGroup": 0,
                 "FileName": "kapitel/20_grundlagen.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 126
             },
             {
-                "Col": 0,
+                "Col": 1361,
                 "EditorGroup": 0,
                 "FileName": "kapitel/30_planung.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 10
             },
             {
-                "Col": 0,
+                "Col": 133,
                 "EditorGroup": 0,
                 "FileName": "kapitel/40_model.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 13
             },
             {
-                "Col": 0,
+                "Col": 35,
                 "EditorGroup": 0,
                 "FileName": "kapitel/50_aggregatdesign.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 315
             },
             {
-                "Col": 0,
+                "Col": 519,
                 "EditorGroup": 0,
                 "FileName": "kapitel/60_poc.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 135
             },
             {
-                "Col": 0,
+                "Col": 63,
                 "EditorGroup": 0,
                 "FileName": "kapitel/70_fazit.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 5
+                "Line": 7
+            },
+            {
+                "Col": 51,
+                "EditorGroup": 0,
+                "FileName": "kapitel/80_anhang.tex",
+                "FirstLine": 427,
+                "FoldedLines": "",
+                "Line": 484
             }
         ],
         "MasterFile": ""
