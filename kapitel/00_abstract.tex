@@ -3,49 +3,114 @@
 
 
 {
-	\selectlanguage{english}
+	
 	\raggedbottom
 	\centering
-	\vspace{0.9cm}
-	\large
-	\textbf{Abstract}
 	
-	\adjustbox{minipage=0.88\textwidth}{
-		\vspace{1.5cm} 
-		
-		In the e-commerce sector software projects fulfill complex business requirements and therefore need a stable architecture. This thesis examines an online shop checkout domain and how the bounded context can be implemented utilizing hexagonal architecture and domain-driven design. The focus is placed on the design of the aggregates. Various data models are analyzed and evaluated based on their complexity, performance, parallelism and client-friendliness. Generally, big aggregates suffer from lowered parallelism, however can be implemented more easily since all required information are loaded at the same time from the database. Splitting the data model into different aggregates entails the use of eventual consistency or transaction over more than one aggregate. Eventual consistency rises the complexity of the checkout software, on the other hand cross-aggregate transactions make the usage of multiple database hosts more difficult. The performance of the individual aggregate designs is measured with a load test. On average applications with one cohesive aggregate process more requests per second than a model using separated aggregates. Conclusively, the checkout software profits from a higher performance and reduced complexity by implementing only one aggregate. If a common use case is the mutation of one resource by distinct processes simultaneously then the affected objects need to be placed in different aggregates. 
-		
-	\par}
+	\selectlanguage{ngerman}
+	
+	\large
+	{
+		\vspace*{\fill}
+		\adjustbox{minipage=0.88\textwidth}{
+			\begin{center}
+				\textbf{Erklärung zur Bachelorarbeit}
+			\end{center}
+			\vspace{1em}  
+			
+			Ich erkläre hiermit, dass ich diese Bachelorarbeit selbständig verfasst,
+			noch nicht anderweitig für Prüfungszwecke vorgelegt, keine anderen als
+			die angegebenen Quellen und Hilfsmittel benutzt sowie wörtliche und
+			sinngemäße Zitate als solche gekennzeichnet habe. 
+			
+			\vspace{4em}
+			
+			\begin{tikzpicture}[remember picture,overlay]
+				\node[xshift=95mm,yshift=-136mm, anchor=north west] at (current page.north west){%
+					\includegraphics[width=0.5\textwidth]{Unterschrift.png}};
+			\end{tikzpicture}
+			
+			Ingolstadt, \today
+			\hfill
+			\rule{220pt}{1pt} \\
+			
+			\hfill
+			Simon Thalmaier 
+			
+			\par}
+		\vfill
+	}
+	
+	
+	
+	\pagebreak
+	
+	
+	
+	\selectlanguage{english}
+	\large
+	
+	{
+		\vspace*{\fill}
+		\adjustbox{minipage=0.88\textwidth}{
+			\begin{center}
+				\textbf{Abstract}
+			\end{center}
+			\vspace{1em}  
+			
+			In the e-commerce sector software projects fulfill complex business requirements and therefore need a stable architecture. This thesis examines an online shop checkout domain and how the bounded context can be implemented utilizing hexagonal architecture and domain-driven design. The focus is placed on the design of the aggregates. Various data models are analyzed and evaluated based on their complexity, performance, parallelism and client-friendliness. Generally, big aggregates suffer from lowered parallelism, however can be implemented more easily since all required information are loaded at the same time from the database. Splitting the data model into different aggregates entails the use of eventual consistency or transaction over more than one aggregate. Eventual consistency rises the complexity of the checkout software, on the other hand cross-aggregate transactions make the usage of multiple database hosts more difficult. The performance of the individual aggregate designs is measured with a load test. On average applications with one cohesive aggregate process more requests per second than a model using separated aggregates. Conclusively, the checkout software profits from a higher performance and reduced complexity by implementing only one aggregate. If a common use case is the mutation of one resource by distinct processes simultaneously then the affected objects need to be placed in different aggregates. 
+			
+			\par}
+		\vfill
+	}
+	
+	
  	\pagebreak
 
 	\selectlanguage{ngerman}
-	\vspace{0.9cm}
 	\large
-	\textbf{Zusammenfassung}
 	
-	\adjustbox{minipage=0.88\textwidth}{
-		\vspace{1.5cm} 
-		
-		Softwareprojekte im E-Commerce-Bereich erfüllen komplexe Businessanforderungen und benötigen aufgrund dessen eine stabile Architektur. Dieses Projekt untersucht die Domain eines Onlineshop-Checkouts und wie der Bounded-Context mithilfe einer Hexagonalen Architektur und Domain-Driven Design implementiert werden kann. Besonders liegt der Aggregationsschnitt im Fokus, wobei unterschiedliche Datenmodelle analysiert und anhand von Komplexität, Performance, Parallelität und Client-Freundlichkeit bewertet werden. Große Aggregates leiden generell unter verringerter Parallelität, jedoch bietet ein zusammengehöriges Datenmodell eine vereinfachte Umsetzung von Businessanforderungen, da stets alle Informationen aus der Datenbank geladen werden. Die Aufteilung in mehrere Aggregates erzwingt die Anwendung von Eventueller Konsistenz oder einer Transaktion über mehrere Aggregates. Eventuelle Konsistenz erhöht die Komplexität der Checkout-Software, wohingegen eine aggregate-übergreifende Transaktion die Verwendung von unterschiedlichen Datenbank-Hosts erschwert. Anhand eines Lasttests wird die Performance der Designansätze betrachtet. Im Durchschnitt verarbeitet die Applikation mit einem zusammengehörigen Datenmodell mehr Anfragen pro Sekunde als unter Verwendung getrennter Aggregates. Als Fazit dieser Arbeit wird argumentativ begründet, dass innerhalb einer Checkout-Software die Vorteile eines Designs mit einem einzigen Aggregate dank der erhöhten Performance und reduzierten Komplexität überwiegen. Falls eine zeitgleiche Bearbeitung einer Ressource durch unterschiedliche Prozesse ein gängiger Anwendungsfall ist, müssen die betroffenen Objekte in separate Aggregates verlagert werden.
-		  
-	\par}
+	{
+		\vspace*{\fill}
+		\adjustbox{minipage=0.88\textwidth}{
+			\begin{center}
+				\textbf{Zusammenfassung}
+			\end{center}
+			
+			\vspace{1em}  
+			
+			Softwareprojekte im E-Commerce-Bereich erfüllen komplexe Businessanforderungen und benötigen aufgrund dessen eine stabile Architektur. Dieses Projekt untersucht die Domain eines Onlineshop-Checkouts und wie der Bounded-Context mithilfe einer Hexagonalen Architektur und Domain-Driven Design implementiert werden kann. Besonders liegt der Aggregationsschnitt im Fokus, wobei unterschiedliche Datenmodelle analysiert und anhand von Komplexität, Performance, Parallelität und Client-Freundlichkeit bewertet werden. Große Aggregates leiden generell unter verringerter Parallelität, jedoch bietet ein zusammengehöriges Datenmodell eine vereinfachte Umsetzung von Businessanforderungen, da stets alle Informationen aus der Datenbank geladen werden. Die Aufteilung in mehrere Aggregates erzwingt die Anwendung von Eventueller Konsistenz oder einer Transaktion über mehrere Aggregates. Eventuelle Konsistenz erhöht die Komplexität der Checkout-Software, wohingegen eine aggregate-übergreifende Transaktion die Verwendung von unterschiedlichen Datenbank-Hosts erschwert. Anhand eines Lasttests wird die Performance der Designansätze betrachtet. Im Durchschnitt verarbeitet die Applikation mit einem zusammengehörigen Datenmodell mehr Anfragen pro Sekunde als unter Verwendung getrennter Aggregates. Als Fazit dieser Arbeit wird argumentativ begründet, dass innerhalb einer Checkout-Software die Vorteile eines Designs mit einem einzigen Aggregate dank der erhöhten Performance und reduzierten Komplexität überwiegen. Falls eine zeitgleiche Bearbeitung einer Ressource durch unterschiedliche Prozesse ein gängiger Anwendungsfall ist, müssen die betroffenen Objekte in separate Aggregates verlagert werden.
+			
+			\par}
+		\vfill
+	}
+	
+	
+	
 	\pagebreak
 
 	\selectlanguage{ngerman}
-	\vspace{0.9cm}
 	\large
-	\textbf{Danksagung}
 	
-	\adjustbox{minipage=0.88\textwidth}{
-		\vspace{1.5cm} 
+	{
+		\vspace*{\fill}
+		\adjustbox{minipage=0.88\textwidth}{
+			\begin{center}
+				\textbf{Danksagung}
+			\end{center}
+			\vspace{1em} 
+			
+			
+			Mein Dank gilt der Firma MediaMarktSaturn Technology, welche mir ermöglicht hat als Werkstudent über die vergangenen drei Jahre zu arbeiten und das Thema für diese Bachelorarbeit bereitgestellt hat. Besonders bedanke ich mich bei Sebastian Jurjanz für die Unterstützung in meiner Ausbildung und während dieses Projektes. Zusätzlich ist die Bearbeitung des Forschungsthemas in diesem Umfange durch Stefano Lucka dank seiner Betreuung und seinem Feedback ermöglicht worden. \\
+			
+			Aufseiten der Technischen Hochschule Ingolstadt bedanke ich mich bei \text{Professor Dr. Sebastian Apel} für das konstruktive Feedback und die umfangreiche Beratung. 
+			
+			
+			\par}
+		\vfill
+	}
+	
 		
-		
-		Mein Dank gilt der Firma MediaMarktSaturn Technology, welche mir ermöglicht hat als Werkstudent über die vergangenen drei Jahre zu arbeiten und das Thema für diese Bachelorarbeit bereitgestellt hat. Besonders bedanke ich mich bei Sebastian Jurjanz für die Unterstützung in meiner vorgehenden Ausbildung und während dieses Projektes. Zusätzlich ist die Bearbeitung des Forschungsthemas in diesem Umfange durch Stefano Lucka dank seiner Betreuung und seinem Feedback ermöglicht worden. \\\\
-		
-		Aufseiten der Technischen Hochschule Ingolstadt bedanke ich mich bei Professor Dr. Sebastian Apel für das konstruktive Feedback und die umfangreiche Beratung. 
-		
-		
-	\par}
 	\pagebreak
 	
 \par}

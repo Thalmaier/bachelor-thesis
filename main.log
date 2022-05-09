@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  6 MAY 2022 02:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  10 MAY 2022 01:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1446,7 +1446,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-250.
+218.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1467,20 +1467,20 @@ LaTeX Warning: Unused global option(s):
 (kapitel/80_anhang.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 218.
+LaTeX Font Info:    ... okay on input line 218.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1508,18 +1508,18 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count509
-LaTeX Info: Redefining \microtypecontext on input line 250.
-Package microtype Info: Applying patch `item' on input line 250.
-Package microtype Info: Applying patch `toc' on input line 250.
-Package microtype Info: Applying patch `eqnum' on input line 250.
-Package microtype Info: Applying patch `footnote' on input line 250.
+LaTeX Info: Redefining \microtypecontext on input line 218.
+Package microtype Info: Applying patch `item' on input line 218.
+Package microtype Info: Applying patch `toc' on input line 218.
+Package microtype Info: Applying patch `eqnum' on input line 218.
+Package microtype Info: Applying patch `footnote' on input line 218.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 250.
+LaTeX Info: Redefining \showhyphens on input line 218.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1586,8 +1586,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'location' + 'address'.
 
 )
-Package biblatex Info: Reference section=0 on input line 250.
-Package biblatex Info: Reference segment=0 on input line 250.
+Package biblatex Info: Reference section=0 on input line 218.
+Package biblatex Info: Reference segment=0 on input line 218.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: `float' package detected.
@@ -1597,9 +1597,9 @@ Package newfloat Info: `float' package detected.
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
 File: bilder//thi_logo_cropped.pdf Graphic file (type pdf)
 <use bilder//thi_logo_cropped.pdf>
-Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 255.
+Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 225.
 (pdftex.def)             Requested size: 229.81075pt x 101.48807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 255
+LaTeX Font Info:    Trying to load font information for U+msa on input line 225
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1608,7 +1608,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 255
+LaTeX Font Info:    Trying to load font information for U+msb on input line 225
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1619,7 +1619,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 Class scrreprt Warning: non empty \uppertitleback ignored by \maketitle
-(scrreprt)              in `twoside=false' mode on input line 255.
+(scrreprt)              in `twoside=false' mode on input line 225.
 
 [1
 
@@ -1635,50 +1635,70 @@ i_logo_cropped.pdf>]
 \openout2 = `kapitel/00_abstract.aux'.
 
  (kapitel/00_abstract.tex
+<bilder//Unterschrift.png, id=15, 597.23125pt x 331.2375pt>
+File: bilder//Unterschrift.png Graphic file (type png)
+<use bilder//Unterschrift.png>
+Package pdftex.def Info: bilder//Unterschrift.png  used on input line 30.
+(pdftex.def)             Requested size: 202.23457pt x 112.16437pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 20.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 47.
 
 [1
 
 
 
-]
+ <./bilder//Unterschrift.png>]
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 33.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 69.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+Package scrbase Warning: Usage of deprecated command `\ifstr'.
+(scrbase)                The command has been renamed because of a
+(scrbase)                recommendation of The LaTeX Project Team.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 91.
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
+Underfull \hbox (badness 3713) in paragraph at lines 106--107
+[]\OT1/lmss/m/n/12 (+20) Aufseiten der Tech-ni-schen Hoch-schu-le In-gol-stadt 
+be-dan-ke ich mich bei
  []
 
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 50.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 115.
 
-[3])
-Package tocbasic Info: character protrusion at toc deactivated on input line 26
+
+[4])
+Package tocbasic Info: character protrusion at toc deactivated on input line 23
 2.
  (main.toc
-Overfull \hbox (2.58478pt too wide) detected at line 13
+Overfull \hbox (2.58478pt too wide) detected at line 12
  []\OT1/lmss/bx/n/10.95 VIII
  []
 
-[4
+[5
 \babel@aux{ngerman}{}
 \babel@aux{english}{}
+\babel@aux{ngerman}{}
 \babel@aux{english}{}
 
 
@@ -1692,17 +1712,17 @@ Overfull \hbox (2.58478pt too wide) detected at line 13
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 265.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 235.
 
 
-[5]
-Package tocbasic Info: character protrusion at lof deactivated on input line 26
+[6]
+Package tocbasic Info: character protrusion at lof deactivated on input line 23
 8.
  (main.lof)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
- [6
+ [7
 
 ]
 
@@ -1716,31 +1736,26 @@ Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Loading of package `scrhack' may help to
 (scrreprt)              avoid this warning, if you are using a
 (scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@listhead interface on input line 275.
+(scrreprt)              deprecated \float@listhead interface on input line 245.
 
 
 (main.lol)
 \tf@lol=\write10
 \openout10 = `main.lol'.
 
- [7
+ [8
 
-] (main.acr) [8
+] (main.acr) [9
 
 ] (main.gls
 Overfull \hbox (42.1214pt too wide) in paragraph at lines 2--34
 [] 
  []
 
-[9
+[10
 
-]
-
-LaTeX Warning: Citation 'technical.dept' on page 10 undefined on input line 52.
-
-
-)
-Overfull \hbox (11.96419pt too wide) in paragraph at lines 34--286
+])
+Overfull \hbox (11.96419pt too wide) in paragraph at lines 34--256
 [] 
  []
 
@@ -1748,10 +1763,10 @@ Overfull \hbox (11.96419pt too wide) in paragraph at lines 34--286
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 287.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 257.
 
 
-[10]
+[11]
 \openout2 = `kapitel/10_einleitung.aux'.
 
  (kapitel/10_einleitung.tex
@@ -1773,11 +1788,6 @@ Class scrreprt Warning: \float@addtolists detected!
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
 [1
 
 
@@ -1795,7 +1805,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 289.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 259.
 
 
 [3]
@@ -1932,42 +1942,42 @@ used with new abbreviation definitions. Use \glsxtrshort instead on input line
 Package svg Info: Last page of `./svg-inkscape/Schichtenarchitektur_svg-tex.pdf
 ' is 6 on input line 33.
 (svg-inkscape/Schichtenarchitektur_svg-tex.pdf_tex
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=63, page=1, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=69, page=1, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=64, page=2, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=70, page=2, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 2 used on input line 58.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=65, page=3, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=71, page=3, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 3 used on input line 60.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=66, page=4, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=72, page=4, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 4 used on input line 62.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=67, page=5, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=73, page=5, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf , page
 5 used on input line 64.
 (pdftex.def)             Requested size: 229.81075pt x 153.82867pt.
-<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=68, page=6, 282.30469pt x 
+<./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, id=74, page=6, 282.30469pt x 
 188.96257pt>
 File: ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Schichtenarchitektur_svg-tex.pdf, page 6>
@@ -2048,77 +2058,77 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 Package svg Info: Last page of `./svg-inkscape/HexagonaleArchitektur_svg-tex.pd
 f' is 11 on input line 52.
  (svg-inkscape/HexagonaleArchitektur_svg-tex.pdf_tex
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=78, page=1, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=84, page=1, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e1 used on input line 56.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=79, page=2, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=85, page=2, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e2 used on input line 58.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=80, page=3, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=86, page=3, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e3 used on input line 60.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=81, page=4, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=87, page=4, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e4 used on input line 62.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=82, page=5, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=88, page=5, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e5 used on input line 64.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=83, page=6, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=89, page=6, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e6 used on input line 66.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=84, page=7, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=90, page=7, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e7 used on input line 68.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=85, page=8, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=91, page=8, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e8 used on input line 71.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=86, page=9, 663.5791pt x 
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=92, page=9, 663.5791pt x 
 675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e9 used on input line 74.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=87, page=10, 663.5791pt x
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=93, page=10, 663.5791pt x
  675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf , pag
 e10 used on input line 76.
 (pdftex.def)             Requested size: 275.7757pt x 280.63484pt.
-<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=88, page=11, 663.5791pt x
+<./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, id=94, page=11, 663.5791pt x
  675.27281pt>
 File: ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/HexagonaleArchitektur_svg-tex.pdf, page 11>
@@ -2236,91 +2246,91 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package svg Info: Last page of `./svg-inkscape/ExampleDomainV2_svg-tex.pdf' is 
 13 on input line 89.
  (svg-inkscape/ExampleDomainV2_svg-tex.pdf_tex
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=102, page=1, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=108, page=1, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page1 use
 d on input line 56.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=103, page=2, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=109, page=2, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page2 use
 d on input line 59.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=104, page=3, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=110, page=3, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page3 use
 d on input line 61.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=105, page=4, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=111, page=4, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page4 use
 d on input line 64.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=106, page=5, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=112, page=5, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page5 use
 d on input line 67.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=107, page=6, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=113, page=6, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page6 use
 d on input line 70.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=108, page=7, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=114, page=7, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page7 use
 d on input line 73.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=109, page=8, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=115, page=8, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page8 use
 d on input line 76.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=110, page=9, 565.73859pt x 280.
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=116, page=9, 565.73859pt x 280.
 79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page9 use
 d on input line 79.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=111, page=10, 565.73859pt x 280
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=117, page=10, 565.73859pt x 280
 .79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page10 us
 ed on input line 81.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=112, page=11, 565.73859pt x 280
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=118, page=11, 565.73859pt x 280
 .79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page11 us
 ed on input line 83.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=113, page=12, 565.73859pt x 280
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=119, page=12, 565.73859pt x 280
 .79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf , page12 us
 ed on input line 85.
 (pdftex.def)             Requested size: 390.68108pt x 193.91437pt.
-<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=114, page=13, 565.73859pt x 280
+<./svg-inkscape/ExampleDomainV2_svg-tex.pdf, id=120, page=13, 565.73859pt x 280
 .79906pt>
 File: ./svg-inkscape/ExampleDomainV2_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ExampleDomainV2_svg-tex.pdf, page 13>
@@ -2337,7 +2347,8 @@ used with new abbreviation definitions. Use \glsxtrshort instead on input line
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 99.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 101.
+
 
 [10 <./svg-inkscape/ExampleDomainV2_svg-tex.pdf> <./svg-inkscape/ExampleDomainV
 2_svg-tex.pdf
@@ -2393,7 +2404,7 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ExampleDomainV2_svg-tex.pdf):
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 119.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 114.
 
 
 [11]
@@ -2401,16 +2412,16 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 133.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 126.
 
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
@@ -2419,7 +2430,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 291.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 261.
 
 
 [13]
@@ -2433,7 +2444,7 @@ chapter 3.
 
 
 ]
-<./svg-inkscape/AD Basketabruf_svg-raw.pdf, id=134, 482.55281pt x 181.42781pt>
+<./svg-inkscape/AD Basketabruf_svg-raw.pdf, id=140, 482.55281pt x 181.42781pt>
 File: ./svg-inkscape/AD Basketabruf_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD Basketabruf_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD Basketabruf_svg-raw.pdf  used on inp
@@ -2447,7 +2458,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 36.
 
 [15 <./svg-inkscape/AD Basketabruf_svg-raw.pdf>]
-<./svg-inkscape/AD AddProduct_svg-raw.pdf, id=152, 482.55281pt x 301.8778pt>
+<./svg-inkscape/AD AddProduct_svg-raw.pdf, id=158, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/AD AddProduct_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD AddProduct_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD AddProduct_svg-raw.pdf  used on inpu
@@ -2461,7 +2472,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 47.
 
 [16 <./svg-inkscape/AD AddProduct_svg-raw.pdf>]
-<./svg-inkscape/AD InitPayment_svg-raw.pdf, id=170, 482.55281pt x 241.65282pt>
+<./svg-inkscape/AD InitPayment_svg-raw.pdf, id=176, 482.55281pt x 241.65282pt>
 File: ./svg-inkscape/AD InitPayment_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD InitPayment_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD InitPayment_svg-raw.pdf  used on inp
@@ -2475,7 +2486,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 67.
 
 [17 <./svg-inkscape/AD InitPayment_svg-raw.pdf>]
-<./svg-inkscape/AD ExecPayment_svg-raw.pdf, id=188, 482.55281pt x 301.8778pt>
+<./svg-inkscape/AD ExecPayment_svg-raw.pdf, id=194, 482.55281pt x 301.8778pt>
 File: ./svg-inkscape/AD ExecPayment_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD ExecPayment_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD ExecPayment_svg-raw.pdf  used on inp
@@ -2499,7 +2510,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 82.
 
 [18 <./svg-inkscape/AD ExecPayment_svg-raw.pdf>]
-<./svg-inkscape/ContextDiagramm_svg-raw.pdf, id=206, 482.1764pt x 271.3889pt>
+<./svg-inkscape/ContextDiagramm_svg-raw.pdf, id=212, 482.1764pt x 271.3889pt>
 File: ./svg-inkscape/ContextDiagramm_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ContextDiagramm_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/ContextDiagramm_svg-raw.pdf  used on in
@@ -2510,7 +2521,7 @@ put line 85.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 293.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 263.
 
 
 [19 <./svg-inkscape/ContextDiagramm_svg-raw.pdf>]
@@ -2549,7 +2560,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 116.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 126.
 
 
 [23]
@@ -2565,7 +2576,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 295.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 265.
 
 
 [25]
@@ -2573,10 +2584,10 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
  (kapitel/50_aggregatdesign.tex
 chapter 5.
-<./svg-inkscape/VarB_svg-raw.pdf, id=248, 325.215pt x 115.18031pt>
+<./svg-inkscape/VarB_svg-raw.pdf, id=255, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarB_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarB_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 20
+Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 17
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
 [26
@@ -2589,45 +2600,41 @@ Package pdftex.def Info: ./svg-inkscape/VarB_svg-raw.pdf  used on input line 20
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 36.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 33.
 
 [27 <./svg-inkscape/VarB_svg-raw.pdf>]
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 48.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 43.
 
 [28]
-Overfull \hbox (8.50534pt too wide) in paragraph at lines 64--65
-\OT1/lmss/m/n/10.95 (-20) Da-ten-ban-k-ope-ra-tio-nen, wo-durch ei-ne Ver-klei-
-ne-rung des Ag-gre-ga-ti-ons-schnit-tes zu Performance-
- []
-
-<./svg-inkscape/VarC_svg-raw.pdf, id=267, 325.215pt x 115.18031pt>
+<./svg-inkscape/VarC_svg-raw.pdf, id=273, 325.215pt x 115.18031pt>
 File: ./svg-inkscape/VarC_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarC_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 86
+Package pdftex.def Info: ./svg-inkscape/VarC_svg-raw.pdf  used on input line 79
 .
 (pdftex.def)             Requested size: 325.2142pt x 115.18001pt.
+
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 92.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 87.
 
 [29]
 LaTeX Font Info:    Trying to load font information for OMS+lmss on input line 
-101.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 101.
+94.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 94.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 101.
+(Font)              for symbol `textbraceleft' on input line 94.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-105.
+98.
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2636,7 +2643,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 99--112
+Overfull \hbox (10.95pt too wide) in paragraph at lines 92--105
 []$[]$ 
  []
 
@@ -2644,54 +2651,54 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 99--112
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 113.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 107.
 
 
 [30 <./svg-inkscape/VarC_svg-raw.pdf>]
-<./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf, id=282, 624.69176pt x 414.42328p
+<./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf, id=291, 624.69176pt x 414.42328p
 t>
 File: ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf  used on 
-input line 117.
+input line 110.
 (pdftex.def)             Requested size: 624.69023pt x 414.42226pt.
 
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 130.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 123.
 
 
-[31]
-
-Package scrbase Warning: Usage of deprecated command `\ifstr'.
-(scrbase)                The command has been renamed because of a
-(scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 138.
-
-
-[32 <./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf>]
-Overfull \hbox (7.76068pt too wide) in paragraph at lines 142--142
+[31 <./svg-inkscape/VarC-Sequence Alt_svg-raw.pdf>]
+Overfull \hbox (15.21936pt too wide) in paragraph at lines 131--131
 \OT1/lmss/m/n/10.95 (-20) Unter Ein-satz von ag-gre-gats[]ubergreifenden Trans-
-ak-tio-nen bleibt die ge-won-ne-ne Kom-ple-xit[]at []uberschaubar.
+ak-tio-nen bleibt die re-sul-tie-ren-de Kom-ple-xit[]at []uberschaubar.
  []
 
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 172.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 139.
+
+
+[32]
+
+Package scrbase Warning: Usage of deprecated command `\ifstr'.
+(scrbase)                The command has been renamed because of a
+(scrbase)                recommendation of The LaTeX Project Team.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 169.
 
 
 [33]
-<bilder/Checkout.png, id=304, 2325.68875pt x 818.05624pt>
+<bilder/Checkout.png, id=310, 2325.68875pt x 818.05624pt>
 File: bilder/Checkout.png Graphic file (type png)
 <use bilder/Checkout.png>
-Package pdftex.def Info: bilder/Checkout.png  used on input line 184.
+Package pdftex.def Info: bilder/Checkout.png  used on input line 173.
 (pdftex.def)             Requested size: 459.6215pt x 161.66107pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 184--185
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 173--174
  [][] 
  []
 
@@ -2699,7 +2706,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 184--185
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 194.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 188.
 
 
 [34 <./bilder/Checkout.png>]
@@ -2707,72 +2714,72 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 211.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 209.
 
 
 [35]
-<./svg-inkscape/VarD_svg-raw.pdf, id=313, 310.15875pt x 137.85503pt>
+<./svg-inkscape/VarD_svg-raw.pdf, id=318, 310.15875pt x 137.85503pt>
 File: ./svg-inkscape/VarD_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarD_svg-raw.pdf>
-Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 22
-1.
+Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 21
+2.
 (pdftex.def)             Requested size: 310.15799pt x 137.85468pt.
 
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 232.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 225.
 
 
 [36 <./svg-inkscape/VarD_svg-raw.pdf>]
 Package svg Info: Last page of `./svg-inkscape/CircularDependency_svg-tex.pdf' 
-is 7 on input line 245.
+is 7 on input line 238.
 
 (svg-inkscape/CircularDependency_svg-tex.pdf_tex
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=326, page=1, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=331, page=1, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page1 
 used on input line 56.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=327, page=2, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=332, page=2, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page2 
 used on input line 58.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=328, page=3, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=333, page=3, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page3 
 used on input line 60.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=329, page=4, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=334, page=4, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page4 
 used on input line 62.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=330, page=5, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=335, page=5, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page5 
 used on input line 64.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=331, page=6, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=336, page=6, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page6 
 used on input line 66.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
-<./svg-inkscape/CircularDependency_svg-tex.pdf, id=332, page=7, 558.58687pt x 1
+<./svg-inkscape/CircularDependency_svg-tex.pdf, id=337, page=7, 558.58687pt x 1
 29.48375pt>
 File: ./svg-inkscape/CircularDependency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CircularDependency_svg-tex.pdf, page 7>
@@ -2784,27 +2791,10 @@ used on input line 70.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 254.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 247.
 
 
-[37]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 255--268
-[]$[]$ 
- []
-
-
-Overfull \hbox (10.95pt too wide) in paragraph at lines 274--295
-[]$[]$ 
- []
-
-
-Package scrbase Warning: Usage of deprecated command `\ifstr'.
-(scrbase)                The command has been renamed because of a
-(scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 296.
-
-
-[38 <./svg-inkscape/CircularDependency_svg-tex.pdf> <./svg-inkscape/CircularDep
+[37 <./svg-inkscape/CircularDependency_svg-tex.pdf> <./svg-inkscape/CircularDep
 endency_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/CircularDependency_svg-tex.pd
@@ -2830,7 +2820,12 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/CircularDependency_svg-tex.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 300--325
+Overfull \hbox (10.95pt too wide) in paragraph at lines 248--260
+[]$[]$ 
+ []
+
+
+Overfull \hbox (10.95pt too wide) in paragraph at lines 266--287
 []$[]$ 
  []
 
@@ -2838,185 +2833,197 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 300--325
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 330.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 291.
+
+
+[38]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 292--316
+[]$[]$ 
+ []
+
+
+Package scrbase Warning: Usage of deprecated command `\ifstr'.
+(scrbase)                The command has been renamed because of a
+(scrbase)                recommendation of The LaTeX Project Team.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 327.
 
 
 [39]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-339.
+330.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
 sed with new abbreviation definitions. Use \glsxtrlong instead on input line 33
-9.
+0.
 
 Package svg Info: Last page of `./svg-inkscape/Performance Default_svg-tex.pdf'
- is 24 on input line 344.
+ is 24 on input line 335.
 (svg-inkscape/Performance Default_svg-tex.pdf_tex
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=346, page=1, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=351, page=1, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
  used on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=347, page=2, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=352, page=2, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
  used on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=348, page=3, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=353, page=3, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page3
  used on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=349, page=4, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=354, page=4, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page4
  used on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=350, page=5, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=355, page=5, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page5
  used on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=351, page=6, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=356, page=6, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page6
  used on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=352, page=7, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=357, page=7, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page7
  used on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=353, page=8, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=358, page=8, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page8
  used on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=354, page=9, 528.47438pt x 
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=359, page=9, 528.47438pt x 
 316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page9
  used on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=355, page=10, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=360, page=10, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 0 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=356, page=11, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=361, page=11, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 1 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=357, page=12, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=362, page=12, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 2 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=358, page=13, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=363, page=13, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 3 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=359, page=14, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=364, page=14, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 4 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=360, page=15, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=365, page=15, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 5 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=361, page=16, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=366, page=16, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 6 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=362, page=17, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=367, page=17, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 7 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=363, page=18, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=368, page=18, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 8 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=364, page=19, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=369, page=19, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page1
 9 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=365, page=20, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=370, page=20, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 0 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=366, page=21, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=371, page=21, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 1 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=367, page=22, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=372, page=22, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 22>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 2 used on input line 98.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=368, page=23, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=373, page=23, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 23>
 Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 3 used on input line 100.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Default_svg-tex.pdf, id=369, page=24, 528.47438pt x
+<./svg-inkscape/Performance Default_svg-tex.pdf, id=374, page=24, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Default_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Default_svg-tex.pdf, page 24>
@@ -3028,18 +3035,10 @@ Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 350.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 343.
 
 
-[40]
-
-Package scrbase Warning: Usage of deprecated command `\ifstr'.
-(scrbase)                The command has been renamed because of a
-(scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 371.
-
-
-[41 <./svg-inkscape/Performance Default_svg-tex.pdf> <./svg-inkscape/Performanc
+[40 <./svg-inkscape/Performance Default_svg-tex.pdf> <./svg-inkscape/Performanc
 e Default_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
@@ -3134,156 +3133,156 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/Performance Database_svg-tex.pdf
-' is 22 on input line 379.
+' is 22 on input line 370.
  (svg-inkscape/Performance Database_svg-tex.pdf_tex
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=379, page=1, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=381, page=1, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 1 used on input line 56.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=380, page=2, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=382, page=2, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 2>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 2 used on input line 58.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=381, page=3, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=383, page=3, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 3>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 3 used on input line 60.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=382, page=4, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=384, page=4, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 4>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 4 used on input line 62.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=383, page=5, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=385, page=5, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 5>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 5 used on input line 64.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=384, page=6, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=386, page=6, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 6>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 6 used on input line 66.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=385, page=7, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=387, page=7, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 7>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 7 used on input line 68.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=386, page=8, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=388, page=8, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 8>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 8 used on input line 70.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=387, page=9, 528.47438pt x
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=389, page=9, 528.47438pt x
  316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 9>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 9 used on input line 72.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=388, page=10, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=390, page=10, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 10>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 10 used on input line 74.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=389, page=11, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=391, page=11, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 11>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 11 used on input line 76.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=390, page=12, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=392, page=12, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 12>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 12 used on input line 78.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=391, page=13, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=393, page=13, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 13>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 13 used on input line 80.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=392, page=14, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=394, page=14, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 14>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 14 used on input line 82.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=393, page=15, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=395, page=15, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 15>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 15 used on input line 84.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=394, page=16, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=396, page=16, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 16>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 16 used on input line 86.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=395, page=17, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=397, page=17, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 17>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 17 used on input line 88.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=396, page=18, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=398, page=18, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 18>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 18 used on input line 90.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=397, page=19, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=399, page=19, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 19>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 19 used on input line 92.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=398, page=20, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=400, page=20, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 20>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 20 used on input line 94.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=399, page=21, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=401, page=21, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 21>
 Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 21 used on input line 96.
 (pdftex.def)             Requested size: 321.73364pt x 192.48914pt.
-<./svg-inkscape/Performance Database_svg-tex.pdf, id=400, page=22, 528.47438pt 
+<./svg-inkscape/Performance Database_svg-tex.pdf, id=402, page=22, 528.47438pt 
 x 316.18124pt>
 File: ./svg-inkscape/Performance Database_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Performance Database_svg-tex.pdf, page 22>
@@ -3295,97 +3294,12 @@ Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 390.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 381.
 
 
-[42 <./svg-inkscape/Performance Database_svg-tex.pdf> <./svg-inkscape/Performan
-ce Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./svg-inkscape/Performance Database_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+[41]
 Package svg Info: Last page of `./svg-inkscape/Performance Delay_svg-tex.pdf' i
-s 21 on input line 394.
+s 21 on input line 385.
  (svg-inkscape/Performance Delay_svg-tex.pdf_tex
 <./svg-inkscape/Performance Delay_svg-tex.pdf, id=407, page=1, 532.23843pt x 25
 5.95625pt>
@@ -3539,11 +3453,99 @@ used on input line 96.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 412.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 396.
 
 
-[43 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performance 
-Delay_svg-tex.pdf
+[42 <./svg-inkscape/Performance Database_svg-tex.pdf> <./svg-inkscape/Performan
+ce Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Database_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Delay_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Performance Delay_svg-tex.pdf
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
@@ -3628,10 +3630,10 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 297.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 267.
 
 
-[44]
+[43]
 \openout2 = `kapitel/60_poc.aux'.
 
  (kapitel/60_poc.tex
@@ -3654,7 +3656,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 11--29
 []$[]$ 
  []
 
-[45
+[44
 
 
 
@@ -3676,7 +3678,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                recommendation of The LaTeX Project Team.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 60.
 
-[46]
+[45]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
 70.
  (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
@@ -3700,13 +3702,13 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                recommendation of The LaTeX Project Team.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 88.
 
-[47]
+[46]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 89--111
 []$[]$ 
  []
 
 )
-Overfull \hbox (10.95pt too wide) in paragraph at lines 119--299
+Overfull \hbox (10.95pt too wide) in paragraph at lines 119--269
 []$[]$ 
  []
 
@@ -3714,23 +3716,23 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 119--299
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 299.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 269.
 
 
-[48]
+[47]
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 299.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 269.
 
 
-[49]
+[48]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter 7.
-) [50
+) [49
 
 
 
@@ -3740,15 +3742,15 @@ chapter 7.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 301.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 271.
 
 
-[51]
+[50]
 \openout2 = `kapitel/80_anhang.aux'.
 
  (kapitel/80_anhang.tex
 chapter 8.
-<./svg-inkscape/github qr code_svg-raw.pdf, id=461, 863.47594pt x 863.47594pt>
+<./svg-inkscape/github qr code_svg-raw.pdf, id=462, 863.47594pt x 863.47594pt>
 File: ./svg-inkscape/github qr code_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/github qr code_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/github qr code_svg-raw.pdf  used on inp
@@ -3762,28 +3764,28 @@ ut line 48.
 
 
  <./svg-inkscape/github qr code_svg-raw.pdf>]
-<./svg-inkscape/AD Basketcreation_svg-raw.pdf, id=468, 369.63094pt x 128.73094p
+<./svg-inkscape/AD Basketcreation_svg-raw.pdf, id=469, 369.63094pt x 128.73094p
 t>
 File: ./svg-inkscape/AD Basketcreation_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD Basketcreation_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD Basketcreation_svg-raw.pdf  used on 
 input line 60.
 (pdftex.def)             Requested size: 369.63002pt x 128.7306pt.
-<./svg-inkscape/AD Basketstornierung_svg-raw.pdf, id=469, 482.55281pt x 181.427
+<./svg-inkscape/AD Basketstornierung_svg-raw.pdf, id=470, 482.55281pt x 181.427
 81pt>
 File: ./svg-inkscape/AD Basketstornierung_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD Basketstornierung_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD Basketstornierung_svg-raw.pdf  used 
 on input line 67.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
-<./svg-inkscape/AD Checkoutdata_svg-raw.pdf, id=470, 482.55281pt x 181.42781pt>
+<./svg-inkscape/AD Checkoutdata_svg-raw.pdf, id=471, 482.55281pt x 181.42781pt>
 
 File: ./svg-inkscape/AD Checkoutdata_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD Checkoutdata_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/AD Checkoutdata_svg-raw.pdf  used on in
 put line 74.
 (pdftex.def)             Requested size: 482.55162pt x 181.42737pt.
-<./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf, id=471, 482.55281pt x 181.4278
+<./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf, id=472, 482.55281pt x 181.4278
 1pt>
 File: ./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf>
@@ -3817,7 +3819,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 87.
 
 [3 <./svg-inkscape/AD PutBezahlmethode_svg-raw.pdf>]
-<./svg-inkscape/REST API_svg-raw.pdf, id=532, 542.77782pt x 949.29657pt>
+<./svg-inkscape/REST API_svg-raw.pdf, id=533, 542.77782pt x 949.29657pt>
 File: ./svg-inkscape/REST API_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/REST API_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/REST API_svg-raw.pdf  used on input lin
@@ -3930,7 +3932,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
 
 [8]
-<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=577, 554.07pt x 533.74
+<./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf, id=578, 554.07pt x 533.74
 406pt>
 File: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf Graphic file (type pd
 f)
@@ -3938,7 +3940,7 @@ f)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectBasketDiagram_svg-raw.pdf  u
 sed on input line 214.
 (pdftex.def)             Requested size: 554.06865pt x 533.74275pt.
-<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=578, 497.60907pt x 2
+<./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf, id=579, 497.60907pt x 2
 71.76532pt>
 File: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf Graphic file (type 
 pdf)
@@ -3946,7 +3948,7 @@ pdf)
 Package pdftex.def Info: ./svg-inkscape/ValueObjectCustomerDiagram_svg-raw.pdf 
  used on input line 221.
 (pdftex.def)             Requested size: 497.60785pt x 271.76465pt.
-<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=579, 531.48563pt x 26
+<./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf, id=580, 531.48563pt x 26
 5.74281pt>
 File: ./svg-inkscape/ValueObjectPaymentDiagram_svg-raw.pdf Graphic file (type p
 df)
@@ -4030,14 +4032,14 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
 
 ])
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-09.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+79.
  (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 309.
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 279.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -4049,7 +4051,15 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 
 ]
-Overfull \hbox (8.72037pt too wide) in paragraph at lines 310--310
+Overfull \hbox (10.50742pt too wide) in paragraph at lines 280--280
+[]\OT1/lmss/m/n/10.95 (-20) Martin Fow-ler. \OT1/lmss/m/sl/10.95 (-20) Tech-ni-
+cal-Debt\OT1/lmss/m/n/10.95 (-20) . 2019. \OT1/lmr/m/sc/10.95 (-20) url\OT1/lms
+s/m/n/10.95 (-20) : $\OT1/lmtt/m/n/10.95 https : / / martinfowler . com / bliki
+ / TechnicalDebt .
+ []
+
+
+Overfull \hbox (8.72037pt too wide) in paragraph at lines 280--280
 \OT1/lmtt/m/n/10.95 mediasaturn . sharepoint . com / sites / tech -[] betriebsr
 at -[] msitis$ \OT1/lmss/m/n/10.95 (-20) (be-sucht am 10.04.2022). 
  []
@@ -4058,7 +4068,7 @@ at -[] msitis$ \OT1/lmss/m/n/10.95 (-20) (be-sucht am 10.04.2022).
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 309.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 279.
 
 
 [17]
@@ -4066,7 +4076,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 309.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 279.
 
 
 [18]
@@ -4074,7 +4084,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 311.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 281.
 
 
 [19] (main.aux (glossary.aux) (kapitel/00_abstract.aux)
@@ -4084,26 +4094,18 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46510 strings out of 478659
- 985126 string characters out of 2845920
- 1907280 words of memory out of 3000000
- 63371 multiletter control sequences out of 15000+600000
- 540411 words of font info for 285 fonts, out of 8000000 for 9000
+ 46580 strings out of 478659
+ 987025 string characters out of 2845920
+ 1894740 words of memory out of 3000000
+ 63440 multiletter control sequences out of 15000+600000
+ 540435 words of font info for 285 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 110i,21n,117p,10601b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,21n,117p,10601b,2530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C
 :/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/U
@@ -4121,9 +4123,9 @@ c/lm/lmss9.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ic/lm/lmsso10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmtt10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmtt8.pfb>
-Output written on main.pdf (81 pages, 1197062 bytes).
+Output written on main.pdf (81 pages, 1236385 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
+ 894 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 60060 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 60065 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -453,6 +453,30 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{technical.dept}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{TechnicalDebt}
+    \verb{url}
+    \verb https://martinfowler.com/bliki/TechnicalDebt.html
+    \endverb
+    \field{year}{2019}
+    \field{urlday}{29}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{Tamai.1992}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=TT}{%

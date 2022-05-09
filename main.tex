@@ -150,44 +150,13 @@ autooneside=false
    \textbf{Erstprüfer} 		& Prof. Dr. Sebastian Apel	\\
    \textbf{Zweitprüfer} 	& Prof. Dr. rer. nat. Franz Regensburger	\\
    \textbf{Betreuer} 		& Stefano Lucka  	\\
-   \textbf{Ausgabedatum} 	& - 				\\
-   \textbf{Abgabedatum} 	& -					\\
+   \textbf{Ausgabedatum} 	& 15.03.2022		\\
+   \textbf{Abgabedatum} 	& \note{TODO}{}		\\
   \end{tabular}
   }
   
 % Rückseite der Titelseite
 \uppertitleback{
-	
-\adjustbox{minipage=0.8\textwidth}{
-\vspace{1.5cm} 
-	{\Large\textbf{Erklärung zur Bachelorarbeit}}
-	
-	\vspace{2em}
-	
-	{
-		
-		Ich erkläre hiermit, dass ich diese Bachelorarbeit selbständig verfasst,
-		noch nicht anderweitig für Prüfungszwecke vorgelegt, keine anderen als
-		die angegebenen Quellen und Hilfsmittel benutzt sowie wörtliche und
-		sinngemäße Zitate als solche gekennzeichnet habe. 
-		
-		\vspace{5em}
-		
-		\begin{tikzpicture}[remember picture,overlay]
-			\node[xshift=87mm,yshift=-69mm, anchor=north west] at (current page.north west){%
-				\includegraphics[width=0.5\textwidth]{Unterschrift.png}};
-		\end{tikzpicture}
-		
-		
-		
-		Ingolstadt, \today
-		\hfill
-		\rule{220pt}{1pt} \\
-		
-		\hfill
-		Simon Thalmaier 
-	}
-\par}
 }
 
 \lowertitleback{} %Dokumenteninformation, Veröffentlichung, Rahmen, bibliographisches Angaben
@@ -210,7 +179,6 @@ autooneside=false
 	\pagenumbering{roman}}
 
 %TODO: Delete later
-\newcommand{\comment}[1]{{\color{Green}//Kommentar: #1}\\} 
 \newcommand{\note}[2]{{\color{red}#1}}
 
 \newcommand{\domainModell}[2]{
@@ -248,6 +216,8 @@ autooneside=false
 \newcommand{\ul}[1]{\emph{#1}}
 
 \begin{document}
+  
+  \note{}{BEIM DRUCK DIE UNTERSCHRIFT ENTFERNEN DER ERKLÄRUNG}
   
   \include{glossary}
     

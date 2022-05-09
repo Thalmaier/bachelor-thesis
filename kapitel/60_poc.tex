@@ -11,16 +11,16 @@ Primäre Adapter sind die grundlegenden Kommunikationsschnittstellen zwischen Cl
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 \begin{lstlisting}[caption={Beispiel eines Controllers zum aktualiseren von Kundendaten}, label={lst:controller}, language=Kotlin]
 put("/basket/{id}/customer") { 
-	variable basketId = parseParameterFromUrl("id")
+	variable basketID = parseParameterFromUrl("id")
 	variable customer = request.parseBody<Customer>()  
-	variable basket = basketApiPort.setCustomer(basketId, customer)
+	variable basket = basketApiPort.setCustomer(basketID, customer)
 	request.respond(HttpStatusCode.OK, basket)
 }
 \end{lstlisting}
 
 \begin{itemize}[noitemsep,nolistsep]
 	\item Zeile 1: Definiert die HTTP-Methode als 'PUT' und das Format der URL für diesen Endpunkt
-	\item Zeile 2: Auslesen der BasketId aus der URL als Pfadparameter
+	\item Zeile 2: Auslesen der BasketID aus der URL als Pfadparameter
 	\item Zeile 3: Deserialisierung der übertragenen Daten zu einem Customer-Objekt
 	\item Zeile 4: Weitergabe der Parameter an den zuständigen Applicationservice mithilfe eines Ports
 	\item Zeile 5: Antwort an die Anfrage mit HTTP-Status '200' und den geänderten Basket
@@ -39,10 +39,10 @@ Ein simples Beispiel für einen implementierten Applicationservice bietet uns de
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Eine Beispielsfunktion des BasketItem-Applikationservice}, label={lst:applicationservice}, language=Kotlin]
-function removeBasketItem(BasketId basketId, BasketItemId basketItemId) {
+function removeBasketItem(BasketID basketID, BasketItemID basketItemID) {
 	transaction {
-		variable basket = basketRepository.findById(basketId)
-		basket.removeBasketItem(basketItemId)
+		variable basket = basketRepository.findByID(basketID)
+		basket.removeBasketItem(basketItemID)
 		basketStorageService.store(basket)
 	}
 }
@@ -51,7 +51,7 @@ function removeBasketItem(BasketId basketId, BasketItemId basketItemId) {
 
 	\begin{itemize}[noitemsep,nolistsep]
 		\item Zeile 2: Starten einer Transaktion über die Zeilen 3 bis 5.
-		\item Zeile 3: Laden eines Baskets anhand seiner Id durch ein Repository. 
+		\item Zeile 3: Laden eines Baskets anhand seiner ID durch ein Repository. 
 		\item Zeile 4: Aufruf einer Funktion des Aggregate Roots zum Entfernen des übergebenen Items. Innerhalb dieser Funktion werden zusätzlich Aufgaben erledigt, wie das Neuberechnen des Gesamtpreises. Sollte die Kalkulation zu komplex ausfallen, kann ein Berechnungsservice als Parameter übergeben werden, sodass der Basket weiter für seine eigene Konsistenz verantwortlich ist. 
 		\item Zeile 5: Speichern des Baskets mit den abgeänderten Daten.
 	\end{itemize}
@@ -65,7 +65,7 @@ Damit der Basket für seine eigene Konsistenz zuständig sein kann, müssen jegl
 	\begin{lstlisting}[caption={Setzen der Fulfillment Methode im Basket Aggregate}, label={lst:basket}, language=Kotlin]
 function setFulfillment(Fulfillment fulfillment, FulfillmentPort fulfillmentPort) {
 	validateIfModificationIsAllowed()
-	variable availableFulfillment = fulfillmentPort.getAvailableFulfillment(outletId)
+	variable availableFulfillment = fulfillmentPort.getAvailableFulfillment(outletID)
 	throwIf(availableFulfillment.doesNotContain(fulfillment)) {
 		IllegalModificationError("$fulfillment is not avaiable")
 	}
@@ -88,8 +88,8 @@ Aufgaben, welche nicht direkt einem Objekt zugewiesen werden können oder mehrer
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Ausführung des Bezahlvorgangs in einem Domainservice}, label={lst:domainservice}, language=Kotlin]
-function executePaymentProcessAndFinalizeBasket(BasketId basketId) {
-	variable basket = basketRepository.findById(basketId)
+function executePaymentProcessAndFinalizeBasket(BasketID basketID) {
+	variable basket = basketRepository.findByID(basketID)
 	throwIf(basket.isNotFrozen() or basket.paymentIsNotInitialized()) {
 		IllegalModificationError("cannot cancel payment process")
 	}
@@ -113,7 +113,7 @@ function executePaymentProcessAndFinalizeBasket(BasketId basketId) {
 
 Das in der Planungsphase erstellte Context-Diagramm \ref{fig:ContextDiagramm} zeigt verschiedenste Systeme mit denen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden Services, welche das Aufrufen externen API-Schnittstellen simulieren, erstellt. Damit Brücken zwischen der Domain und diesen Services gewährleistet sind, implementieren die sekundären Adapter ein vom Applikationskern definiertes Interface. Analog zu den primären Adaptern, existieren keine direkten Abhängigkeiten des Anwendungskerns zu dem Teil der Software.
 
-Grundsätzlich wird pro Aggregat ein Repository implementiert. Sie managen den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen, wie elementare Speicher- und Suchfunktionen. Zusätzlich existieren spezielle Komponenten für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance-Verbesserungen wurden zusätzliche Abwandlungen der Adapter mit Caching-Funktion erstellt. Der normal fungierende Adapter ruft den zugehörigen API-Service auf, wohingegen der Caching-Adapter den Preis bzw. Artikel aus dem Cache lädt. Falls der Eintrag veraltet ist, wird der eigentliche Adapter angesprochen, um die zum jetzigen Zeitpunkt validen Daten zu erfragen und im Cache abzulegen. Das Beispiel \ref{lst:adapter} stellt die Komponente für das Aktualisieren der Preisinformationen dar. 
+Grundsätzlich wird pro Aggregate ein Repository implementiert. Sie managen den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen, wie elementare Speicher- und Suchfunktionen. Zusätzlich existieren spezielle Komponenten für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance-Verbesserungen wurden zusätzliche Abwandlungen der Adapter mit Caching-Funktion erstellt. Der normal fungierende Adapter ruft den zugehörigen API-Service auf, wohingegen der Caching-Adapter den Preis bzw. Artikel aus dem Cache lädt. Falls der Eintrag veraltet ist, wird der eigentliche Adapter angesprochen, um die zum jetzigen Zeitpunkt validen Daten zu erfragen und im Cache abzulegen. Das Beispiel \ref{lst:adapter} stellt die Komponente für das Aktualisieren der Preisinformationen dar. 
 
 \vspace{0,5cm}
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
@@ -123,9 +123,9 @@ class CachedPriceAdapter {
 	variable PriceCachingRepository priceCachingRepository 
 	variable PriceAdapter priceAdapter
 	
-	function fetchPrice(PriceId priceId) returns Price {
-		return priceCachingRepository.getAndUpdateIfInvalid(priceId, fallback = {
-			priceAdapter.fetchPrice(priceId)
+	function fetchPrice(PriceID priceID) returns Price {
+		return priceCachingRepository.getAndUpdateIfInvalid(priceID, fallback = {
+			priceAdapter.fetchPrice(priceID)
 		})
 	}
 }
