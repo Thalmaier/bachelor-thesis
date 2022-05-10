@@ -1,4 +1,3 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -6,85 +5,44 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Beispielhafte Darstellung einer Drei-Schichtenarchitektur\relax }}{6}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Grundstruktur einer Hexagonalen Architektur\relax }}{7}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Beispiel einer Context-Map anhand des Personalwesens einer Firma\relax }}{10}{}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Aktivitätsdiagramm für den Abruf eines Baskets\relax }}{15}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Aktivitätsdiagramm für das Hinzufügen eines Produktes \relax }}{16}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Aktivitätsdiagramm für das Initiieren des Bezahlvorgangs \relax }}{17}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Aktivitätsdiagramm für das Ausführen des Bezahlvorgangs \relax }}{18}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Context Diagramm der produktiven Checkout-Umgebung\relax }}{19}{}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Vergleich zwischen Value Object und Entity\relax }}{24}{}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Aggregationsschnitt der Variante B\relax }}{27}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C\relax }}{30}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C\relax }}{31}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de\relax }}{34}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Aggregationsschnitt der Variante D\relax }}{36}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Darstellung einer Circular Dependency\relax }}{37}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Performance-Ergebnisse aus dem ersten Testdurchlauf\relax }}{40}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Median der Ausführungszeit und Datenbankoperationen eines Durchlaufes\relax }}{41}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Performance-Ergebnisse bei Auslagerung der Datenbanksysteme\relax }}{42}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Performance-Ergebnisse unter Beachtung der Wartezeiten bei API-Aufrufe\relax }}{42}{}%
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {A}{\ignorespaces QR-Code des GitHub Repositories\relax }}{i}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {B}{\ignorespaces Aktivitätsdiagramm für die Erstellung eines Baskets\relax }}{ii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {C}{\ignorespaces Aktivitätsdiagramm für die Stornierung eines Baskets\relax }}{ii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {D}{\ignorespaces Aktivitätsdiagramm für das Setzen der Checkout Daten\relax }}{ii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {E}{\ignorespaces Aktivitätsdiagramm für das Hinzufügen einer Bezahlmethode\relax }}{iii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {F}{\ignorespaces REST-API der Checkout-Software für diesen Proof-of-Concept\relax }}{iv}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {G}{\ignorespaces Klassendiagramm eines Baskets\relax }}{ix}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {H}{\ignorespaces Klassendiagramm des Customer Value Objects\relax }}{x}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {I}{\ignorespaces Klassendiagramm des Payment Process\relax }}{x}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {J}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit MongoDB\relax }}{xii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {K}{\ignorespaces Analyseergebnis des Lasttests der verschiedenen Variationen in Kombination mit Postgres\relax }}{xiii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {L}{\ignorespaces Lasttest-Ergebnisse mit Datenbanken von einem externen Cloud-Anbieter\relax }}{xiv}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {M}{\ignorespaces Lasttest-Ergebnisse mit Simulation der API-Aufruf durch künstliche Verzögerung\relax }}{xv}{}%
-\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

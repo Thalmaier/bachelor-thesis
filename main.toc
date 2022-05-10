@@ -1,4 +1,3 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
@@ -6,157 +5,79 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Darstellungsverzeichnis}{VII}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Codebeispiel-Verzeichnis}{VIII}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Akronyme}{IX}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Glossar}{X}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Problemstellung}{1}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Das Unternehmen MediaMarktSaturn}{2}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Motivation}{3}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Ziele}{3}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen}{4}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}SOLID-Prinzipien}{4}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Architekturmuster}{5}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Schichtenarchitektur}{5}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Hexagonale Architektur}{6}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Domain-Driven Design}{8}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Unterteilung der Problemebene in Domains und Subdomains}{9}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Bounded-Contexts und ihre Ubiquitous Language}{9}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Kombination von Domain-Driven Design und Hexagonale Architektur}{10}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Value Object}{11}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.5}Entity}{11}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.6}Aggregate}{11}{}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.6}Aggregate}{12}{}%
 \contentsline {subsection}{\numberline {2.3.7}Applicationservice}{12}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.8}Domainservice}{12}{}%
-\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.8}Domainservice}{13}{}%
 \contentsline {subsection}{\numberline {2.3.9}Factory}{13}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.10}Repository}{13}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Planungs- und Analysephase}{14}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Ausschlaggebende Anwendungsfallbeschreibungen}{14}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Erstellung eines neuen, leeren Baskets}{14}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Abruf eines Baskets anhand der Basket-ID}{15}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.3}Stornierung eines offenen Baskets}{15}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.4}Hinzufügen eines Produktes anhand einer Produkt-ID}{16}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.5}Aktualisieren der Checkout Daten des Baskets}{16}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.6}Hinzufügen einer Zahlungsmethode}{17}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.7}Initiierung des Bezahlprozesses und Einfrieren des Baskets}{17}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.8}Ausführung des Bezahlprozesses und Finalisierung des Baskets}{18}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.9}Aus Anwendungsfällen resultierende API-Schnittstellen}{18}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Projektumfeld und technologische Vorschläge}{18}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Festlegung des Datenmodells durch Domain-Driven Design}{20}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Abgrenzung der Domain und Bounded Contexts mithilfe der Planungsphase}{20}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Festlegen einer Ubiquitous Language}{20}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Definition der Value Objects}{22}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Bestimmung der Entities anhand ihrer Identität und Lebenszyklen}{23}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Entwerfen möglicher Aggregate-Designs}{26}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Ein zusammengehöriges Basket-Aggregate als initiales Design}{26}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}Performance von unterschiedlich großen Aggregates im Vergleich}{26}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Einfluss des verwendeten Datenbanksystems auf den Aggregationsschnitt}{27}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.2}Parallele Bearbeitbarkeit von Aggregates}{28}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.3}Bewertung des Baskets als ein großes Aggregate}{29}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Trennung der Zahlungsinformationen von dem Basket-Aggregate}{29}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Eventuelle Konsistenz zwischen Aggregates}{30}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.2}Atomare Transaktionen über mehrere Aggregates}{31}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}Bewertung des Aggregationsschnittes}{32}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Verkleinerung der Aggregates durch Analyse existierender Businessanforderungen}{33}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}Herausschneiden der Berechnungsergebnisse aus dem Basket-Aggregate}{33}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Herausschneiden der Checkout-Data aus dem Basket-Aggregate}{35}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}Zusammenführung der vorgehenden Domain-Modelle}{36}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.1}Aktualisieren von veralteten Datenständen}{36}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.2}Dependency Injection von Services in Domain-Driven Design}{37}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.3}Performance-Analyse der Aggregationsschnitte unter Einsatz von Lasttests}{39}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.4}Bewertung des verkleinerten Aggregationsschnitt}{43}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Implementierung des Proof-of-Concepts}{44}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Design der primären Adapter}{44}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Realisierung des Applikationskerns}{45}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.1}Applicationservices}{45}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.2}Basket-Aggregate}{46}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2.3}Domainservices}{46}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.3}Anbinden externer Systeme und Datenbanken durch sekundäre Adapter}{47}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Fazit und Empfehlungen}{49}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Anhang}{i}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.1}Sourcecode des Proof-of-Concepts}{i}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}Aktivitätsdiagramme der Anwendungsfälle}{ii}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.3}API-Endpunkte}{iv}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.4}Vollständiges Datenmodell des Proof-of-Concepts}{v}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.5}Klassendiagramme des Datenmodells}{ix}{}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.6}Ergebnisse des Lasttests}{xi}{}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{xvi}{}%
-\defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
