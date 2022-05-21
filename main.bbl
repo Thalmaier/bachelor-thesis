@@ -1,0 +1,1593 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{CQRS_2013}{book}{}
+    \name{author}{5}{}{%
+      {{hash=BD}{%
+         family={Betts},
+         familyi={B\bibinitperiod},
+         given={Dominic},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dominguez},
+         familyi={D\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Melnik},
+         familyi={M\bibinitperiod},
+         given={Grigori},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Simonazzi},
+         familyi={S\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Subramanian},
+         familyi={S\bibinitperiod},
+         given={Mani},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDDJMGSFSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{1st}
+    \field{isbn}{1621140164}
+    \field{title}{Exploring CQRS and Event Sourcing: A Journey into High
+  Scalability, Availability, and Maintainability with Windows Azure}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Fielding.2000}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FRT}{%
+         family={Fielding},
+         familyi={F\bibinitperiod},
+         given={Roy\bibnamedelima Thomas},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FRT1}
+    \strng{fullhash}{FRT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Architectural Styles and the Design of Network-based Software
+  Architectures}
+    \verb{url}
+    \verb https://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm
+    \endverb
+    \field{year}{2000}
+    \field{urlday}{23}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.AnemicDomainModel}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AnemicDomainModel}
+    \verb{url}
+    \verb https://www.martinfowler.com/bliki/AnemicDomainModel.html
+    \endverb
+    \field{year}{2003}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Lammel.2003}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LR}{%
+         family={L{\"a}mmel},
+         familyi={L\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JSP}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Simon\bibnamedelima Peyton},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=LP}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SZ}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={Zhong},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{ACM Press}}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{LRJSP1}
+    \strng{fullhash}{LRJSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2003 ACM SIGPLAN international
+  workshop on Types in languages design and implementation - TLDI '03}
+    \verb{doi}
+    \verb 10.1145/604174.604179
+    \endverb
+    \field{isbn}{1581135262}
+    \field{pages}{26}
+    \field{title}{Scrap your boilerplate}
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{Zaveri.2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ZM}{%
+         family={Zaveri},
+         familyi={Z\bibinitperiod},
+         given={Meet},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{ZM1}
+    \strng{fullhash}{ZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is boilerplate and why do we use it? Necessity of coding
+  style guide}
+    \verb{url}
+    \verb https://medium.com/free-code-camp/whats-boilerplate-and-why-do-we-use
+    \verb -it-let-s-check-out-the-coding-style-guide-ac2b6c814ee7
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mongodb_collections}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MongoDB},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Databases and Collections}
+    \verb{url}
+    \verb https://www.mongodb.com/docs/manual/core/databases-and-collections/
+    \endverb
+    \field{urlday}{23}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Sohel.2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SS}{%
+         family={Sohel},
+         familyi={S\bibinitperiod},
+         given={Shaikh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Pachghare},
+         familyi={P\bibinitperiod},
+         given={Vinod},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{SSPV1}
+    \strng{fullhash}{SSPV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{05}
+    \field{title}{A Comparative Study of Database Connection Pooling Strategy}
+    \field{volume}{04}
+    \field{journaltitle}{International Research Journal of Engineering and
+  Technology}
+    \field{year}{2017}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.2004}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Inversion of Control Containers and the Dependency Injection
+  pattern}
+    \verb{url}
+    \verb https://martinfowler.com/articles/injection.html
+    \endverb
+    \field{year}{2004}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Larman.2009}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Larman},
+         familyi={L\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Prentice Hall}}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{3. ed., 12. print}
+    \field{isbn}{978-0131489066}
+    \field{title}{Applying UML and patterns: An introduction to object-oriented
+  analysis and design and iterative development}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2009}
+  \endentry
+
+  \entry{Vernon.2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VV}{%
+         family={Vernon},
+         familyi={V\bibinitperiod},
+         given={Vaughn},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{VV1}
+    \strng{fullhash}{VV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{Fourth printing}
+    \field{isbn}{9780321834577}
+    \field{title}{Implementing domain-driven design}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Yourdon.1979}{book}{}
+    \name{author}{2}{}{%
+      {{hash=YE}{%
+         family={Yourdon},
+         familyi={Y\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CLL}{%
+         family={Constantine},
+         familyi={C\bibinitperiod},
+         given={Larry\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice-Hall}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{YECLL1}
+    \strng{fullhash}{YECLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-13-854471-3}
+    \field{title}{Structured design: Fundamentals of a discipline of computer
+  program and systems design}
+    \list{location}{1}{%
+      {Englewood Cliffs, NJ}%
+    }
+    \field{year}{1979}
+  \endentry
+
+  \entry{Fowler.2011}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rice},
+         familyi={R\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FMRD1}
+    \strng{fullhash}{FMRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{17. print}
+    \field{isbn}{978-0321127426}
+    \field{series}{The Addison-Wesley signature series}
+    \field{title}{Patterns of enterprise application architecture}
+    \list{location}{1}{%
+      {Boston, Mass.}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{lostupdate}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{Lost-Update}
+    \verb{url}
+    \verb https://wikis.gm.fh-koeln.de/Datenbanken/Lost-Update
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{po.scrum}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{What is a Product Owner?}
+    \verb{url}
+    \verb scrum.org/resources/what-is-a-product-owner
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{racecondition}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=I}{%
+         family={IBM},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{title}{Secure programmer: Prevent race conditions: Resource
+  contention can be used against you}
+    \verb{url}
+    \verb https://web.archive.org/web/20090201132237/http://www-128.ibm.com/dev
+    \verb eloperworks/linux/library/l-sprace.html
+    \endverb
+    \field{year}{2004}
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scrum.sprint}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{What is a Sprint in Scrum?}
+    \verb{url}
+    \verb https://www.scrum.org/resources/what-is-a-sprint-in-scrum
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scrum.glossary}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{Scrum Glossary}
+    \verb{url}
+    \verb https://www.scrum.org/Resources/Scrum-Glossary
+    \endverb
+    \field{urlday}{24}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{technical.dept}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Acronym}
+    \strng{namehash}{FM1}
+    \strng{fullhash}{FM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{TechnicalDebt}
+    \verb{url}
+    \verb https://martinfowler.com/bliki/TechnicalDebt.html
+    \endverb
+    \field{year}{2019}
+    \field{urlday}{29}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Tamai.1992}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TT}{%
+         family={Tamai},
+         familyi={T\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Torimitsu},
+         familyi={T\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE Comput. Soc. Press}}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{TTTY1}
+    \strng{fullhash}{TTTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings Conference on Software Maintenance 1992}
+    \verb{doi}
+    \verb 10.1109/ICSM.1992.242557
+    \endverb
+    \field{isbn}{0-8186-2980-0}
+    \field{pages}{63\bibrangedash 69}
+    \field{title}{Software lifetime and its evolution process over generations}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Bosch.2001}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Bosch},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bengtsson},
+         familyi={B\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE Comput. Soc}}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{BJBP1}
+    \strng{fullhash}{BJBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings Fifth European Conference on Software
+  Maintenance and Reengineering}
+    \verb{doi}
+    \verb 10.1109/CSMR.2001.914981
+    \endverb
+    \field{isbn}{0-7695-1028-0}
+    \field{pages}{168\bibrangedash 175}
+    \field{title}{Assessing optimal software architecture maintainability}
+    \field{year}{2001}
+  \endentry
+
+  \entry{oreilly.Microservices}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=LM}{%
+         family={Loukides},
+         familyi={L\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Swoyer},
+         familyi={S\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{LMSS1}
+    \strng{fullhash}{LMSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microservices Adoption in 2020: Everyone's talking about
+  microservices. Who's actually doing it?}
+    \verb{url}
+    \verb https://www.oreilly.com/radar/microservices-adoption-in-2020/
+    \endverb
+    \field{year}{2020}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Sampaio.2017}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=SAR}{%
+         family={Sampaio},
+         familyi={S\bibinitperiod},
+         given={Adalberto\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kadiyala},
+         familyi={K\bibinitperiod},
+         given={Harshavardhan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Steinbacher},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Erwin},
+         familyi={E\bibinitperiod},
+         given={Tony},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Rosa},
+         familyi={R\bibinitperiod},
+         given={Nelson},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BI}{%
+         family={Beschastnikh},
+         familyi={B\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rubin},
+         familyi={R\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{SAR+1}
+    \strng{fullhash}{SARKHHBSJETRNBIRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2017 IEEE International Conference on Software
+  Maintenance and Evolution (ICSME)}
+    \verb{doi}
+    \verb 10.1109/ICSME.2017.63
+    \endverb
+    \field{isbn}{978-1-5386-0992-7}
+    \field{pages}{539\bibrangedash 543}
+    \field{title}{Supporting Microservice Evolution}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Evans.2011}{book}{}
+    \name{author}{1}{}{%
+      {{hash=EE}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{EE1}
+    \strng{fullhash}{EE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780321125217}
+    \field{title}{Domain-driven design: Tackling complexity in the heart of
+  software}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Microservice.DDD.2017}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=SRH}{%
+         family={Steinegger},
+         familyi={S\bibinitperiod},
+         given={Roland\bibnamedelima Hienz},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Giessler},
+         familyi={G\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hippchen},
+         familyi={H\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Abeck},
+         familyi={A\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{SRH+1}
+    \strng{fullhash}{SRHGPHBASSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Designing Microservice-Based Applications by Using a
+  Domain-Driven Design Approach}
+    \verb{url}
+    \verb https://cm.tm.kit.edu/download/domain_driven_microservice-architectur
+    \verb e_17-03-15.pdf
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Pigoski.2001}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PTM}{%
+         family={Pigoski},
+         familyi={P\bibinitperiod},
+         given={Thomas\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{PTM1}
+    \strng{fullhash}{PTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Software~Maintenance}
+    \verb{url}
+    \verb https://sce.uhcl.edu/helm/SWEBOK_IEEE/data/swebok_chapter_06.pdf
+    \endverb
+    \field{year}{2001}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mms.Unternehmen}{misc}{}
+    \keyw{Einleitung}
+    \field{labeltitlesource}{title}
+    \field{title}{Unternehmensinformationen zu MediaMarktSaturn}
+    \verb{url}
+    \verb https://www.mediamarktsaturn.com/unternehmen
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mms.technology}{misc}{}
+    \keyw{Einleitung}
+    \field{labeltitlesource}{title}
+    \field{title}{MediaMarktSaturn Technology Informationen (Firmeninternes
+  Dokument)}
+    \verb{url}
+    \verb https://mediasaturn.sharepoint.com/sites/tech-betriebsrat-msitis
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Darcy.2010}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DDP}{%
+         family={Darcy},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=DSL}{%
+         family={Daniel},
+         familyi={D\bibinitperiod},
+         given={Sherae\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SKJ}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Katherine\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \keyw{Einleitung}
+    \strng{namehash}{DDPDSLSKJ1}
+    \strng{fullhash}{DDPDSLSKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2010 43rd Hawaii International Conference on System
+  Sciences}
+    \verb{doi}
+    \verb 10.1109/HICSS.2010.198
+    \endverb
+    \field{isbn}{978-1-4244-5509-6}
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{Exploring Complexity in Open Source Software: Evolutionary
+  Patterns, Antecedents, and Outcomes}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Martin.2000}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MRC}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MRC1}
+    \strng{fullhash}{MRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Design Principles and Design Patterns}
+    \verb{url}
+    \verb https://web.archive.org/web/20150906155800/http://www.objectmentor.co
+    \verb m/resources/articles/Principles_and_Patterns.pdf
+    \endverb
+    \field{year}{2000}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Martin.2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MRC}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Prentice Hall}}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MRC1}
+    \strng{fullhash}{MRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Building upon the success of best-sellers The Clean Coder and Clean Code,
+  legendary software craftsman Robert C. {\dq}Uncle Bob{\dq} Martin shows how
+  to bring greater professionalism and discipline to application architecture
+  and design. As with his other books, Martin's Clean Architecture doesn't
+  merely present multiple choices and options, and say {\dq}use your best
+  judgment{\dq}: it tells you what choices to make, and why those choices are
+  critical to your success. Martin offers direct, no-nonsense answers to key
+  architecture and design questions like: What are the best high level
+  structures for different kinds of applications, including web, database,
+  thick-client, console, and embedded apps? What are the core principles of
+  software architecture? What is the role of the architect, and what is he/she
+  really trying to achieve? What are the core principles of software design?
+  How do designs and architectures go wrong, and what can you do about it? What
+  are the disciplines and practices of professional architects and designers?
+  Clean Architecture is essential reading for every software architect, systems
+  analyst, system designer, and software manager -- and for any programmer who
+  aspires to these roles or is impacted by their work%
+    }
+    \field{isbn}{978-0134494166}
+    \field{series}{Robert C. Martin series}
+    \field{title}{Clean architecture: A craftsman's guide to software structure
+  and design}
+    \verb{url}
+    \verb http://proquest.tech.safaribooksonline.de/9780134494272
+    \endverb
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{year}{2018}
+  \endentry
+
+  \entry{Martin.SRP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MRC}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MRC1}
+    \strng{fullhash}{MRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SRP: The Single Responsibility Principle}
+    \verb{url}
+    \verb https://web.archive.org/web/20150202200348/http://www.objectmentor.co
+    \verb m/resources/articles/srp.pdf
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Meyer.2009}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MB}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Bertrand},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Prentice Hall PTR}}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MB1}
+    \strng{fullhash}{MB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{2. ed., 15. print}
+    \field{isbn}{978-0-13-629155-8}
+    \field{title}{Object-oriented software construction}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2009}
+  \endentry
+
+  \entry{Liskov.1994}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LBH}{%
+         family={Liskov},
+         familyi={L\bibinitperiod},
+         given={Barbara\bibnamedelima H.},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WJM}{%
+         family={Wing},
+         familyi={W\bibinitperiod},
+         given={Jeannette\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{LBHWJM1}
+    \strng{fullhash}{LBHWJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/197320.197383
+    \endverb
+    \field{issn}{0164-0925}
+    \field{number}{6}
+    \field{pages}{1811\bibrangedash 1841}
+    \field{title}{A behavioral notion of subtyping}
+    \field{volume}{16}
+    \field{journaltitle}{ACM Transactions on Programming Languages and Systems}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Martin.2003}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MRC}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Pearson Education}}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MRC1}
+    \strng{fullhash}{MRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0135974445}
+    \field{series}{Alan Apt series}
+    \field{title}{Agile software development: Principles, patterns, and
+  practices}
+    \list{location}{1}{%
+      {Upper Saddle River, NJ}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{Martin.1996}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MRC}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MRC1}
+    \strng{fullhash}{MRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Dependency Inversion Principle}
+    \verb{url}
+    \verb https://web.archive.org/web/20110714224327/http://www.objectmentor.co
+    \verb m/resources/articles/dip.pdf
+    \endverb
+    \field{year}{1996}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Buschmann.2011}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BF}{%
+         family={Buschmann},
+         familyi={B\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Henney},
+         familyi={H\bibinitperiod},
+         given={Kevlin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SDC}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={Douglas\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{BFHKSDC1}
+    \strng{fullhash}{BFHKSDC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{Reprinted August 2011}
+    \field{isbn}{978-0470059029}
+    \field{series}{Wiley series in software design patterns}
+    \field{title}{Pattern-Oriented Software Architecture: A pattern language
+  for distributed computing}
+    \field{volume}{/ Frank Buschmann ... ; Vol. 4}
+    \list{location}{1}{%
+      {Chichester}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Martin.1980}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Prentice Hall PTR}}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MJ1}
+    \strng{fullhash}{MJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{1st}
+    \field{isbn}{0135505828}
+    \field{title}{Managing the data base environment}
+    \field{year}{1983}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Layered.SOLID}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FS}{%
+         family={Fronczak},
+         familyi={F\bibinitperiod},
+         given={Sylvia},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FS1}
+    \strng{fullhash}{FS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Layered Architecture: Still a Solid Approach}
+    \verb{url}
+    \verb https://blog.ndepend.com/layered-architecture-solid-approach/
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Cockburn.Hexagonal}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CA}{%
+         family={Cockburn},
+         familyi={C\bibinitperiod},
+         given={Alistair},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{CA1}
+    \strng{fullhash}{CA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal architecture}
+    \verb{url}
+    \verb https://alistair.cockburn.us/hexagonal-architecture/
+    \endverb
+    \field{year}{2005}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{philipbrown.2014}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=p}{%
+         family={philipbrown},
+         familyi={p\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{p1}
+    \strng{fullhash}{p1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is Hexagonal Architecture?}
+    \verb{url}
+    \verb https://www.culttt.com/2014/12/31/hexagonal-architecture/
+    \endverb
+    \field{year}{2014}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{hgraca.2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=h}{%
+         family={hgraca},
+         familyi={h\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{h1}
+    \strng{fullhash}{h1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{DDD, Hexagonal, Onion, Clean, CQRS, $\ldots$ How I put it all
+  together}
+    \verb{url}
+    \verb https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hex
+    \verb agonal-onion-clean-cqrs-how-i-put-it-all-together/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Griffin.2021b}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Domain-Driven Laravel}
+    \verb{doi}
+    \verb 10.1007/978-1-4842-6023-4{\textunderscore }17
+    \endverb
+    \field{isbn}{978-1-4842-6022-7}
+    \field{pages}{521\bibrangedash 544}
+    \field{title}{Hexagonal-Driven Development}
+    \list{location}{1}{%
+      {Berkeley, CA}%
+    }
+    \field{year}{2021}
+  \endentry
+
+  \entry{Alliaume.2018}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=AE}{%
+         family={Alliaume},
+         familyi={A\bibinitperiod},
+         given={Erwan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Roccaserra},
+         familyi={R\bibinitperiod},
+         given={S{\'e}bastien},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{AERS1}
+    \strng{fullhash}{AERS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal Architecture: three principles and an
+  implementation example}
+    \verb{url}
+    \verb https://blog.octo.com/hexagonal-architecture-three-principles-and-an-
+    \verb implementation-example/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Martinez.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={Martinez},
+         familyi={M\bibinitperiod},
+         given={Pablo},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hexagonal Architecture, there are always two sides to every
+  story}
+    \verb{url}
+    \verb https://medium.com/ssense-tech/hexagonal-architecture-there-are-alway
+    \verb s-two-sides-to-every-story-bc0780ed7d9c
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Seemann.2013}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SM}{%
+         family={Seemann},
+         familyi={S\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{SM1}
+    \strng{fullhash}{SM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Layers, Onions, Ports, Adapters: it's all the same}
+    \verb{url}
+    \verb https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all
+    \verb -the-same/
+    \endverb
+    \field{year}{2013}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{bbom.1999}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=FB}{%
+         family={Foote},
+         familyi={F\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yoder},
+         familyi={Y\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{FBYJ1}
+    \strng{fullhash}{FBYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Big Ball of Mud}
+    \verb{url}
+    \verb http://www.laputan.org/mud/
+    \endverb
+    \field{year}{1999}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Brandolini.2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Brandolini},
+         familyi={B\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{About Team Topologies and Context Mapping}
+    \verb{url}
+    \verb https://blog.avanscoperta.it/2021/04/22/about-team-topologies-and-con
+    \verb text-mapping/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Gorodinski.2012}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GL}{%
+         family={Gorodinski},
+         familyi={G\bibinitperiod},
+         given={Lev},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{GL1}
+    \strng{fullhash}{GL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Services in Domain-Driven Design (DDD)}
+    \verb{url}
+    \verb http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-desig
+    \verb n-ddd/
+    \endverb
+    \field{year}{2012}
+    \field{urlday}{19}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Vernon.2011}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VV}{%
+         family={Vernon},
+         familyi={V\bibinitperiod},
+         given={Vaughn},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{VV1}
+    \strng{fullhash}{VV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Effective Aggregate Design Part I: Modeling a Single
+  Aggregate}
+    \verb{url}
+    \verb https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Ve
+    \verb rnon_2011_1.pdf
+    \endverb
+    \field{year}{2011}
+    \field{urlday}{20}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Fowler.2014}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fowler},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{FMLJ1}
+    \strng{fullhash}{FMLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microservices: a definition of this new architectural term}
+    \verb{url}
+    \verb https://martinfowler.com/articles/microservices.html
+    \endverb
+    \field{year}{2014}
+    \field{urlday}{22}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mongodb.atomicity}{misc}{}
+    \keyw{Aggregatdesign}
+    \field{labeltitlesource}{title}
+    \field{title}{Atomicity and Transactions}
+    \verb{url}
+    \verb https://www.mongodb.com/docs/manual/core/write-operations-atomicity/
+    \endverb
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Graefe.2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GG}{%
+         family={Graefe},
+         familyi={G\bibinitperiod},
+         given={Goetz},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{GG1}
+    \strng{fullhash}{GG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Revisiting optimistic and pessimistic concurrency control}
+    \verb{url}
+    \verb https://www.labs.hpe.com/techreports/2016/HPE-2016-47.pdf
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{22}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{Suryanarayana.2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=SG}{%
+         family={Suryanarayana},
+         familyi={S\bibinitperiod},
+         given={Girish},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Samarthyam},
+         familyi={S\bibinitperiod},
+         given={Ganesh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Tushar},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Morgan Kaufmann an imprint of Elsevier}}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{SGSGST1}
+    \strng{fullhash}{SGSGST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-12-801397-7}
+    \field{series}{Software development and engineering}
+    \field{title}{Refactoring for software design smells: Managing technical
+  debt}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{DI_2007}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RE}{%
+         family={Razina},
+         familyi={R\bibinitperiod},
+         given={Ekaterina},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Janzen},
+         familyi={J\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACTA Press}%
+    }
+    \keyw{spring framework, dependency injection, maintainability}
+    \strng{namehash}{REJD1}
+    \strng{fullhash}{REJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Software maintenance consumes around 70% of the software life cycle.
+  Improving software maintainability could save software developers significant
+  time and money. This paper examines whether the pattern of dependency
+  injection significantly reduces dependencies of modules in a piece of
+  software, therefore making the software more maintainable. This hypothesis is
+  tested with 20 sets of open source projects from sourceforge.net, where each
+  set contains one project that uses the pattern of dependency injection and
+  one similar project that does not use the pattern. The extent of the
+  dependency injection use in each project is measured by a new Number of DIs
+  metric created specifically for this analysis. Maintainability is measured
+  using coupling and cohesion metrics on each project, then performing
+  statistical analysis on the acquired results. After completing the analysis,
+  no correlation was evident between the use of dependency injection and
+  coupling and cohesion numbers. However, a trend towards lower coupling
+  numbers in projects with a dependency injection count of 10% or more was
+  observed.%
+    }
+    \field{booktitle}{Proceedings of the 11th IASTED International Conference
+  on Software Engineering and Applications}
+    \field{isbn}{9780889867062}
+    \field{pages}{7–12}
+    \field{series}{SEA '07}
+    \field{title}{Effects of Dependency Injection on Maintainability}
+    \list{location}{1}{%
+      {Cambridge, Massachusetts}%
+    }
+    \field{year}{2007}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Lindooren.2007}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LR}{%
+         family={Lindooren},
+         familyi={L\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Aggregatdesign}
+    \strng{namehash}{LR1}
+    \strng{fullhash}{LR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Testability of Dependency injection: An attempt to find out
+  how the testability of source}
+    \verb{url}
+    \verb https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1999&re
+    \verb p=rep1&type=pdf
+    \endverb
+    \field{year}{2007}
+    \field{urlday}{23}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+\enddatalist
+\endinput

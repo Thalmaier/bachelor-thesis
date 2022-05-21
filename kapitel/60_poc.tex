@@ -1,15 +1,15 @@
 \chapter{Implementierung des Proof-of-Concepts}
 
-Im Verlaufe des Projekts wurde das Datenmodell mitsamt der Hexagonalen Architektur und allen relevanten Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der Businessanforderungen unter Anwendung der gewonnen Erkenntnisse. 
+Im Verlaufe des Projekts wurde das Datenmodell mitsamt der Hexagonalen Architektur und allen relevanten Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der Businessanforderungen unter Anwendung der gewonnenen Erkenntnisse. 
 
 Zu Beginn wurde das Projekt mit benötigten Frameworks und Abhängigkeiten aufgesetzt, um \gls{Boilerplate-Code} weitestgehend zu vermeiden. Die Software wurde mithilfe von Kotlin entwickelt. Die Komponenten sind analog zu einer Hexagonalen Architektur aufgeteilt in primäre Adapter, Applikationskern und sekundäre Adapter. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Die umgesetzten Aggregationsschnitte belaufen sich auf die Variante A und D, sowie ihren Abwandlungen. Dieses Kapitel geht auf die Entwicklung des ersteren Ansatzes mit einem einzelnen, großen Basket-Aggregate tiefer ein.
 
 \section{Design der primären Adapter}
 
-Primäre Adapter sind die grundlegenden Kommunikationsschnittstellen zwischen Clients und der Software, welche den Datenfluss anhand eines externen Signals initiieren. Im Proof-of-Concept fallen in diesen Bereich hauptsächlich die sogenannten Controller, welche für den Empfang von REST-API-Anfragen, die Deserialisierung übergebener Daten, sowie die Serialisierung des Antwortinhaltes zuständig sind. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Der jeweils zuständige Adapter wird aus dem Zusammenschluss der aufgerufenen URL und HTTP-Methode bestimmt. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle externen Informationen müssen vor der Weitergabe an den Applikationskern in ein Objekt des Domainmodells umgewandelt werden. Ist dies nicht der Fall, hält der zentrale Teil der Software eine Abhängigkeit nach außen und das \acrlong{DIP} wird verletzt. Ein konkreter Controller ist im Codebeispiel \ref{lst:controller} abgebildet. Zur Implementierung dieser Funktionalitäten wurde das Framework 'Ktor' eingesetzt.
+Primäre Adapter sind die grundlegenden Kommunikationsschnittstellen zwischen Clients und der Software, welche den Datenfluss anhand eines externen Signals initiieren. Im Proof-of-Concept fallen in diesen Bereich hauptsächlich die sogenannten Controller, welche für den Empfang von REST-API-Anfragen, die Deserialisierung übergebener Daten, sowie die Serialisierung des Antwortinhaltes zuständig sind. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Der jeweils zuständige Adapter wird aus dem Zusammenschluss der aufgerufenen URL und HTTP-Methode bestimmt. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle externen Informationen müssen vor der Weitergabe an den Applikationskern in ein Objekt des Domainmodells umgewandelt werden. Ist dies nicht der Fall, erhält der zentrale Teil der Software eine Abhängigkeit nach außen und das \acrlong{DIP} wird verletzt. Ein konkreter Controller ist im Codebeispiel \ref{lst:controller} abgebildet. Zur Implementierung dieser Funktionalitäten wurde das Framework 'Ktor' eingesetzt.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-\begin{lstlisting}[caption={Beispiel eines Controllers zum aktualiseren von Kundendaten}, label={lst:controller}, language=Kotlin]
+\begin{lstlisting}[caption={Beispiel eines Controllers zum Aktualisieren von Kundendaten}, label={lst:controller}, language=Kotlin]
 put("/basket/{id}/customer") { 
 	variable basketID = parseParameterFromUrl("id")
 	variable customer = request.parseBody<Customer>()  
@@ -31,14 +31,14 @@ Für jeden definierten Anwendungsfall ist ein entsprechender Port und Controller
 
 \section{Realisierung des Applikationskerns}
 
-Der Applikationskern stellt das Herz der Anwendung dar. Das Ziel einer Hexagonalen Architektur ist es, dass Zentrum komplett von äußeren Modulen zu entkoppelt \cite{Cockburn.Hexagonal}. In Domain-Driven Design liegen die Applicationservices, Domainservices und das Datenmodell im Inneren des Applikationskerns \cite[S. 125ff.]{Vernon.2015}. 
+Der Applikationskern stellt das Herz der Anwendung dar. Das Ziel einer Hexagonalen Architektur ist es, das Zentrum komplett von äußeren Modulen zu entkoppeln \cite{Cockburn.Hexagonal}. In Domain-Driven Design liegen die Applicationservices, Domainservices und das Datenmodell im Inneren des Applikationskerns \cite[S. 125ff.]{Vernon.2015}. 
 
 \subsection{Applicationservices}
 
 Ein simples Beispiel für einen implementierten Applicationservice bietet uns der Basket-Item-Applicationservice, welcher bei Änderungen an den Items angesprochen wird. Der in Figur \ref{lst:applicationservice} dargestellte Code behandelt die Entfernung eines Basket-Items. Hierbei wird keine Businesslogik im Service verankert, lediglich das Transaktionsmanagement und die Ablaufsteuerung der Funktionsaufrufe von Aggregates bzw. Domainservices.
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
-	\begin{lstlisting}[caption={Eine Beispielsfunktion des BasketItem-Applikationservice}, label={lst:applicationservice}, language=Kotlin]
+	\begin{lstlisting}[caption={Funktion zum Entfernen von Basket-Items in einem Applicationservice}, label={lst:applicationservice}, language=Kotlin]
 function removeBasketItem(BasketID basketID, BasketItemID basketItemID) {
 	transaction {
 		variable basket = basketRepository.findByID(basketID)
@@ -77,14 +77,14 @@ function setFulfillment(Fulfillment fulfillment, FulfillmentPort fulfillmentPort
 	\begin{itemize}[noitemsep,nolistsep]
 		\item Zeile 2: Überprüfung der Invariante, ob der Basket anhand seines Status aktuell Änderungen zulässt.
 		\item Zeile 3: Laden aller verfügbarer Fulfillment Methoden für diesen Basket durch einen sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
-		\item Zeile 4-6: Falls der neue Wert nicht unter den verfügbaren Fulfillment ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
+		\item Zeile 4-6: Falls der neue Wert nicht unter den verfügbaren Fulfillments ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
 		\item Zeile 7: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
 	\end{itemize}
 \end{minipage}
 
 \subsection{Domainservices}
 
-Aufgaben, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betreffen sind in Domainservices zu implementieren \cite[S. 267]{Vernon.2015}. Beispielsweise wurde im Proof-of-Concept aus Gründen der Übersichtlichkeit und Kohäsion die Abwicklung des Bezahlverfahren aus dem Basket heraustrennt und in einem Domainservice implementiert. In Code-Ausschnitt \ref{lst:domainservice} ist die Ausführung des Bezahlvorgangs abgebildet. 
+Aufgaben, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betreffen sind in Domainservices zu implementieren \cite[S. 267]{Vernon.2015}. Beispielsweise wurde im Proof-of-Concept aus Gründen der Übersichtlichkeit und Kohäsion die Abwicklung des Bezahlverfahren aus dem Basket herausgetrennt und in einem Domainservice implementiert. In Code-Ausschnitt \ref{lst:domainservice} ist die Ausführung des Bezahlvorgangs abgebildet. 
 
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
 	\begin{lstlisting}[caption={Ausführung des Bezahlvorgangs in einem Domainservice}, label={lst:domainservice}, language=Kotlin]
@@ -102,7 +102,7 @@ function executePaymentProcessAndFinalizeBasket(BasketID basketID) {
 	\end{lstlisting}
 	\begin{itemize}[noitemsep,nolistsep]
 		\item Zeile 2: Laden des Baskets aus dem Repository.
-		\item Zeile 3-5: Weist die Durchführung zurück, sofern der Basket sich nicht in den erwarteten Zustand befindet. Dies kann auftreten, wenn die REST-API aufgerufen worden ist, ohne dass ein Zahlungsprozess zuvor gestartet wurde.
+		\item Zeile 3-5: Weist die Durchführung zurück, sofern der Basket sich nicht in dem erwarteten Zustand befindet. Dies kann auftreten, wenn die REST-API aufgerufen worden ist, ohne dass ein Zahlungsprozess zuvor gestartet wurde.
 		\item Zeile 6-8: Durchführung des Bezahlvorgangs. Die erforderliche Aufrufreihenfolge stellt einen Teil des Domainwissens dar und begründet die Zuteilung der Klasse in die Gruppe der Domainservices.
 		\item Zeile 9: Speichern des angepassten Baskets.
 		\item Zeile 10: Erstellen eines Bestellvorgangs durch einen separaten Domainservice.
@@ -113,7 +113,7 @@ function executePaymentProcessAndFinalizeBasket(BasketID basketID) {
 
 Das in der Planungsphase erstellte Context-Diagramm \ref{fig:ContextDiagramm} zeigt verschiedenste Systeme mit denen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden Services, welche das Aufrufen externen API-Schnittstellen simulieren, erstellt. Damit Brücken zwischen der Domain und diesen Services gewährleistet sind, implementieren die sekundären Adapter ein vom Applikationskern definiertes Interface. Analog zu den primären Adaptern, existieren keine direkten Abhängigkeiten des Anwendungskerns zu dem Teil der Software.
 
-Grundsätzlich wird pro Aggregate ein Repository implementiert. Sie managen den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen, wie elementare Speicher- und Suchfunktionen. Zusätzlich existieren spezielle Komponenten für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance-Verbesserungen wurden zusätzliche Abwandlungen der Adapter mit Caching-Funktion erstellt. Der normal fungierende Adapter ruft den zugehörigen API-Service auf, wohingegen der Caching-Adapter den Preis bzw. Artikel aus dem Cache lädt. Falls der Eintrag veraltet ist, wird der eigentliche Adapter angesprochen, um die zum jetzigen Zeitpunkt validen Daten zu erfragen und im Cache abzulegen. Das Beispiel \ref{lst:adapter} stellt die Komponente für das Aktualisieren der Preisinformationen dar. 
+Grundsätzlich wird pro Aggregate ein Repository implementiert. Sie verwalten den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen, wie elementare Speicher- und Suchfunktionen. Zusätzlich existieren spezielle Komponenten für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance-Verbesserungen wurden zusätzliche Abwandlungen der Adapter mit Caching-Funktion erstellt. Der normal fungierende Adapter ruft den zugehörigen API-Service auf, wohingegen der Caching-Adapter den Preis bzw. Artikel aus dem Cache lädt. Falls der Eintrag veraltet ist, wird der eigentliche Adapter angesprochen, um die zum jetzigen Zeitpunkt validen Daten zu erfragen und im Cache abzulegen. Das Beispiel \ref{lst:adapter} stellt die Komponente für das Aktualisieren der Preisinformationen dar. 
 
 \vspace{0,5cm}
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage

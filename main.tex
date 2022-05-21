@@ -109,7 +109,7 @@ autooneside=false
 \usepackage{adjustbox}
 
 
-\usepackage[acronym]{glossaries-extra}
+\usepackage[acronym, nogroupskip]{glossaries-extra}
 \setabbreviationstyle[abbreviation]{short-desc}
 \makeglossaries
 
@@ -246,12 +246,12 @@ autooneside=false
   
   %Acronyms
   \newpage
-  \setlength{\glsdescwidth}{0.8\textwidth}
+  \setlength{\glsdescwidth}{0.85\textwidth}
   \printglossary[type=\acronymtype, style=super, nonumberlist]
   
   %Glossary
   \newpage
-  \setlength{\glsdescwidth}{0.75\textwidth}
+  \setlength{\glsdescwidth}{0.7\textwidth}
   \printglossary[nonumberlist, style=super]
   
   \mainmatter

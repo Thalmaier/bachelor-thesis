@@ -152,7 +152,7 @@ Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem 
 }
 
 \groupedDomainModell{Price}{
-	\item \textbf{PriceId: } {Setzt sich zusammen aus der ProductId und der OutletId.}
+	\item \textbf{PriceId: } {Setzt sich zusammen aus der ProductID und der OutletId.}
 	\item \textbf{GrossAmount: } {Bruttobetrag mit Währung.}
 	\item \textbf{UpdatedAt: } {Zeitstempel notwendig für die Aktualisierungsfunktion des Preises.}
 }
@@ -183,7 +183,7 @@ Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem 
 }
 
 \groupedDomainModell{PaymentProcess}{
-	\item \textbf{BasketId: } {Id des zugehörigen Baskets.}
+	\item \textbf{BasketId: } {ID des zugehörigen Baskets.}
 	\item \textbf{ExternalPaymentRef: } {Referenz auf den Bezahlvorgangs im externen System. Anfangs leer bis zur Initiierung des Payments.}
 	\item \textbf{AmountToPay: } {Betrag der insgesamt bezahlt werden muss. Entspricht dem GrandTotal des Baskets.}
 	\item \textbf{AmountPayed: } {Rechnet alle Payments zusammen und bestimmt in welchem Maße der Basket bereits bezahlt ist.}
@@ -193,7 +193,7 @@ Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem 
 }
 
 \groupedDomainModell{Payment}{
-	\item \textbf{PaymentId: } {Die Id der Zahlung.}
+	\item \textbf{PaymentId: } {Die ID der Zahlung.}
 	\item \textbf{PaymentMethod: } {Bezahlungsart, wie Gutschein oder Barzahlung.}
 	\item \textbf{PaymentStatus: } {Aktueller Zustand des Payments. Mögliche Werte entsprechen 'SELECTED', 'INITIALIZED', 'EXECUTED', 'CANCELED'. Ein Payment ist bei Hinzufügung im Status 'SELECTED'.}
 	\item \textbf{AmountSelected: } {Betrag, welcher durch dieses Payment bezahlt werden soll. Falls dieser Wert leer ist, wird der gesamte Warenkorb durch dieses Payment bezahlt.}
@@ -483,7 +483,7 @@ Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
 			Variante D-CP & 10000 & 505 & 594 & 518,93 & 518 & 19,09 & 8,73 \\
 			\hline
 		\end{tabular}
-	\caption{Lasttest-Ergebnisse mit Simulation der API-Aufruf durch künstliche Verzögerung}
+	\caption{Lasttest-Ergebnisse mit Simulation der API-Aufrufe durch künstliche Verzögerung}
 	\label{fig:performance-delay}
 	\end{table}
 \end{landscape}
