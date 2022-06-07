@@ -1132,6 +1132,44 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{Griffin.2021b}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=GJ}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Jesse},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Domain-Driven Laravel}
+    \verb{doi}
+    \verb 10.1007/978-1-4842-6023-4{\textunderscore }17
+    \endverb
+    \field{isbn}{978-1-4842-6022-7}
+    \field{pages}{521\bibrangedash 544}
+    \field{title}{Hexagonal-Driven Development}
+    \list{location}{1}{%
+      {Berkeley, CA}%
+    }
+    \field{year}{2021}
+  \endentry
+
   \entry{philipbrown.2014}{misc}{}
     \name{author}{1}{}{%
       {{hash=p}{%
@@ -1176,44 +1214,6 @@
     \field{urlday}{10}
     \field{urlmonth}{04}
     \field{urlyear}{2022}
-  \endentry
-
-  \entry{Griffin.2021b}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=GJ}{%
-         family={Griffin},
-         familyi={G\bibinitperiod},
-         given={Jesse},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \name{editor}{1}{}{%
-      {{hash=GJ}{%
-         family={Griffin},
-         familyi={G\bibinitperiod},
-         given={Jesse},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Apress}%
-    }
-    \keyw{Grundlagen}
-    \strng{namehash}{GJ1}
-    \strng{fullhash}{GJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Domain-Driven Laravel}
-    \verb{doi}
-    \verb 10.1007/978-1-4842-6023-4{\textunderscore }17
-    \endverb
-    \field{isbn}{978-1-4842-6022-7}
-    \field{pages}{521\bibrangedash 544}
-    \field{title}{Hexagonal-Driven Development}
-    \list{location}{1}{%
-      {Berkeley, CA}%
-    }
-    \field{year}{2021}
   \endentry
 
   \entry{Alliaume.2018}{misc}{}

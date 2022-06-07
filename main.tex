@@ -2,7 +2,8 @@
   11pt,					% Schriftgröße
   DIV=13,				% Seitenlayout (Satzspiegel)
   parskip=half,			% Abstand zwischen Absätzen
- % twoside,				% Doppelseitig
+  usegeometry,
+  % twoside,				% Doppelseitig
 %  headsepline,
   headings,	
 %  draft,				% Korrek\add{text}turfassung
@@ -92,7 +93,7 @@
 % Trennung
 \hyphenation{Crash-zo-ne}
 
-
+\usepackage[footskip=50pt, textheight=700pt]{geometry}
 
 % Kopf- und Fußzeile
 \usepackage[
@@ -109,6 +110,7 @@ autooneside=false
 \usepackage{adjustbox}
 
 
+\usepackage{nameref}
 \usepackage[acronym, nogroupskip]{glossaries-extra}
 \setabbreviationstyle[abbreviation]{short-desc}
 \makeglossaries
@@ -118,6 +120,9 @@ autooneside=false
 
 \usepackage{caption}
 \usepackage{newfloat}
+\usepackage{float}
+
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0cm}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,7 +144,7 @@ autooneside=false
 
 \title{Aggregationsschnitt einer Checkout-Software auf Basis einer Hexagonalen Architektur mit Domain-Driven Design }
 
-\subtitle{ \vspace{2ex} \LARGE Bachelor-Arbeit}
+\subtitle{ \vspace{2ex} \LARGE Bachelorarbeit}
 
 \author{Simon Thalmaier}
 
@@ -156,8 +161,7 @@ autooneside=false
   }
   
 % Rückseite der Titelseite
-\uppertitleback{
-}
+\uppertitleback{}
 
 \lowertitleback{} %Dokumenteninformation, Veröffentlichung, Rahmen, bibliographisches Angaben
 
@@ -252,7 +256,7 @@ autooneside=false
   %Glossary
   \newpage
   \setlength{\glsdescwidth}{0.7\textwidth}
-  \printglossary[nonumberlist, style=super]
+  \printglossary[type=main, nonumberlist, style=super]
   
   \mainmatter
   

@@ -81,18 +81,18 @@ Die Binärdateien des Projekts wurden zur Versionierung in ein Git-Repository hi
 	\includesvg[inkscapelatex=false, width=\textwidth]{svg/AD PutBezahlmethode.svg}
 	\caption{Aktivitätsdiagramm für das Hinzufügen einer Bezahlmethode}
 	\label{fig:SL-PutBezahlmethode}
+	\vspace{500pt}
 \end{figure}
 
-\phantom{}
 \newpage
 
 \section{API-Endpunkte}
 
-Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem bietet bietet Anhang \ref{fig:REST-API} eine grafische Übersicht der Endpunkte für Variante A des Aggregate-Designs.
+Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem bietet Anhang \ref{fig:REST-API} eine grafische Übersicht der Endpunkte für Variante A des Aggregate-Designs.
 
 \begin{figure}[h!]
 	\centering
-	\includesvg[inkscapelatex=false, width=\textwidth, height=0.85\textheight]{svg/REST API.svg}
+	\includesvg[inkscapelatex=false, width=\textwidth, height=0.86\textheight]{svg/REST API.svg}
 	\caption{REST-API der Checkout-Software für diesen Proof-of-Concept}
 	\label{fig:REST-API}
 \end{figure}
@@ -232,7 +232,7 @@ Die OpenAPI Definition der API ist in Anhang \ref{fig:Github} hinterlegt. Zudem 
 
 \section{Ergebnisse des Lasttests} \label{label:Lasttests}
 
-Der Lasttest wurde mithilfe der Software 'JMeter' durchgeführt. Die Vorlage der jeweiligen Testfälle sind im Repository des Proof-of-Concepts unter Anhang \ref{fig:Github} zu finden. Ein Durchlauf bezieht sich auf einen typischen User Story, welche folgende Aspekte beinhaltet: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. 
+Der Lasttest wurde mithilfe der Software 'JMeter' durchgeführt. Die Vorlage der jeweiligen Testfälle sind im Repository des Proof-of-Concepts unter Anhang \ref{fig:Github} zu finden. Ein Durchlauf bezieht sich auf eine typische \emph{\Gls{User Story}}, welche folgende Aspekte beinhaltet: Erstellen eines Baskets, dreimaliges Hinzufügen von Artikeln, Setzen der Checkout-Daten, zweimaliges Abrufen des Warenkorbs, Hinzufügen eines Payments und das Initiieren inklusive Durchführen des Bezahlvorgangs. 
 
 Folgende Abkürzungen wurde zur Übersichtlichkeit genutzt:
 \begin{itemize}[noitemsep,nolistsep]

@@ -13,7 +13,7 @@ Aufgrund der ausführlichen Vorbereitung wurde die Domain bereits passiv festgel
 
 In der Kommunikation zwischen dem Business und Entwicklern kann es oft zu Missverständnissen kommen. Womöglich weil Informationen, Einschränkungen oder Prozesse ausgelassen bzw. für selbstverständlich erachtet werden. Durch die klare Definition von gemeinsam verwendeten Begriffen und ihren Bedeutungen wird implizit notwendiges Wissen über die Domain und ihre Eigenschaften geschaffen. Viele dieser Fachbegriffe können für Anwendungsfälle verwendet werden und machen die Personen, welche letztendlich die Businessanforderungen umsetzten sollen, mit der Domain vertraut. Da ein Team mit geringem Domainwissen auch die Korrektheit der Software gefährdet, ist die Ubiquitous Language ein wichtiger Meilenstein in Domain-Driven Design. \cite[S. 335ff.]{Evans.2011}
 
-In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird im folgenden Abschnitt die Ubiquitous Language definiert, um ein tieferes Verständnis über den Bounded-Context zu gewährleisten. Hierbei wurde sich auf die, für dieses Projekt, relevanten Terme beschränkt und ist lediglich eine mögliche Umsetzung einer Ubiquitous Language. Dank der Planungsphase sind zahlreiche Begriffe bereits definiert und helfen bei der Erstellung einer solchen Dokumentation. Eingeklammerte Wörter beschreiben Synonyme zu dem vorangestellten Ausdruck.
+In Zusammenarbeit mit dem Lead-Developer und \emph{\Gls{Product Owner}} des Teams wird im folgenden Abschnitt die Ubiquitous Language definiert, um ein tieferes Verständnis über den Bounded-Context zu gewährleisten. Hierbei wurde sich auf die, für dieses Projekt, relevanten Terme beschränkt und ist lediglich eine mögliche Umsetzung einer Ubiquitous Language. Dank der Planungsphase sind zahlreiche Begriffe bereits definiert und helfen bei der Erstellung einer solchen Dokumentation. Eingeklammerte Wörter beschreiben Synonyme zu dem vorangestellten Ausdruck.
 
 {\large \textbf{Ubiquitous Language des Domain-Modells:}}
 \begin{itemize}[topsep=-3px]
@@ -37,7 +37,7 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 	\item \textbf{Order: } {Bestellung eines Baskets nach Abschluss des Zahlvorgangs. Wird durch nachfolgende Systeme angelegt und verwaltet.}
 \end{itemize}
 
-\vspace{2em}
+\pagebreak
 
 {\large \textbf{Ubiquitous Language der Businessprozesse:}}
 \begin{itemize}[topsep=-3px]
@@ -45,7 +45,7 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 	\item \textbf{Basket Cancellation: } {Stornieren des zugehörigen Baskets mithilfe des Zustandswechsel auf 'Canceled'. Nach der Cancellation dürfen keine weiteren Änderungen an dem Basket durchgeführt werden. Der Zustand muss zuvor 'Open' sein. }
 	\item \textbf{Basket Creation: } {Explizite oder Implizite Erstellung eines neuen Baskets. Geschieht automatisch sofern noch kein Basket für den Customer existiert oder nach einer Basket Finalization.}
 	\item \textbf{Basket Calculation: } {Die Kalkulation von Bruttobeträgen aller Artikel sowie der Summe von beinhalteten Preisen des Baskets. Beträge aus unterschiedlichen Mehrwertsteuersätzen müssen weiterhin aus rechtlichen Gründen einzeln verwiesen werden können.}
-	\item \textbf{High Volume Ordering: } {Die Bestellung von Artikeln in hoher Stückzahl. Aufgrund von Businessanforderungen soll es nur begrenzt möglich sein, dass ein Kunde innerhalb eines Baskets oder in mehren Bestellungen das gleiche Produkt mehrfach kauft.}
+	\item \textbf{High Volume Ordering: } {Die Bestellung von Artikeln in hoher Stückzahl. Aufgrund von Businessanforderungen soll es nur begrenzt möglich sein, dass ein Kunde innerhalb eines Baskets oder in mehreren Bestellungen das gleiche Produkt mehrfach kauft.}
 	\item \textbf{Basket Validation: } {Durchführung einer Validierung des Baskets auf Inkonsistenzen oder fehlenden, jedoch notwendigen, Werten.}
 	\item \textbf{Payment Initialization: } {Start des Zahlungsvorgangs, nachdem das Datenmodell auf invalide Zustände überprüft worden ist. Nur möglich bei einen offenen Basket, welcher Produkte und Payments enthält. Resultiert in den Zustand 'Frozen', wodurch keine weiteren Inhaltsänderungen an dem Basket vorgenommen werden können.}
 	\item \textbf{Payment Execution: } {Durchführung des Zahlungsvorgangs eines gefrorenen Baskets. Anschließend findet die Basket Finalization statt.}
@@ -55,9 +55,11 @@ In Zusammenarbeit mit dem Lead-Developer und \Gls{Product Owner} des Teams wird 
 
 Im Verlaufe der Definitionsphase der Ubiquitous Language wurden die Prozesse näher beleuchtet, Benamungen von Datenobjekten aufgedeckt und Businessanforderungen vorgegeben. Ein gutes Modell spiegelt die Sprache des Bounded-Contexts wider, weshalb auf Basis dieses Unterkapitels die Klassen designt werden. 
 
+\pagebreak
+
 \section{Definition der Value Objects}
 
-Aufgrund der positiven Eigenschaften von Value Objects sollte anfangs jede Datenstruktur des Domain-Modells als ein solches implementiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden \cite[S. 219f.]{Vernon.2015}. Der Basket ist hierbei der Ausgangspunkt des Modells und die Ubiquitous Language unterstützt bei der richtigen Klassen-Benamung. Es wird auf ein schlankes Design im Vergleich zur Produktivanwendung geachtet, ohne dabei mögliche Aggregationsschnitte zu beeinflussen. 
+Aufgrund der positiven Eigenschaften von Value Objects sollte anfangs jede Datenstruktur des Domain-Modells als ein solches implementiert und erst nach gründlicher Überlegung, falls die Notwendigkeit besteht, zu einer Entity umgeschrieben werden \cite[S. 219f.]{Vernon.2015}. Der Basket ist hierbei der Ausgangspunkt des Modells und die Ubiquitous Language unterstützt bei der richtigen Klassen-Benamung. Es wird auf ein schlankes Design im Vergleich zur Produktivanwendung geachtet, ohne dabei mögliche Aggregationsschnitte zu beeinflussen. \\
 
 \domainModell{Basket-Klasse}{
 	\item \textbf{BasketID: } {Eindeutige Identifikation des Baskets zur Referenzierung durch die Touchpoints.}
@@ -119,6 +121,8 @@ Anhand dieser Eigenschaften können die Value Objects untersucht und daraufhin a
 \textbf{IdentifiedCustomer: } {Werden innerhalb eines Bounded-Contexts die Kundendaten verarbeitet, stellen diese meinst eine Entity dar. In der Checkout-Domain finden keine Operationen auf den Informationen statt. Die vorangestellten Systeme senden bei Änderungen die aktualisierten Kundendaten an die Checkout-Software. Folglich besitzen sie keinen eigenen Lebenszyklus und können als \emph{Value Object} designt werden.}
 
 \textbf{SessionCustomer: } {Die Identifikation dieses Objekts geschieht über die Session-ID. Dadurch ist ein SessionCustomer in der Gruppe der \emph{Entities} aufzuhängen. }
+
+\pagebreak
 
 \textbf{Basket-Item: } {Auf den ersten Blick ist ein Basket-Item als Entity zu designen. Es besitzt eine eigene ID und wird durch das Aktualisieren der Preise und Produktdaten bearbeitet. Sie haben somit einen Lebenszyklus. Jedoch lassen sich auch Argumente finden, warum ein Item durchaus ein Value Object sein kann. Die Identifikation erfolgt zwar durch eine ID, allerdings kann dies durch folgenden Anwendungsfall hinterfragt werden. Wenn das gleiche Produkt mehrmals sich im Basket befindet, existieren im Datenmodell auch mehrere zugehörige Basket-Items. Bei der Reduzierung der Stückzahl eines Artikels beispielsweise von vier auf eins, werden alle Items gesucht, welche das gleiche Produkt repräsentieren, und davon drei gelöscht. Dies würde bedeuten, dass ein Basket-Item zusätzlich anhand seines Produktes identifiziert wird. Sollte die ProductID die Identität des Baskets ausmachen, dann wären alle Basket-Items mit dem gleichen Produkt auch identisch. Dies stimmt allerdings nur bedingt, da sie sich theoretisch durch unterschiedliche Preise und Serviceangebote (in der Produktivumgebung) differenzieren können. Als Folgerung kann geschlossen werden, dass ein Basket-Item lediglich eine Momentaufnahme darstellt, wodurch das Design als Value Object berechtigt wäre. Letztendlich kann das Basket-Item in diesem Bounded-Context als Entity oder Value Object definiert werden. Für den Proof-of-Concept wurde das Basket-Item als Entity festgelegt. Die Begründung hierfür ist die schiere Anzahl von Datenanpassungen und Operationen auf einem Basket-Item, welche als \emph{Entity} anhand ihre Veränderbarkeit natürlicher bewältigt werden können.}
 
