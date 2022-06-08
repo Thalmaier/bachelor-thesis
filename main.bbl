@@ -429,6 +429,18 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{Scrum.Def}{misc}{}
+    \keyw{Acronym}
+    \field{labeltitlesource}{title}
+    \field{title}{What is Scrum?}
+    \verb{url}
+    \verb https://www.scrum.org/resources/what-is-scrum
+    \endverb
+    \field{urlday}{07}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{scrum.sprint}{misc}{}
     \keyw{Acronym}
     \field{labeltitlesource}{title}
@@ -1108,6 +1120,30 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{hgraca.2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=h}{%
+         family={hgraca},
+         familyi={h\bibinitperiod},
+      }}%
+    }
+    \keyw{Grundlagen}
+    \strng{namehash}{h1}
+    \strng{fullhash}{h1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{DDD, Hexagonal, Onion, Clean, CQRS, $\ldots$ How I put it all
+  together}
+    \verb{url}
+    \verb https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hex
+    \verb agonal-onion-clean-cqrs-how-i-put-it-all-together/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{04}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{Cockburn.Hexagonal}{misc}{}
     \name{author}{1}{}{%
       {{hash=CA}{%
@@ -1187,30 +1223,6 @@
     \verb https://www.culttt.com/2014/12/31/hexagonal-architecture/
     \endverb
     \field{year}{2014}
-    \field{urlday}{10}
-    \field{urlmonth}{04}
-    \field{urlyear}{2022}
-  \endentry
-
-  \entry{hgraca.2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=h}{%
-         family={hgraca},
-         familyi={h\bibinitperiod},
-      }}%
-    }
-    \keyw{Grundlagen}
-    \strng{namehash}{h1}
-    \strng{fullhash}{h1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{DDD, Hexagonal, Onion, Clean, CQRS, $\ldots$ How I put it all
-  together}
-    \verb{url}
-    \verb https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hex
-    \verb agonal-onion-clean-cqrs-how-i-put-it-all-together/
-    \endverb
-    \field{year}{2017}
     \field{urlday}{10}
     \field{urlmonth}{04}
     \field{urlyear}{2022}

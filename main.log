@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  7 JUN 2022 04:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.7)  8 JUN 2022 03:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1478,7 +1478,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-222.
+220.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1499,20 +1499,20 @@ LaTeX Warning: Unused global option(s):
 (kapitel/80_anhang.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 222.
-LaTeX Font Info:    ... okay on input line 222.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 220.
+LaTeX Font Info:    ... okay on input line 220.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1540,18 +1540,18 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count513
-LaTeX Info: Redefining \microtypecontext on input line 222.
-Package microtype Info: Applying patch `item' on input line 222.
-Package microtype Info: Applying patch `toc' on input line 222.
-Package microtype Info: Applying patch `eqnum' on input line 222.
-Package microtype Info: Applying patch `footnote' on input line 222.
+LaTeX Info: Redefining \microtypecontext on input line 220.
+Package microtype Info: Applying patch `item' on input line 220.
+Package microtype Info: Applying patch `toc' on input line 220.
+Package microtype Info: Applying patch `eqnum' on input line 220.
+Package microtype Info: Applying patch `footnote' on input line 220.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 222.
+LaTeX Info: Redefining \showhyphens on input line 220.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1618,8 +1618,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'location' + 'address'.
 
 )
-Package biblatex Info: Reference section=0 on input line 222.
-Package biblatex Info: Reference segment=0 on input line 222.
+Package biblatex Info: Reference section=0 on input line 220.
+Package biblatex Info: Reference segment=0 on input line 220.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1664,9 +1664,9 @@ Package newfloat Info: `float' package detected.
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
 File: bilder//thi_logo_cropped.pdf Graphic file (type pdf)
 <use bilder//thi_logo_cropped.pdf>
-Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 229.
+Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 225.
 (pdftex.def)             Requested size: 229.81075pt x 101.48807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 229
+LaTeX Font Info:    Trying to load font information for U+msa on input line 225
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1675,7 +1675,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 229
+LaTeX Font Info:    Trying to load font information for U+msb on input line 225
 .
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1725,7 +1725,7 @@ be-dan-ke ich mich bei
 
 [4])
 Package tocbasic Info: character protrusion at toc deactivated on input line 23
-6.
+2.
  (main.toc
 Overfull \hbox (2.58478pt too wide) detected at line 12
  []\OT1/lmss/bx/n/10.95 VIII
@@ -1748,12 +1748,12 @@ Overfull \hbox (2.58478pt too wide) detected at line 12
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 239.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 235.
 
 
 [6]
-Package tocbasic Info: character protrusion at lof deactivated on input line 24
-2.
+Package tocbasic Info: character protrusion at lof deactivated on input line 23
+8.
  (main.lof)
 \tf@lof=\write9
 \openout9 = `main.lof'.
@@ -1772,7 +1772,7 @@ Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Loading of package `scrhack' may help to
 (scrreprt)              avoid this warning, if you are using a
 (scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@listhead interface on input line 249.
+(scrreprt)              deprecated \float@listhead interface on input line 245.
 
 
 (main.lol)
@@ -1784,7 +1784,7 @@ Class scrreprt Warning: \float@listhead detected!
 ] (main.acr) [9
 
 ] (main.gls
-Overfull \hbox (19.13892pt too wide) in paragraph at lines 2--40
+Overfull \hbox (19.13892pt too wide) in paragraph at lines 2--41
 [] 
  []
 
@@ -1795,7 +1795,7 @@ Overfull \hbox (19.13892pt too wide) in paragraph at lines 2--40
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 261.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 257.
 
 
 [11]
@@ -1837,7 +1837,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 263.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 259.
 
 
 [3]
@@ -2460,7 +2460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 265.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 261.
 
 
 [13]
@@ -2551,7 +2551,7 @@ put line 96.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 267.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 263.
 
 
 [19 <./svg-inkscape/ContextDiagramm_svg-raw.pdf>]
@@ -2616,7 +2616,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 269.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 265.
 
 
 [25]
@@ -2757,19 +2757,19 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 File: ./svg-inkscape/VarD_svg-raw.pdf Graphic file (type pdf)
 <use ./svg-inkscape/VarD_svg-raw.pdf>
 Package pdftex.def Info: ./svg-inkscape/VarD_svg-raw.pdf  used on input line 22
-5.
+6.
 (pdftex.def)             Requested size: 310.15799pt x 137.85468pt.
 
 
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 246.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 247.
 
 
 [36 <./svg-inkscape/VarD_svg-raw.pdf>]
 Package svg Info: Last page of `./svg-inkscape/CircularDependency_svg-tex.pdf' 
-is 7 on input line 252.
+is 7 on input line 254.
 
 (svg-inkscape/CircularDependency_svg-tex.pdf_tex
 <./svg-inkscape/CircularDependency_svg-tex.pdf, id=331, page=1, 558.58687pt x 1
@@ -2822,7 +2822,7 @@ Package pdftex.def Info: ./svg-inkscape/CircularDependency_svg-tex.pdf , page7
 used on input line 70.
 (pdftex.def)             Requested size: 459.6215pt x 106.54681pt.
 )
-Overfull \hbox (10.95pt too wide) in paragraph at lines 263--275
+Overfull \hbox (10.95pt too wide) in paragraph at lines 265--279
 []$[]$ 
  []
 
@@ -2830,7 +2830,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 263--275
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 277.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 281.
 
 
 [37 <./svg-inkscape/CircularDependency_svg-tex.pdf> <./svg-inkscape/CircularDep
@@ -2859,12 +2859,12 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/CircularDependency_svg-tex.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (10.95pt too wide) in paragraph at lines 285--306
+Overfull \hbox (10.95pt too wide) in paragraph at lines 289--310
 []$[]$ 
  []
 
 
-Overfull \hbox (10.95pt too wide) in paragraph at lines 311--335
+Overfull \hbox (10.95pt too wide) in paragraph at lines 315--339
 []$[]$ 
  []
 
@@ -2872,7 +2872,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 311--335
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 337.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 341.
 
 
 [38]
@@ -2880,22 +2880,22 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 348.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 352.
 
 
 [39]
 
 Package glossaries-extra Warning: Base acronym command \acrshort should not be 
 used with new abbreviation definitions. Use \glsxtrshort instead on input line 
-351.
+355.
 
 
 Package glossaries-extra Warning: Base acronym command \acrlong should not be u
 sed with new abbreviation definitions. Use \glsxtrlong instead on input line 35
-1.
+5.
 
 Package svg Info: Last page of `./svg-inkscape/Performance Default_svg-tex.pdf'
- is 24 on input line 356.
+ is 24 on input line 360.
 (svg-inkscape/Performance Default_svg-tex.pdf_tex
 <./svg-inkscape/Performance Default_svg-tex.pdf, id=351, page=1, 528.47438pt x 
 316.18124pt>
@@ -3070,7 +3070,7 @@ Package pdftex.def Info: ./svg-inkscape/Performance Default_svg-tex.pdf , page2
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 387.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 391.
 
 
 [40 <./svg-inkscape/Performance Default_svg-tex.pdf> <./svg-inkscape/Performanc
@@ -3167,20 +3167,8 @@ df): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Default_svg-tex.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Package svg Info: Calling Inkscape on input line 397.
-runsystem(inkscape "svg/Performance Database.svg" -D --export-latex --export-fi
-lename="Performance Database_svg-tex.pdf")...executed.
-
-runsystem(if not exist "./svg-inkscape/" mkdir "./svg-inkscape/")...executed.
-
-runsystem(move "Performance Database_svg-tex.pdf" "./svg-inkscape/Performance D
-atabase_svg-tex.pdf")...executed.
-
-runsystem(move "Performance Database_svg-tex.pdf_tex" "./svg-inkscape/Performan
-ce Database_svg-tex.pdf_tex")...executed.
-
 Package svg Info: Last page of `./svg-inkscape/Performance Database_svg-tex.pdf
-' is 23 on input line 397.
+' is 23 on input line 401.
  (svg-inkscape/Performance Database_svg-tex.pdf_tex
 <./svg-inkscape/Performance Database_svg-tex.pdf, id=381, page=1, 639.13782pt x
  380.17032pt>
@@ -3348,7 +3336,7 @@ Package pdftex.def Info: ./svg-inkscape/Performance Database_svg-tex.pdf , page
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 403.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 407.
 
 
 [41 <./svg-inkscape/Performance Database_svg-tex.pdf> <./svg-inkscape/Performan
@@ -3442,7 +3430,7 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Database_svg-tex.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package svg Info: Last page of `./svg-inkscape/Performance Delay_svg-tex.pdf' i
-s 21 on input line 411.
+s 21 on input line 415.
  (svg-inkscape/Performance Delay_svg-tex.pdf_tex
 <./svg-inkscape/Performance Delay_svg-tex.pdf, id=410, page=1, 532.23843pt x 25
 5.95625pt>
@@ -3596,7 +3584,7 @@ used on input line 96.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 419.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 423.
 
 
 [42 <./svg-inkscape/Performance Delay_svg-tex.pdf> <./svg-inkscape/Performance 
@@ -3681,7 +3669,7 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Performance Delay_svg-tex.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
@@ -3690,7 +3678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--423
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 271.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 267.
 
 
 [43]
@@ -3722,9 +3710,9 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 12--33
 
 
 ]
-Overfull \hbox (26.85551pt too wide) in paragraph at lines 44--45
+Overfull \hbox (9.21992pt too wide) in paragraph at lines 44--45
 \OT1/lmss/m/n/10.95 (-20) Ein simp-les Bei-spiel f[]ur einen im-ple-men-tier-te
-n Ap-p-li-ca-ti-ons-er-vice bie-tet uns der Basket-Item-Applicationservice,
+n Ap-p-li-ca-ti-ons-er-vice bie-tet der Basket-Item-Applicationservice,
  []
 
 
@@ -3776,7 +3764,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
 
 [47])
-Overfull \hbox (10.95pt too wide) in paragraph at lines 141--273
+Overfull \hbox (10.95pt too wide) in paragraph at lines 141--269
 []$[]$ 
  []
 
@@ -3784,7 +3772,7 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 141--273
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 273.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 269.
 
 
 [48]
@@ -4080,32 +4068,33 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 
 ])
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-83.
+79.
  (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 283.
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 279.
 
 (C:\Users\simon\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Overfull \hbox (10.50742pt too wide) in paragraph at lines 284--284
-[]\OT1/lmss/m/n/10.95 (-20) Martin Fow-ler. \OT1/lmss/m/sl/10.95 (-20) Tech-ni-
-cal-Debt\OT1/lmss/m/n/10.95 (-20) . 2019. \OT1/lmr/m/sc/10.95 (-20) url\OT1/lms
-s/m/n/10.95 (-20) : $\OT1/lmtt/m/n/10.95 https : / / martinfowler . com / bliki
- / TechnicalDebt .
- []
-
 [15
 
 
 
 
 ]
-Overfull \hbox (8.72037pt too wide) in paragraph at lines 284--284
+Overfull \hbox (10.50742pt too wide) in paragraph at lines 280--280
+[]\OT1/lmss/m/n/10.95 (-20) Martin Fow-ler. \OT1/lmss/m/sl/10.95 (-20) Tech-ni-
+cal-Debt\OT1/lmss/m/n/10.95 (-20) . 2019. \OT1/lmr/m/sc/10.95 (-20) url\OT1/lms
+s/m/n/10.95 (-20) : $\OT1/lmtt/m/n/10.95 https : / / martinfowler . com / bliki
+ / TechnicalDebt .
+ []
+
+
+Overfull \hbox (8.72037pt too wide) in paragraph at lines 280--280
 \OT1/lmtt/m/n/10.95 mediasaturn . sharepoint . com / sites / tech -[] betriebsr
 at -[] msitis$ \OT1/lmss/m/n/10.95 (-20) (be-sucht am 10.04.2022). 
  []
@@ -4114,7 +4103,7 @@ at -[] msitis$ \OT1/lmss/m/n/10.95 (-20) (be-sucht am 10.04.2022).
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 283.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 279.
 
 
 [16]
@@ -4122,7 +4111,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 283.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 279.
 
 
 [17]
@@ -4130,7 +4119,7 @@ Package scrbase Warning: Usage of deprecated command `\ifstr'.
 Package scrbase Warning: Usage of deprecated command `\ifstr'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
-(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 285.
+(scrbase)                Please replace `\ifstr' by `\Ifstr' on input line 281.
 
 
 [18] (main.aux (glossary.aux) (kapitel/00_abstract.aux)
@@ -4145,11 +4134,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47293 strings out of 478659
- 999802 string characters out of 2845920
- 1917973 words of memory out of 3000000
+ 47287 strings out of 478659
+ 999761 string characters out of 2845920
+ 1918011 words of memory out of 3000000
  64125 multiletter control sequences out of 15000+600000
- 543512 words of font info for 289 fonts, out of 8000000 for 9000
+ 543213 words of font info for 286 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  110i,21n,117p,10601b,3437s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}
@@ -4169,7 +4158,7 @@ c/lm/lmss9.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ic/lm/lmsso10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmtt10.pfb><C:/Users/simon/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmtt8.pfb>
-Output written on main.pdf (79 pages, 1235677 bytes).
+Output written on main.pdf (79 pages, 1236047 bytes).
 PDF statistics:
  890 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

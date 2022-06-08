@@ -6,7 +6,7 @@ Zu Beginn wurde das Projekt mit benötigten Frameworks und Abhängigkeiten aufge
 
 \section{Design der primären Adapter}
 
-Primäre Adapter sind die grundlegenden Kommunikationsschnittstellen zwischen Clients und der Software, welche den Datenfluss anhand eines externen Signals initiieren. Im Proof-of-Concept fallen in diesen Bereich hauptsächlich die sogenannten Controller, welche für den Empfang von REST-API-Anfragen, die Deserialisierung übergebener Daten, sowie die Serialisierung des Antwortinhaltes zuständig sind. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Der jeweils zuständige Adapter wird aus dem Zusammenschluss der aufgerufenen URL und HTTP-Methode bestimmt. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle externen Informationen müssen vor der Weitergabe an den Applikationskern in ein Objekt des Domainmodells umgewandelt werden. Ist dies nicht der Fall, erhält der zentrale Teil der Software eine Abhängigkeit nach außen und das \acrlong{DIP} wird verletzt. Ein konkreter Controller ist im Codebeispiel \ref{lst:controller} abgebildet. Zur Implementierung dieser Funktionalitäten wurde das Framework 'Ktor' eingesetzt.
+Primäre Adapter sind die grundlegenden Kommunikationsschnittstellen zwischen Clients und der Software. Sie initiieren den Datenfluss anhand eines externen Signals. Im Proof-of-Concept fallen in diesen Bereich hauptsächlich die sogenannten Controller, welche für den Empfang von REST-API-Anfragen, die Deserialisierung übergebener Daten, sowie die Serialisierung des Antwortinhaltes zuständig sind. Zu Beginn jedes Anwendungsfalles wird ein Controller durch den Touchpoint angesprochen. Der jeweils zuständige Adapter wird aus dem Zusammenschluss der aufgerufenen URL und HTTP-Methode bestimmt. Ein Controller beinhaltet lediglich Logik für den Empfang von Daten und der Formulierung zugehöriger Antworten. Alle externen Informationen müssen vor der Weitergabe an den Applikationskern in ein Objekt des Domainmodells umgewandelt werden. Ist dies nicht der Fall, erhält der zentrale Teil der Software eine Abhängigkeit nach außen und das \acrlong{DIP} wird verletzt. Ein konkreter Controller ist im Codebeispiel \ref{lst:controller} abgebildet. Zur Implementierung dieser Funktionalitäten wurde das Framework 'Ktor' eingesetzt.
 
 \vspace{0.5cm}
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
@@ -41,7 +41,7 @@ Der Applikationskern stellt das Herz der Anwendung dar. Das Ziel einer Hexagonal
 
 \subsection{Applicationservices}
 
-Ein simples Beispiel für einen implementierten Applicationservice bietet uns der Basket-Item-Applicationservice, welcher bei Änderungen an den Items angesprochen wird. Der in Figur \ref{lst:applicationservice} dargestellte Code behandelt die Entfernung eines Basket-Items. Hierbei wird keine Businesslogik im Service verankert, lediglich das Transaktionsmanagement und die Ablaufsteuerung der Funktionsaufrufe von Aggregates bzw. Domainservices.
+Ein simples Beispiel für einen implementierten Applicationservice bietet der Basket-Item-Applicationservice, welcher bei Änderungen an den Items angesprochen wird. Das Codebeispiel \ref{lst:applicationservice} behandelt die Methode zum Entfernung eines Basket-Items. Hierbei wird keine Businesslogik im Service verankert, lediglich das Transaktionsmanagement und die Ablaufsteuerung der Funktionsaufrufe von Aggregates bzw. Domainservices.
 
 \vspace{0.5cm}
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
@@ -90,7 +90,7 @@ function setFulfillment(Fulfillment fulfillment, FulfillmentPort fulfillmentPort
 	\begin{itemize}
 		\setlength\itemsep{-1pt}
 		\item Zeile 2: Überprüfung der Invariante, ob der Basket anhand seines Status aktuell Änderungen zulässt.
-		\item Zeile 4: Laden aller verfügbarer Fulfillment Methoden für diesen Basket durch einen sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
+		\item Zeile 4: Laden der verfügbaren Fulfillment Methoden für diesen Basket durch einen sekundären Adapter. Die Kommunikation mit dem Adapter erfolgt über einen Port.
 		\item Zeile 6-8: Falls der neue Wert nicht unter den verfügbaren Fulfillments ist, wird der Aufruf zurückgewiesen und eine entsprechende Fehlermeldung an den Client durch den Controller geliefert.
 		\item Zeile 10: Überschreiben des alten Wertes. Dieser Punkt wird nicht erreicht, wenn zuvor eine Businessanforderung gescheitert ist.
 	\end{itemize}
@@ -100,7 +100,7 @@ function setFulfillment(Fulfillment fulfillment, FulfillmentPort fulfillmentPort
 
 \subsection{Domainservices}
 
-Aufgaben, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betreffen sind in Domainservices zu implementieren \cite[S. 267]{Vernon.2015}. Beispielsweise wurde im Proof-of-Concept aus Gründen der Übersichtlichkeit und Kohäsion die Abwicklung des Bezahlverfahren aus dem Basket herausgetrennt und in einem Domainservice implementiert. In Code-Ausschnitt \ref{lst:domainservice} ist die Ausführung des Bezahlvorgangs abgebildet. 
+Aufgaben, welche nicht direkt einem Objekt zugewiesen werden können oder mehrere Aggregates betreffen sind in Domainservices zu implementieren \cite[S. 267]{Vernon.2015}. Beispielsweise wurde im Proof-of-Concept aus Gründen der Übersichtlichkeit und Kohäsion die Abwicklung des Bezahlverfahrens aus dem Basket herausgetrennt und in einem Domainservice implementiert. In Code-Ausschnitt \ref{lst:domainservice} ist die Ausführung des Bezahlvorgangs abgebildet. 
 
 \vspace{0.5cm}
 \begin{minipage}{\linewidth} % No pagebreak inside a minipage
@@ -133,7 +133,7 @@ function executePaymentProcessAndFinalizeBasket(BasketID basketID) {
 
 \section{Anbinden externer Systeme und Datenbanken durch sekundäre Adapter}
 
-Das in der Planungsphase erstellte Context-Diagramm \ref{fig:ContextDiagramm} zeigt verschiedenste Systeme mit denen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden Services, welche das Aufrufen externen API-Schnittstellen simulieren, erstellt. Damit Brücken zwischen der Domain und diesen Services gewährleistet sind, implementieren die sekundären Adapter ein vom Applikationskern definiertes Interface. Analog zu den primären Adaptern, existieren keine direkten Abhängigkeiten des Anwendungskerns zu dem Teil der Software.
+Das in der Planungsphase erstellte Context-Diagramm \ref{fig:ContextDiagramm} zeigt verschiedenste Systeme mit denen die Anwendung zum Erfüllen ihrer Aufgaben kommunizieren muss. Für diesen Zweck wurden Services, welche das Aufrufen externen API-Schnittstellen simulieren, erstellt. Damit Brücken zwischen der Domain und den Services gewährleistet sind, implementieren die sekundären Adapter ein vom Applikationskern definiertes Interface. Analog zu den primären Adaptern, existieren keine direkten Abhängigkeiten des Anwendungskerns zu dem Teil der Software.
 
 Grundsätzlich wird pro Aggregate ein Repository implementiert. Sie verwalten den Zugriff auf die Datenbank und alle Funktionalitäten, welche in dieses Aufgabengebiet fallen, wie elementare Speicher- und Suchfunktionen. Zusätzlich existieren spezielle Komponenten für das Erfragen der aktuellen Preis- bzw. Artikelinformationen. Aufgrund von Performance-Verbesserungen wurden zusätzliche Abwandlungen der Adapter mit Caching-Funktion erstellt. Der normal fungierende Adapter ruft den zugehörigen API-Service auf, wohingegen der Caching-Adapter den Preis bzw. Artikel aus dem Cache lädt. Falls der Eintrag veraltet ist, wird der eigentliche Adapter angesprochen, um die zum jetzigen Zeitpunkt validen Daten zu erfragen und im Cache abzulegen. Das Beispiel \ref{lst:adapter} stellt die Komponente für das Aktualisieren der Preisinformationen dar. 
 

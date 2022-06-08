@@ -141,7 +141,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Erster Testdurchlauf und ableitbare Aussagen}{40}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Aushängen der Datenbank in eine Cloud-Umgebung}{41}{}%
+\contentsline {subsubsection}{\nonumberline Migration der Datenbank in eine Cloud-Umgebung}{41}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Simulation von Aufrufzeiten externen APIs}{42}{}%
 \defcounter {refsection}{0}\relax 
