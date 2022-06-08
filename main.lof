@@ -39,7 +39,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Aggregationsschnitt der Variante C\relax }}{29}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Vereinfachtes Sequenzdiagramm zur Initiierung des Bezahlvorgangs in Variante C\relax }}{31}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sequenzdiagramm einer Race Condition bei der Initiierung des Bezahlvorgangs in Variante C\relax }}{31}{}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Aktueller Checkout-Prozess des Onlineshops von MediaMarkt.de\relax }}{34}{}%
 \defcounter {refsection}{0}\relax 

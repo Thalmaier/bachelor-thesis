@@ -1,6 +1,6 @@
 \chapter{Implementierung des Proof-of-Concepts}
 
-Im Verlaufe des Projekts wurde das Datenmodell mitsamt der Hexagonalen Architektur und allen relevanten Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der Businessanforderungen unter Anwendung der gewonnenen Erkenntnisse. 
+Im Verlaufe des Projekts wurde das Datenmodell mitsamt der Hexagonalen Architektur und allen relevanten Anwendungsfällen in einem Proof-of-Concept implementiert. Das Ziel dieser Software ist die Unterstreichung einer möglichen praktischen Umsetzung der Businessanforderungen unter Anwendung der gewonnenen Erkenntnisse. Ein Verweis auf den Sourcecode ist in Kapitel \ref{label:sourcecode} hinterlegt. 
 
 Zu Beginn wurde das Projekt mit benötigten Frameworks und Abhängigkeiten aufgesetzt, um \gls{Boilerplate-Code} weitestgehend zu vermeiden. Die Software wurde mithilfe von Kotlin entwickelt. Die Komponenten sind analog zu einer Hexagonalen Architektur aufgeteilt in primäre Adapter, Applikationskern und sekundäre Adapter. Innerhalb des Applikationskerns befindet sich jegliche Businesslogik, sowie die notwendigen Applicationservices, Domainservices und das Domainmodell entsprechend des Domain-Driven Designs. Die umgesetzten Aggregationsschnitte belaufen sich auf die Variante A und D, sowie ihren Abwandlungen. Dieses Kapitel geht auf die Entwicklung des ersteren Ansatzes mit einem einzelnen, großen Basket-Aggregate tiefer ein.
 
